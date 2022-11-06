@@ -249,8 +249,8 @@ exports.serve = serve
 exports.dev = gulp.series(build, watch)
 exports.watch = watch
 exports.default = exports.build = gulp.series(
-  build,
-  rename_task,
-  clean_task,
-  zip_task
+  build
+  // rename_task,
+  // clean_task,
+  // zip_task
 )
