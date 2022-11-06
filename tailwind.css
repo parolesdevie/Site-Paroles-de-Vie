@@ -3,3 +3,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.tag-active {
+    @apply bg-blue-200 text-blue-700
+}

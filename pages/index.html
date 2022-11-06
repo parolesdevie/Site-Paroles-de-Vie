@@ -158,10 +158,34 @@
             placeholder="Recherche"
           />
 
-          <ul class="mt-2 md:mt-4" id="pdf-list">
+          <!-- tags -->
+          <h3 class="mt-2 md:mt-4 text-lg md:text-2xl">Tags</h3>
+          <ul class="mt-2 -ml-2 flex" id="tag-list">
+            <li
+              data-value="benevolence"
+              class="cursor-pointer ml-2 md:ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-gray-100 text-gray-700 rounded-full"
+            >
+              Benevolence
+            </li>
+            <li
+              data-value="jms"
+              class="cursor-pointer ml-2 md:ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-gray-100 text-gray-700 rounded-full"
+            >
+              Jms
+            </li>
+            <li
+              data-value="jozua"
+              class="cursor-pointer ml-2 md:ml-4 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-gray-100 text-gray-700 rounded-full"
+            >
+              Jozua
+            </li>
+          </ul>
+
+          <ul class="mt-4 md:mt-8" id="pdf-list">
             <li
               class="contents"
               data-slug="lheresie-du-sabellianisme-par-jean-leduc"
+              data-tag="jozua"
             >
               <a
                 class="mt-2 md:mt-4 flex items-center hover:bg-gray-100 p-4 rounded-lg border"
@@ -190,6 +214,7 @@
             <li
               class="contents"
               data-slug="levangile-lancien-testament-et-la-tradition-orale-par-sandrine-caneri"
+              data-tag="jozua"
             >
               <a
                 class="mt-2 md:mt-4 flex items-center hover:bg-gray-100 p-4 rounded-lg border"
@@ -219,6 +244,7 @@
             <li
               class="contents"
               data-slug="lislam-est-le-plagiat-dautres-religions-par-jozua"
+              data-tag="jozua"
             >
               <a
                 class="mt-2 md:mt-4 flex items-center hover:bg-gray-100 p-4 rounded-lg border"
@@ -244,7 +270,11 @@
                 />
               </a>
             </li>
-            <li class="contents" data-slug="la-notion-d-hypostase">
+            <li
+              class="contents"
+              data-slug="la-notion-d-hypostase-par-jms"
+              data-tag="jms"
+            >
               <a
                 class="mt-2 md:mt-4 flex items-center hover:bg-gray-100 p-4 rounded-lg border"
                 href="/pdf/la-notion-d-hypostase.pdf"
@@ -269,7 +299,11 @@
                 />
               </a>
             </li>
-            <li class="contents" data-slug="the-logical-problem-of-the-trinity">
+            <li
+              class="contents"
+              data-slug="the-logical-problem-of-the-trinity-par-jms"
+              data-tag="jms"
+            >
               <a
                 class="mt-2 md:mt-4 flex items-center hover:bg-gray-100 p-4 rounded-lg border"
                 href="/pdf/the-logical-problem-of-the-trinity.pdf"
