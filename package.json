@@ -1,0 +1,46 @@
+{
+  "name": "www.paroles-de-vie.tk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "serve": "gulp serve",
+    "dev": "gulp dev",
+    "build": " gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:parolesdevie/Site-Paroles-de-Vie.git"
+  },
+  "keywords": [
+    "bible"
+  ],
+  "author": "Benevolence",
+  "dependencies": {},
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.0",
+    "autoprefixer": "^10.2.4",
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-csso": "^4.0.1",
+    "gulp-html": "^3.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-jsdoc3": "^3.0.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rcs": "^3.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify-es": "^2.0.0",
+    "gulp-zip": "^5.0.2",
+    "imagemin-webp": "^6.0.0",
+    "jaguarjs-jsdoc": "^1.1.0",
+    "postcss": "^8.2.6",
+    "rcs-core": "^3.6.0",
+    "tailwindcss": "^2.0.3"
+  },
+  "license": "ISC"
+}
