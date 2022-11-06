@@ -7,7 +7,7 @@ const rename = require('gulp-rename')
 const concat = require('gulp-concat')
 const browserSync = require('browser-sync')
 // style
-const sass = require('gulp-sass')
+const sass = require('gulp-sass')(require('sass'))
 const cssnano = require('gulp-cssnano')
 const csso = require('gulp-csso')
 const rcs = require('gulp-rcs')
@@ -201,7 +201,7 @@ function doc_task(done) {
 function zip_task() {
   return gulp
     .src(paths.zip.src)
-    .pipe(zip(`insta-cours-${VERSION}.zip`))
+    .pipe(zip(`paroles-de-vie-${VERSION}.zip`))
     .pipe(gulp.dest(paths.zip.dest))
 }
 function serve() {

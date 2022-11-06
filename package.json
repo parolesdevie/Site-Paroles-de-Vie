@@ -16,7 +16,6 @@
     "bible"
   ],
   "author": "Benevolence",
-  "dependencies": {},
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.0",
     "autoprefixer": "^10.2.4",
@@ -33,7 +32,7 @@
     "gulp-postcss": "^9.0.0",
     "gulp-rcs": "^3.0.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0",
+    "gulp-sass": "^5.1.0",
     "gulp-uglify-es": "^2.0.0",
     "gulp-zip": "^5.0.2",
     "imagemin-webp": "^6.0.0",
@@ -42,5 +41,8 @@
     "rcs-core": "^3.6.0",
     "tailwindcss": "^2.0.3"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.56.0"
+  }
 }
