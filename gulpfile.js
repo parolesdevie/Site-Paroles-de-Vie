@@ -32,8 +32,8 @@ const zip = require('gulp-zip')
 // constantes
 const { mozjpeg } = imagemin
 const VERSION = require('./package.json').version
-const WEBP_QUALITY = 90
-const JPEG_QUALITY = 90
+const WEBP_QUALITY = 75
+const JPEG_QUALITY = 75
 
 // paths
 const paths = {
