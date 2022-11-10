@@ -39,7 +39,7 @@
     "jaguarjs-jsdoc": "^1.1.0",
     "postcss": "^8.2.6",
     "rcs-core": "^3.6.0",
-    "tailwindcss": "^2.0.3"
+    "tailwindcss": "^3.2.3"
   },
   "license": "ISC",
   "dependencies": {

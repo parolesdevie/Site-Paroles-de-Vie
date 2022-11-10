@@ -15,7 +15,7 @@
     <!-- assets -->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap&text=abcdefghijklmnopqrstuvwyzABCDEÉFGHIJKLMNOPQRSTUVWYZ"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap&text=abcdefghijklmnopqrstuvwyzABCDEÉFGHIJKLMNOPQRSTUVWYZ"
     />
     <link rel="stylesheet" href="/css/main.min.css" />
     <!-- favicon -->
@@ -101,7 +101,7 @@
     <!-- logos lib -->
     <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
       <g id="icon-logo" transform="translate(-19.07 -69.6)">
-        <circle cx="85.69" cy="135.74" r="53.88" fill="#fff" />
+        <!-- <circle cx="85.69" cy="135.74" r="53.88" fill="#fff" /> -->
         <path
           fill="#c9be9e"
           d="m116.34 115.83-29.4 11.4-.39 8.18h12.97v3.18H86.4l-1.6 33.83 28.1-7.9 15.74-.41 16.06 6.27-10.46-51.2z"
@@ -125,2341 +125,2399 @@
       />
     </svg>
 
-    <!-- waterline -->
-    <!-- header -->
-    <header class="bg-gray-100 py-2">
-      <div class="container mx-auto">
-        <div class="px-2 mt-2 md:mt-4 flex items-center">
+    <div class="flex flex-col md:flex-row">
+      <!-- left nav -->
+      <nav
+        class="border-r bg-gray-100 md:bg-white flex-shrink-0 md:w-56 md:py-3"
+      >
+        <div class="mx-3 p-4 md:p-0 flex items-center">
           <!-- logo -->
           <svg
-            class="h-10 w-10 md:h-20 md:w-20"
+            class="h-10 w-10 md:h-14 md:w-1h-14"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 132.29 132.29"
           >
             <use xlink:href="#icon-logo" />
           </svg>
           <!-- title -->
-          <h1 class="ml-4 text-lg md:text-5xl font-bold">Paroles de vie</h1>
+          <h1 class="ml-4 md:ml-2 text-lg font-bold">Paroles de vie</h1>
         </div>
-      </div>
-    </header>
 
-    <main class="px-4">
-      <div class="container mx-auto">
-        <!-- pdf -->
-        <section class="mt-2 md:mt-4">
-          <!-- title -->
-          <h2 class="text-lg md:text-3xl font-bold">Les pdf</h2>
-
-          <!-- search -->
-          <input
-            class="mt-2 md:mt-4 rounded-md border w-full p-2"
-            id="search-input"
-            type="text"
-            placeholder="Recherche"
-          />
-
-          <!-- tags -->
-          <h3 class="mt-2 md:mt-4 text-lg md:text-2xl">Tags</h3>
-          <ul class="mt-2 -m-1 md-m-2 flex flex-wrap" id="tag-list">
-            <li
-              data-value="jozua"
-              class="cursor-pointer m-1 md:m-2 text-xs md:text-base inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-gray-100 text-gray-700 rounded-full"
-            >
-              Jozua (40)
-            </li>
-            <li
-              data-value="jms"
-              class="cursor-pointer m-1 md:m-2 text-xs md:text-base inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-gray-100 text-gray-700 rounded-full"
-            >
-              Jms (11)
-            </li>
-            <li
-              data-value="fidelis-and-verax"
-              class="cursor-pointer m-1 md:m-2 text-xs md:text-base inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-gray-100 text-gray-700 rounded-full"
-            >
-              Fidelis & Verax (4)
-            </li>
-            <li
-              data-value="benevolence"
-              class="cursor-pointer m-1 md:m-2 text-xs md:text-base inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-gray-100 text-gray-700 rounded-full"
-            >
-              Benevolence (3)
-            </li>
-            <li
-              data-value="sham"
-              class="cursor-pointer m-1 md:m-2 text-xs md:text-base inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-gray-100 text-gray-700 rounded-full"
-            >
-              Sham (2)
-            </li>
-            <li
-              data-value="qalev"
-              class="cursor-pointer m-1 md:m-2 text-xs md:text-base inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-gray-100 text-gray-700 rounded-full"
-            >
-              Qalev (2)
-            </li>
-            <li
-              data-value="saved-by-christ"
-              class="cursor-pointer m-1 md:m-2 text-xs md:text-base inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-gray-100 text-gray-700 rounded-full"
-            >
-              Saved By Christ (1)
-            </li>
-            <li
-              data-value="protocole"
-              class="cursor-pointer m-1 md:m-2 text-xs md:text-base inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-gray-100 text-gray-700 rounded-full"
-            >
-              Protocole (1)
-            </li>
-          </ul>
-
-          <ul
-            class="mt-4 md:mt-8 max-h-96 overflow-y-auto p-2 md:p-4 pr-3 md:pr-5 bg-gray-50"
-            id="pdf-list"
+        <!-- annonce -->
+        <div
+          class="hidden md:block mt-10 mx-3 p-5 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 text-white text-sm font-light"
+        >
+          Le site est en cours de développement.
+          <a
+            class="mt-3 block py-1 w-full border rounded-full font-bold text-lg text-center"
+            href="#"
           >
+            #PDV
+          </a>
+        </div>
+
+        <!-- links -->
+        <div class="hidden md:block absolute">
+          <ul class="mt-10 sticky top-10">
             <li
-              class="contents"
-              data-slug="colonialisme-par-jozua"
-              data-tag="jozua"
+              class="pl-4 mt-4 border-l-8 border-blue-500 hover:border-cyan-500 hover:text-cyan-500"
             >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/colonialisme.pdf"
-                title="Colonialisme"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Colonialisme
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/colonialisme.webp"
-                  alt="aperçu"
-                />
-              </a>
+              <a href="#s-pdfs">Les Pdfs</a>
             </li>
             <li
-              class="contents"
-              data-slug="ar-rahik-al-makhtoum-le-nectar-cachete-safiyyu-ar-rahman-al-mubarakfuri-z-liborg-par-benevolence"
-              data-tag="benevolence"
+              class="pl-4 mt-4 border-l-8 border-blue-500 hover:border-cyan-500 hover:text-cyan-500"
             >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/ar-rahik-al-makhtoum-le-nectar-cachete-safiyyu-ar-rahman-al-mubarakfuri-z-liborg.pdf"
-                title="AR-RAHIK AL-MAKHTOUM Le nectar cachete (Safiyyu Ar-Rahman Al Mubarakfuri) (z-lib.org)"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  AR-RAHIK AL-MAKHTOUM Le nectar cachete (Safiyyu Ar-Rahman Al
-                  Mubarakfuri) (z-lib.org)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/ar-rahik-al-makhtoum-le-nectar-cachete-safiyyu-ar-rahman-al-mubarakfuri-z-liborg.webp"
-                  alt="aperçu"
-                />
-              </a>
+              <a href="#s-books">Les Livres</a>
             </li>
             <li
-              class="contents"
-              data-slug="le-resume-de-zad-al-maad-ibn-qayyim-al-jawziyyah-par-benevolence"
-              data-tag="benevolence"
+              class="pl-4 mt-4 border-l-8 border-blue-500 hover:border-cyan-500 hover:text-cyan-500"
             >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/le-resume-de-zad-al-maad-ibn-qayyim-al-jawziyyah.pdf"
-                title="Le résumé de Zad Al-Ma'ad - Ibn Qayyim Al-Jawziyyah"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Le résumé de Zad Al-Ma'ad - Ibn Qayyim Al-Jawziyyah
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/le-resume-de-zad-al-maad-ibn-qayyim-al-jawziyyah.webp"
-                  alt="aperçu"
-                />
-              </a>
+              <a href="#s-websites">Les Sites</a>
             </li>
             <li
-              class="contents"
-              data-slug="lauthentique-de-la-medecine-prophetique-de-ibn-al-qayyim-par-benevolence"
-              data-tag="benevolence"
+              class="pl-4 mt-4 border-l-8 border-blue-500 hover:border-cyan-500 hover:text-cyan-500"
             >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/lauthentique-de-la-medecine-prophetique-de-ibn-al-qayyim.pdf"
-                title="L'authentique de La Médecine Prophétique de Ibn Al-Qayyim"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  L'authentique de La Médecine Prophétique de Ibn Al-Qayyim
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/lauthentique-de-la-medecine-prophetique-de-ibn-al-qayyim.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="lheresie-du-sabellianisme-par-jean-leduc"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/l-heresie-du-sabellianisme.pdf"
-                title="L'HÉRÉSIE DU SABELLIANISME"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  L'HÉRÉSIE DU SABELLIANISME par Jean leDuc
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/l-heresie-du-sabellianisme.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="levangile-lancien-testament-et-la-tradition-orale-par-sandrine-caneri"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/l-evangile-l-ancien-testament-et-la-tradition-orale.pdf"
-                title="L’Évangile, l’Ancien Testament et la tradition orale"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  L’Évangile, l’Ancien Testament et la tradition orale (par
-                  Sandrine CANERI)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/l-evangile-l-ancien-testament-et-la-tradition-orale.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="lislam-est-le-plagiat-dautres-religions-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/l-islam-est-le plagiat-d-autres-religions.pdf"
-                title="L’islam est le plagiat d’autres religions"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  L’islam est le plagiat d’autres religions (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/l-islam-est-le plagiat-d-autres-religions.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="la-notion-d-hypostase-par-jms"
-              data-tag="jms"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/la-notion-d-hypostase.pdf"
-                title="L’islam est le plagiat d’autres religions"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  La notion d'hypostase (par Jms)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/la-notion-d-hypostase.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="the-logical-problem-of-the-trinity-par-jms"
-              data-tag="jms"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/the-logical-problem-of-the-trinity.pdf"
-                title="L’islam est le plagiat d’autres religions"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  THE LOGICAL PROBLEM OF THE TRINITY (par Jms)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/the-logical-problem-of-the-trinity.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="le-contexte-historique-du-nouveau-testament-par-jms"
-              data-tag="jms"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/le-contexte-historique-du-nouveau-testament.pdf"
-                title="Le contexte historique du Nouveau Testament"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Le contexte historique du Nouveau Testament (par Jms)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/le-contexte-historique-du-nouveau-testament.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="la-trinite-est-elle-biblique-par-saved-by-christ"
-              data-tag="saved-by-christ"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/la-trinite-est-elle-biblique.pdf"
-                title="La Trinité est-elle biblique?"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  La Trinité est-elle biblique? (par Saved by christ)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/la-trinite-est-elle-biblique.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="refutation-almah-par-jms"
-              data-tag="jms"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/refutation-almah.pdf"
-                title="Réfutation Almah"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Réfutation Almah (par Jms)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/refutation-almah.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="messianite-de-esaie-53-par-jms"
-              data-tag="jms"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/messianite-de-esaie-53.pdf"
-                title="Messianité de Esaïe 53"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Messianité de Esaïe 53 (par Jms)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/messianite-de-esaie-53.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="refutation-jesus-na-pas-ete-oint-dhuile-par-jms"
-              data-tag="jms"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/refutation-jesus-na-pas-ete-oint-dhuile.pdf"
-                title="Réfutation Jésus n’a pas été oint d’huile"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Réfutation Jésus n’a pas été oint d’huile (par Jms)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/refutation-jesus-na-pas-ete-oint-dhuile.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="refutation-jesus-nest-pas-descendance-de-david-par-jms"
-              data-tag="jms"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/refutation-jesus-nest-pas-descendance-de-david.pdf"
-                title="Réfutation Jésus n’est pas descendance de David"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Réfutation Jésus n’est pas descendance de David (par Jms)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/refutation-jesus-nest-pas-descendance-de-david.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="refutation-animaux-interdits-par-jms"
-              data-tag="jms"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/refutation-animaux-interdits.pdf"
-                title="Réfutation animaux interdits"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Réfutation animaux interdits (par Jms)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/refutation-animaux-interdits.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="aristotle-in-aquinass-theology-par-jms"
-              data-tag="jms"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/aristotle-in-aquinass-theology.pdf"
-                title="Aristotle in Aquinass theology"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Aristotle in Aquinass theology (par Jms)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/aristotle-in-aquinass-theology.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="etudes-de-theologie-positive-sur-la-sainte-trinite-volume-2-par-jms"
-              data-tag="jms"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/etudes-de-theologie-positive-sur-la-sainte-trinite-volume-2.pdf"
-                title="Études de théologie positive sur la sainte Trinité, Volume 2"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Études de théologie positive sur la sainte Trinité, Volume 2
-                  (par Jms)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/etudes-de-theologie-positive-sur-la-sainte-trinite-volume-2.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="yahweh-translittere-en-arabe-par-jms"
-              data-tag="jms"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/yahweh-translittere-en-arabe.pdf"
-                title="Yahweh translittéré en arabe"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Yahweh translittéré en arabe (par Jms)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/yahweh-translittere-en-arabe.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="le-dilemme-de-ladultere-par-sham"
-              data-tag="sham"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/le-dilemme-de-ladultere.pdf"
-                title="Le Dilemme de l'adultère"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Le Dilemme de l'adultère (par Sham)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/le-dilemme-de-ladultere.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="le-tetragramme-sacre-par-sham"
-              data-tag="sham"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/le-tetragramme-sacre.pdf"
-                title="Le tétragramme sacré"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Le tétragramme sacré (par Sham)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/le-tetragramme-sacre.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li class="contents" data-slug="fatwas-par-dems" data-tag="dems">
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/fatwas.pdf"
-                title="Fatwas"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Fatwas (par Dems)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/fatwas.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="oui-elie-doit-venir-mais-les-chretiens-y-croient-ils-encore-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/oui-elie-doit-venir-mais-les-chretiens-y-croient-ils-encore.pdf"
-                title="Oui, Élie doit venir"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Oui, Élie doit venir (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/oui-elie-doit-venir-mais-les-chretiens-y-croient-ils-encore.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="elie-et-la-conversion-finale-du-peuple-juif-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/elie-et-la-conversion-finale-du-peuple-juif.pdf"
-                title="Élie et la conversion finale du peuple juif, d’après les sources rabbiniques et patristiques"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Élie et la conversion finale du peuple juif, d’après les
-                  sources rabbiniques et patristiques (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/elie-et-la-conversion-finale-du-peuple-juif.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="elie-viendra-t-il-dabord-comme-la-affirme-jesus-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/elie-viendra-t-il-dabord-comme-la-affirme-jesus.pdf"
-                title="Élie viendra-t-il d'abord, comme l'a affirmé Jésus ?"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Élie viendra-t-il d'abord, comme l'a affirmé Jésus ? (par
-                  Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/elie-viendra-t-il-dabord-comme-la-affirme-jesus.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="dieu-se-pourvoira-lui-meme-de-lagneau-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/dieu-se-pourvoira-lui-meme-de-lagneau.pdf"
-                title="Dieu pourvoira lui-même l’agneau"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Dieu pourvoira lui-même l’agneau (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/dieu-se-pourvoira-lui-meme-de-lagneau.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="le-coran-production-litteraire-de-lantiquite-tardive-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/le-coran-production-litteraire-de-lantiquite-tardive.pdf"
-                title="Le Coran, production littéraire de l’Antiquité tardive"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Le Coran, production littéraire de l’Antiquité tardive (par
-                  Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/le-coran-production-litteraire-de-lantiquite-tardive.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="introduction-aux-droits-arabo-musulman-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/introduction-aux-droits-arabo-musulman.pdf"
-                title="Introduction aux droits arabo-musulman"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Introduction aux droits arabo-musulman (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/introduction-aux-droits-arabo-musulman.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="erreurs-linguistiques-dans-le-coran-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/erreurs-linguistiques-dans-le-coran.pdf"
-                title="Erreurs linguistiques dans le coran"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Erreurs linguistiques dans le coran (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/erreurs-linguistiques-dans-le-coran.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="le-signe-de-saul-pour-un-temps-dapostasie-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/le-signe-de-saul-pour-un-temps-dapostasie.pdf"
-                title="Le signe de Saül pour un temps d'apostasie"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Le signe de Saül pour un temps d'apostasie (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/le-signe-de-saul-pour-un-temps-dapostasie.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="frapper-sa-femme-exegese-complete-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/frapper-sa-femme-exegese-complete.pdf"
-                title="Frapper sa femme. exegese complete"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Frapper sa femme. exegese complete (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/frapper-sa-femme-exegese-complete.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="nulle-contrainte-dans-la-religion-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/nulle-contrainte-dans-la-religion.pdf"
-                title="Nulle contrainte dans la religion"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Nulle contrainte dans la religion (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/nulle-contrainte-dans-la-religion.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="genese-179-ismael-par-qalev"
-              data-tag="qalev"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/genese-179-ismael.pdf"
-                title="Genèse 179 Ismaël"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Genèse 179 Ismaël (par Qalev)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/genese-179-ismael.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="genese-179-ismael-2-par-qalev"
-              data-tag="qalev"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/genese-179-ismael-2.pdf"
-                title="Genèse 179 Ismaël 2"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Genèse 179 Ismaël 2 (par Qalev)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/genese-179-ismael-2.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="la-parabole-des-vignerons-1ere-partie-par-fidelis-and-verax"
-              data-tag="fidelis-and-verax"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/la-parabole-des-vignerons-1ere-partie.pdf"
-                title="La Parabole des vignerons 1ére partie"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  La Parabole des vignerons 1ére partie (par Fidelis&Verax)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/la-parabole-des-vignerons-1ere-partie.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="la-parabole-des-vignerons-2eme-partie-par-fidelis-and-verax"
-              data-tag="fidelis-and-verax"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/la-parabole-des-vignerons-2eme-partie.pdf"
-                title="La Parabole des vignerons 2éme partie"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  La Parabole des vignerons 2éme partie (par Fidelis&Verax)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/la-parabole-des-vignerons-2eme-partie.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="jesus-le-verbe-incarne-par-fidelis-and-verax"
-              data-tag="fidelis-and-verax"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/jesus-le-verbe-incarne.pdf"
-                title="Jésus, le Verbe incarné"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Jésus, le Verbe incarné (par Fidelis&Verax)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/jesus-le-verbe-incarne.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="le-monotheisme-des-patriarches-par-fidelis-and-verax"
-              data-tag="fidelis-and-verax"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/le-monotheisme-des-patriarches.pdf"
-                title="Le monothéisme des Patriarches"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Le monothéisme des Patriarches (par Fidelis&Verax)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/le-monotheisme-des-patriarches.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="citations-patristiques-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/citations-patristiques.pdf"
-                title="Citations Patristiques"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Citations Patristiques (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/citations-patristiques.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="mohammed-est-il-annonce-dans-la-torah-par-protocole"
-              data-tag="protocole"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/mohammed-est-il-annonce-dans-la-torah.pdf"
-                title="Mohammed est-il annoncé dans la Torah ?"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Mohammed est-il annoncé dans la Torah ? (par Protocole)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/mohammed-est-il-annonce-dans-la-torah.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="les-sanctions-dans-lislam-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/les-sanctions-dans-lislam.pdf"
-                title="Les sanctions dans l’islam"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Les sanctions dans l’islam (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/les-sanctions-dans-lislam.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="coran-sami-awad-aldeeb-abu-sahlieh-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/coran-sami-awad-aldeeb-abu-sahlieh.pdf"
-                title="Coran, Sami Awad ALDEEB ABU-SAHLIEH"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Coran, Sami Awad ALDEEB ABU-SAHLIEH (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/coran-sami-awad-aldeeb-abu-sahlieh.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="lettre-dun-rabbin-converti-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/lettre-dun-rabbin-converti.pdf"
-                title="LETTRE D'UN RABBIN CONVERTI"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  LETTRE D'UN RABBIN CONVERTI (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/lettre-dun-rabbin-converti.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="lettre-dun-rabbin-converti-2-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/lettre-dun-rabbin-converti-2.pdf"
-                title="LETTRE D'UN RABBIN CONVERTI 2"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  LETTRE D'UN RABBIN CONVERTI 2 (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/lettre-dun-rabbin-converti-2.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="evangile-de-matthieu-en-hebreu-shem-tov-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/evangile-de-matthieu-en-hebreu-shem-tov.pdf"
-                title="Evangile de matthieu en hébreu shem tov"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Evangile de matthieu en hébreu shem tov (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/evangile-de-matthieu-en-hebreu-shem-tov.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="le-gouvernement-mondial-de-lantechrist-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/le-gouvernement-mondial-de-lantechrist.pdf"
-                title="Le gouvernement mondial de l’antechrist"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Le gouvernement mondial de l’antechrist (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/le-gouvernement-mondial-de-lantechrist.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="lopposition-entre-la-chair-et-lesprit-en-galates-517-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/lopposition-entre-la-chair-et-lesprit-en-galates-517.pdf"
-                title="L'opposition entre la chair et l'Esprit en Galates 5.17"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  L'opposition entre la chair et l'Esprit en Galates 5.17 (par
-                  Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/lopposition-entre-la-chair-et-lesprit-en-galates-517.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="le-nom-de-yahushua-attaque-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/le-nom-de-yahushua-attaque.pdf"
-                title="Le nom de Yahushua attaqué"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Le nom de Yahushua attaqué (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/le-nom-de-yahushua-attaque.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="tous-les-musulmans-iront-en-enfer-sourate-19-71-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/tous-les-musulmans-iront-en-enfer-sourate-19-71.pdf"
-                title="Tous les musulmans iront en enfer sourate 19 :71"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Tous les musulmans iront en enfer sourate 19 :71 (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/tous-les-musulmans-iront-en-enfer-sourate-19-71.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="la-mort-des-apotres-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/la-mort-des-apotres.pdf"
-                title="La mort des apôtres"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  La mort des apôtres (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/la-mort-des-apotres.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="le-livre-dhenoch-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/le-livre-dhenoch.pdf"
-                title="Le livre d’Hénoch"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Le livre d’Hénoch (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/le-livre-dhenoch.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="le-palimpseste-de-sana-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/le-palimpseste-de-sana.pdf"
-                title="Le palimpseste de Sana"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Le palimpseste de Sana (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/le-palimpseste-de-sana.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="llevangile-de-barnabe-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/llevangile-de-barnabe.pdf"
-                title="L’évangile de Barnabé"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  L’évangile de Barnabé (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/llevangile-de-barnabe.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="islam-jihad-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/islam-jihad.pdf"
-                title="Islam Jihad"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Islam Jihad (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/islam-jihad.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="le-talmud-de-jerusalem-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/le-talmud-de-jerusalem.pdf"
-                title="Le talmud de jérusalem"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Le talmud de jérusalem (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/le-talmud-de-jerusalem.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="613-commandements-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/613-commandements.pdf"
-                title="613 Commandements"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  613 Commandements (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/613-commandements.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="de-saint-polycarpe-eveque-de-smyrne-et-saint-martyr-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/de-saint-polycarpe-eveque-de-smyrne-et-saint-martyr.pdf"
-                title="De saint Polycarpe, évêque de Smyrne et saint martyr"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  De saint Polycarpe, évêque de Smyrne et saint martyr (par
-                  Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/de-saint-polycarpe-eveque-de-smyrne-et-saint-martyr.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="les-origines-du-dogme-mahometan-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/les-origines-du-dogme-mahometan.pdf"
-                title="Les origines du dogme mahometan"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Les origines du dogme mahometan (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/les-origines-du-dogme-mahometan.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="connaitre-mohammed-et-jesus-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/connaitre-mohammed-et-jesus.pdf"
-                title="Connaître Mohammed et Jésus"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Connaître Mohammed et Jésus (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/connaitre-mohammed-et-jesus.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="le-grand-secret-de-lislam-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/le-grand-secret-de-lislam.pdf"
-                title="Le grand secret de l’islam"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Le grand secret de l’islam (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/le-grand-secret-de-lislam.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="temoins-de-jehovah-manuel-pratique-dauto-defense-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/temoins-de-jehovah-manuel-pratique-dauto-defense.pdf"
-                title="Témoins de jéhovah : manuel pratique d’auto-défense"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Témoins de jéhovah : manuel pratique d’auto-défense (par
-                  Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/temoins-de-jehovah-manuel-pratique-dauto-defense.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="tableau-des-copies-des-manuscrits-les-plus-anciens-qui-existent-encore-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/tableau-des-copies-des-manuscrits-les-plus-anciens-qui-existent-encore.pdf"
-                title="Tableau des copies des manuscrits les plus anciens qui existent encore"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Tableau des copies des manuscrits les plus anciens qui
-                  existent encore (par Jozua)
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/tableau-des-copies-des-manuscrits-les-plus-anciens-qui-existent-encore.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="paul-selon-paul-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/paul-selon-paul.pdf"
-                title="Paul selon Paul"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Paul selon Paul
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/paul-selon-paul.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="la-bible-a-t-elle-ete-alteree-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/la-bible-a-t-elle-ete-alteree.pdf"
-                title="La Bible a-t-elle été altérée?"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  La Bible a-t-elle été altérée?
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/la-bible-a-t-elle-ete-alteree.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="le-schisme-primordial-entre-juifs-et-chretiens-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/le-schisme-primordial-entre-juifs-et-chretiens.pdf"
-                title="Le schisme primordial entre Juifs et Chrétiens"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Le schisme primordial entre Juifs et Chrétiens
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/le-schisme-primordial-entre-juifs-et-chretiens.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="islamologie-etude-de-lislam-par-ses-textes-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/islamologie-etude-de-lislam-par-ses-textes.pdf"
-                title="Islamologie – Étude de l’islam par ses textes"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Islamologie – Étude de l’islam par ses textes
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/islamologie-etude-de-lislam-par-ses-textes.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="des-pions-sur-lechiquier-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/des-pions-sur-lechiquier.pdf"
-                title="Des pions sur l’échiquier"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Des pions sur l’échiquier
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/des-pions-sur-lechiquier.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="chretiens-et-juifs-pour-aller-plus-loin-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/chretiens-et-juifs-pour-aller-plus-loin.pdf"
-                title="Chrétiens et Juifs : pour aller plus loin"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Chrétiens et Juifs : pour aller plus loin
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/chretiens-et-juifs-pour-aller-plus-loin.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="lenseignement-de-yeshua-et-de-ses-apotres-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/lenseignement-de-yeshua-et-de-ses-apotres.pdf"
-                title="L'enseignement de Yeshua et de ses apotres"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  L'enseignement de Yeshua et de ses apotres
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/lenseignement-de-yeshua-et-de-ses-apotres.webp"
-                  alt="aperçu"
-                />
-              </a>
-            </li>
-            <li
-              class="contents"
-              data-slug="alma-et-parthenos-dans-lunivers-de-la-bible-par-jozua"
-              data-tag="jozua"
-            >
-              <a
-                class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
-                href="/pdf/alma-et-parthenos-dans-lunivers-de-la-bible.pdf"
-                title="Almâ et parthenos dans l’univers de la Bible"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <use xlink:href="#icon-download" />
-                </svg>
-                <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
-                  Almâ et parthenos dans l’univers de la Bible
-                </span>
-                <img
-                  class="h-12 md:h-24 ml-auto flex-shrink-0"
-                  src="/img/alma-et-parthenos-dans-lunivers-de-la-bible.webp"
-                  alt="aperçu"
-                />
-              </a>
+              <a href="#s-mags">Les Mags</a>
             </li>
           </ul>
-        </section>
+        </div>
+      </nav>
 
-        <!-- books -->
-        <section class="mt-2 md:mt-4">
-          <!-- title -->
-          <h2 class="text-lg md:text-3xl font-bold">
-            Recommandations de Livres
+      <main class="w-full px-4">
+        <!-- banner -->
+        <div
+          class="mt-4 relative flex items-center justify-center rounded-xl overflow-hidden"
+        >
+          <img
+            class="h-40 lg:h-56 w-full object-cover bg-gray-100"
+            src="/img/banner/back.webp"
+            alt=""
+          />
+          <h2
+            class="absolute h-full w-full bg-black bg-opacity-50 text-white flex items-center justify-center text-3xl md:text-5xl font-bold"
+          >
+            Bienvenue
           </h2>
+        </div>
 
-          <ul class="mt-2 md:mt-4 flex flex-wrap -m-2">
-            <li
-              class="flex flex-col w-40 items-center p-2 md:p-4"
-              title="Paroles et exemples des anciens"
-            >
-              <img
-                class="h-24 md:h-32"
-                src="/img/paroles-et-exemples-des-anciens.webp"
-                alt="Paroles et exemples des anciens"
-              />
-              <span class="mt-2 w-full text-sm text-center">
-                Paroles et exemples des anciens
-              </span>
-            </li>
-            <li
-              class="flex flex-col w-40 items-center p-2 md:p-4"
-              title="Le feu sacré"
-            >
-              <img
-                class="h-24 md:h-32"
-                src="/img/le-feu-sacre.webp"
-                alt="Le feu sacré"
-              />
-              <span class="mt-2 w-full text-sm text-center">Le feu sacré</span>
-            </li>
-            <li
-              class="flex flex-col w-40 items-center p-2 md:p-4"
-              title="Le secours des saints"
-            >
-              <img
-                class="h-24 md:h-32"
-                src="/img/le-secours-des-saints.webp"
-                alt="Le secours des saints"
-              />
-              <span class="mt-2 w-full text-sm text-center">
-                Le secours des saints
-              </span>
-            </li>
-            <li
-              class="flex flex-col w-40 items-center p-2 md:p-4"
-              title="La foi, la liturgie et la vie de l'église orthodoxe"
-            >
-              <img
-                class="h-24 md:h-32"
-                src="/img/la-foi-la-liturgie-et-la-vie-de-l-eglise-orthodoxe.webp"
-                alt="La foi, la liturgie et la vie de l'église orthodoxe"
-              />
-              <span class="mt-2 w-full text-sm text-center">
-                La foi, la liturgie et la vie de l'église orthodoxe
-              </span>
-            </li>
-            <li
-              class="flex flex-col w-40 items-center p-2 md:p-4"
-              title="Necessary Existance"
-            >
-              <img
-                class="h-24 md:h-32"
-                src="/img/necessary-existance.webp"
-                alt="Necessary Existance"
-              />
-              <span class="mt-2 w-full text-sm text-center">
-                Necessary Existance
-              </span>
-            </li>
-            <li
-              class="flex flex-col w-40 items-center p-2 md:p-4"
-              title="The logic of the Trinity"
-            >
-              <img
-                class="h-24 md:h-32"
-                src="/img/the-logic-of-the-trinity.webp"
-                alt="The logic of the Trinity"
-              />
-              <span class="mt-2 w-full text-sm text-center">
-                The logic of the Trinity
-              </span>
-            </li>
-            <li
-              class="flex flex-col w-40 items-center p-2 md:p-4"
-              title="Les versets sataniques"
-            >
-              <img
-                class="h-24 md:h-32"
-                src="/img/les-versets-sataniques.webp"
-                alt="Les versets sataniques"
-              />
-              <span class="mt-2 w-full text-sm text-center">
-                Les versets sataniques
-              </span>
-            </li>
-          </ul>
-        </section>
+        <div>
+          <!-- pdf -->
+          <section id="s-pdfs" class="mt-2 md:mt-4">
+            <!-- title -->
+            <h2 class="text-lg md:text-3xl font-bold">Les pdfs</h2>
 
-        <!-- websites -->
-        <section class="mt-2 md:mt-4">
-          <!-- title -->
-          <h2 class="text-lg md:text-3xl font-bold">
-            Recommandations de Sites
-          </h2>
+            <!-- search -->
+            <input
+              class="mt-2 md:mt-4 rounded-md border w-full p-2"
+              id="search-input"
+              type="text"
+              placeholder="Recherche"
+            />
 
-          <!-- links -->
-          <nav class="mt-2 md:mt-4">
-            <ul class="flex flex-col leading-7">
-              <li>
+            <!-- tags -->
+            <h3 class="mt-2 md:mt-4 text-lg md:text-2xl">Tags</h3>
+            <ul class="mt-2 -m-1 md-m-2 flex flex-wrap" id="tag-list">
+              <li
+                data-value="jozua"
+                class="cursor-pointer m-1 md:m-2 text-xs md:text-base inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-gray-100 text-gray-700 rounded-full"
+              >
+                Jozua (40)
+              </li>
+              <li
+                data-value="jms"
+                class="cursor-pointer m-1 md:m-2 text-xs md:text-base inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-gray-100 text-gray-700 rounded-full"
+              >
+                Jms (11)
+              </li>
+              <li
+                data-value="fidelis-and-verax"
+                class="cursor-pointer m-1 md:m-2 text-xs md:text-base inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-gray-100 text-gray-700 rounded-full"
+              >
+                Fidelis & Verax (4)
+              </li>
+              <li
+                data-value="benevolence"
+                class="cursor-pointer m-1 md:m-2 text-xs md:text-base inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-gray-100 text-gray-700 rounded-full"
+              >
+                Benevolence (3)
+              </li>
+              <li
+                data-value="sham"
+                class="cursor-pointer m-1 md:m-2 text-xs md:text-base inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-gray-100 text-gray-700 rounded-full"
+              >
+                Sham (2)
+              </li>
+              <li
+                data-value="qalev"
+                class="cursor-pointer m-1 md:m-2 text-xs md:text-base inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-gray-100 text-gray-700 rounded-full"
+              >
+                Qalev (2)
+              </li>
+              <li
+                data-value="saved-by-christ"
+                class="cursor-pointer m-1 md:m-2 text-xs md:text-base inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-gray-100 text-gray-700 rounded-full"
+              >
+                Saved By Christ (1)
+              </li>
+              <li
+                data-value="protocole"
+                class="cursor-pointer m-1 md:m-2 text-xs md:text-base inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-gray-100 text-gray-700 rounded-full"
+              >
+                Protocole (1)
+              </li>
+            </ul>
+
+            <ul
+              class="mt-4 md:mt-8 max-h-96 overflow-y-auto p-2 md:p-4 pr-3 md:pr-5 bg-gray-50"
+              id="pdf-list"
+            >
+              <li
+                class="contents"
+                data-slug="colonialisme-par-jozua"
+                data-tag="jozua"
+              >
                 <a
-                  class="hover:text-blue-700"
-                  href="http://docteurangelique.free.fr/livresformatweb/sommes/1sommetheologique1apars.htm"
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/colonialisme.pdf"
+                  title="Colonialisme"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  • Somme théologique saint thomas d’aquin (Français)
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Colonialisme
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/colonialisme.webp"
+                    alt="aperçu"
+                  />
                 </a>
               </li>
-              <li>
+              <li
+                class="contents"
+                data-slug="ar-rahik-al-makhtoum-le-nectar-cachete-safiyyu-ar-rahman-al-mubarakfuri-z-liborg-par-benevolence"
+                data-tag="benevolence"
+              >
                 <a
-                  class="hover:text-blue-700"
-                  href="https://www.apologetique.net/EvangilePere/EvangilePere.aspx"
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/ar-rahik-al-makhtoum-le-nectar-cachete-safiyyu-ar-rahman-al-mubarakfuri-z-liborg.pdf"
+                  title="AR-RAHIK AL-MAKHTOUM Le nectar cachete (Safiyyu Ar-Rahman Al Mubarakfuri) (z-lib.org)"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  • Exégèse des pères de l'église sur l'évangile (Français)
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    AR-RAHIK AL-MAKHTOUM Le nectar cachete (Safiyyu Ar-Rahman Al
+                    Mubarakfuri) (z-lib.org)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/ar-rahik-al-makhtoum-le-nectar-cachete-safiyyu-ar-rahman-al-mubarakfuri-z-liborg.webp"
+                    alt="aperçu"
+                  />
                 </a>
               </li>
-              <li>
+              <li
+                class="contents"
+                data-slug="le-resume-de-zad-al-maad-ibn-qayyim-al-jawziyyah-par-benevolence"
+                data-tag="benevolence"
+              >
                 <a
-                  class="hover:text-blue-700"
-                  href="https://www.youtube.com/c/BibleProjectFran%C3%A7ais"
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/le-resume-de-zad-al-maad-ibn-qayyim-al-jawziyyah.pdf"
+                  title="Le résumé de Zad Al-Ma'ad - Ibn Qayyim Al-Jawziyyah"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  • Chaîne YouTube BibleProject (Français)
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Le résumé de Zad Al-Ma'ad - Ibn Qayyim Al-Jawziyyah
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/le-resume-de-zad-al-maad-ibn-qayyim-al-jawziyyah.webp"
+                    alt="aperçu"
+                  />
                 </a>
               </li>
-              <li>
+              <li
+                class="contents"
+                data-slug="lauthentique-de-la-medecine-prophetique-de-ibn-al-qayyim-par-benevolence"
+                data-tag="benevolence"
+              >
                 <a
-                  class="hover:text-blue-700"
-                  href="https://www.newadvent.org/fathers/"
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/lauthentique-de-la-medecine-prophetique-de-ibn-al-qayyim.pdf"
+                  title="L'authentique de La Médecine Prophétique de Ibn Al-Qayyim"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  • Écrits des peres de l’Église (Anglais)
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    L'authentique de La Médecine Prophétique de Ibn Al-Qayyim
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/lauthentique-de-la-medecine-prophetique-de-ibn-al-qayyim.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="lheresie-du-sabellianisme-par-jean-leduc"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/l-heresie-du-sabellianisme.pdf"
+                  title="L'HÉRÉSIE DU SABELLIANISME"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    L'HÉRÉSIE DU SABELLIANISME par Jean leDuc
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/l-heresie-du-sabellianisme.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="levangile-lancien-testament-et-la-tradition-orale-par-sandrine-caneri"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/l-evangile-l-ancien-testament-et-la-tradition-orale.pdf"
+                  title="L’Évangile, l’Ancien Testament et la tradition orale"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    L’Évangile, l’Ancien Testament et la tradition orale (par
+                    Sandrine CANERI)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/l-evangile-l-ancien-testament-et-la-tradition-orale.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="lislam-est-le-plagiat-dautres-religions-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/l-islam-est-le plagiat-d-autres-religions.pdf"
+                  title="L’islam est le plagiat d’autres religions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    L’islam est le plagiat d’autres religions (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/l-islam-est-le plagiat-d-autres-religions.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="la-notion-d-hypostase-par-jms"
+                data-tag="jms"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/la-notion-d-hypostase.pdf"
+                  title="L’islam est le plagiat d’autres religions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    La notion d'hypostase (par Jms)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/la-notion-d-hypostase.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="the-logical-problem-of-the-trinity-par-jms"
+                data-tag="jms"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/the-logical-problem-of-the-trinity.pdf"
+                  title="L’islam est le plagiat d’autres religions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    THE LOGICAL PROBLEM OF THE TRINITY (par Jms)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/the-logical-problem-of-the-trinity.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="le-contexte-historique-du-nouveau-testament-par-jms"
+                data-tag="jms"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/le-contexte-historique-du-nouveau-testament.pdf"
+                  title="Le contexte historique du Nouveau Testament"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Le contexte historique du Nouveau Testament (par Jms)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/le-contexte-historique-du-nouveau-testament.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="la-trinite-est-elle-biblique-par-saved-by-christ"
+                data-tag="saved-by-christ"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/la-trinite-est-elle-biblique.pdf"
+                  title="La Trinité est-elle biblique?"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    La Trinité est-elle biblique? (par Saved by christ)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/la-trinite-est-elle-biblique.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="refutation-almah-par-jms"
+                data-tag="jms"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/refutation-almah.pdf"
+                  title="Réfutation Almah"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Réfutation Almah (par Jms)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/refutation-almah.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="messianite-de-esaie-53-par-jms"
+                data-tag="jms"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/messianite-de-esaie-53.pdf"
+                  title="Messianité de Esaïe 53"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Messianité de Esaïe 53 (par Jms)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/messianite-de-esaie-53.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="refutation-jesus-na-pas-ete-oint-dhuile-par-jms"
+                data-tag="jms"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/refutation-jesus-na-pas-ete-oint-dhuile.pdf"
+                  title="Réfutation Jésus n’a pas été oint d’huile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Réfutation Jésus n’a pas été oint d’huile (par Jms)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/refutation-jesus-na-pas-ete-oint-dhuile.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="refutation-jesus-nest-pas-descendance-de-david-par-jms"
+                data-tag="jms"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/refutation-jesus-nest-pas-descendance-de-david.pdf"
+                  title="Réfutation Jésus n’est pas descendance de David"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Réfutation Jésus n’est pas descendance de David (par Jms)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/refutation-jesus-nest-pas-descendance-de-david.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="refutation-animaux-interdits-par-jms"
+                data-tag="jms"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/refutation-animaux-interdits.pdf"
+                  title="Réfutation animaux interdits"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Réfutation animaux interdits (par Jms)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/refutation-animaux-interdits.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="aristotle-in-aquinass-theology-par-jms"
+                data-tag="jms"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/aristotle-in-aquinass-theology.pdf"
+                  title="Aristotle in Aquinass theology"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Aristotle in Aquinass theology (par Jms)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/aristotle-in-aquinass-theology.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="etudes-de-theologie-positive-sur-la-sainte-trinite-volume-2-par-jms"
+                data-tag="jms"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/etudes-de-theologie-positive-sur-la-sainte-trinite-volume-2.pdf"
+                  title="Études de théologie positive sur la sainte Trinité, Volume 2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Études de théologie positive sur la sainte Trinité, Volume 2
+                    (par Jms)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/etudes-de-theologie-positive-sur-la-sainte-trinite-volume-2.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="yahweh-translittere-en-arabe-par-jms"
+                data-tag="jms"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/yahweh-translittere-en-arabe.pdf"
+                  title="Yahweh translittéré en arabe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Yahweh translittéré en arabe (par Jms)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/yahweh-translittere-en-arabe.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="le-dilemme-de-ladultere-par-sham"
+                data-tag="sham"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/le-dilemme-de-ladultere.pdf"
+                  title="Le Dilemme de l'adultère"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Le Dilemme de l'adultère (par Sham)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/le-dilemme-de-ladultere.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="le-tetragramme-sacre-par-sham"
+                data-tag="sham"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/le-tetragramme-sacre.pdf"
+                  title="Le tétragramme sacré"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Le tétragramme sacré (par Sham)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/le-tetragramme-sacre.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li class="contents" data-slug="fatwas-par-dems" data-tag="dems">
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/fatwas.pdf"
+                  title="Fatwas"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Fatwas (par Dems)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/fatwas.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="oui-elie-doit-venir-mais-les-chretiens-y-croient-ils-encore-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/oui-elie-doit-venir-mais-les-chretiens-y-croient-ils-encore.pdf"
+                  title="Oui, Élie doit venir"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Oui, Élie doit venir (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/oui-elie-doit-venir-mais-les-chretiens-y-croient-ils-encore.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="elie-et-la-conversion-finale-du-peuple-juif-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/elie-et-la-conversion-finale-du-peuple-juif.pdf"
+                  title="Élie et la conversion finale du peuple juif, d’après les sources rabbiniques et patristiques"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Élie et la conversion finale du peuple juif, d’après les
+                    sources rabbiniques et patristiques (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/elie-et-la-conversion-finale-du-peuple-juif.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="elie-viendra-t-il-dabord-comme-la-affirme-jesus-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/elie-viendra-t-il-dabord-comme-la-affirme-jesus.pdf"
+                  title="Élie viendra-t-il d'abord, comme l'a affirmé Jésus ?"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Élie viendra-t-il d'abord, comme l'a affirmé Jésus ? (par
+                    Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/elie-viendra-t-il-dabord-comme-la-affirme-jesus.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="dieu-se-pourvoira-lui-meme-de-lagneau-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/dieu-se-pourvoira-lui-meme-de-lagneau.pdf"
+                  title="Dieu pourvoira lui-même l’agneau"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Dieu pourvoira lui-même l’agneau (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/dieu-se-pourvoira-lui-meme-de-lagneau.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="le-coran-production-litteraire-de-lantiquite-tardive-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/le-coran-production-litteraire-de-lantiquite-tardive.pdf"
+                  title="Le Coran, production littéraire de l’Antiquité tardive"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Le Coran, production littéraire de l’Antiquité tardive (par
+                    Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/le-coran-production-litteraire-de-lantiquite-tardive.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="introduction-aux-droits-arabo-musulman-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/introduction-aux-droits-arabo-musulman.pdf"
+                  title="Introduction aux droits arabo-musulman"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Introduction aux droits arabo-musulman (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/introduction-aux-droits-arabo-musulman.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="erreurs-linguistiques-dans-le-coran-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/erreurs-linguistiques-dans-le-coran.pdf"
+                  title="Erreurs linguistiques dans le coran"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Erreurs linguistiques dans le coran (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/erreurs-linguistiques-dans-le-coran.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="le-signe-de-saul-pour-un-temps-dapostasie-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/le-signe-de-saul-pour-un-temps-dapostasie.pdf"
+                  title="Le signe de Saül pour un temps d'apostasie"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Le signe de Saül pour un temps d'apostasie (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/le-signe-de-saul-pour-un-temps-dapostasie.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="frapper-sa-femme-exegese-complete-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/frapper-sa-femme-exegese-complete.pdf"
+                  title="Frapper sa femme. exegese complete"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Frapper sa femme. exegese complete (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/frapper-sa-femme-exegese-complete.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="nulle-contrainte-dans-la-religion-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/nulle-contrainte-dans-la-religion.pdf"
+                  title="Nulle contrainte dans la religion"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Nulle contrainte dans la religion (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/nulle-contrainte-dans-la-religion.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="genese-179-ismael-par-qalev"
+                data-tag="qalev"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/genese-179-ismael.pdf"
+                  title="Genèse 179 Ismaël"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Genèse 179 Ismaël (par Qalev)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/genese-179-ismael.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="genese-179-ismael-2-par-qalev"
+                data-tag="qalev"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/genese-179-ismael-2.pdf"
+                  title="Genèse 179 Ismaël 2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Genèse 179 Ismaël 2 (par Qalev)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/genese-179-ismael-2.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="la-parabole-des-vignerons-1ere-partie-par-fidelis-and-verax"
+                data-tag="fidelis-and-verax"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/la-parabole-des-vignerons-1ere-partie.pdf"
+                  title="La Parabole des vignerons 1ére partie"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    La Parabole des vignerons 1ére partie (par Fidelis&Verax)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/la-parabole-des-vignerons-1ere-partie.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="la-parabole-des-vignerons-2eme-partie-par-fidelis-and-verax"
+                data-tag="fidelis-and-verax"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/la-parabole-des-vignerons-2eme-partie.pdf"
+                  title="La Parabole des vignerons 2éme partie"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    La Parabole des vignerons 2éme partie (par Fidelis&Verax)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/la-parabole-des-vignerons-2eme-partie.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="jesus-le-verbe-incarne-par-fidelis-and-verax"
+                data-tag="fidelis-and-verax"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/jesus-le-verbe-incarne.pdf"
+                  title="Jésus, le Verbe incarné"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Jésus, le Verbe incarné (par Fidelis&Verax)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/jesus-le-verbe-incarne.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="le-monotheisme-des-patriarches-par-fidelis-and-verax"
+                data-tag="fidelis-and-verax"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/le-monotheisme-des-patriarches.pdf"
+                  title="Le monothéisme des Patriarches"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Le monothéisme des Patriarches (par Fidelis&Verax)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/le-monotheisme-des-patriarches.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="citations-patristiques-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/citations-patristiques.pdf"
+                  title="Citations Patristiques"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Citations Patristiques (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/citations-patristiques.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="mohammed-est-il-annonce-dans-la-torah-par-protocole"
+                data-tag="protocole"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/mohammed-est-il-annonce-dans-la-torah.pdf"
+                  title="Mohammed est-il annoncé dans la Torah ?"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Mohammed est-il annoncé dans la Torah ? (par Protocole)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/mohammed-est-il-annonce-dans-la-torah.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="les-sanctions-dans-lislam-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/les-sanctions-dans-lislam.pdf"
+                  title="Les sanctions dans l’islam"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Les sanctions dans l’islam (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/les-sanctions-dans-lislam.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="coran-sami-awad-aldeeb-abu-sahlieh-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/coran-sami-awad-aldeeb-abu-sahlieh.pdf"
+                  title="Coran, Sami Awad ALDEEB ABU-SAHLIEH"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Coran, Sami Awad ALDEEB ABU-SAHLIEH (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/coran-sami-awad-aldeeb-abu-sahlieh.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="lettre-dun-rabbin-converti-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/lettre-dun-rabbin-converti.pdf"
+                  title="LETTRE D'UN RABBIN CONVERTI"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    LETTRE D'UN RABBIN CONVERTI (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/lettre-dun-rabbin-converti.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="lettre-dun-rabbin-converti-2-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/lettre-dun-rabbin-converti-2.pdf"
+                  title="LETTRE D'UN RABBIN CONVERTI 2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    LETTRE D'UN RABBIN CONVERTI 2 (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/lettre-dun-rabbin-converti-2.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="evangile-de-matthieu-en-hebreu-shem-tov-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/evangile-de-matthieu-en-hebreu-shem-tov.pdf"
+                  title="Evangile de matthieu en hébreu shem tov"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Evangile de matthieu en hébreu shem tov (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/evangile-de-matthieu-en-hebreu-shem-tov.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="le-gouvernement-mondial-de-lantechrist-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/le-gouvernement-mondial-de-lantechrist.pdf"
+                  title="Le gouvernement mondial de l’antechrist"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Le gouvernement mondial de l’antechrist (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/le-gouvernement-mondial-de-lantechrist.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="lopposition-entre-la-chair-et-lesprit-en-galates-517-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/lopposition-entre-la-chair-et-lesprit-en-galates-517.pdf"
+                  title="L'opposition entre la chair et l'Esprit en Galates 5.17"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    L'opposition entre la chair et l'Esprit en Galates 5.17 (par
+                    Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/lopposition-entre-la-chair-et-lesprit-en-galates-517.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="le-nom-de-yahushua-attaque-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/le-nom-de-yahushua-attaque.pdf"
+                  title="Le nom de Yahushua attaqué"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Le nom de Yahushua attaqué (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/le-nom-de-yahushua-attaque.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="tous-les-musulmans-iront-en-enfer-sourate-19-71-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/tous-les-musulmans-iront-en-enfer-sourate-19-71.pdf"
+                  title="Tous les musulmans iront en enfer sourate 19 :71"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Tous les musulmans iront en enfer sourate 19 :71 (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/tous-les-musulmans-iront-en-enfer-sourate-19-71.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="la-mort-des-apotres-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/la-mort-des-apotres.pdf"
+                  title="La mort des apôtres"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    La mort des apôtres (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/la-mort-des-apotres.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="le-livre-dhenoch-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/le-livre-dhenoch.pdf"
+                  title="Le livre d’Hénoch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Le livre d’Hénoch (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/le-livre-dhenoch.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="le-palimpseste-de-sana-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/le-palimpseste-de-sana.pdf"
+                  title="Le palimpseste de Sana"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Le palimpseste de Sana (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/le-palimpseste-de-sana.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="levangile-de-barnabe-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/levangile-de-barnabe.pdf"
+                  title="L’évangile de Barnabé"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    L’évangile de Barnabé (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/levangile-de-barnabe.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="islam-jihad-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/islam-jihad.pdf"
+                  title="Islam Jihad"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Islam Jihad (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/islam-jihad.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="le-talmud-de-jerusalem-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/le-talmud-de-jerusalem.pdf"
+                  title="Le talmud de jérusalem"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Le talmud de jérusalem (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/le-talmud-de-jerusalem.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="613-commandements-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/613-commandements.pdf"
+                  title="613 Commandements"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    613 Commandements (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/613-commandements.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="de-saint-polycarpe-eveque-de-smyrne-et-saint-martyr-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/de-saint-polycarpe-eveque-de-smyrne-et-saint-martyr.pdf"
+                  title="De saint Polycarpe, évêque de Smyrne et saint martyr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    De saint Polycarpe, évêque de Smyrne et saint martyr (par
+                    Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/de-saint-polycarpe-eveque-de-smyrne-et-saint-martyr.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="les-origines-du-dogme-mahometan-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/les-origines-du-dogme-mahometan.pdf"
+                  title="Les origines du dogme mahometan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Les origines du dogme mahometan (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/les-origines-du-dogme-mahometan.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="connaitre-mohammed-et-jesus-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/connaitre-mohammed-et-jesus.pdf"
+                  title="Connaître Mohammed et Jésus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Connaître Mohammed et Jésus (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/connaitre-mohammed-et-jesus.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="le-grand-secret-de-lislam-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/le-grand-secret-de-lislam.pdf"
+                  title="Le grand secret de l’islam"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Le grand secret de l’islam (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/le-grand-secret-de-lislam.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="temoins-de-jehovah-manuel-pratique-dauto-defense-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/temoins-de-jehovah-manuel-pratique-dauto-defense.pdf"
+                  title="Témoins de jéhovah : manuel pratique d’auto-défense"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Témoins de jéhovah : manuel pratique d’auto-défense (par
+                    Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/temoins-de-jehovah-manuel-pratique-dauto-defense.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="tableau-des-copies-des-manuscrits-les-plus-anciens-qui-existent-encore-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/tableau-des-copies-des-manuscrits-les-plus-anciens-qui-existent-encore.pdf"
+                  title="Tableau des copies des manuscrits les plus anciens qui existent encore"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Tableau des copies des manuscrits les plus anciens qui
+                    existent encore (par Jozua)
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/tableau-des-copies-des-manuscrits-les-plus-anciens-qui-existent-encore.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="paul-selon-paul-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/paul-selon-paul.pdf"
+                  title="Paul selon Paul"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Paul selon Paul
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/paul-selon-paul.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="la-bible-a-t-elle-ete-alteree-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/la-bible-a-t-elle-ete-alteree.pdf"
+                  title="La Bible a-t-elle été altérée?"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    La Bible a-t-elle été altérée?
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/la-bible-a-t-elle-ete-alteree.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="le-schisme-primordial-entre-juifs-et-chretiens-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/le-schisme-primordial-entre-juifs-et-chretiens.pdf"
+                  title="Le schisme primordial entre Juifs et Chrétiens"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Le schisme primordial entre Juifs et Chrétiens
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/le-schisme-primordial-entre-juifs-et-chretiens.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="islamologie-etude-de-lislam-par-ses-textes-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/islamologie-etude-de-lislam-par-ses-textes.pdf"
+                  title="Islamologie – Étude de l’islam par ses textes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Islamologie – Étude de l’islam par ses textes
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/islamologie-etude-de-lislam-par-ses-textes.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="des-pions-sur-lechiquier-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/des-pions-sur-lechiquier.pdf"
+                  title="Des pions sur l’échiquier"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Des pions sur l’échiquier
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/des-pions-sur-lechiquier.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="chretiens-et-juifs-pour-aller-plus-loin-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/chretiens-et-juifs-pour-aller-plus-loin.pdf"
+                  title="Chrétiens et Juifs : pour aller plus loin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Chrétiens et Juifs : pour aller plus loin
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/chretiens-et-juifs-pour-aller-plus-loin.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="lenseignement-de-yeshua-et-de-ses-apotres-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/lenseignement-de-yeshua-et-de-ses-apotres.pdf"
+                  title="L'enseignement de Yeshua et de ses apotres"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    L'enseignement de Yeshua et de ses apotres
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/lenseignement-de-yeshua-et-de-ses-apotres.webp"
+                    alt="aperçu"
+                  />
+                </a>
+              </li>
+              <li
+                class="contents"
+                data-slug="alma-et-parthenos-dans-lunivers-de-la-bible-par-jozua"
+                data-tag="jozua"
+              >
+                <a
+                  class="mt-2 md:mt-4 flex items-center bg-white hover:bg-gray-100 p-2 rounded-lg border"
+                  href="/pdf/alma-et-parthenos-dans-lunivers-de-la-bible.pdf"
+                  title="Almâ et parthenos dans l’univers de la Bible"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    class="ml-2 h-4 w-4 md:h-6 md:w-6 flex-shrink-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <use xlink:href="#icon-download" />
+                  </svg>
+                  <span class="ml-2 md:ml-4 text-sm md:text-base truncate">
+                    Almâ et parthenos dans l’univers de la Bible
+                  </span>
+                  <img
+                    class="h-12 md:h-24 ml-auto flex-shrink-0"
+                    src="/img/alma-et-parthenos-dans-lunivers-de-la-bible.webp"
+                    alt="aperçu"
+                  />
                 </a>
               </li>
             </ul>
-          </nav>
-        </section>
+          </section>
 
-        <!-- mag -->
-        <section class="mt-2 md:mt-4">
-          <!-- title -->
-          <h2 class="text-lg md:text-3xl font-bold">
-            Le journal des Theophilos
-          </h2>
+          <!-- books -->
+          <section id="s-books" class="mt-2 md:mt-4">
+            <!-- title -->
+            <h2 class="text-lg md:text-3xl font-bold">
+              Recommandations de Livres
+            </h2>
 
-          <ul class="-m-2 md:-m-4 mt-4 md:mt-8 flex flex-wrap" id="pdf-list">
-            <li class="contents">
-              <a href="/mag/1.pdf">
+            <ul class="mt-2 md:mt-4 flex flex-wrap -m-2">
+              <li
+                class="flex flex-col w-40 items-center p-2 md:p-4"
+                title="Paroles et exemples des anciens"
+              >
                 <img
-                  class="h-32 md:h-48 m-2 md:m-4"
-                  src="/img/mag/thun-1.webp"
-                  alt="Theophilos Mag Volume 1"
+                  class="h-24 md:h-32"
+                  src="/img/paroles-et-exemples-des-anciens.webp"
+                  alt="Paroles et exemples des anciens"
                 />
-              </a>
-            </li>
-            <li class="contents">
-              <a href="/mag/2.pdf">
+                <span class="mt-2 w-full text-sm text-center">
+                  Paroles et exemples des anciens
+                </span>
+              </li>
+              <li
+                class="flex flex-col w-40 items-center p-2 md:p-4"
+                title="Le feu sacré"
+              >
                 <img
-                  class="h-32 md:h-48 m-2 md:m-4"
-                  src="/img/mag/thun-2.webp"
-                  alt="Theophilos Mag Volume 2"
+                  class="h-24 md:h-32"
+                  src="/img/le-feu-sacre.webp"
+                  alt="Le feu sacré"
                 />
-              </a>
-            </li>
-            <li class="contents">
-              <a href="/mag/3.pdf">
+                <span class="mt-2 w-full text-sm text-center"
+                  >Le feu sacré</span
+                >
+              </li>
+              <li
+                class="flex flex-col w-40 items-center p-2 md:p-4"
+                title="Le secours des saints"
+              >
                 <img
-                  class="h-32 md:h-48 m-2 md:m-4"
-                  src="/img/mag/thun-3.webp"
-                  alt="Theophilos Mag Volume 3"
+                  class="h-24 md:h-32"
+                  src="/img/le-secours-des-saints.webp"
+                  alt="Le secours des saints"
                 />
-              </a>
-            </li>
-            <li class="contents">
-              <a href="/mag/4.pdf">
+                <span class="mt-2 w-full text-sm text-center">
+                  Le secours des saints
+                </span>
+              </li>
+              <li
+                class="flex flex-col w-40 items-center p-2 md:p-4"
+                title="La foi, la liturgie et la vie de l'église orthodoxe"
+              >
                 <img
-                  class="h-32 md:h-48 m-2 md:m-4"
-                  src="/img/mag/thun-4.webp"
-                  alt="Theophilos Mag Volume 4"
+                  class="h-24 md:h-32"
+                  src="/img/la-foi-la-liturgie-et-la-vie-de-l-eglise-orthodoxe.webp"
+                  alt="La foi, la liturgie et la vie de l'église orthodoxe"
                 />
-              </a>
-            </li>
-            <li class="contents">
-              <a href="/mag/5.pdf">
+                <span class="mt-2 w-full text-sm text-center">
+                  La foi, la liturgie et la vie de l'église orthodoxe
+                </span>
+              </li>
+              <li
+                class="flex flex-col w-40 items-center p-2 md:p-4"
+                title="Necessary Existance"
+              >
                 <img
-                  class="h-32 md:h-48 m-2 md:m-4"
-                  src="/img/mag/thun-5.webp"
-                  alt="Theophilos Mag Volume 5"
+                  class="h-24 md:h-32"
+                  src="/img/necessary-existance.webp"
+                  alt="Necessary Existance"
                 />
-              </a>
-            </li>
-          </ul>
-        </section>
+                <span class="mt-2 w-full text-sm text-center">
+                  Necessary Existance
+                </span>
+              </li>
+              <li
+                class="flex flex-col w-40 items-center p-2 md:p-4"
+                title="The logic of the Trinity"
+              >
+                <img
+                  class="h-24 md:h-32"
+                  src="/img/the-logic-of-the-trinity.webp"
+                  alt="The logic of the Trinity"
+                />
+                <span class="mt-2 w-full text-sm text-center">
+                  The logic of the Trinity
+                </span>
+              </li>
+              <li
+                class="flex flex-col w-40 items-center p-2 md:p-4"
+                title="Les versets sataniques"
+              >
+                <img
+                  class="h-24 md:h-32"
+                  src="/img/les-versets-sataniques.webp"
+                  alt="Les versets sataniques"
+                />
+                <span class="mt-2 w-full text-sm text-center">
+                  Les versets sataniques
+                </span>
+              </li>
+            </ul>
+          </section>
 
-        <div class="mt-48"></div>
-      </div>
-    </main>
+          <!-- websites -->
+          <section id="s-websites" class="mt-2 md:mt-4">
+            <!-- title -->
+            <h2 class="text-lg md:text-3xl font-bold">
+              Recommandations de Sites
+            </h2>
+
+            <!-- links -->
+            <nav class="mt-2 md:mt-4">
+              <ul class="flex flex-col leading-7">
+                <li>
+                  <a
+                    class="hover:text-blue-700"
+                    href="http://docteurangelique.free.fr/livresformatweb/sommes/1sommetheologique1apars.htm"
+                  >
+                    • Somme théologique saint thomas d’aquin (Français)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="hover:text-blue-700"
+                    href="https://www.apologetique.net/EvangilePere/EvangilePere.aspx"
+                  >
+                    • Exégèse des pères de l'église sur l'évangile (Français)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="hover:text-blue-700"
+                    href="https://www.youtube.com/c/BibleProjectFran%C3%A7ais"
+                  >
+                    • Chaîne YouTube BibleProject (Français)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="hover:text-blue-700"
+                    href="https://www.newadvent.org/fathers/"
+                  >
+                    • Écrits des peres de l’Église (Anglais)
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+
+          <!-- mag -->
+          <section id="s-mags" class="mt-2 md:mt-4">
+            <!-- title -->
+            <h2 class="text-lg md:text-3xl font-bold">
+              Le journal des Theophilos
+            </h2>
+
+            <ul class="-m-2 md:-m-4 mt-4 md:mt-8 flex flex-wrap" id="pdf-list">
+              <li class="contents">
+                <a href="/mag/1.pdf">
+                  <img
+                    class="h-32 md:h-48 m-2 md:m-4"
+                    src="/img/mag/thun-1.webp"
+                    alt="Theophilos Mag Volume 1"
+                  />
+                </a>
+              </li>
+              <li class="contents">
+                <a href="/mag/2.pdf">
+                  <img
+                    class="h-32 md:h-48 m-2 md:m-4"
+                    src="/img/mag/thun-2.webp"
+                    alt="Theophilos Mag Volume 2"
+                  />
+                </a>
+              </li>
+              <li class="contents">
+                <a href="/mag/3.pdf">
+                  <img
+                    class="h-32 md:h-48 m-2 md:m-4"
+                    src="/img/mag/thun-3.webp"
+                    alt="Theophilos Mag Volume 3"
+                  />
+                </a>
+              </li>
+              <li class="contents">
+                <a href="/mag/4.pdf">
+                  <img
+                    class="h-32 md:h-48 m-2 md:m-4"
+                    src="/img/mag/thun-4.webp"
+                    alt="Theophilos Mag Volume 4"
+                  />
+                </a>
+              </li>
+              <li class="contents">
+                <a href="/mag/5.pdf">
+                  <img
+                    class="h-32 md:h-48 m-2 md:m-4"
+                    src="/img/mag/thun-5.webp"
+                    alt="Theophilos Mag Volume 5"
+                  />
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <div class="mt-48"></div>
+        </div>
+      </main>
+    </div>
 
     <!-- footer -->
     <footer class="">

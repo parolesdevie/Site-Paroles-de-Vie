@@ -1,18 +1,8 @@
-'use strict'
-
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: false, // or 'media' or 'class'
+  content: ['./www/**/*.html'],
   theme: {
-    extend: {
-      spacing: {
-        // 120: '30rem',
-        // 150: '37.5rem'
-      }
-    }
+    extend: {}
   },
-  variants: {
-    extend: {
-      // opacity: ['hover']
-    }
-  }
+  plugins: []
 }
