@@ -31,7 +31,7 @@ export default Vue.extend({
         },
         {
           name: 'Magazines des Théophilos',
-          to: '/magazines',
+          to: '/magazines/',
         },
       ],
       books: BookService.getAll(),

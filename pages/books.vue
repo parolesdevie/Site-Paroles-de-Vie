@@ -32,7 +32,7 @@ export default Vue.extend({
         },
         {
           name: 'Livres Recommandés',
-          to: '/books',
+          to: '/books/',
         },
       ],
       books: BookService.getAll(),

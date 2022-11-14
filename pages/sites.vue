@@ -32,7 +32,7 @@ export default Vue.extend({
         },
         {
           name: 'Sites Recommandés',
-          to: '/sites',
+          to: '/sites/',
         },
       ],
       sites: WebSiteService.getAll(),

@@ -11,19 +11,19 @@ export default class MenuService {
                 name: 'Accueil',
             },
             {
-                to: '/documents',
+                to: '/documents/',
                 name: 'Documents',
             },
             {
-                to: '/books',
+                to: '/books/',
                 name: 'Livres',
             },
             {
-                to: '/sites',
+                to: '/sites/',
                 name: 'Sites',
             },
             {
-                to: '/magazines',
+                to: '/magazines/',
                 name: 'Magazine',
             },
         ]

@@ -32,7 +32,7 @@ export default Vue.extend({
         },
         {
           name: 'Documents',
-          to: '/documents',
+          to: '/documents/',
         },
       ],
       tags: TagService.getAll(),
