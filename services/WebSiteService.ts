@@ -22,6 +22,14 @@ export default class WebSiteService {
                 name: 'Écrits des peres de l’Église (Anglais)',
                 href: 'https://www.newadvent.org/fathers/',
             },
+            {
+                name: 'Sources Chrétiennes',
+                href: 'https://sourceschretiennes.org/',
+            },
+            {
+                name: 'jesusmarie',
+                href: 'http://jesusmarie.free.fr/',
+            },
         ]
     }
 }
