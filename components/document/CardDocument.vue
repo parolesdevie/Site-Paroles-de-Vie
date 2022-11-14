@@ -9,7 +9,7 @@
     >
       <!-- image -->
       <img
-        loading="lazy"
+        :loading="loading"
         class="w-40 md:w-56 rounded-xl hover:scale-110 duration-300"
         :src="'/images/pdf/' + slug + '.webp'"
         alt="aperçu"
@@ -49,6 +49,10 @@ export default Vue.extend({
       default: '',
     },
     title: {
+      type: String,
+      default: '',
+    },
+    loading: {
       type: String,
       default: '',
     },
