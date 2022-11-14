@@ -3,6 +3,7 @@
     <a :href="`/mag/${volume}.pdf`" target="_blank" rel="noopener noreferrer">
       <!-- cover -->
       <img
+        loading="lazy"
         class="h-32 md:h-48 hover:scale-110 duration-300"
         :src="`/images/mag/thun-${volume}.webp`"
         :alt="`Theophilos Mag Volume${volume}`"

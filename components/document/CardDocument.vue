@@ -9,6 +9,7 @@
     >
       <!-- image -->
       <img
+        loading="lazy"
         class="w-40 md:w-56 rounded-xl hover:scale-110 duration-300"
         :src="'/images/pdf/' + slug + '.webp'"
         alt="aperçu"

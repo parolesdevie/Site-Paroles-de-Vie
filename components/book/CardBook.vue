@@ -6,6 +6,7 @@
   >
     <!-- image -->
     <img
+      loading="lazy"
       class="h-24 md:h-32"
       :src="'/images/book/' + slug + '.webp'"
       alt="Le feu sacré"
