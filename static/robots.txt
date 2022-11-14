@@ -1,3 +1,0 @@
-User-agent: *
-
-Sitemap: https://www.paroles-de-vie.tk/sitemap.xml
