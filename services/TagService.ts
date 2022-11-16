@@ -7,6 +7,21 @@ export default class TagService {
     static getAll(): ITag[] {
         return [
             {
+        slug: 'coliseum',
+        author: 'Coliseum',
+        pdfCount: 2,
+      },
+      {
+        slug: 'theophilos',
+        author: 'Theophilos',
+        pdfCount: 4,
+      },
+      {
+        slug: '',
+        author: 'Auteur Inconnu',
+        pdfCount: 45,
+      },
+      {
                 slug: 'jozua',
                 author: 'Jozua',
                 pdfCount: 45

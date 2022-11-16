@@ -74,7 +74,11 @@ export default Vue.extend({
       let pdfs = this.pdfs
 
       if (this.selectedTags.length) {
-        pdfs = pdfs.filter((pdf) => this.selectedTags.indexOf(pdf.author) > -1)
+        pdfs = pdfs.filter(
+          (pdf) =>
+            this.selectedTags.findIndex((tag) => pdf.tags.indexOf(tag) > -1) >
+              -1 || this.selectedTags.indexOf(pdf.author) > -1
+        )
       }
       return pdfs.filter(
         (pdf) => pdf.slug.indexOf(this.slugify(this.searchKeyWord)) > -1
