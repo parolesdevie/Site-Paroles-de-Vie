@@ -1,5 +1,12 @@
 import { IPdf } from "~/types";
 
+enum AuthorEnum {
+  JOZUA = 'jozua',
+  BENEVOLENCE = 'benevolence',
+  SHAM = 'sham',
+  JMS = 'jms',
+}
+
 export default class PdfService {
     constructor() {
     }
@@ -7,15 +14,25 @@ export default class PdfService {
     static getAll(): IPdf[] {
         return [
             {
-                author: 'benevolence',
+                author: AuthorEnum.BENEVOLENCE,
                 slug: 'model-document-1',
                 title: 'Model Document 1',
             },
-            // {
-            //     author: 'jozua',
-            //     slug: 'colonialisme',
-            //     title: 'Colonialisme',
-            // },
+            {
+                author: AuthorEnum.JOZUA,
+                slug: 'colonialisme',
+                title: 'Colonialisme',
+            },
+            {
+                author: AuthorEnum.JOZUA,
+                slug: "l-heresie-du-sabellianisme",
+                title: "L'hérésie du sabellianisme"
+            },
+            {
+                slug: "l-islam-est-le plagiat-d-autres-religions",
+                author: AuthorEnum.JOZUA,
+                title: "L’islam est le plagiat d’autres religions"
+            },
             // {
             //     author: 'benevolence',
             //     slug: 'ar-rahik-al-makhtoum-le-nectar-cachete-safiyyu-ar-rahman-al-mubarakfuri-z-liborg',
@@ -33,19 +50,9 @@ export default class PdfService {
             //     title: "L'authentique de La Médecine Prophétique de Ibn Al-Qayyim"
             // },
             // {
-            //     slug: "l-heresie-du-sabellianisme",
-            //     author: "jozua",
-            //     title: "L'HÉRÉSIE DU SABELLIANISME"
-            // },
-            // {
             //     slug: "l-evangile-l-ancien-testament-et-la-tradition-orale",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "L’Évangile, l’Ancien Testament et la tradition orale"
-            // },
-            // {
-            //     slug: "l-islam-est-le plagiat-d-autres-religions",
-            //     author: "jozua",
-            //     title: "L’islam est le plagiat d’autres religions"
             // },
             // {
             //     slug: "la-notion-d-hypostase",
@@ -124,52 +131,52 @@ export default class PdfService {
             // },
             // {
             //     slug: "oui-elie-doit-venir-mais-les-chretiens-y-croient-ils-encore",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Oui, Élie doit venir"
             // },
             // {
             //     slug: "elie-et-la-conversion-finale-du-peuple-juif",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Élie et la conversion finale du peuple juif, d’après les sources rabbiniques et patristiques"
             // },
             // {
             //     slug: "elie-viendra-t-il-dabord-comme-la-affirme-jesus",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Élie viendra-t-il d'abord, comme l'a affirmé Jésus ?"
             // },
             // {
             //     slug: "dieu-se-pourvoira-lui-meme-de-lagneau",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Dieu pourvoira lui-même l’agneau"
             // },
             // {
             //     slug: "le-coran-production-litteraire-de-lantiquite-tardive",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Le Coran, production littéraire de l’Antiquité tardive"
             // },
             // {
             //     slug: "introduction-aux-droits-arabo-musulman",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Introduction aux droits arabo-musulman"
             // },
             // {
             //     slug: "erreurs-linguistiques-dans-le-coran",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Erreurs linguistiques dans le coran"
             // },
             // {
             //     slug: "le-signe-de-saul-pour-un-temps-dapostasie",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Le signe de Saül pour un temps d'apostasie"
             // },
             // {
             //     slug: "frapper-sa-femme-exegese-complete",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Frapper sa femme. exegese complete"
             // },
             // {
             //     slug: "nulle-contrainte-dans-la-religion",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Nulle contrainte dans la religion"
             // },
             // {
@@ -204,7 +211,7 @@ export default class PdfService {
             // },
             // {
             //     slug: "citations-patristiques",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Citations Patristiques"
             // },
             // {
@@ -214,152 +221,152 @@ export default class PdfService {
             // },
             // {
             //     slug: "les-sanctions-dans-lislam",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Les sanctions dans l’islam"
             // },
             // {
             //     slug: "coran-sami-awad-aldeeb-abu-sahlieh",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Coran, Sami Awad ALDEEB ABU-SAHLIEH"
             // },
             // {
             //     slug: "lettre-dun-rabbin-converti",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "LETTRE D'UN RABBIN CONVERTI"
             // },
             // {
             //     slug: "lettre-dun-rabbin-converti-2",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "LETTRE D'UN RABBIN CONVERTI 2"
             // },
             // {
             //     slug: "evangile-de-matthieu-en-hebreu-shem-tov",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Evangile de matthieu en hébreu shem tov"
             // },
             // {
             //     slug: "le-gouvernement-mondial-de-lantechrist",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Le gouvernement mondial de l’antechrist"
             // },
             // {
             //     slug: "lopposition-entre-la-chair-et-lesprit-en-galates-517",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "L'opposition entre la chair et l'Esprit en Galates 5.17"
             // },
             // {
             //     slug: "le-nom-de-yahushua-attaque",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Le nom de Yahushua attaqué"
             // },
             // {
             //     slug: "tous-les-musulmans-iront-en-enfer-sourate-19-71",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Tous les musulmans iront en enfer sourate 19 :71"
             // },
             // {
             //     slug: "la-mort-des-apotres",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "La mort des apôtres"
             // },
             // {
             //     slug: "le-livre-dhenoch",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Le livre d’Hénoch"
             // },
             // {
             //     slug: "le-palimpseste-de-sana",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Le palimpseste de Sana"
             // },
             // {
             //     slug: "levangile-de-barnabe",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "L’évangile de Barnabé"
             // },
             // {
             //     slug: "islam-jihad",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Islam Jihad"
             // },
             // {
             //     slug: "le-talmud-de-jerusalem",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Le talmud de jérusalem"
             // },
             // {
             //     slug: "613-commandements",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "613 Commandements"
             // },
             // {
             //     slug: "de-saint-polycarpe-eveque-de-smyrne-et-saint-martyr",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "De saint Polycarpe, évêque de Smyrne et saint martyr"
             // },
             // {
             //     slug: "les-origines-du-dogme-mahometan",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Les origines du dogme mahometan"
             // },
             // {
             //     slug: "connaitre-mohammed-et-jesus",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Connaître Mohammed et Jésus"
             // },
             // {
             //     slug: "le-grand-secret-de-lislam",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Le grand secret de l’islam"
             // },
             // {
             //     slug: "temoins-de-jehovah-manuel-pratique-dauto-defense",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Témoins de jéhovah : manuel pratique d’auto-défense"
             // },
             // {
             //     slug: "tableau-des-copies-des-manuscrits-les-plus-anciens-qui-existent-encore",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Tableau des copies des manuscrits les plus anciens qui existent encore"
             // },
             // {
             //     slug: "paul-selon-paul",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Paul selon Paul"
             // },
             // {
             //     slug: "la-bible-a-t-elle-ete-alteree",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "La Bible a-t-elle été altérée?"
             // },
             // {
             //     slug: "le-schisme-primordial-entre-juifs-et-chretiens",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Le schisme primordial entre Juifs et Chrétiens"
             // },
             // {
             //     slug: "islamologie-etude-de-lislam-par-ses-textes",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Islamologie – Étude de l’islam par ses textes"
             // },
             // {
             //     slug: "des-pions-sur-lechiquier",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Des pions sur l’échiquier"
             // },
             // {
             //     slug: "chretiens-et-juifs-pour-aller-plus-loin",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Chrétiens et Juifs : pour aller plus loin"
             // },
             // {
             //     slug: "lenseignement-de-yeshua-et-de-ses-apotres",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "L'enseignement de Yeshua et de ses apotres"
             // },
             // {
             //     slug: "alma-et-parthenos-dans-lunivers-de-la-bible",
-            //     author: "jozua",
+            //     author: AuthorEnum.JOZUA,
             //     title: "Almâ et parthenos dans l’univers de la Bible"
             // }
         ]
