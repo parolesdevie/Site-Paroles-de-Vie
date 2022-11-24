@@ -5,6 +5,8 @@
     <div class="container mx-auto mb-auto px-3 md:px-0 py-4 flex flex-col">
       <Breadcrumb :items="breadcrumbItems" />
 
+      <SectionTopicCard class="mt-4 md:mt-10" />
+
       <SectionDocument class="mt-4 md:mt-10" :tags="tags" :pdfs="pdfs" />
 
       <SectionBook class="mt-4 md:mt-10" :books="books" />
@@ -26,6 +28,7 @@ import SectionDocument from '~/components/document/SectionDocument.vue'
 import Breadcrumb from '~/components/global/Breadcrumb.vue'
 import SectionMag from '~/components/magazine/SectionMag.vue'
 import SectionSite from '~/components/site/SectionSite.vue'
+import SectionTopicCard from '~/components/topics/SectionTopicCard.vue'
 import { BookService, TagService, PdfService, WebSiteService } from '~/services'
 
 export default Vue.extend({
@@ -37,6 +40,7 @@ export default Vue.extend({
     SectionSite,
     SectionMag,
     Breadcrumb,
+    SectionTopicCard,
   },
 
   data() {

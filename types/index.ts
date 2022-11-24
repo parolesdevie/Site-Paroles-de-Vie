@@ -27,3 +27,9 @@ export interface ILink {
 }
 
 export type IBreadcrumbItem = ILink
+
+export interface ITopic {
+  cover: string
+  to: string
+  title: string
+}
