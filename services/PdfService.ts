@@ -66,6 +66,12 @@ export default class PdfService {
         author: 'fidelis-and-verax',
         title: 'Le monothéisme des Patriarches',
       },
+      {
+        tags: [AuthorEnum.BENEVOLENCE, 'coliseum'],
+        slug: 'le-paraclet',
+        author: AuthorEnum.BENEVOLENCE,
+        title: 'Le Paraclet',
+      },
       // {
       //     tags:[],
       //     author: 'benevolence',
