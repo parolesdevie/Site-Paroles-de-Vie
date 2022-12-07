@@ -1,11 +1,4 @@
-import { IPdf } from '~/types'
-
-enum AuthorEnum {
-  JOZUA = 'jozua',
-  BENEVOLENCE = 'benevolence',
-  SHAM = 'sham',
-  JMS = 'jms',
-}
+import { AuthorEnum, AuthorTeamEnum, IPdf } from '~/types'
 
 export default class PdfService {
   constructor() {}
@@ -19,55 +12,55 @@ export default class PdfService {
         title: 'Model Document 1',
       },
       {
-        tags: [AuthorEnum.JOZUA, 'coliseum'],
+        tags: [AuthorEnum.JOZUA, AuthorTeamEnum.COLISEUM],
         author: AuthorEnum.JOZUA,
         slug: 'colonialisme',
         title: 'Colonialisme',
       },
       {
         tags: [AuthorEnum.JOZUA],
-        author: '',
+        author: AuthorEnum.NULL,
         slug: 'l-heresie-du-sabellianisme',
         title: "L'hérésie du sabellianisme",
       },
       {
         slug: 'l-islam-est-le plagiat-d-autres-religions',
-        tags: [AuthorEnum.JOZUA, 'coliseum'],
+        tags: [AuthorEnum.JOZUA, AuthorTeamEnum.COLISEUM],
         author: AuthorEnum.JOZUA,
         title: 'L’islam est le plagiat d’autres religions',
       },
       {
         tags: [AuthorEnum.JOZUA],
-        author: '',
+        author: AuthorEnum.NULL,
         slug: 'l-unicite-de-dieu',
         title: 'L’unicité de dieu',
       },
       {
-        tags: ['theophilos', 'fidelis-and-verax'],
+        tags: [AuthorTeamEnum.THEOPHILOS, AuthorEnum.FIDELIS_AND_VERAX],
         slug: 'la-parabole-des-vignerons-1ere-partie',
-        author: 'fidelis-and-verax',
+        author: AuthorEnum.FIDELIS_AND_VERAX,
         title: 'La Parabole des vignerons 1ére partie',
       },
       {
-        tags: ['theophilos', 'fidelis-and-verax'],
+        tags: [AuthorTeamEnum.THEOPHILOS, AuthorEnum.FIDELIS_AND_VERAX],
         slug: 'la-parabole-des-vignerons-2eme-partie',
-        author: 'fidelis-and-verax',
+        author: AuthorEnum.FIDELIS_AND_VERAX,
         title: 'La Parabole des vignerons 2éme partie',
       },
       {
-        tags: ['theophilos', 'fidelis-and-verax'],
+        tags: [AuthorTeamEnum.THEOPHILOS, AuthorEnum.FIDELIS_AND_VERAX],
         slug: 'jesus-le-verbe-incarne',
-        author: 'fidelis-and-verax',
+        author: AuthorEnum.FIDELIS_AND_VERAX,
         title: 'Jésus, le Verbe incarné',
       },
       {
-        tags: ['theophilos', 'fidelis-and-verax'],
+        tags: [AuthorTeamEnum.THEOPHILOS, AuthorEnum.FIDELIS_AND_VERAX],
         slug: 'le-monotheisme-des-patriarches',
-        author: 'fidelis-and-verax',
+        author: AuthorEnum.FIDELIS_AND_VERAX,
         title: 'Le monothéisme des Patriarches',
       },
       {
-        tags: [AuthorEnum.BENEVOLENCE, 'coliseum'],
+        tags: [AuthorEnum.BENEVOLENCE, AuthorTeamEnum.COLISEUM],
         slug: 'le-paraclet',
         author: AuthorEnum.BENEVOLENCE,
         title: 'Le Paraclet',

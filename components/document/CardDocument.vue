@@ -1,5 +1,5 @@
 <template>
-  <li class="contents" :data-slug="slug + '-par-' + author" :data-tag="author">
+  <li class="contents">
     <a
       class="m-2 md:m-4 w-40 md:w-56 p-2 rounded-lg flex flex-col"
       :href="'/pdf/' + slug + '.pdf'"
@@ -40,10 +40,6 @@ export default Vue.extend({
   components: { IconDownload },
 
   props: {
-    author: {
-      type: String,
-      default: '',
-    },
     slug: {
       type: String,
       default: '',

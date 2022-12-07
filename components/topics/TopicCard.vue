@@ -24,10 +24,11 @@
           text-base
           md:text-2xl
           uppercase
-          bg-black bg-opacity-10
-          hover:bg-opacity-30
+          bg-black bg-opacity-20
+          hover:bg-opacity-40
           duration-300
           text-white
+          font-semibold
           flex
           items-center
           justify-center

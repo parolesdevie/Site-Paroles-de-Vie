@@ -19,8 +19,8 @@
 <script lang="ts">
 import Vue from 'vue'
 import { PropType } from 'vue/types/v3-component-props'
+import TopicCard from '~/components/topics/TopicCard.vue'
 import { ITopic } from '~/types'
-import TopicCard from './TopicCard.vue'
 
 export default Vue.extend({
   name: 'SectionTopicCard',
@@ -30,18 +30,7 @@ export default Vue.extend({
   props: {
     topics: {
       type: Array as PropType<ITopic[]>,
-      default: () => [
-        {
-          cover: 'manuscript',
-          to: '/manuscripts/',
-          title: 'Manuscrits',
-        },
-        {
-          cover: 'debates-tips',
-          to: '/debates-tips/',
-          title: 'Conseils de débats',
-        },
-      ],
+      default: () => [],
     },
   },
 })
