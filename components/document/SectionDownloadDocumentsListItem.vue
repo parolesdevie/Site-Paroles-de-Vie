@@ -1,7 +1,7 @@
 <template>
   <li class="contents">
     <a
-      class="m-2 md:m-4 w-40 md:w-56 p-2 rounded-lg flex flex-col"
+      class="m-2 md:m-4 w-20 md:w-28 p-2 rounded-lg flex flex-col"
       :href="href"
       :title="title + ' de ' + author"
       target="_blank"
@@ -19,8 +19,8 @@
             top-2
             right-2
             px-2
-            text-sm
-            md:text-base
+            text-xs
+            md:text-sm
             text-white
             font-semibold
           "
@@ -31,7 +31,7 @@
         <!-- image -->
         <img
           :loading="loading"
-          class="w-40 md:w-56 rounded-xl"
+          class="w-20 md:w-28 rounded-xl"
           :src="thumbnail + '.webp'"
           alt="aperçu"
         />
@@ -39,13 +39,11 @@
 
       <!-- title footer -->
       <div class="mt-4 flex items-center">
-        <span
-          class="mr-2 md:mr-4 pr-2 text-sm md:text-base font-semibold truncate"
-        >
+        <span class="mr-1 md:mr-2 text-xs md:text-sm font-semibold truncate">
           {{ title }}
         </span>
         <IconDownload
-          class="ml-auto h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-gray-400"
+          class="ml-auto h-3 w-3 md:h-4 md:w-4 flex-shrink-0 text-gray-400"
         />
       </div>
     </a>
