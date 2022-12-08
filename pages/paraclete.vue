@@ -191,10 +191,10 @@ export default Vue.extend({
         {
           author: AuthorEnum.BENEVOLENCE,
           format: FormatEnum.PDF,
-          thumbnail: undefined,
-          href: '/sources/the-arabic-letters-of-the-byzantine-emperor-leo-iii-to-the-caliph-umar-ibn-abd-al-aziz/pdf/the-arabic-letters-of-the-byzantine-emperor-leo-iii-to-the-caliph-umar-ibn-abd-al-aziz.pdf',
-          title:
-            'The Arabic Letters of the Byzantine Emperor Leo III to the Caliph ‘Umar Ibn ‘Abd al-‘Aziz',
+          thumbnail:
+            '/sources/la-biographie-du-prophete-mahomet-ibn-hicham/thumbnail',
+          href: '/sources/la-biographie-du-prophete-mahomet-ibn-hicham/pdf/la-biographie-du-prophete-mahomet-ibn-hicham.pdf',
+          title: 'La biographie du Prophete Mahomet Ibn Hicham',
         },
         {
           author: AuthorEnum.BENEVOLENCE,
@@ -204,6 +204,67 @@ export default Vue.extend({
           href: '/sources/theological-issues-in-christian-muslim-dialogue-tieszen-charles/epub/theological-issues-in-christian-muslim-dialogue-tieszen-charles-z-liborg.epub',
           title:
             'Theological Issues in Christian-Muslim Dialogue (Tieszen Charles)',
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          href: '/sources/the-arabic-letters-of-the-byzantine-emperor-leo-iii-to-the-caliph-umar-ibn-abd-al-aziz/pdf/the-arabic-letters-of-the-byzantine-emperor-leo-iii-to-the-caliph-umar-ibn-abd-al-aziz.pdf',
+          title:
+            'The Arabic Letters of the Byzantine Emperor Leo III to the Caliph ‘Umar Ibn ‘Abd al-‘Aziz',
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          href: '/sources/2020-05-16-abbe-martin-billet-le-paraclet-et-la-verite/pdf/2020-05-16-abbe-martin-billet-le-paraclet-et-la-verite.pdf',
+          title: 'Abbé Martin billet Le Paraclet et la Vérité (2020/05/16)',
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          href: '/sources/emery-verbe-esprit-vrit/pdf/emery-verbe-esprit-vrit.pdf',
+          title: 'Le Verbe-Vérité et l ’ Esprit de Vérité',
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          href: '/sources/le-paraclet-dans-la-notice-antimontanis/pdf/le-paraclet-dans-la-notice-antimontanis.pdf',
+          title: 'Le Paraclet dans la notice antimontanis',
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          href: '/sources/david-pastorelli-le-paraclet-dans-le-corpus-johannique/pdf/thlou-0080-2654-2007-num-38-4-3627-t1-0572-0000-2.pdf',
+          title: 'David Pastorelli, Le Paraclet dans le corpus johannique',
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          href: '/sources/bulletin-johannique/pdf/bulletin-johannique.pdf',
+          title: 'BULLETIN JOHANNIQUE',
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          href: '/sources/chronique-dexegese-du-nouveau-testament/pdf/chronique-dexegese-du-nouveau-testament.pdf',
+          title: "Chronique d'exégèse du Nouveau Testament",
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          href: '/sources/lexegese-de-mt-16-18-19-chez-tertullien/pdf/rhpr-0035-2403-1992-num-72-1-5169.pdf',
+          title: "L'exégèse de Mt 16, 18-19 chez Tertullien",
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          href: '/sources/le-paraclet-dans-le-corpus-johannique/pdf/le-paraclet-dans-le-corpus-johannique.pdf',
+          title: 'Le Paraclet dans le corpus johannique',
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          href: '/sources/lanalyste-le-stratege-et-le-paraclet/pdf/lanalyste-le-stratege-et-le-paraclet.pdf',
+          title: 'L’ANALYSTE, LE STRATÈGE ET LE PARACLET',
         },
       ],
     }
