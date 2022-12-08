@@ -1,7 +1,7 @@
 <template>
   <li class="contents">
     <a
-      class="m-2 md:m-4 w-40 md:w-56 p-2 rounded-lg flex flex-col"
+      class="m-2 md:m-4 w-40 md:w-56 p-2 flex flex-col"
       :href="'/pdf/' + slug + '.pdf'"
       :title="title"
       target="_blank"

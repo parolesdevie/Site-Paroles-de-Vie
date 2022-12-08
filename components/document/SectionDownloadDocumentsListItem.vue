@@ -1,7 +1,7 @@
 <template>
   <li class="contents">
     <a
-      class="m-2 md:m-4 w-20 md:w-28 p-2 rounded-lg flex flex-col"
+      class="w-20 md:w-28 p-2 md:p-4 flex flex-col"
       :href="href"
       :title="title + ' de ' + author"
       target="_blank"
@@ -35,16 +35,31 @@
           :src="thumbnail + '.webp'"
           alt="aperçu"
         />
+
+        <!-- download -->
+        <IconDownload
+          :style="{
+            color: formatLabelBackColor,
+          }"
+          class="absolute -right-3 -bottom-1 h-3 w-3 md:h-4 md:w-4"
+        />
       </div>
 
       <!-- title footer -->
       <div class="mt-4 flex items-center">
-        <span class="mr-1 md:mr-2 text-xs md:text-sm font-semibold truncate">
+        <span
+          class="
+            text-xs
+            md:text-sm
+            font-semibold
+            max-h-8
+            md:max-h-10
+            overflow-hidden
+            break-all
+          "
+        >
           {{ title }}
         </span>
-        <IconDownload
-          class="ml-auto h-3 w-3 md:h-4 md:w-4 flex-shrink-0 text-gray-400"
-        />
       </div>
     </a>
   </li>

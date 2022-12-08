@@ -6,7 +6,7 @@
     </h2>
 
     <div class="mt-4 md:mt-8 mb-8">
-      <ul class="-m-4 p-2 md:p-4 pr-3 md:pr-5 flex flex-wrap" id="pdf-list">
+      <ul class="flex flex-wrap py-2 pr-2 md:py-4 md:pr-4 gap-2 md:gap-4">
         <SectionDownloadDocumentsListItem
           v-for="(document, index) in files"
           :key="index"
