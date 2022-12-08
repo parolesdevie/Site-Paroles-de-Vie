@@ -266,6 +266,67 @@ export default Vue.extend({
           href: '/sources/lanalyste-le-stratege-et-le-paraclet/pdf/lanalyste-le-stratege-et-le-paraclet.pdf',
           title: 'L’ANALYSTE, LE STRATÈGE ET LE PARACLET',
         },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          href: '/sources/le-montanisme/pdf/le-montanisme.pdf',
+          title: 'Le Montanisme',
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          href: '/sources/la-pneumatologie-de-levangile-de-jean-un-essai-de-synthese/pdf/la-pneumatologie-de-levangile-de-jean-un-essai-de-synthese.pdf',
+          title: 'LA PNEUMATOLOGIE DE L’ÉVANGILE DE JEAN. UN ESSAI DE SYNTHÈSE',
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          href: '/sources/le-commentaire-de-jean-zumstein-sur-levangile-de-jean/pdf/le-commentaire-de-jean-zumstein-sur-levangile-de-jean.pdf',
+          title: 'LE COMMENTAIRE DE JEAN ZUMSTEIN SUR L’ÉVANGILE DE JEAN',
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          href: '/sources/parmi-les-livres/pdf/parmi-les-livres.pdf',
+          title: 'PARMI LES LIVRES',
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          href: '/sources/parmi-les-livres/pdf/parmi-les-livres-2.pdf',
+          title: 'PARMI LES LIVRES 2',
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          href: '/sources/laudatio-jean-zumstein/pdf/laudatio-jean-zumstein.pdf',
+          title: 'LAUDATIO JEAN ZUMSTEIN',
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          href: '/sources/des-noms-et-des-nombres-dans-le-christianisme-primitif/pdf/des-noms-et-des-nombres-dans-le-christianisme-primitif.pdf',
+          title: 'DES NOMS ET DES NOMBRES DANS LE CHRISTIANISME PRIMITIF',
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          href: '/sources/islamisme-et-religions-de-larabie/pdf/islamisme-et-religions-de-larabie.pdf',
+          title: "Islamisme et religions de l'Arabie",
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          href: '/sources/eskil-franck-revelation-taught-the-paraclete-in-the-gospel-of-john/pdf/rhpr-0035-2403-1986-num-66-2-4866-t1-0229-0000-1.pdf',
+          title:
+            'Eskil Franck, Revelation Taught, The Paraclete in the Gospel of John',
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          href: '/sources/dieu-de-promesse/pdf/dieu-de-promesse.pdf',
+          title: 'Dieu-de-Promesse',
+        },
       ],
     }
   },
