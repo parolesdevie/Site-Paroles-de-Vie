@@ -30,6 +30,7 @@ export interface ITopic {
 export enum VideoLinkEnum {
   UNKNOW,
   YOUTUBE,
+  TIKTOK,
 }
 
 export interface IVideoLink {

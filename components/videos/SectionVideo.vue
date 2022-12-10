@@ -20,7 +20,17 @@
       </a>
 
       <!-- videos cards -->
-      <ul class="flex flex-wrap py-2 pr-2 md:py-4 md:pr-4 gap-2 md:gap-4">
+      <ul
+        class="
+          flex flex-wrap
+          py-2
+          pr-2
+          md:py-4 md:pr-4
+          gap-2
+          md:gap-4
+          justify-center
+        "
+      >
         <li class="contents" v-for="(video, index) in videos" :key="index">
           <a
             class="
@@ -43,6 +53,10 @@
               v-if="video.source === VideoLinkEnum.YOUTUBE"
               playColor="#fff"
               class="absolute top-2 left-2 h-7 w-7 md:h-9 md:w-9 text-red-500"
+            />
+            <IconTikTok
+              v-else-if="video.source === VideoLinkEnum.TIKTOK"
+              class="absolute top-2 left-2 h-7 w-7 md:h-9 md:w-9 text-blue-500"
             />
             <img
               v-if="video.thumbnail"
@@ -83,6 +97,7 @@ import { PropType } from 'vue/types/v3-component-props'
 import IconPlay from '~/components/icons/IconPlay.vue'
 import IconYoutube from '~/components/icons/IconYoutube.vue'
 import { IVideoLink, VideoLinkEnum } from '~/types'
+import IconTikTok from '../icons/IconTikTok.vue'
 
 export default Vue.extend({
   name: 'SectionVideo',
@@ -90,6 +105,7 @@ export default Vue.extend({
   components: {
     IconPlay,
     IconYoutube,
+    IconTikTok,
   },
 
   props: {

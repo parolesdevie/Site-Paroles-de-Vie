@@ -44,20 +44,57 @@ export default class WebSiteService {
     ]
   }
 
-  static getManuscripts(): IWebSite[] {
-    return [
-      {
+  static getManuscripts() {
+    return {
+      CODEX_SINATICUS: {
         name: 'Codex Sinaiticus',
-        href: 'https://codexsinaiticus.org/en/',
+        sites: [
+          {
+            name: 'Codex Sinaiticus .org',
+            href: 'https://codexsinaiticus.org/en/',
+          },
+          {
+            name: 'Center for the Study of New Testament Manuscripts',
+            href: 'https://manuscripts.csntm.org/manuscript/Group/GA_01',
+          },
+          {
+            name: 'The British Library',
+            href: 'http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Add_MS_43725',
+          },
+        ],
       },
-      {
+      CODEX_ALEXANDRINUS: {
         name: 'Codex Alexandrinus',
-        href: 'https://manuscripts.csntm.org/manuscript/View/GA_02',
+        sites: [
+          {
+            name: 'Center for the Study of New Testament Manuscripts',
+            href: 'https://manuscripts.csntm.org/manuscript/View/GA_02',
+          },
+        ],
       },
-      {
-        name: 'Digital Vatican Library',
-        href: 'https://digi.vatlib.it/mss/',
+      CODEX_VATICANUS: {
+        name: 'Codex Vaticanus',
+        sites: [
+          {
+            name: 'Center for the Study of New Testament Manuscripts',
+            href: 'https://manuscripts.csntm.org/manuscript/Group/GA_03',
+          },
+        ],
       },
-    ]
+      OTHERS: [
+        {
+          name: 'The British Library',
+          href: 'https://www.bl.uk/manuscripts/',
+        },
+        {
+          name: 'Center for the Study of New Testament Manuscripts',
+          href: 'https://manuscripts.csntm.org/manuscript',
+        },
+        {
+          name: 'Digital Vatican Library',
+          href: 'https://digi.vatlib.it/mss/',
+        },
+      ],
+    }
   }
 }

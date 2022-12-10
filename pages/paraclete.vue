@@ -2,42 +2,104 @@
   <div class="flex flex-col min-h-screen">
     <!-- header -->
     <Header />
-    <div class="container mx-auto mb-auto px-3 md:px-0 py-4 flex flex-col">
-      <Breadcrumb :items="breadcrumbItems" />
+    <div class="mb-auto px-3 md:px-0 py-4 flex flex-col">
+      <Breadcrumb class="container mx-auto" :items="breadcrumbItems" />
 
-      <section class="mt-4 md:mt-10">
+      <section class="container mx-auto mt-4 md:mt-10">
+        <div class="relative flex flex-col md:flex-row">
+          <div class="contents">
+            <img
+              class="
+                absolute
+                md:relative
+                top-0
+                right-0
+                h-9
+                w-h-9
+                md:h-56 md:w-56
+                rounded-full
+                md:rounded-xl
+                flex-shrink-0
+              "
+              src="/images/topic/paraclete.webp"
+              alt=""
+            />
+          </div>
+
+          <div class="md:ml-4">
+            <!-- title -->
+            <h1 class="font-bold text-3xl md:text-4xl pr-9 truncate">
+              Le Paraclet
+            </h1>
+
+            <p
+              class="
+                mt-4
+                md:mt-8
+                font-semibold
+                text-base text-gray-800
+                max-w-2xl
+              "
+            >
+              Paraclet (<a
+                class="hover:text-blue-700"
+                href="https://fr.wiktionary.org/wiki/%CF%80%CE%B1%CF%81%CE%AC%CE%BA%CE%BB%CE%B7%CF%84%CE%BF%CF%82"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Παράκλητος, Parakletos</a
+              >, en latin
+              <a
+                class="hover:text-blue-700"
+                href="https://fr.wiktionary.org/wiki/paracletus"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Paracletus</a
+              >) est un mot d'origine grecque qui signifie «
+              <strong> celui qu'on appelle à son secours </strong>» (de
+              παρακαλέω, « appeler auprès de soi»), ou « celui qui intercède »,
+              formant les substantifs « avocat », « défenseur », « intercesseur
+              ».
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="-mx-3 px-3 mt-4 md:mt-10 bg-gray-200 py-4 md:py-10 md:px-40"
+      >
         <!-- title -->
-        <h1 class="flex items-center font-bold text-3xl md:text-4xl">
-          Le Paraclet
-        </h1>
+        <h2 class="flex items-center font-bold text-2xl md:text-3xl">
+          Réfutation de la thèse islamique
+        </h2>
 
-        <p class="mt-4 md:mt-8 font-semibold text-base text-gray-800 max-w-2xl">
-          Paraclet (<a
+        <p class="mt-4 md:mt-8 font-semibold text-base max-w-5xl">
+          Muhammad contredit les paroles de Jésus (<a
             class="hover:text-blue-700"
-            href="https://fr.wiktionary.org/wiki/%CF%80%CE%B1%CF%81%CE%AC%CE%BA%CE%BB%CE%B7%CF%84%CE%BF%CF%82"
+            href="https://www.tiktok.com/@chaine.coliseum/video/7129761699342601478"
             target="_blank"
             rel="noopener noreferrer"
-            >Παράκλητος, Parakletos</a
-          >, en latin
-          <a
-            class="hover:text-blue-700"
-            href="https://fr.wiktionary.org/wiki/paracletus"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Paracletus</a
-          >) est un mot d'origine grecque qui signifie «
-          <strong> celui qu'on appelle à son secours </strong>» (de παρακαλέω, «
-          appeler auprès de soi»), ou « celui qui intercède », formant les
-          substantifs « avocat », « défenseur », « intercesseur ».
+            >dilemme de l'adultère</a
+          >) donc il parle de lui-même et ne lui rend pas témoignage (<strong
+            >Jn 14:26</strong
+          >, <strong>Jn 15:26</strong>, <strong>Mat 24:35</strong>,
+          <strong>Luc 16:18</strong>, <strong>Coran 33:37</strong>), il est ni
+          dans la vérité, ni un esprit (<strong>Jn 14:26</strong>,
+          <strong>Jn 15:26</strong>), ni éternel (<strong>Jn 14:16</strong>), ni
+          connu des apôtres (<strong>Jn 14:16</strong>), ni dans les apôtres
+          (<strong>Jn 14:17</strong>) et Il ne peut être celui qui nous vient en
+          aide si on lui vient même en aide (<strong>Coran 7:157</strong>).
         </p>
       </section>
 
-      <SectionDownloadDocumentsList class="mt-4 md:mt-10" :files="files" />
+      <SectionDownloadDocumentsList
+        class="container mx-auto mt-4 md:mt-10"
+        :files="files"
+      />
 
       <!-- section youtube videos  -->
       <SectionVideo
-        class="mt-4 md:mt-10"
+        class="container mx-auto mt-4 md:mt-10"
         :playlistUrl="playlistUrl"
         :videos="videos"
       />
@@ -77,6 +139,12 @@ export default Vue.extend({
       playlistUrl:
         'https://youtube.com/playlist?list=PLaBmOZ7eJG-WG_rv9QU7qomxydYrL_2KK',
       videos: [
+        {
+          source: VideoLinkEnum.TIKTOK,
+          name: "Le Dilemme de l'adultère",
+          url: 'https://www.tiktok.com/@chaine.coliseum/video/7129761699342601478',
+          thumbnail: '/images/video/7129761699342601478.webp',
+        },
         {
           source: VideoLinkEnum.YOUTUBE,
           name: "Chaîne Catholique d'Arnaud Dumouch",
@@ -160,6 +228,12 @@ export default Vue.extend({
           name: 'Chaîne Mokrane Syphax 3x7',
           url: 'https://youtu.be/Xp77chG6CJQ',
           thumbnail: 'https://img.youtube.com/vi/Xp77chG6CJQ/mqdefault.jpg',
+        },
+        {
+          source: VideoLinkEnum.YOUTUBE,
+          name: 'Chaîne Retour du Christ',
+          url: 'https://youtu.be/oH0r4_YZZAg',
+          thumbnail: 'https://img.youtube.com/vi/oH0r4_YZZAg/mqdefault.jpg',
         },
       ],
       files: [
