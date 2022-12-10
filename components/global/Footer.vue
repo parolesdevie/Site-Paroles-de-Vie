@@ -118,7 +118,7 @@ export default Vue.extend({
   methods: {
     handleScroll: function () {
       if (this.scTimer) return
-      this.scTimer = setTimeout(() => {
+      this.scTimer = window.setTimeout(() => {
         this.scY = window.scrollY
         clearTimeout(this.scTimer)
         this.scTimer = 0
