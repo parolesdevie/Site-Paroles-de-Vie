@@ -5,24 +5,113 @@
     <div class="container mx-auto mb-auto px-3 md:px-0 py-4 flex flex-col">
       <Breadcrumb :items="breadcrumbItems" />
 
-      <!-- links -->
-      <nav class="mt-2 md:mt-4">
-        <ul class="flex flex-col leading-7">
-          <li v-for="(webSite, index) in sites" :key="index">
-            <a
-              class="flex items-center hover:text-blue-700"
-              :href="webSite.href"
-              target="_blank"
-              rel="noopener noreferrer"
+      <section class="mt-4 md:mt-10">
+        <!-- title -->
+        <h2 class="flex items-center font-bold text-2xl md:text-3 xl">
+          {{ manuscripts.CODEX_SINATICUS.name }}
+        </h2>
+        <!-- links -->
+        <nav class="mt-2 md:mt-4">
+          <ul class="flex flex-col leading-7">
+            <li
+              v-for="(webSite, index) in manuscripts.CODEX_SINATICUS.sites"
+              :key="index"
             >
-              <span class="block h-1.5 w-1.5 rounded-full bg-current mr-2" />
-              <span>
-                {{ webSite.name }}
-              </span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+              <a
+                class="inline-flex items-center hover:text-blue-700"
+                :href="webSite.href"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="block h-1.5 w-1.5 rounded-full bg-current mr-2" />
+                <span>
+                  {{ webSite.name }}
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="mt-4 md:mt-10">
+        <!-- title -->
+        <h2 class="flex items-center font-bold text-2xl md:text-3 xl">
+          {{ manuscripts.CODEX_ALEXANDRINUS.name }}
+        </h2>
+        <!-- links -->
+        <nav class="mt-2 md:mt-4">
+          <ul class="flex flex-col leading-7">
+            <li
+              v-for="(webSite, index) in manuscripts.CODEX_ALEXANDRINUS.sites"
+              :key="index"
+            >
+              <a
+                class="inline-flex items-center hover:text-blue-700"
+                :href="webSite.href"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="block h-1.5 w-1.5 rounded-full bg-current mr-2" />
+                <span>
+                  {{ webSite.name }}
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="mt-4 md:mt-10">
+        <!-- title -->
+        <h2 class="flex items-center font-bold text-2xl md:text-3 xl">
+          {{ manuscripts.CODEX_VATICANUS.name }}
+        </h2>
+        <!-- links -->
+        <nav class="mt-2 md:mt-4">
+          <ul class="flex flex-col leading-7">
+            <li
+              v-for="(webSite, index) in manuscripts.CODEX_VATICANUS.sites"
+              :key="index"
+            >
+              <a
+                class="inline-flex items-center hover:text-blue-700"
+                :href="webSite.href"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="block h-1.5 w-1.5 rounded-full bg-current mr-2" />
+                <span>
+                  {{ webSite.name }}
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="mt-4 md:mt-10">
+        <!-- title -->
+        <h2 class="flex items-center font-bold text-2xl md:text-3 xl">
+          Autres manuscrits
+        </h2>
+        <!-- links -->
+        <nav class="mt-2 md:mt-4">
+          <ul class="flex flex-col leading-7">
+            <li v-for="(webSite, index) in manuscripts.OTHERS" :key="index">
+              <a
+                class="inline-flex items-center hover:text-blue-700"
+                :href="webSite.href"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="block h-1.5 w-1.5 rounded-full bg-current mr-2" />
+                <span>
+                  {{ webSite.name }}
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
     </div>
 
     <!-- footer -->
@@ -52,7 +141,7 @@ export default Vue.extend({
           to: '/manuscripts/',
         },
       ],
-      sites: WebSiteService.getManuscripts(),
+      manuscripts: WebSiteService.getManuscripts(),
     }
   },
 })
