@@ -20,6 +20,16 @@ export default class TopicService {
         to: '/paraclete/',
         title: 'Le Paraclet',
       },
+      {
+        cover: 'the-parable-of-the-winegrowers',
+        to: '/the-parable-of-the-winegrowers/',
+        title: 'La parabole des vignerons',
+      },
+      // {
+      //   cover: 'the-falsification-of-the-bible',
+      //   to: '/the-falsification-of-the-bible/',
+      //   title: 'La falsification de la bible',
+      // },
     ]
   }
 }
