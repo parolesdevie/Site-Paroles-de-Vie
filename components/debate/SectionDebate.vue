@@ -2,7 +2,7 @@
   <section>
     <!-- title -->
     <h2 class="flex items-center font-bold text-2xl md:text-3xl">
-      Recommandations de Vidéos
+      Recommandations de Débats
     </h2>
 
     <!-- links -->
@@ -35,11 +35,6 @@
           <a
             class="
               relative
-              h-24
-              w-32
-              md:h-52 md:w-80
-              pb-6
-              md:pb-8
               bg-gray-200
               rounded-lg
               overflow-hidden
@@ -51,41 +46,6 @@
             rel="noopener noreferrer"
             :title="video.name"
           >
-            <IconYoutube
-              v-if="video.source === VideoLinkEnum.YOUTUBE"
-              playColor="#fff"
-              class="absolute top-2 left-2 h-7 w-7 md:h-9 md:w-9 text-red-500"
-            />
-            <IconTikTok
-              v-else-if="video.source === VideoLinkEnum.TIKTOK"
-              class="absolute top-2 left-2 h-7 w-7 md:h-9 md:w-9 text-blue-500"
-            />
-            <img
-              v-if="video.thumbnail"
-              class="h-full w-full object-cover"
-              :src="video.thumbnail"
-              alt=""
-            />
-            <span
-              class="
-                absolute
-                inset-x-0
-                bottom-0
-                w-full
-                py-1
-                px-2
-                text-xs
-                md:text-base
-                bg-black
-                duration-300
-                text-white
-                font-semibold
-                text-right
-                truncate
-              "
-            >
-              {{ video.name }}
-            </span>
           </a>
         </li>
       </ul>
@@ -102,7 +62,7 @@ import { IVideoLink, VideoLinkEnum } from '~/types'
 import IconTikTok from '../icons/IconTikTok.vue'
 
 export default Vue.extend({
-  name: 'SectionVideo',
+  name: 'SectionDebate.',
 
   components: {
     IconPlay,
