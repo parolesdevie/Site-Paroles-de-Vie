@@ -113,7 +113,6 @@
 <script lang="ts">
 import Vue from 'vue'
 import SectionDownloadDocumentsList from '~/components/document/SectionDownloadDocumentsList.vue'
-import SectionMag from '~/components/magazine/SectionMag.vue'
 import SectionVideo from '~/components/videos/SectionVideo.vue'
 import { BookService } from '~/services'
 import { AuthorEnum, FormatEnum, VideoLinkEnum } from '~/types'
@@ -121,7 +120,7 @@ import { AuthorEnum, FormatEnum, VideoLinkEnum } from '~/types'
 export default Vue.extend({
   name: 'MagazinesPage',
 
-  components: { SectionMag, SectionVideo, SectionDownloadDocumentsList },
+  components: { SectionVideo, SectionDownloadDocumentsList },
 
   data() {
     return {

@@ -5,12 +5,12 @@ export default class PdfService {
 
   static getAll(): IPdf[] {
     return [
-      {
-        tags: [AuthorEnum.BENEVOLENCE],
-        author: AuthorEnum.BENEVOLENCE,
-        slug: 'model-document-1',
-        title: 'Model Document 1',
-      },
+      // {
+      //   tags: [AuthorEnum.BENEVOLENCE],
+      //   author: AuthorEnum.BENEVOLENCE,
+      //   slug: 'model-document-1',
+      //   title: 'Model Document 1',
+      // },
       {
         tags: [AuthorEnum.JOZUA, AuthorTeamEnum.COLISEUM],
         author: AuthorEnum.JOZUA,

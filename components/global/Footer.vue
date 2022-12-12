@@ -12,7 +12,7 @@
           h-12
           w-12
           md:h-14 md:w-14
-          bg-orange-500
+          bg-red-500
           text-white
           rounded-full
           flex
