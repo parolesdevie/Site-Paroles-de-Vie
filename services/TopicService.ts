@@ -11,9 +11,14 @@ export default class TopicService {
         title: 'Manuscrits',
       },
       {
-        cover: 'debates-tips',
-        to: '/debates-tips/',
-        title: 'Conseils de débats',
+        cover: 'read-the-bible',
+        to: '/read-the-bible/',
+        title: 'Lire la Bible',
+      },
+      {
+        cover: 'gospel',
+        to: '/gospel/',
+        title: 'Louanges',
       },
       {
         cover: 'paraclete',
@@ -25,11 +30,21 @@ export default class TopicService {
         to: '/the-parable-of-the-winegrowers/',
         title: 'La parabole des vignerons',
       },
-      // {
-      //   cover: 'the-falsification-of-the-bible',
-      //   to: '/the-falsification-of-the-bible/',
-      //   title: 'La falsification de la bible',
-      // },
+      {
+        cover: 'debates-tips',
+        to: '/debates-tips/',
+        title: 'Conseils de débats',
+      },
+      {
+        cover: 'the-divinity-of-jesus',
+        to: '/the-divinity-of-jesus/',
+        title: 'La divinité de Jésus',
+      },
+      {
+        cover: 'the-falsification-of-the-bible',
+        to: '/the-falsification-of-the-bible/',
+        title: 'La falsification de la bible',
+      },
     ]
   }
 }

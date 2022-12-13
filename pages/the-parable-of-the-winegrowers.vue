@@ -5,66 +5,19 @@
     <div class="mb-auto px-3 md:px-0 py-4 flex flex-col">
       <Breadcrumb class="container mx-auto" :items="breadcrumbItems" />
 
-      <section class="container mx-auto mt-4 md:mt-10">
-        <div class="relative flex flex-col md:flex-row">
-          <div class="contents">
-            <img
-              class="
-                absolute
-                md:relative
-                top-0
-                right-0
-                h-9
-                w-h-9
-                md:h-56 md:w-56
-                rounded-full
-                md:rounded-xl
-                flex-shrink-0
-              "
-              src="/images/topic/the-parable-of-the-winegrowers.webp"
-              alt=""
-            />
-          </div>
-
-          <div class="md:ml-4">
-            <!-- title -->
-            <h1
-              class="
-                font-bold
-                text-3xl
-                md:text-4xl
-                pr-9
-                truncate
-                overflow-y-visible
-                md:overflow-visible
-              "
-            >
-              La parabole des vignerons
-            </h1>
-
-            <p
-              class="
-                mt-4
-                md:mt-8
-                font-semibold
-                text-base text-gray-800
-                max-w-2xl
-              "
-            >
-              Les Vignerons infidèles est une parabole de Jésus-Christ
-              retranscrite dans les Évangiles de Matthieu (<strong>
-                Mat 21:33-46</strong
-              >), Marc (<strong>Mc 12:1-12</strong>) et Luc (<strong
-                >Lc 20:9-19</strong
-              >), et dans l'Evangile apocryphe de Thomas (<strong
-                >Thomas 65</strong
-              >). Elle incite à porter du fruit c'est-à-dire à être fidèle et
-              obéissant aux commandements christiques. Elle menace du châtiment
-              divin quiconque rejettera Jésus.
-            </p>
-          </div>
-        </div>
-      </section>
+      <!-- intro -->
+      <SectionIntroTopics topicSlug="the-parable-of-the-winegrowers">
+        <template v-slot:title>La parabole des vignerons</template>
+        <template v-slot:body>
+          Les Vignerons infidèles est une parabole de Jésus-Christ retranscrite
+          dans les Évangiles de Matthieu (<strong> Mat 21:33-46</strong>), Marc
+          (<strong>Mc 12:1-12</strong>) et Luc (<strong>Lc 20:9-19</strong>), et
+          dans l'Evangile apocryphe de Thomas (<strong>Thomas 65</strong>). Elle
+          incite à porter du fruit c'est-à-dire à être fidèle et obéissant aux
+          commandements christiques. Elle menace du châtiment divin quiconque
+          rejettera Jésus.
+        </template>
+      </SectionIntroTopics>
 
       <BgColorSection>
         <template v-slot:title>Réfutation de la thèse islamique</template>
@@ -116,6 +69,7 @@
 import Vue from 'vue'
 import SectionDebate from '~/components/debate/SectionDebate.vue'
 import SectionDownloadDocumentsList from '~/components/document/SectionDownloadDocumentsList.vue'
+import SectionIntroTopics from '~/components/topics/SectionIntroTopics.vue'
 import SectionVideo from '~/components/videos/SectionVideo.vue'
 import { BookService, DebateService } from '~/services'
 import { AuthorEnum, FormatEnum, VideoLinkEnum } from '~/types'
@@ -123,7 +77,12 @@ import { AuthorEnum, FormatEnum, VideoLinkEnum } from '~/types'
 export default Vue.extend({
   name: 'MagazinesPage',
 
-  components: { SectionVideo, SectionDownloadDocumentsList, SectionDebate },
+  components: {
+    SectionVideo,
+    SectionDownloadDocumentsList,
+    SectionDebate,
+    SectionIntroTopics,
+  },
 
   data() {
     return {

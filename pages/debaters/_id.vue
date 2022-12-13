@@ -66,7 +66,7 @@ export default Vue.extend({
     const currentDebater = DebaterService.getById(id)
     const debates = DebateService.getByDebaterId(id)
     const backUrl = context?.from?.path || '/'
-    console.log(backUrl)
+
     return {
       breadcrumbItems: [
         {

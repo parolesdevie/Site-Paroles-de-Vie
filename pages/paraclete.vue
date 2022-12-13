@@ -5,65 +5,31 @@
     <div class="mb-auto px-3 md:px-0 py-4 flex flex-col">
       <Breadcrumb class="container mx-auto" :items="breadcrumbItems" />
 
-      <section class="container mx-auto mt-4 md:mt-10">
-        <div class="relative flex flex-col md:flex-row">
-          <div class="contents">
-            <img
-              class="
-                absolute
-                md:relative
-                top-0
-                right-0
-                h-9
-                w-h-9
-                md:h-56 md:w-56
-                rounded-full
-                md:rounded-xl
-                flex-shrink-0
-              "
-              src="/images/topic/paraclete.webp"
-              alt=""
-            />
-          </div>
+      <!-- intro -->
+      <SectionIntroTopics topicSlug="paraclete">
+        <template v-slot:title>Le Paraclet</template>
 
-          <div class="md:ml-4">
-            <!-- title -->
-            <h1 class="font-bold text-3xl md:text-4xl pr-9 truncate">
-              Le Paraclet
-            </h1>
-
-            <p
-              class="
-                mt-4
-                md:mt-8
-                font-semibold
-                text-base text-gray-800
-                max-w-2xl
-              "
-            >
-              Paraclet (<a
-                class="hover:text-blue-700"
-                href="https://fr.wiktionary.org/wiki/%CF%80%CE%B1%CF%81%CE%AC%CE%BA%CE%BB%CE%B7%CF%84%CE%BF%CF%82"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Παράκλητος, Parakletos</a
-              >, en latin
-              <a
-                class="hover:text-blue-700"
-                href="https://fr.wiktionary.org/wiki/paracletus"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Paracletus</a
-              >) est un mot d'origine grecque qui signifie «
-              <strong> celui qu'on appelle à son secours </strong>» (de
-              παρακαλέω, « appeler auprès de soi»), ou « celui qui intercède »,
-              formant les substantifs « avocat », « défenseur », « intercesseur
-              ».
-            </p>
-          </div>
-        </div>
-      </section>
+        <template v-slot:body>
+          Paraclet (<a
+            class="hover:text-blue-700"
+            href="https://fr.wiktionary.org/wiki/%CF%80%CE%B1%CF%81%CE%AC%CE%BA%CE%BB%CE%B7%CF%84%CE%BF%CF%82"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Παράκλητος, Parakletos</a
+          >, en latin
+          <a
+            class="hover:text-blue-700"
+            href="https://fr.wiktionary.org/wiki/paracletus"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Paracletus</a
+          >) est un mot d'origine grecque qui signifie «
+          <strong> celui qu'on appelle à son secours </strong>» (de παρακαλέω, «
+          appeler auprès de soi»), ou « celui qui intercède », formant les
+          substantifs « avocat », « défenseur », « intercesseur ».
+        </template>
+      </SectionIntroTopics>
 
       <BgColorSection>
         <template v-slot:title>Réfutation de la thèse islamique</template>
@@ -108,14 +74,20 @@
 import Vue from 'vue'
 import SectionDownloadDocumentsList from '~/components/document/SectionDownloadDocumentsList.vue'
 import BgColorSection from '~/components/global/bgColorSection.vue'
+import SectionIntroTopics from '~/components/topics/SectionIntroTopics.vue'
 import SectionVideo from '~/components/videos/SectionVideo.vue'
 import { BookService } from '~/services'
 import { AuthorEnum, FormatEnum, VideoLinkEnum } from '~/types'
 
 export default Vue.extend({
-  name: 'MagazinesPage',
+  name: 'ParacletePage',
 
-  components: { SectionVideo, SectionDownloadDocumentsList, BgColorSection },
+  components: {
+    SectionVideo,
+    SectionDownloadDocumentsList,
+    BgColorSection,
+    SectionIntroTopics,
+  },
 
   data() {
     return {

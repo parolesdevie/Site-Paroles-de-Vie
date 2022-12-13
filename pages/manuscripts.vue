@@ -127,7 +127,7 @@ import Breadcrumb from '~/components/global/Breadcrumb.vue'
 import { WebSiteService } from '~/services'
 
 export default Vue.extend({
-  name: 'MagazinesPage',
+  name: 'ManuscriptsPage',
 
   components: { Breadcrumb },
 

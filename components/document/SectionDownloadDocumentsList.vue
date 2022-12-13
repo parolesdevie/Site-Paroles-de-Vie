@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section v-if="files.length">
     <!-- title -->
     <h2 class="flex items-center font-bold text-2xl md:text-3xl">
       Télécharger un document
