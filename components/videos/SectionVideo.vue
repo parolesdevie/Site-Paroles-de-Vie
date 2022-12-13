@@ -21,15 +21,14 @@
 
       <!-- videos cards -->
       <ul
-        class="
+        :class="`
           flex flex-wrap
           py-2
           pr-2
           md:py-4 md:pr-4
           gap-2
           md:gap-4
-          justify-center
-        "
+          ${left ? '' : 'justify-center'}`"
       >
         <li class="contents" v-for="(video, index) in videos" :key="index">
           <a
@@ -129,6 +128,10 @@ export default Vue.extend({
   },
 
   props: {
+    left: {
+      type: Boolean,
+      default: false,
+    },
     title: {
       type: String,
       default: 'Recommandations de Vidéos',
