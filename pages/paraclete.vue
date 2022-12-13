@@ -8,7 +8,6 @@
       <!-- intro -->
       <SectionIntroTopics topicSlug="paraclete">
         <template v-slot:title>Le Paraclet</template>
-
         <template v-slot:body>
           Paraclet (<a
             class="hover:text-blue-700"

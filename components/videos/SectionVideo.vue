@@ -2,7 +2,7 @@
   <section>
     <!-- title -->
     <h2 class="flex items-center font-bold text-2xl md:text-3xl">
-      Recommandations de Vidéos
+      {{ title }}
     </h2>
 
     <!-- links -->
@@ -129,6 +129,10 @@ export default Vue.extend({
   },
 
   props: {
+    title: {
+      type: String,
+      default: 'Recommandations de Vidéos',
+    },
     playlistId: {
       type: String,
       default: '',
