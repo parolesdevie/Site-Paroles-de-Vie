@@ -66,15 +66,9 @@
         </div>
       </section>
 
-      <section
-        class="-mx-3 px-3 mt-4 md:mt-10 bg-gray-200 py-4 md:py-10 md:px-40"
-      >
-        <!-- title -->
-        <h2 class="flex items-center font-bold text-2xl md:text-3xl">
-          Réfutation de la thèse islamique
-        </h2>
-
-        <p class="mt-4 md:mt-8 font-semibold text-base max-w-5xl">
+      <BgColorSection>
+        <template v-slot:title>Réfutation de la thèse islamique</template>
+        <template v-slot:body>
           La da’wa, le prosélytisme islamique, affirme que la prophétie du
           Christ en <strong>Mat 21:43</strong>, « le Royaume de Dieu vous sera
           retiré et donné à un autre peuple qui en rendra des fruits »
@@ -91,8 +85,8 @@
           montrerons par ailleurs que cette prétention de la da’wa est en
           réalité une affirmation très grave car complètement
           <strong>antichrist</strong>.
-        </p>
-      </section>
+        </template>
+      </BgColorSection>
 
       <SectionDownloadDocumentsList
         class="container mx-auto mt-4 md:mt-10"
@@ -123,7 +117,7 @@ import Vue from 'vue'
 import SectionDebate from '~/components/debate/SectionDebate.vue'
 import SectionDownloadDocumentsList from '~/components/document/SectionDownloadDocumentsList.vue'
 import SectionVideo from '~/components/videos/SectionVideo.vue'
-import { BookService } from '~/services'
+import { BookService, DebateService } from '~/services'
 import { AuthorEnum, FormatEnum, VideoLinkEnum } from '~/types'
 
 export default Vue.extend({
@@ -190,6 +184,12 @@ export default Vue.extend({
           thumbnail: '/images/video/7140479614119415045.webp',
         },
         {
+          source: VideoLinkEnum.YOUTUBE,
+          name: 'Parabole des mauvais vignerons - Jean-Marc Thobois',
+          url: 'https://www.youtube.com/watch?v=00lnO2Ws7Ak',
+          thumbnail: 'https://img.youtube.com/vi/00lnO2Ws7Ak/mqdefault.jpg',
+        },
+        {
           source: VideoLinkEnum.TIKTOK,
           name: 'Extrait débat Coliseum | JMS Vs Hanane & Ali',
           url: 'https://www.tiktok.com/@chaine.coliseum/video/7158836430087654661',
@@ -224,7 +224,7 @@ export default Vue.extend({
           title: 'La Parabole des vignerons 2éme partie',
         },
       ],
-      debates: [],
+      debates: DebateService.getAll(),
     }
   },
 })

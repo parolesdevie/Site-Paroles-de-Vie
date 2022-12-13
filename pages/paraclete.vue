@@ -65,15 +65,9 @@
         </div>
       </section>
 
-      <section
-        class="-mx-3 px-3 mt-4 md:mt-10 bg-gray-200 py-4 md:py-10 md:px-40"
-      >
-        <!-- title -->
-        <h2 class="flex items-center font-bold text-2xl md:text-3xl">
-          Réfutation de la thèse islamique
-        </h2>
-
-        <p class="mt-4 md:mt-8 font-semibold text-base max-w-5xl">
+      <BgColorSection>
+        <template v-slot:title>Réfutation de la thèse islamique</template>
+        <template v-slot:body>
           Muhammad contredit les paroles de Jésus (<a
             class="hover:text-blue-700"
             href="https://www.tiktok.com/@chaine.coliseum/video/7129761699342601478"
@@ -89,8 +83,8 @@
           connu des apôtres (<strong>Jn 14:16</strong>), ni dans les apôtres
           (<strong>Jn 14:17</strong>) et Il ne peut être celui qui nous vient en
           aide si on lui vient même en aide (<strong>Coran 7:157</strong>).
-        </p>
-      </section>
+        </template>
+      </BgColorSection>
 
       <SectionDownloadDocumentsList
         class="container mx-auto mt-4 md:mt-10"
@@ -100,7 +94,7 @@
       <!-- section youtube videos  -->
       <SectionVideo
         class="container mx-auto mt-4 md:mt-10"
-        :playlistUrl="playlistUrl"
+        :playlistId="playlistIdVideos"
         :videos="videos"
       />
     </div>
@@ -113,6 +107,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import SectionDownloadDocumentsList from '~/components/document/SectionDownloadDocumentsList.vue'
+import BgColorSection from '~/components/global/bgColorSection.vue'
 import SectionVideo from '~/components/videos/SectionVideo.vue'
 import { BookService } from '~/services'
 import { AuthorEnum, FormatEnum, VideoLinkEnum } from '~/types'
@@ -120,7 +115,7 @@ import { AuthorEnum, FormatEnum, VideoLinkEnum } from '~/types'
 export default Vue.extend({
   name: 'MagazinesPage',
 
-  components: { SectionVideo, SectionDownloadDocumentsList },
+  components: { SectionVideo, SectionDownloadDocumentsList, BgColorSection },
 
   data() {
     return {
@@ -135,8 +130,7 @@ export default Vue.extend({
         },
       ],
       books: BookService.getAll(),
-      playlistUrl:
-        'https://youtube.com/playlist?list=PLaBmOZ7eJG-WG_rv9QU7qomxydYrL_2KK',
+      playlistIdVideos: 'PLaBmOZ7eJG-WG_rv9QU7qomxydYrL_2KK',
       videos: [
         {
           source: VideoLinkEnum.TIKTOK,

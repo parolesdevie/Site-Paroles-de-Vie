@@ -16,39 +16,11 @@
         rel="noopener noreferrer"
       >
         <IconPlay class="h-7 w-7 md:h-9 md:w-9" />
-        <span class="ml-2">Lire la playlist sur YouTube</span>
+        <span class="ml-2">Lire la playlist de débats sur YouTube</span>
       </a>
 
-      <!-- videos cards -->
-      <ul
-        class="
-          flex flex-wrap
-          py-2
-          pr-2
-          md:py-4 md:pr-4
-          gap-2
-          md:gap-4
-          justify-center
-        "
-      >
-        <li class="contents" v-for="(video, index) in videos" :key="index">
-          <a
-            class="
-              relative
-              bg-gray-200
-              rounded-lg
-              overflow-hidden
-              flex
-              items-center
-            "
-            :href="video.url"
-            target="_blank"
-            rel="noopener noreferrer"
-            :title="video.name"
-          >
-          </a>
-        </li>
-      </ul>
+      <!-- table of debates -->
+      <TableDebate class="mt-2 md:mt-4" :debates="debates" hideSubject />
     </nav>
   </section>
 </template>
@@ -57,17 +29,19 @@
 import Vue from 'vue'
 import { PropType } from 'vue/types/v3-component-props'
 import IconPlay from '~/components/icons/IconPlay.vue'
-import IconYoutube from '~/components/icons/IconYoutube.vue'
-import { IVideoLink, VideoLinkEnum } from '~/types'
-import IconTikTok from '../icons/IconTikTok.vue'
+import IconYouTube from '~/components/icons/IconYouTube.vue'
+import IconTikTok from '~/components/icons/IconTikTok.vue'
+import { IDebat, DebatPlateformEnum } from '~/types'
+import TableDebate from './TableDebate.vue'
 
 export default Vue.extend({
   name: 'SectionDebate.',
 
   components: {
     IconPlay,
-    IconYoutube,
+    IconYouTube,
     IconTikTok,
+    TableDebate,
   },
 
   props: {
@@ -75,15 +49,15 @@ export default Vue.extend({
       type: String,
       default: '',
     },
-    videos: {
-      type: Array as PropType<IVideoLink[]>,
+    debates: {
+      type: Array as PropType<IDebat[]>,
       default: () => [],
     },
   },
 
   data() {
     return {
-      VideoLinkEnum,
+      DebatPlateformEnum,
     }
   },
 })

@@ -3,6 +3,7 @@
     <!-- header -->
     <Header />
     <div class="container mx-auto mb-auto px-3 md:px-0 py-4 flex flex-col">
+      <!-- breadcrumb -->
       <Breadcrumb :items="breadcrumbItems" />
 
       <section class="mt-4 md:mt-10">
@@ -60,6 +61,7 @@
           </ul>
         </nav>
       </section>
+
       <section class="mt-4 md:mt-10">
         <!-- title -->
         <h2 class="flex items-center font-bold text-2xl md:text-3 xl">

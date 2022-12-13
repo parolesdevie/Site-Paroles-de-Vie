@@ -1,5 +1,6 @@
 <template>
   <footer class="px-3 md:px-0 py-4 md:py-12 bg-black">
+    <!-- scroll to top button -->
     <transition name="fade">
       <span
         tabindex="0"
@@ -28,17 +29,69 @@
       </span>
     </transition>
 
-    <div class="container mx-auto flex flex-col md:flex-row gap-10">
+    <div
+      class="
+        container
+        mx-auto
+        flex flex-col
+        items-start
+        lg:flex-row
+        gap-10
+        lg:gap-20
+      "
+    >
+      <!-- logo -->
+      <div
+        class="
+          mr-10
+          flex
+          lg:flex-col
+          items-center
+          text-white
+          hover:text-blue-500
+        "
+      >
+        <NuxtLink to="/">
+          <IconsIconLogoUni class="h-12 w-12 md:h-14 md:w-14" />
+        </NuxtLink>
+        <a
+          href="https://www.tiktok.com/@paroles.de.vie"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="
+            ml-3
+            lg:ml-0
+            font-bold
+            hover:text-blue-500
+            inline-flex
+            flex-col
+            lg:items-center
+          "
+        >
+          <span class="text-xl lg:text-base">Paroles</span>
+          <span class="text-sm lg:text-base">de Vie</span>
+        </a>
+      </div>
+
       <!-- internal links -->
       <div class="flex flex-col mb-4" v-if="linksMainMenu.length">
-        <strong class="font-bold text-sm md:text-lg text-gray-300 uppercase">
-          Paroles de vie
-        </strong>
+        <div
+          class="
+            font-bold
+            text-sm
+            md:text-lg
+            text-gray-300
+            uppercase
+            flex
+            items-center
+          "
+        >
+          <IconsIconLogoUni class="h-6" />
+          <strong class="ml-2">Paroles de vie</strong>
+        </div>
 
         <nav class="contents">
-          <ul
-            class="mt-2 md:mt-4 text-gray-400 flex flex-wrap md:flex-col gap-2"
-          >
+          <ul class="mt-2 md:mt-4 text-gray-400 flex flex-wrap flex-col gap-2">
             <li v-for="(link, index) in linksMainMenu" :key="index">
               <NuxtLink
                 class="
@@ -61,15 +114,63 @@
 
       <!-- discord -->
       <div class="flex flex-col mb-4" v-if="linksMenuDiscord.length">
-        <strong class="font-bold text-sm md:text-lg text-gray-300 uppercase">
-          Discord
-        </strong>
+        <div
+          class="
+            font-bold
+            text-sm
+            md:text-lg
+            text-gray-300
+            uppercase
+            flex
+            items-center
+          "
+        >
+          <IconDiscord class="h-4" />
+          <strong class="ml-2">Discord</strong>
+        </div>
 
         <nav class="contents">
-          <ul
-            class="mt-2 md:mt-4 text-gray-400 flex flex-wrap md:flex-col gap-2"
-          >
+          <ul class="mt-2 md:mt-4 text-gray-400 flex flex-wrap flex-col gap-2">
             <li v-for="(link, index) in linksMenuDiscord" :key="index">
+              <NuxtLink
+                class="
+                  flex
+                  items-center
+                  hover:text-blue-500
+                  text-xs
+                  md:text-base
+                "
+                :to="link.to"
+              >
+                <span>
+                  {{ link.name }}
+                </span>
+              </NuxtLink>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- TikTok -->
+      <div class="flex flex-col mb-4" v-if="linksMenuTikTok.length">
+        <div
+          class="
+            font-bold
+            text-sm
+            md:text-lg
+            text-gray-300
+            uppercase
+            flex
+            items-center
+          "
+        >
+          <IconTikTok class="h-4" />
+          <strong class="ml-2">TikTok</strong>
+        </div>
+
+        <nav class="contents">
+          <ul class="mt-2 md:mt-4 text-gray-400 flex flex-wrap flex-col gap-2">
+            <li v-for="(link, index) in linksMenuTikTok" :key="index">
               <NuxtLink
                 class="
                   flex
@@ -96,16 +197,19 @@
 import Vue from 'vue'
 import { MenuService } from '~/services'
 import IconChevronUp from '~/components/icons/IconChevronUp.vue'
+import IconTikTok from '~/components/icons/IconTikTok.vue'
+import IconDiscord from '~/components/icons/IconDiscord.vue'
 
 export default Vue.extend({
   name: 'Footer',
 
-  components: { IconChevronUp },
+  components: { IconChevronUp, IconTikTok, IconDiscord },
 
   data() {
     return {
       linksMainMenu: MenuService.getMainMenu(),
       linksMenuDiscord: MenuService.getDiscordMenu(),
+      linksMenuTikTok: MenuService.getTikTokMenu(),
       scTimer: 0,
       scY: 0,
     }
