@@ -97,4 +97,21 @@ export default class WebSiteService {
       ],
     }
   }
+
+  static getBibles() {
+    return [
+      {
+        name: 'levangile.com',
+        href: 'https://www.levangile.com/Affichage-Multi-Bible.php',
+      },
+      {
+        name: 'saintebible.com',
+        href: 'https://saintebible.com/',
+      },
+      {
+        name: 'jw.org',
+        href: 'https://www.jw.org/fr/biblioth%C3%A8que/bible/nwt/livres/',
+      },
+    ]
+  }
 }
