@@ -77,3 +77,28 @@ export interface ISourceFile {
   href: string
   title: string
 }
+
+export enum DebatPlateformEnum {
+  UNKNOW = 'Unknow',
+  YOUTUBE = 'YouTube',
+  TIKTOK = 'TikTok',
+  DISCORD = 'Discord',
+}
+
+export interface IDebaterProfils {
+  id: number
+  pseudo?: string
+  name?: string
+  religion?: string
+}
+
+export interface IDebater extends IDebaterProfils {
+  team?: Number
+}
+export interface IDebat {
+  date: string
+  url: string
+  subject: string
+  debaters: IDebater[]
+  plateform: DebatPlateformEnum.YOUTUBE
+}
