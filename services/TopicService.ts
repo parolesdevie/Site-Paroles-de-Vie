@@ -45,6 +45,11 @@ export default class TopicService {
         to: '/the-falsification-of-the-bible/',
         title: 'La falsification de la bible',
       },
+      {
+        cover: 'the-crucifixion-in-the-bible',
+        to: '/the-crucifixion-in-the-bible/',
+        title: 'La crucifixion dans la bible',
+      },
     ]
   }
 }

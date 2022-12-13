@@ -183,7 +183,7 @@ export default Vue.extend({
           title: 'La Parabole des vignerons 2éme partie',
         },
       ],
-      debates: DebateService.getAll(),
+      debates: DebateService.getByTopic('the-parable-of-the-winegrowers'),
     }
   },
 })

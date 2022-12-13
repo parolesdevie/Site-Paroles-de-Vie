@@ -96,6 +96,7 @@ export interface IDebater extends IDebaterProfils {
   team?: Number
 }
 export interface IDebat {
+  topic?: string
   date: string
   url: string
   subject: string

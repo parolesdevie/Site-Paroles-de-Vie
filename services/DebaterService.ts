@@ -71,6 +71,36 @@ export default class DebaterService {
         name: 'Bénévolence',
         religion: 'Chrétien',
       },
+      {
+        id: 11,
+        pseudo: 'Fidelix Verax',
+        name: 'Fidelix Verax',
+        religion: 'Chrétien',
+      },
+      {
+        id: 12,
+        pseudo: 'Qalev',
+        name: 'Qalev',
+        religion: 'Chrétien',
+      },
+      {
+        id: 13,
+        pseudo: 'Raph',
+        name: 'Raph',
+        religion: 'Chrétien',
+      },
+      {
+        id: 14,
+        pseudo: 'Jacques',
+        name: 'Jacques',
+        religion: 'Chrétien',
+      },
+      {
+        id: 15,
+        pseudo: 'Daniel',
+        name: 'Daniel',
+        religion: 'Musulman',
+      },
     ]
   }
 
