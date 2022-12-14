@@ -1,7 +1,7 @@
 <template>
   <li class="contents">
     <a
-      class="m-2 md:m-4 w-40 md:w-56 p-2 flex flex-col"
+      :class="`m-2 md:m-4 w-40 ${scaledSize} p-2 flex flex-col`"
       :href="'/pdf/' + slug + '.pdf'"
       :title="title"
       target="_blank"
@@ -10,13 +10,13 @@
       <!-- image -->
       <img
         :loading="loading"
-        class="w-40 md:w-56 rounded-xl hover:scale-110 duration-300"
+        :class="`w-40 ${scaledSize} rounded-xl hover:scale-110 duration-300`"
         :src="'/images/pdf/' + slug + '.webp'"
         alt="aperçu"
       />
 
       <!-- title footer -->
-      <div class="mt-4 flex items-center">
+      <div v-if="!onlyImage" class="mt-4 flex items-center">
         <span
           class="mr-2 md:mr-4 pr-2 text-sm md:text-base font-semibold truncate"
         >
@@ -35,11 +35,15 @@ import Vue from 'vue'
 import IconDownload from '~/components/icons/IconDownload.vue'
 
 export default Vue.extend({
-  name: 'Tag',
+  name: 'CardDocument',
 
   components: { IconDownload },
 
   props: {
+    size: {
+      type: Number,
+      default: 1,
+    },
     slug: {
       type: String,
       default: '',
@@ -51,6 +55,17 @@ export default Vue.extend({
     loading: {
       type: String,
       default: '',
+    },
+    onlyImage: {
+      type: Boolean,
+      default: false,
+    },
+  },
+
+  computed: {
+    scaledSize(): string {
+      const scaledSize = this.size * 56
+      return ` md:w-${scaledSize}`
     },
   },
 })

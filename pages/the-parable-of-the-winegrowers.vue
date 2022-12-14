@@ -6,7 +6,10 @@
       <Breadcrumb class="container mx-auto" :items="breadcrumbItems" />
 
       <!-- intro -->
-      <SectionIntroTopics topicSlug="the-parable-of-the-winegrowers">
+      <SectionIntroTopics
+        topicSlug="the-parable-of-the-winegrowers"
+        :frontFile="frontFile"
+      >
         <template v-slot:title>La parabole des vignerons</template>
         <template v-slot:body>
           Les Vignerons infidèles est une parabole de Jésus-Christ retranscrite
@@ -41,11 +44,6 @@
         </template>
       </BgColorSection>
 
-      <SectionDownloadDocumentsList
-        class="container mx-auto mt-4 md:mt-10"
-        :files="files"
-      />
-
       <SectionDebate
         class="container mx-auto mt-4 md:mt-10"
         :playlistId="playlistIdDebates"
@@ -54,9 +52,15 @@
 
       <!-- section youtube videos  -->
       <SectionVideo
+        left
         class="container mx-auto mt-4 md:mt-10"
         :playlistId="playlistIdVideos"
         :videos="videos"
+      />
+
+      <SectionDownloadDocumentsList
+        class="container mx-auto mt-4 md:mt-10"
+        :files="files"
       />
     </div>
 
@@ -72,7 +76,7 @@ import SectionDownloadDocumentsList from '~/components/document/SectionDownloadD
 import SectionIntroTopics from '~/components/topics/SectionIntroTopics.vue'
 import SectionVideo from '~/components/videos/SectionVideo.vue'
 import { BookService, DebateService } from '~/services'
-import { AuthorEnum, FormatEnum, VideoLinkEnum } from '~/types'
+import { AuthorEnum, FormatEnum, ISourceFile, VideoLinkEnum } from '~/types'
 
 export default Vue.extend({
   name: 'MagazinesPage',
@@ -99,6 +103,14 @@ export default Vue.extend({
       books: BookService.getAll(),
       playlistIdDebates: 'PLaBmOZ7eJG-UWwZEGp_RWVnBqOe_iU0uw',
       playlistIdVideos: 'PLaBmOZ7eJG-XE3u8rI1SBnoi6z4853aC5',
+      frontFile: {
+        author: AuthorEnum.BENEVOLENCE,
+        format: FormatEnum.PDF,
+        slug: 'la-parabole-des-vignerons-complet',
+        thumbnail: '/images/pdf/le-paraclet',
+        href: '/pdf/le-paraclet.pdf',
+        title: 'Le Paraclet',
+      } as ISourceFile,
       videos: [
         {
           source: VideoLinkEnum.TIKTOK,

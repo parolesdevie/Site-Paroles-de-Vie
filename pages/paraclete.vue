@@ -6,7 +6,7 @@
       <Breadcrumb class="container mx-auto" :items="breadcrumbItems" />
 
       <!-- intro -->
-      <SectionIntroTopics topicSlug="paraclete">
+      <SectionIntroTopics topicSlug="paraclete" :frontFile="frontFile">
         <template v-slot:title>Le Paraclet</template>
         <template v-slot:body>
           Paraclet (<a
@@ -51,16 +51,16 @@
         </template>
       </BgColorSection>
 
-      <SectionDownloadDocumentsList
-        class="container mx-auto mt-4 md:mt-10"
-        :files="files"
-      />
-
       <!-- section youtube videos  -->
       <SectionVideo
         class="container mx-auto mt-4 md:mt-10"
         :playlistId="playlistIdVideos"
         :videos="videos"
+      />
+
+      <SectionDownloadDocumentsList
+        class="container mx-auto mt-4 md:mt-10"
+        :files="files"
       />
     </div>
 
@@ -75,8 +75,7 @@ import SectionDownloadDocumentsList from '~/components/document/SectionDownloadD
 import BgColorSection from '~/components/global/bgColorSection.vue'
 import SectionIntroTopics from '~/components/topics/SectionIntroTopics.vue'
 import SectionVideo from '~/components/videos/SectionVideo.vue'
-import { BookService } from '~/services'
-import { AuthorEnum, FormatEnum, VideoLinkEnum } from '~/types'
+import { AuthorEnum, FormatEnum, ISourceFile, VideoLinkEnum } from '~/types'
 
 export default Vue.extend({
   name: 'ParacletePage',
@@ -100,8 +99,15 @@ export default Vue.extend({
           to: '/paraclete/',
         },
       ],
-      books: BookService.getAll(),
       playlistIdVideos: 'PLaBmOZ7eJG-WG_rv9QU7qomxydYrL_2KK',
+      frontFile: {
+        author: AuthorEnum.BENEVOLENCE,
+        format: FormatEnum.PDF,
+        slug: 'le-paraclet',
+        thumbnail: '/images/pdf/le-paraclet',
+        href: '/pdf/le-paraclet.pdf',
+        title: 'Le Paraclet',
+      } as ISourceFile,
       videos: [
         {
           source: VideoLinkEnum.TIKTOK,
@@ -365,7 +371,7 @@ export default Vue.extend({
           href: '/sources/dieu-de-promesse/pdf/dieu-de-promesse.pdf',
           title: 'Dieu-de-Promesse',
         },
-      ],
+      ] as ISourceFile[],
     }
   },
 })

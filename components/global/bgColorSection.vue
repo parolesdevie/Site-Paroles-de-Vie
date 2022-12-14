@@ -1,6 +1,6 @@
 <template>
   <section
-    class="-mx-3 px-3 mt-4 md:mx-0 md:mt-10 bg-gray-200 py-4 md:py-10 md:px-40"
+    class="-mx-3 px-3 mt-4 md:mx-0 md:mt-10 bg-gray-200 py-4 md:py-10 lg:px-40"
   >
     <div class="container mx-auto">
       <!-- title -->
@@ -8,9 +8,9 @@
         <slot name="title"></slot>
       </h2>
 
-      <p class="mt-4 md:mt-8 font-semibold text-base max-w-5xl">
+      <div class="mt-4 md:mt-8 font-semibold text-base max-w-5xl">
         <slot name="body"></slot>
-      </p>
+      </div>
     </div>
   </section>
 </template>
