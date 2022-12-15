@@ -6,7 +6,16 @@
       <!-- breadcrumb -->
       <Breadcrumb :items="breadcrumbItems" />
 
-      <section class="mt-4 md:mt-10 flex gap-10">
+      <section
+        class="
+          mt-4
+          md:mt-10
+          flex flex-wrap flex-col
+          md:flex-row
+          gap-10
+          items-center
+        "
+      >
         <ManuscriptCard
           :title="manuscripts.CODEX_SINATICUS.name"
           :sites="manuscripts.CODEX_SINATICUS.sites"

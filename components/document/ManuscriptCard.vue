@@ -1,5 +1,5 @@
 <template>
-  <div class="inline-flex flex-col items-end select-none">
+  <div class="inline-flex flex-col flex-wrap items-end shrink-0 select-none">
     <div class="relative">
       <img
         tabindex="0"
