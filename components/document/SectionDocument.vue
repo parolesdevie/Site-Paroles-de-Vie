@@ -27,7 +27,7 @@
         <CardDocument
           v-for="(document, index) in filteredDocuments"
           :key="index"
-          :loading="index > 9 ? 'lazy' : ''"
+          loading="lazy"
           :author="document.author"
           :slug="document.slug"
           :title="document.title"

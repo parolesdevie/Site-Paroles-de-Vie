@@ -61,6 +61,8 @@ import IconCross from '~/components/icons/IconCross.vue'
 import { DebaterService, DebateService } from '~/services'
 
 export default Vue.extend({
+  components: { TableDebate, IconQuran, IconCross },
+
   async asyncData(context) {
     const id = parseInt(context.route.params.id)
     const currentDebater = DebaterService.getById(id)
@@ -87,6 +89,5 @@ export default Vue.extend({
       ...currentDebater,
     }
   },
-  components: { TableDebate, IconQuran, IconCross },
 })
 </script>

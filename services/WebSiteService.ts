@@ -1,5 +1,12 @@
 import { IWebSite } from '~/types'
 
+export enum ManuscriptsPlateformEnum {
+  CODEX_SINATICUS_ORG = 'Codex Sinaiticus .org',
+  CENTER_STUDY_NT = 'Center for the Study of New Testament Manuscripts',
+  DIGITAL_VATICAN_LIBRARY = 'Digital Vatican Library',
+  BRITISH_LIBRARY = 'The British Library',
+}
+
 export default class WebSiteService {
   constructor() {}
 
@@ -50,16 +57,16 @@ export default class WebSiteService {
         name: 'Codex Sinaiticus',
         sites: [
           {
-            name: 'Codex Sinaiticus .org',
+            name: ManuscriptsPlateformEnum.CODEX_SINATICUS_ORG,
             href: 'https://codexsinaiticus.org/en/',
           },
           {
-            name: 'Center for the Study of New Testament Manuscripts',
-            href: 'https://manuscripts.csntm.org/manuscript/Group/GA_01',
+            name: ManuscriptsPlateformEnum.BRITISH_LIBRARY,
+            href: 'http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Add_MS_43725',
           },
           {
-            name: 'The British Library',
-            href: 'http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Add_MS_43725',
+            name: ManuscriptsPlateformEnum.CENTER_STUDY_NT,
+            href: 'https://manuscripts.csntm.org/manuscript/Group/GA_01',
           },
         ],
       },
@@ -67,7 +74,7 @@ export default class WebSiteService {
         name: 'Codex Alexandrinus',
         sites: [
           {
-            name: 'Center for the Study of New Testament Manuscripts',
+            name: ManuscriptsPlateformEnum.CENTER_STUDY_NT,
             href: 'https://manuscripts.csntm.org/manuscript/View/GA_02',
           },
         ],
@@ -76,25 +83,28 @@ export default class WebSiteService {
         name: 'Codex Vaticanus',
         sites: [
           {
-            name: 'Center for the Study of New Testament Manuscripts',
+            name: ManuscriptsPlateformEnum.CENTER_STUDY_NT,
             href: 'https://manuscripts.csntm.org/manuscript/Group/GA_03',
           },
         ],
       },
-      OTHERS: [
-        {
-          name: 'The British Library',
-          href: 'https://www.bl.uk/manuscripts/',
-        },
-        {
-          name: 'Center for the Study of New Testament Manuscripts',
-          href: 'https://manuscripts.csntm.org/manuscript',
-        },
-        {
-          name: 'Digital Vatican Library',
-          href: 'https://digi.vatlib.it/mss/',
-        },
-      ],
+      OTHERS: {
+        name: 'Autres',
+        sites: [
+          {
+            name: ManuscriptsPlateformEnum.DIGITAL_VATICAN_LIBRARY,
+            href: 'https://digi.vatlib.it/mss/',
+          },
+          {
+            name: ManuscriptsPlateformEnum.BRITISH_LIBRARY,
+            href: 'https://www.bl.uk/manuscripts/',
+          },
+          {
+            name: ManuscriptsPlateformEnum.CENTER_STUDY_NT,
+            href: 'https://manuscripts.csntm.org/manuscript',
+          },
+        ],
+      },
     }
   }
 
