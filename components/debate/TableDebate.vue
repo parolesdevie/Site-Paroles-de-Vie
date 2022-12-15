@@ -57,28 +57,36 @@
         <td class="border-b p-2 md:p-4 md:pl-8" v-if="debat.debaters.length">
           <template v-for="(debater, index) in filterByTeam(debat.debaters, 0)">
             <NuxtLink
+              :key="'team-0-' + index"
               v-if="debater.id !== -1"
               :to="'/debaters/' + debater.id"
               class="text-sm md:text-base hover:text-blue-500"
-              :key="index"
             >
               {{ debater.name }},
             </NuxtLink>
-            <span class="text-sm md:text-base text-gray-400" v-else>
+            <span
+              :key="'team-0-' + index"
+              class="text-sm md:text-base text-gray-400"
+              v-else
+            >
               Inconnu
             </span>
           </template>
           <strong class="text-red-500"> VS </strong>
           <template v-for="(debater, index) in filterByTeam(debat.debaters, 1)">
             <NuxtLink
+              :key="'team-1-' + index"
               v-if="debater.id !== -1"
               :to="'/debaters/' + debater.id"
-              class="text-sm md:text-base hover:text-blue-500"
-              :key="index"
+              class="text-sm md:text-base hover:text-blue-510"
             >
               {{ debater.name }},
             </NuxtLink>
-            <span class="text-sm md:text-base text-gray-400" v-else>
+            <span
+              :key="'team-0-' + index"
+              class="text-sm md:text-base text-gray-400"
+              v-else
+            >
               Inconnu
             </span>
           </template>

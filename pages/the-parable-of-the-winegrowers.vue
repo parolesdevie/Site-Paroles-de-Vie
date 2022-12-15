@@ -155,16 +155,16 @@ export default Vue.extend({
           thumbnail: '/images/video/7140479614119415045.webp',
         },
         {
-          source: VideoLinkEnum.YOUTUBE,
-          name: 'Parabole des mauvais vignerons - Jean-Marc Thobois',
-          url: 'https://www.youtube.com/watch?v=00lnO2Ws7Ak',
-          thumbnail: 'https://img.youtube.com/vi/00lnO2Ws7Ak/mqdefault.jpg',
-        },
-        {
           source: VideoLinkEnum.TIKTOK,
           name: 'Extrait débat Coliseum | JMS Vs Hanane & Ali',
           url: 'https://www.tiktok.com/@chaine.coliseum/video/7158836430087654661',
           thumbnail: '/images/video/7158836430087654661.webp',
+        },
+        {
+          source: VideoLinkEnum.YOUTUBE,
+          name: 'Parabole des mauvais vignerons - Jean-Marc Thobois',
+          url: 'https://www.youtube.com/watch?v=00lnO2Ws7Ak',
+          thumbnail: 'https://img.youtube.com/vi/00lnO2Ws7Ak/mqdefault.jpg',
         },
         {
           source: VideoLinkEnum.YOUTUBE,

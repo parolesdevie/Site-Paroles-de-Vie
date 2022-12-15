@@ -16,16 +16,25 @@
               flex-col
               items-end
               select-none
-              pr-20
-              pb-20
+              px-16
+              pb-10
             "
           >
             <div class="relative">
               <div
                 tabindex="0"
-                class="mb-2 md:mb-3 h-64 w-64 bg-gray-300 rounded-xl"
+                class="
+                  mb-2
+                  md:mb-3
+                  h-40
+                  w-40
+                  md:h-56 md:w-56
+                  lg:h-64 lg:w-64
+                  bg-gray-300
+                  rounded-lg
+                "
               >
-                <HandDrownArrowComment title="aperçu" top="20" right="20" />
+                <HandDrownArrowComment title="aperçu" top="20" />
               </div>
               <div
                 class="
@@ -42,7 +51,7 @@
                 >
                   Codex
                 </span>
-                <HandDrownArrowComment title="nom du manuscrit" />
+                <HandDrownArrowComment title="nom du manuscrit" inverse />
               </div>
             </div>
             <div class="relative flex gap-2 md:gap-3">
@@ -50,11 +59,12 @@
                 v-for="i in 4"
                 :key="i"
                 class="
-                  h-10
-                  w-10
-                  md:h-12 md:w-12
+                  h-6
+                  w-6
+                  md:h-10 md:w-10
+                  lg:h-12 lg:w-12
                   bg-gray-300
-                  rounded-xl
+                  rounded-lg
                   inline-flex
                   items-center
                   justify-center
@@ -67,7 +77,7 @@
           </div>
 
           <!-- plateform -->
-          <div class="mt-4 md:mt-0">
+          <div class="mt-4 md:mt-0 md:ml-4">
             <strong class="text-lg">Plateformes</strong>
             <ul class="mt-2 md:mt-4 flex flex-col flex-wrap gap-2 md:gap-4">
               <li
@@ -107,8 +117,8 @@
             mt-4
             md:mt-10
             flex flex-wrap
-            gap-10
-            md:justify-center
+            gap-6
+            md:gap-10 md:justify-center
             lg:justify-start
           "
         >
@@ -146,6 +156,7 @@ import Vue from 'vue'
 import ManuscriptCard from '~/components/document/ManuscriptCard.vue'
 import Breadcrumb from '~/components/global/Breadcrumb.vue'
 import HandDrownArrowComment from '~/components/global/HandDrownArrowComment.vue'
+import IconBookOpen from '~/components/icons/IconBookOpen.vue'
 import IconHandDrownArrowTopLeftCorner from '~/components/icons/IconHandDrownArrowTopLeftCorner.vue'
 import { ManuscriptService, WebSiteService } from '~/services'
 import { ManuscriptsPlateformEnum } from '~/services/WebSiteService'
@@ -158,6 +169,7 @@ export default Vue.extend({
     ManuscriptCard,
     IconHandDrownArrowTopLeftCorner,
     HandDrownArrowComment,
+    IconBookOpen,
   },
 
   data() {

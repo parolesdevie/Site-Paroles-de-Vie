@@ -36,7 +36,7 @@ import SectionIntroTopics from '~/components/topics/SectionIntroTopics.vue'
 import { DebateService } from '~/services'
 
 export default Vue.extend({
-  name: 'DivinityOfJesusPage',
+  name: 'CrucifixionInBiblePage',
 
   components: { SectionIntroTopics, SectionDebate },
 

@@ -16,9 +16,6 @@
           possimus !
         </template>
       </SectionIntroTopics>
-
-      <!-- section -->
-      <section class="mt-4 md:mt-10"></section>
     </div>
 
     <!-- footer -->

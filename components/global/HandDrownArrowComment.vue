@@ -3,26 +3,26 @@
     :class="`
       absolute
       z-10
-      right-${right}
+      ${inverse ? 'left-' + right : 'right-' + right}
       top-${top}
       transform
-      translate-x-full ${top && '-translate-y-5'}
-      flex flex-col
-      items-end
-    `"
+      ${inverse ? '-translate-x-full' : 'translate-x-full'} 
+      ${top && '-translate-y-' + right}`"
   >
-    <IconHandDrownArrowTopLeftCorner class="h-10" />
+    <IconHandDrownArrowTopLeftCorner
+      :class="`h-10 ${inverse ? '-scale-x-100' : ''}`"
+    />
     <span
-      class="
+      :class="`
         absolute
-        right-0
+        ${inverse ? 'left-0' : 'right-0'}
         top-full
         pt-1
         transform
-        translate-x-1/2
+        ${inverse ? '-translate-x-1/2' : 'translate-x-1/2'}
         text-xs
-        font-['Comic_Sans_MS']
-      "
+        font-manuscrit
+      `"
     >
       {{ title }}
     </span>
@@ -49,7 +49,11 @@ export default Vue.extend({
     },
     right: {
       type: [String, Number],
-      default: '5',
+      default: '3',
+    },
+    inverse: {
+      type: Boolean,
+      default: false,
     },
   },
 })

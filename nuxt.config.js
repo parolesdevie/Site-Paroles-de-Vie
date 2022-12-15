@@ -114,8 +114,9 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    // https://tailwindcss.nuxt.dev/
+    '@nuxtjs/tailwindcss',
   ],
-
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
@@ -133,11 +134,33 @@ export default {
   build: {},
 
   tailwindcss: {
-    cssPath: '~/assets/css/tailwind.css',
-    configPath: 'tailwind.config',
-    exposeConfig: false,
-    config: {},
-    injectPosition: 0,
-    viewer: true,
+    // cssPath: '~/assets/css/tailwind.css',
+    // configPath: 'tailwind.config',
+    // exposeConfig: true,
+    config: {
+      content: ['./www/**/*.html', './safelist.txt'],
+      theme: {
+        extend: {
+          colors: {},
+          spacing: {
+            120: '30rem',
+            160: '40rem',
+          },
+          scale: {
+            120: '1.2',
+          },
+          fontFamily: {
+            manuscrit: [
+              'Comic Sans MS',
+              'Chalkboard SE',
+              'Comic Neue',
+              'sans-serif',
+            ],
+          },
+        },
+      },
+    },
+    // injectPosition: 0,
+    // viewer: true,
   },
 }
