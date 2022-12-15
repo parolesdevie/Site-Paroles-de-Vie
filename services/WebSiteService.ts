@@ -111,16 +111,28 @@ export default class WebSiteService {
   static getBibles() {
     return [
       {
-        name: 'levangile.com',
+        name: 'Site levangile.com',
         href: 'https://www.levangile.com/Affichage-Multi-Bible.php',
       },
       {
-        name: 'saintebible.com',
+        name: 'Site saintebible.com',
         href: 'https://saintebible.com/',
       },
       {
-        name: 'jw.org',
+        name: 'Site jw.org',
         href: 'https://www.jw.org/fr/biblioth%C3%A8que/bible/nwt/livres/',
+      },
+      {
+        name: 'Association Épiscopale Liturgique pour les pays Francophones',
+        href: 'https://www.aelf.org/bible',
+      },
+      {
+        name: 'Septante (Ancien Testament)',
+        href: 'https://theotex.org/septuaginta/genese/genese_1.html',
+      },
+      {
+        name: 'Nouveau Testament Grecque Francais',
+        href: 'https://theotex.org/ntgf/matthieu/matthieu_1_gf.html',
       },
     ]
   }
