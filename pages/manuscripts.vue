@@ -6,36 +6,133 @@
       <!-- breadcrumb -->
       <Breadcrumb :items="breadcrumbItems" />
 
-      <section
-        class="
-          mt-4
-          md:mt-10
-          flex flex-wrap flex-col
-          md:flex-row
-          gap-10
-          items-center
-        "
-      >
-        <ManuscriptCard
-          :title="manuscripts.CODEX_SINATICUS.name"
-          :sites="manuscripts.CODEX_SINATICUS.sites"
-          image="codex-sinaiticus"
-        />
-        <ManuscriptCard
-          :title="manuscripts.CODEX_ALEXANDRINUS.name"
-          :sites="manuscripts.CODEX_ALEXANDRINUS.sites"
-          image="codex-alexandrinus"
-        />
-        <ManuscriptCard
-          :title="manuscripts.CODEX_VATICANUS.name"
-          :sites="manuscripts.CODEX_VATICANUS.sites"
-          image="codex-vaticanus"
-        />
-        <ManuscriptCard
-          :title="manuscripts.OTHERS.name"
-          :sites="manuscripts.OTHERS.sites"
-          image="other"
-        />
+      <section class="mt-4 md:mt-10">
+        <div class="flex flex-col md:flex-row">
+          <!-- demo -->
+          <div
+            class="
+              self-center
+              inline-flex
+              flex-col
+              items-end
+              select-none
+              pr-20
+              pb-20
+            "
+          >
+            <div class="relative">
+              <div
+                tabindex="0"
+                class="mb-2 md:mb-3 h-64 w-64 bg-gray-300 rounded-xl"
+              >
+                <HandDrownArrowComment title="aperçu" top="20" right="20" />
+              </div>
+              <div
+                class="
+                  absolute
+                  inset-x-0
+                  bottom-10
+                  text-center
+                  py-2
+                  bg-black bg-opacity-60
+                "
+              >
+                <span
+                  class="uppercase font-black text-lg tracking-wider text-white"
+                >
+                  Codex
+                </span>
+                <HandDrownArrowComment title="nom du manuscrit" />
+              </div>
+            </div>
+            <div class="relative flex gap-2 md:gap-3">
+              <span
+                v-for="i in 4"
+                :key="i"
+                class="
+                  h-10
+                  w-10
+                  md:h-12 md:w-12
+                  bg-gray-300
+                  rounded-xl
+                  inline-flex
+                  items-center
+                  justify-center
+                "
+                target="_blank"
+                rel="noopener noreferrer"
+              />
+              <HandDrownArrowComment title="plateformes" />
+            </div>
+          </div>
+
+          <!-- plateform -->
+          <div class="mt-4 md:mt-0">
+            <strong class="text-lg">Plateformes</strong>
+            <ul class="mt-2 md:mt-4 flex flex-col flex-wrap gap-2 md:gap-4">
+              <li
+                class="inline-flex items-center"
+                v-for="(plateform, index) in plateforms"
+                :key="index"
+              >
+                <span
+                  class="
+                    h-10
+                    w-10
+                    md:h-12 md:w-12
+                    bg-gray-300
+                    rounded-xl
+                    inline-flex
+                    items-center
+                    justify-center
+                  "
+                >
+                  <img
+                    class="h-8 md:h-8"
+                    :src="`/images/site/${plateform.icon}.webp`"
+                    :alt="plateform.name"
+                    :title="plateform.name"
+                  />
+                </span>
+                <span class="ml-2">{{ plateform.name }}</span>
+              </li>
+              <IconBookOpen class="h-8 w-8 text-white" />
+            </ul>
+          </div>
+        </div>
+
+        <!-- codex collection -->
+        <div
+          class="
+            mt-4
+            md:mt-10
+            flex flex-wrap
+            gap-10
+            md:justify-center
+            lg:justify-start
+          "
+        >
+          <ManuscriptCard
+            :title="manuscripts.CODEX_SINATICUS.name"
+            :sites="manuscripts.CODEX_SINATICUS.sites"
+            image="codex-sinaiticus"
+          />
+          <ManuscriptCard
+            :title="manuscripts.CODEX_ALEXANDRINUS.name"
+            :sites="manuscripts.CODEX_ALEXANDRINUS.sites"
+            image="codex-alexandrinus"
+          />
+          <ManuscriptCard
+            :title="manuscripts.CODEX_VATICANUS.name"
+            :sites="manuscripts.CODEX_VATICANUS.sites"
+            image="codex-vaticanus"
+          />
+          <ManuscriptCard
+            :title="manuscripts.OTHERS.name"
+            :sites="manuscripts.OTHERS.sites"
+            image="other"
+          />
+        </div>
       </section>
     </div>
 
@@ -48,12 +145,20 @@
 import Vue from 'vue'
 import ManuscriptCard from '~/components/document/ManuscriptCard.vue'
 import Breadcrumb from '~/components/global/Breadcrumb.vue'
-import { WebSiteService } from '~/services'
+import HandDrownArrowComment from '~/components/global/HandDrownArrowComment.vue'
+import IconHandDrownArrowTopLeftCorner from '~/components/icons/IconHandDrownArrowTopLeftCorner.vue'
+import { ManuscriptService, WebSiteService } from '~/services'
+import { ManuscriptsPlateformEnum } from '~/services/WebSiteService'
 
 export default Vue.extend({
   name: 'ManuscriptsPage',
 
-  components: { Breadcrumb, ManuscriptCard },
+  components: {
+    Breadcrumb,
+    ManuscriptCard,
+    IconHandDrownArrowTopLeftCorner,
+    HandDrownArrowComment,
+  },
 
   data() {
     return {
@@ -68,6 +173,8 @@ export default Vue.extend({
         },
       ],
       manuscripts: WebSiteService.getManuscripts(),
+      ManuscriptsPlateformEnum,
+      plateforms: ManuscriptService.getPlateforms(),
     }
   },
 })

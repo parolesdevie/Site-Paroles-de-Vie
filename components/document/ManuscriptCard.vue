@@ -44,28 +44,28 @@
         rel="noopener noreferrer"
       >
         <img
-          class="h-8 w-8"
+          class="h-8 md:h-8"
           v-if="site.name === ManuscriptsPlateformEnum.CODEX_SINATICUS_ORG"
           src="/images/site/logo-codexsinaiticus.webp"
           :alt="site.name"
           :title="site.name"
         />
         <img
-          class="h-8 w-8"
+          class="h-8 md:h-8"
           v-else-if="site.name === ManuscriptsPlateformEnum.CENTER_STUDY_NT"
           src="/images/site/logo-center-study-nt.webp"
           :alt="site.name"
           :title="site.name"
         />
         <img
-          class="h-8 w-8"
+          class="h-8 md:h-8"
           v-else-if="site.name === ManuscriptsPlateformEnum.BRITISH_LIBRARY"
           src="/images/site/logo-british-library.webp"
           :alt="site.name"
           :title="site.name"
         />
         <img
-          class="h-8 w-8"
+          class="h-8 md:h-8"
           v-else-if="
             site.name === ManuscriptsPlateformEnum.DIGITAL_VATICAN_LIBRARY
           "
