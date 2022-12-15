@@ -50,6 +50,11 @@ export default class TopicService {
         to: '/the-crucifixion-in-the-bible/',
         title: 'La crucifixion dans la bible',
       },
+      {
+        cover: 'free-will',
+        to: '/free-will/',
+        title: 'Le libre arbitre',
+      },
     ]
   }
 }

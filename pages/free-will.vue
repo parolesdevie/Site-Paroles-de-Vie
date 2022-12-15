@@ -1,0 +1,50 @@
+<template>
+  <div class="flex flex-col min-h-screen">
+    <!-- header -->
+    <Header />
+    <div class="container mx-auto mb-auto px-3 md:px-0 py-4 flex flex-col">
+      <!-- breadcrumb -->
+      <Breadcrumb :items="breadcrumbItems" />
+
+      <!-- intro -->
+      <SectionIntroTopics topicSlug="free-will">
+        <template v-slot:title>Le libre arbitre</template>
+        <template v-slot:body>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aut
+          quaerat perferendis a totam et maiores sint libero similique eaque
+          omnis qui iusto, nostrum impedit esse, adipisci corrupti molestias
+          possimus !
+        </template>
+      </SectionIntroTopics>
+    </div>
+
+    <!-- footer -->
+    <Footer class="mt-40" />
+  </div>
+</template>
+
+<script lang="ts">
+import Vue from 'vue'
+import SectionIntroTopics from '~/components/topics/SectionIntroTopics.vue'
+
+export default Vue.extend({
+  name: 'DivinityOfJesusPage',
+
+  components: { SectionIntroTopics },
+
+  data() {
+    return {
+      breadcrumbItems: [
+        {
+          name: 'Home',
+          to: '/',
+        },
+        {
+          name: 'Le libre arbitre',
+          to: '/free-will/',
+        },
+      ],
+    }
+  },
+})
+</script>
