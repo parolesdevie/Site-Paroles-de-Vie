@@ -72,7 +72,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import SectionDownloadDocumentsList from '~/components/document/SectionDownloadDocumentsList.vue'
-import BgColorSection from '~/components/global/bgColorSection.vue'
+import BgColorSection from '~/components/global/BgColorSection.vue'
 import SectionIntroTopics from '~/components/topics/SectionIntroTopics.vue'
 import SectionVideo from '~/components/videos/SectionVideo.vue'
 import { AuthorEnum, FormatEnum, ISourceFile, VideoLinkEnum } from '~/types'
