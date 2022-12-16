@@ -48,7 +48,7 @@
       <span>
         {{ title }}
       </span>
-      <IconGotQuestionsLogo class="ml-auto h-6 text-blue-500" />
+      <IconGotQuestionsLogo class="ml-auto h-6 text-blue-500 shrink-0" />
     </a>
   </li>
 </template>
