@@ -6,7 +6,7 @@
     </h2>
 
     <!-- search -->
-    <SearchInput v-model="searchKeyWord" />
+    <SearchInput v-model="searchKeyWord" placeholder="Ex: le paraclet" />
 
     <!-- tags -->
     <p class="mt-2 md:mt-10 text-lg md:text-2xl">Tags</p>
@@ -23,7 +23,7 @@
     </ul>
 
     <div class="mt-4 md:mt-8 mb-8">
-      <ul class="-m-4 p-2 md:p-4 pr-3 md:pr-5 flex flex-wrap" id="pdf-list">
+      <ul class="-m-4 p-2 md:p-4 pr-3 md:pr-5 flex flex-wrap">
         <CardDocument
           v-for="(document, index) in filteredDocuments"
           :key="index"
@@ -42,14 +42,13 @@ import Vue from 'vue'
 import { PropType } from 'vue/types/v3-component-props'
 import { IPdf, ITag } from '~/types'
 import SearchInput from '~/components/forms/SearchInput.vue'
-import IconSearch from '~/components/icons/IconSearch.vue'
 import CardDocument from '~/components/document/CardDocument.vue'
 import Tag from '~/components/document/Tag.vue'
 
 export default Vue.extend({
   name: 'SectionDocument',
 
-  components: { Tag, CardDocument, IconSearch, SearchInput },
+  components: { Tag, CardDocument, SearchInput },
 
   props: {
     tags: {

@@ -157,6 +157,9 @@ export default {
               'sans-serif',
             ],
           },
+          minHeight: {
+            '1/2-screen': '50vh',
+          }
         },
       },
     },

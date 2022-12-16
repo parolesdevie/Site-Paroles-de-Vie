@@ -24,9 +24,9 @@ export default class PdfService {
         title: "L'hérésie du sabellianisme",
       },
       {
-        slug: 'l-islam-est-le plagiat-d-autres-religions',
         tags: [AuthorEnum.JOZUA, AuthorTeamEnum.COLISEUM],
         author: AuthorEnum.JOZUA,
+        slug: 'l-islam-est-le plagiat-d-autres-religions',
         title: 'L’islam est le plagiat d’autres religions',
       },
       {

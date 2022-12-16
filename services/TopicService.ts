@@ -6,6 +6,11 @@ export default class TopicService {
   static getAll(): ITopic[] {
     return [
       {
+        cover: 'questions-answer',
+        to: '/questions-answer/',
+        title: 'Tu a une questions ?',
+      },
+      {
         cover: 'manuscript',
         to: '/manuscripts/',
         title: 'Manuscrits',

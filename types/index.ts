@@ -27,6 +27,11 @@ export interface ITopic {
   title: string
 }
 
+export interface IQuestion {
+  title: string
+  slug: string
+}
+
 export enum VideoLinkEnum {
   UNKNOW,
   YOUTUBE,
@@ -48,6 +53,9 @@ export enum AuthorEnum {
   SHAM = 'sham',
   JMS = 'jms',
   FIDELIS_AND_VERAX = 'fidelis-and-verax',
+  QALEV = 'qalev',
+  SAVED_BY_CHRIST = 'saved-by-christ',
+  PROTOCOLE = 'protocole',
 }
 
 export enum AuthorTeamEnum {

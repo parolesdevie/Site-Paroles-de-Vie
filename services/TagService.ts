@@ -1,4 +1,5 @@
-import { ITag } from '~/types'
+import { AuthorEnum, AuthorTeamEnum, ITag } from '~/types'
+import PdfService from './PdfService'
 
 export default class TagService {
   constructor() {}
@@ -6,60 +7,68 @@ export default class TagService {
   static getAll(): ITag[] {
     return [
       {
-        slug: 'coliseum',
+        slug: AuthorTeamEnum.COLISEUM,
         author: 'Coliseum',
-        pdfCount: 2,
+        pdfCount: this.getPdfCountByTagSlug(AuthorTeamEnum.COLISEUM),
       },
       {
-        slug: 'theophilos',
+        slug: AuthorTeamEnum.THEOPHILOS,
         author: 'Theophilos',
-        pdfCount: 4,
+        pdfCount: this.getPdfCountByTagSlug(AuthorTeamEnum.THEOPHILOS),
       },
       {
-        slug: '',
+        slug: AuthorEnum.UNKNOW,
         author: 'Auteur Inconnu',
-        pdfCount: 45,
+        pdfCount: this.getPdfCountByTagSlug(AuthorTeamEnum.UNKNOW),
       },
       {
-        slug: 'jozua',
+        slug: AuthorEnum.JOZUA,
         author: 'Jozua',
-        pdfCount: 45,
+        pdfCount: this.getPdfCountByTagSlug(AuthorEnum.JOZUA),
       },
       {
-        slug: 'jms',
+        slug: AuthorEnum.JMS,
         author: 'Jms',
-        pdfCount: 11,
+        pdfCount: this.getPdfCountByTagSlug(AuthorEnum.JMS),
       },
       {
-        slug: 'fidelis-and-verax',
+        slug: AuthorEnum.FIDELIS_AND_VERAX,
         author: 'Fidelis & Verax',
-        pdfCount: 4,
+        pdfCount: this.getPdfCountByTagSlug(AuthorEnum.FIDELIS_AND_VERAX),
       },
       {
-        slug: 'benevolence',
+        slug: AuthorEnum.BENEVOLENCE,
         author: 'Benevolence',
-        pdfCount: 3,
+        pdfCount: this.getPdfCountByTagSlug(AuthorEnum.BENEVOLENCE),
       },
       {
-        slug: 'sham',
+        slug: AuthorEnum.SHAM,
         author: 'Sham',
-        pdfCount: 2,
+        pdfCount: this.getPdfCountByTagSlug(AuthorEnum.SHAM),
       },
       {
-        slug: 'qalev',
+        slug: AuthorEnum.QALEV,
         author: 'Qalev',
-        pdfCount: 2,
+        pdfCount: this.getPdfCountByTagSlug(AuthorEnum.QALEV),
       },
       {
-        slug: 'saved-by-christ',
+        slug: AuthorEnum.SAVED_BY_CHRIST,
         author: 'Saved By Christ',
-        pdfCount: 1,
+        pdfCount: this.getPdfCountByTagSlug(AuthorEnum.SAVED_BY_CHRIST),
       },
       {
-        slug: 'protocole',
+        slug: AuthorEnum.PROTOCOLE,
         author: 'Protocole',
-        pdfCount: 1,
+        pdfCount: this.getPdfCountByTagSlug(AuthorEnum.PROTOCOLE),
       },
     ]
+  }
+
+  static getPdfCountByTagSlug(
+    slug: AuthorTeamEnum | AuthorEnum | String
+  ): Number {
+    return PdfService.getAll().filter((pdf) =>
+      pdf.tags.includes(slug as string)
+    ).length
   }
 }

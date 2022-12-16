@@ -10,6 +10,10 @@ export default class MenuService {
         name: 'Accueil',
       },
       {
+        to: '/questions-answer/',
+        name: 'Questions/Réponse',
+      },
+      {
         to: '/documents/',
         name: 'Documents',
       },

@@ -52,13 +52,14 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import BgColorSection from '~/components/global/BgColorSection.vue'
 import SectionIntroTopics from '~/components/topics/SectionIntroTopics.vue'
 import { WebSiteService } from '~/services'
 
 export default Vue.extend({
-  name: 'DivinityOfJesusPage',
+  name: 'ReadBiblePage',
 
-  components: { SectionIntroTopics },
+  components: { SectionIntroTopics, BgColorSection },
 
   data() {
     return {
