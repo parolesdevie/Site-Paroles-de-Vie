@@ -12,6 +12,12 @@ export default class PdfService {
       //   title: 'Model Document 1',
       // },
       {
+        tags: [AuthorEnum.JMS, AuthorTeamEnum.COLISEUM],
+        author: AuthorEnum.JMS,
+        slug: 'genese-17-20-vs-genese-suna',
+        title: 'GENESE 17 :20 VS GENESE DE LA SUNNA ISLAMIQUE',
+      },
+      {
         tags: [AuthorEnum.JOZUA, AuthorTeamEnum.COLISEUM],
         author: AuthorEnum.JOZUA,
         slug: 'colonialisme',

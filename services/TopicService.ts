@@ -11,7 +11,7 @@ export default class TopicService {
           src: 'questions-answer',
         },
         to: '/questions-answer/',
-        title: 'Tu a une questions ?',
+        title: 'Tu as une questions ?',
       },
       {
         cover: {

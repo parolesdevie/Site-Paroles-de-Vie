@@ -112,7 +112,6 @@ export default Vue.extend({
       } else {
         this.selectedTags.push(value)
       }
-      console.log(this.selectedTags)
     },
   },
 })
