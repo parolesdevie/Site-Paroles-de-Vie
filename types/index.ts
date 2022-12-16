@@ -27,9 +27,17 @@ export interface ITopic {
   title: string
 }
 
+export enum QuestionPlateformEnum {
+  UNKNOW,
+  GOT_QUESTIONS = 'GotQuestions.org',
+}
+
 export interface IQuestion {
   title: string
-  slug: string
+  slug?: string
+  href?: string
+  plateform?: QuestionPlateformEnum
+  response?: string
 }
 
 export enum VideoLinkEnum {
@@ -87,7 +95,7 @@ export interface ISourceFile {
 }
 
 export enum DebatPlateformEnum {
-  UNKNOW = 'Unknow',
+  UNKNOW = 'inconnu',
   YOUTUBE = 'YouTube',
   TIKTOK = 'TikTok',
   DISCORD = 'Discord',
