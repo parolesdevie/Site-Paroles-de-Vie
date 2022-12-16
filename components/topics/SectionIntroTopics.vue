@@ -1,23 +1,26 @@
 <template>
   <section class="container mx-auto mt-4 md:mt-10">
-    <div class="relative flex flex-col md:flex-row">
+    <div class="relative flex flex-col md:flex-row md:justify-start">
       <!-- thumbnail -->
-      <img
+      <div
         class="
-          absolute
-          md:relative
-          top-0
-          right-0
-          h-9
-          w-h-9
+          h-40
+          w-40
           md:h-56 md:w-56
-          rounded-full
-          md:rounded-xl
-          flex-shrink-0
+          lg:h-60 lg:w-60
+          shrink-0
+          rounded-xl
+          overflow-hidden
         "
-        :src="'/images/topic/' + topicSlug + '.webp'"
-        alt=""
-      />
+      >
+        <TopicImg
+          class="h-full w-full"
+          v-if="cover"
+          :src="cover.src"
+          :color="cover.color"
+          alt="topic"
+        />
+      </div>
 
       <div class="md:ml-4">
         <!-- title -->
@@ -77,20 +80,21 @@
 <script lang="ts">
 import Vue from 'vue'
 import { PropType } from 'vue/types/v3-component-props'
-import { IPdf, ISourceFile } from '~/types'
+import { IPdf } from '~/types'
 import CardDocument from '../document/CardDocument.vue'
+import TopicImg from './TopicImg.vue'
 
 export default Vue.extend({
   props: {
-    topicSlug: {
-      type: String,
-      default: '',
+    cover: {
+      type: Object as PropType<{ color: string; src: string }>,
+      default: { color: undefined, src: undefined },
     },
     frontFile: {
       type: Object as PropType<IPdf>,
       default: undefined,
     },
   },
-  components: { CardDocument },
+  components: { CardDocument, TopicImg },
 })
 </script>

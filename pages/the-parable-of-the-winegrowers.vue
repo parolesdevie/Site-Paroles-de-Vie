@@ -6,10 +6,7 @@
       <Breadcrumb class="container mx-auto" :items="breadcrumbItems" />
 
       <!-- intro -->
-      <SectionIntroTopics
-        topicSlug="the-parable-of-the-winegrowers"
-        :frontFile="frontFile"
-      >
+      <SectionIntroTopics :cover="cover" :frontFile="frontFile">
         <template v-slot:title>La parabole des vignerons</template>
         <template v-slot:body>
           Les Vignerons infidèles est une parabole de Jésus-Christ retranscrite
@@ -75,7 +72,7 @@ import SectionDebate from '~/components/debate/SectionDebate.vue'
 import SectionDownloadDocumentsList from '~/components/document/SectionDownloadDocumentsList.vue'
 import SectionIntroTopics from '~/components/topics/SectionIntroTopics.vue'
 import SectionVideo from '~/components/videos/SectionVideo.vue'
-import { BookService, DebateService } from '~/services'
+import { BookService, DebateService, TopicService } from '~/services'
 import { AuthorEnum, FormatEnum, ISourceFile, VideoLinkEnum } from '~/types'
 
 export default Vue.extend({
@@ -100,6 +97,7 @@ export default Vue.extend({
           to: '/the-parable-of-the-winegrowers/',
         },
       ],
+      cover: TopicService.getBySlug('/the-parable-of-the-winegrowers/')?.cover,
       books: BookService.getAll(),
       playlistIdDebates: 'PLaBmOZ7eJG-UWwZEGp_RWVnBqOe_iU0uw',
       playlistIdVideos: 'PLaBmOZ7eJG-XE3u8rI1SBnoi6z4853aC5',

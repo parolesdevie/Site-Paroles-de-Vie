@@ -7,7 +7,7 @@
       <Breadcrumb :items="breadcrumbItems" />
 
       <!-- intro -->
-      <SectionIntroTopics topicSlug="the-crucifixion-in-the-bible">
+      <SectionIntroTopics :cover="cover">
         <template v-slot:title>La crucifixion dans la bible</template>
         <template v-slot:body>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aut
@@ -33,7 +33,7 @@
 import Vue from 'vue'
 import SectionDebate from '~/components/debate/SectionDebate.vue'
 import SectionIntroTopics from '~/components/topics/SectionIntroTopics.vue'
-import { DebateService } from '~/services'
+import { DebateService, TopicService } from '~/services'
 
 export default Vue.extend({
   name: 'CrucifixionInBiblePage',
@@ -52,6 +52,7 @@ export default Vue.extend({
           to: '/the-crucifixion-in-the-bible/',
         },
       ],
+      cover: TopicService.getBySlug('/the-crucifixion-in-the-bible/')?.cover,
       playlistIdDebates: 'PLaBmOZ7eJG-Wr3qx0unYjwXWNOoXTKCci',
       debates: DebateService.getByTopic('the-crucifixion-in-the-bible'),
     }

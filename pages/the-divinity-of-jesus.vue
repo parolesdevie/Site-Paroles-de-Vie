@@ -7,7 +7,7 @@
       <Breadcrumb :items="breadcrumbItems" />
 
       <!-- intro -->
-      <SectionIntroTopics topicSlug="the-divinity-of-jesus">
+      <SectionIntroTopics :cover="cover">
         <template v-slot:title>La divinité de Jésus</template>
         <template v-slot:body>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aut
@@ -26,6 +26,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import SectionIntroTopics from '~/components/topics/SectionIntroTopics.vue'
+import { TopicService } from '~/services'
 
 export default Vue.extend({
   name: 'DivinityOfJesusPage',
@@ -44,6 +45,7 @@ export default Vue.extend({
           to: '/the-divinity-of-jesus/',
         },
       ],
+      cover: TopicService.getBySlug('/the-divinity-of-jesus/')?.cover,
     }
   },
 })

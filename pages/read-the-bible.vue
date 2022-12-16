@@ -7,7 +7,7 @@
       <Breadcrumb class="container mx-auto" :items="breadcrumbItems" />
 
       <!-- intro -->
-      <SectionIntroTopics topicSlug="read-the-bible">
+      <SectionIntroTopics :cover="cover">
         <template v-slot:title>Lire la Bible</template>
         <template v-slot:body>
           <strong class="font-bold">Shalom,</strong>
@@ -54,7 +54,7 @@
 import Vue from 'vue'
 import BgColorSection from '~/components/global/BgColorSection.vue'
 import SectionIntroTopics from '~/components/topics/SectionIntroTopics.vue'
-import { WebSiteService } from '~/services'
+import { TopicService, WebSiteService } from '~/services'
 
 export default Vue.extend({
   name: 'ReadBiblePage',
@@ -73,6 +73,7 @@ export default Vue.extend({
           to: '/read-the-bible/',
         },
       ],
+      cover: TopicService.getBySlug('/read-the-bible/')?.cover,
       bibles: WebSiteService.getBibles(),
     }
   },

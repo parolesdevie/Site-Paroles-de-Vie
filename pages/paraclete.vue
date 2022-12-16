@@ -6,7 +6,7 @@
       <Breadcrumb class="container mx-auto" :items="breadcrumbItems" />
 
       <!-- intro -->
-      <SectionIntroTopics topicSlug="paraclete" :frontFile="frontFile">
+      <SectionIntroTopics :cover="cover" :frontFile="frontFile">
         <template v-slot:title>Le Paraclet</template>
         <template v-slot:body>
           Paraclet (<a
@@ -75,6 +75,7 @@ import SectionDownloadDocumentsList from '~/components/document/SectionDownloadD
 import BgColorSection from '~/components/global/BgColorSection.vue'
 import SectionIntroTopics from '~/components/topics/SectionIntroTopics.vue'
 import SectionVideo from '~/components/videos/SectionVideo.vue'
+import { TopicService } from '~/services'
 import { AuthorEnum, FormatEnum, ISourceFile, VideoLinkEnum } from '~/types'
 
 export default Vue.extend({
@@ -99,6 +100,7 @@ export default Vue.extend({
           to: '/paraclete/',
         },
       ],
+      cover: TopicService.getBySlug('/paraclete/')?.cover,
       playlistIdVideos: 'PLaBmOZ7eJG-WG_rv9QU7qomxydYrL_2KK',
       frontFile: {
         author: AuthorEnum.BENEVOLENCE,

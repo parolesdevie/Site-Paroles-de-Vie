@@ -7,7 +7,7 @@
       <Breadcrumb :items="breadcrumbItems" />
 
       <!-- intro -->
-      <SectionIntroTopics topicSlug="gospel">
+      <SectionIntroTopics :cover="cover">
         <template v-slot:title>Louanges</template>
         <template v-slot:body>
           Au Ier siècle, Paul et Silas ont loué Dieu par leurs chants alors
@@ -107,6 +107,7 @@
 import Vue from 'vue'
 import SectionIntroTopics from '~/components/topics/SectionIntroTopics.vue'
 import SectionVideo from '~/components/videos/SectionVideo.vue'
+import { TopicService } from '~/services'
 import { VideoLinkEnum } from '~/types'
 
 export default Vue.extend({
@@ -126,6 +127,7 @@ export default Vue.extend({
           to: '/the-divinity-of-jesus/',
         },
       ],
+      cover: TopicService.getBySlug('/gospel/')?.cover,
       playlistIdVideos: 'PLaBmOZ7eJG-WG_rv9QU7qomxydYrL_2KK',
       videos: {
         ode: [

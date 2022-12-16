@@ -159,7 +159,16 @@ export default {
           },
           minHeight: {
             '1/2-screen': '50vh',
-          }
+          },
+          animation: {
+            fade: 'fadeIn .5s ease-in-out',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: 0 },
+              '100%': { opacity: 1 },
+            },
+          },
         },
       },
     },

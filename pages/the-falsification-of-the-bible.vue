@@ -7,7 +7,7 @@
       <Breadcrumb class="container mx-auto" :items="breadcrumbItems" />
 
       <!-- intro -->
-      <SectionIntroTopics topicSlug="the-falsification-of-the-bible">
+      <SectionIntroTopics :cover="cover">
         <template v-slot:title>La falsification de la bible</template>
         <template v-slot:body>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aut
@@ -45,6 +45,7 @@
 import Vue from 'vue'
 import SectionDownloadDocumentsList from '~/components/document/SectionDownloadDocumentsList.vue'
 import SectionIntroTopics from '~/components/topics/SectionIntroTopics.vue'
+import { TopicService } from '~/services'
 // import { AuthorEnum, FormatEnum } from '~/types'
 export default Vue.extend({
   name: 'FalsificationBiblePage',
@@ -63,6 +64,7 @@ export default Vue.extend({
           to: '/the-falsification-of-the-bible/',
         },
       ],
+      cover: TopicService.getBySlug('/the-falsification-of-the-bible/')?.cover,
       files: [
         // {
         //   author: AuthorEnum.SHAM,

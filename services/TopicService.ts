@@ -6,60 +6,97 @@ export default class TopicService {
   static getAll(): ITopic[] {
     return [
       {
-        cover: 'questions-answer',
+        cover: {
+          color: '#538E9C',
+          src: 'questions-answer',
+        },
         to: '/questions-answer/',
         title: 'Tu a une questions ?',
       },
       {
-        cover: 'manuscript',
+        cover: {
+          color: '#C2B17D',
+          src: 'manuscript',
+        },
         to: '/manuscripts/',
         title: 'Manuscrits',
       },
       {
-        cover: 'read-the-bible',
+        cover: {
+          color: '#AFA69E',
+          src: 'read-the-bible',
+        },
         to: '/read-the-bible/',
         title: 'Lire la Bible',
       },
       {
-        cover: 'gospel',
+        cover: {
+          color: '#6A5847',
+          src: 'gospel',
+        },
         to: '/gospel/',
         title: 'Louanges',
       },
       {
-        cover: 'paraclete',
+        cover: {
+          color: '#A66B38',
+          src: 'paraclete',
+        },
         to: '/paraclete/',
         title: 'Le Paraclet',
       },
       {
-        cover: 'the-parable-of-the-winegrowers',
+        cover: {
+          color: '#7F8269',
+          src: 'the-parable-of-the-winegrowers',
+        },
         to: '/the-parable-of-the-winegrowers/',
         title: 'La parabole des vignerons',
       },
       {
-        cover: 'debates-tips',
+        cover: {
+          color: '#3D342E',
+          src: 'debates-tips',
+        },
         to: '/debates-tips/',
         title: 'Conseils de débats',
       },
       {
-        cover: 'the-divinity-of-jesus',
+        cover: {
+          color: '#8A7A6F',
+          src: 'the-divinity-of-jesus',
+        },
         to: '/the-divinity-of-jesus/',
         title: 'La divinité de Jésus',
       },
       {
-        cover: 'the-falsification-of-the-bible',
+        cover: {
+          color: '#6A574D',
+          src: 'the-falsification-of-the-bible',
+        },
         to: '/the-falsification-of-the-bible/',
         title: 'La falsification de la bible',
       },
       {
-        cover: 'the-crucifixion-in-the-bible',
+        cover: {
+          color: '#97A09C',
+          src: 'the-crucifixion-in-the-bible',
+        },
         to: '/the-crucifixion-in-the-bible/',
         title: 'La crucifixion dans la bible',
       },
       {
-        cover: 'free-will',
+        cover: {
+          color: '#CABA8C',
+          src: 'free-will',
+        },
         to: '/free-will/',
         title: 'Le libre arbitre',
       },
     ]
+  }
+
+  static getBySlug(slug: string): ITopic | undefined {
+    return this.getAll().find((topic) => topic.to === slug)
   }
 }

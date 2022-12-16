@@ -6,23 +6,27 @@
         h-40
         w-40
         md:h-56 md:w-56
-        bg-gray-200
+        lg:h-60 lg:w-60
         rounded-xl
         overflow-hidden
-        flex
-        items-center
-        justify-center
       "
       :to="to"
     >
-      <img v-if="cover" :src="`/images/topic/${cover}.webp`" :alt="title" />
+      <TopicImg
+        class="h-full w-full"
+        v-if="cover"
+        :src="cover.src"
+        :color="cover.color"
+        :alt="title"
+      />
 
       <span
         class="
           absolute
           inset-0
           text-base
-          md:text-2xl
+          md:text-xl
+          lg:text-2xl
           uppercase
           bg-black bg-opacity-20
           hover:bg-opacity-40
@@ -43,16 +47,18 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { PropType } from 'vue/types/v3-component-props'
+import TopicImg from './TopicImg.vue'
 
 export default Vue.extend({
   name: 'TopicCard',
 
-  components: {},
+  components: { TopicImg },
 
   props: {
     cover: {
-      type: String,
-      default: '',
+      type: Object as PropType<{ color: string; src: string }>,
+      default: {},
     },
     to: {
       type: String,
