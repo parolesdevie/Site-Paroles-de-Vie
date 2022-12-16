@@ -1,4 +1,4 @@
-import { AuthorEnum, AuthorTeamEnum, ITag } from '~/types'
+import { AuthorEnum, AuthorTeamEnum, ITag, TagEnum, ThemeEnum } from '~/types'
 import PdfService from './PdfService'
 
 export default class TagService {
@@ -6,6 +6,16 @@ export default class TagService {
 
   static getAll(): ITag[] {
     return [
+      {
+        slug: ThemeEnum.REFUTATION,
+        author: 'Réfutation',
+        pdfCount: this.getPdfCountByTagSlug(ThemeEnum.REFUTATION),
+      },
+      {
+        slug: ThemeEnum.THEOLOGY,
+        author: 'Théologie',
+        pdfCount: this.getPdfCountByTagSlug(ThemeEnum.THEOLOGY),
+      },
       {
         slug: AuthorTeamEnum.COLISEUM,
         author: 'Coliseum',
@@ -64,11 +74,7 @@ export default class TagService {
     ]
   }
 
-  static getPdfCountByTagSlug(
-    slug: AuthorTeamEnum | AuthorEnum | String
-  ): Number {
-    return PdfService.getAll().filter((pdf) =>
-      pdf.tags.includes(slug as string)
-    ).length
+  static getPdfCountByTagSlug(slug: TagEnum): Number {
+    return PdfService.getAll().filter((pdf) => pdf.tags.includes(slug)).length
   }
 }

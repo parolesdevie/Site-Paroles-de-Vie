@@ -56,6 +56,11 @@ export interface IVideoLink {
   thumbnail: string
 }
 
+export enum ThemeEnum {
+  THEOLOGY = 'theology',
+  REFUTATION = 'refutation',
+}
+
 export enum AuthorEnum {
   NULL = '',
   UNKNOW = 'inconnu',
@@ -76,8 +81,10 @@ export enum AuthorTeamEnum {
   THEOPHILOS = 'theophilos',
 }
 
+export type TagEnum = ThemeEnum | AuthorEnum | AuthorTeamEnum | string
+
 export interface IPdf {
-  tags: string[]
+  tags: TagEnum[]
   author: AuthorEnum
   slug: string
   title: string

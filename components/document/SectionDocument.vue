@@ -40,7 +40,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import { PropType } from 'vue/types/v3-component-props'
-import { IPdf, ITag } from '~/types'
+import { IPdf, ITag, TagEnum } from '~/types'
 import SearchInput from '~/components/forms/SearchInput.vue'
 import CardDocument from '~/components/document/CardDocument.vue'
 import Tag from '~/components/document/Tag.vue'
@@ -64,7 +64,7 @@ export default Vue.extend({
   data() {
     return {
       searchKeyWord: '',
-      selectedTags: [] as string[],
+      selectedTags: [] as TagEnum[],
     }
   },
 
@@ -75,8 +75,9 @@ export default Vue.extend({
       if (this.selectedTags.length) {
         pdfs = pdfs.filter(
           (pdf) =>
-            this.selectedTags.findIndex((tag) => pdf.tags.indexOf(tag) > -1) >
-              -1 || this.selectedTags.indexOf(pdf.author) > -1
+            this.selectedTags.findIndex(
+              (tag: TagEnum) => pdf.tags.indexOf(tag) > -1
+            ) > -1 || this.selectedTags.indexOf(pdf.author) > -1
         )
       }
       return pdfs.filter(

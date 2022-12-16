@@ -1,4 +1,4 @@
-import { AuthorEnum, AuthorTeamEnum, IPdf } from '~/types'
+import { AuthorEnum, AuthorTeamEnum, IPdf, ThemeEnum } from '~/types'
 
 export default class PdfService {
   constructor() {}
@@ -6,7 +6,7 @@ export default class PdfService {
   static getAll(): IPdf[] {
     return [
       {
-        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JMS],
+        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JMS, ThemeEnum.REFUTATION],
         author: AuthorEnum.JMS,
         slug: 'genese-17-20-vs-genese-suna',
         title: 'GENESE 17 :20 VS GENESE DE LA SUNNA ISLAMIQUE',
@@ -24,31 +24,51 @@ export default class PdfService {
         title: 'L’islam est le plagiat d’autres religions',
       },
       {
-        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.BENEVOLENCE],
+        tags: [
+          AuthorTeamEnum.COLISEUM,
+          AuthorEnum.BENEVOLENCE,
+          ThemeEnum.REFUTATION,
+        ],
         slug: 'le-paraclet',
         author: AuthorEnum.BENEVOLENCE,
         title: 'Le Paraclet',
       },
       {
-        tags: [AuthorTeamEnum.THEOPHILOS, AuthorEnum.FIDELIS_AND_VERAX],
+        tags: [
+          AuthorTeamEnum.THEOPHILOS,
+          AuthorEnum.FIDELIS_AND_VERAX,
+          ThemeEnum.REFUTATION,
+        ],
         slug: 'la-parabole-des-vignerons-1ere-partie',
         author: AuthorEnum.FIDELIS_AND_VERAX,
         title: 'La Parabole des vignerons 1ére partie',
       },
       {
-        tags: [AuthorTeamEnum.THEOPHILOS, AuthorEnum.FIDELIS_AND_VERAX],
+        tags: [
+          AuthorTeamEnum.THEOPHILOS,
+          AuthorEnum.FIDELIS_AND_VERAX,
+          ThemeEnum.REFUTATION,
+        ],
         slug: 'la-parabole-des-vignerons-2eme-partie',
         author: AuthorEnum.FIDELIS_AND_VERAX,
         title: 'La Parabole des vignerons 2éme partie',
       },
       {
-        tags: [AuthorTeamEnum.THEOPHILOS, AuthorEnum.FIDELIS_AND_VERAX],
+        tags: [
+          AuthorTeamEnum.THEOPHILOS,
+          AuthorEnum.FIDELIS_AND_VERAX,
+          ThemeEnum.REFUTATION,
+        ],
         slug: 'jesus-le-verbe-incarne',
         author: AuthorEnum.FIDELIS_AND_VERAX,
         title: 'Jésus, le Verbe incarné',
       },
       {
-        tags: [AuthorTeamEnum.THEOPHILOS, AuthorEnum.FIDELIS_AND_VERAX],
+        tags: [
+          AuthorTeamEnum.THEOPHILOS,
+          AuthorEnum.FIDELIS_AND_VERAX,
+          ThemeEnum.REFUTATION,
+        ],
         slug: 'le-monotheisme-des-patriarches',
         author: AuthorEnum.FIDELIS_AND_VERAX,
         title: 'Le monothéisme des Patriarches',
@@ -66,11 +86,47 @@ export default class PdfService {
         title: "L'hérésie du sabellianisme",
       },
       {
-        tags: [AuthorEnum.UNKNOW],
+        tags: [AuthorEnum.UNKNOW, ThemeEnum.THEOLOGY],
         author: AuthorEnum.JMS,
         slug: 'la-notion-d-hypostase',
         title: "La notion d'hypostase",
       },
+      {
+        tags: [AuthorEnum.JMS, ThemeEnum.THEOLOGY],
+        author: AuthorEnum.JMS,
+        slug: 'the-logical-problem-of-the-trinity',
+        title: 'The logical problem of the trinity',
+      },
+      {
+        tags: [AuthorEnum.SAVED_BY_CHRIST, ThemeEnum.THEOLOGY],
+        author: AuthorEnum.SAVED_BY_CHRIST,
+        slug: 'la-trinite-est-elle-biblique',
+        title: 'La Trinité est-elle biblique ?',
+      },
+      {
+        tags: [AuthorEnum.JMS, ThemeEnum.REFUTATION],
+        author: AuthorEnum.JMS,
+        slug: 'refutation-jesus-na-pas-ete-oint-dhuile',
+        title: 'Réfutation Jésus n’a pas été oint d’huile',
+      },
+      {
+        tags: [AuthorEnum.JMS, ThemeEnum.REFUTATION],
+        author: AuthorEnum.JMS,
+        slug: 'refutation-animaux-interdits',
+        title: 'Réfutation animaux interdits',
+      },
+      {
+        tags: [AuthorEnum.JMS, ThemeEnum.REFUTATION],
+        author: AuthorEnum.JMS,
+        slug: 'refutation-jesus-nest-pas-descendance-de-david',
+        title: 'Réfutation Jésus n’est pas descendance de David',
+      },
+      // {
+      //     slug: "messianite-de-esaie-53",
+      //     tags:[],
+      //     author: "jms",
+      //     title: "Messianité de Esaïe 53"
+      // },
       // {
       //     tags:[],
       //     author: 'benevolence',
@@ -96,52 +152,16 @@ export default class PdfService {
       //     title: "L’Évangile, l’Ancien Testament et la tradition orale"
       // },
       // {
-      //     slug: "the-logical-problem-of-the-trinity",
-      //     tags:[],
-      //     author: "jms",
-      //     title: "the-logical-problem-of-the-trinity"
-      // },
-      // {
       //     slug: "le-contexte-historique-du-nouveau-testament",
       //     tags:[],
       //     author: "jms",
       //     title: "Le contexte historique du Nouveau Testament"
       // },
       // {
-      //     slug: "la-trinite-est-elle-biblique",
-      //     tags:[],y-christ",
-      //     author: "saved-by-christ",
-      //     title: "La Trinité est-elle biblique?"
-      // },
-      // {
       //     slug: "refutation-almah",
       //     tags:[],
       //     author: "jms",
       //     title: "Réfutation Almah"
-      // },
-      // {
-      //     slug: "messianite-de-esaie-53",
-      //     tags:[],
-      //     author: "jms",
-      //     title: "Messianité de Esaïe 53"
-      // },
-      // {
-      //     slug: "refutation-jesus-na-pas-ete-oint-dhuile",
-      //     tags:[],
-      //     author: "jms",
-      //     title: "Réfutation Jésus n’a pas été oint d’huile"
-      // },
-      // {
-      //     slug: "refutation-jesus-nest-pas-descendance-de-david",
-      //     tags:[],
-      //     author: "jms",
-      //     title: "Réfutation Jésus n’est pas descendance de David"
-      // },
-      // {
-      //     slug: "refutation-animaux-interdits",
-      //     tags:[],
-      //     author: "jms",
-      //     title: "Réfutation animaux interdits"
       // },
       // {
       //     slug: "aristotle-in-aquinass-theology",
