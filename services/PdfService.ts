@@ -5,41 +5,29 @@ export default class PdfService {
 
   static getAll(): IPdf[] {
     return [
-      // {
-      //   tags: [AuthorEnum.BENEVOLENCE],
-      //   author: AuthorEnum.BENEVOLENCE,
-      //   slug: 'model-document-1',
-      //   title: 'Model Document 1',
-      // },
       {
-        tags: [AuthorEnum.JMS, AuthorTeamEnum.COLISEUM],
+        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JMS],
         author: AuthorEnum.JMS,
         slug: 'genese-17-20-vs-genese-suna',
         title: 'GENESE 17 :20 VS GENESE DE LA SUNNA ISLAMIQUE',
       },
       {
-        tags: [AuthorEnum.JOZUA, AuthorTeamEnum.COLISEUM],
+        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JOZUA],
         author: AuthorEnum.JOZUA,
         slug: 'colonialisme',
         title: 'Colonialisme',
       },
       {
-        tags: [AuthorEnum.JOZUA],
-        author: AuthorEnum.NULL,
-        slug: 'l-heresie-du-sabellianisme',
-        title: "L'hérésie du sabellianisme",
-      },
-      {
-        tags: [AuthorEnum.JOZUA, AuthorTeamEnum.COLISEUM],
+        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JOZUA],
         author: AuthorEnum.JOZUA,
         slug: 'l-islam-est-le plagiat-d-autres-religions',
         title: 'L’islam est le plagiat d’autres religions',
       },
       {
-        tags: [AuthorEnum.JOZUA],
-        author: AuthorEnum.NULL,
-        slug: 'l-unicite-de-dieu',
-        title: 'L’unicité de dieu',
+        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.BENEVOLENCE],
+        slug: 'le-paraclet',
+        author: AuthorEnum.BENEVOLENCE,
+        title: 'Le Paraclet',
       },
       {
         tags: [AuthorTeamEnum.THEOPHILOS, AuthorEnum.FIDELIS_AND_VERAX],
@@ -66,10 +54,22 @@ export default class PdfService {
         title: 'Le monothéisme des Patriarches',
       },
       {
-        tags: [AuthorEnum.BENEVOLENCE, AuthorTeamEnum.COLISEUM],
-        slug: 'le-paraclet',
-        author: AuthorEnum.BENEVOLENCE,
-        title: 'Le Paraclet',
+        tags: [AuthorEnum.JOZUA],
+        author: AuthorEnum.NULL,
+        slug: 'l-unicite-de-dieu',
+        title: 'L’unicité de dieu',
+      },
+      {
+        tags: [AuthorEnum.JOZUA],
+        author: AuthorEnum.NULL,
+        slug: 'l-heresie-du-sabellianisme',
+        title: "L'hérésie du sabellianisme",
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JMS,
+        slug: 'la-notion-d-hypostase',
+        title: "La notion d'hypostase",
       },
       // {
       //     tags:[],
@@ -94,12 +94,6 @@ export default class PdfService {
       //     slug: "l-evangile-l-ancien-testament-et-la-tradition-orale",
       //     tags:[],            //     author: AuthorEnum.JOZUA,
       //     title: "L’Évangile, l’Ancien Testament et la tradition orale"
-      // },
-      // {
-      //     slug: "la-notion-d-hypostase",
-      //     tags:[],
-      //     author: "jms",
-      //     title: "la-notion-d-hypostase"
       // },
       // {
       //     slug: "the-logical-problem-of-the-trinity",
