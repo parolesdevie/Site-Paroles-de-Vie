@@ -219,6 +219,20 @@ export default Vue.extend({
         {
           author: AuthorEnum.BENEVOLENCE,
           format: FormatEnum.PDF,
+          thumbnail: '/sources/lesparacletS/thumbnail',
+          href: '/sources/lesparacletS/pdf/lesparacletS.pdf',
+          title: 'Les "paracletS"',
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.DOCX,
+          thumbnail: '/sources/lesparacletS/thumbnail',
+          href: '/sources/lesparacletS/docx/lesparacletS.docx',
+          title: 'Les "paracletS"',
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
           thumbnail:
             '/sources/ghevonds-text-of-the-correspondence-between-umar-ii-and-leo-iii/thumbnail',
           href: '/sources/ghevonds-text-of-the-correspondence-between-umar-ii-and-leo-iii/pdf/jeffrey-1944-htr-ghevond.pdf',

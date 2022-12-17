@@ -96,6 +96,7 @@ export enum FormatEnum {
   UNKNOW = 'UNKNOW',
   EPUB = 'EPUB',
   PDF = 'PDF',
+  DOCX = 'DOCX',
 }
 
 export interface ISourceFile {
