@@ -6,11 +6,29 @@
     </h2>
 
     <!-- search -->
-    <SearchInput v-model="searchKeyWord" placeholder="Ex: le paraclet" />
+    <div class="flex">
+      <SearchInput v-model="searchKeyWord" placeholder="Ex: le paraclet" />
+      <!-- show all -->
+      <input
+        class="h-6 w-6 opacity-10"
+        v-model="showHereticTesis"
+        type="checkbox"
+        name="heretic thesis"
+        id=""
+      />
+    </div>
 
     <!-- tags -->
     <p class="mt-2 md:mt-10 text-lg md:text-2xl">Tags</p>
     <ul class="mt-2 -m-1 md-m-2 flex flex-wrap">
+      <Tag
+        v-show="showHereticTesis"
+        :slug="ThemeEnum.HERETIC_THESIS"
+        author="Thèses hérétiques"
+        :pdfCount="0"
+        :active="selectedTags.includes(ThemeEnum.HERETIC_THESIS)"
+        @click="onTagClick"
+      />
       <Tag
         v-for="(tag, index) in tags"
         :key="index"
@@ -40,7 +58,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import { PropType } from 'vue/types/v3-component-props'
-import { IPdf, ITag, TagEnum } from '~/types'
+import { IPdf, ITag, TagEnum, ThemeEnum } from '~/types'
 import SearchInput from '~/components/forms/SearchInput.vue'
 import CardDocument from '~/components/document/CardDocument.vue'
 import Tag from '~/components/document/Tag.vue'
@@ -65,6 +83,8 @@ export default Vue.extend({
     return {
       searchKeyWord: '',
       selectedTags: [] as TagEnum[],
+      showHereticTesis: false,
+      ThemeEnum,
     }
   },
 
@@ -78,6 +98,11 @@ export default Vue.extend({
             this.selectedTags.findIndex(
               (tag: TagEnum) => pdf.tags.indexOf(tag) > -1
             ) > -1 || this.selectedTags.indexOf(pdf.author) > -1
+        )
+      }
+      if (!this.showHereticTesis) {
+        pdfs = pdfs.filter(
+          (pdf) => !pdf.tags.includes(ThemeEnum.HERETIC_THESIS)
         )
       }
       return pdfs.filter(

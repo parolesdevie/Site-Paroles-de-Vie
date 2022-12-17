@@ -59,6 +59,7 @@ export interface IVideoLink {
 export enum ThemeEnum {
   THEOLOGY = 'theology',
   REFUTATION = 'refutation',
+  HERETIC_THESIS = 'heretic thesis',
 }
 
 export enum AuthorEnum {
@@ -72,6 +73,7 @@ export enum AuthorEnum {
   QALEV = 'qalev',
   SAVED_BY_CHRIST = 'saved-by-christ',
   PROTOCOLE = 'protocole',
+  DEMS = 'dems',
 }
 
 export enum AuthorTeamEnum {

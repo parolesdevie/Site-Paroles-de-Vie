@@ -43,6 +43,11 @@
           </nav>
         </template>
       </BgColorSection>
+
+      <SectionDownloadDocumentsList
+        class="container mx-auto mt-4 md:mt-10"
+        :files="files"
+      />
     </div>
 
     <!-- footer -->
@@ -52,14 +57,20 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import SectionDownloadDocumentsList from '~/components/document/SectionDownloadDocumentsList.vue'
 import BgColorSection from '~/components/global/BgColorSection.vue'
 import SectionIntroTopics from '~/components/topics/SectionIntroTopics.vue'
 import { TopicService, WebSiteService } from '~/services'
+import { AuthorEnum, FormatEnum } from '~/types'
 
 export default Vue.extend({
   name: 'ReadBiblePage',
 
-  components: { SectionIntroTopics, BgColorSection },
+  components: {
+    SectionIntroTopics,
+    BgColorSection,
+    SectionDownloadDocumentsList,
+  },
 
   data() {
     return {
@@ -75,6 +86,15 @@ export default Vue.extend({
       ],
       cover: TopicService.getBySlug('/read-the-bible/')?.cover,
       bibles: WebSiteService.getBibles(),
+      files: [
+        {
+          author: AuthorEnum.UNKNOW,
+          format: FormatEnum.PDF,
+          thumbnail: '/images/pdf/evangile-de-matthieu-en-hebreu-shem-tov',
+          href: '/pdf/evangile-de-matthieu-en-hebreu-shem-tov.pdf',
+          title: 'Evangile de matthieu en hébreu shem tov',
+        },
+      ],
     }
   },
 })

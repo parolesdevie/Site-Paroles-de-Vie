@@ -104,324 +104,395 @@ export default class PdfService {
         title: 'La Trinité est-elle biblique ?',
       },
       {
-        tags: [AuthorEnum.JMS, ThemeEnum.REFUTATION],
+        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JMS, ThemeEnum.REFUTATION],
         author: AuthorEnum.JMS,
         slug: 'refutation-jesus-na-pas-ete-oint-dhuile',
         title: 'Réfutation Jésus n’a pas été oint d’huile',
       },
       {
-        tags: [AuthorEnum.JMS, ThemeEnum.REFUTATION],
+        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JMS, ThemeEnum.REFUTATION],
         author: AuthorEnum.JMS,
         slug: 'refutation-animaux-interdits',
         title: 'Réfutation animaux interdits',
       },
       {
-        tags: [AuthorEnum.JMS, ThemeEnum.REFUTATION],
+        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JMS, ThemeEnum.REFUTATION],
         author: AuthorEnum.JMS,
         slug: 'refutation-jesus-nest-pas-descendance-de-david',
         title: 'Réfutation Jésus n’est pas descendance de David',
       },
+      {
+        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JMS],
+        author: AuthorEnum.JMS,
+        slug: 'messianite-de-esaie-53',
+        title: 'Messianité de Esaïe 53',
+      },
+      {
+        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.SHAM],
+        author: AuthorEnum.SHAM,
+        slug: 'le-dilemme-de-ladultere',
+        title: "Le dilemme de l'adultère",
+      },
+      {
+        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JMS, ThemeEnum.REFUTATION],
+        author: AuthorEnum.JMS,
+        slug: 'refutation-almah',
+        title: 'Réfutation Almah',
+      },
+      {
+        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.SHAM],
+        author: AuthorEnum.SHAM,
+        slug: 'le-tetragramme-sacre',
+        title: 'Le tétragramme sacré',
+      },
+      {
+        tags: [AuthorTeamEnum.UNKNOW],
+        author: AuthorEnum.UNKNOW,
+        slug: 'la-mort-de-zacharie-memoire-juive-et-memoire-chretienne',
+        title: 'La mort de Zacharie : mémoire juive et mémoire chrétienne*',
+      },
+      {
+        tags: [AuthorTeamEnum.UNKNOW],
+        author: AuthorEnum.UNKNOW,
+        slug: 'catechisme-du-concile-de-trente',
+        title: 'Catéchisme du Concile de Trente',
+      },
+      {
+        tags: [AuthorTeamEnum.UNKNOW],
+        author: AuthorEnum.UNKNOW,
+        slug: 'somme-contre-les-gentils-thomasdaquin',
+        title: 'Somme contre les Gentils Thomasd’Aquin',
+      },
+
+      //
+      {
+        tags: [AuthorTeamEnum.UNKNOW, ThemeEnum.HERETIC_THESIS],
+        author: AuthorEnum.UNKNOW,
+        slug: 'le-paraclet-chez-les-chretiens',
+        title: 'Le Paraclet chez les chrétiens ?',
+      },
+      // suite
       // {
-      //     slug: "messianite-de-esaie-53",
-      //     tags:[],
-      //     author: "jms",
-      //     title: "Messianité de Esaïe 53"
+      //   tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.BENEVOLENCE],
+      //   author: AuthorEnum.BENEVOLENCE,
+      //   slug: 'ar-rahik-al-makhtoum-le-nectar-cachete-safiyyu-ar-rahman-al-mubarakfuri-z-liborg',
+      //   title:
+      //     'AR-RAHIK AL-MAKHTOUM Le nectar cachete (Safiyyu Ar-Rahman Al Mubarakfuri) (z-lib.org)',
       // },
       // {
-      //     tags:[],
-      //     author: 'benevolence',
-      //     slug: 'ar-rahik-al-makhtoum-le-nectar-cachete-safiyyu-ar-rahman-al-mubarakfuri-z-liborg',
-      //     title:
-      //         'AR-RAHIK AL-MAKHTOUM Le nectar cachete (Safiyyu Ar-Rahman Al Mubarakfuri) (z-lib.org)',
+      //   tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.BENEVOLENCE],
+      //   author: AuthorEnum.BENEVOLENCE,
+      //   slug: 'le-resume-de-zad-al-maad-ibn-qayyim-al-jawziyyah',
+      //   title: "Le résumé de Zad Al-Ma'ad - Ibn Qayyim Al-Jawziyyah",
       // },
       // {
-      //     slug: "le-resume-de-zad-al-maad-ibn-qayyim-al-jawziyyah",
-      //     tags:[],
-      //     author: "benevolence",
-      //     title: "Le résumé de Zad Al-Ma'ad - Ibn Qayyim Al-Jawziyyah"
+      //   tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.BENEVOLENCE],
+      //   author: AuthorEnum.BENEVOLENCE,
+      //   slug: 'lauthentique-de-la-medecine-prophetique-de-ibn-al-qayyim',
+      //   title: "L'authentique de La Médecine Prophétique de Ibn Al-Qayyim",
       // },
-      // {
-      //     slug: "lauthentique-de-la-medecine-prophetique-de-ibn-al-qayyim",
-      //     tags:[],
-      //     author: "benevolence",
-      //     title: "L'authentique de La Médecine Prophétique de Ibn Al-Qayyim"
-      // },
-      // {
-      //     slug: "l-evangile-l-ancien-testament-et-la-tradition-orale",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "L’Évangile, l’Ancien Testament et la tradition orale"
-      // },
-      // {
-      //     slug: "le-contexte-historique-du-nouveau-testament",
-      //     tags:[],
-      //     author: "jms",
-      //     title: "Le contexte historique du Nouveau Testament"
-      // },
-      // {
-      //     slug: "refutation-almah",
-      //     tags:[],
-      //     author: "jms",
-      //     title: "Réfutation Almah"
-      // },
-      // {
-      //     slug: "aristotle-in-aquinass-theology",
-      //     tags:[],
-      //     author: "jms",
-      //     title: "Aristotle in Aquinass theology"
-      // },
-      // {
-      //     slug: "etudes-de-theologie-positive-sur-la-sainte-trinite-volume-2",
-      //     tags:[],
-      //     author: "jms",
-      //     title: "Études de théologie positive sur la sainte Trinité, Volume 2"
-      // },
-      // {
-      //     slug: "yahweh-translittere-en-arabe",
-      //     tags:[],
-      //     author: "jms",
-      //     title: "Yahweh translittéré en arabe"
-      // },
-      // {
-      //     slug: "le-dilemme-de-ladultere",
-      //     tags:[],
-      //     author: "sham",
-      //     title: "Le Dilemme de l'adultère"
-      // },
-      // {
-      //     slug: "le-tetragramme-sacre",
-      //     tags:[],
-      //     author: "sham",
-      //     title: "Le tétragramme sacré"
-      // },
-      // {
-      //     slug: "fatwas",
-      //     tags:[],
-      //     author: "dems",
-      //     title: "Fatwas"
-      // },
-      // {
-      //     slug: "oui-elie-doit-venir-mais-les-chretiens-y-croient-ils-encore",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Oui, Élie doit venir"
-      // },
-      // {
-      //     slug: "elie-et-la-conversion-finale-du-peuple-juif",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Élie et la conversion finale du peuple juif, d’après les sources rabbiniques et patristiques"
-      // },
-      // {
-      //     slug: "elie-viendra-t-il-dabord-comme-la-affirme-jesus",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Élie viendra-t-il d'abord, comme l'a affirmé Jésus ?"
-      // },
-      // {
-      //     slug: "dieu-se-pourvoira-lui-meme-de-lagneau",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Dieu pourvoira lui-même l’agneau"
-      // },
-      // {
-      //     slug: "le-coran-production-litteraire-de-lantiquite-tardive",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Le Coran, production littéraire de l’Antiquité tardive"
-      // },
-      // {
-      //     slug: "introduction-aux-droits-arabo-musulman",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Introduction aux droits arabo-musulman"
-      // },
-      // {
-      //     slug: "erreurs-linguistiques-dans-le-coran",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Erreurs linguistiques dans le coran"
-      // },
-      // {
-      //     slug: "le-signe-de-saul-pour-un-temps-dapostasie",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Le signe de Saül pour un temps d'apostasie"
-      // },
-      // {
-      //     slug: "frapper-sa-femme-exegese-complete",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Frapper sa femme. exegese complete"
-      // },
-      // {
-      //     slug: "nulle-contrainte-dans-la-religion",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Nulle contrainte dans la religion"
-      // },
-      // {
-      //     slug: "genese-179-ismael",
-      //     tags:[],
-      //     author: "qalev",
-      //     title: "Genèse 179 Ismaël"
-      // },
-      // {
-      //     slug: "genese-179-ismael-2",
-      //     tags:[],
-      //     author: "qalev",
-      //     title: "Genèse 179 Ismaël 2"
-      // },
-      // {
-      //     slug: "citations-patristiques",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Citations Patristiques"
-      // },
-      // {
-      //     slug: "mohammed-est-il-annonce-dans-la-torah",
-      //     tags:[],
-      //     author: "protocole",
-      //     title: "Mohammed est-il annoncé dans la Torah ?"
-      // },
-      // {
-      //     slug: "les-sanctions-dans-lislam",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Les sanctions dans l’islam"
-      // },
-      // {
-      //     slug: "coran-sami-awad-aldeeb-abu-sahlieh",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Coran, Sami Awad ALDEEB ABU-SAHLIEH"
-      // },
-      // {
-      //     slug: "lettre-dun-rabbin-converti",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "LETTRE D'UN RABBIN CONVERTI"
-      // },
-      // {
-      //     slug: "lettre-dun-rabbin-converti-2",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "LETTRE D'UN RABBIN CONVERTI 2"
-      // },
-      // {
-      //     slug: "evangile-de-matthieu-en-hebreu-shem-tov",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Evangile de matthieu en hébreu shem tov"
-      // },
-      // {
-      //     slug: "le-gouvernement-mondial-de-lantechrist",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Le gouvernement mondial de l’antechrist"
-      // },
-      // {
-      //     slug: "lopposition-entre-la-chair-et-lesprit-en-galates-517",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "L'opposition entre la chair et l'Esprit en Galates 5.17"
-      // },
-      // {
-      //     slug: "le-nom-de-yahushua-attaque",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Le nom de Yahushua attaqué"
-      // },
-      // {
-      //     slug: "tous-les-musulmans-iront-en-enfer-sourate-19-71",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Tous les musulmans iront en enfer sourate 19 :71"
-      // },
-      // {
-      //     slug: "la-mort-des-apotres",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "La mort des apôtres"
-      // },
-      // {
-      //     slug: "le-livre-dhenoch",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Le livre d’Hénoch"
-      // },
-      // {
-      //     slug: "le-palimpseste-de-sana",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Le palimpseste de Sana"
-      // },
-      // {
-      //     slug: "levangile-de-barnabe",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "L’évangile de Barnabé"
-      // },
-      // {
-      //     slug: "islam-jihad",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Islam Jihad"
-      // },
-      // {
-      //     slug: "le-talmud-de-jerusalem",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Le talmud de jérusalem"
-      // },
-      // {
-      //     slug: "613-commandements",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "613 Commandements"
-      // },
-      // {
-      //     slug: "de-saint-polycarpe-eveque-de-smyrne-et-saint-martyr",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "De saint Polycarpe, évêque de Smyrne et saint martyr"
-      // },
-      // {
-      //     slug: "les-origines-du-dogme-mahometan",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Les origines du dogme mahometan"
-      // },
-      // {
-      //     slug: "connaitre-mohammed-et-jesus",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Connaître Mohammed et Jésus"
-      // },
-      // {
-      //     slug: "le-grand-secret-de-lislam",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Le grand secret de l’islam"
-      // },
-      // {
-      //     slug: "temoins-de-jehovah-manuel-pratique-dauto-defense",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Témoins de jéhovah : manuel pratique d’auto-défense"
-      // },
-      // {
-      //     slug: "tableau-des-copies-des-manuscrits-les-plus-anciens-qui-existent-encore",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Tableau des copies des manuscrits les plus anciens qui existent encore"
-      // },
-      // {
-      //     slug: "paul-selon-paul",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Paul selon Paul"
-      // },
-      // {
-      //     slug: "la-bible-a-t-elle-ete-alteree",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "La Bible a-t-elle été altérée?"
-      // },
-      // {
-      //     slug: "le-schisme-primordial-entre-juifs-et-chretiens",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Le schisme primordial entre Juifs et Chrétiens"
-      // },
-      // {
-      //     slug: "islamologie-etude-de-lislam-par-ses-textes",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Islamologie – Étude de l’islam par ses textes"
-      // },
-      // {
-      //     slug: "des-pions-sur-lechiquier",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Des pions sur l’échiquier"
-      // },
-      // {
-      //     slug: "chretiens-et-juifs-pour-aller-plus-loin",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Chrétiens et Juifs : pour aller plus loin"
-      // },
-      // {
-      //     slug: "lenseignement-de-yeshua-et-de-ses-apotres",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "L'enseignement de Yeshua et de ses apotres"
-      // },
-      // {
-      //     slug: "alma-et-parthenos-dans-lunivers-de-la-bible",
-      //     tags:[],            //     author: AuthorEnum.JOZUA,
-      //     title: "Almâ et parthenos dans l’univers de la Bible"
-      // }
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.UNKNOW, // AuthorEnum.JOZUA,
+        slug: 'l-evangile-l-ancien-testament-et-la-tradition-orale',
+        title: 'L’Évangile, l’Ancien Testament et la tradition orale',
+      },
+      {
+        slug: 'le-contexte-historique-du-nouveau-testament',
+        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JMS],
+        author: AuthorEnum.JMS,
+        title: 'Le contexte historique du Nouveau Testament',
+      },
+      {
+        slug: 'aristotle-in-aquinass-theology',
+        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JMS],
+        author: AuthorEnum.JMS,
+        title: 'Aristotle in Aquinass theology',
+      },
+      {
+        slug: 'etudes-de-theologie-positive-sur-la-sainte-trinite-volume-2',
+        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JMS],
+        author: AuthorEnum.JMS,
+        title: 'Études de théologie positive sur la sainte Trinité, Volume 2',
+      },
+      {
+        slug: 'yahweh-translittere-en-arabe',
+        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JMS],
+        author: AuthorEnum.JMS,
+        title: 'Yahweh translittéré en arabe',
+      },
+      {
+        tags: [AuthorEnum.DEMS],
+        author: AuthorEnum.DEMS,
+        slug: 'fatwas',
+        title: 'Fatwas',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'oui-elie-doit-venir-mais-les-chretiens-y-croient-ils-encore',
+        title: 'Oui, Élie doit venir',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'elie-et-la-conversion-finale-du-peuple-juif',
+        title:
+          'Élie et la conversion finale du peuple juif, d’après les sources rabbiniques et patristiques',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'elie-viendra-t-il-dabord-comme-la-affirme-jesus',
+        title: "Élie viendra-t-il d'abord, comme l'a affirmé Jésus ?",
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'dieu-se-pourvoira-lui-meme-de-lagneau',
+        title: 'Dieu pourvoira lui-même l’agneau',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'le-coran-production-litteraire-de-lantiquite-tardive',
+        title: 'Le Coran, production littéraire de l’Antiquité tardive',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'introduction-aux-droits-arabo-musulman',
+        title: 'Introduction aux droits arabo-musulman',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'erreurs-linguistiques-dans-le-coran',
+        title: 'Erreurs linguistiques dans le coran',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'le-signe-de-saul-pour-un-temps-dapostasie',
+        title: "Le signe de Saül pour un temps d'apostasie",
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'frapper-sa-femme-exegese-complete',
+        title: 'Frapper sa femme. exegese complete',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'nulle-contrainte-dans-la-religion',
+        title: 'Nulle contrainte dans la religion',
+      },
+      {
+        tags: [AuthorEnum.QALEV],
+        author: AuthorEnum.QALEV,
+        slug: 'genese-179-ismael',
+        title: 'Genèse 179 Ismaël',
+      },
+      {
+        tags: [AuthorEnum.QALEV],
+        author: AuthorEnum.QALEV,
+        slug: 'genese-179-ismael-2',
+        title: 'Genèse 179 Ismaël 2',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'citations-patristiques',
+        title: 'Citations Patristiques',
+      },
+      {
+        tags: [AuthorEnum.PROTOCOLE],
+        author: AuthorEnum.PROTOCOLE,
+        slug: 'mohammed-est-il-annonce-dans-la-torah',
+        title: 'Mohammed est-il annoncé dans la Torah ?',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'les-sanctions-dans-lislam',
+        title: 'Les sanctions dans l’islam',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'coran-sami-awad-aldeeb-abu-sahlieh',
+        title: 'Coran, Sami Awad ALDEEB ABU-SAHLIEH',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'lettre-dun-rabbin-converti',
+        title: "LETTRE D'UN RABBIN CONVERTI",
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'lettre-dun-rabbin-converti-2',
+        title: "LETTRE D'UN RABBIN CONVERTI 2",
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.UNKNOW,
+        slug: 'evangile-de-matthieu-en-hebreu-shem-tov',
+        title: 'Evangile de matthieu en hébreu shem tov',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'le-gouvernement-mondial-de-lantechrist',
+        title: 'Le gouvernement mondial de l’antechrist',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'lopposition-entre-la-chair-et-lesprit-en-galates-517',
+        title: "L'opposition entre la chair et l'Esprit en Galates 5.17",
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'le-nom-de-yahushua-attaque',
+        title: 'Le nom de Yahushua attaqué',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'tous-les-musulmans-iront-en-enfer-sourate-19-71',
+        title: 'Tous les musulmans iront en enfer sourate 19 :71',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'la-mort-des-apotres',
+        title: 'La mort des apôtres',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'le-livre-dhenoch',
+        title: 'Le livre d’Hénoch',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'le-palimpseste-de-sana',
+        title: 'Le palimpseste de Sana',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'levangile-de-barnabe',
+        title: 'L’évangile de Barnabé',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'islam-jihad',
+        title: 'Islam Jihad',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'le-talmud-de-jerusalem',
+        title: 'Le talmud de jérusalem',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: '613-commandements',
+        title: '613 Commandements',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'de-saint-polycarpe-eveque-de-smyrne-et-saint-martyr',
+        title: 'De saint Polycarpe, évêque de Smyrne et saint martyr',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'les-origines-du-dogme-mahometan',
+        title: 'Les origines du dogme mahometan',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'connaitre-mohammed-et-jesus',
+        title: 'Connaître Mohammed et Jésus',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'le-grand-secret-de-lislam',
+        title: 'Le grand secret de l’islam',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'temoins-de-jehovah-manuel-pratique-dauto-defense',
+        title: 'Témoins de jéhovah : manuel pratique d’auto-défense',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'tableau-des-copies-des-manuscrits-les-plus-anciens-qui-existent-encore',
+        title:
+          'Tableau des copies des manuscrits les plus anciens qui existent encore',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'paul-selon-paul',
+        title: 'Paul selon Paul',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'la-bible-a-t-elle-ete-alteree',
+        title: 'La Bible a-t-elle été altérée?',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'le-schisme-primordial-entre-juifs-et-chretiens',
+        title: 'Le schisme primordial entre Juifs et Chrétiens',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'islamologie-etude-de-lislam-par-ses-textes',
+        title: 'Islamologie – Étude de l’islam par ses textes',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'des-pions-sur-lechiquier',
+        title: 'Des pions sur l’échiquier',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'chretiens-et-juifs-pour-aller-plus-loin',
+        title: 'Chrétiens et Juifs : pour aller plus loin',
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'lenseignement-de-yeshua-et-de-ses-apotres',
+        title: "L'enseignement de Yeshua et de ses apotres",
+      },
+      {
+        tags: [AuthorEnum.UNKNOW],
+        author: AuthorEnum.JOZUA,
+        slug: 'alma-et-parthenos-dans-lunivers-de-la-bible',
+        title: 'Almâ et parthenos dans l’univers de la Bible',
+      },
     ]
   }
 }
