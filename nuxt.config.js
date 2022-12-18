@@ -33,7 +33,7 @@ export default {
       {
         property: 'og:image',
         content:
-          'https://paroles-de-vie.netlify.app/images/seo/thumbnail.png',
+          'https://paroles-de-vie.netlify.app/seo/thumbnail.webp',
       },
 
       // <!-- Twitter -->
@@ -48,7 +48,7 @@ export default {
       {
         property: 'twitter:image',
         content:
-          'https://paroles-de-vie.netlify.app/images/seo/thumbnail.png',
+          'https://paroles-de-vie.netlify.app/seo/thumbnail.webp',
       },
 
       { name: 'format-detection', content: 'telephone=no' },
