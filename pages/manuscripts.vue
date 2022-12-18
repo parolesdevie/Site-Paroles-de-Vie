@@ -172,7 +172,7 @@ export default Vue.extend({
     IconBookOpen,
   },
 
-  asyncData() {
+  data() {
     return {
       breadcrumbItems: [
         {

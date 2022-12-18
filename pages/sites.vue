@@ -23,7 +23,7 @@ export default Vue.extend({
 
   components: { SectionSite, Breadcrumb },
 
-  asyncData() {
+  data() {
     return {
       breadcrumbItems: [
         {

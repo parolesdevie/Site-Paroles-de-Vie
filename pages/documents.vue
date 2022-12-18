@@ -26,7 +26,7 @@ export default Vue.extend({
 
   components: { Breadcrumb, SectionDocument },
 
-  asyncData() {
+  data() {
     return {
       breadcrumbItems: [
         {

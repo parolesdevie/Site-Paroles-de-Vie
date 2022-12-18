@@ -62,7 +62,7 @@ export default Vue.extend({
 
   components: { SectionSite, Breadcrumb, SearchInput, CardSearchResult },
 
-  asyncData() {
+  data() {
     return {
       breadcrumbItems: [
         {

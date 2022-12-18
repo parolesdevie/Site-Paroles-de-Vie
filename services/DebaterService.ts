@@ -1,6 +1,6 @@
 import { IDebaterProfils } from '~/types'
 
-const UNKNOW_DEBATER = {
+const UNKNOW_DEBATER: IDebaterProfils = {
   id: -1,
   pseudo: undefined,
   name: undefined,

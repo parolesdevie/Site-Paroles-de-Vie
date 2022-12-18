@@ -36,7 +36,7 @@ export default Vue.extend({
 
   components: { SectionQR },
 
-  asyncData() {
+  data() {
     return {
       breadcrumbItems: [
         {
