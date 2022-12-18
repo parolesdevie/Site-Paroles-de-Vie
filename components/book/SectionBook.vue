@@ -12,6 +12,10 @@
       Voici un choix de livres Chrétiens, ces livres sont à la fois détaillés et
       approfondis , destinés à un large public.
       <br />
+      Si vous souhaitez en acheter un sur Amazon,
+      <strong>utilisez le lien en dessous du titre</strong>, ceci nous permet
+      d'obtenir une commission de vente.
+      <br />
       Bonne lecture.🕊️
     </p>
 
@@ -23,6 +27,7 @@
           :key="index"
           :title="book.title"
           :slug="book.slug"
+          :amazon="book.amazon"
         />
       </ul>
     </div>

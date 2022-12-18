@@ -12,6 +12,7 @@ export interface IWebSite {
 export interface IBook {
   title: string
   slug: string
+  amazon?: string
 }
 
 export interface ILink {
