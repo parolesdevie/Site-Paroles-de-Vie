@@ -6,14 +6,51 @@ export default {
     server: process.env.SERVER,
   },
 
-
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'site-pdv',
+    title: 'Paroles de Vie',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      // <!-- Primary Meta Tags -->
+      { name: 'title', content: 'Paroles de Vie' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.',
+      },
+
+      // <!-- Open Graph / Facebook -->
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://paroles-de-vie.netlify.app/' },
+      { property: 'og:title', content: 'Paroles de Vie' },
+      {
+        property: 'og:description',
+        content:
+          'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.',
+      },
+      {
+        property: 'og:image',
+        content:
+          'https://paroles-de-vie.netlify.app/images/seo/thumbnail.png',
+      },
+
+      // <!-- Twitter -->
+      { property: 'twitter:card', content: 'summary_large_image' },
+      { property: 'twitter:url', content: 'https://paroles-de-vie.netlify.app/' },
+      { property: 'twitter:title', content: 'Paroles de Vie' },
+      {
+        property: 'twitter:description',
+        content:
+          'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.',
+      },
+      {
+        property: 'twitter:image',
+        content:
+          'https://paroles-de-vie.netlify.app/images/seo/thumbnail.png',
+      },
+
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'msapplication-TileColor', content: '#ffffff' },
       {

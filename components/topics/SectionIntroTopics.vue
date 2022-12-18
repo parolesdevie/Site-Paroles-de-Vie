@@ -39,8 +39,12 @@
         </h1>
 
         <!-- intro text -->
-        <p class="mt-4 md:mt-8 font-semibold text-base text-gray-800 max-w-2xl">
-          <slot name="body"></slot>
+        <div
+          class="mt-4 md:mt-8 font-semibold text-base text-gray-800 max-w-2xl"
+        >
+          <p>
+            <slot name="body"></slot>
+          </p>
           <!-- download link -->
           <a
             v-if="frontFile"
@@ -60,7 +64,7 @@
           >
             Télécharger le PDF
           </a>
-        </p>
+        </div>
       </div>
 
       <!-- front file -->
@@ -85,6 +89,10 @@ import CardDocument from '../document/CardDocument.vue'
 import TopicImg from './TopicImg.vue'
 
 export default Vue.extend({
+  name: 'SectionIntroTopics',
+
+  components: { CardDocument, TopicImg },
+
   props: {
     cover: {
       type: Object as PropType<{ color: string; src: string }>,
@@ -95,6 +103,5 @@ export default Vue.extend({
       default: undefined,
     },
   },
-  components: { CardDocument, TopicImg },
 })
 </script>

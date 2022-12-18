@@ -15,18 +15,17 @@
             target="_blank"
             rel="noopener noreferrer"
             >Παράκλητος, Parakletos</a
-          >, en latin
-          <a
+          >, en latin<a
             class="hover:text-blue-700"
             href="https://fr.wiktionary.org/wiki/paracletus"
             target="_blank"
             rel="noopener noreferrer"
-          >
-            Paracletus</a
-          >) est un mot d'origine grecque qui signifie «
-          <strong> celui qu'on appelle à son secours </strong>» (de παρακαλέω, «
-          appeler auprès de soi»), ou « celui qui intercède », formant les
-          substantifs « avocat », « défenseur », « intercesseur ».
+            >Paracletus</a
+          >) est un mot d'origine grecque qui signifie « <strong>
+            celui qu'on appelle à son secours </strong
+          >» (de παρακαλέω, « appeler auprès de soi »), ou « celui qui
+          intercède », formant les substantifs « avocat », « défenseur »,
+          « intercesseur ».
         </template>
       </SectionIntroTopics>
 
