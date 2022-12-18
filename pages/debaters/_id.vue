@@ -65,14 +65,9 @@ export default Vue.extend({
 
   async asyncData(context) {
     const id = parseInt(context.route.params.id)
-    const backUrl = context?.from?.path || '/'
-    return { id, backUrl }
-  },
-
-  data() {
-    const { id, backUrl } = this
     const currentDebater = DebaterService.getById(id)
     const debates = DebateService.getByDebaterId(id)
+    const backUrl = context?.from?.path || '/'
 
     return {
       breadcrumbItems: [
@@ -91,11 +86,7 @@ export default Vue.extend({
       ],
       backUrl,
       debates,
-      id: currentDebater.id,
-      pseudo: currentDebater.pseudo,
-      name: currentDebater.name,
-      religion: currentDebater.religion,
-      // ...currentDebater,
+      ...currentDebater,
     }
   },
 })
