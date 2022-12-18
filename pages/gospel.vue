@@ -145,7 +145,7 @@ export default Vue.extend({
           },
           {
             source: VideoLinkEnum.YOUTUBE,
-            name: 'Chorale Exultemus : Ô prends mon âme',
+            name: 'Chorale Exultemus : Ô prends mon âme',
             url: 'https://youtu.be/tr4dkk5ThTk',
             thumbnail: 'https://img.youtube.com/vi/tr4dkk5ThTk/mqdefault.jpg',
           },

@@ -9,7 +9,7 @@
     <SearchInput
       v-model="searchKeyWord"
       @input="searchOnGotQuestions"
-      placeholder="Ex: comment faire des crêpes ?"
+      placeholder="Ex: comment faire des crêpes ?"
     />
 
     <div class="mt-4 md:mt-8 mb-8">
