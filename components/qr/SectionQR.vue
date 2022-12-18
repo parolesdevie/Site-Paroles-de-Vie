@@ -14,9 +14,9 @@
 
     <div class="mt-4 md:mt-8 mb-8">
       <!-- local -->
-      <div class="contents" v-show="filteredQuestions.length">
-        <ul class="flex flex-col gap-4">
-          <p class="font-bold">Réponses</p>
+      <div :class="filteredQuestions.length ? 'contents' : 'hidden'">
+        <p class="font-bold">Réponses</p>
+        <ul class="mt-2 md:mt-4 flex flex-col gap-4">
           <CardQR
             v-for="(question, index) in filteredQuestions"
             :key="index"
@@ -25,25 +25,27 @@
             :href="question.href"
             :title="question.title"
           >
-            <p class="mt-4" v-html="question.response"></p>
+            <p class="mt-4" v-html="question.response" />
           </CardQR>
         </ul>
       </div>
 
       <!-- gotQuestions -->
-      <div class="contents" v-show="gotQuestions.length">
-        <p class="mt-4 font-bold">Réponses sur GotQuestions.org</p>
-        <ul class="mt-4 flex flex-col gap-4">
-          <CardQR
-            v-for="(question, index) in gotQuestions"
-            :key="index"
-            :plateform="question.plateform"
-            :slug="question.slug"
-            :href="question.href"
-            :title="question.title"
-          />
-        </ul>
-      </div>
+      <template v-if="$config.server === 'local'">
+        <div class="contents" v-show="gotQuestions.length">
+          <p class="mt-4 font-bold">Réponses sur GotQuestions.org</p>
+          <ul class="mt-4 flex flex-col gap-4">
+            <CardQR
+              v-for="(question, index) in gotQuestions"
+              :key="index"
+              :plateform="question.plateform"
+              :slug="question.slug"
+              :href="question.href"
+              :title="question.title"
+            />
+          </ul>
+        </div>
+      </template>
 
       <p
         v-show="!filteredQuestions.length && !gotQuestions.length"
