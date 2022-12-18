@@ -59,8 +59,6 @@ export default Vue.extend({
       this.$emit('input', (e.target as HTMLInputElement).value)
     },
     onClear() {
-      console.log('clear')
-
       this.$emit('input', '')
     },
   },

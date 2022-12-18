@@ -139,6 +139,7 @@ export enum SearchPlateformEnum {
   TOP_CHRETIEN = 'topchretien',
   FAMILLE_CHRETIENNE = 'famillechretienne',
   JCSR = 'jcsr',
+  ALETEIA = 'aleteia',
 }
 
 export interface SearchResult {

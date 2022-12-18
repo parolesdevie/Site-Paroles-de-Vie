@@ -57,8 +57,7 @@ export default class SearchService {
     } catch (err) {
       console.error(err)
     }
-
-    console.log(response)
+    console.error(response)
 
     return response?.data.map((result: any) => ({
       ...result,
@@ -79,11 +78,28 @@ export default class SearchService {
       console.error(err)
     }
 
-    console.log(response)
-
     return response?.data.map((result: any) => ({
       ...result,
       plateform: SearchPlateformEnum.JCSR,
+    }))
+  }
+
+  static async searchOnAleteia(keyWord: string): Promise<SearchResult[]> {
+    let response
+    try {
+      response = await axios({
+        method: 'get',
+        url: `http://localhost:5000/searchOnAleteia/?search=${this.slugify(
+          keyWord
+        )}`,
+      })
+    } catch (err) {
+      console.error(err)
+    }
+
+    return response?.data.map((result: any) => ({
+      ...result,
+      plateform: SearchPlateformEnum.ALETEIA,
     }))
   }
 

@@ -23,9 +23,10 @@
           p-4
           `"
       >
-        <span class="text-lg font-semibold">
-          {{ title }}
-        </span>
+        <div class="text-lg font-semibold">
+          <p>{{ title }}</p>
+          <p class="mt-4 text-blue-500">{{ author }}</p>
+        </div>
         <IconEmcitvLogo
           v-if="plateform === SearchPlateformEnum.EMCITV"
           class="mt-4 md:mt-2 ml-auto h-6 md:h-4 text-blue-500 shrink-0"
@@ -36,6 +37,10 @@
         />
         <IconFamilleChretienneLogo
           v-else-if="plateform === SearchPlateformEnum.FAMILLE_CHRETIENNE"
+          class="mt-4 md:mt-2 ml-auto h-6 md:h-4 text-blue-500 shrink-0"
+        />
+        <IconAleteiaLogo
+          v-else-if="plateform === SearchPlateformEnum.ALETEIA"
           class="mt-4 md:mt-2 ml-auto h-6 md:h-4 text-blue-500 shrink-0"
         />
         <img
@@ -58,6 +63,7 @@ import IconEmcitvLogo from '~/components/icons/IconEmcitvLogo.vue'
 import IconTopChretienLogo from '~/components/icons/IconTopChretienLogo.vue'
 import IconFamilleChretienneLogo from '~/components/icons/IconFamilleChretienneLogo.vue'
 import { SearchPlateformEnum } from '~/types'
+import IconAleteiaLogo from '../icons/IconAleteiaLogo.vue'
 
 export default Vue.extend({
   name: 'CardSearchResult',
@@ -68,6 +74,7 @@ export default Vue.extend({
     IconFamilleChretienneLogo,
     IconChevronDown,
     IconChevronUp,
+    IconAleteiaLogo,
   },
 
   props: {
@@ -80,6 +87,10 @@ export default Vue.extend({
       default: '',
     },
     image: {
+      type: String,
+      default: '',
+    },
+    author: {
       type: String,
       default: '',
     },
