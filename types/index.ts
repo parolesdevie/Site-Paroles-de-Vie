@@ -132,3 +132,19 @@ export interface IDebat {
   debaters: IDebater[]
   plateform: DebatPlateformEnum.YOUTUBE
 }
+
+export enum SearchPlateformEnum {
+  UNKNOW = 'inconnu',
+  EMCITV = 'emcitv',
+  TOP_CHRETIEN = 'topchretien',
+  FAMILLE_CHRETIENNE = 'famillechretienne',
+  JCSR = 'jcsr',
+}
+
+export interface SearchResult {
+  href: string
+  title: string
+  image?: string
+  author?: string
+  plateform: SearchPlateformEnum
+}

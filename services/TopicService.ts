@@ -7,6 +7,14 @@ export default class TopicService {
     return [
       {
         cover: {
+          color: '#707377',
+          src: 'search',
+        },
+        to: '/search/',
+        title: 'Recherche',
+      },
+      {
+        cover: {
           color: '#538E9C',
           src: 'questions-answer',
         },

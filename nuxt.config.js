@@ -2,6 +2,11 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  publicRuntimeConfig: {
+    server: process.env.SERVER,
+  },
+
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'site-pdv',

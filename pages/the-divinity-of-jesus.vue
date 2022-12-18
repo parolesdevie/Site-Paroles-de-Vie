@@ -33,7 +33,7 @@ export default Vue.extend({
 
   components: { SectionIntroTopics },
 
-  data() {
+  asyncData() {
     return {
       breadcrumbItems: [
         {

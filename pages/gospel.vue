@@ -115,7 +115,7 @@ export default Vue.extend({
 
   components: { SectionIntroTopics, SectionVideo },
 
-  data() {
+  asyncData() {
     return {
       breadcrumbItems: [
         {
@@ -163,6 +163,12 @@ export default Vue.extend({
           },
         ],
         liturgicalSongs: [
+          {
+            source: VideoLinkEnum.YOUTUBE,
+            name: 'Chant des mystiques: Pater Noster - Notre Père - Divine Chant grégorien - Latin',
+            url: 'https://youtu.be/WQhZOX8bQfs',
+            thumbnail: 'https://img.youtube.com/vi/WQhZOX8bQfs/mqdefault.jpg',
+          },
           {
             source: VideoLinkEnum.YOUTUBE,
             name: '09- طلبة القديس يوحنا الذهبي الفم - باللحن الأول',

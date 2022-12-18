@@ -40,7 +40,7 @@ export default Vue.extend({
 
   components: { SectionMag },
 
-  data() {
+  asyncData() {
     return {
       breadcrumbItems: [
         {

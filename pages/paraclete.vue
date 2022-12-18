@@ -88,7 +88,7 @@ export default Vue.extend({
     SectionIntroTopics,
   },
 
-  data() {
+  asyncData() {
     return {
       breadcrumbItems: [
         {
@@ -206,6 +206,12 @@ export default Vue.extend({
           name: 'Chaîne Retour du Christ',
           url: 'https://youtu.be/oH0r4_YZZAg',
           thumbnail: 'https://img.youtube.com/vi/oH0r4_YZZAg/mqdefault.jpg',
+        },
+        {
+          source: VideoLinkEnum.YOUTUBE,
+          name: "Chaîne Les amis d'EMCI TV",
+          url: 'https://youtu.be/IYF21w9iqn8',
+          thumbnail: 'https://img.youtube.com/vi/IYF21w9iqn8/mqdefault.jpg',
         },
       ],
       files: [

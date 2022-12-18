@@ -52,7 +52,7 @@ export default Vue.extend({
 
   components: { SectionDownloadDocumentsList, SectionIntroTopics },
 
-  data() {
+  asyncData() {
     return {
       breadcrumbItems: [
         {

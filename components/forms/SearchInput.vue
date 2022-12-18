@@ -19,6 +19,7 @@
       :placeholder="placeholder"
       :value="value"
       @input="onInput"
+      :disabled="disabled"
     />
   </div>
 </template>
@@ -40,6 +41,10 @@ export default Vue.extend({
     value: {
       type: String,
       default: '',
+    },
+    disabled: {
+      type: Boolean,
+      default: false,
     },
   },
 

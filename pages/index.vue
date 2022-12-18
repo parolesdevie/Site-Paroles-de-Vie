@@ -49,7 +49,7 @@ export default Vue.extend({
     SectionTopicCard,
   },
 
-  data() {
+  asyncData() {
     return {
       breadcrumbItems: [
         {
