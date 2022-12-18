@@ -26,7 +26,7 @@
           v-for="(book, index) in books"
           :key="index"
           :title="book.title"
-          :slug="book.slug"
+          :src="book.slug"
           :amazon="book.amazon"
         />
       </ul>

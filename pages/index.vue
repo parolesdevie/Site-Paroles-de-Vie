@@ -49,6 +49,17 @@ export default Vue.extend({
     SectionTopicCard,
   },
 
+  // head: {
+  //   title: 'Accueil',
+  //   meta: [
+  //     {
+  //       hid: 'description',
+  //       name: 'description',
+  //       content: '',
+  //     },
+  //   ],
+  // },
+
   data() {
     return {
       breadcrumbItems: [

@@ -1,6 +1,6 @@
 <template>
   <li
-    v-if="slug"
+    v-if="src"
     class="
       flex flex-col
       w-40
@@ -16,7 +16,8 @@
     <img
       loading="lazy"
       class="h-24 md:h-32"
-      :src="'/images/book/' + slug + '.webp'"
+      :srcset="computedSrrset"
+      :src="computedSrc"
       alt="Le feu sacré"
     />
 
@@ -63,13 +64,24 @@ export default Vue.extend({
       type: String,
       default: 'Titre',
     },
-    slug: {
+    src: {
       type: String,
       default: null,
     },
     amazon: {
       type: String,
       default: undefined,
+    },
+  },
+
+  computed: {
+    computedSrrset() {
+      const { src } = this
+      return `/images/book/${src}@1x.webp, /images/book/${src}@1.5x.webp 1.5x, /images/book/${src}@2x.webp 2x, /images/book/${src}@3x.webp 3x, /images/book/${src}@4x.webp 4x`
+    },
+    computedSrc() {
+      const { src } = this
+      return `/images/book/${src}.webp 1x`
     },
   },
 })

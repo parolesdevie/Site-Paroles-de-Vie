@@ -6,16 +6,23 @@ export default class BookService {
   static getAll(): IBook[] {
     return [
       {
+        title: 'Bible Nestle-Aland',
+        slug: 'bible-nestle-aland',
+        amazon: '3hzadoT',
+      },
+      {
         title: 'Paroles et exemples des anciens',
         slug: 'paroles-et-exemples-des-anciens',
       },
       {
         title: 'Le feu sacré',
         slug: 'le-feu-sacre',
+        amazon: '3v19hwU',
       },
       {
         title: 'Le secours des saints',
         slug: 'le-secours-des-saints',
+        amazon: '3HHVAuc',
       },
       {
         title: "La foi, la liturgie et la vie de l'église orthodoxe",
