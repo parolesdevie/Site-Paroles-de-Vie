@@ -21,17 +21,23 @@
       @input="onInput"
       :disabled="disabled"
     />
+    <IconBackspace
+      v-show="value"
+      class="h-6 w-6 flex-shrink-0"
+      @click.native="onClear"
+    />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 import IconSearch from '~/components/icons/IconSearch.vue'
+import IconBackspace from '../icons/IconBackspace.vue'
 
 export default Vue.extend({
   name: 'SearchInput',
 
-  components: { IconSearch },
+  components: { IconSearch, IconBackspace },
 
   props: {
     placeholder: {
@@ -51,6 +57,11 @@ export default Vue.extend({
   methods: {
     onInput(e: Event) {
       this.$emit('input', (e.target as HTMLInputElement).value)
+    },
+    onClear() {
+      console.log('clear')
+
+      this.$emit('input', '')
     },
   },
 })
