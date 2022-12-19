@@ -6,7 +6,7 @@
     </h2>
 
     <!-- topic list -->
-    <ul class="flex flex-wrap py-2 pr-2 md:py-4 md:pr-4 gap-2 md:gap-4">
+    <ul class="flex flex-wrap py-2 pr-2 md:py-4 md:pr-4 gap-2 md:gap-6">
       <TopicCard
         v-for="(topic, index) in topics"
         :key="index"

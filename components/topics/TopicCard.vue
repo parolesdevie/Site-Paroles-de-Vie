@@ -6,9 +6,9 @@
         h-40
         w-40
         md:h-56 md:w-56
-        lg:h-60 lg:w-60
-        rounded-xl
+        rounded-lg
         overflow-hidden
+        shadow
       "
       :to="to"
     >
@@ -71,3 +71,9 @@ export default Vue.extend({
   },
 })
 </script>
+
+<style lang="sass" scoped>
+.shadow
+  -webkit-box-shadow: 0px 26px 26px -22px rgba(0,0,0,0.5)
+  box-shadow: 0px 26px 26px -22px rgba(0,0,0,0.5)
+</style>
