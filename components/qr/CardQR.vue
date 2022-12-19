@@ -6,6 +6,7 @@
         border-2 border-blue-500
         rounded-lg
         bg-gray-100
+        dark:bg-gray-900
         flex flex-col
         items-start
         p-4
@@ -37,6 +38,7 @@
         border-2 border-blue-500
         rounded-lg
         bg-gray-100
+        dark:bg-gray-900
         flex
         p-4
         font-semibold

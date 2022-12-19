@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen">
+  <div class="flex flex-col min-h-screen dark:bg-light-black dark:text-white">
     <!-- header -->
     <Header />
     <div class="container mx-auto mb-auto px-3 md:px-0 py-4 flex flex-col">
@@ -12,7 +12,16 @@
           Conseils de débats
         </h2>
 
-        <p class="mt-4 md:mt-8 font-semibold text-base text-gray-800 max-w-2xl">
+        <p
+          class="
+            mt-4
+            md:mt-8
+            font-semibold
+            text-base text-gray-800
+            dark:text-gray-300
+            max-w-2xl
+          "
+        >
           Connaitre la
           <a
             class="hover:text-blue-700"

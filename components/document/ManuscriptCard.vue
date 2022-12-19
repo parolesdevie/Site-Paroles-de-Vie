@@ -34,6 +34,7 @@
           w-10
           md:h-12 md:w-12
           bg-gray-300
+          dark:bg-gray-700
           rounded-xl
           inline-flex
           items-center

@@ -8,7 +8,14 @@
     <!-- intro -->
     <p
       v-if="intro"
-      class="mt-4 md:mt-8 font-semibold text-base text-gray-800 max-w-2xl"
+      class="
+        mt-4
+        md:mt-8
+        font-semibold
+        text-base text-gray-800
+        dark:text-gray-300
+        max-w-2xl
+      "
     >
       <strong class="font-bold">Shalom,</strong>
       <br />

@@ -14,6 +14,7 @@
           w-12
           md:h-14 md:w-14
           bg-red-500
+          dark:bg-red-700
           text-white
           rounded-full
           flex

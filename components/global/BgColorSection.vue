@@ -1,6 +1,16 @@
 <template>
   <section
-    class="-mx-3 px-3 mt-4 md:mx-0 md:mt-10 bg-gray-200 py-4 md:py-10 lg:px-40"
+    class="
+      -mx-3
+      px-3
+      mt-4
+      md:mx-0 md:mt-10
+      bg-gray-200
+      dark:bg-gray-800
+      py-4
+      md:py-10
+      lg:px-40
+    "
   >
     <div class="container mx-auto">
       <!-- title -->

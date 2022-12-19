@@ -1,10 +1,8 @@
 <template>
-  <div class="flex flex-col min-h-screen">
+  <div class="flex flex-col min-h-screen dark:bg-light-black dark:text-white">
     <!-- header -->
     <Header />
     <div class="container mx-auto mb-auto px-3 md:px-0 py-4 flex flex-col">
-      <Breadcrumb :items="breadcrumbItems" />
-
       <SectionTopicCard class="mt-4 md:mt-10" :topics="topics" title="Thémes" />
 
       <SectionDocument class="mt-4 md:mt-10" :tags="tags" :pdfs="pdfs" />
@@ -25,7 +23,6 @@
 import Vue from 'vue'
 import SectionBook from '~/components/book/SectionBook.vue'
 import SectionDocument from '~/components/document/SectionDocument.vue'
-import Breadcrumb from '~/components/global/Breadcrumb.vue'
 import SectionMag from '~/components/magazine/SectionMag.vue'
 import SectionSite from '~/components/site/SectionSite.vue'
 import SectionTopicCard from '~/components/topics/SectionTopicCard.vue'
@@ -45,18 +42,17 @@ export default Vue.extend({
     SectionBook,
     SectionSite,
     SectionMag,
-    Breadcrumb,
     SectionTopicCard,
   },
 
   data() {
     return {
-      breadcrumbItems: [
-        {
-          name: 'Accueil',
-          to: '/',
-        },
-      ],
+      // breadcrumbItems: [
+      //   {
+      //     name: 'Accueil',
+      //     to: '/',
+      //   },
+      // ],
       topics: TopicService.getAll(),
       tags: TagService.getAll(),
       pdfs: PdfService.getAll(),

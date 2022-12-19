@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen">
+  <div class="flex flex-col min-h-screen dark:bg-light-black dark:text-white">
     <!-- header -->
     <Header />
     <div class="container mx-auto mb-auto px-3 md:px-0 py-4 flex flex-col">
@@ -31,6 +31,7 @@
                   md:h-56 md:w-56
                   lg:h-64 lg:w-64
                   bg-gray-300
+                  dark:bg-gray-700
                   rounded-lg
                 "
               >
@@ -64,6 +65,7 @@
                   md:h-10 md:w-10
                   lg:h-12 lg:w-12
                   bg-gray-300
+                  dark:bg-gray-700
                   rounded-lg
                   inline-flex
                   items-center
@@ -91,6 +93,7 @@
                     w-10
                     md:h-12 md:w-12
                     bg-gray-300
+                    dark:bg-gray-700
                     rounded-xl
                     inline-flex
                     items-center
@@ -106,7 +109,24 @@
                 </span>
                 <span class="ml-2">{{ plateform.name }}</span>
               </li>
-              <IconBookOpen class="h-8 w-8 text-white" />
+              <li class="inline-flex items-center">
+                <span
+                  class="
+                    h-10
+                    w-10
+                    md:h-12 md:w-12
+                    bg-gray-300
+                    dark:bg-gray-700
+                    rounded-xl
+                    inline-flex
+                    items-center
+                    justify-center
+                  "
+                >
+                  <IconBookOpen class="h-7 w-7 text-white" />
+                </span>
+                <span class="ml-2">Autre</span>
+              </li>
             </ul>
           </div>
         </div>

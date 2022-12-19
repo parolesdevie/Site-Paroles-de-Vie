@@ -30,13 +30,14 @@
           uppercase
           bg-black bg-opacity-30
           hover:bg-opacity-50
+          dark:bg-opacity-40 dark:hover:bg-opacity-60
           duration-300
           text-white
           font-semibold
           flex
           items-center
           justify-center
-          text-center
+          text-center text-shadow
         "
       >
         {{ title }}
@@ -73,6 +74,9 @@ export default Vue.extend({
 </script>
 
 <style lang="sass" scoped>
+.text-shadow
+  text-shadow: #fff 1px 0 10px
+
 .shadow
   -webkit-box-shadow: 0px 26px 26px -22px rgba(0,0,0,0.5)
   box-shadow: 0px 26px 26px -22px rgba(0,0,0,0.5)

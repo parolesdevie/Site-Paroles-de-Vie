@@ -3,6 +3,7 @@
     :href="href"
     class="
       bg-red-500
+      dark:bg-red-700
       text-white
       rounded-md
       pl-2

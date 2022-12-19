@@ -32,13 +32,15 @@ export default {
       },
       {
         property: 'og:image',
-        content:
-          'https://paroles-de-vie.netlify.app/seo/thumbnail.webp',
+        content: 'https://paroles-de-vie.netlify.app/seo/thumbnail.webp',
       },
 
       // <!-- Twitter -->
       { property: 'twitter:card', content: 'summary_large_image' },
-      { property: 'twitter:url', content: 'https://paroles-de-vie.netlify.app/' },
+      {
+        property: 'twitter:url',
+        content: 'https://paroles-de-vie.netlify.app/',
+      },
       { property: 'twitter:title', content: 'Paroles de Vie' },
       {
         property: 'twitter:description',
@@ -47,8 +49,7 @@ export default {
       },
       {
         property: 'twitter:image',
-        content:
-          'https://paroles-de-vie.netlify.app/seo/thumbnail.webp',
+        content: 'https://paroles-de-vie.netlify.app/seo/thumbnail.webp',
       },
 
       { name: 'format-detection', content: 'telephone=no' },
@@ -183,7 +184,9 @@ export default {
       content: ['./www/**/*.html', './safelist.txt'],
       theme: {
         extend: {
-          colors: {},
+          colors: {
+            'light-black': '#191920',
+          },
           spacing: {
             120: '30rem',
             160: '40rem',

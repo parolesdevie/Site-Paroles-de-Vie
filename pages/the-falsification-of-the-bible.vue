@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen">
+  <div class="flex flex-col min-h-screen dark:bg-light-black dark:text-white">
     <!-- header -->
     <Header />
     <div class="mb-auto px-3 md:px-0 py-4 flex flex-col">
@@ -17,21 +17,15 @@
         </template>
       </SectionIntroTopics>
 
-      <section
-        class="-mx-3 px-3 mt-4 md:mt-10 bg-gray-200 py-4 md:py-10 md:px-40"
-      >
-        <!-- title -->
-        <h2 class="flex items-center font-bold text-2xl md:text-3xl">
-          Réfutation de la thèse islamique
-        </h2>
-
-        <p class="mt-4 md:mt-8 font-semibold text-base max-w-5xl">
+      <BgColorSection>
+        <template v-slot:title>Réfutation de la thèse islamique</template>
+        <template v-slot:body>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
           cupiditate facilis unde amet sapiente repellat aspernatur ullam esse
           dolore quae! Hic, incidunt necessitatibus. Laboriosam suscipit ad,
           corrupti perspiciatis vitae quam.
-        </p>
-      </section>
+        </template>
+      </BgColorSection>
 
       <SectionDownloadDocumentsList
         class="container mx-auto mt-4 md:mt-10"

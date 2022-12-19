@@ -16,7 +16,7 @@
             border
             w-24
             h-8
-            dark:bg-gray-900 dark:text-white dark:border-gray-700
+            dark:bg-light-black dark:text-white dark:border-gray-700
           "
         >
           <option value="system">System</option>

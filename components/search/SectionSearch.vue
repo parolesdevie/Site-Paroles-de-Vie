@@ -15,38 +15,42 @@
       <div class="mt-2 md:mt-4" v-if="presets.length">
         <span class="font-semibold">Suggestions :</span>
         <ul class="mt-2 flex flex-wrap gap-2 md:gap-4">
-          <li
+          <Tag
             v-for="(preset, index) in presets"
             :key="index"
-            :class="`select-none cursor-pointer text-xs md:text-base inline-flex items-center font-bold leading-sm uppercase px-3 py-1 rounded-full 
-          ${
-            searchKeyWord === preset
-              ? 'bg-blue-200 text-blue-700'
-              : 'bg-gray-100 text-gray-700'
-          }`"
-            @click="selectPreset(preset)"
+            :active="searchKeyWord === preset"
+            @click.native="selectPreset(preset)"
           >
             {{ preset }}
-          </li>
+          </Tag>
         </ul>
       </div>
 
       <div class="mt-2 md:mt-4">
         <span class="font-semibold">Plateformes :</span>
         <ul class="mt-2 flex flex-wrap gap-2 md:gap-4">
-          <li
+          <Tag
             v-for="(plateform, index) in searchPlateforms"
             :key="index"
-            :class="`select-none cursor-pointer text-xs md:text-base inline-flex items-center font-bold leading-sm uppercase px-3 py-1 rounded-full 
-          ${
-            plateformSelected === plateform
-              ? 'bg-blue-200 text-blue-700'
-              : 'bg-gray-100 text-gray-700'
-          }`"
-            @click="selectPlateform(plateform)"
+            class="
+              select-none
+              cursor-pointer
+              text-xs
+              md:text-base
+              inline-flex
+              items-center
+              font-bold
+              leading-sm
+              uppercase
+              px-3
+              py-1
+              rounded-full
+            "
+            :active="plateformSelected === plateform"
+            @click.native="selectPlateform(plateform)"
           >
             {{ plateform }}
-          </li>
+          </Tag>
         </ul>
       </div>
 
@@ -81,11 +85,12 @@ import Vue from 'vue'
 import { SearchService } from '~/services'
 import { SearchPlateformEnum, SearchResult } from '~/types'
 import SearchInput from '../forms/SearchInput.vue'
+import Tag from '../global/Tag.vue'
 import CardSearchResult from './CardSearchResult.vue'
 export default Vue.extend({
   name: 'SectionSearch',
 
-  components: { SearchInput, CardSearchResult },
+  components: { SearchInput, CardSearchResult, Tag },
 
   data() {
     return {

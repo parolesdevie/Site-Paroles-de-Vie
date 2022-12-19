@@ -40,7 +40,14 @@
 
         <!-- intro text -->
         <div
-          class="mt-4 md:mt-8 font-semibold text-base text-gray-800 max-w-2xl"
+          class="
+            mt-4
+            md:mt-8
+            font-semibold
+            text-base text-gray-800
+            dark:text-gray-300
+            max-w-2xl
+          "
         >
           <p>
             <slot name="body"></slot>
@@ -52,6 +59,7 @@
               mt-4
               md:hidden
               bg-gray-300
+              dark:bg-gray-700 dark:text-white
               rounded-md
               pl-2
               pr-4

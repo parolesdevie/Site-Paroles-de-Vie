@@ -20,24 +20,27 @@
 
     <!-- tags -->
     <p class="mt-2 md:mt-10 text-lg md:text-2xl">Tags</p>
-    <ul class="mt-2 -m-1 md-m-2 flex flex-wrap">
+    <ul class="mt-2 flex flex-wrap gap-2 md:gap-4">
       <Tag
         v-show="showHereticTesis"
-        :slug="ThemeEnum.HERETIC_THESIS"
-        author="Thèses hérétiques"
-        :pdfCount="0"
         :active="selectedTags.includes(ThemeEnum.HERETIC_THESIS)"
-        @click="onTagClick"
-      />
+        @click.native="onTagClick(ThemeEnum.HERETIC_THESIS)"
+      >
+        <span> Thèses hérétiques </span>
+        <span class="ml-2 text-xs">(0)</span>
+      </Tag>
+
       <Tag
         v-for="(tag, index) in tags"
         :key="index"
-        :slug="tag.slug"
-        :author="tag.author"
-        :pdfCount="tag.pdfCount"
         :active="selectedTags.includes(tag.slug)"
-        @click="onTagClick"
-      />
+        @click.native="onTagClick(tag.slug)"
+      >
+        <span>
+          {{ tag.author }}
+        </span>
+        <span class="ml-2 text-xs">({{ tag.pdfCount }})</span>
+      </Tag>
     </ul>
 
     <div class="mt-4 md:mt-8 mb-8">
@@ -70,7 +73,7 @@ import { PropType } from 'vue/types/v3-component-props'
 import { IPdf, ITag, TagEnum, ThemeEnum } from '~/types'
 import SearchInput from '~/components/forms/SearchInput.vue'
 import CardDocument from '~/components/document/CardDocument.vue'
-import Tag from '~/components/document/Tag.vue'
+import Tag from '~/components/global/Tag.vue'
 
 export default Vue.extend({
   name: 'SectionDocument',

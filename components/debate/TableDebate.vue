@@ -1,10 +1,11 @@
 <template>
   <table class="table-auto text-sm md:text-sme">
-    <thead>
+    <thead class="dark:text-blue-500">
       <tr class="text-base">
         <th
           class="
             border-b
+            dark:border-blue-500
             font-semibold
             p-2
             md:p-4 md:pl-8 md:pt-0 md:pb-3
@@ -17,6 +18,7 @@
           v-if="!hideSubject"
           class="
             border-b
+            dark:border-blue-500
             font-semibold
             p-2
             md:p-4 md:pl-8 md:pt-0 md:pb-3
@@ -28,6 +30,7 @@
         <th
           class="
             border-b
+            dark:border-blue-500
             font-semibold
             p-2
             md:p-4 md:pl-8 md:pt-0 md:pb-3
@@ -39,6 +42,7 @@
         <th
           class="
             border-b
+            dark:border-blue-500
             font-semibold
             p-2
             md:p-4 md:pl-8 md:pt-0 md:pb-3
@@ -53,8 +57,15 @@
       </tr>
     </thead>
     <tbody>
-      <tr class="odd:bg-gray-50" v-for="(debat, index) in debates" :key="index">
-        <td class="border-b p-2 md:p-4 md:pl-8" v-if="debat.debaters.length">
+      <tr
+        class="odd:bg-gray-50 dark:odd:bg-gray-900"
+        v-for="(debat, index) in debates"
+        :key="index"
+      >
+        <td
+          class="border-b dark:border-blue-500 p-2 md:p-4 md:pl-8"
+          v-if="debat.debaters.length"
+        >
           <template v-for="(debater, index) in filterByTeam(debat.debaters, 0)">
             <NuxtLink
               :key="'team-0-' + index"
@@ -109,11 +120,21 @@
             ,
           </template>
         </td>
-        <td class="border-b p-2 md:p-4 md:pl-8 text-gray-400" v-else>
+        <td
+          class="border-b dark:border-blue-500 p-2 md:p-4 md:pl-8 text-gray-400"
+          v-else
+        >
           Inconnus
         </td>
         <td
-          class="border-b p-2 md:p-4 md:pl-8 text-xs md:text-base"
+          class="
+            border-b
+            dark:border-blue-500
+            p-2
+            md:p-4 md:pl-8
+            text-xs
+            md:text-base
+          "
           v-if="!hideSubject"
         >
           <a
@@ -127,19 +148,34 @@
           </a>
         </td>
         <td
-          class="border-b p-2 md:p-4 md:pl-8 text-xs md:text-base"
+          class="
+            border-b
+            dark:border-blue-500
+            p-2
+            md:p-4 md:pl-8
+            text-xs
+            md:text-base
+          "
           v-if="debat.date"
         >
           {{ debat.date }}
         </td>
         <td
-          class="border-b p-2 md:p-4 md:pl-8 text-xs md:text-base text-gray-400"
+          class="
+            border-b
+            dark:border-blue-500
+            p-2
+            md:p-4 md:pl-8
+            text-xs
+            md:text-base
+            text-gray-400
+          "
           v-else
         >
           Inconnue
         </td>
         <td
-          class="border-b p-2 md:p-4 md:pl-8"
+          class="border-b dark:border-blue-500 p-2 md:p-4 md:pl-8"
           v-if="debat.url && debat.plateform"
         >
           <a
@@ -175,7 +211,10 @@
             />
           </a>
         </td>
-        <td class="border-b p-2 md:p-4 md:pl-8 text-gray-400" v-else>
+        <td
+          class="border-b dark:border-blue-500 p-2 md:p-4 md:pl-8 text-gray-400"
+          v-else
+        >
           Inconnue
         </td>
       </tr>
