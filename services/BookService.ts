@@ -16,9 +16,19 @@ export default class BookService {
         amazon: '3hzadoT',
       },
       {
+        title: 'La Bible. Traduction officielle liturgique',
+        slug: 'la-bible-traduction-officielle-liturgique',
+        amazon: '3YLdGSj',
+      },
+      {
         title: 'La Bible de Jérusalem',
         slug: 'la-bible-de-jerusalem',
         amazon: '3PEqNAc',
+      },
+      {
+        title: 'La Bible : Segond 21',
+        slug: 'la-bible-segond-21',
+        amazon: '3jffW3A',
       },
       {
         title: 'Paroles et exemples des anciens',
@@ -54,5 +64,9 @@ export default class BookService {
         amazon: '3BGYqf6',
       },
     ]
+  }
+
+  static getBible(): IBook[] {
+    return this.getAll().filter((book) => book.slug.includes('bible'))
   }
 }

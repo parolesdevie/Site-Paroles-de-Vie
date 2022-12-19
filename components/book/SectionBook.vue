@@ -2,11 +2,14 @@
   <section>
     <!-- title -->
     <h2 class="flex items-center font-bold text-2xl md:text-3xl">
-      Recommandations de Livres
+      {{ title }}
     </h2>
 
     <!-- intro -->
-    <p class="mt-4 md:mt-8 font-semibold text-base text-gray-800 max-w-2xl">
+    <p
+      v-if="intro"
+      class="mt-4 md:mt-8 font-semibold text-base text-gray-800 max-w-2xl"
+    >
       <strong class="font-bold">Shalom,</strong>
       <br />
       Voici un choix de livres Chrétiens, ces livres sont à la fois détaillés et
@@ -51,6 +54,14 @@ export default Vue.extend({
     books: {
       type: Array as PropType<IBook[]>,
       default: () => [],
+    },
+    title: {
+      type: String,
+      default: 'Recommandations de Livres',
+    },
+    intro: {
+      type: Boolean,
+      default: true,
     },
   },
 })

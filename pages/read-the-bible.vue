@@ -44,9 +44,18 @@
         </template>
       </BgColorSection>
 
+      <!-- document -->
       <SectionDownloadDocumentsList
         class="container mx-auto mt-4 md:mt-10"
         :files="files"
+      />
+
+      <!-- book -->
+      <SectionBook
+        class="container mx-auto mt-4 md:mt-10"
+        title="Acheter une Bible"
+        :intro="false"
+        :books="books"
       />
     </div>
 
@@ -57,10 +66,11 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import SectionBook from '~/components/book/SectionBook.vue'
 import SectionDownloadDocumentsList from '~/components/document/SectionDownloadDocumentsList.vue'
 import BgColorSection from '~/components/global/BgColorSection.vue'
 import SectionIntroTopics from '~/components/topics/SectionIntroTopics.vue'
-import { TopicService, WebSiteService } from '~/services'
+import { BookService, TopicService, WebSiteService } from '~/services'
 import { AuthorEnum, FormatEnum } from '~/types'
 
 export default Vue.extend({
@@ -70,6 +80,7 @@ export default Vue.extend({
     SectionIntroTopics,
     BgColorSection,
     SectionDownloadDocumentsList,
+    SectionBook,
   },
 
   data() {
@@ -95,6 +106,7 @@ export default Vue.extend({
           title: 'Evangile de matthieu en hébreu shem tov',
         },
       ],
+      books: BookService.getBible(),
     }
   },
 })
