@@ -26,12 +26,12 @@
             <strong>Religion :</strong>
             {{ religion }}
             <IconQuran
-              v-if="religion === 'Musulman'"
-              class="inline h-4 w-4 shrink-0 text-green-500"
+              v-if="religion === DebatReligionEnum.MUSLIM"
+              class="inline h-4 shrink-0 text-green-500"
             />
             <IconCross
-              v-if="religion === 'Chrétien'"
-              class="inline h-4 w-4 shrink-0 text-violet-500"
+              v-else-if="religion === DebatReligionEnum.CHRISTIAN"
+              class="inline h-4 shrink-0 text-violet-500"
             />
           </div>
         </div>
@@ -59,6 +59,7 @@ import TableDebate from '~/components/debate/TableDebate.vue'
 import IconQuran from '~/components/icons/IconQuran.vue'
 import IconCross from '~/components/icons/IconCross.vue'
 import { DebaterService, DebateService } from '~/services'
+import { DebatReligionEnum } from '~/types'
 
 export default Vue.extend({
   components: { TableDebate, IconQuran, IconCross },
@@ -87,6 +88,7 @@ export default Vue.extend({
       backUrl,
       debates,
       ...currentDebater,
+      DebatReligionEnum,
     }
   },
 })

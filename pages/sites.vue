@@ -19,7 +19,7 @@ import SectionSite from '~/components/site/SectionSite.vue'
 import { WebSiteService } from '~/services'
 
 export default Vue.extend({
-  name: 'MagazinesPage',
+  name: 'SitesPage',
 
   components: { SectionSite, Breadcrumb },
 

@@ -1,4 +1,4 @@
-import { IDebaterProfils } from '~/types'
+import { DebatReligionEnum, IDebaterProfils } from '~/types'
 
 const UNKNOW_DEBATER: IDebaterProfils = {
   id: -1,
@@ -15,91 +15,91 @@ export default class DebaterService {
         id: 1,
         pseudo: 'Ismaïl al Hanifi',
         name: 'Ismaïl al Hanifi',
-        religion: 'Musulman',
+        religion: DebatReligionEnum.MUSLIM,
       },
       {
         id: 2,
         pseudo: 'Georges Autran',
         name: 'Georges Autran',
-        religion: 'Chrétien',
+        religion: DebatReligionEnum.CHRISTIAN,
       },
       {
         id: 3,
         pseudo: 'Izanami',
         name: 'Izanami',
-        religion: 'Chrétien',
+        religion: DebatReligionEnum.CHRISTIAN,
       },
       {
         id: 4,
         pseudo: 'JMS',
         name: 'JMS',
-        religion: 'Chrétien',
+        religion: DebatReligionEnum.CHRISTIAN,
       },
       {
         id: 5,
         pseudo: 'Sham',
         name: 'Sham',
-        religion: 'Chrétien',
+        religion: DebatReligionEnum.CHRISTIAN,
       },
       {
         id: 6,
         pseudo: 'Mengo',
         name: 'Mengo',
-        religion: 'Musulman',
+        religion: DebatReligionEnum.MUSLIM,
       },
       {
         id: 7,
         pseudo: 'Hanane',
         name: 'Hanane',
-        religion: 'Musulman',
+        religion: DebatReligionEnum.MUSLIM,
       },
       {
         id: 8,
         pseudo: 'Ali',
         name: 'Ali',
-        religion: 'Musulman',
+        religion: DebatReligionEnum.MUSLIM,
       },
       {
         id: 9,
         pseudo: 'Ayman',
         name: 'Ayman',
-        religion: 'Musulman',
+        religion: DebatReligionEnum.MUSLIM,
       },
       {
         id: 10,
         pseudo: 'Bénévolence',
         name: 'Bénévolence',
-        religion: 'Chrétien',
+        religion: DebatReligionEnum.CHRISTIAN,
       },
       {
         id: 11,
         pseudo: 'Fidelix Verax',
         name: 'Fidelix Verax',
-        religion: 'Chrétien',
+        religion: DebatReligionEnum.CHRISTIAN,
       },
       {
         id: 12,
         pseudo: 'Qalev',
         name: 'Qalev',
-        religion: 'Chrétien',
+        religion: DebatReligionEnum.CHRISTIAN,
       },
       {
         id: 13,
         pseudo: 'Raph',
         name: 'Raph',
-        religion: 'Chrétien',
+        religion: DebatReligionEnum.CHRISTIAN,
       },
       {
         id: 14,
         pseudo: 'Jacques',
         name: 'Jacques',
-        religion: 'Chrétien',
+        religion: DebatReligionEnum.CHRISTIAN,
       },
       {
         id: 15,
         pseudo: 'Daniel',
         name: 'Daniel',
-        religion: 'Musulman',
+        religion: DebatReligionEnum.MUSLIM,
       },
     ]
   }

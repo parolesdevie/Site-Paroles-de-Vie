@@ -2,7 +2,8 @@
   <section>
     <!-- title -->
     <h2 class="flex items-center font-bold text-2xl md:text-3xl">
-      Recommandations de Sites
+      <slot name="title-icon" />
+      {{ title }}
     </h2>
 
     <!-- links -->
@@ -27,6 +28,7 @@
 </template>
 
 <script lang="ts">
+import { title } from 'process'
 import Vue from 'vue'
 import { PropType } from 'vue/types/v3-component-props'
 import { IWebSite } from '~/types'
@@ -40,6 +42,10 @@ export default Vue.extend({
     sites: {
       type: Array as PropType<IWebSite[]>,
       default: () => [],
+    },
+    title: {
+      type: String,
+      default: 'Recommandations de Sites',
     },
   },
 })

@@ -101,6 +101,46 @@ export default class TopicService {
         to: '/free-will/',
         title: 'Le libre arbitre',
       },
+      {
+        cover: {
+          color: '',
+          src: 'documents',
+        },
+        to: '/documents/',
+        title: 'Documents',
+      },
+      {
+        cover: {
+          color: '',
+          src: 'books',
+        },
+        to: '/books/',
+        title: 'Livres Recommandés',
+      },
+      {
+        cover: {
+          color: '',
+          src: 'sites',
+        },
+        to: '/sites/',
+        title: 'Sites Recommandés',
+      },
+      {
+        cover: {
+          color: '',
+          src: 'magazines',
+        },
+        to: '/magazines/',
+        title: 'Magazines',
+      },
+      {
+        cover: {
+          color: '',
+          src: 'social-networks',
+        },
+        to: '/social-networks/',
+        title: 'Réseaux sociaux',
+      },
     ]
   }
 

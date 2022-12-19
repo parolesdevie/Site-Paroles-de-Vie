@@ -115,11 +115,17 @@ export enum DebatPlateformEnum {
   DISCORD = 'Discord',
 }
 
+export enum DebatReligionEnum {
+  UNKNOW = 'inconnu',
+  CHRISTIAN = 'Chrétien',
+  MUSLIM = 'Musulman',
+}
+
 export interface IDebaterProfils {
   id: number
   pseudo?: string
   name?: string
-  religion?: string
+  religion?: DebatReligionEnum
 }
 
 export interface IDebater extends IDebaterProfils {

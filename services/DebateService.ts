@@ -1,4 +1,4 @@
-import { DebatPlateformEnum, IDebat } from '~/types'
+import { DebatPlateformEnum, DebatReligionEnum, IDebat } from '~/types'
 import DebaterService from './DebaterService'
 
 export default class DebateService {
@@ -35,7 +35,11 @@ export default class DebateService {
         url: 'https://youtu.be/qm9e5onmH-Y',
         subject: "JESUS A ANNONCE L'ISLAM PART 5",
         debaters: [
-          { ...DebaterService.getByPseudo(undefined), team: 0 },
+          {
+            ...DebaterService.getByPseudo(undefined),
+            religion: DebatReligionEnum.CHRISTIAN,
+            team: 0,
+          },
           { ...DebaterService.getByPseudo('Bénévolence'), team: 0 },
           { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 },
         ],
@@ -47,7 +51,11 @@ export default class DebateService {
         url: 'https://youtu.be/iZ3CGDNSVdw',
         subject: "JESUS A ANNONCE L'ISLAM PART 5",
         debaters: [
-          { ...DebaterService.getByPseudo(undefined), team: 0 },
+          {
+            ...DebaterService.getByPseudo(undefined),
+            religion: DebatReligionEnum.CHRISTIAN,
+            team: 0,
+          },
           { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 },
         ],
         plateform: DebatPlateformEnum.YOUTUBE,
@@ -70,7 +78,11 @@ export default class DebateService {
         subject: "DÉBAT INTER-RELIGIEUX : L'ISLAM EST DANS LA BIBLE ! PART II",
         debaters: [
           { ...DebaterService.getByPseudo('Bénévolence'), team: 0 },
-          { ...DebaterService.getByPseudo(undefined), team: 0 },
+          {
+            ...DebaterService.getByPseudo(undefined),
+            religion: DebatReligionEnum.CHRISTIAN,
+            team: 0,
+          },
           { ...DebaterService.getByPseudo('Izanami'), team: 0 },
           { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 },
           { ...DebaterService.getByPseudo('Ayman'), team: 1 },
@@ -119,7 +131,11 @@ export default class DebateService {
         url: 'https://youtu.be/0beBalbM_nM',
         subject: 'Collectif Theophilos La crucifixiondans la bible',
         debaters: [
-          { ...DebaterService.getByPseudo(undefined), team: 0 },
+          {
+            ...DebaterService.getByPseudo(undefined),
+            religion: DebatReligionEnum.CHRISTIAN,
+            team: 0,
+          },
           { ...DebaterService.getByPseudo('Izanami'), team: 0 },
           { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 },
         ],

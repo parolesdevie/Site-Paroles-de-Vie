@@ -7,7 +7,12 @@
       <Breadcrumb :items="breadcrumbItems" />
 
       <!-- documment -->
-      <SectionDocument class="mt-4 md:mt-10" :tags="tags" :pdfs="pdfs" />
+      <SectionDocument
+        class="mt-4 md:mt-10"
+        :tags="tags"
+        :pdfs="pdfs"
+        fullHeight
+      />
     </div>
 
     <!-- footer -->

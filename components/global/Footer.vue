@@ -151,7 +151,7 @@
         </nav>
       </div>
 
-      <!-- TikTok -->
+      <!-- tiktok -->
       <div class="flex flex-col mb-4" v-if="linksMenuTikTok.length">
         <div
           class="

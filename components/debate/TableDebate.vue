@@ -62,7 +62,7 @@
               :to="'/debaters/' + debater.id"
               class="text-sm md:text-base hover:text-blue-500"
             >
-              {{ debater.name }},
+              {{ debater.name }}
             </NuxtLink>
             <span
               :key="'team-0-' + index"
@@ -71,6 +71,15 @@
             >
               Inconnu
             </span>
+            <IconQuran
+              v-if="debater.religion === DebatReligionEnum.MUSLIM"
+              class="inline h-3 shrink-0 text-green-500"
+            />
+            <IconCross
+              v-else-if="debater.religion === DebatReligionEnum.CHRISTIAN"
+              class="inline h-3 shrink-0 text-violet-500"
+            />
+            ,
           </template>
           <strong class="text-red-500"> VS </strong>
           <template v-for="(debater, index) in filterByTeam(debat.debaters, 1)">
@@ -78,9 +87,9 @@
               :key="'team-1-' + index"
               v-if="debater.id !== -1"
               :to="'/debaters/' + debater.id"
-              class="text-sm md:text-base hover:text-blue-510"
+              class="text-sm md:text-base hover:text-blue-500"
             >
-              {{ debater.name }},
+              {{ debater.name }}
             </NuxtLink>
             <span
               :key="'team-0-' + index"
@@ -89,6 +98,15 @@
             >
               Inconnu
             </span>
+            <IconQuran
+              v-if="debater.religion === DebatReligionEnum.MUSLIM"
+              class="inline h-3 shrink-0 text-green-500"
+            />
+            <IconCross
+              v-else-if="debater.religion === DebatReligionEnum.CHRISTIAN"
+              class="inline h-3 shrink-0 text-violet-500"
+            />
+            ,
           </template>
         </td>
         <td class="border-b p-2 md:p-4 md:pl-8 text-gray-400" v-else>
@@ -172,7 +190,14 @@ import IconYouTube from '~/components/icons/IconYouTube.vue'
 import IconTikTok from '~/components/icons/IconTikTok.vue'
 import IconDiscord from '~/components/icons/IconDiscord.vue'
 import IconGlobe from '~/components/icons/IconGlobe.vue'
-import { IDebat, DebatPlateformEnum, IDebater } from '~/types'
+import IconQuran from '~/components/icons/IconQuran.vue'
+import IconCross from '~/components/icons/IconCross.vue'
+import {
+  IDebat,
+  DebatPlateformEnum,
+  DebatReligionEnum,
+  IDebater,
+} from '~/types'
 
 export default Vue.extend({
   name: 'TableDebate.',
@@ -182,6 +207,8 @@ export default Vue.extend({
     IconTikTok,
     IconDiscord,
     IconGlobe,
+    IconCross,
+    IconQuran,
   },
 
   props: {
@@ -198,6 +225,7 @@ export default Vue.extend({
   data() {
     return {
       DebatPlateformEnum,
+      DebatReligionEnum,
     }
   },
 
