@@ -6,9 +6,19 @@ export default class BookService {
   static getAll(): IBook[] {
     return [
       {
+        title: 'Nouveau Testament Interlinéaire grec-français',
+        slug: 'nouveau-testament-interlineaire-grec-francais',
+        amazon: '3W8ugcZ',
+      },
+      {
         title: 'Bible Nestle-Aland',
         slug: 'bible-nestle-aland',
         amazon: '3hzadoT',
+      },
+      {
+        title: 'La Bible de Jérusalem',
+        slug: 'la-bible-de-jerusalem',
+        amazon: '3PEqNAc',
       },
       {
         title: 'Paroles et exemples des anciens',
