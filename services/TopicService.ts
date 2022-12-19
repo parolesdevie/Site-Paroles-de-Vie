@@ -103,7 +103,7 @@ export default class TopicService {
       },
       {
         cover: {
-          color: '',
+          color: '#9D928C',
           src: 'documents',
         },
         to: '/documents/',
@@ -111,7 +111,7 @@ export default class TopicService {
       },
       {
         cover: {
-          color: '',
+          color: '#59463B',
           src: 'books',
         },
         to: '/books/',
