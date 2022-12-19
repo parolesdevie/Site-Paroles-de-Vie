@@ -6,14 +6,30 @@ export default class BookService {
   static getAll(): IBook[] {
     return [
       {
+        title: 'Bible Nestle-Aland',
+        slug: 'bible-nestle-aland',
+        amazon: '3hzadoT',
+      },
+      {
         title: 'Nouveau Testament Interlinéaire grec-français',
         slug: 'nouveau-testament-interlineaire-grec-francais',
         amazon: '3W8ugcZ',
       },
       {
-        title: 'Bible Nestle-Aland',
-        slug: 'bible-nestle-aland',
-        amazon: '3hzadoT',
+        title: "Je croyais en Issa. J'ai rencontré Jésus",
+        slug: 'je-croyais-en-issa-jai-rencontre-jesus',
+        amazon: '3FH2DR0',
+      },
+      {
+        title:
+          "Youcat français : Catéchisme de l'Eglise catholique pour les jeunes",
+        slug: 'youcat',
+        amazon: '3v1qjuI',
+      },
+      {
+        title: "Catéchisme de l'Église catholique",
+        slug: 'catechisme-de-leglise-catholique',
+        amazon: '3YztAiw',
       },
       {
         title: 'La Bible. Traduction officielle liturgique',
