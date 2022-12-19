@@ -35,7 +35,7 @@ export default Vue.extend({
     return {
       breadcrumbItems: [
         {
-          name: 'Home',
+          name: 'Accueil',
           to: '/',
         },
         {

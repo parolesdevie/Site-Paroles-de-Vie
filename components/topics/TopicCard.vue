@@ -28,8 +28,8 @@
           md:text-xl
           lg:text-2xl
           uppercase
-          bg-black bg-opacity-20
-          hover:bg-opacity-40
+          bg-black bg-opacity-30
+          hover:bg-opacity-50
           duration-300
           text-white
           font-semibold

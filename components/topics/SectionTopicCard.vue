@@ -1,7 +1,9 @@
 <template>
   <section>
     <!-- title -->
-    <h2 class="flex items-center font-bold text-2xl md:text-3xl">Topics</h2>
+    <h2 class="flex items-center font-bold text-2xl md:text-3xl">
+      {{ title }}
+    </h2>
 
     <!-- topic list -->
     <ul class="flex flex-wrap py-2 pr-2 md:py-4 md:pr-4 gap-2 md:gap-4">
@@ -28,6 +30,10 @@ export default Vue.extend({
   components: { TopicCard },
 
   props: {
+    title: {
+      type: String,
+      default: 'Topics',
+    },
     topics: {
       type: Array as PropType<ITopic[]>,
       default: () => [],

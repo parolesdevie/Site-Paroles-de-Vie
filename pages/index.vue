@@ -5,7 +5,7 @@
     <div class="container mx-auto mb-auto px-3 md:px-0 py-4 flex flex-col">
       <Breadcrumb :items="breadcrumbItems" />
 
-      <SectionTopicCard class="mt-4 md:mt-10" :topics="topics" />
+      <SectionTopicCard class="mt-4 md:mt-10" :topics="topics" title="Thémes" />
 
       <SectionDocument class="mt-4 md:mt-10" :tags="tags" :pdfs="pdfs" />
 
@@ -64,7 +64,7 @@ export default Vue.extend({
     return {
       breadcrumbItems: [
         {
-          name: 'Home',
+          name: 'Accueil',
           to: '/',
         },
       ],

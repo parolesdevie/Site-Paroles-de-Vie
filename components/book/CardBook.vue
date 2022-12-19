@@ -1,28 +1,22 @@
 <template>
   <li
     v-if="src"
-    class="
-      flex flex-col
-      w-40
-      items-center
-      p-2
-      md:p-4
-      hover:scale-125
-      duration-300
-    "
+    class="flex flex-col w-40 items-center p-2 md:p-4"
     :title="title"
   >
     <!-- image -->
     <img
       loading="lazy"
-      class="h-24 md:h-32"
+      class="h-24 md:h-32 hover:scale-125 duration-300"
       :srcset="computedSrrset"
       :src="computedSrc"
       alt="Le feu sacré"
     />
 
     <!-- title -->
-    <span class="mt-2 w-full text-sm md:text-base font-semibold text-center">
+    <span
+      class="mt-2 md:mt-4 w-full text-sm md:text-base font-semibold text-center"
+    >
       {{ title }}
     </span>
     <a
