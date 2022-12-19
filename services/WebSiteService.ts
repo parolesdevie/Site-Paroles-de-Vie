@@ -51,7 +51,7 @@ export default class WebSiteService {
     ]
   }
 
-  static getManuscripts(): IWebSite[] {
+  static getManuscripts() {
     return {
       CODEX_SINATICUS: {
         name: 'Codex Sinaiticus',

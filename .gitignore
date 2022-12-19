@@ -89,3 +89,6 @@ sw.*
 # Vim swap files
 *.swp
 components/trash
+static/sources/**/images/
+static/**/*.bmp
+dev/
