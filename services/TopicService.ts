@@ -127,7 +127,7 @@ export default class TopicService {
       },
       {
         cover: {
-          color: '',
+          color: '#ACB0BB',
           src: 'magazines',
         },
         to: '/magazines/',
@@ -135,7 +135,7 @@ export default class TopicService {
       },
       {
         cover: {
-          color: '',
+          color: '#64575A',
           src: 'social-networks',
         },
         to: '/social-networks/',
