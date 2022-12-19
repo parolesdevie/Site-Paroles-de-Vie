@@ -141,6 +141,14 @@ export default class TopicService {
         to: '/social-networks/',
         title: 'Réseaux sociaux',
       },
+      {
+        cover: {
+          color: '#967D7A',
+          src: 'youtube',
+        },
+        to: '/youtube/',
+        title: 'Chaîne Youtube Recommandées',
+      },
     ]
   }
 

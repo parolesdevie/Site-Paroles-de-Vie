@@ -51,7 +51,7 @@ export default class WebSiteService {
     ]
   }
 
-  static getManuscripts() {
+  static getManuscripts(): IWebSite[] {
     return {
       CODEX_SINATICUS: {
         name: 'Codex Sinaiticus',
@@ -108,7 +108,7 @@ export default class WebSiteService {
     }
   }
 
-  static getBibles() {
+  static getBibles(): IWebSite[] {
     return [
       {
         name: 'Site levangile.com',
@@ -133,6 +133,35 @@ export default class WebSiteService {
       {
         name: 'Nouveau Testament Grecque Francais',
         href: 'https://theotex.org/ntgf/matthieu/matthieu_1_gf.html',
+      },
+    ]
+  }
+
+  static getYoutubeChannels(): IWebSite[] {
+    return [
+      {
+        name: 'DBK Infinite',
+        href: 'https://www.youtube.com/@dbkinfinite',
+      },
+      {
+        name: 'Theoloji',
+        href: 'https://www.youtube.com/@Theoloji',
+      },
+      {
+        name: 'Collectif Théophilos',
+        href: 'https://www.youtube.com/@collectiftheophilos8273',
+      },
+      {
+        name: 'Collectif Pistos-Yeshoua',
+        href: 'https://www.youtube.com/@collectifpistos-yeshoua268',
+      },
+      {
+        name: 'YESHUA MALAK',
+        href: 'https://www.youtube.com/@yeshuamalak3706',
+      },
+      {
+        name: 'Coliseum',
+        href: 'https://www.youtube.com/@chaine-coliseum',
       },
     ]
   }

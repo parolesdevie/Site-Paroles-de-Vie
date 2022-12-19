@@ -57,7 +57,6 @@ export default class SearchService {
     } catch (err) {
       console.error(err)
     }
-    console.error(response)
 
     return response?.data.map((result: any) => ({
       ...result,
