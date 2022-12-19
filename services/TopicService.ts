@@ -119,7 +119,7 @@ export default class TopicService {
       },
       {
         cover: {
-          color: '',
+          color: '#CB885F',
           src: 'sites',
         },
         to: '/sites/',
