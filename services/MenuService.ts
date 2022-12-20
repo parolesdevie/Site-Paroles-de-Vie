@@ -57,4 +57,17 @@ export default class MenuService {
       },
     ]
   }
+
+  static getPodcastMenu(): ILink[] {
+    return [
+      {
+        to: 'https://open.spotify.com/show/5XnBOuPu5fUW0DROVinvbg',
+        name: 'Spotify',
+      },
+      {
+        to: 'https://anchor.fm/paroles-de-vie',
+        name: 'Anchor',
+      },
+    ]
+  }
 }

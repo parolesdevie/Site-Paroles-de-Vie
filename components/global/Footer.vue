@@ -190,6 +190,47 @@
           </ul>
         </nav>
       </div>
+
+      <!-- podcast -->
+      <div class="flex flex-col mb-4" v-if="linksMenuPodcast.length">
+        <div
+          class="
+            font-bold
+            text-sm
+            md:text-lg
+            text-gray-300
+            uppercase
+            flex
+            items-center
+          "
+        >
+          <IconPodcast class="h-4" />
+          <strong class="ml-2">Podcast</strong>
+        </div>
+
+        <nav class="contents">
+          <ul class="mt-2 md:mt-4 text-gray-400 flex flex-wrap flex-col gap-2">
+            <li v-for="(link, index) in linksMenuPodcast" :key="index">
+              <a
+                :href="link.to"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="
+                  flex
+                  items-center
+                  hover:text-blue-500
+                  text-xs
+                  md:text-base
+                "
+              >
+                <span>
+                  {{ link.name }}
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </footer>
 </template>
@@ -200,17 +241,19 @@ import { MenuService } from '~/services'
 import IconChevronUp from '~/components/icons/IconChevronUp.vue'
 import IconTikTok from '~/components/icons/IconTikTok.vue'
 import IconDiscord from '~/components/icons/IconDiscord.vue'
+import IconPodcast from '~/components/icons/IconPodcast.vue'
 
 export default Vue.extend({
   name: 'Footer',
 
-  components: { IconChevronUp, IconTikTok, IconDiscord },
+  components: { IconChevronUp, IconTikTok, IconDiscord, IconPodcast },
 
   data() {
     return {
       linksMainMenu: MenuService.getMainMenu(),
       linksMenuDiscord: MenuService.getDiscordMenu(),
       linksMenuTikTok: MenuService.getTikTokMenu(),
+      linksMenuPodcast: MenuService.getPodcastMenu(),
       scTimer: 0,
       scY: 0,
     }
