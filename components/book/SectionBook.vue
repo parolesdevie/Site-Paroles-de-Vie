@@ -23,7 +23,7 @@
       approfondis , destinés à un large public.
       <br />
       Si vous souhaitez en acheter un sur Amazon,
-      <strong>utilisez le lien en dessous du titre</strong>, ceci nous permet
+      <strong>utilisez le lien au dessus du titre</strong>, ceci nous permet
       d'obtenir une commission de vente.
       <br />
       Bonne lecture.🕊️

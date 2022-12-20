@@ -13,17 +13,12 @@
       alt="Le feu sacré"
     />
 
-    <!-- title -->
-    <span
-      class="mt-2 md:mt-4 w-full text-sm md:text-base font-semibold text-center"
-    >
-      {{ title }}
-    </span>
+    <!-- amazon -->
     <a
       v-if="amazon"
       class="
-        mt-2
-        md:mt-3
+        mt-4
+        md:mt-6
         border border-orange-600
         text-orange-600
         hover:bg-orange-600 hover:text-white
@@ -41,6 +36,21 @@
       <IconAmazon class="h-4 md:h-6" />
       <span class="ml-2">Acheter</span>
     </a>
+
+    <!-- title -->
+    <span
+      class="
+        mt-2
+        text-sm
+        md:text-base
+        font-semibold
+        text-center
+        h-32
+        overflow-y-hidden
+      "
+    >
+      {{ title }}
+    </span>
   </li>
 </template>
 

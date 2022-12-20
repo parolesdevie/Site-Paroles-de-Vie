@@ -157,6 +157,14 @@ export default class TopicService {
         to: '/soreg/',
         title: 'Le Soreg',
       },
+      {
+        cover: {
+          color: '#',
+          src: 'podcast',
+        },
+        to: '/podcast/',
+        title: 'Podcast',
+      },
     ]
   }
 

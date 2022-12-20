@@ -1,5 +1,5 @@
 <template>
-  <div :style="{ backgroundColor: color }" class="">
+  <div :style="{ backgroundColor: color }">
     <img
       class="animate-fade"
       :srcset="computedSrrset"
