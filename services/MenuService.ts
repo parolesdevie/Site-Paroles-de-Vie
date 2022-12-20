@@ -11,7 +11,7 @@ export default class MenuService {
       },
       {
         to: '/questions-answer/',
-        name: 'Questions/Réponse',
+        name: 'Questions/Réponses',
       },
       {
         to: '/documents/',

@@ -48,6 +48,10 @@ export default class WebSiteService {
         name: 'jesusmarie',
         href: 'http://jesusmarie.free.fr/',
       },
+      {
+        name: 'USEFULCHARTS',
+        href: 'https://usefulcharts.com/collections/religion',
+      },
     ]
   }
 
@@ -162,6 +166,10 @@ export default class WebSiteService {
       {
         name: 'Coliseum',
         href: 'https://www.youtube.com/@chaine-coliseum',
+      },
+      {
+        name: ' CSNTM Productions',
+        href: 'https://www.youtube.com/@CSNTMProductions',
       },
     ]
   }

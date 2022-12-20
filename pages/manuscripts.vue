@@ -164,6 +164,14 @@
           />
         </div>
       </section>
+
+      <!-- section youtube videos  -->
+      <SectionVideo
+        left
+        class="container mx-auto mt-4 md:mt-10"
+        playlistId="PLaBmOZ7eJG-Xp0v-AbfDTIe2dfEfU9ylW"
+        :videos="videos"
+      />
     </div>
 
     <!-- footer -->
@@ -178,8 +186,10 @@ import Breadcrumb from '~/components/global/Breadcrumb.vue'
 import HandDrownArrowComment from '~/components/global/HandDrownArrowComment.vue'
 import IconBookOpen from '~/components/icons/IconBookOpen.vue'
 import IconHandDrownArrowTopLeftCorner from '~/components/icons/IconHandDrownArrowTopLeftCorner.vue'
+import SectionVideo from '~/components/videos/SectionVideo.vue'
 import { ManuscriptService, WebSiteService } from '~/services'
 import { ManuscriptsPlateformEnum } from '~/services/WebSiteService'
+import { VideoLinkEnum } from '~/types'
 
 export default Vue.extend({
   name: 'ManuscriptsPage',
@@ -190,6 +200,7 @@ export default Vue.extend({
     IconHandDrownArrowTopLeftCorner,
     HandDrownArrowComment,
     IconBookOpen,
+    SectionVideo,
   },
 
   data() {
@@ -207,6 +218,38 @@ export default Vue.extend({
       manuscripts: WebSiteService.getManuscripts(),
       ManuscriptsPlateformEnum,
       plateforms: ManuscriptService.getPlateforms(),
+      videos: [
+        {
+          source: VideoLinkEnum.YOUTUBE,
+          name: 'Oldest Bible Manuscripts',
+          url: 'https://youtu.be/TvmAaXUKkco',
+          thumbnail: 'https://img.youtube.com/vi/TvmAaXUKkco/mqdefault.jpg',
+        },
+        {
+          source: VideoLinkEnum.YOUTUBE,
+          name: 'Il était une fois... Le codex Sinaïticus',
+          url: 'https://youtu.be/W6NCAdoFZ4s',
+          thumbnail: 'https://img.youtube.com/vi/W6NCAdoFZ4s/mqdefault.jpg',
+        },
+        {
+          source: VideoLinkEnum.YOUTUBE,
+          name: 'Dr Wallace on Codex Sinaiticus at the British Library',
+          url: 'https://youtu.be/u1SClZRz4lw',
+          thumbnail: 'https://img.youtube.com/vi/u1SClZRz4lw/mqdefault.jpg',
+        },
+        {
+          source: VideoLinkEnum.YOUTUBE,
+          name: 'Why We Digitize New Testament Manuscripts',
+          url: 'https://www.youtube.com/watch?v=XhbPf2FCQv4',
+          thumbnail: 'https://img.youtube.com/vi/XhbPf2FCQv4/mqdefault.jpg',
+        },
+        {
+          source: VideoLinkEnum.YOUTUBE,
+          name: "The world's oldest bible reunited online",
+          url: 'https://youtu.be/fd_x1yuIrZ8',
+          thumbnail: 'https://img.youtube.com/vi/fd_x1yuIrZ8/mqdefault.jpg',
+        },
+      ],
     }
   },
 })
