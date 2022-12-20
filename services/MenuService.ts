@@ -61,6 +61,10 @@ export default class MenuService {
   static getPodcastMenu(): ILink[] {
     return [
       {
+        to: 'https://music.amazon.fr/podcasts/0a53af38-888e-43d8-a6b3-3a4fd5255955/paroles-de-vie',
+        name: 'Amazon Music',
+      },
+      {
         to: 'https://open.spotify.com/show/5XnBOuPu5fUW0DROVinvbg',
         name: 'Spotify',
       },
