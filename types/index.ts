@@ -48,6 +48,7 @@ export enum VideoLinkEnum {
   UNKNOW,
   YOUTUBE,
   TIKTOK,
+  DAILYMOTION,
 }
 
 export interface IVideoLink {

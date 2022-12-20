@@ -19,7 +19,7 @@
 
       <SectionDebate
         class="container mx-auto mt-4 md:mt-10"
-        :playlistId="playlistIdDebates"
+        :playlistYoutubeId="playlistYoutubeIdDebates"
         :debates="debates"
       />
     </div>
@@ -53,7 +53,7 @@ export default Vue.extend({
         },
       ],
       cover: TopicService.getBySlug('/the-crucifixion-in-the-bible/')?.cover,
-      playlistIdDebates: 'PLaBmOZ7eJG-Wr3qx0unYjwXWNOoXTKCci',
+      playlistYoutubeIdDebates: 'PLaBmOZ7eJG-Wr3qx0unYjwXWNOoXTKCci',
       debates: DebateService.getByTopic('the-crucifixion-in-the-bible'),
     }
   },

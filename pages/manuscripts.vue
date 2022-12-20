@@ -169,7 +169,7 @@
       <SectionVideo
         left
         class="container mx-auto mt-4 md:mt-10"
-        playlistId="PLaBmOZ7eJG-Xp0v-AbfDTIe2dfEfU9ylW"
+        playlistYoutubeId="PLaBmOZ7eJG-Xp0v-AbfDTIe2dfEfU9ylW"
         :videos="videos"
       />
     </div>

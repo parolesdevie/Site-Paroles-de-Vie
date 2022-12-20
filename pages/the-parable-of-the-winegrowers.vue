@@ -43,7 +43,7 @@
 
       <SectionDebate
         class="container mx-auto mt-4 md:mt-10"
-        :playlistId="playlistIdDebates"
+        :playlistYoutubeId="playlistYoutubeIdDebates"
         :debates="debates"
       />
 
@@ -51,7 +51,7 @@
       <SectionVideo
         left
         class="container mx-auto mt-4 md:mt-10"
-        :playlistId="playlistIdVideos"
+        :playlistYoutubeId="playlistYoutubeIdVideos"
         :videos="videos"
       />
 
@@ -99,8 +99,8 @@ export default Vue.extend({
       ],
       cover: TopicService.getBySlug('/the-parable-of-the-winegrowers/')?.cover,
       books: BookService.getAll(),
-      playlistIdDebates: 'PLaBmOZ7eJG-UWwZEGp_RWVnBqOe_iU0uw',
-      playlistIdVideos: 'PLaBmOZ7eJG-XE3u8rI1SBnoi6z4853aC5',
+      playlistYoutubeIdDebates: 'PLaBmOZ7eJG-UWwZEGp_RWVnBqOe_iU0uw',
+      playlistYoutubeIdVideos: 'PLaBmOZ7eJG-XE3u8rI1SBnoi6z4853aC5',
       frontFile: {
         author: AuthorEnum.BENEVOLENCE,
         format: FormatEnum.PDF,

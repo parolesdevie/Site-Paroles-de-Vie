@@ -37,63 +37,63 @@
         left
         class="container mx-auto mt-4 md:mt-10"
         title="Ode"
-        playlistId="PLaBmOZ7eJG-VD9fBWOVjYZ3u4inQwt0NT"
+        playlistYoutubeId="PLaBmOZ7eJG-VD9fBWOVjYZ3u4inQwt0NT"
         :videos="videos.ode"
       />
       <SectionVideo
         left
         class="container mx-auto mt-4 md:mt-10"
         title="Chant liturgique"
-        playlistId="PLaBmOZ7eJG-WPmxnbO5BLJRwi5iPg3tgP"
+        playlistYoutubeId="PLaBmOZ7eJG-WPmxnbO5BLJRwi5iPg3tgP"
         :videos="videos.liturgicalSongs"
       />
       <SectionVideo
         left
         class="container mx-auto mt-4 md:mt-10"
         title="Active Christianity"
-        playlistId="PLaBmOZ7eJG-VyUORESelod2tkG4XN2WbU"
+        playlistYoutubeId="PLaBmOZ7eJG-VyUORESelod2tkG4XN2WbU"
         :videos="videos.activeChristianity"
       />
       <SectionVideo
         left
         class="container mx-auto mt-4 md:mt-10"
         title="Chant de la communauté de l' Emmanuel"
-        playlistId="PLaBmOZ7eJG-XL71fbzjvbjSDulEGzmGCL"
+        playlistYoutubeId="PLaBmOZ7eJG-XL71fbzjvbjSDulEGzmGCL"
         :videos="videos.emmanuelCommunity"
       />
       <SectionVideo
         left
         class="container mx-auto mt-4 md:mt-10"
         title="Chant des témoins de Jéhovah"
-        playlistId="PLaBmOZ7eJG-Uau4Ft-9GMRHrzDXYfD4Mj"
+        playlistYoutubeId="PLaBmOZ7eJG-Uau4Ft-9GMRHrzDXYfD4Mj"
         :videos="videos.tj"
       />
       <SectionVideo
         left
         class="container mx-auto mt-4 md:mt-10"
         title="Chants juif"
-        playlistId="PLaBmOZ7eJG-UAkG289514PguUtY0pRgkE"
+        playlistYoutubeId="PLaBmOZ7eJG-UAkG289514PguUtY0pRgkE"
         :videos="videos.jewishSongs"
       />
       <SectionVideo
         left
         class="container mx-auto mt-4 md:mt-10"
         title="Chants protestants"
-        playlistId="PLaBmOZ7eJG-UAkG289514PguUtY0pRgkE"
+        playlistYoutubeId="PLaBmOZ7eJG-UAkG289514PguUtY0pRgkE"
         :videos="videos.protestantSongs"
       />
       <SectionVideo
         left
         class="container mx-auto mt-4 md:mt-10"
         title="Moderne"
-        playlistId="PLaBmOZ7eJG-V0hBZainCo2q-D1-ducPsT"
+        playlistYoutubeId="PLaBmOZ7eJG-V0hBZainCo2q-D1-ducPsT"
         :videos="videos.modern"
       />
       <SectionVideo
         left
         class="container mx-auto mt-4 md:mt-10"
         title="Autres"
-        playlistId="PLaBmOZ7eJG-WygTHv8Wn4kTfUASMY_gKk"
+        playlistYoutubeId="PLaBmOZ7eJG-WygTHv8Wn4kTfUASMY_gKk"
         :videos="videos.others"
       />
     </div>
@@ -128,7 +128,7 @@ export default Vue.extend({
         },
       ],
       cover: TopicService.getBySlug('/gospel/')?.cover,
-      playlistIdVideos: 'PLaBmOZ7eJG-WG_rv9QU7qomxydYrL_2KK',
+      playlistYoutubeIdVideos: 'PLaBmOZ7eJG-WG_rv9QU7qomxydYrL_2KK',
       videos: {
         ode: [
           {

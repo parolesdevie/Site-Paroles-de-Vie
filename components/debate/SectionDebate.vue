@@ -9,9 +9,9 @@
     <nav class="mt-2 md:mt-4">
       <!-- playlist -->
       <a
-        v-if="playlistId"
+        v-if="playlistYoutubeId"
         class="hover:text-blue-700 inline-flex items-center"
-        :href="'https://youtube.com/playlist?list=' + playlistId"
+        :href="'https://youtube.com/playlist?list=' + playlistYoutubeId"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -45,7 +45,7 @@ export default Vue.extend({
   },
 
   props: {
-    playlistId: {
+    playlistYoutubeId: {
       type: String,
       default: '',
     },

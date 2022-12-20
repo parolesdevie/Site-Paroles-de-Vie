@@ -149,6 +149,14 @@ export default class TopicService {
         to: '/youtube/',
         title: 'Chaîne Youtube Recommandées',
       },
+      {
+        cover: {
+          color: '#',
+          src: 'soreg',
+        },
+        to: '/soreg/',
+        title: 'Le Soreg',
+      },
     ]
   }
 

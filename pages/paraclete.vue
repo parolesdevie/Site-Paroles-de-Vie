@@ -53,7 +53,8 @@
       <!-- section youtube videos  -->
       <SectionVideo
         class="container mx-auto mt-4 md:mt-10"
-        :playlistId="playlistIdVideos"
+        :playlistYoutubeId="playlistYoutubeIdVideos"
+        playlistDailymotionId="x7okrg"
         :videos="videos"
       />
 
@@ -100,7 +101,7 @@ export default Vue.extend({
         },
       ],
       cover: TopicService.getBySlug('/paraclete/')?.cover,
-      playlistIdVideos: 'PLaBmOZ7eJG-WG_rv9QU7qomxydYrL_2KK',
+      playlistYoutubeIdVideos: 'PLaBmOZ7eJG-WG_rv9QU7qomxydYrL_2KK',
       frontFile: {
         author: AuthorEnum.BENEVOLENCE,
         format: FormatEnum.PDF,
@@ -211,6 +212,48 @@ export default Vue.extend({
           name: "Chaîne Les amis d'EMCI TV",
           url: 'https://youtu.be/IYF21w9iqn8',
           thumbnail: 'https://img.youtube.com/vi/IYF21w9iqn8/mqdefault.jpg',
+        },
+        {
+          source: VideoLinkEnum.DAILYMOTION,
+          name: 'Le prophète de l’Islam est-il le Paraclet annoncé dans la sainte Bible?',
+          url: 'https://dai.ly/xjdmko',
+          thumbnail: 'https://www.dailymotion.com/thumbnail/video/xjdmko',
+        },
+        {
+          source: VideoLinkEnum.DAILYMOTION,
+          name: "Le prophète de l'Islam est-il le Paraclet annoncé dans la Bible? 2",
+          url: 'https://dai.ly/xiukm3',
+          thumbnail: 'https://www.dailymotion.com/thumbnail/video/xiukm3',
+        },
+        {
+          source: VideoLinkEnum.DAILYMOTION,
+          name: 'Mahomet est-il le Consolateur (Paraclet) ?',
+          url: 'https://www.dailymotion.com/video/xp4li8',
+          thumbnail: 'https://www.dailymotion.com/thumbnail/video/xp4li8',
+        },
+        {
+          source: VideoLinkEnum.DAILYMOTION,
+          name: 'Ahmed Deedat et le Paraclet',
+          url: 'https://www.dailymotion.com/video/x19dz9v',
+          thumbnail: 'https://www.dailymotion.com/thumbnail/video/x19dz9v',
+        },
+        {
+          source: VideoLinkEnum.DAILYMOTION,
+          name: 'Qui est le Paraclet dans la Bible ?',
+          url: 'https://www.dailymotion.com/video/x10ks37',
+          thumbnail: 'https://www.dailymotion.com/thumbnail/video/x10ks37',
+        },
+        {
+          source: VideoLinkEnum.DAILYMOTION,
+          name: 'Le Paraclet est-il Mohamed ?',
+          url: 'https://www.dailymotion.com/video/xvfr4e',
+          thumbnail: 'https://www.dailymotion.com/thumbnail/video/xvfr4e',
+        },
+        {
+          source: VideoLinkEnum.DAILYMOTION,
+          name: 'Was Muhammad the Comforter of John 14:16-17',
+          url: 'https://www.dailymotion.com/video/xbyb3h',
+          thumbnail: 'https://www.dailymotion.com/thumbnail/video/xbyb3h',
         },
       ],
       files: [

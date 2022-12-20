@@ -8,16 +8,28 @@
     <!-- links -->
     <nav class="mt-2 md:mt-4">
       <!-- playlist -->
-      <a
-        v-if="playlistId"
-        class="hover:text-blue-700 inline-flex items-center"
-        :href="'https://youtube.com/playlist?list=' + playlistId"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <IconPlay class="h-7 w-7 md:h-9 md:w-9" />
-        <span class="ml-2">Lire la playlist sur YouTube</span>
-      </a>
+      <div class="flex gap-4">
+        <a
+          v-if="playlistYoutubeId"
+          class="hover:text-blue-700 inline-flex items-center"
+          :href="'https://youtube.com/playlist?list=' + playlistYoutubeId"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IconPlay class="h-7 w-7 md:h-9 md:w-9" />
+          <span class="ml-2">Lire la playlist sur YouTube</span>
+        </a>
+        <a
+          v-if="playlistDailymotionId"
+          class="hover:text-blue-700 inline-flex items-center"
+          :href="'https://dailymotion.com/playlist/' + playlistDailymotionId"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IconDailymotion class="h-7 w-7 md:h-9 md:w-9" />
+          <span class="ml-2">Lire la playlist sur Dailymotion</span>
+        </a>
+      </div>
 
       <!-- videos cards -->
       <ul
@@ -77,6 +89,20 @@
                 text-blue-500
               "
             />
+            <IconDailymotion
+              v-else-if="video.source === VideoLinkEnum.DAILYMOTION"
+              class="
+                absolute
+                z-10
+                top-2
+                left-2
+                h-7
+                w-7
+                md:h-9 md:w-9
+                text-black
+                bg-white
+              "
+            />
             <img
               v-if="video.thumbnail"
               class="h-full w-full object-cover"
@@ -116,6 +142,7 @@ import { PropType } from 'vue/types/v3-component-props'
 import IconPlay from '~/components/icons/IconPlay.vue'
 import IconYouTube from '~/components/icons/IconYouTube.vue'
 import { IVideoLink, VideoLinkEnum } from '~/types'
+import IconDailymotion from '../icons/IconDailymotion.vue'
 import IconTikTok from '../icons/IconTikTok.vue'
 
 export default Vue.extend({
@@ -125,6 +152,7 @@ export default Vue.extend({
     IconPlay,
     IconYouTube,
     IconTikTok,
+    IconDailymotion,
   },
 
   props: {
@@ -136,7 +164,11 @@ export default Vue.extend({
       type: String,
       default: 'Recommandations de Vidéos',
     },
-    playlistId: {
+    playlistYoutubeId: {
+      type: String,
+      default: '',
+    },
+    playlistDailymotionId: {
       type: String,
       default: '',
     },
