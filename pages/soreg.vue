@@ -58,6 +58,30 @@ export default Vue.extend({
 
   components: { SectionIntroTopics, SectionVideo },
 
+  head() {
+    return {
+      title: 'Le Soreg, le mur de Jérusalem - Paroles de vie',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.',
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: 'https://www.paroles-de-vie.tk/seo/soreg.webp',
+        },
+        {
+          hid: 'twitter:image',
+          property: 'twitter:image',
+          content: 'https://www.paroles-de-vie.tk/seo/soreg.webp',
+        },
+      ],
+    }
+  },
+
   data() {
     return {
       breadcrumbItems: [
