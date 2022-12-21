@@ -88,6 +88,30 @@ export default Vue.extend({
     SectionIntroTopics,
   },
 
+  head() {
+    return {
+      title: 'Le Paraclet dans la Bible - Paroles de vie',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.',
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: 'https://www.paroles-de-vie.tk/seo/paraclet.webp',
+        },
+        {
+          hid: 'twitter:image',
+          property: 'twitter:image',
+          content: 'https://www.paroles-de-vie.tk/seo/paraclet.webp',
+        },
+      ],
+    }
+  },
+
   data() {
     return {
       breadcrumbItems: [
