@@ -16,8 +16,24 @@
         <div class="mt-4 md:mt-10 flex flex-col md:flex-row gap-5">
           <article class="flex-1 flex flex-col">
             <h2 class="flex items-center">
-              <IconLockOpen class="mr-2 h-4" />
-              Ecouter le dernier podcast
+              <span
+                class="
+                  h-5
+                  w-5
+                  shrink-0
+                  bg-black
+                  dark:bg-white
+                  text-white
+                  dark:text-light-black
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <IconLockOpen class="h-3" />
+              </span>
+              <span class="ml-2"> Ecouter le dernier podcast </span>
               <span
                 class="
                   bg-white bg-opacity-60
@@ -46,8 +62,24 @@
           </article>
           <article class="flex-1 flex flex-col">
             <h2 class="flex items-center">
-              <IconLock class="mr-2 h-3 md:h-4" />
-              Ecouter le dernier podcast
+              <span
+                class="
+                  h-5
+                  w-5
+                  shrink-0
+                  bg-black
+                  dark:bg-white
+                  text-white
+                  dark:text-light-black
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <IconLock class="h-3" />
+              </span>
+              <span class="ml-2"> Ecouter le dernier podcast </span>
               <span
                 class="
                   bg-white bg-opacity-60
@@ -78,7 +110,7 @@
       </section>
 
       <!-- extern plateforme -->
-      <section class="container mx-auto mt-4 md:mt-10">
+      <section class="container mx-auto mt-8 md:mt-20">
         <!-- title -->
         <h2 class="flex items-center font-bold text-2xl md:text-3xl">
           Ecouter sur une autre plateforme
@@ -122,13 +154,15 @@
       </section>
 
       <a
-        class="container mx-auto mt-4 md:mt-10 flex items-center"
+        class="container mx-auto mt-8 md:mt-20 flex items-center"
         href="https://anchor.fm/s/d6d4ea28/podcast/rss"
         target="_blank"
         rel="noopener noreferrer"
       >
         <IconRssSquare class="h-6 w-6 text-orange-400" />
-        <span class="ml-2 font-semibold hover:text-blue-500">Flux RSS</span>
+        <span class="ml-2 font-semibold hover:text-blue-500">
+          Flux RSS du podcast
+        </span>
       </a>
     </div>
 
