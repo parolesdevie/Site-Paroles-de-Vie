@@ -13,7 +13,11 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       // <!-- Primary Meta Tags -->
-      { name: 'title', content: 'Paroles de Vie - site chrétien' },
+      {
+        hid: 'title',
+        name: 'title',
+        content: 'Paroles de Vie - site chrétien',
+      },
       {
         hid: 'description',
         name: 'description',
@@ -22,15 +26,29 @@ export default {
       },
 
       // <!-- Open Graph / Facebook -->
-      { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://www.paroles-de-vie.tk/' },
-      { property: 'og:title', content: 'Paroles de Vie' },
       {
+        hid: 'og:type',
+        property: 'og:type',
+        content: 'website',
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://www.paroles-de-vie.tk/',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Paroles de Vie',
+      },
+      {
+        hid: 'og:description',
         property: 'og:description',
         content:
           'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.',
       },
       {
+        hid: 'og:image',
         property: 'og:image',
         content: 'https://www.paroles-de-vie.tk/seo/thumbnail.webp',
       },
@@ -41,18 +59,29 @@ export default {
       },
 
       // <!-- Twitter -->
-      { property: 'twitter:card', content: 'summary_large_image' },
       {
+        hid: 'twitter:card',
+        property: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        hid: 'twitter:url',
         property: 'twitter:url',
         content: 'https://www.paroles-de-vie.tk/',
       },
-      { property: 'twitter:title', content: 'Paroles de Vie' },
       {
+        hid: 'twitter:title',
+        property: 'twitter:title',
+        content: 'Paroles de Vie',
+      },
+      {
+        hid: 'twitter:description',
         property: 'twitter:description',
         content:
           'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.',
       },
       {
+        hid: 'twitter:image',
         property: 'twitter:image',
         content: 'https://www.paroles-de-vie.tk/seo/thumbnail.webp',
       },
@@ -62,13 +91,26 @@ export default {
         content: '@chaine_pdv',
       },
 
-      { name: 'format-detection', content: 'telephone=no' },
-      { name: 'msapplication-TileColor', content: '#ffffff' },
       {
+        hid: 'format-detection',
+        name: 'format-detection',
+        content: 'telephone=no',
+      },
+      {
+        hid: 'msapplication-TileColor',
+        name: 'msapplication-TileColor',
+        content: '#ffffff',
+      },
+      {
+        hid: 'msapplication-TileImage',
         name: 'msapplication-TileImage',
         content: '/favicon/ms-icon-144x144.png',
       },
-      { name: 'theme-color', content: '#ffffff' },
+      {
+        hid: 'theme-color',
+        name: 'theme-color',
+        content: '#ffffff',
+      },
     ],
     link: [
       {
