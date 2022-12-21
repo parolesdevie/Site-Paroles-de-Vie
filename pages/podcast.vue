@@ -16,8 +16,23 @@
         <div class="mt-4 md:mt-10 flex flex-col md:flex-row gap-5">
           <article class="flex-1 flex flex-col">
             <h2 class="flex items-center">
-              Ecouter Le dernier podcast gratuit
-              <!-- <IconLockOpen class="ml-2 h-4" /> -->
+              <IconLockOpen class="mr-2 h-4" />
+              Ecouter le dernier podcast
+              <span
+                class="
+                  bg-white bg-opacity-60
+                  ml-2
+                  px-1
+                  rounded-sm
+                  uppercase
+                  text-sm
+                  font-semibold
+                  text-white
+                  dark:text-light-black
+                "
+              >
+                gratuit
+              </span>
             </h2>
             <iframe
               class="mt-2 md:mt-4 w-full"
@@ -31,9 +46,23 @@
           </article>
           <article class="flex-1 flex flex-col">
             <h2 class="flex items-center">
-              Ecouter Le dernier podcast (Premium
-              <IconLock class="ml-2 h-3 md:h-4" />
-              )
+              <IconLock class="mr-2 h-3 md:h-4" />
+              Ecouter le dernier podcast
+              <span
+                class="
+                  bg-white bg-opacity-60
+                  ml-2
+                  px-1
+                  rounded-sm
+                  uppercase
+                  text-sm
+                  font-semibold
+                  text-white
+                  dark:text-light-black
+                "
+              >
+                Payant
+              </span>
             </h2>
             <iframe
               class="mt-2 md:mt-4 w-full"
