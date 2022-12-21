@@ -41,13 +41,36 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import SectionMag from '~/components/magazine/SectionMag.vue'
 import { BookService } from '~/services'
 
 export default Vue.extend({
-  name: 'MagazinesPage',
+  name: 'DebatesTipsPage',
 
-  components: { SectionMag },
+  components: {},
+
+  head() {
+    return {
+      title: 'Conseils de débats - Paroles de vie',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.',
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: 'https://www.paroles-de-vie.tk/seo/debates-tips.webp',
+        },
+        {
+          hid: 'twitter:image',
+          property: 'twitter:image',
+          content: 'https://www.paroles-de-vie.tk/seo/debates-tips.webp',
+        },
+      ],
+    }
+  },
 
   data() {
     return {
