@@ -133,7 +133,7 @@
         <nav class="contents">
           <ul class="mt-2 md:mt-4 text-gray-400 flex flex-wrap flex-col gap-2">
             <li v-for="(link, index) in linksMenuDiscord" :key="index">
-              <NuxtLink
+              <a
                 class="
                   flex
                   items-center
@@ -141,12 +141,14 @@
                   text-xs
                   md:text-base
                 "
-                :to="link.to"
+                :href="link.to"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <span>
                   {{ link.name }}
                 </span>
-              </NuxtLink>
+              </a>
             </li>
           </ul>
         </nav>
@@ -172,7 +174,7 @@
         <nav class="contents">
           <ul class="mt-2 md:mt-4 text-gray-400 flex flex-wrap flex-col gap-2">
             <li v-for="(link, index) in linksMenuTikTok" :key="index">
-              <NuxtLink
+              <a
                 class="
                   flex
                   items-center
@@ -180,12 +182,14 @@
                   text-xs
                   md:text-base
                 "
-                :to="link.to"
+                :href="link.to"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <span>
                   {{ link.name }}
                 </span>
-              </NuxtLink>
+              </a>
             </li>
           </ul>
         </nav>
