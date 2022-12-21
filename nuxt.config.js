@@ -23,7 +23,7 @@ export default {
 
       // <!-- Open Graph / Facebook -->
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://paroles-de-vie.netlify.app/' },
+      { property: 'og:url', content: 'https://www.paroles-de-vie.tk/' },
       { property: 'og:title', content: 'Paroles de Vie' },
       {
         property: 'og:description',
@@ -32,14 +32,19 @@ export default {
       },
       {
         property: 'og:image',
-        content: 'https://paroles-de-vie.netlify.app/seo/thumbnail.webp',
+        content: 'https://www.paroles-de-vie.tk/seo/thumbnail.webp',
+      },
+      {
+        hid: 'og:site_name',
+        name: 'og:site_name',
+        content: 'Paroles de vie',
       },
 
       // <!-- Twitter -->
       { property: 'twitter:card', content: 'summary_large_image' },
       {
         property: 'twitter:url',
-        content: 'https://paroles-de-vie.netlify.app/',
+        content: 'https://www.paroles-de-vie.tk/',
       },
       { property: 'twitter:title', content: 'Paroles de Vie' },
       {
@@ -49,8 +54,14 @@ export default {
       },
       {
         property: 'twitter:image',
-        content: 'https://paroles-de-vie.netlify.app/seo/thumbnail.webp',
+        content: 'https://www.paroles-de-vie.tk/seo/thumbnail.webp',
       },
+      {
+        hid: 'twitter:creator',
+        name: 'twitter:creator',
+        content: '@chaine_pdv',
+      },
+
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'msapplication-TileColor', content: '#ffffff' },
       {
@@ -169,6 +180,9 @@ export default {
   pwa: {
     manifest: {
       lang: 'en',
+    },
+    meta: {
+      title: 'Paroles de vie',
     },
   },
 

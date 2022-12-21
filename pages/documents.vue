@@ -44,12 +44,12 @@ export default Vue.extend({
         {
           hid: 'og:image',
           property: 'og:image',
-          content: 'https://paroles-de-vie.netlify.app/seo/document.webp',
+          content: 'https://www.paroles-de-vie.tk/seo/document.webp',
         },
         {
           hid: 'twitter:image',
           property: 'twitter:image',
-          content: 'https://paroles-de-vie.netlify.app/seo/document.webp',
+          content: 'https://www.paroles-de-vie.tk/seo/document.webp',
         },
       ],
     }

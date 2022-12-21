@@ -128,12 +128,12 @@ export default Vue.extend({
         {
           hid: 'og:image',
           property: 'og:image',
-          content: 'https://paroles-de-vie.netlify.app/seo/gospel.webp',
+          content: 'https://www.paroles-de-vie.tk/seo/gospel.webp',
         },
         {
           hid: 'twitter:image',
           property: 'twitter:image',
-          content: 'https://paroles-de-vie.netlify.app/seo/gospel.webp',
+          content: 'https://www.paroles-de-vie.tk/seo/gospel.webp',
         },
       ],
     }
