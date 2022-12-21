@@ -13,7 +13,7 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       // <!-- Primary Meta Tags -->
-      { name: 'title', content: 'Paroles de Vie' },
+      { name: 'title', content: 'Paroles de Vie - site chrétien' },
       {
         hid: 'description',
         name: 'description',
@@ -51,7 +51,6 @@ export default {
         property: 'twitter:image',
         content: 'https://paroles-de-vie.netlify.app/seo/thumbnail.webp',
       },
-
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'msapplication-TileColor', content: '#ffffff' },
       {

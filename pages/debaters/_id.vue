@@ -8,14 +8,22 @@
 
       <!-- profils -->
       <section class="mt-4 md:mt-10">
-        <div class="flex flex-col md:flex-row">
+        <!-- title -->
+        <h1 class="flex items-center font-bold text-2xl md:text-3xl">
+          Profils du débatteur
+        </h1>
+
+        <div class="mt-2 md:mt-4 flex flex-col md:flex-row">
           <div class="inline-flex flex-col items-center shrink-0 max-w-sm">
             <img
               :src="'/images/user/' + id + '.webp'"
               class="h-20 w-20 rounded-full bg-gray-300"
               title="photo de profils"
             />
-            <span class="mt-2 font-semibold text-center" title="pseudo">
+            <span
+              class="mt-2 font-semibold text-center"
+              title="pseudo du profils"
+            >
               {{ pseudo }}#{{ id }}
             </span>
           </div>

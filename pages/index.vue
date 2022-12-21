@@ -45,14 +45,22 @@ export default Vue.extend({
     SectionTopicCard,
   },
 
+  head() {
+    return {
+      title: 'Accueil - Paroles de vie',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.',
+        },
+      ],
+    }
+  },
+
   data() {
     return {
-      // breadcrumbItems: [
-      //   {
-      //     name: 'Accueil',
-      //     to: '/',
-      //   },
-      // ],
       topics: TopicService.getAll(),
       tags: TagService.getAll(),
       pdfs: PdfService.getAll(),

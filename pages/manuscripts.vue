@@ -7,7 +7,12 @@
       <Breadcrumb :items="breadcrumbItems" />
 
       <section class="mt-4 md:mt-10">
-        <div class="flex flex-col md:flex-row">
+        <!-- title -->
+        <h1 class="flex items-center font-bold text-2xl md:text-3xl">
+          Les manuscrits de la Bible
+        </h1>
+
+        <div class="mt-2 md:mt-4 flex flex-col md:flex-row">
           <!-- demo -->
           <div
             class="
