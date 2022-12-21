@@ -36,6 +36,30 @@ export default Vue.extend({
 
   components: { SectionQR },
 
+  head() {
+    return {
+      title: 'Questions - Réponse - Paroles de vie',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.',
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: 'https://www.paroles-de-vie.tk/seo/questions-answer.webp',
+        },
+        {
+          hid: 'twitter:image',
+          property: 'twitter:image',
+          content: 'https://www.paroles-de-vie.tk/seo/questions-answer.webp',
+        },
+      ],
+    }
+  },
+
   data() {
     return {
       breadcrumbItems: [

@@ -60,7 +60,31 @@ import { MenuService } from '~/services'
 export default Vue.extend({
   name: 'SocialNetworksPage',
 
-  components: { SectionSite, Breadcrumb, IconTikTok, IconDiscord },
+  components: { Breadcrumb, SectionSite, IconTikTok, IconDiscord },
+
+  head() {
+    return {
+      title: 'Réseaux sociaux - Paroles de vie',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.',
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: 'https://www.paroles-de-vie.tk/seo/social-networks.webp',
+        },
+        {
+          hid: 'twitter:image',
+          property: 'twitter:image',
+          content: 'https://www.paroles-de-vie.tk/seo/social-networks.webp',
+        },
+      ],
+    }
+  },
 
   data() {
     return {

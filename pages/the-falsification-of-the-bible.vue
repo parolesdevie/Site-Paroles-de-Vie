@@ -40,11 +40,37 @@ import Vue from 'vue'
 import SectionDownloadDocumentsList from '~/components/document/SectionDownloadDocumentsList.vue'
 import SectionIntroTopics from '~/components/topics/SectionIntroTopics.vue'
 import { TopicService } from '~/services'
-// import { AuthorEnum, FormatEnum } from '~/types'
+
 export default Vue.extend({
   name: 'FalsificationBiblePage',
 
   components: { SectionDownloadDocumentsList, SectionIntroTopics },
+
+  head() {
+    return {
+      title: 'La falsification de la bible - Paroles de vie',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.',
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content:
+            'https://www.paroles-de-vie.tk/seo/the-falsification-of-the-bible.webp',
+        },
+        {
+          hid: 'twitter:image',
+          property: 'twitter:image',
+          content:
+            'https://www.paroles-de-vie.tk/seo/the-falsification-of-the-bible.webp',
+        },
+      ],
+    }
+  },
 
   data() {
     return {
