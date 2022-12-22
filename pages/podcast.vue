@@ -31,7 +31,7 @@
                   justify-center
                 "
               >
-                <IconLockOpen class="h-3" />
+                <IconLockOpen class="h-2.5" />
               </span>
               <span class="ml-2"> Ecouter le dernier podcast </span>
               <span
@@ -78,7 +78,7 @@
                   justify-center
                 "
               >
-                <IconLock class="h-3" />
+                <IconLock class="h-2.5" />
               </span>
               <span class="ml-2"> Ecouter le dernier podcast </span>
               <span

@@ -20,7 +20,11 @@
       </a>
 
       <!-- table of debates -->
-      <TableDebate class="mt-2 md:mt-4" :debates="debates" hideSubject />
+      <TableDebate
+        class="mt-2 md:mt-4 w-full md:w-auto md:mx-auto"
+        :debates="debates"
+        hideSubject
+      />
     </nav>
   </section>
 </template>

@@ -10,10 +10,7 @@
       <SectionIntroTopics :cover="cover">
         <template v-slot:title>Le libre arbitre</template>
         <template v-slot:body>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aut
-          quaerat perferendis a totam et maiores sint libero similique eaque
-          omnis qui iusto, nostrum impedit esse, adipisci corrupti molestias
-          possimus !
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </template>
       </SectionIntroTopics>
     </div>
