@@ -51,8 +51,9 @@
               </span>
             </h2>
             <iframe
-              class="mt-2 md:mt-4 w-full"
-              src="https://open.spotify.com/embed/episode/2NO0OpMyay5TbZZpMPS66g?utm_source=generator&theme=0"
+              :style="{ backgroundColor: '#282828' }"
+              class="mt-2 md:mt-4 w-full rounded-xl"
+              src="https://open.spotify.com/embed/episode/4dda97qbJPMNq7j0ztIMjn?utm_source=generator&theme=0"
               height="152"
               frameBorder="0"
               allowfullscreen=""
@@ -97,7 +98,8 @@
               </span>
             </h2>
             <iframe
-              class="mt-2 md:mt-4 w-full"
+              :style="{ backgroundColor: '#282828' }"
+              class="mt-2 md:mt-4 w-full rounded-xl"
               src="https://open.spotify.com/embed/show/5XnBOuPu5fUW0DROVinvbg?utm_source=generator&theme=0"
               height="152"
               frameBorder="0"
@@ -124,7 +126,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <IconAmazon class="h-20" />
+              <IconAmazon class="h-20 text-orange-500" />
               <span class="mt-2">Ecouter sur Amazon Music</span>
             </a>
           </li>
@@ -135,7 +137,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <IconSpotify class="h-20" />
+              <IconSpotify class="h-20 text-green-500" />
               <span class="mt-2">Ecouter sur Spotify</span>
             </a>
           </li>
@@ -146,7 +148,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <IconAnchor class="h-20" />
+              <IconAnchor class="h-20 text-yellow-400" />
               <span class="mt-2">Ecouter sur Anchor</span>
             </a>
           </li>

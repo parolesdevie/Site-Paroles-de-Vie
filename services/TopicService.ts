@@ -13,13 +13,21 @@ export default class TopicService {
         to: '/search/',
         title: 'Recherche',
       },
+      // {
+      //   cover: {
+      //     color: '#538E9C',
+      //     src: 'questions-answer',
+      //   },
+      //   to: '/questions-answer/',
+      //   title: 'Tu as une questions ?',
+      // },
       {
         cover: {
-          color: '#538E9C',
-          src: 'questions-answer',
+          color: '#',
+          src: 'podcast',
         },
-        to: '/questions-answer/',
-        title: 'Tu as une questions ?',
+        to: '/podcast/',
+        title: 'Podcast',
       },
       {
         cover: {
@@ -156,14 +164,6 @@ export default class TopicService {
         },
         to: '/soreg/',
         title: 'Le Soreg',
-      },
-      {
-        cover: {
-          color: '#',
-          src: 'podcast',
-        },
-        to: '/podcast/',
-        title: 'Podcast',
       },
     ]
   }
