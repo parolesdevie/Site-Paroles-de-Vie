@@ -52,6 +52,7 @@
 
       <!-- section youtube videos  -->
       <SectionVideo
+        keepOnGrid
         class="container mx-auto mt-4 md:mt-10"
         :playlistYoutubeId="playlistYoutubeIdVideos"
         playlistDailymotionId="x7okrg"

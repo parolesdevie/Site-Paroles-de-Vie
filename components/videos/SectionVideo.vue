@@ -8,7 +8,7 @@
     <!-- links -->
     <nav class="mt-2 md:mt-4">
       <!-- playlist -->
-      <div class="flex gap-4">
+      <div class="flex flex-col md:flex-row gap-2 md:gap-4">
         <a
           v-if="playlistYoutubeId"
           class="hover:text-blue-700 inline-flex items-center"
@@ -34,17 +34,22 @@
       <!-- videos cards -->
       <ul
         :class="`
-          flex md:flex-wrap
+          mt-2
+          md:mt-4
+          flex
+          md:flex-wrap
           py-2
           md:py-4
           gap-2
           md:gap-4
-          overflow-x-auto
-          ${left ? 'md:px-14 lg:px-4 xl:px-36 2xl:px-24' : 'justify-center'}`"
+          ${keepOnGrid ? 'flex-wrap' : 'overflow-x-auto'}
+          ${
+            left ? 'md:px-14 lg:px-4 xl:px-36 2xl:px-24' : 'md:justify-center'
+          }`"
       >
         <li class="contents" v-for="(video, index) in videos" :key="index">
           <a
-            class="
+            :class="`
               relative
               h-24
               w-32
@@ -57,7 +62,8 @@
               shrink-0
               flex
               items-center
-            "
+              ${keepOnGrid ? 'h-32 flex-auto md:flex-initial' : ''}
+          `"
             :href="video.url"
             target="_blank"
             rel="noopener noreferrer"
@@ -106,7 +112,7 @@
             />
             <img
               v-if="video.thumbnail"
-              class="h-full w-full object-cover"
+              class="h-full w-full rounded-t-lg object-cover"
               :src="video.thumbnail"
               alt=""
             />
@@ -126,6 +132,7 @@
                 font-semibold
                 text-right
                 truncate
+                rounded-b-lg
               "
             >
               {{ video.name }}
@@ -158,6 +165,10 @@ export default Vue.extend({
 
   props: {
     left: {
+      type: Boolean,
+      default: false,
+    },
+    keepOnGrid: {
       type: Boolean,
       default: false,
     },
