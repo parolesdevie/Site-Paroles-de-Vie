@@ -34,13 +34,13 @@
       <!-- videos cards -->
       <ul
         :class="`
-          flex flex-wrap
+          flex md:flex-wrap
           py-2
-          pr-2
-          md:py-4 md:pr-4
+          md:py-4
           gap-2
           md:gap-4
-          ${left ? '' : 'justify-center'}`"
+          overflow-x-auto
+          ${left ? 'md:px-14 lg:px-4 xl:px-36 2xl:px-24' : 'justify-center'}`"
       >
         <li class="contents" v-for="(video, index) in videos" :key="index">
           <a
@@ -54,6 +54,7 @@
               bg-gray-200
               rounded-lg
               overflow-hidden
+              shrink-0
               flex
               items-center
             "
