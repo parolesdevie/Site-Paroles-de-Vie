@@ -31,6 +31,11 @@ export default class BookService {
         amazon: '3FH2DR0',
       },
       {
+        title: 'Le texte des premiers manuscrits grecs du Nouveau Testament',
+        slug: 'the-text-of-the-earliest-new-testament-greek-manuscripts',
+        amazon: '3jreoUd',
+      },
+      {
         title:
           "Youcat français : Catéchisme de l'Eglise catholique pour les jeunes",
         slug: 'youcat',

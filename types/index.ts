@@ -160,6 +160,8 @@ export interface SearchResult {
 }
 
 export enum LanguageEnum {
-  EN = 'Anglais',
   FR = 'Français',
+  EN = 'Anglais',
+  DE = 'Allemand',
+  IT = 'Italien',
 }

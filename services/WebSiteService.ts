@@ -176,8 +176,12 @@ export default class WebSiteService {
         href: 'https://www.youtube.com/@chaine-coliseum',
       },
       {
-        name: ' CSNTM Productions',
+        name: 'CSNTM Productions',
         href: 'https://www.youtube.com/@CSNTMProductions',
+      },
+      {
+        name: 'Daily Dose of Greek',
+        href: 'https://www.youtube.com/@DailyDoseofGreek/featured',
       },
     ]
   }
