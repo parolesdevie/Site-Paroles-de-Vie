@@ -106,7 +106,7 @@
                   "
                 >
                   <img
-                    class="h-8 md:h-8"
+                    class="h-7 md:h-7"
                     :src="`/images/site/${plateform.icon}.webp`"
                     :alt="plateform.name"
                     :title="plateform.name"
@@ -173,6 +173,7 @@
       <!-- section youtube videos  -->
       <SectionVideo
         left
+        keepOnGrid
         class="container mx-auto mt-4 md:mt-10"
         title="Découvrir en vidéos"
         playlistYoutubeId="PLaBmOZ7eJG-Xp0v-AbfDTIe2dfEfU9ylW"
