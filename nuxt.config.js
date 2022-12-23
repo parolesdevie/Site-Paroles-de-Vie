@@ -193,7 +193,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/gtm'],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -204,6 +204,13 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // https://github.com/nuxt-community/google-analytics-module#readme
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'G-J4M71WNW9Y',
+      },
+    ],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
