@@ -4,6 +4,9 @@ export default {
 
   publicRuntimeConfig: {
     server: process.env.SERVER,
+    gtm: {
+      id: process.env.GOOGLE_TAG_MANAGER_ID,
+    },
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -211,6 +214,8 @@ export default {
     '@nuxtjs/pwa',
     // https://tailwindcss.nuxt.dev/
     '@nuxtjs/tailwindcss',
+    // https://github.com/nuxt-community/gtm-module#readme
+    '@nuxtjs/gtm',
   ],
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
@@ -226,6 +231,11 @@ export default {
     meta: {
       title: 'Paroles de vie',
     },
+  },
+
+  gtm: {
+    id: 'GTM-K7BMW26',
+    enabled: true,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
