@@ -1,7 +1,7 @@
 <template>
   <section>
     <!-- title -->
-    <h2 class="flex items-center font-bold text-2xl md:text-3xl">Recherche</h2>
+    <H2Title>Recherche</H2Title>
 
     <!-- search -->
     <SearchInput

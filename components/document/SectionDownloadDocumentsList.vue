@@ -1,9 +1,7 @@
 <template>
   <section v-if="files.length">
     <!-- title -->
-    <h2 class="flex items-center font-bold text-2xl md:text-3xl">
-      Télécharger un document
-    </h2>
+    <H2Title>Télécharger un document</H2Title>
 
     <div class="mt-4 md:mt-8 mb-8">
       <ul class="flex flex-wrap py-2 pr-2 md:py-4 md:pr-4 gap-2 md:gap-4">
@@ -27,12 +25,14 @@ import Vue from 'vue'
 import { PropType } from 'vue/types/v3-component-props'
 import { ISourceFile } from '~/types'
 import SectionDownloadDocumentsListItem from '~/components/document/SectionDownloadDocumentsListItem.vue'
+import H2Title from '~/components/global/H2Title.vue'
 
 export default Vue.extend({
   name: 'SectionDownloadDocumentsList',
 
   components: {
     SectionDownloadDocumentsListItem,
+    H2Title,
   },
 
   props: {

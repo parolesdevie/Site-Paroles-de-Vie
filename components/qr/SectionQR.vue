@@ -1,9 +1,7 @@
 <template>
   <section>
     <!-- title -->
-    <h2 class="flex items-center font-bold text-2xl md:text-3xl">
-      Rechercher une question
-    </h2>
+    <H2Title>Rechercher une question</H2Title>
 
     <!-- search -->
     <SearchInput

@@ -1,10 +1,10 @@
 <template>
   <section>
     <!-- title -->
-    <h2 class="flex items-center font-bold text-2xl md:text-3xl">
+    <H2Title>
       <slot name="title-icon" />
       {{ title }}
-    </h2>
+    </H2Title>
 
     <!-- links -->
     <nav class="mt-2 md:mt-4">

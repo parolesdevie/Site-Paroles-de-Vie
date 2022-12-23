@@ -1,9 +1,7 @@
 <template>
   <section>
     <!-- title -->
-    <h2 class="flex items-center font-bold text-2xl md:text-3xl">
-      {{ title }}
-    </h2>
+    <H2Title>{{ title }}</H2Title>
 
     <!-- intro -->
     <p
@@ -49,12 +47,14 @@ import Vue from 'vue'
 import { PropType } from 'vue/types/v3-component-props'
 import { IBook } from '~/types'
 import CardBook from '~/components/book/CardBook.vue'
+import H2Title from '~/components/global/H2Title.vue'
 
 export default Vue.extend({
   name: 'SectionBook',
 
   components: {
     CardBook,
+    H2Title,
   },
 
   props: {

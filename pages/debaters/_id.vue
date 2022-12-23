@@ -47,9 +47,7 @@
 
       <section class="mt-4 md:mt-10">
         <!-- title -->
-        <h2 class="flex items-center font-bold text-2xl md:text-3xl">
-          Participations aux débats
-        </h2>
+        <H2Title>Participations aux débats</H2Title>
 
         <!-- table of debates -->
         <TableDebate class="mt-2 md:mt-4" :debates="debates" />

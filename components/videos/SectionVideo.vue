@@ -1,9 +1,7 @@
 <template>
   <section>
     <!-- title -->
-    <h2 class="flex items-center font-bold text-2xl md:text-3xl">
-      {{ title }}
-    </h2>
+    <H2Title>{{ title }}</H2Title>
 
     <!-- links -->
     <nav class="mt-2 md:mt-4">

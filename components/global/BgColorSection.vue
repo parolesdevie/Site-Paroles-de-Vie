@@ -14,9 +14,9 @@
   >
     <div class="container mx-auto">
       <!-- title -->
-      <h2 class="flex items-center font-bold text-2xl md:text-3xl">
+      <H2Title>
         <slot name="title"></slot>
-      </h2>
+      </H2Title>
 
       <div class="mt-4 md:mt-8 font-semibold text-base max-w-5xl">
         <slot name="body"></slot>

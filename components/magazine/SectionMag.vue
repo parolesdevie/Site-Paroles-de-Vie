@@ -1,9 +1,7 @@
 <template>
   <section>
     <!-- title -->
-    <h2 class="flex items-center font-bold text-2xl md:text-3xl">
-      Le journal des Theophilos
-    </h2>
+    <H2Title>Le journal des Theophilos</H2Title>
 
     <!-- intro -->
     <p
@@ -45,6 +43,7 @@
 import Vue from 'vue'
 import CardMag from '~/components/magazine/CardMag.vue'
 import ButtonYoutube from '~/components/forms/button/ButtonYoutube.vue'
+import H2Title from '~/components/global/H2Title.vue'
 
 export default Vue.extend({
   name: 'SectionMag',
@@ -52,6 +51,7 @@ export default Vue.extend({
   components: {
     CardMag,
     ButtonYoutube,
+    H2Title,
   },
 })
 </script>

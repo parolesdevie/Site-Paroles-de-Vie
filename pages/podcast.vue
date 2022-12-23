@@ -8,9 +8,7 @@
 
       <section class="container mx-auto mt-4 md:mt-10">
         <!-- title -->
-        <h2 class="flex items-center font-bold text-2xl md:text-3xl">
-          Ecouter depuis Spotify
-        </h2>
+        <H2Title>Ecouter depuis Spotify</H2Title>
 
         <!-- embeds spotify -->
         <div class="mt-4 md:mt-10 flex flex-col md:flex-row gap-5">
@@ -50,16 +48,7 @@
                 gratuit
               </span>
             </h2>
-            <iframe
-              :style="{ backgroundColor: '#282828' }"
-              class="mt-2 md:mt-4 w-full rounded-xl"
-              src="https://open.spotify.com/embed/episode/4dda97qbJPMNq7j0ztIMjn?utm_source=generator&theme=0"
-              height="152"
-              frameBorder="0"
-              allowfullscreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-            />
+            <IframSpotify :episode="lastEpisodeId" />
           </article>
           <article class="flex-1 flex flex-col">
             <h2 class="flex items-center">
@@ -97,16 +86,7 @@
                 Payant
               </span>
             </h2>
-            <iframe
-              :style="{ backgroundColor: '#282828' }"
-              class="mt-2 md:mt-4 w-full rounded-xl"
-              src="https://open.spotify.com/embed/show/5XnBOuPu5fUW0DROVinvbg?utm_source=generator&theme=0"
-              height="152"
-              frameBorder="0"
-              allowfullscreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-            />
+            <IframSpotify :podcast="podcastId" />
           </article>
         </div>
       </section>
@@ -114,9 +94,7 @@
       <!-- extern plateforme -->
       <section class="container mx-auto mt-8 md:mt-20">
         <!-- title -->
-        <h2 class="flex items-center font-bold text-2xl md:text-3xl">
-          Ecouter sur une autre plateforme
-        </h2>
+        <H2Title>Ecouter sur une autre plateforme</H2Title>
 
         <ul class="mt-4 md:mt-10 flex gap-10 overflow-x-auto">
           <li class="contents">
@@ -183,6 +161,8 @@ import IconLock from '~/components/icons/IconLock.vue'
 import IconLockOpen from '~/components/icons/IconLockOpen.vue'
 import SectionIntroTopics from '~/components/topics/SectionIntroTopics.vue'
 import { TopicService } from '~/services'
+import IframSpotify from '~/components/podcast/IframSpotify.vue'
+import H2Title from '~/components/global/H2Title.vue'
 
 export default Vue.extend({
   name: 'PodcastPage',
@@ -195,6 +175,8 @@ export default Vue.extend({
     IconAnchor,
     IconLock,
     IconLockOpen,
+    IframSpotify,
+    H2Title,
   },
 
   head() {
@@ -233,7 +215,8 @@ export default Vue.extend({
           to: '/podcast/',
         },
       ],
-      cover: TopicService.getBySlug('/podcast/')?.cover,
+      lastEpisodeId: '74oX2xxdo0QwGg6dfzIsBU',
+      podcastId: '5XnBOuPu5fUW0DROVinvbg',
     }
   },
 })

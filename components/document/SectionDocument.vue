@@ -1,9 +1,7 @@
 <template>
   <section>
     <!-- title -->
-    <h2 class="flex items-center font-bold text-2xl md:text-3xl">
-      Rechercher un document
-    </h2>
+    <H2Title>Rechercher un document</H2Title>
 
     <!-- search -->
     <div class="flex">
@@ -74,11 +72,12 @@ import { IPdf, ITag, TagEnum, ThemeEnum } from '~/types'
 import SearchInput from '~/components/forms/SearchInput.vue'
 import CardDocument from '~/components/document/CardDocument.vue'
 import Tag from '~/components/global/Tag.vue'
+import H2Title from '~/components/global/H2Title.vue'
 
 export default Vue.extend({
   name: 'SectionDocument',
 
-  components: { Tag, CardDocument, SearchInput },
+  components: { Tag, CardDocument, SearchInput, H2Title },
 
   props: {
     fullHeight: {

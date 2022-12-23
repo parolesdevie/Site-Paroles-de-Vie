@@ -204,13 +204,6 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    // https://github.com/nuxt-community/google-analytics-module#readme
-    [
-      '@nuxtjs/google-analytics',
-      {
-        id: 'G-J4M71WNW9Y',
-      },
-    ],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -222,7 +215,7 @@ export default {
     // https://tailwindcss.nuxt.dev/
     '@nuxtjs/tailwindcss',
     // https://github.com/nuxt-community/gtm-module#readme
-    '@nuxtjs/gtm',
+    // '@nuxtjs/gtm',
     // https://www.npmjs.com/package/@nuxtjs/sitemap
     '@nuxtjs/sitemap',
   ],
@@ -242,11 +235,11 @@ export default {
     },
   },
 
-  gtm: {
-    id: 'GTM-K7BMW26',
-    enabled: true,
-    debug: true,
-  },
+  // gtm: {
+  //   id: 'GTM-K7BMW26',
+  //   enabled: true,
+  //   debug: true,
+  // },
 
   sitemap: {
     hostname: 'https://www.paroles-de-vie.tk',
@@ -267,6 +260,7 @@ export default {
             'light-black': '#191920',
           },
           spacing: {
+            38: '9.5rem',
             120: '30rem',
             160: '40rem',
           },

@@ -1,9 +1,7 @@
 <template>
   <section>
     <!-- title -->
-    <h2 class="flex items-center font-bold text-2xl md:text-3xl">
-      Recommandations de Débats
-    </h2>
+    <H2Title>Recommandations de Débats</H2Title>
 
     <!-- links -->
     <nav class="mt-2 md:mt-4">
@@ -37,6 +35,7 @@ import IconYouTube from '~/components/icons/IconYouTube.vue'
 import IconTikTok from '~/components/icons/IconTikTok.vue'
 import { IDebat, DebatPlateformEnum } from '~/types'
 import TableDebate from './TableDebate.vue'
+import H2Title from '~/components/global/H2Title.vue'
 
 export default Vue.extend({
   name: 'SectionDebate.',
@@ -46,6 +45,7 @@ export default Vue.extend({
     IconYouTube,
     IconTikTok,
     TableDebate,
+    H2Title,
   },
 
   props: {
