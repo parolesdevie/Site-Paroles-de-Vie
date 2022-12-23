@@ -51,9 +51,22 @@ export enum VideoLinkEnum {
   DAILYMOTION = 'DailyMotion',
 }
 
+export enum GospelCategoryEnum {
+  ODE = 'Ode',
+  LITURGICAL_SONGS = 'Chant liturgique',
+  ACTIVE_CHRISTIANITY = 'Active Christianity',
+  EMMANUEL_COMMUNITY = "Chant de la communauté de l' Emmanuel",
+  TJ = 'Chant des témoins de Jéhovah',
+  JEWISH_SONGS = 'Chants juifs',
+  PROTESTANT_SONGS = 'Chants protestants',
+  MODERN = 'Moderne',
+  OTHERS = 'Autre',
+}
+
 export interface IVideoLink {
   lang?: LanguageEnum
   source: VideoLinkEnum
+  category?: GospelCategoryEnum
   name: string
   url: string
   thumbnail: string

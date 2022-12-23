@@ -99,7 +99,7 @@ export default Vue.extend({
 
   data() {
     return {
-      lastEpisodeId: '74oX2xxdo0QwGg6dfzIsBU',
+      lastEpisodeId: '3xdzlOWNBNANbUzQf0g0pX',
       podcastId: '5XnBOuPu5fUW0DROVinvbg',
     }
   },

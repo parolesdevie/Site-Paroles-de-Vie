@@ -196,7 +196,6 @@ import IconHandDrownArrowTopLeftCorner from '~/components/icons/IconHandDrownArr
 import SectionVideo from '~/components/videos/SectionVideo.vue'
 import { ManuscriptService, WebSiteService } from '~/services'
 import { ManuscriptsPlateformEnum } from '~/services/WebSiteService'
-import { LanguageEnum, VideoLinkEnum } from '~/types'
 
 export default Vue.extend({
   name: 'ManuscriptsPage',
