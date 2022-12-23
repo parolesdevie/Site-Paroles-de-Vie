@@ -29,7 +29,7 @@ export default Vue.extend({
 
   props: {
     source: {
-      type: Number as PropType<VideoLinkEnum>,
+      type: String as PropType<VideoLinkEnum>,
       default: VideoLinkEnum.UNKNOW,
     },
   },

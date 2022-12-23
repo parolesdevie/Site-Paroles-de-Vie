@@ -45,10 +45,10 @@ export interface IQuestion {
 }
 
 export enum VideoLinkEnum {
-  UNKNOW,
-  YOUTUBE,
-  TIKTOK,
-  DAILYMOTION,
+  UNKNOW = 'Inconu',
+  YOUTUBE = 'Youtube',
+  TIKTOK = 'TikTok',
+  DAILYMOTION = 'DailyMotion',
 }
 
 export interface IVideoLink {
