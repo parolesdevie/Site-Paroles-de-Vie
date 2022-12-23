@@ -50,7 +50,21 @@
             :title="video.name"
           >
             <IconPlateformVideo :source="video.source" />
-
+            <span
+              v-if="video.lang"
+              class="
+                absolute
+                top-4
+                right-0
+                bg-black
+                text-white text-sm
+                px-3
+                py-1
+                font-medium
+              "
+            >
+              {{ video.lang }}
+            </span>
             <img
               v-if="video.thumbnail"
               class="h-full w-full rounded-t-lg object-cover"

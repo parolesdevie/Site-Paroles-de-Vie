@@ -52,6 +52,7 @@ export enum VideoLinkEnum {
 }
 
 export interface IVideoLink {
+  lang?: LanguageEnum
   source: VideoLinkEnum
   name: string
   url: string
@@ -156,4 +157,9 @@ export interface SearchResult {
   image?: string
   author?: string
   plateform: SearchPlateformEnum
+}
+
+export enum LanguageEnum {
+  EN = 'Anglais',
+  FR = 'Français',
 }

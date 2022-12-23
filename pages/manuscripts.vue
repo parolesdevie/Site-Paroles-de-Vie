@@ -175,6 +175,7 @@
         left
         class="container mx-auto mt-4 md:mt-10"
         playlistYoutubeId="PLaBmOZ7eJG-Xp0v-AbfDTIe2dfEfU9ylW"
+        playlistDailymotionId="x7op0q"
         :videos="videos"
       />
     </div>
@@ -194,7 +195,7 @@ import IconHandDrownArrowTopLeftCorner from '~/components/icons/IconHandDrownArr
 import SectionVideo from '~/components/videos/SectionVideo.vue'
 import { ManuscriptService, WebSiteService } from '~/services'
 import { ManuscriptsPlateformEnum } from '~/services/WebSiteService'
-import { VideoLinkEnum } from '~/types'
+import { LanguageEnum, VideoLinkEnum } from '~/types'
 
 export default Vue.extend({
   name: 'ManuscriptsPage',
@@ -249,6 +250,7 @@ export default Vue.extend({
       plateforms: ManuscriptService.getPlateforms(),
       videos: [
         {
+          lang: LanguageEnum.EN,
           source: VideoLinkEnum.YOUTUBE,
           name: 'Oldest Bible Manuscripts',
           url: 'https://youtu.be/TvmAaXUKkco',
@@ -261,22 +263,71 @@ export default Vue.extend({
           thumbnail: 'https://img.youtube.com/vi/W6NCAdoFZ4s/mqdefault.jpg',
         },
         {
+          lang: LanguageEnum.EN,
           source: VideoLinkEnum.YOUTUBE,
           name: 'Dr Wallace on Codex Sinaiticus at the British Library',
           url: 'https://youtu.be/u1SClZRz4lw',
           thumbnail: 'https://img.youtube.com/vi/u1SClZRz4lw/mqdefault.jpg',
         },
         {
+          lang: LanguageEnum.EN,
           source: VideoLinkEnum.YOUTUBE,
           name: 'Why We Digitize New Testament Manuscripts',
           url: 'https://www.youtube.com/watch?v=XhbPf2FCQv4',
           thumbnail: 'https://img.youtube.com/vi/XhbPf2FCQv4/mqdefault.jpg',
         },
         {
+          lang: LanguageEnum.EN,
           source: VideoLinkEnum.YOUTUBE,
           name: "The world's oldest bible reunited online",
           url: 'https://youtu.be/fd_x1yuIrZ8',
           thumbnail: 'https://img.youtube.com/vi/fd_x1yuIrZ8/mqdefault.jpg',
+        },
+        {
+          source: VideoLinkEnum.YOUTUBE,
+          name: "L'histoire de la Bible 4 Le Codex Sinaïticus",
+          url: 'https://youtu.be/1fNzpKGzTw4',
+          thumbnail: 'https://img.youtube.com/vi/1fNzpKGzTw4/mqdefault.jpg',
+        },
+        {
+          source: VideoLinkEnum.YOUTUBE,
+          name: "L'histoire de la Bible 5 Le Codex Vaticanus",
+          url: 'https://youtu.be/4OGmULikIXs',
+          thumbnail: 'https://img.youtube.com/vi/4OGmULikIXs/mqdefault.jpg',
+        },
+        {
+          source: VideoLinkEnum.YOUTUBE,
+          name: 'THE CODEX VATICANUS B - Browsing Facsimile Editions (4K / UHD)',
+          url: 'https://youtu.be/NWWyDFNSg_U',
+          thumbnail: 'https://img.youtube.com/vi/NWWyDFNSg_U/mqdefault.jpg',
+        },
+        {
+          lang: LanguageEnum.EN,
+          source: VideoLinkEnum.YOUTUBE,
+          name: 'Chaîne PRINCIPIA',
+          url: 'https://youtu.be/CMfqILJJzoc',
+          thumbnail: 'https://img.youtube.com/vi/CMfqILJJzoc/mqdefault.jpg',
+        },
+        {
+          lang: LanguageEnum.EN,
+          source: VideoLinkEnum.YOUTUBE,
+          name: 'THE VATICANUS BIBLE Gospels; Handheld Pseudofacsimile of Codex Vaticanus Greek NT + Verse References',
+          url: 'https://youtu.be/bcDRRO7CVeE',
+          thumbnail: 'https://img.youtube.com/vi/bcDRRO7CVeE/mqdefault.jpg',
+        },
+        {
+          lang: LanguageEnum.EN,
+          source: VideoLinkEnum.DAILYMOTION,
+          name: 'The Codex Sinaiticus: The Oldest Surviving Christian New Testament - The Beauty of Books - BBC Four',
+          url: 'https://dai.ly/x7vmyb0',
+          thumbnail: 'https://www.dailymotion.com/thumbnail/video/x7vmyb0',
+        },
+        {
+          lang: LanguageEnum.EN,
+          source: VideoLinkEnum.DAILYMOTION,
+          name: 'Codex Sinaiticus',
+          url: 'https://dai.ly/x300fk8',
+          thumbnail: 'https://www.dailymotion.com/thumbnail/video/x300fk8',
         },
       ],
     }
