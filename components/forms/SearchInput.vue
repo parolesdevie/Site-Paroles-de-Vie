@@ -41,7 +41,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import IconSearch from '~/components/icons/IconSearch.vue'
-import IconBackspace from '../icons/IconBackspace.vue'
+import IconBackspace from '~/components/icons/IconBackspace.vue'
 
 export default Vue.extend({
   name: 'SearchInput',

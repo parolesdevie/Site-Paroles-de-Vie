@@ -1,7 +1,7 @@
 <template>
   <iframe
     :style="{ backgroundColor: '#282828' }"
-    class="mt-2 md:mt-4 h-38 w-full rounded-xl"
+    class="h-38 w-full rounded-xl"
     :src="src"
     frameBorder="0"
     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -26,7 +26,7 @@ export default Vue.extend({
   },
 
   computed: {
-    src() {
+    src(): string {
       const { podcast, episode } = this
       return `https://open.spotify.com/embed/${
         podcast ? `show/${podcast}` : `episode/${episode}`

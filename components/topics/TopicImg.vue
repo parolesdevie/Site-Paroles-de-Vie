@@ -31,11 +31,11 @@ export default Vue.extend({
   },
 
   computed: {
-    computedSrrset() {
+    computedSrrset(): string {
       const { src } = this
       return `/images/topic/${src}@1x.webp, /images/topic/${src}@1.5x.webp 1.5x, /images/topic/${src}@2x.webp 2x, /images/topic/${src}@3x.webp 3x, /images/topic/${src}@4x.webp 4x`
     },
-    computedSrc() {
+    computedSrc(): string {
       const { src } = this
       return `/images/topic/${src}.webp 1x`
     },

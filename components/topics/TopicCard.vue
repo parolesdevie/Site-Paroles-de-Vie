@@ -13,8 +13,8 @@
       :to="to"
     >
       <TopicImg
-        class="h-full w-full"
         v-if="cover"
+        class="h-full w-full"
         :src="cover.src"
         :color="cover.color"
         :alt="title"

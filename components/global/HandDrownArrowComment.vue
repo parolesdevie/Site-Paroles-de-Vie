@@ -31,7 +31,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import IconHandDrownArrowTopLeftCorner from '../icons/IconHandDrownArrowTopLeftCorner.vue'
+import IconHandDrownArrowTopLeftCorner from '~/components/icons/IconHandDrownArrowTopLeftCorner.vue'
 
 export default Vue.extend({
   name: 'HandDrownArrowComment',

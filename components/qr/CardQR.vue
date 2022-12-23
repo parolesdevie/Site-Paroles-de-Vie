@@ -1,7 +1,31 @@
 <template>
   <li class="contents">
+    <a
+      v-if="href"
+      :href="href"
+      class="
+        border-2 border-blue-500
+        rounded-lg
+        bg-gray-100
+        dark:bg-gray-900
+        flex
+        p-4
+        font-semibold
+      "
+      target="_blank"
+      rel="noopener noreferrer"
+      :title="computedTitle"
+    >
+      <span>
+        {{ title }}
+      </span>
+      <IconGotQuestionsLogo
+        v-if="plateform === QuestionPlateformEnum.GOT_QUESTIONS"
+        class="ml-auto h-6 text-blue-500 shrink-0"
+      />
+    </a>
     <div
-      v-if="slug"
+      v-else
       class="
         border-2 border-blue-500
         rounded-lg
@@ -26,32 +50,11 @@
         {{ title }}
       </strong>
 
-      <NuxtLink to="/" class="font-semibold"> </NuxtLink>
+      <!-- <NuxtLink v-if="slug" to="/" class="font-semibold"> </NuxtLink> -->
       <div v-show="open">
         <slot />
       </div>
     </div>
-    <a
-      v-else-if="href"
-      :href="href"
-      class="
-        border-2 border-blue-500
-        rounded-lg
-        bg-gray-100
-        dark:bg-gray-900
-        flex
-        p-4
-        font-semibold
-      "
-      target="_blank"
-      rel="noopener noreferrer"
-      :title="computedTitle"
-    >
-      <span>
-        {{ title }}
-      </span>
-      <IconGotQuestionsLogo class="ml-auto h-6 text-blue-500 shrink-0" />
-    </a>
   </li>
 </template>
 
@@ -90,11 +93,12 @@ export default Vue.extend({
   data() {
     return {
       open: false,
+      QuestionPlateformEnum,
     }
   },
 
   computed: {
-    computedTitle(): String {
+    computedTitle(): string {
       return this.plateform === QuestionPlateformEnum.UNKNOW
         ? this.title
         : `Lire <<${this.title}>> sur le site ${this.plateform}`

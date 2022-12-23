@@ -6,16 +6,7 @@
     <!-- links -->
     <nav class="mt-2 md:mt-4">
       <!-- playlist -->
-      <a
-        v-if="playlistYoutubeId"
-        class="hover:text-blue-700 inline-flex items-center"
-        :href="'https://youtube.com/playlist?list=' + playlistYoutubeId"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <IconPlay class="h-7 w-7 md:h-9 md:w-9" />
-        <span class="ml-2">Lire la playlist de débats sur YouTube</span>
-      </a>
+      <PlaylistLinks :playlistYoutubeId="playlistYoutubeId" />
 
       <!-- table of debates -->
       <TableDebate
@@ -34,8 +25,9 @@ import IconPlay from '~/components/icons/IconPlay.vue'
 import IconYouTube from '~/components/icons/IconYouTube.vue'
 import IconTikTok from '~/components/icons/IconTikTok.vue'
 import { IDebat, DebatPlateformEnum } from '~/types'
-import TableDebate from './TableDebate.vue'
+import TableDebate from '~/components/debate/TableDebate.vue'
 import H2Title from '~/components/global/H2Title.vue'
+import PlaylistLinks from '~/components/videos/PlaylistLinks.vue'
 
 export default Vue.extend({
   name: 'SectionDebate.',
@@ -46,6 +38,7 @@ export default Vue.extend({
     IconTikTok,
     TableDebate,
     H2Title,
+    PlaylistLinks,
   },
 
   props: {

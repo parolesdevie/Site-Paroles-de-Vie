@@ -53,7 +53,7 @@ import Vue from 'vue'
 import { PropType } from 'vue/types/v3-component-props'
 import TopicCard from '~/components/topics/TopicCard.vue'
 import { ITopic } from '~/types'
-import IconQuestionCircle from '../icons/IconQuestionCircle.vue'
+import IconQuestionCircle from '~/components/icons/IconQuestionCircle.vue'
 
 export default Vue.extend({
   name: 'SectionTopicCard',

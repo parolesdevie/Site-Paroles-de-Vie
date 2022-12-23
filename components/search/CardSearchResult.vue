@@ -1,6 +1,7 @@
 <template>
   <li class="contents">
     <a
+      v-if="href"
       class="flex flex-col md:flex-row"
       :href="href"
       target="_blank"
@@ -26,7 +27,7 @@
       >
         <div class="text-lg font-semibold">
           <p>{{ title }}</p>
-          <p class="mt-4 text-blue-500">{{ author }}</p>
+          <p v-if="author" class="mt-4 text-blue-500">{{ author }}</p>
         </div>
         <IconEmcitvLogo
           v-if="plateform === SearchPlateformEnum.EMCITV"
@@ -52,6 +53,23 @@
         />
       </div>
     </a>
+    <span
+      v-else
+      class="
+        border-2 border-blue-500
+        rounded-lg
+        bg-gray-100
+        dark:bg-gray-900
+        flex-auto flex
+        p-4
+        line-through
+      "
+    >
+      <div class="text-lg font-semibold">
+        <p>{{ title }}</p>
+        <p v-if="author" class="mt-4 text-blue-500">{{ author }}</p>
+      </div>
+    </span>
   </li>
 </template>
 
@@ -64,7 +82,7 @@ import IconEmcitvLogo from '~/components/icons/IconEmcitvLogo.vue'
 import IconTopChretienLogo from '~/components/icons/IconTopChretienLogo.vue'
 import IconFamilleChretienneLogo from '~/components/icons/IconFamilleChretienneLogo.vue'
 import { SearchPlateformEnum } from '~/types'
-import IconAleteiaLogo from '../icons/IconAleteiaLogo.vue'
+import IconAleteiaLogo from '~/components/icons/IconAleteiaLogo.vue'
 
 export default Vue.extend({
   name: 'CardSearchResult',
