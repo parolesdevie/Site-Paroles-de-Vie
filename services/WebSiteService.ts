@@ -13,6 +13,10 @@ export default class WebSiteService {
   static getAll(): IWebSite[] {
     return [
       {
+        name: 'The Vaticanus Bible',
+        href: 'https://www.koinegreek.com/vaticanusbible',
+      },
+      {
         name: 'Codex Sinaiticus',
         href: 'https://codexsinaiticus.org/en/',
       },
@@ -86,6 +90,10 @@ export default class WebSiteService {
       CODEX_VATICANUS: {
         name: 'Codex Vaticanus',
         sites: [
+          {
+            name: ManuscriptsPlateformEnum.DIGITAL_VATICAN_LIBRARY,
+            href: 'https://digi.vatlib.it/view/MSS_Vat.gr.1209',
+          },
           {
             name: ManuscriptsPlateformEnum.CENTER_STUDY_NT,
             href: 'https://manuscripts.csntm.org/manuscript/Group/GA_03',

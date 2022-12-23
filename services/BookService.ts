@@ -6,6 +6,16 @@ export default class BookService {
   static getAll(): IBook[] {
     return [
       {
+        title: 'Bible Codex Vaticanus Évangiles',
+        slug: 'the-vaticanus-bible-gospels',
+        amazon: '3PPPytw',
+      },
+      {
+        title: 'Bible Codex Vaticanus Actes et Épîtres',
+        slug: 'the-vaticanus-bible-acts-and-epistles',
+        amazon: '3ve4Qi6',
+      },
+      {
         title: 'Bible Nestle-Aland',
         slug: 'bible-nestle-aland',
         amazon: '3hzadoT',
