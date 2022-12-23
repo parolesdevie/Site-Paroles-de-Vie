@@ -238,6 +238,7 @@ export default {
   gtm: {
     id: 'GTM-K7BMW26',
     enabled: true,
+    debug: true,
   },
 
   sitemap: {
