@@ -216,6 +216,8 @@ export default {
     '@nuxtjs/tailwindcss',
     // https://github.com/nuxt-community/gtm-module#readme
     '@nuxtjs/gtm',
+    // https://www.npmjs.com/package/@nuxtjs/sitemap
+    '@nuxtjs/sitemap',
   ],
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
@@ -236,6 +238,10 @@ export default {
   gtm: {
     id: 'GTM-K7BMW26',
     enabled: true,
+  },
+
+  sitemap: {
+    hostname: 'https://www.paroles-de-vie.tk',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
