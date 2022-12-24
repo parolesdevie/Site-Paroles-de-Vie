@@ -15,6 +15,23 @@
           Debateurs
         </th>
         <th
+          class="
+            border-b
+            dark:border-blue-500
+            font-semibold
+            p-2
+            md:p-4 md:pl-8 md:pt-0 md:pb-3
+            text-left
+            truncate
+            max-w-0
+            md:max-w-none
+            hidden
+            md:table-cell
+          "
+        >
+          Médiateur
+        </th>
+        <th
           v-if="!hideSubject"
           class="
             border-b
@@ -125,6 +142,29 @@
           v-else
         >
           Inconnus
+        </td>
+        <td
+          class="
+            border-b
+            dark:border-blue-500
+            p-2
+            md:p-4 md:pl-8
+            text-xs
+            md:text-base
+            hidden
+            md:table-cell
+          "
+        >
+          <NuxtLink
+            v-if="debat.mediator"
+            :to="'/debaters/' + debat.mediator.id"
+            class="text-sm md:text-base hover:text-blue-500"
+          >
+            {{ debat.mediator.name }}
+          </NuxtLink>
+          <span v-else class="text-sm md:text-base text-gray-400">
+            Inconnu
+          </span>
         </td>
         <td
           class="

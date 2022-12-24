@@ -8,7 +8,7 @@
 
       <!-- intro -->
       <SectionIntroTopics :cover="cover">
-        <template v-slot:title>La divinité de Jésus</template>
+        <template v-slot:title>La critique textuelle biblique</template>
         <!-- <template v-slot:body> </template> -->
       </SectionIntroTopics>
 
@@ -32,13 +32,13 @@ import SectionIntroTopics from '~/components/topics/SectionIntroTopics.vue'
 import { DebateService, TopicService } from '~/services'
 
 export default Vue.extend({
-  name: 'DivinityOfJesusPage',
+  name: 'BiblicalTextCriticismPage',
 
   components: { SectionIntroTopics, SectionDebate },
 
   head() {
     return {
-      title: 'La divinité de Jésus dans la Bible - Paroles de vie',
+      title: 'La critique textuelle biblique - Paroles de vie',
       meta: [
         {
           hid: 'description',
@@ -50,13 +50,13 @@ export default Vue.extend({
           hid: 'og:image',
           property: 'og:image',
           content:
-            'https://www.paroles-de-vie.tk/seo/the-divinity-of-jesus.webp',
+            'https://www.paroles-de-vie.tk/seo/biblical-textual-criticism.webp',
         },
         {
           hid: 'twitter:image',
           property: 'twitter:image',
           content:
-            'https://www.paroles-de-vie.tk/seo/the-divinity-of-jesus.webp',
+            'https://www.paroles-de-vie.tk/seo/biblical-textual-criticism.webp',
         },
       ],
     }
@@ -70,12 +70,12 @@ export default Vue.extend({
           to: '/',
         },
         {
-          name: 'La divinité de Jésus',
-          to: '/the-divinity-of-jesus/',
+          name: 'Critique textuelle',
+          to: '/biblical-textual-criticism/',
         },
       ],
-      cover: TopicService.getBySlug('/the-divinity-of-jesus/')?.cover,
-      debates: DebateService.getByTopic('the-divinity-of-jesus'),
+      cover: TopicService.getBySlug('/biblical-textual-criticism/')?.cover,
+      debates: DebateService.getByTopic('biblical-textual-criticism'),
     }
   },
 })

@@ -134,6 +134,7 @@ export enum DebatReligionEnum {
   UNKNOW = 'inconnu',
   CHRISTIAN = 'Chrétien',
   MUSLIM = 'Musulman',
+  JEWISH = 'Juif',
 }
 
 export interface IDebaterProfils {
@@ -152,6 +153,7 @@ export interface IDebat {
   url: string
   subject: string
   debaters: IDebater[]
+  mediator?: IDebater
   plateform: DebatPlateformEnum.YOUTUBE
 }
 

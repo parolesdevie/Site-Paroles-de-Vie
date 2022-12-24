@@ -5,14 +5,14 @@ export default class TopicService {
 
   static getAll(): ITopic[] {
     return [
-      {
-        cover: {
-          color: '#707377',
-          src: 'search',
-        },
-        to: '/search/',
-        title: 'Recherche',
-      },
+      // {
+      //   cover: {
+      //     color: '#707377',
+      //     src: 'search',
+      //   },
+      //   to: '/search/',
+      //   title: 'Recherche',
+      // },
       // {
       //   cover: {
       //     color: '#538E9C',
@@ -21,6 +21,14 @@ export default class TopicService {
       //   to: '/questions-answer/',
       //   title: 'Tu as une questions ?',
       // },
+      {
+        cover: {
+          color: '#9D928C',
+          src: 'documents',
+        },
+        to: '/documents/',
+        title: 'Documents PDF',
+      },
       {
         cover: {
           color: '#',
@@ -39,11 +47,11 @@ export default class TopicService {
       },
       {
         cover: {
-          color: '#AFA69E',
-          src: 'read-the-bible',
+          color: '#000',
+          src: 'manuscript',
         },
-        to: '/read-the-bible/',
-        title: 'Lire la Bible',
+        to: '/biblical-textual-criticism/',
+        title: 'Critique textuelle',
       },
       {
         cover: {
@@ -69,14 +77,22 @@ export default class TopicService {
         to: '/the-parable-of-the-winegrowers/',
         title: 'La parabole des vignerons',
       },
-      {
-        cover: {
-          color: '#3D342E',
-          src: 'debates-tips',
-        },
-        to: '/debates-tips/',
-        title: 'Conseils de débats',
-      },
+      // {
+      //   cover: {
+      //     color: '#',
+      //     src: 'soreg',
+      //   },
+      //   to: '/soreg/',
+      //   title: 'Le Soreg',
+      // },
+      // {
+      //   cover: {
+      //     color: '#3D342E',
+      //     src: 'debates-tips',
+      //   },
+      //   to: '/debates-tips/',
+      //   title: 'Conseils de débats',
+      // },
       {
         cover: {
           color: '#8A7A6F',
@@ -101,21 +117,21 @@ export default class TopicService {
         to: '/the-crucifixion-in-the-bible/',
         title: 'La crucifixion dans la bible',
       },
+      // {
+      //   cover: {
+      //     color: '#CABA8C',
+      //     src: 'free-will',
+      //   },
+      //   to: '/free-will/',
+      //   title: 'Le libre arbitre',
+      // },
       {
         cover: {
-          color: '#CABA8C',
-          src: 'free-will',
+          color: '#967D7A',
+          src: 'youtube',
         },
-        to: '/free-will/',
-        title: 'Le libre arbitre',
-      },
-      {
-        cover: {
-          color: '#9D928C',
-          src: 'documents',
-        },
-        to: '/documents/',
-        title: 'Documents',
+        to: '/youtube/',
+        title: 'Chaîne Youtube Recommandées',
       },
       {
         cover: {
@@ -135,11 +151,11 @@ export default class TopicService {
       },
       {
         cover: {
-          color: '#ACB0BB',
-          src: 'magazines',
+          color: '#AFA69E',
+          src: 'read-the-bible',
         },
-        to: '/magazines/',
-        title: 'Magazines',
+        to: '/read-the-bible/',
+        title: 'Lire la Bible',
       },
       {
         cover: {
@@ -151,19 +167,11 @@ export default class TopicService {
       },
       {
         cover: {
-          color: '#967D7A',
-          src: 'youtube',
+          color: '#ACB0BB',
+          src: 'magazines',
         },
-        to: '/youtube/',
-        title: 'Chaîne Youtube Recommandées',
-      },
-      {
-        cover: {
-          color: '#',
-          src: 'soreg',
-        },
-        to: '/soreg/',
-        title: 'Le Soreg',
+        to: '/magazines/',
+        title: 'Magazines',
       },
     ]
   }

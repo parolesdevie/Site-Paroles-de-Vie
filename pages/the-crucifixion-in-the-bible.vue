@@ -9,12 +9,7 @@
       <!-- intro -->
       <SectionIntroTopics :cover="cover">
         <template v-slot:title>La crucifixion dans la bible</template>
-        <template v-slot:body>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aut
-          quaerat perferendis a totam et maiores sint libero similique eaque
-          omnis qui iusto, nostrum impedit esse, adipisci corrupti molestias
-          possimus !
-        </template>
+        <!-- <template v-slot:body> </template> -->
       </SectionIntroTopics>
 
       <SectionDebate

@@ -19,13 +19,15 @@
 
       <BgColorSection>
         <template v-slot:title>Réfutation de la thèse islamique</template>
-        <template v-slot:body>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-          cupiditate facilis unde amet sapiente repellat aspernatur ullam esse
-          dolore quae! Hic, incidunt necessitatibus. Laboriosam suscipit ad,
-          corrupti perspiciatis vitae quam.
-        </template>
+        <!-- <template v-slot:body> </template> -->
       </BgColorSection>
+
+      <SectionDebate
+        title="Découvrir en débats"
+        class="container mx-auto mt-4 md:mt-10"
+        :debates="debates"
+        :hideSubject="false"
+      />
 
       <SectionDownloadDocumentsList
         class="container mx-auto mt-4 md:mt-10"
@@ -37,14 +39,19 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import SectionDebate from '~/components/debate/SectionDebate.vue'
 import SectionDownloadDocumentsList from '~/components/document/SectionDownloadDocumentsList.vue'
 import SectionIntroTopics from '~/components/topics/SectionIntroTopics.vue'
-import { TopicService } from '~/services'
+import { DebateService, TopicService } from '~/services'
 
 export default Vue.extend({
   name: 'FalsificationBiblePage',
 
-  components: { SectionDownloadDocumentsList, SectionIntroTopics },
+  components: {
+    SectionDownloadDocumentsList,
+    SectionIntroTopics,
+    SectionDebate,
+  },
 
   head() {
     return {
@@ -85,6 +92,7 @@ export default Vue.extend({
         },
       ],
       cover: TopicService.getBySlug('/the-falsification-of-the-bible/')?.cover,
+      debates: DebateService.getByTopic('the-falsification-of-the-bible'),
       files: [
         // {
         //   author: AuthorEnum.SHAM,
