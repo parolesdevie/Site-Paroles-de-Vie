@@ -106,6 +106,7 @@
                   "
                 >
                   <img
+                    loading="lazy"
                     class="h-7 md:h-7"
                     :src="`/images/site/${plateform.icon}.webp`"
                     :alt="plateform.name"

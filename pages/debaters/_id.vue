@@ -16,6 +16,7 @@
         <div class="mt-2 md:mt-4 flex flex-col md:flex-row">
           <div class="inline-flex flex-col items-center shrink-0 max-w-sm">
             <img
+              loading="lazy"
               :src="'/images/user/' + id + '.webp'"
               class="h-20 w-20 rounded-full bg-gray-300"
               title="photo de profils"

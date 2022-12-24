@@ -10,6 +10,7 @@
     >
       <img
         v-if="image"
+        loading="lazy"
         class="w-full md:w-auto md:h-20 shrink-0 rounded-lg"
         :src="image"
         alt=""
@@ -47,9 +48,10 @@
         />
         <img
           v-else-if="plateform === SearchPlateformEnum.JCSR"
+          loading="lazy"
+          class="mt-4 md:mt-2 ml-auto h-6 md:h-4 shrink-0"
           src="https://i0.wp.com/jcsr.church/wp-content/uploads/2019/09/JC2_edited3.jpg?fit=74%2C80&ssl=1"
           alt=""
-          class="mt-4 md:mt-2 ml-auto h-6 md:h-4 shrink-0"
         />
       </div>
     </a>

@@ -67,6 +67,7 @@
             </span>
             <img
               v-if="video.thumbnail"
+              loading="lazy"
               class="h-full w-full rounded-t-lg object-cover"
               :src="video.thumbnail"
               alt=""

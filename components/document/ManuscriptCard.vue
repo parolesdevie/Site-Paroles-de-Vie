@@ -2,6 +2,7 @@
   <div class="inline-flex flex-col flex-wrap items-end shrink-0 select-none">
     <div class="relative">
       <img
+        loading="lazy"
         tabindex="0"
         class="mb-2 md:mb-3 h-40 w-40 md:h-64 md:w-64 bg-gray-300 rounded-xl"
         :src="'/images/manuscript/thumbnails/' + image + '.webp'"
@@ -45,31 +46,35 @@
         rel="noopener noreferrer"
       >
         <img
-          class="h-8 md:h-8"
           v-if="site.name === ManuscriptsPlateformEnum.CODEX_SINATICUS_ORG"
+          loading="lazy"
+          class="h-8 md:h-8"
           src="/images/site/logo-codexsinaiticus.webp"
           :alt="site.name"
           :title="site.name"
         />
         <img
-          class="h-8 md:h-8"
           v-else-if="site.name === ManuscriptsPlateformEnum.CENTER_STUDY_NT"
+          loading="lazy"
+          class="h-8 md:h-8"
           src="/images/site/logo-center-study-nt.webp"
           :alt="site.name"
           :title="site.name"
         />
         <img
-          class="h-8 md:h-8"
           v-else-if="site.name === ManuscriptsPlateformEnum.BRITISH_LIBRARY"
+          loading="lazy"
+          class="h-8 md:h-8"
           src="/images/site/logo-british-library.webp"
           :alt="site.name"
           :title="site.name"
         />
         <img
-          class="h-8 md:h-8"
           v-else-if="
             site.name === ManuscriptsPlateformEnum.DIGITAL_VATICAN_LIBRARY
           "
+          loading="lazy"
+          class="h-8 md:h-8"
           src="/images/site/logo-vatlib.webp"
           :alt="site.name"
           :title="site.name"

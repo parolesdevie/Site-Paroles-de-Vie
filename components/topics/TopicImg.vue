@@ -1,6 +1,7 @@
 <template>
   <div :style="{ backgroundColor: color }">
     <img
+      loading="lazy"
       class="animate-fade"
       :srcset="computedSrrset"
       :src="computedSrc"
