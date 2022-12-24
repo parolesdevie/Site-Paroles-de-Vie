@@ -73,8 +73,8 @@ export default class DebaterService {
       },
       {
         id: 11,
-        pseudo: 'Fidelix Verax',
-        name: 'Fidelix Verax',
+        pseudo: 'Fidelis Verax',
+        name: 'Fidelis Verax',
         religion: DebatReligionEnum.CHRISTIAN,
       },
       {
@@ -100,6 +100,84 @@ export default class DebaterService {
         pseudo: 'Daniel',
         name: 'Daniel',
         religion: DebatReligionEnum.MUSLIM,
+      },
+      {
+        id: 16,
+        pseudo: 'Karim al-Hanifi',
+        name: 'Karim al-Hanifi',
+        religion: DebatReligionEnum.MUSLIM,
+      },
+      {
+        id: 17,
+        pseudo: 'Arnaud Dumouch',
+        name: 'Arnaud Dumouch',
+        religion: DebatReligionEnum.CHRISTIAN,
+      },
+      {
+        id: 18,
+        pseudo: 'Sam Shamoun',
+        name: 'Sam Shamoun',
+        religion: DebatReligionEnum.CHRISTIAN,
+      },
+      {
+        id: 19,
+        pseudo: 'Gabriel Hagaï',
+        name: 'Gabriel Hagaï',
+        religion: DebatReligionEnum.JEWISH,
+      },
+      {
+        id: 20,
+        pseudo: 'Metmati Maamar',
+        name: 'Metmati Maamar',
+        religion: DebatReligionEnum.MUSLIM,
+      },
+      {
+        id: 21,
+        pseudo: 'Abdullah al-Hanifi',
+        name: 'Abdullah al-Hanifi',
+        religion: DebatReligionEnum.MUSLIM,
+      },
+      {
+        id: 22,
+        pseudo: 'Morgan Priest',
+        name: 'Morgan Priest',
+        religion: DebatReligionEnum.CHRISTIAN,
+      },
+      {
+        id: 23,
+        pseudo: 'Said Oujibou',
+        name: 'Said Oujibou',
+        religion: DebatReligionEnum.CHRISTIAN,
+      },
+      {
+        id: 24,
+        pseudo: 'Guy Pages',
+        name: 'Guy Pages',
+        religion: DebatReligionEnum.CHRISTIAN,
+      },
+      {
+        id: 25,
+        pseudo: 'Odon Lafontaine',
+        name: 'Odon Lafontaine',
+        religion: DebatReligionEnum.CHRISTIAN,
+      },
+      {
+        id: 26,
+        pseudo: 'David wood',
+        name: 'David wood',
+        religion: DebatReligionEnum.CHRISTIAN,
+      },
+      {
+        id: 27,
+        pseudo: 'Zakaria',
+        name: 'Zakaria',
+        religion: DebatReligionEnum.MUSLIM,
+      },
+      {
+        id: 28,
+        pseudo: 'Alex',
+        name: 'Alex',
+        religion: DebatReligionEnum.CHRISTIAN,
       },
     ]
   }
