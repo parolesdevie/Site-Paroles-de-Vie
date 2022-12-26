@@ -176,11 +176,11 @@ export default class TopicService {
       },
       {
         cover: {
-          color: '#000',
-          src: '',
+          color: '#B18F66',
+          src: 'gallery',
         },
         to: '/gallery/',
-        title: "Gallerie d'images",
+        title: "Galerie d'images",
       },
     ]
   }

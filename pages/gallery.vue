@@ -25,7 +25,7 @@ export default Vue.extend({
 
   head() {
     return {
-      title: "Gallerie d'images - Paroles de vie",
+      title: "Galerie d'images - Paroles de vie",
       meta: [
         {
           hid: 'description',
@@ -55,7 +55,7 @@ export default Vue.extend({
           to: '/',
         },
         {
-          name: "Gallerie d'images",
+          name: "Galerie d'images",
           to: '/gallery/',
         },
       ],
