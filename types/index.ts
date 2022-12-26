@@ -188,3 +188,10 @@ export interface ISource {
   slug: string
   title: string
 }
+
+export enum RatioEnum {
+  SQUARE = '1:1',
+  DOUBLE = '2:1',
+  WIDE_SCREEN = '16:9',
+  MOBILE_VERTICAL = '9:16',
+}

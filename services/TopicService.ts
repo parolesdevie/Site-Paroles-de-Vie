@@ -174,6 +174,14 @@ export default class TopicService {
         to: '/magazines/',
         title: 'Magazines',
       },
+      {
+        cover: {
+          color: '#000',
+          src: '',
+        },
+        to: '/gallery/',
+        title: "Gallerie d'images",
+      },
     ]
   }
 
