@@ -47,8 +47,8 @@ export default class TopicService {
       },
       {
         cover: {
-          color: '#000',
-          src: 'manuscript',
+          color: '#625241',
+          src: 'biblical-textual-criticism',
         },
         to: '/biblical-textual-criticism/',
         title: 'Critique textuelle',
@@ -60,6 +60,14 @@ export default class TopicService {
         },
         to: '/gospel/',
         title: 'Louanges',
+      },
+      {
+        cover: {
+          color: '#887D6D',
+          src: 'soreg',
+        },
+        to: '/soreg/',
+        title: 'Le Soreg',
       },
       {
         cover: {
@@ -77,14 +85,7 @@ export default class TopicService {
         to: '/the-parable-of-the-winegrowers/',
         title: 'La parabole des vignerons',
       },
-      // {
-      //   cover: {
-      //     color: '#',
-      //     src: 'soreg',
-      //   },
-      //   to: '/soreg/',
-      //   title: 'Le Soreg',
-      // },
+
       // {
       //   cover: {
       //     color: '#3D342E',

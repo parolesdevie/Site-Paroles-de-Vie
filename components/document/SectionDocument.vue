@@ -43,13 +43,14 @@
 
     <div class="mt-4 md:mt-8 mb-8">
       <ul
-        :class="`          -m-4
+        :class="`
+          -m-4
           p-2
           md:p-4
           pr-3
           md:pr-5
           flex flex-wrap
-          ${fullHeight ? '' : 'max-h-160 overflow-y-auto'}
+          ${fullHeight ? '' : 'max-h-160 overflow-y-auto scroll-hidden'}
         `"
       >
         <CardDocument

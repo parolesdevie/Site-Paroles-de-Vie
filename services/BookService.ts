@@ -21,6 +21,11 @@ export default class BookService {
         amazon: '3hzadoT',
       },
       {
+        title: 'SEPTUAGINTA RELIE SKIVERTEX ',
+        slug: 'septuaginta-relie-skivertex',
+        amazon: '3PTTKbx',
+      },
+      {
         title: 'Nouveau Testament Interlinéaire grec-français',
         slug: 'nouveau-testament-interlineaire-grec-francais',
         amazon: '3W8ugcZ',
@@ -99,5 +104,10 @@ export default class BookService {
 
   static getBible(): IBook[] {
     return this.getAll().filter((book) => book.slug.includes('bible'))
+  }
+
+  static getBySlug(slug: string): IBook[] {
+    // return this.getAll().filter((book) => book.slug.includes(slug))
+    return this.getAll().filter((book) => book.slug === slug)
   }
 }

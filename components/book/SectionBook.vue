@@ -26,6 +26,9 @@
       <br />
       Bonne lecture.🕊️
     </p>
+    <div v-else class="mt-4 md:mt-8">
+      <slot />
+    </div>
 
     <!-- books list -->
     <div class="mt-4 md:mt-8">

@@ -16,7 +16,7 @@
             border
             w-24
             h-8
-            dark:bg-light-black dark:text-white dark:border-gray-700
+            dark:border-gray-700
           "
         >
           <option value="system">System</option>
@@ -25,10 +25,40 @@
         </select> -->
 
         <!-- burger -->
-        <IconBars class="h-8 w-8 md:h-8 md:w-8 hidden" />
+        <div
+          class="
+            flex
+            items-center
+            justify-center
+            border
+            rounded-full
+            lg:px-4
+            h-8
+          "
+        >
+          <input
+            type="text"
+            class="
+              hidden
+              lg:inline
+              outline-none
+              text-white
+              lg:pr-10
+              xl:pr-20
+              bg-transparent
+            "
+            placeholder="Recherche"
+          />
+          <NuxtLink to="/resource/">
+            <IconSearch class="lg:ml-2 h-8 w-8 p-2" />
+          </NuxtLink>
+        </div>
+
+        <!-- burger -->
+        <IconBars class="h-8 w-8 hidden" />
 
         <nav class="hidden md:contents">
-          <ul class="flex gap-2 md:gap-4">
+          <ul class="ml-8 flex gap-2 md:gap-4">
             <li v-for="(link, index) in links" :key="index">
               <NuxtLink
                 :to="link.to"
@@ -49,6 +79,7 @@ import Vue from 'vue'
 import IconLogoUni from '~/components/icons/IconLogoUni.vue'
 import IconBars from '~/components/icons/IconBars.vue'
 import { MenuService } from '~/services'
+import IconSearch from '../icons/IconSearch.vue'
 
 export default Vue.extend({
   name: 'Header',
@@ -56,6 +87,7 @@ export default Vue.extend({
   components: {
     IconLogoUni,
     IconBars,
+    IconSearch,
   },
 
   data() {

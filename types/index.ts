@@ -47,6 +47,7 @@ export interface IQuestion {
 export enum VideoLinkEnum {
   UNKNOW = 'Inconu',
   YOUTUBE = 'Youtube',
+  YOUTUBE_SHORT = 'YoutubeShorts',
   TIKTOK = 'TikTok',
   DAILYMOTION = 'DailyMotion',
 }
@@ -70,6 +71,7 @@ export interface IVideoLink {
   name: string
   url: string
   thumbnail: string
+  topic?: string
 }
 
 export enum ThemeEnum {
@@ -179,4 +181,10 @@ export enum LanguageEnum {
   EN = 'Anglais',
   DE = 'Allemand',
   IT = 'Italien',
+}
+
+export interface ISource {
+  formats: FormatEnum[]
+  slug: string
+  title: string
 }

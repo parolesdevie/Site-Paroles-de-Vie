@@ -1,8 +1,6 @@
 import { AuthorEnum, AuthorTeamEnum, IPdf, ThemeEnum } from '~/types'
 
 export default class PdfService {
-  constructor() {}
-
   static getAll(): IPdf[] {
     return [
       {

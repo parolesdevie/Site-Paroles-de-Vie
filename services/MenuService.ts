@@ -10,25 +10,25 @@ export default class MenuService {
         name: 'Accueil',
       },
       {
-        to: '/questions-answer/',
-        name: 'Questions/Réponses',
-      },
-      {
-        to: '/documents/',
-        name: 'Documents',
-      },
-      {
         to: '/books/',
         name: 'Livres',
       },
       {
-        to: '/sites/',
-        name: 'Sites',
+        to: '/documents/',
+        name: 'Documents Numériques',
       },
       {
-        to: '/magazines/',
-        name: 'Magazine',
+        to: '/questions-answer/',
+        name: 'FAQ', // Questions/Réponses
       },
+      // {
+      //   to: '/sites/',
+      //   name: 'Sites',
+      // },
+      // {
+      //   to: '/magazines/',
+      //   name: 'Magazine',
+      // },
     ]
   }
 

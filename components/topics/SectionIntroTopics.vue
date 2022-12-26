@@ -86,7 +86,14 @@
       </div>
 
       <!-- front file -->
-      <ul class="hidden md:inline ml-auto shrink-0" v-if="frontFile">
+      <div
+        v-if="$slots.frontFile"
+        class="hidden md:inline-flex ml-auto shrink-0"
+      >
+        <slot name="frontFile" />
+      </div>
+
+      <ul class="hidden md:inline ml-auto shrink-0" v-else-if="frontFile">
         <CardDocument
           onlyImage
           :size="0.75"

@@ -4,6 +4,11 @@
     playColor="#fff"
     class="absolute z-10 top-2 left-2 h-7 w-7 md:h-9 md:w-9 text-red-500"
   />
+  <IconYouTube
+    v-else-if="source === VideoLinkEnum.YOUTUBE_SHORT"
+    playColor="#fff"
+    class="absolute z-10 top-2 left-2 h-7 w-7 md:h-9 md:w-9 text-red-500"
+  />
   <IconTikTok
     v-else-if="source === VideoLinkEnum.TIKTOK"
     class="absolute z-10 top-2 left-2 h-7 w-7 md:h-9 md:w-9 text-blue-500"

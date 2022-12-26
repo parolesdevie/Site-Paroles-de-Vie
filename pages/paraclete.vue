@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen dark:bg-light-black dark:text-white">
+  <div class="flex flex-col min-h-screen">
     <!-- header -->
     <Header />
     <div class="mb-auto px-3 md:px-0 py-4 flex flex-col">
@@ -59,6 +59,7 @@
         :videos="videos"
       />
 
+      <!-- section download document  -->
       <SectionDownloadDocumentsList
         class="container mx-auto mt-4 md:mt-10"
         :files="files"

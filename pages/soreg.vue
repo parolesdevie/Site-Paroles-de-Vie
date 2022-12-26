@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen dark:bg-light-black dark:text-white">
+  <div class="flex flex-col min-h-screen">
     <!-- header -->
     <Header />
     <div class="container mx-auto mb-auto px-3 md:px-0 py-4 flex flex-col">
@@ -7,7 +7,7 @@
       <Breadcrumb :items="breadcrumbItems" />
 
       <!-- intro -->
-      <SectionIntroTopics :cover="cover">
+      <SectionIntroTopics :cover="cover" :frontFile="frontFile">
         <template v-slot:title>Le Soreg</template>
         <template v-slot:body>
           L'inscription du Soreg (en hébreu סורג — soreg — signifie grille) ou
@@ -39,6 +39,12 @@
         playlistDailymotionId="x7okt4"
         :videos="videos"
       />
+
+      <!-- section download document  -->
+      <SectionDownloadDocumentsList
+        class="container mx-auto mt-4 md:mt-10"
+        :files="files"
+      />
     </div>
 
     <!-- footer -->
@@ -48,15 +54,20 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import SectionDownloadDocumentsList from '~/components/document/SectionDownloadDocumentsList.vue'
 import SectionIntroTopics from '~/components/topics/SectionIntroTopics.vue'
 import SectionVideo from '~/components/videos/SectionVideo.vue'
 import { TopicService } from '~/services'
-import { VideoLinkEnum } from '~/types'
+import { AuthorEnum, FormatEnum, ISourceFile, VideoLinkEnum } from '~/types'
 
 export default Vue.extend({
   name: 'SoregPage',
 
-  components: { SectionIntroTopics, SectionVideo },
+  components: {
+    SectionIntroTopics,
+    SectionVideo,
+    SectionDownloadDocumentsList,
+  },
 
   head() {
     return {
@@ -95,6 +106,14 @@ export default Vue.extend({
         },
       ],
       cover: TopicService.getBySlug('/soreg/')?.cover,
+      frontFile: {
+        author: AuthorEnum.BENEVOLENCE,
+        format: FormatEnum.PDF,
+        slug: 'le-soreg',
+        thumbnail: '/images/pdf/le-soreg',
+        href: '/pdf/le-soreg.pdf',
+        title: 'Le Soreg',
+      } as ISourceFile,
       videos: [
         {
           source: VideoLinkEnum.YOUTUBE,
@@ -125,6 +144,15 @@ export default Vue.extend({
           name: 'Le SOREG, le mur de Jerusalem',
           url: 'https://www.dailymotion.com/video/x8ggxhx',
           thumbnail: 'https://www.dailymotion.com/thumbnail/video/x8ggxhx',
+        },
+      ],
+      files: [
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          thumbnail: '/resource/le-soreg/thumbnail@1x',
+          href: '/resource/le-soreg/pdf/le-soreg.pdf',
+          title: 'Le Soreg',
         },
       ],
     }
