@@ -195,3 +195,8 @@ export enum RatioEnum {
   WIDE_SCREEN = '16:9',
   MOBILE_VERTICAL = '9:16',
 }
+
+export interface IGalleryImage {
+  ratio: RatioEnum
+  id: string
+}

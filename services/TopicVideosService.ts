@@ -3,7 +3,7 @@ import topicVideosJson from '~/static/json/topic-videos.json'
 
 export default class TopicVideosService {
   static getAll(): IVideoLink[] {
-    return topicVideosJson.map((m) => {
+    return topicVideosJson.map((m: any) => {
       const { name, id, topic } = m
       const lang = m.lang as LanguageEnum
       const source = m.source as VideoLinkEnum

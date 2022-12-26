@@ -4,7 +4,7 @@ import manuscriptVideosJson from '~/static/json/manuscript-videos.json'
 
 export default class ManuscriptService {
   static getVideos(): IVideoLink[] {
-    return manuscriptVideosJson.map((m) => {
+    return manuscriptVideosJson.map((m: any) => {
       const { name, id } = m
       const lang = m.lang as LanguageEnum
       const source = m.source as VideoLinkEnum

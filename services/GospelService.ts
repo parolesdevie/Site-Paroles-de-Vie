@@ -3,7 +3,7 @@ import gospelVideosJson from '~/static/json/gospel-videos.json'
 
 export default class GospelService {
   static getAll(): IVideoLink[] {
-    return gospelVideosJson.map((g) => {
+    return gospelVideosJson.map((g: any) => {
       const { name, id } = g
       const category = g.category as GospelCategoryEnum
       const source = g.source as VideoLinkEnum

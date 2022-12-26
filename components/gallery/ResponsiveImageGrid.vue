@@ -54,7 +54,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import { GalleryService } from '~/services'
-import { RatioEnum } from '~/types'
+import { IGalleryImage, RatioEnum } from '~/types'
 
 export default Vue.extend({
   name: 'ResponsiveImageGrid',
@@ -67,15 +67,15 @@ export default Vue.extend({
     const mobile = images.filter(
       ({ ratio }) => ratio === RatioEnum.MOBILE_VERTICAL
     )
-    const col1: unknown[] = [],
-      col2: unknown[] = [],
-      col3: unknown[] = [],
-      col4: unknown[] = []
+    const col1: IGalleryImage[] = [],
+      col2: IGalleryImage[] = [],
+      col3: IGalleryImage[] = [],
+      col4: IGalleryImage[] = []
 
     let i = 0,
       j = 0
     while (mobile.length && wide.length) {
-      const image = i % 2 ? mobile.shift() : wide.shift()
+      const image = (i % 2 ? mobile.shift() : wide.shift()) as IGalleryImage
       if (j <= 1) {
         col1.push(image)
       } else {
@@ -91,7 +91,7 @@ export default Vue.extend({
     i = 0
     j = 0
     while (square.length && double.length) {
-      const image = i % 2 ? double.shift() : square.shift()
+      const image = (i % 2 ? double.shift() : square.shift()) as IGalleryImage
       if (j <= 1) {
         col2.push(image)
       } else {
@@ -111,7 +111,7 @@ export default Vue.extend({
         (mobile.length && mobile.shift()) ||
         (square.length && square.shift()) ||
         (double.length && double.shift()) ||
-        (wide.length && wide.shift())
+        ((wide.length && wide.shift()) as IGalleryImage)
       switch (j) {
         case 0:
           col1.push(image)
