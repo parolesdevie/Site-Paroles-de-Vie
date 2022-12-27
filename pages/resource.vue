@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <h1 class="text-3xl font-bold underline">resource</h1>
     <NuxtLink to="/about">About</NuxtLink>
     <NuxtLink to="/gallery">gallery</NuxtLink>
     <p>
