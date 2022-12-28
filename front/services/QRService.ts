@@ -1,6 +1,8 @@
 import axios from 'axios'
 import { IQuestion, QuestionPlateformEnum } from '~~/types'
 
+const API_ENDPOINT = 'http://178.170.13.79:8081'
+
 export default class QRService {
   constructor() {}
 
@@ -9,24 +11,26 @@ export default class QRService {
       {
         title: 'Comment faire des crêpes ?',
         slug: 'comment-faire-des-crepes',
-        response: `Voici <a class="underline" href="https://www.marmiton.org/recettes/recette_pate-a-crepes_12372.aspx" target="_blank" rel="noopener noreferrer">comment faire des crêpes</a>.`,
+        response: `Voici <a class="underline" href="https://www.marmiton.org/recettes/recette_pate-a-crepes_12372.aspx" target="_blank" rel="noopener noreferrer">comment faire des crêpes</a>.`
       },
       {
         title: "C'est qui le goat ?",
         slug: 'cest-qui-le-goat',
-        response: `C'est qui le patron ? <a class="underline" href="https://youtu.be/mF3NWS_m_FY" target="_blank" rel="noopener noreferrer">C'est moi</a>.`,
-      },
+        response: `C'est qui le patron ? <a class="underline" href="https://youtu.be/mF3NWS_m_FY" target="_blank" rel="noopener noreferrer">C'est moi</a>.`
+      }
     ]
   }
 
   static async searchOnGotQuestions(keyWord: string): Promise<IQuestion[]> {
+    console.log('API_ENDPOINT', process.env.API_ENDPOINT)
+
     let response
     try {
       response = await axios({
         method: 'get',
-        url: `http://localhost:5000/searchOnGotQuestions/?search=${this.slugify(
+        url: `${API_ENDPOINT}/searchOnGotQuestions/?search=${this.slugify(
           keyWord
-        )}`,
+        )}`
       })
     } catch (err) {
       console.error(err)
@@ -34,7 +38,7 @@ export default class QRService {
 
     return response?.data.map((result: any) => ({
       ...result,
-      plateform: QuestionPlateformEnum.GOT_QUESTIONS,
+      plateform: QuestionPlateformEnum.GOT_QUESTIONS
     }))
   }
 

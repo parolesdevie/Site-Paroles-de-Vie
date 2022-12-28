@@ -1,6 +1,8 @@
 import axios from 'axios'
 import { SearchPlateformEnum, SearchResult } from '~~/types'
 
+const API_ENDPOINT = 'http://178.170.13.79:8081'
+
 export default class SearchService {
   constructor() {}
 
@@ -9,9 +11,7 @@ export default class SearchService {
     try {
       response = await axios({
         method: 'get',
-        url: `http://localhost:5000/searchOnEmcitv/?search=${this.slugify(
-          keyWord
-        )}`,
+        url: `${API_ENDPOINT}/searchOnEmcitv/?search=${this.slugify(keyWord)}`
       })
     } catch (err) {
       console.error(err)
@@ -19,7 +19,7 @@ export default class SearchService {
 
     return response?.data.map((result: any) => ({
       ...result,
-      plateform: SearchPlateformEnum.EMCITV,
+      plateform: SearchPlateformEnum.EMCITV
     }))
   }
 
@@ -30,7 +30,7 @@ export default class SearchService {
         method: 'get',
         url: `https://toptv.topchretien.com/themes/histoires-de-la-bible/?complete=1&term=${this.slugify(
           keyWord
-        )}`,
+        )}`
       })
     } catch (err) {
       console.error(err)
@@ -39,7 +39,7 @@ export default class SearchService {
     return response?.data.map((response: any) => ({
       href: 'https://toptv.topchretien.com' + response._source.url,
       title: response._source.title,
-      plateform: SearchPlateformEnum.TOP_CHRETIEN,
+      plateform: SearchPlateformEnum.TOP_CHRETIEN
     }))
   }
 
@@ -50,9 +50,9 @@ export default class SearchService {
     try {
       response = await axios({
         method: 'get',
-        url: `http://localhost:5000/searchOnFamilleChretienne/?search=${this.slugify(
+        url: `${API_ENDPOINT}/searchOnFamilleChretienne/?search=${this.slugify(
           keyWord
-        )}`,
+        )}`
       })
     } catch (err) {
       console.error(err)
@@ -60,7 +60,7 @@ export default class SearchService {
 
     return response?.data.map((result: any) => ({
       ...result,
-      plateform: SearchPlateformEnum.FAMILLE_CHRETIENNE,
+      plateform: SearchPlateformEnum.FAMILLE_CHRETIENNE
     }))
   }
 
@@ -69,9 +69,7 @@ export default class SearchService {
     try {
       response = await axios({
         method: 'get',
-        url: `http://localhost:5000/searchOnJcsr/?search=${this.slugify(
-          keyWord
-        )}`,
+        url: `${API_ENDPOINT}/searchOnJcsr/?search=${this.slugify(keyWord)}`
       })
     } catch (err) {
       console.error(err)
@@ -79,7 +77,7 @@ export default class SearchService {
 
     return response?.data.map((result: any) => ({
       ...result,
-      plateform: SearchPlateformEnum.JCSR,
+      plateform: SearchPlateformEnum.JCSR
     }))
   }
 
@@ -88,9 +86,7 @@ export default class SearchService {
     try {
       response = await axios({
         method: 'get',
-        url: `http://localhost:5000/searchOnAleteia/?search=${this.slugify(
-          keyWord
-        )}`,
+        url: `${API_ENDPOINT}/searchOnAleteia/?search=${this.slugify(keyWord)}`
       })
     } catch (err) {
       console.error(err)
@@ -98,7 +94,7 @@ export default class SearchService {
 
     return response?.data.map((result: any) => ({
       ...result,
-      plateform: SearchPlateformEnum.ALETEIA,
+      plateform: SearchPlateformEnum.ALETEIA
     }))
   }
 

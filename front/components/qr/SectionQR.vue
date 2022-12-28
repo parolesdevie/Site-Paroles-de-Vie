@@ -6,7 +6,7 @@
     <!-- search -->
     <SearchInput
       v-model="searchKeyWord"
-      @input="searchOnGotQuestions"
+      @input="search"
       placeholder="Ex: comment faire des crêpes ?"
     />
 
@@ -29,29 +29,28 @@
       </div>
 
       <!-- gotQuestions -->
-      <template v-if="$config.server === 'local'">
-        <div class="contents" v-show="gotQuestions.length">
-          <p class="mt-4 font-bold">Réponses sur GotQuestions.org</p>
-          <ul class="mt-4 flex flex-col gap-4">
-            <CardQR
-              v-for="(question, index) in gotQuestions"
-              :key="index"
-              :plateform="question.plateform"
-              :slug="question.slug"
-              :href="question.href"
-              :title="question.title"
-            />
-          </ul>
-        </div>
-      </template>
+      <p v-show="loading">Recherche en cours ...</p>
+      <div v-show="!loading && gotQuestions.length">
+        <p class="mt-4 font-bold">Réponses sur GotQuestions.org</p>
+        <ul class="mt-4 flex flex-col gap-4">
+          <CardQR
+            v-for="(question, index) in gotQuestions"
+            :key="index"
+            :plateform="question.plateform"
+            :slug="question.slug"
+            :href="question.href"
+            :title="question.title"
+          />
+        </ul>
 
-      <p
-        v-show="!filteredQuestions.length && !gotQuestions.length"
-        class="text-lg md:text-2xl font-semibold"
-      >
-        <span class="text-2xl md:text-4xl">🤷‍♂️</span>
-        Aucune réponses
-      </p>
+        <p
+          v-show="!filteredQuestions.length && !gotQuestions.length"
+          class="text-lg md:text-2xl font-semibold"
+        >
+          <span class="text-2xl md:text-4xl">🤷‍♂️</span>
+          Aucune réponses
+        </p>
+      </div>
     </div>
   </section>
 </template>
@@ -79,7 +78,8 @@ export default defineNuxtComponent({
   data() {
     return {
       searchKeyWord: '',
-      gotQuestions: [] as IQuestion[]
+      gotQuestions: [] as IQuestion[],
+      loading: false
     }
   },
 
@@ -114,10 +114,12 @@ export default defineNuxtComponent({
         .replace(/^-+/, '')
         .replace(/-+$/, '')
     },
-    async searchOnGotQuestions(searchKeyWord: string) {
+    async search() {
+      this.loading = true
       this.gotQuestions = [
-        ...(await QRService.searchOnGotQuestions(searchKeyWord))
+        ...(await QRService.searchOnGotQuestions(this.searchKeyWord))
       ]
+      this.loading = false
     }
   }
 })

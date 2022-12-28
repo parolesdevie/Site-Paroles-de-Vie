@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  api-site-pdv:
+    build: ./back
+    ports:
+      - '8081:3000'
+  front-site-pdv:
+    build: ./front
+    ports:
+      - '80:80'
+# front-site-other:
+#   image: 'docker/getting-started:latest'
+#   ports:
+#     - '8080:80'
+# redis:
+#   image: 'redis:latest'
