@@ -1,4 +1,4 @@
-import { AuthorEnum, FormatEnum, ISource } from '~/types'
+import { AuthorEnum, FormatEnum, ISource } from '~~/types'
 
 export default class SourceService {
   static getAll(): ISource[] {

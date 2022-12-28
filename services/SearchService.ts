@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { SearchPlateformEnum, SearchResult } from '~/types'
+import { SearchPlateformEnum, SearchResult } from '~~/types'
 
 export default class SearchService {
   constructor() {}

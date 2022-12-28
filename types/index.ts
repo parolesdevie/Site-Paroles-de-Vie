@@ -33,7 +33,7 @@ export interface ITopic {
 
 export enum QuestionPlateformEnum {
   UNKNOW,
-  GOT_QUESTIONS = 'GotQuestions.org',
+  GOT_QUESTIONS = 'GotQuestions.org'
 }
 
 export interface IQuestion {
@@ -49,7 +49,7 @@ export enum VideoLinkEnum {
   YOUTUBE = 'Youtube',
   YOUTUBE_SHORT = 'YoutubeShorts',
   TIKTOK = 'TikTok',
-  DAILYMOTION = 'DailyMotion',
+  DAILYMOTION = 'DailyMotion'
 }
 
 export enum GospelCategoryEnum {
@@ -61,7 +61,7 @@ export enum GospelCategoryEnum {
   JEWISH_SONGS = 'Chants juifs',
   PROTESTANT_SONGS = 'Chants protestants',
   MODERN = 'Moderne',
-  OTHERS = 'Autre',
+  OTHERS = 'Autre'
 }
 
 export interface IVideoLink {
@@ -77,7 +77,7 @@ export interface IVideoLink {
 export enum ThemeEnum {
   THEOLOGY = 'theology',
   REFUTATION = 'refutation',
-  HERETIC_THESIS = 'heretic thesis',
+  HERETIC_THESIS = 'heretic thesis'
 }
 
 export enum AuthorEnum {
@@ -91,14 +91,14 @@ export enum AuthorEnum {
   QALEV = 'qalev',
   SAVED_BY_CHRIST = 'saved-by-christ',
   PROTOCOLE = 'protocole',
-  DEMS = 'dems',
+  DEMS = 'dems'
 }
 
 export enum AuthorTeamEnum {
   NULL = '',
   UNKNOW = 'inconnu',
   COLISEUM = 'coliseum',
-  THEOPHILOS = 'theophilos',
+  THEOPHILOS = 'theophilos'
 }
 
 export type TagEnum = ThemeEnum | AuthorEnum | AuthorTeamEnum | string
@@ -114,12 +114,13 @@ export enum FormatEnum {
   UNKNOW = 'UNKNOW',
   EPUB = 'EPUB',
   PDF = 'PDF',
-  DOCX = 'DOCX',
+  DOCX = 'DOCX'
 }
 
 export interface ISourceFile {
   author: AuthorEnum
   format: FormatEnum
+  slug?: string
   thumbnail: string
   href: string
   title: string
@@ -129,14 +130,14 @@ export enum DebatPlateformEnum {
   UNKNOW = 'inconnu',
   YOUTUBE = 'YouTube',
   TIKTOK = 'TikTok',
-  DISCORD = 'Discord',
+  DISCORD = 'Discord'
 }
 
 export enum DebatReligionEnum {
   UNKNOW = 'inconnu',
   CHRISTIAN = 'Chrétien',
   MUSLIM = 'Musulman',
-  JEWISH = 'Juif',
+  JEWISH = 'Juif'
 }
 
 export interface IDebaterProfils {
@@ -165,7 +166,7 @@ export enum SearchPlateformEnum {
   TOP_CHRETIEN = 'topchretien',
   FAMILLE_CHRETIENNE = 'famillechretienne',
   JCSR = 'jcsr',
-  ALETEIA = 'aleteia',
+  ALETEIA = 'aleteia'
 }
 
 export interface SearchResult {
@@ -180,7 +181,7 @@ export enum LanguageEnum {
   FR = 'Français',
   EN = 'Anglais',
   DE = 'Allemand',
-  IT = 'Italien',
+  IT = 'Italien'
 }
 
 export interface ISource {
@@ -193,7 +194,7 @@ export enum RatioEnum {
   SQUARE = '1:1',
   DOUBLE = '2:1',
   WIDE_SCREEN = '16:9',
-  MOBILE_VERTICAL = '9:16',
+  MOBILE_VERTICAL = '9:16'
 }
 
 export interface IGalleryImage {

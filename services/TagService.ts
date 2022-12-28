@@ -1,4 +1,4 @@
-import { AuthorEnum, AuthorTeamEnum, ITag, TagEnum, ThemeEnum } from '~/types'
+import { AuthorEnum, AuthorTeamEnum, ITag, TagEnum, ThemeEnum } from '~~/types'
 import PdfService from './PdfService'
 
 export default class TagService {

@@ -1,4 +1,4 @@
-import { ITopic } from '~/types'
+import { ITopic } from '~~/types'
 
 export default class TopicService {
   constructor() {}

@@ -1,4 +1,4 @@
-import { DebatReligionEnum, IDebaterProfils } from '~/types'
+import { DebatReligionEnum, IDebaterProfils } from '~~/types'
 
 const UNKNOW_DEBATER: IDebaterProfils = {
   id: -1,

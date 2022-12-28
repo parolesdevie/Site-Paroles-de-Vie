@@ -1,4 +1,4 @@
-import { IGalleryImage, RatioEnum } from '~/types'
+import { IGalleryImage, RatioEnum } from '~~/types'
 import galleryJson from './json/gallery-images.json'
 
 export default class GalleryService {

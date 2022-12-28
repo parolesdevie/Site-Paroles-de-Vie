@@ -1,4 +1,4 @@
-import { DebatPlateformEnum, DebatReligionEnum, IDebat } from '~/types'
+import { DebatPlateformEnum, DebatReligionEnum, IDebat } from '~~/types'
 import DebaterService from './DebaterService'
 
 export default class DebateService {

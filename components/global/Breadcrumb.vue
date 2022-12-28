@@ -19,23 +19,23 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue";
-import { IBreadcrumbItem } from "~~/types";
+import { PropType } from 'vue'
+import { IBreadcrumbItem } from '~~/types'
 
 const props = defineProps({
   items: {
     type: Array as PropType<IBreadcrumbItem[]>,
-    default: () => [],
-  },
-});
+    default: () => []
+  }
+})
 </script>
 
 <script lang="ts">
-import IconChevronRight from "../icons/IconChevronRight.vue";
+import IconChevronRight from '../icons/IconChevronRight.vue'
 
 export default defineNuxtComponent({
-  name: "Breadcrumb",
+  name: 'Breadcrumb',
 
-  components: { IconChevronRight },
-});
+  components: { IconChevronRight }
+})
 </script>

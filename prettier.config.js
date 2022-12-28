@@ -1,0 +1,23 @@
+module.exports = {
+  tabWidth: 2,
+  tabs: false,
+  semi: false,
+  singleQuote: true,
+  // quoteProps: undefined,
+  // jsxSingleQuote: undefined,
+  trailingComma: 'none',
+  // bracketSpacing: undefined,
+  // jsxBracketSameLine: undefined,
+  arrowParens: 'always'
+  // rangeStart: undefined,
+  // rangeEnd: undefined,
+  // parser: undefined,
+  // filepath: undefined,
+  // requirePragma: undefined,
+  // insertPragma: undefined,
+  // proseWrap: undefined,
+  // htmlWhitespaceSensitivity: undefined,
+  // vueIndentScriptAndStyle: undefined,
+  // endOfLine: undefined,
+  // embeddedLanguageFormatting: undefined,
+}

@@ -1,0 +1,120 @@
+<template>
+  <div class="inline-flex flex-col flex-wrap items-end shrink-0 select-none">
+    <div class="relative">
+      <img
+        loading="lazy"
+        tabindex="0"
+        class="mb-2 md:mb-3 h-40 w-40 md:h-64 md:w-64 bg-gray-300 rounded-xl"
+        :src="'/images/manuscript/thumbnails/' + image + '.webp'"
+        alt=""
+      />
+      <div
+        class="
+          absolute
+          inset-x-0
+          bottom-10
+          text-center
+          uppercase
+          font-black
+          text-lg
+          tracking-wider
+          py-2
+          bg-black bg-opacity-60
+          text-white
+        "
+      >
+        {{ title }}
+      </div>
+    </div>
+    <div class="flex gap-2 md:gap-3">
+      <a
+        v-for="(site, index) in sites"
+        :key="index"
+        class="
+          h-10
+          w-10
+          md:h-12 md:w-12
+          bg-gray-300
+          dark:bg-gray-700
+          rounded-xl
+          inline-flex
+          items-center
+          justify-center
+        "
+        :href="site.href"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          v-if="site.name === ManuscriptsPlateformEnum.CODEX_SINATICUS_ORG"
+          loading="lazy"
+          class="h-8 md:h-8"
+          src="/images/site/logo-codexsinaiticus.webp"
+          :alt="site.name"
+          :title="site.name"
+        />
+        <img
+          v-else-if="site.name === ManuscriptsPlateformEnum.CENTER_STUDY_NT"
+          loading="lazy"
+          class="h-8 md:h-8"
+          src="/images/site/logo-center-study-nt.webp"
+          :alt="site.name"
+          :title="site.name"
+        />
+        <img
+          v-else-if="site.name === ManuscriptsPlateformEnum.BRITISH_LIBRARY"
+          loading="lazy"
+          class="h-8 md:h-8"
+          src="/images/site/logo-british-library.webp"
+          :alt="site.name"
+          :title="site.name"
+        />
+        <img
+          v-else-if="
+            site.name === ManuscriptsPlateformEnum.DIGITAL_VATICAN_LIBRARY
+          "
+          loading="lazy"
+          class="h-8 md:h-8"
+          src="/images/site/logo-vatlib.webp"
+          :alt="site.name"
+          :title="site.name"
+        />
+        <IconBookOpen v-else class="h-8 w-8 text-white" />
+      </a>
+    </div>
+  </div>
+</template>
+
+<script lang="ts">
+import { ManuscriptsPlateformEnum } from '~~/services/WebSiteService'
+import { IWebSite } from '~~/types'
+import IconBookOpen from '~~/components/icons/IconBookOpen.vue'
+import { PropType } from 'vue'
+
+export default defineNuxtComponent({
+  name: 'ManuscriptCard',
+
+  components: { IconBookOpen },
+
+  props: {
+    title: {
+      type: String,
+      default: ''
+    },
+    sites: {
+      type: Array as PropType<IWebSite[]>,
+      default: () => []
+    },
+    image: {
+      type: String,
+      default: ''
+    }
+  },
+
+  data() {
+    return {
+      ManuscriptsPlateformEnum
+    }
+  }
+})
+</script>

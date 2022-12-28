@@ -1,4 +1,4 @@
-import { IVideoLink, LanguageEnum, VideoLinkEnum } from '~/types'
+import { IVideoLink, LanguageEnum, VideoLinkEnum } from '~~/types'
 import topicVideosJson from './json/topic-videos.json'
 
 export default class TopicVideosService {

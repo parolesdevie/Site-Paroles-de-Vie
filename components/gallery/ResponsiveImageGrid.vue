@@ -135,7 +135,7 @@ export default defineNuxtComponent({
       col1,
       col2,
       col3,
-      col4,
+      col4
     }
   },
 
@@ -148,8 +148,8 @@ export default defineNuxtComponent({
       const job = id.slice(0, 20)
       const quality = 374
       return `https://images.nightcafe.studio/jobs/${job}/${id}.jpg?tr=w-${quality},c-at_max`
-    },
-  },
+    }
+  }
 })
 </script>
 
@@ -159,10 +159,6 @@ export default defineNuxtComponent({
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
-}
-
-.column img {
-  /* vertical-align: middle; */
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

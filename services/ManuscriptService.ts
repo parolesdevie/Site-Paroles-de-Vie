@@ -1,4 +1,4 @@
-import { IVideoLink, LanguageEnum, VideoLinkEnum } from '~/types'
+import { IVideoLink, LanguageEnum, VideoLinkEnum } from '~~/types'
 import { ManuscriptsPlateformEnum } from './WebSiteService'
 import manuscriptVideosJson from './json/manuscript-videos.json'
 

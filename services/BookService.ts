@@ -1,4 +1,4 @@
-import { IBook } from '~/types'
+import { IBook } from '~~/types'
 
 export default class BookService {
   constructor() {}

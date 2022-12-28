@@ -1,4 +1,4 @@
-import { IWebSite } from '~/types'
+import { IWebSite } from '~~/types'
 
 export enum ManuscriptsPlateformEnum {
   CODEX_SINATICUS_ORG = 'Codex Sinaiticus .org',

@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { IQuestion, QuestionPlateformEnum } from '~/types'
+import { IQuestion, QuestionPlateformEnum } from '~~/types'
 
 export default class QRService {
   constructor() {}

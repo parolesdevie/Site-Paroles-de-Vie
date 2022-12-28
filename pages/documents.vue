@@ -1,12 +1,74 @@
 <template>
-  <div>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
-    <NuxtLink to="/about">About</NuxtLink>
-    <NuxtLink to="/gallery">gallery</NuxtLink>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, velit
-      id laboriosam debitis nobis ratione natus aut non consectetur quo
-      provident deleniti sunt nihil vel unde minus error doloremque assumenda?
-    </p>
+  <div class="flex flex-col min-h-screen">
+    <!-- header -->
+    <Header />
+    <div class="container mx-auto mb-auto px-3 md:px-0 py-4 flex flex-col">
+      <!-- breadcrumb -->
+      <Breadcrumb :items="breadcrumbItems" />
+
+      <!-- documment -->
+      <SectionDocument
+        class="mt-4 md:mt-10"
+        :tags="tags"
+        :pdfs="pdfs"
+        fullHeight
+      />
+    </div>
+
+    <!-- footer -->
+    <Footer class="mt-40" />
   </div>
 </template>
+
+<script setup lang="ts">
+useHead({
+  title: 'Documents - Paroles de vie',
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content:
+        'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.'
+    },
+    {
+      hid: 'og:image',
+      property: 'og:image',
+      content: 'https://www.paroles-de-vie.tk/seo/document.webp'
+    },
+    {
+      hid: 'twitter:image',
+      property: 'twitter:image',
+      content: 'https://www.paroles-de-vie.tk/seo/document.webp'
+    }
+  ]
+})
+</script>
+
+<script lang="ts">
+import SectionDocument from '~~/components/document/SectionDocument.vue'
+import Breadcrumb from '~~/components/global/Breadcrumb.vue'
+import { TagService, PdfService } from '~~/services'
+
+export default defineNuxtComponent({
+  name: 'DocumentPage',
+
+  components: { Breadcrumb, SectionDocument },
+
+  data() {
+    return {
+      breadcrumbItems: [
+        {
+          name: 'Accueil',
+          to: '/'
+        },
+        {
+          name: 'Documents',
+          to: '/documents/'
+        }
+      ],
+      tags: TagService.getAll(),
+      pdfs: PdfService.getAll()
+    }
+  }
+})
+</script>

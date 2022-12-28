@@ -1,4 +1,4 @@
-import { AuthorEnum, AuthorTeamEnum, IPdf, ThemeEnum } from '~/types'
+import { AuthorEnum, AuthorTeamEnum, IPdf, ThemeEnum } from '~~/types'
 
 export default class PdfService {
   static getAll(): IPdf[] {

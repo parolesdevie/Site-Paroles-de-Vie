@@ -81,7 +81,7 @@ import IconLogoUni from '../icons/IconLogoUni.vue';
 import IconSearch from '../icons/IconSearch.vue';
 
 export default defineNuxtComponent({
-    async asyncData() {
+    data() {
         return {
             links: MenuService.getMainMenu(),
         };

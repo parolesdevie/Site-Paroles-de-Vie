@@ -1,4 +1,4 @@
-import { ILink } from '~/types'
+import { ILink, IWebSite } from '~~/types'
 
 export default class MenuService {
   constructor() {}
@@ -7,20 +7,20 @@ export default class MenuService {
     return [
       {
         to: '/',
-        name: 'Accueil',
+        name: 'Accueil'
       },
       {
         to: '/books/',
-        name: 'Livres',
+        name: 'Livres'
       },
       {
         to: '/documents/',
-        name: 'Documents Numériques',
+        name: 'Documents Numériques'
       },
       {
         to: '/questions-answer/',
-        name: 'FAQ', // Questions/Réponses
-      },
+        name: 'FAQ' // Questions/Réponses
+      }
       // {
       //   to: '/sites/',
       //   name: 'Sites',
@@ -32,46 +32,46 @@ export default class MenuService {
     ]
   }
 
-  static getDiscordMenu(): ILink[] {
+  static getDiscordMenu(): IWebSite[] {
     return [
       {
-        to: 'https://discord.gg/ezWDkJn5M7',
-        name: 'Collectif Théophilos',
+        href: 'https://discord.gg/ezWDkJn5M7',
+        name: 'Collectif Théophilos'
       },
       {
-        to: 'https://discord.gg/Qu4sqnpYFz',
-        name: 'Coliseum',
-      },
+        href: 'https://discord.gg/Qu4sqnpYFz',
+        name: 'Coliseum'
+      }
     ]
   }
 
-  static getTikTokMenu(): ILink[] {
+  static getTikTokMenu(): IWebSite[] {
     return [
       {
-        to: 'https://www.tiktok.com/@paroles.de.vie',
-        name: 'Chaîne Paroles de Vie',
+        href: 'https://www.tiktok.com/@paroles.de.vie',
+        name: 'Chaîne Paroles de Vie'
       },
       {
-        to: 'https://www.tiktok.com/@chaine.coliseum',
-        name: 'Chaîne Coliseum',
-      },
+        href: 'https://www.tiktok.com/@chaine.coliseum',
+        name: 'Chaîne Coliseum'
+      }
     ]
   }
 
-  static getPodcastMenu(): ILink[] {
+  static getPodcastMenu(): IWebSite[] {
     return [
       {
-        to: 'https://music.amazon.fr/podcasts/0a53af38-888e-43d8-a6b3-3a4fd5255955/paroles-de-vie',
-        name: 'Amazon Music',
+        href: 'https://music.amazon.fr/podcasts/0a53af38-888e-43d8-a6b3-3a4fd5255955/paroles-de-vie',
+        name: 'Amazon Music'
       },
       {
-        to: 'https://open.spotify.com/show/5XnBOuPu5fUW0DROVinvbg',
-        name: 'Spotify',
+        href: 'https://open.spotify.com/show/5XnBOuPu5fUW0DROVinvbg',
+        name: 'Spotify'
       },
       {
-        to: 'https://anchor.fm/paroles-de-vie',
-        name: 'Anchor',
-      },
+        href: 'https://anchor.fm/paroles-de-vie',
+        name: 'Anchor'
+      }
     ]
   }
 }

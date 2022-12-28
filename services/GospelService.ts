@@ -1,4 +1,4 @@
-import { GospelCategoryEnum, IVideoLink, VideoLinkEnum } from '~/types'
+import { GospelCategoryEnum, IVideoLink, VideoLinkEnum } from '~~/types'
 import gospelVideosJson from './json/gospel-videos.json'
 
 export default class GospelService {

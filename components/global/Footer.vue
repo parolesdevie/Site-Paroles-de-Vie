@@ -141,7 +141,7 @@
                   text-xs
                   md:text-base
                 "
-                :href="link.to"
+                :href="link.href"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -182,7 +182,7 @@
                   text-xs
                   md:text-base
                 "
-                :href="link.to"
+                :href="link.href"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -216,7 +216,7 @@
           <ul class="mt-2 md:mt-4 text-gray-400 flex flex-wrap flex-col gap-2">
             <li v-for="(link, index) in linksMenuPodcast" :key="index">
               <a
-                :href="link.to"
+                :href="link.href"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="
@@ -248,47 +248,53 @@
 </script>
 
 <script lang="ts">
-import { MenuService } from "~~/services";
-import IconChevronUp from "../icons/IconChevronUp.vue";
-import IconDiscord from "../icons/IconDiscord.vue";
-import IconPodcast from "../icons/IconPodcast.vue";
-import IconTikTok from "../icons/IconTikTok.vue";
+import { MenuService } from '~~/services'
+import IconChevronUp from '../icons/IconChevronUp.vue'
+import IconDiscord from '../icons/IconDiscord.vue'
+import IconPodcast from '../icons/IconPodcast.vue'
+import IconTikTok from '../icons/IconTikTok.vue'
 
 export default defineNuxtComponent({
-  name: "Footer",
+  name: 'Footer',
 
   components: { IconChevronUp, IconTikTok, IconDiscord, IconPodcast },
 
   data() {
     return {
-      linksMainMenu: MenuService.getMainMenu(),
+      linksMainMenu: [
+        ...MenuService.getMainMenu(),
+        {
+          to: '/sitemap/',
+          name: 'Plan du site'
+        }
+      ],
       linksMenuDiscord: MenuService.getDiscordMenu(),
       linksMenuTikTok: MenuService.getTikTokMenu(),
       linksMenuPodcast: MenuService.getPodcastMenu(),
       scTimer: 0,
-      scY: 0,
-    };
+      scY: 0
+    }
   },
 
   mounted() {
-    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll)
   },
 
   methods: {
     handleScroll: function () {
-      if (this.scTimer) return;
+      if (this.scTimer) return
       this.scTimer = window.setTimeout(() => {
-        this.scY = window.scrollY;
-        clearTimeout(this.scTimer);
-        this.scTimer = 0;
-      }, 100);
+        this.scY = window.scrollY
+        clearTimeout(this.scTimer)
+        this.scTimer = 0
+      }, 100)
     },
     toTop: function () {
       window.scrollTo({
         top: 0,
-        behavior: "smooth",
-      });
-    },
-  },
-});
+        behavior: 'smooth'
+      })
+    }
+  }
+})
 </script>
