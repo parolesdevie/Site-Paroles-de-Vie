@@ -40,7 +40,6 @@ app.get('/searchOnEmcitv/', async (req, res) => {
         .text()
         .replace(/\s\s+/g, '')
         .replace(/^(par|avec|présenté par)/gm, '')
-
       return {
         href: 'https://emcitv.com' + $(card).find('h4').children().attr('href'),
         title: $(card).find('h4').text(),
@@ -64,11 +63,9 @@ app.get('/searchOnFamilleChretienne/', async (req, res) => {
   }
   const $ = cheerio.load(response.data)
   const results = $('.article-inline.small.gr-article-payant').toArray()
-
   res.json(
     results.map((card) => {
       const image = $(card).find('img').attr('src')
-
       return {
         href:
           'https://www.famillechretienne.fr' + $(card).find('a').attr('href'),
@@ -96,7 +93,6 @@ app.get('/searchOnJcsr/', async (req, res) => {
   }
   const $ = cheerio.load(response.data)
   const results = $('.cpt-listing.has-sidebar>article').toArray()
-
   res.json(
     results.map((card) => {
       return {
@@ -123,8 +119,6 @@ app.get('/searchOnGotQuestions/', async (req, res) => {
   } catch (err) {
     console.error(err)
   }
-  console.log('response>', response.data)
-
   res.json(
     response.data.map(({ label, value }) => ({
       title: label,
@@ -145,7 +139,6 @@ app.get('/searchOnAleteia/', async (req, res) => {
   } catch (err) {
     console.error(err)
   }
-
   res.json(
     response.data.results[0].hits.map(({ title, url, image }) => ({
       href: url,
