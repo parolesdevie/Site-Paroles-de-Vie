@@ -3,9 +3,8 @@ const app = express()
 const path = require('path')
 const server = require('http').createServer(app)
 const io = require('socket.io')(server)
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 3000
 
-const cors = require('cors')
 const axios = require('axios').default
 const FormData = require('form-data')
 const cheerio = require('cheerio')
@@ -14,14 +13,11 @@ server.listen(port, () => {
   console.log(`http://localhost:${port}/`)
 })
 
-app.use(cors())
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'example.com')
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
+  res.header('Access-Control-Allow-Headers', 'Content-Type')
 
-app.use(function (req, res, next) {
-  res.header('Access-Control-Allow-Origin', '*')
-  res.header(
-    'Access-Control-Allow-Headers',
-    'Origin, X-Requested-With, Content-Type, Accept'
-  )
   next()
 })
 
