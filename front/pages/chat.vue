@@ -33,12 +33,12 @@ useHead({
     {
       hid: 'og:image',
       property: 'og:image',
-      content: 'https://www.paroles-de-vie.tk/seo/chat.webp'
+      content: 'https://www.paroles-de-vie.tk/seo/thumbnail.webp'
     },
     {
       hid: 'twitter:image',
       property: 'twitter:image',
-      content: 'https://www.paroles-de-vie.tk/seo/chat.webp'
+      content: 'https://www.paroles-de-vie.tk/seo/thumbnail.webp'
     }
   ]
 })
