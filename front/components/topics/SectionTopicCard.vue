@@ -1,8 +1,13 @@
+<script setup lang="ts">
+const { topics, filter, filteredTopics } = useTopicList()
+</script>
+
 <template>
   <section>
     <!-- title -->
     <H2Title>{{ title }}</H2Title>
 
+    <FormsSearchInput v-model="filter" placeholder="Recherche" />
     <!-- topic list -->
     <ul
       class="
@@ -17,7 +22,7 @@
       "
     >
       <TopicCard
-        v-for="(topic, index) in topics"
+        v-for="(topic, index) in filteredTopics"
         :key="index"
         :cover="topic.cover"
         :to="topic.to"
@@ -50,9 +55,9 @@
 
 <script lang="ts">
 import TopicCard from '~~/components/topics/TopicCard.vue'
-import { ITopic } from '~~/types'
 import IconQuestionCircle from '~~/components/icons/IconQuestionCircle.vue'
-import { PropType } from 'vue'
+
+const DEFAULT_TITLE = 'Topics'
 
 export default defineNuxtComponent({
   name: 'SectionTopicCard',
@@ -62,11 +67,7 @@ export default defineNuxtComponent({
   props: {
     title: {
       type: String,
-      default: 'Topics'
-    },
-    topics: {
-      type: Array as PropType<ITopic[]>,
-      default: () => []
+      default: DEFAULT_TITLE
     }
   }
 })
