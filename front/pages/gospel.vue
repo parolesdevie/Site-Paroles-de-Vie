@@ -1,105 +1,98 @@
 <template>
-  <div class="flex flex-col min-h-screen">
-    <!-- header -->
-    <Header />
-    <div class="container mx-auto mb-auto px-3 md:px-0 py-4 flex flex-col">
-      <!-- breadcrumb -->
-      <Breadcrumb :items="breadcrumbItems" />
+  <div>
+    <!-- breadcrumb -->
+    <Breadcrumb :items="breadcrumbItems" />
 
-      <!-- intro -->
-      <SectionIntroTopics :cover="cover">
-        <template v-slot:title>Louanges</template>
-        <template v-slot:body>
-          Au Ier siècle, Paul et Silas ont loué Dieu par leurs chants alors
-          qu’ils étaient en prison (<strong>Ac 16:25</strong>). À notre époque,
-          des chrétiens ont chanté des cantiques alors qu’ils étaient détenus
-          dans le camp de concentration de Sachsenhausen en Allemagne nazie ou
-          qu’ils étaient exilés en Sibérie. Ces exemples montrent que les
-          cantiques ont le pouvoir d’insuffler du courage face aux épreuves.
-          <br />
-          <span class="inline-block w-80 truncate">
-            L’esprit saint nous aidera alors à nous en souvenir
-          </span>
-          <br />
-          <a
-            class="inline-block mt-2 underline hover:text-blue-700"
-            href="https://www.jw.org/fr/biblioth%C3%A8que/jw-cahier-vie-et-ministere/mwb-avril-2017/programme-reunion-17-23-avril/les-cantiques-insufflent-du-courage/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Lire l'article
-          </a>
-        </template>
-      </SectionIntroTopics>
+    <!-- intro -->
+    <SectionIntroTopics :cover="cover">
+      <template v-slot:title>Louanges</template>
+      <template v-slot:body>
+        Au Ier siècle, Paul et Silas ont loué Dieu par leurs chants alors qu’ils
+        étaient en prison (<strong>Ac 16:25</strong>). À notre époque, des
+        chrétiens ont chanté des cantiques alors qu’ils étaient détenus dans le
+        camp de concentration de Sachsenhausen en Allemagne nazie ou qu’ils
+        étaient exilés en Sibérie. Ces exemples montrent que les cantiques ont
+        le pouvoir d’insuffler du courage face aux épreuves.
+        <br />
+        <span class="inline-block w-80 truncate">
+          L’esprit saint nous aidera alors à nous en souvenir
+        </span>
+        <br />
+        <a
+          class="inline-block mt-2 underline hover:text-blue-700"
+          href="https://www.jw.org/fr/biblioth%C3%A8que/jw-cahier-vie-et-ministere/mwb-avril-2017/programme-reunion-17-23-avril/les-cantiques-insufflent-du-courage/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Lire l'article
+        </a>
+      </template>
+    </SectionIntroTopics>
 
-      <!-- section youtube videos  -->
-      <SectionVideo
-        left
-        class="container mx-auto mt-4 md:mt-10"
-        title="Ode"
-        playlistYoutubeId="PLaBmOZ7eJG-VD9fBWOVjYZ3u4inQwt0NT"
-        :videos="videos.ode"
-      />
-      <SectionVideo
-        left
-        class="container mx-auto mt-4 md:mt-10"
-        title="Chant liturgique"
-        playlistYoutubeId="PLaBmOZ7eJG-WPmxnbO5BLJRwi5iPg3tgP"
-        :videos="videos.liturgicalSongs"
-      />
-      <SectionVideo
-        left
-        class="container mx-auto mt-4 md:mt-10"
-        title="Active Christianity"
-        playlistYoutubeId="PLaBmOZ7eJG-VyUORESelod2tkG4XN2WbU"
-        :videos="videos.activeChristianity"
-      />
-      <SectionVideo
-        left
-        class="container mx-auto mt-4 md:mt-10"
-        title="Chant de la communauté de l' Emmanuel"
-        playlistYoutubeId="PLaBmOZ7eJG-XL71fbzjvbjSDulEGzmGCL"
-        :videos="videos.emmanuelCommunity"
-      />
-      <SectionVideo
-        left
-        class="container mx-auto mt-4 md:mt-10"
-        title="Chant des témoins de Jéhovah"
-        playlistYoutubeId="PLaBmOZ7eJG-Uau4Ft-9GMRHrzDXYfD4Mj"
-        :videos="videos.tj"
-      />
-      <SectionVideo
-        left
-        class="container mx-auto mt-4 md:mt-10"
-        title="Chants juif"
-        playlistYoutubeId="PLaBmOZ7eJG-UAkG289514PguUtY0pRgkE"
-        :videos="videos.jewishSongs"
-      />
-      <SectionVideo
-        left
-        class="container mx-auto mt-4 md:mt-10"
-        title="Chants protestants"
-        playlistYoutubeId="PLaBmOZ7eJG-UAkG289514PguUtY0pRgkE"
-        :videos="videos.protestantSongs"
-      />
-      <SectionVideo
-        left
-        class="container mx-auto mt-4 md:mt-10"
-        title="Moderne"
-        playlistYoutubeId="PLaBmOZ7eJG-V0hBZainCo2q-D1-ducPsT"
-        :videos="videos.modern"
-      />
-      <SectionVideo
-        left
-        class="container mx-auto mt-4 md:mt-10"
-        title="Autres"
-        playlistYoutubeId="PLaBmOZ7eJG-WygTHv8Wn4kTfUASMY_gKk"
-        :videos="videos.others"
-      />
-    </div>
-
-    <!-- footer -->
-    <Footer class="mt-40" />
+    <!-- section youtube videos  -->
+    <SectionVideo
+      left
+      class="container mx-auto mt-4 md:mt-10"
+      title="Ode"
+      playlistYoutubeId="PLaBmOZ7eJG-VD9fBWOVjYZ3u4inQwt0NT"
+      :videos="videos.ode"
+    />
+    <SectionVideo
+      left
+      class="container mx-auto mt-4 md:mt-10"
+      title="Chant liturgique"
+      playlistYoutubeId="PLaBmOZ7eJG-WPmxnbO5BLJRwi5iPg3tgP"
+      :videos="videos.liturgicalSongs"
+    />
+    <SectionVideo
+      left
+      class="container mx-auto mt-4 md:mt-10"
+      title="Active Christianity"
+      playlistYoutubeId="PLaBmOZ7eJG-VyUORESelod2tkG4XN2WbU"
+      :videos="videos.activeChristianity"
+    />
+    <SectionVideo
+      left
+      class="container mx-auto mt-4 md:mt-10"
+      title="Chant de la communauté de l' Emmanuel"
+      playlistYoutubeId="PLaBmOZ7eJG-XL71fbzjvbjSDulEGzmGCL"
+      :videos="videos.emmanuelCommunity"
+    />
+    <SectionVideo
+      left
+      class="container mx-auto mt-4 md:mt-10"
+      title="Chant des témoins de Jéhovah"
+      playlistYoutubeId="PLaBmOZ7eJG-Uau4Ft-9GMRHrzDXYfD4Mj"
+      :videos="videos.tj"
+    />
+    <SectionVideo
+      left
+      class="container mx-auto mt-4 md:mt-10"
+      title="Chants juif"
+      playlistYoutubeId="PLaBmOZ7eJG-UAkG289514PguUtY0pRgkE"
+      :videos="videos.jewishSongs"
+    />
+    <SectionVideo
+      left
+      class="container mx-auto mt-4 md:mt-10"
+      title="Chants protestants"
+      playlistYoutubeId="PLaBmOZ7eJG-UAkG289514PguUtY0pRgkE"
+      :videos="videos.protestantSongs"
+    />
+    <SectionVideo
+      left
+      class="container mx-auto mt-4 md:mt-10"
+      title="Moderne"
+      playlistYoutubeId="PLaBmOZ7eJG-V0hBZainCo2q-D1-ducPsT"
+      :videos="videos.modern"
+    />
+    <SectionVideo
+      left
+      class="container mx-auto mt-4 md:mt-10"
+      title="Autres"
+      playlistYoutubeId="PLaBmOZ7eJG-WygTHv8Wn4kTfUASMY_gKk"
+      :videos="videos.others"
+    />
   </div>
 </template>
 

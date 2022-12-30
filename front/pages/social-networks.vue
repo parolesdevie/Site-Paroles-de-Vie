@@ -1,55 +1,48 @@
 <template>
-  <div class="flex flex-col min-h-screen">
-    <!-- header -->
-    <Header />
-    <div class="container mx-auto mb-auto px-3 md:px-0 py-4 flex flex-col">
-      <Breadcrumb :items="breadcrumbItems" />
+  <div>
+    <Breadcrumb :items="breadcrumbItems" />
 
-      <!-- discord -->
-      <SectionSite
-        class="mt-4 md:mt-10"
-        :sites="discord"
-        title="Rejoins nous sur Discord"
-      >
-        <template v-slot:title-icon>
-          <IconDiscord class="h-5 md:h-6 mr-2" />
-        </template>
-      </SectionSite>
+    <!-- discord -->
+    <SectionSite
+      class="mt-4 md:mt-10"
+      :sites="discord"
+      title="Rejoins nous sur Discord"
+    >
+      <template v-slot:title-icon>
+        <IconDiscord class="h-5 md:h-6 mr-2" />
+      </template>
+    </SectionSite>
 
-      <!-- tiktok -->
-      <SectionSite
-        class="mt-4 md:mt-10"
-        :sites="tiktok"
-        title="Nos chaînes Tiktok"
-      >
-        <template v-slot:title-icon>
-          <IconTikTok class="h-5 md:h-6 mr-2" />
-        </template>
-      </SectionSite>
-
-      <a
-        class="
-          mt-4
-          self-start
-          border border-gray-500
-          rounded-md
-          p-2
-          flex
-          items-center
-          text-sm
-          md:text-base
-        "
-        href="https://vm.tiktok.com/ZMFGQMVpB/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+    <!-- tiktok -->
+    <SectionSite
+      class="mt-4 md:mt-10"
+      :sites="tiktok"
+      title="Nos chaînes Tiktok"
+    >
+      <template v-slot:title-icon>
         <IconTikTok class="h-5 md:h-6 mr-2" />
-        <span>Créer ton compte et rejoins nous sur Tiktok</span>
-      </a>
-    </div>
+      </template>
+    </SectionSite>
 
-    <!-- footer -->
-    <Footer class="mt-40" />
+    <a
+      class="
+        mt-4
+        self-start
+        border border-gray-500
+        rounded-md
+        p-2
+        flex
+        items-center
+        text-sm
+        md:text-base
+      "
+      href="https://vm.tiktok.com/ZMFGQMVpB/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <IconTikTok class="h-5 md:h-6 mr-2" />
+      <span>Créer ton compte et rejoins nous sur Tiktok</span>
+    </a>
   </div>
 </template>
 

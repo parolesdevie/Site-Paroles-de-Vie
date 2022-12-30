@@ -134,6 +134,10 @@ import {
   SearchPlateformEnum
 } from '~~/types'
 
+definePageMeta({
+  layout: 'empty'
+})
+
 export default defineNuxtComponent({
   name: 'UiPage',
 

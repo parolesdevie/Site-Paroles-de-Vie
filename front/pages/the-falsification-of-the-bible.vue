@@ -69,6 +69,10 @@ import SectionDownloadDocumentsList from '~~/components/document/SectionDownload
 import SectionIntroTopics from '~~/components/topics/SectionIntroTopics.vue'
 import { DebateService, TopicService } from '~~/services'
 
+definePageMeta({
+  layout: 'empty'
+})
+
 export default defineNuxtComponent({
   name: 'FalsificationBiblePage',
 

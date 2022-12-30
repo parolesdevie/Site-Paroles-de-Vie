@@ -1,21 +1,14 @@
 <template>
-  <div class="flex flex-col min-h-screen">
-    <!-- header -->
-    <Header />
-    <div class="container mx-auto mb-auto px-3 md:px-0 py-4 flex flex-col">
-      <!-- breadcrumb -->
-      <Breadcrumb :items="breadcrumbItems" />
+  <div>
+    <!-- breadcrumb -->
+    <Breadcrumb :items="breadcrumbItems" />
 
-      <SectionPodcastSpotify class="container mx-auto mt-4 md:mt-10" />
+    <SectionPodcastSpotify class="container mx-auto mt-4 md:mt-10" />
 
-      <!-- extern plateforme -->
-      <SectionPodcastPlateform class="container mx-auto mt-8 md:mt-20" />
+    <!-- extern plateforme -->
+    <SectionPodcastPlateform class="container mx-auto mt-8 md:mt-20" />
 
-      <FluxRSSLink class="container mx-auto mt-8 md:mt-20" />
-    </div>
-
-    <!-- footer -->
-    <Footer class="mt-40" />
+    <FluxRSSLink class="container mx-auto mt-8 md:mt-20" />
   </div>
 </template>
 

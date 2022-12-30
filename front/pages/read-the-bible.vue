@@ -97,6 +97,10 @@ import SectionIntroTopics from '~~/components/topics/SectionIntroTopics.vue'
 import { BookService, TopicService, WebSiteService } from '~~/services'
 import { AuthorEnum, FormatEnum } from '~~/types'
 
+definePageMeta({
+  layout: 'empty'
+})
+
 export default defineNuxtComponent({
   name: 'ReadBiblePage',
 

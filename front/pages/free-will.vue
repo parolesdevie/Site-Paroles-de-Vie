@@ -1,22 +1,15 @@
 <template>
-  <div class="flex flex-col min-h-screen">
-    <!-- header -->
-    <Header />
-    <div class="container mx-auto mb-auto px-3 md:px-0 py-4 flex flex-col">
-      <!-- breadcrumb -->
-      <Breadcrumb :items="breadcrumbItems" />
+  <div>
+    <!-- breadcrumb -->
+    <Breadcrumb :items="breadcrumbItems" />
 
-      <!-- intro -->
-      <SectionIntroTopics :cover="cover">
-        <template v-slot:title>Le libre arbitre</template>
-        <template v-slot:body>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </template>
-      </SectionIntroTopics>
-    </div>
-
-    <!-- footer -->
-    <Footer class="mt-40" />
+    <!-- intro -->
+    <SectionIntroTopics :cover="cover">
+      <template v-slot:title>Le libre arbitre</template>
+      <template v-slot:body>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </template>
+    </SectionIntroTopics>
   </div>
 </template>
 

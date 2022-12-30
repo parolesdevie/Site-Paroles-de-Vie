@@ -98,6 +98,10 @@ import SectionVideo from '~~/components/videos/SectionVideo.vue'
 import { BookService, DebateService, TopicService } from '~~/services'
 import { AuthorEnum, FormatEnum, ISourceFile, VideoLinkEnum } from '~~/types'
 
+definePageMeta({
+  layout: 'empty'
+})
+
 export default defineNuxtComponent({
   name: 'MagazinesPage',
 

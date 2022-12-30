@@ -1,27 +1,20 @@
 <template>
-  <div class="flex flex-col min-h-screen">
-    <!-- header -->
-    <Header />
-    <div class="container mx-auto mb-auto px-3 md:px-0 py-4 flex flex-col">
-      <!-- breadcrumb -->
-      <Breadcrumb :items="breadcrumbItems" />
+  <div>
+    <!-- breadcrumb -->
+    <Breadcrumb :items="breadcrumbItems" />
 
-      <!-- intro -->
-      <SectionIntroTopics :cover="cover">
-        <template v-slot:title>La divinité de Jésus</template>
-        <!-- <template v-slot:body> </template> -->
-      </SectionIntroTopics>
+    <!-- intro -->
+    <SectionIntroTopics :cover="cover">
+      <template v-slot:title>La divinité de Jésus</template>
+      <!-- <template v-slot:body> </template> -->
+    </SectionIntroTopics>
 
-      <SectionDebate
-        title="Découvrir en débats"
-        class="container mx-auto mt-4 md:mt-10"
-        :debates="debates"
-        :hideSubject="false"
-      />
-    </div>
-
-    <!-- footer -->
-    <Footer class="mt-40" />
+    <SectionDebate
+      title="Découvrir en débats"
+      class="container mx-auto mt-4 md:mt-10"
+      :debates="debates"
+      :hideSubject="false"
+    />
   </div>
 </template>
 

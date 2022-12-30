@@ -1,22 +1,15 @@
 <template>
-  <div class="flex flex-col min-h-screen">
-    <!-- header -->
-    <Header />
-    <div class="container mx-auto mb-auto px-3 md:px-0 py-4 flex flex-col">
-      <!-- breadcrumb -->
-      <Breadcrumb :items="breadcrumbItems" />
+  <div>
+    <!-- breadcrumb -->
+    <Breadcrumb :items="breadcrumbItems" />
 
-      <!-- documment -->
-      <SectionDocument
-        class="mt-4 md:mt-10"
-        :tags="tags"
-        :pdfs="pdfs"
-        fullHeight
-      />
-    </div>
-
-    <!-- footer -->
-    <Footer class="mt-40" />
+    <!-- documment -->
+    <SectionDocument
+      class="mt-4 md:mt-10"
+      :tags="tags"
+      :pdfs="pdfs"
+      fullHeight
+    />
   </div>
 </template>
 

@@ -1,22 +1,15 @@
 <template>
-  <div class="flex flex-col min-h-screen">
-    <!-- header -->
-    <Header />
-    <div class="container mx-auto mb-auto px-3 md:px-0 py-4 flex flex-col">
-      <!-- breadcrumb -->
-      <Breadcrumb :items="breadcrumbItems" />
+  <div>
+    <!-- breadcrumb -->
+    <Breadcrumb :items="breadcrumbItems" />
 
-      <section class="container mx-auto mt-4 md:mt-10">
-        <iframe
-          class="h-160 w-full"
-          :src="API_ENDPOINT + '/index.html'"
-          frameBorder="0"
-        />
-      </section>
-    </div>
-
-    <!-- footer -->
-    <Footer class="mt-40" />
+    <section class="container mx-auto mt-4 md:mt-10">
+      <iframe
+        class="h-160 w-full"
+        :src="API_ENDPOINT + '/index.html'"
+        frameBorder="0"
+      />
+    </section>
   </div>
 </template>
 
@@ -62,7 +55,7 @@ export default defineNuxtComponent({
           to: '/chat/'
         }
       ],
-      API_ENDPOINT: 'http://178.170.13.79:8081'
+      API_ENDPOINT: 'http://localhost:8080' || 'http://178.170.13.79:8081'
     }
   }
 })

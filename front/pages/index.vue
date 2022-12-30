@@ -1,21 +1,14 @@
 <template>
-  <div class="flex flex-col min-h-screen">
-    <!-- header -->
-    <Header />
-    <div class="container mx-auto mb-auto px-3 md:px-0 py-4 flex flex-col">
-      <SectionTopicCard class="mt-4 md:mt-10" :topics="topics" title="Thémes" />
+  <div>
+    <SectionTopicCard class="mt-4 md:mt-10" title="Thémes" />
 
-      <SectionDocument class="mt-4 md:mt-10" :tags="tags" :pdfs="pdfs" />
+    <SectionDocument class="mt-4 md:mt-10" :tags="tags" :pdfs="pdfs" />
 
-      <SectionBook class="mt-4 md:mt-10" :books="books" />
+    <SectionBook class="mt-4 md:mt-10" :books="books" />
 
-      <SectionSite class="mt-4 md:mt-10" :sites="sites" />
+    <SectionSite class="mt-4 md:mt-10" :sites="sites" />
 
-      <SectionMag class="mt-4 md:mt-10" />
-    </div>
-
-    <!-- footer -->
-    <Footer class="mt-40" />
+    <SectionMag class="mt-4 md:mt-10" />
   </div>
 </template>
 
@@ -41,7 +34,6 @@ import SectionSite from '~~/components/site/SectionSite.vue'
 import SectionTopicCard from '~~/components/topics/SectionTopicCard.vue'
 import {
   BookService,
-  TopicService,
   TagService,
   PdfService,
   WebSiteService
@@ -60,7 +52,6 @@ export default defineNuxtComponent({
 
   data() {
     return {
-      topics: TopicService.getAll(),
       tags: TagService.getAll(),
       pdfs: PdfService.getAll(),
       books: BookService.getAll(),
