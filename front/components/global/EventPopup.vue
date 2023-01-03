@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import Countdown from './Countdown.vue'
-
 const open = useState('open', () => true)
 const end = useState('end', () => new Date('2023-01-05T12:00:00'))
 
@@ -50,6 +48,7 @@ function finish() {
         <span>Caliph</span>
       </p>
       <NuxtLink
+        @click="open = false"
         class="
           mt-2
           self-end
@@ -63,12 +62,12 @@ function finish() {
           py-1
           px-4
         "
-        to="/"
+        to="/debat-paraclet/"
       >
         Voir
       </NuxtLink>
 
-      <NuxtLink class="contents" to="/">
+      <NuxtLink @click="open = false" class="contents" to="/debat-paraclet/">
         <div
           class="
             mt-10
