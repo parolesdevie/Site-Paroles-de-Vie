@@ -116,7 +116,8 @@ export enum FormatEnum {
   PDF = 'PDF',
   DOCX = 'DOCX',
   PNG = 'PNG',
-  JPG = 'JPG'
+  JPG = 'JPG',
+  WEBP = 'WEBP'
 }
 
 export interface ISourceFile {
