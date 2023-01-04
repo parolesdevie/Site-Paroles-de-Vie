@@ -7,6 +7,18 @@ export default class DebateService {
   static getAll(): IDebat[] {
     return [
       {
+        topic: 'the-paraclet',
+        date: '05/01/2023',
+        url: 'https://youtu.be/y9u3QimaTls',
+        subject:
+          "Qui est le paraclet annoncé par Jésus dans son discours d'adieux dans le corpus johannique ?",
+        debaters: [
+          { ...DebaterService.getByPseudo('Bénévolence'), team: 0 },
+          { ...DebaterService.getByPseudo('Cheikh Adam'), team: 1 }
+        ],
+        plateform: DebatPlateformEnum.YOUTUBE
+      },
+      {
         topic: 'the-parable-of-the-winegrowers',
         date: '27/10/2022',
         url: 'https://youtu.be/PVMAeP2virw',
@@ -309,18 +321,6 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Zakaria'), team: 1 }
         ],
         mediator: DebaterService.getByPseudo('Said Oujibou'),
-        plateform: DebatPlateformEnum.YOUTUBE
-      },
-      {
-        topic: 'the-paraclet',
-        date: '05/01/2023',
-        url: 'https://youtu.be/y9u3QimaTls',
-        subject:
-          "Qui est le paraclet annoncé par Jésus dans son discours d'adieux dans le corpus johannique ?",
-        debaters: [
-          { ...DebaterService.getByPseudo('Bénévolence'), team: 0 },
-          { ...DebaterService.getByPseudo('Cheikh Adam'), team: 1 }
-        ],
         plateform: DebatPlateformEnum.YOUTUBE
       }
     ]
