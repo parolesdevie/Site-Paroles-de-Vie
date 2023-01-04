@@ -14,9 +14,9 @@ export default class DebateService {
         debaters: [
           { ...DebaterService.getByPseudo('JMS'), team: 0 },
           { ...DebaterService.getByPseudo('Hanane'), team: 1 },
-          { ...DebaterService.getByPseudo('Ali'), team: 1 },
+          { ...DebaterService.getByPseudo('Ali'), team: 1 }
         ],
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
       {
         topic: 'the-parable-of-the-winegrowers',
@@ -25,9 +25,9 @@ export default class DebateService {
         subject: 'La Parabole des Vignerons',
         debaters: [
           { ...DebaterService.getByPseudo('Sham'), team: 0 },
-          { ...DebaterService.getByPseudo('Mengo'), team: 1 },
+          { ...DebaterService.getByPseudo('Mengo'), team: 1 }
         ],
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
       {
         topic: 'the-parable-of-the-winegrowers',
@@ -38,12 +38,12 @@ export default class DebateService {
           {
             ...DebaterService.getByPseudo(undefined),
             religion: DebatReligionEnum.CHRISTIAN,
-            team: 0,
+            team: 0
           },
           { ...DebaterService.getByPseudo('Bénévolence'), team: 0 },
-          { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 },
+          { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 }
         ],
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
       {
         topic: 'the-parable-of-the-winegrowers',
@@ -54,11 +54,11 @@ export default class DebateService {
           {
             ...DebaterService.getByPseudo(undefined),
             religion: DebatReligionEnum.CHRISTIAN,
-            team: 0,
+            team: 0
           },
-          { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 },
+          { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 }
         ],
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
       {
         topic: 'the-parable-of-the-winegrowers',
@@ -67,9 +67,9 @@ export default class DebateService {
         subject: "DÉBAT INTER-RELIGIEUX : L'ISLAM EST DANS LA BIBLE ! PART III",
         debaters: [
           { ...DebaterService.getByPseudo('Bénévolence'), team: 0 },
-          { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 },
+          { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 }
         ],
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
       {
         topic: 'the-parable-of-the-winegrowers',
@@ -81,13 +81,13 @@ export default class DebateService {
           {
             ...DebaterService.getByPseudo(undefined),
             religion: DebatReligionEnum.CHRISTIAN,
-            team: 0,
+            team: 0
           },
           { ...DebaterService.getByPseudo('Izanami'), team: 0 },
           { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 },
-          { ...DebaterService.getByPseudo('Ayman'), team: 1 },
+          { ...DebaterService.getByPseudo('Ayman'), team: 1 }
         ],
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
       {
         topic: 'the-parable-of-the-winegrowers',
@@ -96,9 +96,9 @@ export default class DebateService {
         subject: "DÉBAT INTER-RELIGIEUX : L'ISLAM EST DANS LA BIBLE !",
         debaters: [
           { ...DebaterService.getByPseudo('Georges Autran'), team: 0 },
-          { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 },
+          { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 }
         ],
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
       {
         topic: 'the-crucifixion-in-the-bible',
@@ -107,9 +107,9 @@ export default class DebateService {
         subject: 'DEBAT MUSLIM - CHRETIEN SUR LA MORT DE JESUS !',
         debaters: [
           { ...DebaterService.getByPseudo('Georges Autran'), team: 0 },
-          { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 },
+          { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 }
         ],
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
       {
         topic: 'the-crucifixion-in-the-bible',
@@ -121,9 +121,9 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Qalev'), team: 0 },
           { ...DebaterService.getByPseudo('Raph'), team: 0 },
           { ...DebaterService.getByPseudo('Jacques'), team: 0 },
-          { ...DebaterService.getByPseudo('Daniel'), team: 1 },
+          { ...DebaterService.getByPseudo('Daniel'), team: 1 }
         ],
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
       {
         topic: 'the-crucifixion-in-the-bible',
@@ -134,12 +134,12 @@ export default class DebateService {
           {
             ...DebaterService.getByPseudo(undefined),
             religion: DebatReligionEnum.CHRISTIAN,
-            team: 0,
+            team: 0
           },
           { ...DebaterService.getByPseudo('Izanami'), team: 0 },
-          { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 },
+          { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 }
         ],
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
       {
         topic: 'biblical-textual-criticism',
@@ -148,9 +148,9 @@ export default class DebateService {
         subject: 'Jésus est Dieu ? Jean 14,14 et la Critique Textuelle',
         debaters: [
           { ...DebaterService.getByPseudo('Fidelis Verax'), team: 0 },
-          { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 },
+          { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 }
         ],
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
       {
         topic: 'the-divinity-of-jesus',
@@ -159,10 +159,10 @@ export default class DebateService {
         subject: 'Débat interreligieux : la Divinité de Jesus',
         debaters: [
           { ...DebaterService.getByPseudo('Arnaud Dumouch'), team: 0 },
-          { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 },
+          { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 }
         ],
         mediator: DebaterService.getByPseudo('Morgan Priest'),
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
       {
         topic: 'the-divinity-of-jesus',
@@ -173,10 +173,10 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Alex'), team: 0 },
           { ...DebaterService.getByPseudo('Sam Shamoun'), team: 0 },
           { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 },
-          { ...DebaterService.getByPseudo(undefined), team: 1 },
+          { ...DebaterService.getByPseudo(undefined), team: 1 }
         ],
         mediator: DebaterService.getByPseudo('Said Oujibou'),
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
       {
         topic: undefined,
@@ -186,9 +186,9 @@ export default class DebateService {
           '1er débat Athée/Musulman francophone : Karim al-Hanifi & Jean Bricmont, 2018 à partager !',
         debaters: [
           { ...DebaterService.getByPseudo(undefined), team: 0 },
-          { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 },
+          { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 }
         ],
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
       {
         topic: 'the-legitimacy-of-the-prophet-muhammad',
@@ -198,10 +198,10 @@ export default class DebateService {
           'Débat Rabbin et Musulman 2017 "Muhammad est-il un vrai prophète de Dieu annoncé dans la Torah ?"',
         debaters: [
           { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 0 },
-          { ...DebaterService.getByPseudo('Gabriel Hagaï'), team: 1 },
+          { ...DebaterService.getByPseudo('Gabriel Hagaï'), team: 1 }
         ],
         mediator: DebaterService.getByPseudo('Said Oujibou'),
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
       {
         topic: 'the-dawa-in-islam',
@@ -210,10 +210,10 @@ export default class DebateService {
         subject: 'Débat sur le débat interreligieux',
         debaters: [
           { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 0 },
-          { ...DebaterService.getByPseudo('Metmati Maamar'), team: 1 },
+          { ...DebaterService.getByPseudo('Metmati Maamar'), team: 1 }
         ],
         mediator: DebaterService.getByPseudo(undefined),
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
       {
         topic: 'the-divinity-of-jesus',
@@ -225,10 +225,10 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Morgan Priest'), team: 0 },
           { ...DebaterService.getByPseudo('Guillaume'), team: 0 },
           { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 },
-          { ...DebaterService.getByPseudo('Abdullah al-Hanifi'), team: 1 },
+          { ...DebaterService.getByPseudo('Abdullah al-Hanifi'), team: 1 }
         ],
         mediator: DebaterService.getByPseudo('Said Oujibou'),
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
       {
         topic: 'the-divinity-of-jesus',
@@ -240,10 +240,10 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Morgan Priest'), team: 0 },
           { ...DebaterService.getByPseudo('Guillaume'), team: 0 },
           { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 },
-          { ...DebaterService.getByPseudo('Abdullah al-Hanifi'), team: 1 },
+          { ...DebaterService.getByPseudo('Abdullah al-Hanifi'), team: 1 }
         ],
         mediator: DebaterService.getByPseudo('Said Oujibou'),
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
       {
         topic: 'the-legitimacy-of-the-prophet-muhammad',
@@ -253,10 +253,10 @@ export default class DebateService {
           'Débat Inter-religieux : "Muhammad est-il un vrai prophète de Dieu ?" Abbé Pagès et Karim al-Hanifi',
         debaters: [
           { ...DebaterService.getByPseudo('Guy Pages'), team: 0 },
-          { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 },
+          { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 }
         ],
         mediator: DebaterService.getByPseudo(undefined),
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
       {
         topic: 'the-falsification-of-the-bible',
@@ -266,10 +266,10 @@ export default class DebateService {
           'Débat inter-religieux : "la préservation de la Bible" Abbé Guy Pagès & Karim al-Hanifi',
         debaters: [
           { ...DebaterService.getByPseudo('Guy Pages'), team: 0 },
-          { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 },
+          { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 }
         ],
         mediator: DebaterService.getByPseudo(undefined),
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
       {
         topic: 'islam',
@@ -278,10 +278,10 @@ export default class DebateService {
         subject: 'Débat inter-religieux : "L\'Islam au risque de l\'histoire"',
         debaters: [
           { ...DebaterService.getByPseudo('Odon Lafontaine'), team: 0 },
-          { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 },
+          { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 }
         ],
         mediator: DebaterService.getByPseudo(undefined),
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
       {
         topic: 'the-divinity-of-jesus',
@@ -291,10 +291,10 @@ export default class DebateService {
           "Débat inter-religieux : Jesus est-il Le Vrai Dieu ? L'Abbé Guy Pagès & Karim al-Hanifi",
         debaters: [
           { ...DebaterService.getByPseudo('Guy Pages'), team: 0 },
-          { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 },
+          { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 }
         ],
         mediator: DebaterService.getByPseudo(undefined),
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
       {
         topic: 'the-legitimacy-of-the-prophet-muhammad',
@@ -306,11 +306,23 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('David wood'), team: 0 },
           { ...DebaterService.getByPseudo('Alex'), team: 0 },
           { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 },
-          { ...DebaterService.getByPseudo('Zakaria'), team: 1 },
+          { ...DebaterService.getByPseudo('Zakaria'), team: 1 }
         ],
         mediator: DebaterService.getByPseudo('Said Oujibou'),
-        plateform: DebatPlateformEnum.YOUTUBE,
+        plateform: DebatPlateformEnum.YOUTUBE
       },
+      {
+        topic: 'the-paraclet',
+        date: '05/01/2023',
+        url: 'https://youtu.be/y9u3QimaTls',
+        subject:
+          "Qui est le paraclet annoncé par Jésus dans son discours d'adieux dans le corpus johannique ?",
+        debaters: [
+          { ...DebaterService.getByPseudo('Bénévolence'), team: 0 },
+          { ...DebaterService.getByPseudo('Cheikh Adam'), team: 1 }
+        ],
+        plateform: DebatPlateformEnum.YOUTUBE
+      }
     ]
   }
 

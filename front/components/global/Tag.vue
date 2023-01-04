@@ -1,5 +1,6 @@
 <template>
   <li
+    tabindex="0"
     :class="`select-none cursor-pointer text-xs md:text-base inline-flex items-center font-bold leading-sm uppercase px-3 py-1 rounded-full dark:text-white
           ${
             active

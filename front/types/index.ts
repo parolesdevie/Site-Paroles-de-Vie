@@ -114,7 +114,9 @@ export enum FormatEnum {
   UNKNOW = 'UNKNOW',
   EPUB = 'EPUB',
   PDF = 'PDF',
-  DOCX = 'DOCX'
+  DOCX = 'DOCX',
+  PNG = 'PNG',
+  JPG = 'JPG'
 }
 
 export interface ISourceFile {
@@ -187,6 +189,13 @@ export enum LanguageEnum {
 export interface ISource {
   formats: FormatEnum[]
   slug: string
+  title: string
+}
+
+export interface IAsset {
+  formats: FormatEnum[]
+  href: string
+  thumbnail: string
   title: string
 }
 

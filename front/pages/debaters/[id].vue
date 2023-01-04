@@ -1,3 +1,38 @@
+<script setup lang="ts">
+import { DebaterService, DebateService } from '~~/services'
+
+useHead({
+  title: 'Profils du débatteur - Paroles de vie',
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content:
+        'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.'
+    },
+    {
+      hid: 'og:image',
+      property: 'og:image',
+      content: 'https://www.paroles-de-vie.tk/seo/debaters.webp'
+    },
+    {
+      hid: 'twitter:image',
+      property: 'twitter:image',
+      content: 'https://www.paroles-de-vie.tk/seo/debaters.webp'
+    }
+  ]
+})
+
+const route = useRoute()
+const id = parseInt(route.params.id)
+const currentDebater = DebaterService.getById(id)
+const debates = useState(() => DebateService.getByDebaterId(id))
+console.log(debates)
+
+// const backUrl = context?.from?.path || '/'
+const { pseudo, name, religion } = currentDebater
+</script>
+
 <template>
   <div>
     <!-- breadcrumb -->
@@ -31,11 +66,11 @@
           <br />
           <strong>Religion :</strong>
           {{ religion }}
-          <IconQuran
+          <IconsIconQuran
             v-if="religion === DebatReligionEnum.MUSLIM"
             class="inline h-4 shrink-0 text-green-500"
           />
-          <IconCross
+          <IconsIconCross
             v-else-if="religion === DebatReligionEnum.CHRISTIAN"
             class="inline h-4 shrink-0 text-violet-500"
           />
@@ -48,50 +83,24 @@
       <H2Title>Participations aux débats</H2Title>
 
       <!-- table of debates -->
-      <TableDebate class="mt-2 md:mt-4" :debates="debates" />
+      <DebateTableDebate class="mt-2 md:mt-4" :debates="debates" />
     </section>
   </div>
 </template>
   
-<script setup lang="ts">
-useHead({
-  title: 'Profils du débatteur - Paroles de vie',
-  meta: [
-    {
-      hid: 'description',
-      name: 'description',
-      content:
-        'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.'
-    },
-    {
-      hid: 'og:image',
-      property: 'og:image',
-      content: 'https://www.paroles-de-vie.tk/seo/debaters.webp'
-    },
-    {
-      hid: 'twitter:image',
-      property: 'twitter:image',
-      content: 'https://www.paroles-de-vie.tk/seo/debaters.webp'
-    }
-  ]
-})
-</script>
+
 
 <script lang="ts">
-import TableDebate from '~~/components/debate/TableDebate.vue'
-import IconQuran from '~~/components/icons/IconQuran.vue'
-import IconCross from '~~/components/icons/IconCross.vue'
-import { DebaterService, DebateService } from '~~/services'
 import { DebatReligionEnum, IBreadcrumbItem } from '~~/types'
 
 export default defineNuxtComponent({
-  components: { TableDebate, IconQuran, IconCross },
-
-  async asyncData(context: any) {
+  data(context: any) {
     const id = parseInt(context.route.params.id)
     const currentDebater = DebaterService.getById(id)
     const debates = DebateService.getByDebaterId(id)
     const backUrl = context?.from?.path || '/'
+
+    console.log('ok', currentDebater)
 
     return {
       breadcrumbItems: [
@@ -99,21 +108,16 @@ export default defineNuxtComponent({
           name: 'Accueil',
           to: '/'
         },
-        {
-          name: 'Débatteurs',
-          to: backUrl
-        },
+        // {
+        //   name: 'Débatteurs',
+        //   to: backUrl
+        // },
         {
           name: currentDebater?.name,
           to: '/debaters/' + id
         }
       ],
-      backUrl,
-      debates,
-      id: currentDebater.id,
-      pseudo: currentDebater.pseudo,
-      name: currentDebater.name,
-      religion: currentDebater.religion
+      backUrl
       // ...currentDebater
     }
   },

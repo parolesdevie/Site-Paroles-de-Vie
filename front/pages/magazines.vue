@@ -1,13 +1,3 @@
-<template>
-  <div>
-    <!-- breadcrumb -->
-    <Breadcrumb :items="breadcrumbItems" />
-
-    <!-- mag -->
-    <SectionMag class="mt-4 md:mt-10" />
-  </div>
-</template>
-
 <script setup lang="ts">
 useHead({
   title: 'Magazines des Théophilos - Paroles de vie',
@@ -31,6 +21,16 @@ useHead({
   ]
 })
 </script>
+
+<template>
+  <div>
+    <!-- breadcrumb -->
+    <Breadcrumb :items="breadcrumbItems" />
+
+    <!-- mag -->
+    <SectionMag class="mt-4 md:mt-10" />
+  </div>
+</template>
 
 <script lang="ts">
 import SectionMag from '~~/components/magazine/SectionMag.vue'

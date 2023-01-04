@@ -34,20 +34,18 @@
 </template>
 
 <script lang="ts">
-
-
 export default defineNuxtComponent({
   name: 'ResourceCard',
 
   props: {
     slug: {
       type: String,
-      default: '',
+      default: ''
     },
     title: {
       type: String,
-      default: '',
-    },
-  },
+      default: ''
+    }
+  }
 })
 </script>

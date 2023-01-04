@@ -23,67 +23,75 @@ export default class TopicService {
       // },
       {
         cover: {
+          color: '#356193',
+          src: 'live'
+        },
+        to: '/live/',
+        title: 'LIVE'
+      },
+      {
+        cover: {
           color: '#9D928C',
-          src: 'documents',
+          src: 'documents'
         },
         to: '/documents/',
-        title: 'Documents PDF',
+        title: 'Documents PDF'
       },
       {
         cover: {
           color: '#',
-          src: 'podcast',
+          src: 'podcast'
         },
         to: '/podcast/',
-        title: 'Podcast',
+        title: 'Podcast'
       },
       {
         cover: {
           color: '#C2B17D',
-          src: 'manuscript',
+          src: 'manuscript'
         },
         to: '/manuscripts/',
-        title: 'Manuscrits',
+        title: 'Manuscrits'
       },
       {
         cover: {
           color: '#625241',
-          src: 'biblical-textual-criticism',
+          src: 'biblical-textual-criticism'
         },
         to: '/biblical-textual-criticism/',
-        title: 'Critique textuelle',
+        title: 'Critique textuelle'
       },
       {
         cover: {
           color: '#6A5847',
-          src: 'gospel',
+          src: 'gospel'
         },
         to: '/gospel/',
-        title: 'Louanges',
+        title: 'Louanges'
       },
       {
         cover: {
           color: '#887D6D',
-          src: 'soreg',
+          src: 'soreg'
         },
         to: '/soreg/',
-        title: 'Le Soreg',
+        title: 'Le Soreg'
       },
       {
         cover: {
           color: '#A66B38',
-          src: 'paraclete',
+          src: 'paraclete'
         },
         to: '/paraclete/',
-        title: 'Le Paraclet',
+        title: 'Le Paraclet'
       },
       {
         cover: {
           color: '#7F8269',
-          src: 'the-parable-of-the-winegrowers',
+          src: 'the-parable-of-the-winegrowers'
         },
         to: '/the-parable-of-the-winegrowers/',
-        title: 'La parabole des vignerons',
+        title: 'La parabole des vignerons'
       },
 
       // {
@@ -97,26 +105,26 @@ export default class TopicService {
       {
         cover: {
           color: '#8A7A6F',
-          src: 'the-divinity-of-jesus',
+          src: 'the-divinity-of-jesus'
         },
         to: '/the-divinity-of-jesus/',
-        title: 'La divinité de Jésus',
+        title: 'La divinité de Jésus'
       },
       {
         cover: {
           color: '#6A574D',
-          src: 'the-falsification-of-the-bible',
+          src: 'the-falsification-of-the-bible'
         },
         to: '/the-falsification-of-the-bible/',
-        title: 'La falsification de la bible',
+        title: 'La falsification de la bible'
       },
       {
         cover: {
           color: '#97A09C',
-          src: 'the-crucifixion-in-the-bible',
+          src: 'the-crucifixion-in-the-bible'
         },
         to: '/the-crucifixion-in-the-bible/',
-        title: 'La crucifixion dans la bible',
+        title: 'La crucifixion dans la bible'
       },
       // {
       //   cover: {
@@ -129,59 +137,59 @@ export default class TopicService {
       {
         cover: {
           color: '#967D7A',
-          src: 'youtube',
+          src: 'youtube'
         },
         to: '/youtube/',
-        title: 'Chaîne Youtube Recommandées',
+        title: 'Chaîne Youtube Recommandées'
       },
       {
         cover: {
           color: '#59463B',
-          src: 'books',
+          src: 'books'
         },
         to: '/books/',
-        title: 'Livres Recommandés',
+        title: 'Livres Recommandés'
       },
       {
         cover: {
           color: '#CB885F',
-          src: 'sites',
+          src: 'sites'
         },
         to: '/sites/',
-        title: 'Sites Recommandés',
+        title: 'Sites Recommandés'
       },
       {
         cover: {
           color: '#AFA69E',
-          src: 'read-the-bible',
+          src: 'read-the-bible'
         },
         to: '/read-the-bible/',
-        title: 'Lire la Bible',
+        title: 'Lire la Bible'
       },
       {
         cover: {
           color: '#64575A',
-          src: 'social-networks',
+          src: 'social-networks'
         },
         to: '/social-networks/',
-        title: 'Réseaux sociaux',
+        title: 'Réseaux sociaux'
       },
       {
         cover: {
           color: '#ACB0BB',
-          src: 'magazines',
+          src: 'magazines'
         },
         to: '/magazines/',
-        title: 'Magazines',
+        title: 'Magazines'
       },
       {
         cover: {
           color: '#B18F66',
-          src: 'gallery',
+          src: 'gallery'
         },
         to: '/gallery/',
-        title: "Galerie d'images",
-      },
+        title: "Galerie d'images"
+      }
     ]
   }
 

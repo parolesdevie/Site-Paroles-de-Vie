@@ -1,17 +1,3 @@
-<template>
-  <div>
-    <SectionTopicCard class="mt-4 md:mt-10" title="Thémes" />
-
-    <SectionDocument class="mt-4 md:mt-10" :tags="tags" :pdfs="pdfs" />
-
-    <SectionBook class="mt-4 md:mt-10" :books="books" />
-
-    <SectionSite class="mt-4 md:mt-10" :sites="sites" />
-
-    <SectionMag class="mt-4 md:mt-10" />
-  </div>
-</template>
-
 <script setup lang="ts">
 useHead({
   title: 'Accueil - Paroles de vie',
@@ -25,6 +11,20 @@ useHead({
   ]
 })
 </script>
+
+<template>
+  <div>
+    <SectionTopicCard class="mt-4 md:mt-10" title="Thémes" />
+
+    <SectionDocument class="mt-4 md:mt-10" :tags="tags" :pdfs="pdfs" />
+
+    <SectionBook class="mt-4 md:mt-10" :books="books" />
+
+    <SectionSite class="mt-4 md:mt-10" :sites="sites" />
+
+    <SectionMag class="mt-4 md:mt-10" />
+  </div>
+</template>
 
 <script lang="ts">
 import SectionBook from '~~/components/book/SectionBook.vue'

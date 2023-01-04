@@ -1,25 +1,6 @@
-<template>
-  <div>
-    <!-- breadcrumb -->
-    <Breadcrumb :items="breadcrumbItems" />
-
-    <section class="mt-4 md:mt-10">
-      <H2Title>Resources</H2Title>
-
-      <ul class="mt-2 md:mt-4 flex">
-        <li
-          class="contents"
-          v-for="(resource, index) in resources"
-          :key="index"
-        >
-          <ResourceCard :slug="resource.slug" :title="resource.title" />
-        </li>
-      </ul>
-    </section>
-  </div>
-</template>
-
 <script setup lang="ts">
+import SourceService from '~~/services/SourceService'
+
 useHead({
   title: 'Rechercher une ressource - Paroles de vie',
   meta: [
@@ -41,12 +22,34 @@ useHead({
     }
   ]
 })
+
+const resources = useState(() => SourceService.getAll())
 </script>
+
+<template>
+  <div>
+    <!-- breadcrumb -->
+    <Breadcrumb :items="breadcrumbItems" />
+
+    <section class="mt-4 md:mt-10">
+      <H2Title>Resources</H2Title>
+
+      <ul class="mt-2 md:mt-4 flex">
+        <li
+          class="contents"
+          v-for="(resource, index) in resources"
+          :key="index"
+        >
+          <ResourceCard :slug="resource.slug" :title="resource.title" />
+        </li>
+      </ul>
+    </section>
+  </div>
+</template>
 
 <script lang="ts">
 import H2Title from '~~/components/global/H2Title.vue'
 import ResourceCard from '~~/components/resource/ResourceCard.vue'
-import SourceService from '~~/services/SourceService'
 
 export default defineNuxtComponent({
   name: 'SearchResourcePage',
@@ -64,8 +67,7 @@ export default defineNuxtComponent({
           name: 'Rechercher une ressource',
           to: '/resource/'
         }
-      ],
-      resources: SourceService.getAll()
+      ]
     }
   }
 })

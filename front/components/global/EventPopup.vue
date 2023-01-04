@@ -1,15 +1,50 @@
 <script setup lang="ts">
+const EVENT_DATE = new Date('2023-01-05T21:00:00')
+const END_DATE = new Date('2023-01-05T22:30:00')
+
 const open = useState('open', () => true)
-const end = useState('end', () => new Date('2023-01-05T12:00:00'))
+const isNow = useState(
+  'isNow',
+  () => Date.now() > EVENT_DATE.getTime() && Date.now() < END_DATE.getTime()
+)
+const eventDate = useState('eventDate', () => EVENT_DATE)
+const end = useState('end', () => END_DATE)
 
 function finish() {
-  open.value = false
+  isNow.value = true
 }
+
+useHead({
+  title: 'Live - Paroles de vie',
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content:
+        'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.'
+    },
+    {
+      hid: 'og:image',
+      property: 'og:image',
+      content: 'https://www.paroles-de-vie.tk/seo/live.webp'
+    },
+    {
+      hid: 'twitter:image',
+      property: 'twitter:image',
+      content: 'https://www.paroles-de-vie.tk/seo/live.webp'
+    }
+  ]
+})
 </script>
 
 <template>
   <div
-    v-show="open && Date.now() < end.getTime()"
+    v-show="
+      !$route.path.startsWith('/live') &&
+      !$route.path.startsWith('/debat-paraclet') &&
+      open &&
+      Date.now() < end.getTime()
+    "
     @click.self="open = false"
     class="
       fixed
@@ -38,34 +73,68 @@ function finish() {
         @click="open = false"
         class="absolute top-3 right-3 h-6"
       />
-      <strong>Événement à venir</strong>
+      <strong>Événement {{ isNow ? 'en cours' : 'à venir' }}</strong>
 
-      <CountDown class="mt-10" :date="end" @onFinish="finish()" />
+      <template v-if="!isNow">
+        <CountDown class="mt-10" :date="eventDate" @onFinish="finish()" />
 
-      <p class="mt-10 text-sm">Débat <strong>Paraclet</strong></p>
-      <p>
-        Débatteurs <span>Paroles de vie</span> vs
-        <span>Caliph</span>
-      </p>
-      <NuxtLink
-        @click="open = false"
-        class="
-          mt-2
-          self-end
-          border border-black
-          dark:border-white
-          hover:bg-light-black
-          dark:hover:bg-white
-          hover:text-white
-          dark:hover:text-light-black
-          rounded
-          py-1
-          px-4
-        "
-        to="/debat-paraclet/"
-      >
-        Voir
-      </NuxtLink>
+        <p class="mt-10 text-sm">Débat <strong>Paraclet</strong></p>
+        <p>
+          Débatteurs
+          <NuxtLink @click="open = false" class="underline" to="/debaters/10">
+            Paroles de vie
+          </NuxtLink>
+          vs
+          <NuxtLink @click="open = false" class="underline" to="/debaters/29">
+            Cheikh Adam
+          </NuxtLink>
+        </p>
+      </template>
+
+      <div class="mt-4 flex gap-4">
+        <!-- tiktok -->
+        <a
+          v-show="isNow"
+          class="
+            border border-black
+            dark:border-white
+            hover:bg-light-black
+            dark:hover:bg-white
+            hover:text-white
+            dark:hover:text-light-black
+            rounded
+            py-2
+            px-4
+            flex
+            items-center
+          "
+          href="https://www.tiktok.com/@paroles.de.vie/live"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IconsIconTikTok class="h-4 mr-2 shrink-0" />
+          <span class="text-xs md:text-base">Ecouter sur TikTok</span>
+        </a>
+        <NuxtLink
+          @click="open = false"
+          class="
+            border border-black
+            dark:border-white
+            hover:bg-light-black
+            dark:hover:bg-white
+            hover:text-white
+            dark:hover:text-light-black
+            rounded
+            py-2
+            px-4
+            text-xs
+            md:text-base
+          "
+          to="/debat-paraclet/"
+        >
+          Découvrir
+        </NuxtLink>
+      </div>
 
       <NuxtLink @click="open = false" class="contents" to="/debat-paraclet/">
         <div
@@ -79,7 +148,7 @@ function finish() {
           "
         >
           <img
-            class=""
+            class="rounded-lg"
             src="/images/events/2023-01-05T12-00-00@4x.webp"
             alt="affiche débat"
           />
