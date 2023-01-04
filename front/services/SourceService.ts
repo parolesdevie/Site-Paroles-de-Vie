@@ -150,6 +150,41 @@ export default class SourceService {
             href: '/debats/2023/05-01-paraclet/montanisme/270.png',
             thumbnail: '/debats/2023/05-01-paraclet/montanisme/270.png',
             title: 'Montanisme Page 270'
+          },
+          {
+            formats: [FormatEnum.WEBP],
+            href: '/debats/2023/05-01-paraclet/bailly-dictionnaire-grec-francais.webp',
+            thumbnail:
+              '/debats/2023/05-01-paraclet/bailly-dictionnaire-grec-francais.webp',
+            title: 'Définition périklitos'
+          },
+          {
+            formats: [FormatEnum.WEBP],
+            href: '/debats/2023/05-01-paraclet/lexicon/come-from-father.png',
+            thumbnail:
+              '/debats/2023/05-01-paraclet/lexicon/come-from-father.png',
+            title: 'Lexicon John 15:26'
+          },
+          {
+            formats: [FormatEnum.WEBP],
+            href: '/debats/2023/05-01-paraclet/dilemmes/dilemme-de-l-adultere.webp',
+            thumbnail:
+              '/debats/2023/05-01-paraclet/dilemmes/dilemme-de-l-adultere.webp',
+            title: "Dilemme de l'adultére"
+          },
+          {
+            formats: [FormatEnum.WEBP],
+            href: '/debats/2023/05-01-paraclet/dilemmes/dilemme-de-l-adultere-bis.webp',
+            thumbnail:
+              '/debats/2023/05-01-paraclet/dilemmes/dilemme-de-l-adultere-bis.webp',
+            title: "Dilemme de l'adultére bis"
+          },
+          {
+            formats: [FormatEnum.WEBP],
+            href: '/debats/2023/05-01-paraclet/dilemmes/dilemme-du-paradis.webp',
+            thumbnail:
+              '/debats/2023/05-01-paraclet/dilemmes/dilemme-du-paradis.webp',
+            title: 'Dilemme du Paradis'
           }
         ]
       default:
