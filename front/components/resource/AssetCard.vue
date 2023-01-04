@@ -12,6 +12,9 @@
       p-2
     "
   >
+    <span class="absolute bg-slate-400 text-white dark:bg-slate-700 px-2">
+      #{{ index + 1 }}
+    </span>
     <!-- thumbnail -->
     <img
       loading="lazy"
@@ -28,7 +31,7 @@
 
     <!-- title -->
     <div class="text-center">
-      <span class="">{{ title }}</span>
+      <span>{{ title }}</span>
     </div>
   </a>
 </template>
@@ -38,6 +41,10 @@ export default defineNuxtComponent({
   name: 'AssetCard',
 
   props: {
+    index: {
+      type: Number,
+      default: 0
+    },
     href: {
       type: String,
       default: ''

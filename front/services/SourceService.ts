@@ -123,6 +123,12 @@ export default class SourceService {
           },
           {
             formats: [FormatEnum.PNG],
+            href: '/debats/2023/05-01-paraclet/montanisme/cover.png',
+            thumbnail: '/debats/2023/05-01-paraclet/montanisme/cover.png',
+            title: 'Montanisme Page Cover'
+          },
+          {
+            formats: [FormatEnum.PNG],
             href: '/debats/2023/05-01-paraclet/montanisme/265.png',
             thumbnail: '/debats/2023/05-01-paraclet/montanisme/265.png',
             title: 'Montanisme Page 265'

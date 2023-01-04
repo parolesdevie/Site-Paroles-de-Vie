@@ -100,6 +100,7 @@ const resources = useState(() => SourceService.getByDebat('paraclet'))
           :key="index"
         >
           <AssetCard
+            :index="index"
             :href="resource.href"
             :thumbnail="resource.thumbnail"
             :title="resource.title"
