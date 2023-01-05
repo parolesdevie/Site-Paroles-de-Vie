@@ -32,6 +32,13 @@ export default class SourceService {
             title: 'Tableau Comparatif'
           },
           {
+            formats: [FormatEnum.WEBP],
+            href: '/debats/2023/05-01-paraclet/paraclet-tableau-comparatif-2.webp',
+            thumbnail:
+              '/debats/2023/05-01-paraclet/paraclet-tableau-comparatif-2.webp',
+            title: 'Tableau Comparatif 2'
+          },
+          {
             formats: [FormatEnum.PNG],
             href: '/debats/2023/05-01-paraclet/p75.png',
             thumbnail: '/debats/2023/05-01-paraclet/p75.png',
@@ -185,6 +192,20 @@ export default class SourceService {
             thumbnail:
               '/debats/2023/05-01-paraclet/dilemmes/dilemme-du-paradis.webp',
             title: 'Dilemme du Paradis'
+          },
+          {
+            formats: [FormatEnum.PNG],
+            href: 'https://www.tiktok.com/@jms_ichtus/video/7132162754017856773',
+            thumbnail:
+              '/debats/2023/05-01-paraclet/dilemmes/dilemme-du-paradis-video-cover.png',
+            title: 'Dilemme du Paradis - Vidéo TikTok'
+          },
+          {
+            formats: [FormatEnum.PNG],
+            href: 'https://www.tiktok.com/@unchamite/video/7128047782358830341?is_from_webapp=1&sender_device=pc&web_id=7182639293248161286',
+            thumbnail:
+              '/debats/2023/05-01-paraclet/dilemmes/dilemme-de-l-adultere-video-cover.png',
+            title: "Dilemme de l'adultére - Vidéo TikTok"
           }
         ]
       default:
