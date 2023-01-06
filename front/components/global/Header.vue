@@ -1,7 +1,7 @@
 <template>
   <div class="h-16 flex-shrink-0">
     <header
-      class="absolute top-0 inset-x-0 px-3 md:px-0 py-4 bg-black text-white"
+      class="absolute top-0 inset-x-0 px-3 md:px-4 py-4 bg-black text-white"
     >
       <div class="container mx-auto flex items-center">
         <!-- logo -->
@@ -75,18 +75,18 @@
 </template>
 
 <script lang="ts">
-import { MenuService } from '~~/services';
-import IconBars from '../icons/IconBars.vue';
-import IconLogoUni from '../icons/IconLogoUni.vue';
-import IconSearch from '../icons/IconSearch.vue';
+import { MenuService } from '~~/services'
+import IconBars from '../icons/IconBars.vue'
+import IconLogoUni from '../icons/IconLogoUni.vue'
+import IconSearch from '../icons/IconSearch.vue'
 
 export default defineNuxtComponent({
-    data() {
-        return {
-            links: MenuService.getMainMenu(),
-        };
-    },
-    components: { IconLogoUni, IconSearch, IconBars }
-});
+  data() {
+    return {
+      links: MenuService.getMainMenu()
+    }
+  },
+  components: { IconLogoUni, IconSearch, IconBars }
+})
 </script>
 

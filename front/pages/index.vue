@@ -1,4 +1,11 @@
 <script setup lang="ts">
+import {
+  BookService,
+  PdfService,
+  TagService,
+  WebSiteService
+} from '~~/services'
+
 useHead({
   title: 'Accueil - Paroles de vie',
   meta: [
@@ -10,53 +17,23 @@ useHead({
     }
   ]
 })
+
+const tags = useState('tags', () => TagService.getAll())
+const pdfs = useState('pdfs', () => PdfService.getAll())
+const books = useState('books', () => BookService.getAll())
+const sites = useState('sites', () => WebSiteService.getAll())
 </script>
 
 <template>
   <div>
-    <SectionTopicCard class="mt-4 md:mt-10" title="Thémes" />
+    <TopicsSectionTopicCard class="mt-4 md:mt-10" title="Thémes" />
 
-    <SectionDocument class="mt-4 md:mt-10" :tags="tags" :pdfs="pdfs" />
+    <DocumentSectionDocument class="mt-4 md:mt-10" :tags="tags" :pdfs="pdfs" />
 
-    <SectionBook class="mt-4 md:mt-10" :books="books" />
+    <BookSectionBook class="mt-4 md:mt-10" :books="books" />
 
-    <SectionSite class="mt-4 md:mt-10" :sites="sites" />
+    <SiteSectionSite class="mt-4 md:mt-10" :sites="sites" />
 
-    <SectionMag class="mt-4 md:mt-10" />
+    <MagazineSectionMag class="mt-4 md:mt-10" />
   </div>
 </template>
-
-<script lang="ts">
-import SectionBook from '~~/components/book/SectionBook.vue'
-import SectionDocument from '~~/components/document/SectionDocument.vue'
-import SectionMag from '~~/components/magazine/SectionMag.vue'
-import SectionSite from '~~/components/site/SectionSite.vue'
-import SectionTopicCard from '~~/components/topics/SectionTopicCard.vue'
-import {
-  BookService,
-  TagService,
-  PdfService,
-  WebSiteService
-} from '~~/services'
-
-export default defineNuxtComponent({
-  name: 'IndexPage',
-
-  components: {
-    SectionDocument,
-    SectionBook,
-    SectionSite,
-    SectionMag,
-    SectionTopicCard
-  },
-
-  data() {
-    return {
-      tags: TagService.getAll(),
-      pdfs: PdfService.getAll(),
-      books: BookService.getAll(),
-      sites: WebSiteService.getAll()
-    }
-  }
-})
-</script>

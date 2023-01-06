@@ -1,5 +1,5 @@
 <template>
-  <footer class="px-3 md:px-0 py-4 md:py-12 bg-black">
+  <footer class="px-3 md:px-4 py-4 md:py-12 bg-black">
     <!-- scroll to top button -->
     <transition name="fade">
       <span
