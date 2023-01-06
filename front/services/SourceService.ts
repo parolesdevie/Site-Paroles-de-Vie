@@ -25,6 +25,12 @@ export default class SourceService {
       case 'paraclet':
         return [
           {
+            formats: [FormatEnum.PDF],
+            href: '/debats/2023/05-01-paraclet/le-paraclet-23.06.01.pdf',
+            thumbnail: '/debats/2023/05-01-paraclet/le-paraclet-23.06.01.png',
+            title: 'Le PDF de réfutation vers 23.06.01'
+          },
+          {
             formats: [FormatEnum.WEBP],
             href: '/debats/2023/05-01-paraclet/paraclet-tableau-comparatif.webp',
             thumbnail:
