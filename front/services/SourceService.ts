@@ -28,7 +28,7 @@ export default class SourceService {
             formats: [FormatEnum.PDF],
             href: '/debats/2023/05-01-paraclet/le-paraclet-23.06.01.pdf',
             thumbnail: '/debats/2023/05-01-paraclet/le-paraclet-23.06.01.png',
-            title: 'Le PDF de réfutation vers 23.06.01'
+            title: 'Le PDF de réfutation (version 23.06.01)'
           },
           {
             formats: [FormatEnum.WEBP],

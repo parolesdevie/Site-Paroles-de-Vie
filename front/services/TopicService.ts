@@ -31,6 +31,14 @@ export default class TopicService {
       },
       {
         cover: {
+          color: '#68513A',
+          src: 'almanach'
+        },
+        to: '/almanach/',
+        title: 'Almanach'
+      },
+      {
+        cover: {
           color: '#9D928C',
           src: 'documents'
         },

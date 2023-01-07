@@ -116,7 +116,7 @@ import SectionDebate from '~~/components/debate/SectionDebate.vue'
 import AssetCard from '../components/resource/AssetCard.vue'
 
 export default defineNuxtComponent({
-  name: 'DebatParacletPage',
+  name: 'LivePage',
 
   components: { SectionDebate, AssetCard },
 
