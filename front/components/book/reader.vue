@@ -1,5 +1,5 @@
 <template>
-  <div class="flex">
+  <div class="flex bg-black bg-opacity-10">
     <!-- For Next/Prev Controls -->
     <input class="hidden" type="checkbox" id="c1" />
     <input class="hidden" type="checkbox" id="c2" />
@@ -14,7 +14,29 @@
         xl:h-[53.75rem] xl:w-152
       "
       id="cover"
-    />
+    >
+      <a
+        class="relative h-full w-full p-8 flex items-center justify-center"
+        href="/sources/almanach/pdf/almanach.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        download="/sources/almanach/pdf/almanach.pdf"
+      >
+        <span
+          class="
+            rounded-md
+            border border-orange-600
+            text-orange-600
+            hover:bg-orange-600 hover:text-white
+            px-4
+            md:px-6
+            py-1
+          "
+        >
+          Télécharger en PDF
+        </span>
+      </a>
+    </div>
     <!-- Pages -->
     <div
       class="
