@@ -67,13 +67,13 @@ export default class BookService {
         amazon: '3jffW3A'
       },
       {
-        title: 'Paroles et exemples des anciens',
-        slug: 'paroles-et-exemples-des-anciens'
-      },
-      {
         title: "La divinité de Christ face à l'islam",
         slug: 'la-divinite-de-christ-face-a-lislam',
         amazon: '3GsGiak'
+      },
+      {
+        title: 'Paroles et exemples des anciens',
+        slug: 'paroles-et-exemples-des-anciens'
       },
       {
         title: 'Le feu sacré',
@@ -112,9 +112,12 @@ export default class BookService {
   }
 
   static getDivinity(): IBook[] {
-    console.log(this.getAll().filter((book) => book.slug.includes('divinite')))
-
-    return this.getAll().filter((book) => book.slug.includes('divinite'))
+    return this.getAll().filter(
+      (book) =>
+        book.slug.includes('divinite') ||
+        book.slug.includes('catechisme') ||
+        book.slug.includes('trinity')
+    )
   }
 
   static getBySlug(slug: string): IBook[] {
