@@ -13,6 +13,10 @@ export default class WebSiteService {
   static getAll(): IWebSite[] {
     return [
       {
+        name: 'defendinginerrancy',
+        href: 'https://defendinginerrancy.com/'
+      },
+      {
         name: 'Peshitta New Testament',
         href: 'https://www.dukhrana.com/peshitta/'
       },

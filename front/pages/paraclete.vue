@@ -30,7 +30,7 @@ const debates = useState(() => DebateService.getByTopic('the-paraclet'))
   <div class="flex flex-col min-h-screen">
     <!-- header -->
     <Header />
-    <div class="mb-auto px-3 md:px-4 py-4 flex flex-col">
+    <div class="mb-auto px-3 md:px-0 py-4 flex flex-col">
       <Breadcrumb class="container mx-auto" :items="breadcrumbItems" />
 
       <!-- intro -->
