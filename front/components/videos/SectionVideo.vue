@@ -24,7 +24,7 @@
           md:gap-4
           ${keepOnGrid ? 'flex-wrap' : 'overflow-x-auto'}
           ${
-            left ? 'md:px-14 lg:px-4 xl:px-36 2xl:px-24' : 'md:justify-center'
+            left ? 'md:px-10 lg:px-0 xl:px-32 2xl:px-20' : 'md:justify-center'
           }`"
       >
         <li class="contents" v-for="(video, index) in videos" :key="index">

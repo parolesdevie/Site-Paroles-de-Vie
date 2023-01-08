@@ -30,6 +30,7 @@
     <!-- section youtube videos  -->
     <SectionVideo
       left
+      keepOnGrid
       title="Vidéos"
       class="container mx-auto mt-4 md:mt-10"
       playlistYoutubeId="PLaBmOZ7eJG-X_4RiHpVJg63snOwk5Kfcm"
