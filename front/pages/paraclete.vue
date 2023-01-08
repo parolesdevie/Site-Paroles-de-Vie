@@ -1,3 +1,31 @@
+<script setup lang="ts">
+import { DebateService } from '~~/services'
+
+useHead({
+  title: 'Le Paraclet dans la Bible - Paroles de vie',
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content:
+        'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.'
+    },
+    {
+      hid: 'og:image',
+      property: 'og:image',
+      content: 'https://www.paroles-de-vie.tk/seo/paraclet.webp'
+    },
+    {
+      hid: 'twitter:image',
+      property: 'twitter:image',
+      content: 'https://www.paroles-de-vie.tk/seo/paraclet.webp'
+    }
+  ]
+})
+
+const debates = useState(() => DebateService.getByTopic('the-paraclet'))
+</script>
+
 <template>
   <div class="flex flex-col min-h-screen">
     <!-- header -->
@@ -50,6 +78,13 @@
         </template>
       </BgColorSection>
 
+      <DebateSectionDebate
+        title="Découvrir en débats"
+        class="container mx-auto mt-4 md:mt-10"
+        :debates="debates"
+        :hideSubject="false"
+      />
+
       <!-- section youtube videos  -->
       <SectionVideo
         keepOnGrid
@@ -70,30 +105,6 @@
     <Footer class="mt-40" />
   </div>
 </template>
-
-<script setup lang="ts">
-useHead({
-  title: 'Le Paraclet dans la Bible - Paroles de vie',
-  meta: [
-    {
-      hid: 'description',
-      name: 'description',
-      content:
-        'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.'
-    },
-    {
-      hid: 'og:image',
-      property: 'og:image',
-      content: 'https://www.paroles-de-vie.tk/seo/paraclet.webp'
-    },
-    {
-      hid: 'twitter:image',
-      property: 'twitter:image',
-      content: 'https://www.paroles-de-vie.tk/seo/paraclet.webp'
-    }
-  ]
-})
-</script>
 
 <script lang="ts">
 import SectionDownloadDocumentsList from '~~/components/document/SectionDownloadDocumentsList.vue'
