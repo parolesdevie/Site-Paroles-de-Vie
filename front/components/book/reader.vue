@@ -12,11 +12,14 @@
         w-38
         md:h-[28.3125rem] md:w-80
         xl:h-[53.75rem] xl:w-152
+        flex flex-col
+        items-center
+        justify-center
       "
       id="cover"
     >
       <a
-        class="relative h-full w-full p-8 flex items-center justify-center"
+        class="contents"
         href="/sources/almanach/pdf/almanach.pdf"
         target="_blank"
         rel="noopener noreferrer"
@@ -31,11 +34,16 @@
             px-4
             md:px-6
             py-1
+            mb-2
           "
         >
           Télécharger en PDF
         </span>
       </a>
+      ou
+      <label for="c1" class="mt-2 text-orange-600 cursor-pointer">
+        Commencer à lire
+      </label>
     </div>
     <!-- Pages -->
     <div
