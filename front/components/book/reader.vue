@@ -4,6 +4,7 @@
     <input class="hidden" type="checkbox" id="c1" />
     <input class="hidden" type="checkbox" id="c2" />
     <input class="hidden" type="checkbox" id="c3" />
+    <input class="hidden" type="checkbox" id="c4" />
 
     <!-- Book Cover -->
     <div
@@ -86,6 +87,7 @@
       <!-- Page 3 -->
       <div class="flip absolute top-0 left-0 h-full w-full" id="p3">
         <div class="front">
+          <img src="/sources/almanach/images/004.jpg" />
           <label for="c3" class="absolute inset-0 cursor-pointer" />
         </div>
         <div class="back">
