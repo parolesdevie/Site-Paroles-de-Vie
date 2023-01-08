@@ -15,6 +15,8 @@
         flex flex-col
         items-center
         justify-center
+        text-xs
+        md:text-base
       "
       id="cover"
     >
