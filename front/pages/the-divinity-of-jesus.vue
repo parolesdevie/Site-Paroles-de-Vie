@@ -1,24 +1,6 @@
-<template>
-  <div>
-    <!-- breadcrumb -->
-    <Breadcrumb :items="breadcrumbItems" />
-
-    <!-- intro -->
-    <SectionIntroTopics :cover="cover">
-      <template v-slot:title>La divinité de Jésus</template>
-      <!-- <template v-slot:body> </template> -->
-    </SectionIntroTopics>
-
-    <SectionDebate
-      title="Découvrir en débats"
-      class="container mx-auto mt-4 md:mt-10"
-      :debates="debates"
-      :hideSubject="false"
-    />
-  </div>
-</template>
-
 <script setup lang="ts">
+import { BookService } from '~~/services'
+
 useHead({
   title: 'La divinité de Jésus dans la Bible - Paroles de vie',
   meta: [
@@ -40,7 +22,37 @@ useHead({
     }
   ]
 })
+
+const books = useState(() => BookService.getDivinity())
 </script>
+
+<template>
+  <div>
+    <!-- breadcrumb -->
+    <Breadcrumb :items="breadcrumbItems" />
+
+    <!-- intro -->
+    <SectionIntroTopics :cover="cover">
+      <template v-slot:title>La divinité de Jésus</template>
+      <!-- <template v-slot:body> </template> -->
+    </SectionIntroTopics>
+
+    <SectionDebate
+      title="Découvrir en débats"
+      class="container mx-auto mt-4 md:mt-10"
+      :debates="debates"
+      :hideSubject="false"
+    />
+
+    <!-- book -->
+    <BookSectionBook
+      class="container mx-auto mt-4 md:mt-10"
+      title="Acheter un livre sur le sujet"
+      :intro="false"
+      :books="books"
+    />
+  </div>
+</template>
 
 <script lang="ts">
 import SectionDebate from '~~/components/debate/SectionDebate.vue'
