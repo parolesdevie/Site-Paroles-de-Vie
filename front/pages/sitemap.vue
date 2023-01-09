@@ -9,6 +9,9 @@
             <NuxtLink to="/"> Accueil </NuxtLink>
           </li>
           <li>
+            <NuxtLink to="/live"> Direct LIVE </NuxtLink>
+          </li>
+          <li>
             <NuxtLink to="/questions-answer/"> Questions / Réponses </NuxtLink>
           </li>
           <li>
@@ -31,6 +34,9 @@
               </li>
               <li>
                 <NuxtLink to="/read-the-bible/"> Lire la bible </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/almanach/"> Almanach </NuxtLink>
               </li>
               <li>
                 <NuxtLink to="/magazines/"> Magazines </NuxtLink>
@@ -70,6 +76,11 @@
               <li>
                 <NuxtLink to="/the-divinity-of-jesus/">
                   La divinité de Jésus
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/the-messiah-of-jesus/">
+                  La messianité de Jésus
                 </NuxtLink>
               </li>
               <li>

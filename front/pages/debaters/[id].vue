@@ -27,7 +27,6 @@ const route = useRoute()
 const id = parseInt(route.params.id)
 const currentDebater = DebaterService.getById(id)
 const debates = useState(() => DebateService.getByDebaterId(id))
-console.log(debates)
 
 // const backUrl = context?.from?.path || '/'
 const { pseudo, name, religion } = currentDebater
@@ -97,10 +96,8 @@ export default defineNuxtComponent({
   data(context: any) {
     const id = parseInt(context.route.params.id)
     const currentDebater = DebaterService.getById(id)
-    const debates = DebateService.getByDebaterId(id)
+    // const debates = DebateService.getByDebaterId(id)
     const backUrl = context?.from?.path || '/'
-
-    console.log('ok', currentDebater)
 
     return {
       breadcrumbItems: [
