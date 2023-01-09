@@ -6,7 +6,7 @@ module.exports = {
     './pages/**/*.vue',
     './plugins/**/*.{js,ts}',
     './nuxt.config.{js,ts}',
-    './app.vue'
+    './error.vue'
   ],
   theme: {
     extend: {
@@ -35,7 +35,8 @@ module.exports = {
         '1/2-screen': '50vh'
       },
       animation: {
-        fade: 'fadeIn .5s ease-in-out'
+        fade: 'fadeIn .5s ease-in-out',
+        'fade-slow': 'fadeIn 1s ease-in-out'
       },
       keyframes: {
         fadeIn: {

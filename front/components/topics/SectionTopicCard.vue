@@ -42,6 +42,7 @@ const { topics, filter, filteredTopics } = useTopicList()
         rounded
         hover:bg-gray-200
         dark:hover:bg-gray-700
+        duration-300
         inline-flex
         items-center
       "

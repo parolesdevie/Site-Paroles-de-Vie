@@ -1,3 +1,28 @@
+<script setup lang="ts">
+// props
+const props = defineProps<{
+  title: {
+    type: String
+    default: 'Titre'
+  }
+  src: {
+    type: String
+    default: 'slug'
+  }
+  amazon: {
+    type: String
+    default: undefined
+  }
+}>()
+
+// computed
+const computedSrrset = computed(
+  () =>
+    `/images/book/${props.src}@1x.webp, /images/book/${props.src}@1.5x.webp 1.5x, /images/book/${props.src}@2x.webp 2x, /images/book/${props.src}@3x.webp 3x, /images/book/${props.src}@4x.webp 4x`
+)
+const computedSrc = computed(() => `/images/book/${props.src}.webp 1x`)
+</script>
+
 <template>
   <li
     v-if="src"
@@ -33,7 +58,7 @@
       target="_blank"
       rel="noopener noreferrer"
     >
-      <IconAmazon class="h-4 md:h-6" />
+      <IconsIconAmazon class="h-4 md:h-6" />
       <span class="ml-2">Acheter</span>
     </a>
 
@@ -53,39 +78,3 @@
     </span>
   </li>
 </template>
-
-<script lang="ts">
-import IconAmazon from '~~/components/icons/IconAmazon.vue'
-
-export default defineNuxtComponent({
-  name: 'CardBook',
-
-  components: { IconAmazon },
-
-  props: {
-    title: {
-      type: String,
-      default: 'Titre'
-    },
-    src: {
-      type: String,
-      default: 'slug'
-    },
-    amazon: {
-      type: String,
-      default: undefined
-    }
-  },
-
-  computed: {
-    computedSrrset() {
-      const { src } = this
-      return `/images/book/${src}@1x.webp, /images/book/${src}@1.5x.webp 1.5x, /images/book/${src}@2x.webp 2x, /images/book/${src}@3x.webp 3x, /images/book/${src}@4x.webp 4x`
-    },
-    computedSrc() {
-      const { src } = this
-      return `/images/book/${src}.webp 1x`
-    }
-  }
-})
-</script>

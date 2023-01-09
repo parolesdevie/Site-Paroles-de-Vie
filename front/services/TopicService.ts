@@ -5,22 +5,6 @@ export default class TopicService {
 
   static getAll(): ITopic[] {
     return [
-      // {
-      //   cover: {
-      //     color: '#707377',
-      //     src: 'search',
-      //   },
-      //   to: '/search/',
-      //   title: 'Recherche',
-      // },
-      // {
-      //   cover: {
-      //     color: '#538E9C',
-      //     src: 'questions-answer',
-      //   },
-      //   to: '/questions-answer/',
-      //   title: 'Tu as une questions ?',
-      // },
       {
         cover: {
           color: '#356193',
@@ -102,14 +86,6 @@ export default class TopicService {
         title: 'La parabole des vignerons'
       },
 
-      // {
-      //   cover: {
-      //     color: '#3D342E',
-      //     src: 'debates-tips',
-      //   },
-      //   to: '/debates-tips/',
-      //   title: 'Conseils de débats',
-      // },
       {
         cover: {
           color: '#8A7A6F',
@@ -134,14 +110,7 @@ export default class TopicService {
         to: '/the-crucifixion-in-the-bible/',
         title: 'La crucifixion dans la bible'
       },
-      // {
-      //   cover: {
-      //     color: '#CABA8C',
-      //     src: 'free-will',
-      //   },
-      //   to: '/free-will/',
-      //   title: 'Le libre arbitre',
-      // },
+
       {
         cover: {
           color: '#967D7A',
@@ -201,11 +170,43 @@ export default class TopicService {
       {
         cover: {
           color: '#000',
-          src: 'placeholder'
+          src: 'placeholder' // the-messiah-of-jesus
         },
         to: '/the-messiah-of-jesus/',
         title: 'La messianité de Jésus'
+      },
+      {
+        cover: {
+          color: '#3D342E',
+          src: 'placeholder' // debates-tips
+        },
+        to: '/debates-tips/',
+        title: 'Conseils de débats'
+      },
+      {
+        cover: {
+          color: '#CABA8C',
+          src: 'placeholder' // free-will
+        },
+        to: '/free-will/',
+        title: 'Le libre arbitre'
+      },
+      {
+        cover: {
+          color: '#707377',
+          src: 'placeholder' // search
+        },
+        to: '/search/',
+        title: 'Recherche'
       }
+      // {
+      //   cover: {
+      //     color: '#538E9C',
+      //     src: 'questions-answer'
+      //   },
+      //   to: '/questions-answer/',
+      //   title: 'Tu as une questions ?'
+      // }
     ]
   }
 
