@@ -197,6 +197,14 @@ export default class TopicService {
         },
         to: '/gallery/',
         title: "Galerie d'images"
+      },
+      {
+        cover: {
+          color: '#000',
+          src: 'placeholder'
+        },
+        to: '/the-messiah-of-jesus/',
+        title: 'La messianité de Jésus'
       }
     ]
   }

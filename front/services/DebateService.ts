@@ -322,6 +322,111 @@ export default class DebateService {
         ],
         mediator: DebaterService.getByPseudo('Said Oujibou'),
         plateform: DebatPlateformEnum.YOUTUBE
+      },
+      {
+        topic: 'the-messiah-of-jesus',
+        date: '23/05/2022',
+        url: 'https://youtu.be/lemQfH9LNBc',
+        subject:
+          'Débat interreligieux (chrétien - juif) Remi Gomez vs Moshe Louzon - Almah, vierge ou pas ?',
+        debaters: [
+          { ...DebaterService.getByPseudo('Remi Gomez'), team: 0 },
+          { ...DebaterService.getByPseudo('jplt'), team: 1 }
+        ],
+        mediator: DebaterService.getByPseudo(undefined),
+        plateform: DebatPlateformEnum.YOUTUBE
+      },
+      {
+        topic: 'the-messiah-of-jesus',
+        date: '17/02/2021',
+        url: 'https://youtu.be/znkwFUTw8Fw',
+        subject:
+          'Débat interreligieux (chrétien - juif) Remi Gomez vs Moshe Louzon - la Tribu par le père',
+        debaters: [
+          { ...DebaterService.getByPseudo('Remi Gomez'), team: 0 },
+          { ...DebaterService.getByPseudo('jplt'), team: 1 }
+        ],
+        mediator: DebaterService.getByPseudo(undefined),
+        plateform: DebatPlateformEnum.YOUTUBE
+      },
+      {
+        topic: 'the-messiah-of-jesus',
+        date: '08/12/2020',
+        url: 'https://youtu.be/YB2RVKyymeQ',
+        subject:
+          "DEBAT // Remi vs Moshe Louzon // Jésus est-il le Messie annoncé dans l'Ancien Testament ?",
+        debaters: [
+          { ...DebaterService.getByPseudo('Remi Gomez'), team: 0 },
+          { ...DebaterService.getByPseudo('jplt'), team: 1 }
+        ],
+        mediator: DebaterService.getByPseudo(undefined),
+        plateform: DebatPlateformEnum.YOUTUBE
+      },
+      {
+        topic: 'the-divinity-of-jesus',
+        date: '12/12/2020',
+        url: 'https://youtu.be/eNix2Gm2BLM',
+        subject: 'JESUS EST-IL DIEU? DEBAT COLLECTIF AL HANIFIYYAH VS APOLOGIA',
+        debaters: [
+          { ...DebaterService.getByPseudo('Remi Gomez'), team: 0 },
+          { ...DebaterService.getByPseudo('Yamad Al Hanifi'), team: 1 },
+          { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 },
+          { ...DebaterService.getByPseudo('Ayman'), team: 1 }
+        ],
+        mediator: DebaterService.getByPseudo('Joêl Thibault et Jacques Faty'),
+        plateform: DebatPlateformEnum.YOUTUBE
+      },
+      {
+        topic: 'the-divinity-of-jesus',
+        date: '12/12/2020',
+        url: 'https://youtu.be/B5nUNrJtnoc',
+        subject: 'DEBAT // Collectif APOLOGIA vs COLLECTIF HANIFIYYAH',
+        debaters: [
+          { ...DebaterService.getByPseudo('Remi Gomez'), team: 0 },
+          { ...DebaterService.getByPseudo('Yamad Al Hanifi'), team: 1 },
+          { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 },
+          { ...DebaterService.getByPseudo('Ayman'), team: 1 }
+        ],
+        mediator: DebaterService.getByPseudo('Joêl Thibault et Jacques Faty'),
+        plateform: DebatPlateformEnum.YOUTUBE
+      },
+      {
+        topic: 'christology',
+        date: '25/08/2019',
+        url: 'https://youtu.be/HrKy8oxdzPs',
+        subject: '/// Debat intra-religieux // Modalisme vs Trinite',
+        debaters: [
+          { ...DebaterService.getByPseudo('Olivier Imbernon'), team: 0 },
+          { ...DebaterService.getByPseudo('Samy de Christ'), team: 1 }
+        ],
+        mediator: DebaterService.getByPseudo('Remi Gomez'),
+        plateform: DebatPlateformEnum.YOUTUBE
+      },
+      {
+        topic: 'purgatory',
+        date: '08/05/2019',
+        url: 'https://youtu.be/HrKy8oxdzPs',
+        subject:
+          'APOLOGIA [02] // FAUT-IL CROIRE AU PURGATOIRE ? // Rémi GOMEZ VS Abbé Guy PAGES',
+        debaters: [
+          { ...DebaterService.getByPseudo('Remi Gomez'), team: 0 },
+          { ...DebaterService.getByPseudo('Guy Pages'), team: 1 }
+        ],
+        mediator: DebaterService.getByPseudo(undefined),
+        plateform: DebatPlateformEnum.YOUTUBE
+      },
+      {
+        topic: 'the-crucifixion-in-the-bible',
+        date: '24/04/2019',
+        url: 'https://youtu.be/vX6NAvdCRvA',
+        subject:
+          'APOLOGIA [01] // JESUS EST-IL MORT A LA CROIX?// Rémi GOMEZ VS Nasseer Ahmed SHAHID',
+        debaters: [
+          { ...DebaterService.getByPseudo('Remi Gomez'), team: 0 },
+          { ...DebaterService.getByPseudo('Nasseer Ahmed Saïd'), team: 1 }
+        ],
+        mediator: DebaterService.getByPseudo('Joêl Thibault'),
+        plateform: DebatPlateformEnum.YOUTUBE
       }
     ]
   }

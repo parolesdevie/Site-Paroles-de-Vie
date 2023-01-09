@@ -184,6 +184,36 @@ export default class DebaterService {
         pseudo: 'Cheikh Adam',
         name: 'Cheikh Adam',
         religion: DebatReligionEnum.MUSLIM
+      },
+      {
+        id: 30,
+        pseudo: 'jplt',
+        name: 'Moshe Louzon',
+        religion: DebatReligionEnum.JEWISH
+      },
+      {
+        id: 31,
+        pseudo: 'Remi Gomez',
+        name: 'Remi Gomez',
+        religion: DebatReligionEnum.CHRISTIAN
+      },
+      {
+        id: 32,
+        pseudo: 'Yamad Al Hanifi',
+        name: 'Yamad Al Hanifi',
+        religion: DebatReligionEnum.MUSLIM
+      },
+      {
+        id: 33,
+        pseudo: 'Olivier Imbernon',
+        name: 'Olivier Imbernon',
+        religion: DebatReligionEnum.CHRISTIAN
+      },
+      {
+        id: 33,
+        pseudo: 'Samy de Christ',
+        name: 'Samy de Christ',
+        religion: DebatReligionEnum.CHRISTIAN
       }
     ]
   }
