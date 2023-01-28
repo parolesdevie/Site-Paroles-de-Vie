@@ -58,6 +58,15 @@ export default class MenuService {
     ]
   }
 
+  static getInstagramMenu(): IWebSite[] {
+    return [
+      {
+        href: 'https://www.instagram.com/chaine.coliseum/',
+        name: 'Compte Coliseum'
+      }
+    ]
+  }
+
   static getPodcastMenu(): IWebSite[] {
     return [
       {

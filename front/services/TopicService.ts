@@ -15,6 +15,14 @@ export default class TopicService {
       },
       {
         cover: {
+          color: '#8E7B6E',
+          src: 'stories'
+        },
+        to: '/stories/',
+        title: 'Stories'
+      },
+      {
+        cover: {
           color: '#68513A',
           src: 'almanach'
         },

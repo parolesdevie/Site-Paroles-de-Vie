@@ -195,6 +195,47 @@
         </nav>
       </div>
 
+      <!-- instagram -->
+      <div class="flex flex-col mb-4" v-if="linksMenuInstagram.length">
+        <div
+          class="
+            font-bold
+            text-sm
+            md:text-lg
+            text-gray-300
+            uppercase
+            flex
+            items-center
+          "
+        >
+          <IconsIconInstagram class="h-4" />
+          <strong class="ml-2">Instagram</strong>
+        </div>
+
+        <nav class="contents">
+          <ul class="mt-2 md:mt-4 text-gray-400 flex flex-wrap flex-col gap-2">
+            <li v-for="(link, index) in linksMenuInstagram" :key="index">
+              <a
+                class="
+                  flex
+                  items-center
+                  hover:text-blue-500
+                  text-xs
+                  md:text-base
+                "
+                :href="link.href"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>
+                  {{ link.name }}
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
       <!-- podcast -->
       <div class="flex flex-col mb-4" v-if="linksMenuPodcast.length">
         <div
@@ -270,6 +311,7 @@ export default defineNuxtComponent({
       ],
       linksMenuDiscord: MenuService.getDiscordMenu(),
       linksMenuTikTok: MenuService.getTikTokMenu(),
+      linksMenuInstagram: MenuService.getInstagramMenu(),
       linksMenuPodcast: MenuService.getPodcastMenu(),
       scTimer: 0,
       scY: 0

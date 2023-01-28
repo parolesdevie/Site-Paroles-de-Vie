@@ -3,7 +3,7 @@ const { topics, filter, filteredTopics } = useTopicList()
 </script>
 
 <template>
-  <section>
+  <section class="pb-20 md:pb-10 lg:pb-0">
     <!-- title -->
     <H2Title>{{ title }}</H2Title>
 
@@ -21,6 +21,8 @@ const { topics, filter, filteredTopics } = useTopicList()
         xl:gap-6
         px-3
         md:px-5
+        lg:px-4
+        2xl:px-5
       "
     >
       <TopicsTopicCard

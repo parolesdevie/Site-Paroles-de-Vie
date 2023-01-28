@@ -43,6 +43,10 @@ module.exports = {
           '0%': { opacity: 0 },
           '100%': { opacity: 1 }
         }
+      },
+      flex: {
+        2: '2 2 0%',
+        3: '3 3 0%'
       }
     }
   },
