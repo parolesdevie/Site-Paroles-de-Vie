@@ -38,18 +38,22 @@ const stories = useState(() => StoriesService.getAll())
 
     <ul class="mt-4 md:mt-10 flex gap-2">
       <li
+        class="flex flex-col justify-center items-center"
         tabindex="0"
-        class="h-20 w-20 rounded-full cursor-pointer"
-        :style="{ backgroundColor: '#CDA625' }"
         v-for="i in 1"
         :key="i"
         @click="handleOpenEvent"
       >
-        <img
-          class="h-20 w-20 rounded-full animate-fade"
-          src="/images/stories/paraclet/Paraclet.jpg"
-          alt=""
-        />
+        <div class="cursor-pointer border-2 border-gray-700 rounded-full p-1">
+          <div class="rounded-full" :style="{ backgroundColor: '#CDA625' }">
+            <img
+              class="h-20 w-20 rounded-full animate-fade"
+              src="/images/stories/paraclet/Paraclet.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <p class="mt-3 font-semibold">Le Paraclet</p>
       </li>
     </ul>
   </div>
