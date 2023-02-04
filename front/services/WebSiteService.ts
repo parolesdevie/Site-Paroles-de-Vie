@@ -160,6 +160,14 @@ export default class WebSiteService {
   static getYoutubeChannels(): IWebSite[] {
     return [
       {
+        name: 'Paroles de vie',
+        href: 'https://www.youtube.com/@paroles-de-vie'
+      },
+      {
+        name: 'Coliseum',
+        href: 'https://www.youtube.com/@chaine-coliseum'
+      },
+      {
         name: 'DBK Infinite',
         href: 'https://www.youtube.com/@dbkinfinite'
       },
@@ -178,14 +186,6 @@ export default class WebSiteService {
       {
         name: 'YESHUA MALAK',
         href: 'https://www.youtube.com/@yeshuamalak3706'
-      },
-      {
-        name: 'Coliseum',
-        href: 'https://www.youtube.com/@chaine-coliseum'
-      },
-      {
-        name: 'Paroles de vie',
-        href: 'https://www.youtube.com/@paroles-de-vie'
       },
       {
         name: 'CSNTM Productions',
