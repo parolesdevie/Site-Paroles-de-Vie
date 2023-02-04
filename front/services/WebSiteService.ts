@@ -184,6 +184,10 @@ export default class WebSiteService {
         href: 'https://www.youtube.com/@chaine-coliseum'
       },
       {
+        name: 'Paroles de vie',
+        href: 'https://www.youtube.com/@paroles-de-vie'
+      },
+      {
         name: 'CSNTM Productions',
         href: 'https://www.youtube.com/@CSNTMProductions'
       },

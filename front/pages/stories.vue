@@ -32,17 +32,26 @@ const stories = useState(() => StoriesService.getAll())
     <Breadcrumb :items="breadcrumbItems" />
 
     <!-- story -->
-    <div v-show="open" class="fixed inset-0">
-      <StoriesSlideShow @close="handleCloseEvent" />
+    <div v-if="currentStory" class="fixed inset-0">
+      <StoriesSlideShow @close="handleCloseEvent" :story="currentStory" />
     </div>
 
-    <ul class="mt-4 md:mt-10 flex gap-2">
+    <ul class="mt-4 md:mt-10 flex">
       <li
-        class="flex flex-col justify-center items-center cursor-pointer"
+        class="
+          w-32
+          flex flex-col
+          items-center
+          gap-2
+          cursor-pointer
+          rounded-xl
+          p-4
+        "
         tabindex="0"
-        v-for="i in 1"
-        :key="i"
-        @click="handleOpenEvent"
+        @keydown.esc="handleOpenEvent(undefined)"
+        v-for="(story, index) in stories"
+        :key="index"
+        @click="handleOpenEvent(story)"
       >
         <div
           class="border-2 border-gray-200 dark:border-gray-700 rounded-full p-1"
@@ -50,12 +59,14 @@ const stories = useState(() => StoriesService.getAll())
           <div class="rounded-full" :style="{ backgroundColor: '#CDA625' }">
             <img
               class="h-20 w-20 rounded-full animate-fade"
-              src="/images/stories/paraclet/Paraclet.jpg"
-              alt="story"
+              :src="`/images/stories/${story.slug}/cover.jpg`"
+              :alt="story.alt"
             />
           </div>
         </div>
-        <p class="mt-3 font-medium">Le Paraclet</p>
+        <p class="mt-3 font-medium text-center">
+          {{ story.title }}
+        </p>
       </li>
     </ul>
   </div>
@@ -83,19 +94,22 @@ export default defineNuxtComponent({
           to: '/stories/'
         }
       ],
-      open: false,
+      currentStory: undefined,
+      // open: false,
       cover: TopicService.getBySlug('/stories/')?.cover,
       debates: DebateService.getByTopic('stories')
     }
   },
 
   methods: {
-    handleOpenEvent() {
-      this.open = true
+    handleOpenEvent(story) {
+      this.currentStory = story
+      // this.open = true
     },
 
     handleCloseEvent() {
-      this.open = false
+      this.currentStory = undefined
+      // this.open = false
     }
   }
 })

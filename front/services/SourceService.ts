@@ -28,7 +28,20 @@ export default class SourceService {
             formats: [FormatEnum.PDF],
             href: '/debats/2023/05-01-paraclet/le-paraclet-23.06.01.pdf',
             thumbnail: '/debats/2023/05-01-paraclet/le-paraclet-23.06.01.png',
-            title: 'Le PDF de réfutation (version 23.06.01)'
+            title: 'Le PDF de réfutation (version 23.01.06)'
+          },
+          {
+            formats: [FormatEnum.PDF],
+            href: '/debats/2023/05-01-paraclet/le-paraclet-23-02-04.pdf',
+            thumbnail: '/debats/2023/05-01-paraclet/le-paraclet-23.06.01.png',
+            title: 'Le PDF de réfutation (version 23.02.04)'
+          },
+          {
+            formats: [FormatEnum.PDF],
+            href: '/debats/2023/05-01-paraclet/le-paraclet-power-point.pdf',
+            thumbnail:
+              '/debats/2023/05-01-paraclet/le-paraclet-power-point.png',
+            title: 'Le Power Point de réfutation (version 23.02.04)'
           },
           {
             formats: [FormatEnum.WEBP],

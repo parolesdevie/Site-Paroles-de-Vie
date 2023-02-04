@@ -1,5 +1,9 @@
 <template>
-  <div class="h-screen bg-black bg-opacity-60 flex justify-center items-center">
+  <div
+    tabindex="0"
+    @keydown.esc="emitCloseEvent"
+    class="h-screen bg-black bg-opacity-60 flex justify-center items-center"
+  >
     <div class="relative">
       <!-- header -->
       <header class="absolute top-0 inset-x-0 p-4 flex">
@@ -31,8 +35,21 @@
             :key="i"
           />
         </ul>
-        <div class="absolute top-8 right-4 text-black font-bold">
-          {{ currentIndex + 1 }}/{{ imagesCount }}
+        <div class="absolute top-8 right-4 font-bold flex">
+          <a
+            class="flex justify-center items-center text-blue-500"
+            :href="`/images/stories/${story.slug}/${story.slug}.zip`"
+            rel="noopener noreferrer"
+            :download="`/images/stories/${story.slug}/${story.slug}.zip`"
+          >
+            <IconsIconDownload
+              class="mr-2 h-4 w-4 md:h-5 md:w-5 flex-shrink-0"
+            />
+            Télécharger
+          </a>
+          <span class="ml-2 text-black">
+            {{ currentIndex + 1 }}/{{ imagesCount }}
+          </span>
         </div>
       </header>
 
@@ -85,6 +102,13 @@
 
 <script lang="ts">
 export default {
+  props: {
+    story: {
+      type: Object,
+      default: undefined
+    }
+  },
+
   data() {
     return {
       currentImage: null as String | null,
@@ -94,15 +118,32 @@ export default {
     }
   },
 
-  created() {
+  mounted() {
+    console.log('mounted')
+    console.log(this.story)
     this.loadImages()
   },
 
+  // watch: {
+  //   story: {
+  //     immediate: true,
+  //     handler(newValue, oldValue) {
+  //       console.log('newValue', newValue)
+  //       console.log('oldValue', oldValue)
+  //       this.currentIndex = 0
+  //       this.imagesCount = 0
+  //     }
+  //   }
+  // },
+
+  created() {},
+
   methods: {
     async loadImages() {
+      const { slug, imgSlug, stroriesCount } = this.story
       const images = []
-      for (let i = 1; i <= 103; i++) {
-        images.push(`/images/stories/paraclet/Paraclet – ${i}.jpg`)
+      for (let i = 1; i <= stroriesCount; i++) {
+        images.push(`/images/stories/${slug}/${imgSlug}${i}.jpg`)
       }
 
       this.images = images
