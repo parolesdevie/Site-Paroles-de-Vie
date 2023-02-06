@@ -4,6 +4,16 @@ export default class PdfService {
   static getAll(): IPdf[] {
     return [
       {
+        tags: [
+          AuthorTeamEnum.COLISEUM,
+          AuthorEnum.BENEVOLENCE,
+          ThemeEnum.DILEMME
+        ],
+        author: AuthorEnum.BENEVOLENCE,
+        slug: 'dilemme-de-l-adultere',
+        title: "Dilemme de l'adultère"
+      },
+      {
         tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JMS, ThemeEnum.REFUTATION],
         author: AuthorEnum.JMS,
         slug: 'genese-17-20-vs-genese-suna',
