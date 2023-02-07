@@ -10,6 +10,16 @@ export default class PdfService {
           ThemeEnum.DILEMME
         ],
         author: AuthorEnum.BENEVOLENCE,
+        slug: 'le-dilemme-de-la-crucifixion',
+        title: 'Le dilemme de la Crucifixion'
+      },
+      {
+        tags: [
+          AuthorTeamEnum.COLISEUM,
+          AuthorEnum.BENEVOLENCE,
+          ThemeEnum.DILEMME
+        ],
+        author: AuthorEnum.BENEVOLENCE,
         slug: 'dilemme-du-paradis',
         title: 'Le dilemme du Paradis'
       },
