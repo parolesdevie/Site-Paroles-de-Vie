@@ -10,8 +10,18 @@ export default class PdfService {
           ThemeEnum.DILEMME
         ],
         author: AuthorEnum.BENEVOLENCE,
+        slug: 'dilemme-du-paradis',
+        title: 'Le dilemme du Paradis'
+      },
+      {
+        tags: [
+          AuthorTeamEnum.COLISEUM,
+          AuthorEnum.BENEVOLENCE,
+          ThemeEnum.DILEMME
+        ],
+        author: AuthorEnum.BENEVOLENCE,
         slug: 'dilemme-de-l-adultere',
-        title: "Dilemme de l'adultère"
+        title: "Le dilemme de l'adultère"
       },
       {
         tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JMS, ThemeEnum.REFUTATION],
