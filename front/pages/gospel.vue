@@ -1,3 +1,27 @@
+<script setup lang="ts">
+useHead({
+  title: 'Louanges - Paroles de vie',
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content:
+        'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.'
+    },
+    {
+      hid: 'og:image',
+      property: 'og:image',
+      content: 'https://www.paroles-de-vie.tk/seo/gospel.webp'
+    },
+    {
+      hid: 'twitter:image',
+      property: 'twitter:image',
+      content: 'https://www.paroles-de-vie.tk/seo/gospel.webp'
+    }
+  ]
+})
+</script>
+
 <template>
   <div>
     <!-- breadcrumb -->
@@ -89,37 +113,19 @@
     <SectionVideo
       left
       class="container mx-auto mt-4 md:mt-10"
+      title="Croisade"
+      playlistYoutubeId="PLaBmOZ7eJG-V5xJQQi8kIjZHWEn8L83jQ"
+      :videos="videos.crusade"
+    />
+    <SectionVideo
+      left
+      class="container mx-auto mt-4 md:mt-10"
       title="Autres"
       playlistYoutubeId="PLaBmOZ7eJG-WygTHv8Wn4kTfUASMY_gKk"
       :videos="videos.others"
     />
   </div>
 </template>
-
-
-<script setup lang="ts">
-useHead({
-  title: 'Louanges - Paroles de vie',
-  meta: [
-    {
-      hid: 'description',
-      name: 'description',
-      content:
-        'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.'
-    },
-    {
-      hid: 'og:image',
-      property: 'og:image',
-      content: 'https://www.paroles-de-vie.tk/seo/gospel.webp'
-    },
-    {
-      hid: 'twitter:image',
-      property: 'twitter:image',
-      content: 'https://www.paroles-de-vie.tk/seo/gospel.webp'
-    }
-  ]
-})
-</script>
 
 <script lang="ts">
 import SectionIntroTopics from '~~/components/topics/SectionIntroTopics.vue'
@@ -165,6 +171,7 @@ export default defineNuxtComponent({
           GospelCategoryEnum.PROTESTANT_SONGS
         ),
         modern: GospelService.getByCategory(GospelCategoryEnum.MODERN),
+        crusade: GospelService.getByCategory(GospelCategoryEnum.CRUSADE),
         others: GospelService.getByCategory(GospelCategoryEnum.OTHERS)
       }
     }

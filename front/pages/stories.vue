@@ -56,7 +56,7 @@ const stories = useState(() => StoriesService.getAll())
         <div
           class="border-2 border-gray-200 dark:border-gray-700 rounded-full p-1"
         >
-          <div class="rounded-full" :style="{ backgroundColor: '#CDA625' }">
+          <div class="rounded-full" :style="{ backgroundColor: story.color }">
             <img
               class="h-20 w-20 rounded-full animate-fade"
               :src="`/images/stories/${story.slug}/cover.jpg`"
