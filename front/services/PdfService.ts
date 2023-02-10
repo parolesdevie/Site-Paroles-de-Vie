@@ -10,6 +10,16 @@ export default class PdfService {
           ThemeEnum.DILEMME
         ],
         author: AuthorEnum.BENEVOLENCE,
+        slug: 'le-dilemme-du-bapteme',
+        title: 'Le dilemme du Baptême'
+      },
+      {
+        tags: [
+          AuthorTeamEnum.COLISEUM,
+          AuthorEnum.BENEVOLENCE,
+          ThemeEnum.DILEMME
+        ],
+        author: AuthorEnum.BENEVOLENCE,
         slug: 'le-dilemme-de-l-eucharistie',
         title: 'Le dilemme de l’Eucharistie'
       },
@@ -54,24 +64,6 @@ export default class PdfService {
         title: "Le dilemme de l'adultère"
       },
       {
-        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JMS, ThemeEnum.REFUTATION],
-        author: AuthorEnum.JMS,
-        slug: 'genese-17-20-vs-genese-suna',
-        title: 'GENESE 17 :20 VS GENESE DE LA SUNNA ISLAMIQUE'
-      },
-      {
-        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JOZUA],
-        author: AuthorEnum.JOZUA,
-        slug: 'colonialisme',
-        title: 'Colonialisme'
-      },
-      {
-        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JOZUA],
-        author: AuthorEnum.JOZUA,
-        slug: 'l-islam-est-le plagiat-d-autres-religions',
-        title: 'L’islam est le plagiat d’autres religions'
-      },
-      {
         tags: [
           AuthorTeamEnum.COLISEUM,
           AuthorEnum.BENEVOLENCE,
@@ -80,6 +72,12 @@ export default class PdfService {
         slug: 'le-paraclet',
         author: AuthorEnum.BENEVOLENCE,
         title: 'Le Paraclet'
+      },
+      {
+        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JMS, ThemeEnum.REFUTATION],
+        author: AuthorEnum.JMS,
+        slug: 'genese-17-20-vs-genese-suna',
+        title: 'GENESE 17 :20 VS GENESE DE LA SUNNA ISLAMIQUE'
       },
       {
         tags: [
@@ -120,6 +118,18 @@ export default class PdfService {
         slug: 'le-monotheisme-des-patriarches',
         author: AuthorEnum.FIDELIS_AND_VERAX,
         title: 'Le monothéisme des Patriarches'
+      },
+      {
+        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JOZUA],
+        author: AuthorEnum.JOZUA,
+        slug: 'l-islam-est-le plagiat-d-autres-religions',
+        title: 'L’islam est le plagiat d’autres religions'
+      },
+      {
+        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JOZUA],
+        author: AuthorEnum.JOZUA,
+        slug: 'colonialisme',
+        title: 'Colonialisme'
       },
       {
         tags: [AuthorEnum.JOZUA],
