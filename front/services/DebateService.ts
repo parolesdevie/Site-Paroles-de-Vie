@@ -8,8 +8,23 @@ export default class DebateService {
     return [
       {
         topic: 'the-paraclet',
+        date: '30/01/2023', // date aproximative
+        url: 'https://youtu.be/YOckPkg8Km4',
+        subject:
+          "Qui est le paraclet annoncé par Jésus dans son discours d'adieux dans le corpus johannique ?",
+        debaters: [
+          { ...DebaterService.getByPseudo('Bénévolence'), team: 0 },
+          {
+            ...DebaterService.getByPseudo("Les élèves d'Abdoul Madjid"),
+            team: 1
+          }
+        ],
+        plateform: DebatPlateformEnum.YOUTUBE
+      },
+      {
+        topic: 'the-paraclet',
         date: '05/01/2023',
-        url: 'https://youtu.be/y9u3QimaTls',
+        url: 'https://youtu.be/tyI_g0RL4FQ',
         subject:
           "Qui est le paraclet annoncé par Jésus dans son discours d'adieux dans le corpus johannique ?",
         debaters: [

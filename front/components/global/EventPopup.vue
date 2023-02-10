@@ -41,7 +41,7 @@ useHead({
   <div
     v-show="
       !$route.path.startsWith('/live') &&
-      !$route.path.startsWith('/debat-paraclet') &&
+      !$route.path.startsWith('/debat-sujet') &&
       open &&
       Date.now() < end.getTime()
     "
@@ -78,15 +78,15 @@ useHead({
       <template v-if="!isNow">
         <CountDown class="mt-10" :date="eventDate" @onFinish="finish()" />
 
-        <p class="mt-10 text-sm">Débat <strong>Paraclet</strong></p>
+        <p class="mt-10 text-sm">Débat <strong>Sujet</strong></p>
         <p>
           Débatteurs
-          <NuxtLink @click="open = false" class="underline" to="/debaters/10">
-            Paroles de vie
+          <NuxtLink @click="open = false" class="underline" to="/debaters/0">
+            Débatteur 1
           </NuxtLink>
           vs
-          <NuxtLink @click="open = false" class="underline" to="/debaters/29">
-            Cheikh Adam
+          <NuxtLink @click="open = false" class="underline" to="/debaters/0">
+            Débatteur 2
           </NuxtLink>
         </p>
       </template>
@@ -108,7 +108,7 @@ useHead({
             flex
             items-center
           "
-          href="https://www.tiktok.com/@paroles.de.vie/live"
+          href="https://www.tiktok.com/@paroles.de.vie.2/live"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -136,7 +136,7 @@ useHead({
         </NuxtLink>
       </div>
 
-      <NuxtLink @click="open = false" class="contents" to="/debat-paraclet/">
+      <NuxtLink @click="open = false" class="contents" to="/debat-sujet/">
         <div
           class="
             mt-10

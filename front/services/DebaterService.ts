@@ -214,6 +214,12 @@ export default class DebaterService {
         pseudo: 'Samy de Christ',
         name: 'Samy de Christ',
         religion: DebatReligionEnum.CHRISTIAN
+      },
+      {
+        id: 34,
+        pseudo: "Les élèves d'Abdoul Madjid",
+        name: "Les élèves d'Abdoul Madjid",
+        religion: DebatReligionEnum.MUSLIM
       }
     ]
   }
