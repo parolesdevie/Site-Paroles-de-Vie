@@ -79,12 +79,14 @@ useHead({
     {
       hid: 'og:image',
       property: 'og:image',
-      content: 'https://www.paroles-de-vie.tk/seo/books.webp'
+      content:
+        'https://www.paroles-de-vie.tk/seo/the-parable-of-the-winegrowers.webp'
     },
     {
       hid: 'twitter:image',
       property: 'twitter:image',
-      content: 'https://www.paroles-de-vie.tk/seo/books.webp'
+      content:
+        'https://www.paroles-de-vie.tk/seo/the-parable-of-the-winegrowers.webp'
     }
   ]
 })
