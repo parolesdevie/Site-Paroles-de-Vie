@@ -177,6 +177,14 @@ export default class TopicService {
       },
       {
         cover: {
+          color: '#514A3C',
+          src: 'coliseum'
+        },
+        to: '/coliseum/',
+        title: 'Coliseum'
+      },
+      {
+        cover: {
           color: '#000',
           src: 'placeholder' // the-messiah-of-jesus
         },
