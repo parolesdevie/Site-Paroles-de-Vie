@@ -61,6 +61,7 @@ export enum GospelCategoryEnum {
   JEWISH_SONGS = 'Chants juifs',
   PROTESTANT_SONGS = 'Chants protestants',
   MODERN = 'Moderne',
+  CRUSADE = 'Croisade',
   OTHERS = 'Autre'
 }
 
@@ -77,7 +78,8 @@ export interface IVideoLink {
 export enum ThemeEnum {
   THEOLOGY = 'theology',
   REFUTATION = 'refutation',
-  HERETIC_THESIS = 'heretic thesis'
+  HERETIC_THESIS = 'heretic thesis',
+  DILEMME = 'Dilemme'
 }
 
 export enum AuthorEnum {
@@ -91,7 +93,8 @@ export enum AuthorEnum {
   QALEV = 'qalev',
   SAVED_BY_CHRIST = 'saved-by-christ',
   PROTOCOLE = 'protocole',
-  DEMS = 'dems'
+  DEMS = 'dems',
+  GZN = 'gzn'
 }
 
 export enum AuthorTeamEnum {
