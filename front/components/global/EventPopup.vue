@@ -1,6 +1,6 @@
 <script setup lang="ts">
-const EVENT_DATE = new Date('2023-01-05T20:00:00')
-const END_DATE = new Date('2023-01-05T21:30:00')
+const EVENT_DATE = new Date('2023-03-01T20:00:00')
+const END_DATE = new Date('2023-03-01T21:30:00')
 
 const open = useState('open', () => true)
 const isNow = useState(
@@ -41,33 +41,15 @@ useHead({
   <div
     v-show="
       !$route.path.startsWith('/live') &&
-      !$route.path.startsWith('/debat-sujet') &&
+      !$route.path.startsWith('/debat-paraclet') &&
       open &&
       Date.now() < end.getTime()
     "
     @click.self="open = false"
-    class="
-      fixed
-      inset-0
-      bg-black bg-opacity-60
-      flex
-      items-start
-      justify-center
-      p-10
-    "
+    class="fixed inset-0 bg-black bg-opacity-60 flex items-start justify-center p-10"
   >
     <div
-      class="
-        relative
-        w-full
-        max-w-sm
-        bg-white
-        dark:bg-light-black
-        rounded-xl
-        p-4
-        flex flex-col
-        shadow-2xl
-      "
+      class="relative w-full max-w-sm bg-white dark:bg-light-black rounded-xl p-4 flex flex-col shadow-2xl"
     >
       <IconsIconTimes
         @click="open = false"
@@ -81,11 +63,11 @@ useHead({
         <p class="mt-10 text-sm">Débat <strong>Sujet</strong></p>
         <p>
           Débatteurs
-          <NuxtLink @click="open = false" class="underline" to="/debaters/0">
+          <NuxtLink @click="open = false" class="underline" to="/debaters/10">
             Débatteur 1
           </NuxtLink>
           vs
-          <NuxtLink @click="open = false" class="underline" to="/debaters/0">
+          <NuxtLink @click="open = false" class="underline" to="/debaters/9">
             Débatteur 2
           </NuxtLink>
         </p>
@@ -95,19 +77,7 @@ useHead({
         <!-- tiktok -->
         <a
           v-show="isNow"
-          class="
-            border border-black
-            dark:border-white
-            hover:bg-light-black
-            dark:hover:bg-white
-            hover:text-white
-            dark:hover:text-light-black
-            rounded
-            py-2
-            px-4
-            flex
-            items-center
-          "
+          class="border border-black dark:border-white hover:bg-light-black dark:hover:bg-white hover:text-white dark:hover:text-light-black rounded py-2 px-4 flex items-center"
           href="https://www.tiktok.com/@paroles.de.vie.2/live"
           target="_blank"
           rel="noopener noreferrer"
@@ -117,20 +87,8 @@ useHead({
         </a>
         <NuxtLink
           @click="open = false"
-          class="
-            border border-black
-            dark:border-white
-            hover:bg-light-black
-            dark:hover:bg-white
-            hover:text-white
-            dark:hover:text-light-black
-            rounded
-            py-2
-            px-4
-            text-xs
-            md:text-base
-          "
-          to="/debat-paraclet/"
+          class="border border-black dark:border-white hover:bg-light-black dark:hover:bg-white hover:text-white dark:hover:text-light-black rounded py-2 px-4 text-xs md:text-base"
+          to="/debat-paraclet-01-03-2023/"
         >
           Découvrir
         </NuxtLink>
@@ -138,18 +96,11 @@ useHead({
 
       <NuxtLink @click="open = false" class="contents" to="/debat-sujet/">
         <div
-          class="
-            mt-10
-            bg-white
-            dark:bg-black dark:bg-opacity-20
-            shadow-inner
-            flex-1
-            rounded-lg
-          "
+          class="mt-10 bg-white dark:bg-black dark:bg-opacity-20 shadow-inner flex-1 rounded-lg"
         >
           <img
             class="rounded-lg"
-            src="/images/events/2023-01-05T12-00-00@4x.webp"
+            src="/images/events/2023-03-01T12-00-00@4x.webp"
             alt="affiche débat"
           />
         </div>

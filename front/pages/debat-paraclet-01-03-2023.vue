@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import SourceService from '~~/services/SourceService'
-const end = useState('end', () => new Date('2023-01-05T20:00:00'))
+const end = useState('end', () => new Date('2023-03-01T20:00:00'))
 const hidde = useState('hidde', () => true)
 
 function finish() {
@@ -29,7 +29,7 @@ useHead({
   ]
 })
 
-const id = useState('id', () => 'y9u3QimaTls')
+const id = useState('id', () => 'h_15wSEgfMQ')
 const resources = useState(() => SourceService.getByDebat('paraclet'))
 </script>
 
@@ -39,30 +39,11 @@ const resources = useState(() => SourceService.getByDebat('paraclet'))
     <Breadcrumb :items="breadcrumbItems" />
 
     <div
-      class="
-        mt-4
-        md:mt-10
-        h-56
-        md:h-160
-        lg:h-190
-        w-full
-        rounded-3xl
-        overflow-hidden
-        flex
-      "
+      class="mt-4 md:mt-10 h-56 md:h-160 lg:h-190 w-full rounded-3xl overflow-hidden flex"
     >
       <div class="relative flex-1">
         <div
-          class="
-            absolute
-            inset-0
-            bg-black bg-opacity-90
-            hover:bg-opacity-100
-            duration-500
-            flex flex-col
-            items-center
-            justify-center
-          "
+          class="absolute inset-0 bg-black bg-opacity-90 hover:bg-opacity-100 duration-500 flex flex-col items-center justify-center"
           v-if="hidde"
         >
           <span class="text-xl">LIVE disponible dans</span>
@@ -131,7 +112,7 @@ export default defineNuxtComponent({
         },
         {
           name: 'Qui est le paraclet annoncé par Jésus ?',
-          to: '/debat-paraclet/'
+          to: '/debat-paraclet-05-01-2023/'
         }
       ],
       API_ENDPOINT: 'http://localhost:8080' || 'http://178.170.13.79:8081'
