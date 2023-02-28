@@ -1,6 +1,6 @@
 <script setup lang="ts">
-const EVENT_DATE = new Date('2023-03-01T20:00:00')
-const END_DATE = new Date('2023-03-01T21:30:00')
+const EVENT_DATE = new Date('2023-03-01T20:30:00')
+const END_DATE = new Date('2023-03-01T22:00:00')
 
 const open = useState('open', () => true)
 const isNow = useState(
