@@ -26,6 +26,18 @@ export default class SourceService {
         return [
           {
             formats: [FormatEnum.PDF],
+            href: '/debats/2023/01-03-paraclet/le-paraclet-23-02-28.pdf',
+            thumbnail: '/debats/2023/05-01-paraclet/le-paraclet.png',
+            title: 'Le PDF de réfutation (version 23.02.28)'
+          },
+          {
+            formats: [FormatEnum.PDF],
+            href: '/debats/2023/01-03-paraclet/le-paraclet-23-02-27.pdf',
+            thumbnail: '/debats/2023/05-01-paraclet/le-paraclet.png',
+            title: 'Le PDF de réfutation (version 23.02.27)'
+          },
+          {
+            formats: [FormatEnum.PDF],
             href: '/debats/2023/05-01-paraclet/le-paraclet-23-02-04.pdf',
             thumbnail: '/debats/2023/05-01-paraclet/le-paraclet.png',
             title: 'Le PDF de réfutation (version 23.02.04)'
@@ -45,6 +57,13 @@ export default class SourceService {
           },
           {
             formats: [FormatEnum.WEBP],
+            href: '/debats/2023/01-03-paraclet/paraclet-tableau-comparatif.webp',
+            thumbnail:
+              '/debats/2023/01-03-paraclet/paraclet-tableau-comparatif.webp',
+            title: 'Tableau Comparatif 3'
+          },
+          {
+            formats: [FormatEnum.WEBP],
             href: '/debats/2023/05-01-paraclet/paraclet-tableau-comparatif.webp',
             thumbnail:
               '/debats/2023/05-01-paraclet/paraclet-tableau-comparatif.webp',
@@ -55,7 +74,7 @@ export default class SourceService {
             href: '/debats/2023/05-01-paraclet/paraclet-tableau-comparatif-2.webp',
             thumbnail:
               '/debats/2023/05-01-paraclet/paraclet-tableau-comparatif-2.webp',
-            title: 'Tableau Comparatif 2'
+            title: 'Tableau Comparatif 2'
           },
           {
             formats: [FormatEnum.PNG],
