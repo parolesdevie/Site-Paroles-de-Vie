@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import SourceService from '~~/services/SourceService'
-const end = useState('end', () => new Date('2023-03-01T20:30:00'))
+const end = useState('end', () => new Date('2023-03-01T20:45:00'))
 const hidde = useState('hidde', () => true)
 
 function finish() {
