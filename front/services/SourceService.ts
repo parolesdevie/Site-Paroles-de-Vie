@@ -44,26 +44,32 @@ export default class SourceService {
           },
           {
             formats: [FormatEnum.PDF],
+            href: '/debats/2023/01-03-paraclet/le-paraclet-debat.pdf',
+            thumbnail: '/debats/2023/01-03-paraclet/le-paraclet-debat.webp',
+            title: 'Le PDF de débat (version 23.03.1)'
+          },
+          {
+            formats: [FormatEnum.PDF],
             href: '/debats/2023/01-03-paraclet/le-paraclet-23-02-28.pdf',
-            thumbnail: '/debats/2023/05-01-paraclet/le-paraclet.png',
+            thumbnail: '/debats/2023/05-01-paraclet/le-paraclet.webp',
             title: 'Le PDF de réfutation (version 23.02.28)'
           },
           // {
           //   formats: [FormatEnum.PDF],
           //   href: '/debats/2023/01-03-paraclet/le-paraclet-23-02-27.pdf',
-          //   thumbnail: '/debats/2023/05-01-paraclet/le-paraclet.png',
+          //   thumbnail: '/debats/2023/05-01-paraclet/le-paraclet.webp',
           //   title: 'Le PDF de réfutation (version 23.02.27)'
           // },
           // {
           //   formats: [FormatEnum.PDF],
           //   href: '/debats/2023/05-01-paraclet/le-paraclet-23-02-04.pdf',
-          //   thumbnail: '/debats/2023/05-01-paraclet/le-paraclet.png',
+          //   thumbnail: '/debats/2023/05-01-paraclet/le-paraclet.webp',
           //   title: 'Le PDF de réfutation (version 23.02.04)'
           // },
           // {
           //   formats: [FormatEnum.PDF],
           //   href: '/debats/2023/05-01-paraclet/le-paraclet-23-01-06.pdf',
-          //   thumbnail: '/debats/2023/05-01-paraclet/le-paraclet.png',
+          //   thumbnail: '/debats/2023/05-01-paraclet/le-paraclet.webp',
           //   title: 'Le PDF de réfutation (version 23.01.06)'
           // },
           {
