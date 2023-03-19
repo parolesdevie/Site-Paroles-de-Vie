@@ -131,7 +131,10 @@ export default defineNuxtComponent({
       cover: TopicService.getBySlug('/biblical-textual-criticism/')?.cover,
       debates: DebateService.getByTopic('biblical-textual-criticism'),
       books: BookService.getBySlug('bible-nestle-aland'),
-      videos: TopicVideosService.getVideosByTopic('bible-nestle-aland')
+      videos: [
+        TopicVideosService.getVideosByTopic('biblical-textual-criticism'),
+        TopicVideosService.getVideosByTopic('bible-nestle-aland')
+      ]
     }
   }
 })

@@ -152,6 +152,84 @@ export default defineNuxtComponent({
       } as ISourceFile,
       videos: [
         {
+          source: VideoLinkEnum.YOUTUBE,
+          name: 'Le paraclet dans le corpus johannique',
+          url: 'https://youtu.be/HSDONEoBWmU',
+          thumbnail: 'https://img.youtube.com/vi/HSDONEoBWmU/mqdefault.jpg'
+        },
+        {
+          source: VideoLinkEnum.YOUTUBE,
+          name: 'Analyse du débat sur le Paraclet entre Paroles de vie VS Jésus Musulman',
+          url: 'https://youtu.be/c1hfywA9pco',
+          thumbnail: 'https://img.youtube.com/vi/c1hfywA9pco/mqdefault.jpg'
+        },
+        {
+          source: VideoLinkEnum.YOUTUBE,
+          name: 'Débat Paraclet Paroles de vie VS Jésus Musulman',
+          url: 'https://youtu.be/ikXzGnoKjkM',
+          thumbnail: 'https://img.youtube.com/vi/ikXzGnoKjkM/mqdefault.jpg'
+        },
+        {
+          source: VideoLinkEnum.YOUTUBE,
+          name: "Débat Paraclet | Paroles de vie VS Les élèves d'Abdoul Madjid",
+          url: 'https://youtu.be/nuF4nTxpikI',
+          thumbnail: 'https://img.youtube.com/vi/nuF4nTxpikI/mqdefault.jpg'
+        },
+        {
+          source: VideoLinkEnum.YOUTUBE,
+          name: 'Débat Paraclet | Paroles de vie Vs Cheick Adam',
+          url: 'https://youtu.be/OjjBUpAlvUA',
+          thumbnail: 'https://img.youtube.com/vi/OjjBUpAlvUA/mqdefault.jpg'
+        },
+        {
+          source: VideoLinkEnum.YOUTUBE,
+          name: 'Mahomet / Muhammad est-il le Consolateur (Paraclet) annoncé dans la Bible ? Cas de Jean 14.',
+          url: 'https://youtu.be/9cRFSqYefo8',
+          thumbnail: 'https://img.youtube.com/vi/9cRFSqYefo8/mqdefault.jpg'
+        },
+        {
+          source: VideoLinkEnum.YOUTUBE,
+          name: 'Mahomet / Muhammad est-il le Consolateur (Paraclet) annoncé dans la Bible ? Cas de Jean 14.',
+          url: 'https://youtu.be/9cRFSqYefo8',
+          thumbnail: 'https://img.youtube.com/vi/9cRFSqYefo8/mqdefault.jpg'
+        },
+        {
+          source: VideoLinkEnum.TIKTOK,
+          name: 'Le Dilemme du Paradis',
+          url: 'https://www.tiktok.com/@chaine.coliseum/video/7199121958850579718',
+          thumbnail: '/images/video/7199121958850579718.webp'
+        },
+        {
+          source: VideoLinkEnum.TIKTOK,
+          name: "Le Dilemme de l'adultère",
+          url: 'https://www.tiktok.com/@chaine.coliseum.2/video/7199122527422024965',
+          thumbnail: '/images/video/7199122527422024965.webp'
+        },
+        {
+          source: VideoLinkEnum.TIKTOK,
+          name: "Le Dilemme de l'Eucharistie",
+          url: 'https://www.tiktok.com/@chaine.coliseum.2/video/7211733098558524678',
+          thumbnail: '/images/video/7211733098558524678.webp'
+        },
+        {
+          source: VideoLinkEnum.TIKTOK,
+          name: 'Le Dilemme de la Crucifixion',
+          url: 'https://www.tiktok.com/@chaine.coliseum.2/video/7199313848069836037',
+          thumbnail: '/images/video/7199313848069836037.webp'
+        },
+        {
+          source: VideoLinkEnum.TIKTOK,
+          name: 'Le Dilemme du Baptême',
+          url: 'https://www.tiktok.com/@chaine.coliseum.2/video/7199355834768362757',
+          thumbnail: '/images/video/7199355834768362757.webp'
+        },
+        {
+          source: VideoLinkEnum.TIKTOK,
+          name: 'Le dilemme du Fils de Dieu',
+          url: 'https://www.tiktok.com/@chaine.coliseum.2/video/7199400110386646278',
+          thumbnail: '/images/video/7199400110386646278.webp'
+        },
+        {
           source: VideoLinkEnum.TIKTOK,
           name: "Le Dilemme de l'adultère",
           url: 'https://www.tiktok.com/@chaine.coliseum/video/7129761699342601478',
