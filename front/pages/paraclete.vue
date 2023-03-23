@@ -188,12 +188,6 @@ export default defineNuxtComponent({
           thumbnail: 'https://img.youtube.com/vi/9cRFSqYefo8/mqdefault.jpg'
         },
         {
-          source: VideoLinkEnum.YOUTUBE,
-          name: 'Mahomet / Muhammad est-il le Consolateur (Paraclet) annoncé dans la Bible ? Cas de Jean 14.',
-          url: 'https://youtu.be/9cRFSqYefo8',
-          thumbnail: 'https://img.youtube.com/vi/9cRFSqYefo8/mqdefault.jpg'
-        },
-        {
           source: VideoLinkEnum.TIKTOK,
           name: 'Le Dilemme du Paradis',
           url: 'https://www.tiktok.com/@chaine.coliseum/video/7199121958850579718',
