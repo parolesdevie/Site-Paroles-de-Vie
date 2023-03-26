@@ -6,6 +6,31 @@ export default class BookService {
   static getAll(): IBook[] {
     return [
       {
+        title: 'Les Pères Apostoliques',
+        slug: 'les-peres-apostoliques',
+        amazon: '3mXElgb'
+      },
+      {
+        title: "Histoire d'une âme",
+        slug: 'histoire-dune-ame',
+        amazon: '428ADQO'
+      },
+      {
+        title: "Le paraclet, mémoire de l'Eglise",
+        slug: 'le-paraclet-memoire-de-leglise-regard-sur-la-mission-de-lesprit-a-la-lumiere-du-quatrieme-evangile',
+        amazon: '42iYBJ6'
+      },
+      {
+        title: 'Pères apostoliques',
+        slug: 'peres-apostoliques',
+        amazon: '3mUwlwu'
+      },
+      {
+        title: 'Le prix à payer',
+        slug: 'le-prix-a-payer',
+        amazon: '3TjOX4V'
+      },
+      {
         title: 'Bible Codex Vaticanus Évangiles',
         slug: 'the-vaticanus-bible-gospels',
         amazon: '3PPPytw'
