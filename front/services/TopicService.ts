@@ -214,6 +214,14 @@ export default class TopicService {
         },
         to: '/search/',
         title: 'Recherche'
+      },
+      {
+        cover: {
+          color: '#A3917B',
+          src: 'name-jesus'
+        },
+        to: '/name-jesus/',
+        title: 'Nom de Jésus'
       }
       // {
       //   cover: {
