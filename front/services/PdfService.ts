@@ -560,6 +560,18 @@ export default class PdfService {
         author: AuthorEnum.JOZUA,
         slug: 'alma-et-parthenos-dans-lunivers-de-la-bible',
         title: 'Almâ et parthenos dans l’univers de la Bible'
+      },
+      {
+        tags: [AuthorEnum.BENEVOLENCE],
+        author: AuthorEnum.BENEVOLENCE,
+        slug: 'la-kaaba',
+        title: 'La Kaaba'
+      },
+      {
+        tags: [AuthorEnum.BENEVOLENCE],
+        author: AuthorEnum.BENEVOLENCE,
+        slug: 'la-pierre-noire',
+        title: 'La Pierre Noire'
       }
     ]
   }
