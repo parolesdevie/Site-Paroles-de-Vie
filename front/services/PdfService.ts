@@ -9,6 +9,16 @@ export default class PdfService {
           AuthorEnum.BENEVOLENCE,
           ThemeEnum.DILEMME
         ],
+        author: AuthorEnum.BENEVOLENCE,
+        slug: 'le-dilemme-de-la-gestation',
+        title: 'Le dilemme la gestation'
+      },
+      {
+        tags: [
+          AuthorTeamEnum.COLISEUM,
+          AuthorEnum.BENEVOLENCE,
+          ThemeEnum.DILEMME
+        ],
         author: AuthorEnum.GZN,
         slug: 'la-pericope-de-la-femme-adultere',
         title: 'La péricope de la femme adultère'
