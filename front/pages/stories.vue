@@ -36,17 +36,9 @@ const stories = useState(() => StoriesService.getAll())
       <StoriesSlideShow @close="handleCloseEvent" :story="currentStory" />
     </div>
 
-    <ul class="mt-4 md:mt-10 flex">
+    <ul class="mt-4 md:mt-10 flex overflow-x-auto">
       <li
-        class="
-          w-32
-          flex flex-col
-          items-center
-          gap-2
-          cursor-pointer
-          rounded-xl
-          p-4
-        "
+        class="w-32 flex flex-col items-center gap-2 cursor-pointer rounded-xl p-4 shrink-0"
         tabindex="0"
         @keydown.esc="handleOpenEvent(undefined)"
         v-for="(story, index) in stories"
