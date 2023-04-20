@@ -34,6 +34,14 @@ export default class StoriesService {
         stroriesCount: 8,
         color: '#E56355',
         imgSlug: 'Story Dilemme du fils de Dieu – '
+      },
+      {
+        alt: 'les-pieds-d-Allah',
+        slug: 'les-pieds-d-Allah',
+        title: "Les pieds d'Allah",
+        stroriesCount: 9,
+        color: '#E56355',
+        imgSlug: 'Allah - Pieds – '
       }
     ]
   }
