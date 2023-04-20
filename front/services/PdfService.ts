@@ -4,8 +4,13 @@ export default class PdfService {
   static getAll(): IPdf[] {
     return [
       {
-        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.UNKNOW],
-        author: AuthorEnum.UNKNOW,
+        tags: [
+          AuthorTeamEnum.COLISEUM,
+          AuthorEnum.JMS,
+          AuthorEnum.PROTOCOLE,
+          AuthorEnum.SHAM
+        ],
+        author: AuthorEnum.JMS,
         slug: 'argument-contre-les-salafis-et-les-athari',
         title: 'Argument contre les salafis et les athari'
       },
