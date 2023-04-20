@@ -6,6 +6,16 @@ export default class PdfService {
       {
         tags: [
           AuthorTeamEnum.COLISEUM,
+          AuthorEnum.SHAM,
+          AuthorEnum.BENEVOLENCE
+        ],
+        author: AuthorEnum.BENEVOLENCE,
+        slug: 'les-pieds-d-Allah',
+        title: "Les pieds d'Allah"
+      },
+      {
+        tags: [
+          AuthorTeamEnum.COLISEUM,
           AuthorEnum.BENEVOLENCE,
           ThemeEnum.DILEMME
         ],
