@@ -41,7 +41,7 @@ useHead({
   <div
     v-show="
       !$route.path.startsWith('/live') &&
-      !$route.path.startsWith('/debat-paraclet') &&
+      !$route.path.startsWith('/debat-') &&
       open &&
       Date.now() < end.getTime()
     "
@@ -90,9 +90,8 @@ useHead({
         <NuxtLink
           @click="open = false"
           class="border border-black dark:border-white hover:bg-light-black dark:hover:bg-white hover:text-white dark:hover:text-light-black rounded py-2 px-4 text-xs md:text-base"
-          to="/live"
+          to="/debat-ahmad-2023-04-28"
         >
-          <!-- debat-paraclet-01-03-2023 -->
           Découvrir
         </NuxtLink>
       </div>
@@ -103,7 +102,7 @@ useHead({
         >
           <img
             class="rounded-lg"
-            src="/images/events/2023-04-028T21-00-00@4x.webp"
+            src="/images/events/2023-04-28T21-00-00@4x.webp"
             alt="affiche débat"
           />
         </div>
