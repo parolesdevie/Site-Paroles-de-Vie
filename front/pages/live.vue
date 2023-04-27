@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import SourceService from '~~/services/SourceService'
-const end = useState('end', () => new Date('2023-03-01T19:45:00'))
+const end = useState('end', () => new Date('2023-04-028T23:00:00'))
 const hidde = useState('hidde', () => true)
 
 function finish() {
@@ -29,8 +29,8 @@ useHead({
   ]
 })
 
-const id = useState('id', () => 'h_15wSEgfMQ')
-const resources = useState(() => SourceService.getByDebat('paraclet'))
+const id = useState('id', () => '-6NSpmXlxxk')
+const resources = useState(() => SourceService.getByDebat('ahmad'))
 </script>
 
 <template>

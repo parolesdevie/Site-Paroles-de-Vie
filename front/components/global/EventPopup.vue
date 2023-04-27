@@ -1,6 +1,6 @@
 <script setup lang="ts">
-const EVENT_DATE = new Date('2023-03-01T19:45:00')
-const END_DATE = new Date('2023-03-01T22:00:00')
+const EVENT_DATE = new Date('2023-04-28T21:00:00')
+const END_DATE = new Date('2023-04-28T23:00:00')
 
 const open = useState('open', () => true)
 const isNow = useState(
@@ -60,8 +60,10 @@ useHead({
       <template v-if="!isNow">
         <CountDown class="mt-10" :date="eventDate" @onFinish="finish()" />
 
-        <p class="mt-10 text-sm">Débat <strong>Sujet</strong></p>
-        <p>
+        <p class="mt-10 text-sm">
+          Débat <strong>Jésus n'a jamais annoncer Ahmad</strong>
+        </p>
+        <!-- <p>
           Débatteurs
           <NuxtLink @click="open = false" class="underline" to="/debaters/10">
             Débatteur 1
@@ -70,7 +72,7 @@ useHead({
           <NuxtLink @click="open = false" class="underline" to="/debaters/9">
             Débatteur 2
           </NuxtLink>
-        </p>
+        </p> -->
       </template>
 
       <div class="mt-4 flex gap-4">
@@ -88,8 +90,9 @@ useHead({
         <NuxtLink
           @click="open = false"
           class="border border-black dark:border-white hover:bg-light-black dark:hover:bg-white hover:text-white dark:hover:text-light-black rounded py-2 px-4 text-xs md:text-base"
-          to="/debat-paraclet-01-03-2023/"
+          to="/live"
         >
+          <!-- debat-paraclet-01-03-2023 -->
           Découvrir
         </NuxtLink>
       </div>
@@ -100,7 +103,7 @@ useHead({
         >
           <img
             class="rounded-lg"
-            src="/images/events/2023-03-01T12-00-00@4x.webp"
+            src="/images/events/2023-04-028T21-00-00@4x.webp"
             alt="affiche débat"
           />
         </div>
