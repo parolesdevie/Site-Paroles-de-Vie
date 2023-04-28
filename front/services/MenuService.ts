@@ -61,6 +61,10 @@ export default class MenuService {
   static getInstagramMenu(): IWebSite[] {
     return [
       {
+        href: 'https://www.instagram.com/chaine.paroles.de.vie/',
+        name: 'Compte Paroles de Vie'
+      },
+      {
         href: 'https://www.instagram.com/chaine.coliseum/',
         name: 'Compte Coliseum'
       }

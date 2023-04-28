@@ -270,6 +270,36 @@ export default class SourceService {
             title: "Dilemme de l'adultére - Vidéo TikTok"
           }
         ]
+      case 'ahmad':
+        return [
+          {
+            formats: [FormatEnum.WEBP],
+            href: '/debats/2023/28-04-ahmad/4Q175.webp',
+            thumbnail: '/debats/2023/28-04-ahmad/4Q175.webp',
+            title: 'Manuscrit 4Q175'
+          },
+          {
+            formats: [FormatEnum.JPG],
+            href: '/debats/2023/28-04-ahmad/wikipedia-4q175-3-figure.jpg',
+            thumbnail:
+              '/debats/2023/28-04-ahmad/wikipedia-4q175-3-figure-min.webp',
+            title: 'Le messianisme de « la secte » dans le 4Q175 (Wikipedia)'
+          },
+          {
+            formats: [FormatEnum.JPG],
+            href: '/debats/2023/28-04-ahmad/wikipedia-4q175-3-figure-2.jpg',
+            thumbnail:
+              '/debats/2023/28-04-ahmad/wikipedia-4q175-3-figure-2-min.webp',
+            title: 'Testimonia dans le 4Q175 (Wikipedia)'
+          },
+          {
+            formats: [FormatEnum.PDF],
+            href: '/debats/2023/28-04-ahmad/tafsir-ibn-kathir-sourate-61.pdf',
+            thumbnail:
+              '/debats/2023/28-04-ahmad/tafsir-ibn-kathir-sourate-61.webp',
+            title: 'Tafsir de Ibn Kathir (sourate 61)'
+          }
+        ]
       default:
         return []
     }

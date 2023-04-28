@@ -6,6 +6,8 @@ export default class PdfService {
       {
         tags: [
           AuthorTeamEnum.COLISEUM,
+          ThemeEnum.THEOLOGY,
+          ThemeEnum.REFUTATION,
           AuthorEnum.JMS,
           AuthorEnum.PROTOCOLE,
           AuthorEnum.SHAM
@@ -17,6 +19,7 @@ export default class PdfService {
       {
         tags: [
           AuthorTeamEnum.COLISEUM,
+          ThemeEnum.THEOLOGY,
           AuthorEnum.SHAM,
           AuthorEnum.BENEVOLENCE
         ],
