@@ -33,7 +33,16 @@
                 "title": "La nouvelle alliance de Dieu se fait avec la nation Ismaelite (dans la Torah et Esaïe 42)",
                 "explanation": "La nouvelle alliance de Dieu se fait avec la nation Ismaelite.<br/>La nouvelle nation qui va remplacer la nation Israelite et la nation insensée citez de deutéronome 32:15-23 et elle correspond à la nation de genèse 17:20.<br/>Le terme insensé signifie une nation ignorante, qui n'a pas reçu de révélation comme le disent les commentaires de rabbins, et c’est exactement les caractéristiques mentionnées par Muhammad dans le Sahih al-Bukhari 4838 et dans Esaïe 42.<br/>Les montagnes citées dans Esaïe 42 sont des montagnes dans la zone de la Mecque.",
                 "dependency": 1,
-                "audio": "002"
+                "audio": "002",
+                "responses": [
+                    {
+                        "id": 1,
+                        "title": "Les Ismaelites ne reconnaissent pas le tetragram",
+                        "responses": "Comme on le lit dans le Psaume 83, les Ismaelites ne reconnaissent pas le tetragram et Dieu va les à en horreur et va les châtier pour ça.",
+                        "audio": "001",
+                        "dependency": null
+                    }
+                ]
             },
             {
                 "id": 3,

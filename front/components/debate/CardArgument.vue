@@ -53,7 +53,7 @@
               :key="index"
             >
               <div
-                class="border-2 border-blue-500 rounded-lg bg-gray-100 dark:bg-gray-900 flex flex-col p-4 relative md:text-lg"
+                class="border-2 border-green-500 rounded-lg bg-gray-100 dark:bg-gray-900 flex flex-col p-4 relative md:text-lg"
               >
                 <!-- title -->
                 <strong>
