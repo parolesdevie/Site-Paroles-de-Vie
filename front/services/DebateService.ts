@@ -9,8 +9,24 @@ export default class DebateService {
     return [
       {
         topics: ['ahmad', 'open-mic'],
+        date: '13/05/2023',
+        url: 'https://youtu.be/y7CBy290iLU',
+        subject: "Jésus n'a jamais annoncer Ahmad [Open Mic 2023]",
+        debaters: [{ ...DebaterService.getByPseudo('Bénévolence'), team: 0 }],
+        plateform: DebatPlateformEnum.DISCORD
+      },
+      {
+        topics: ['ahmad', 'open-mic'],
+        date: '05/05/2023',
+        url: 'https://youtu.be/9VXT88fsutc',
+        subject: "Jésus n'a jamais annoncer Ahmad [Open Mic 2023]",
+        debaters: [{ ...DebaterService.getByPseudo('Bénévolence'), team: 0 }],
+        plateform: DebatPlateformEnum.DISCORD
+      },
+      {
+        topics: ['ahmad', 'open-mic'],
         date: '28/04/2023',
-        url: 'https://youtu.be/Ufl9W1Mi9Ac?t=381',
+        url: 'https://youtu.be/Z_1krV3cRMM',
         subject: "Jésus n'a jamais annoncer Ahmad [Open Mic 2023]",
         debaters: [
           { ...DebaterService.getByPseudo('Bénévolence'), team: 0 },

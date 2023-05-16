@@ -157,13 +157,13 @@ export interface IDebater extends IDebaterProfils {
   team?: Number
 }
 export interface IDebat {
-  topic?: string
+  topics?: string[]
   date: string
   url: string
   subject: string
   debaters: IDebater[]
   mediator?: IDebater
-  plateform: DebatPlateformEnum.YOUTUBE
+  plateform: DebatPlateformEnum
 }
 
 export enum SearchPlateformEnum {
