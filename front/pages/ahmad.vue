@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import { DebateService } from '~~/services'
+
 useHead({
-  title: 'La messianité de Jésus dans la Bible - Paroles de vie',
+  title: "Jésus n'a jamais annoncer Ahmad - Paroles de vie",
   meta: [
     {
       hid: 'description',
@@ -11,15 +13,16 @@ useHead({
     {
       hid: 'og:image',
       property: 'og:image',
-      content: 'https://www.paroles-de-vie.tk/seo/the-messiah-of-jesus.webp'
+      content: 'https://www.paroles-de-vie.tk/seo/ahmad.webp'
     },
     {
       hid: 'twitter:image',
       property: 'twitter:image',
-      content: 'https://www.paroles-de-vie.tk/seo/the-messiah-of-jesus.webp'
+      content: 'https://www.paroles-de-vie.tk/seo/ahmad.webp'
     }
   ]
 })
+const debates = useState(() => DebateService.getByTopic('ahmad'))
 </script>
 
 <template>
@@ -28,12 +31,11 @@ useHead({
     <Breadcrumb :items="breadcrumbItems" />
 
     <!-- intro -->
-    <SectionIntroTopics :cover="cover">
-      <template v-slot:title>La messianité de Jésus</template>
-      <!-- <template v-slot:body> </template> -->
+    <SectionIntroTopics :cover="cover" :frontFile="frontFile">
+      <template v-slot:title>Jésus n'a jamais annoncer Ahmad</template>
     </SectionIntroTopics>
 
-    <SectionDebate
+    <DebateSectionDebate
       title="Découvrir en débats"
       class="container mx-auto mt-4 md:mt-10"
       :debates="debates"
@@ -43,14 +45,14 @@ useHead({
 </template>
 
 <script lang="ts">
-import SectionDebate from '~~/components/debate/SectionDebate.vue'
 import SectionIntroTopics from '~~/components/topics/SectionIntroTopics.vue'
 import { DebateService, TopicService } from '~~/services'
+import { AuthorEnum, FormatEnum, ISourceFile } from '~~/types'
 
 export default defineNuxtComponent({
-  name: 'TheMessiahOfJesusPage',
+  name: 'AhmadPage',
 
-  components: { SectionIntroTopics, SectionDebate },
+  components: { SectionIntroTopics },
 
   data() {
     return {
@@ -60,12 +62,20 @@ export default defineNuxtComponent({
           to: '/'
         },
         {
-          name: 'La messianité de Jésus',
-          to: '/the-messiah-of-jesus/'
+          name: 'Annonce de Ahmad',
+          to: '/ahmad/'
         }
       ],
-      cover: TopicService.getBySlug('/the-messiah-of-jesus/')?.cover,
-      debates: DebateService.getByTopic('the-messiah-of-jesus')
+      cover: TopicService.getBySlug('/ahmad/')?.cover,
+      debates: DebateService.getByTopic('ahmad'),
+      frontFile: {
+        author: AuthorEnum.BENEVOLENCE,
+        format: FormatEnum.PDF,
+        slug: 'ahmad',
+        thumbnail: '/images/pdf/ahmad',
+        href: '/pdf/ahmad.pdf',
+        title: "Jésus n'a jamais annoncer Ahmad"
+      } as ISourceFile
     }
   }
 })

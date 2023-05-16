@@ -39,7 +39,7 @@ useHead({
 
 <script lang="ts">
 export default defineNuxtComponent({
-  name: 'DivinityOfJesusPage',
+  name: 'ChatPage',
 
   components: {},
 

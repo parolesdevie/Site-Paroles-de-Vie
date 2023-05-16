@@ -5,7 +5,8 @@ useHead({
     {
       hid: 'description',
       name: 'description',
-      content: '[description]'
+      content:
+        'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.'
     },
     {
       hid: 'og:image',
@@ -126,6 +127,9 @@ useHead({
         </template>
       </BgColorSection>
     </div>
+
+    <!-- footer -->
+    <Footer class="mt-40" />
   </div>
 </template>
 
@@ -140,7 +144,7 @@ definePageMeta({
 })
 
 export default defineNuxtComponent({
-  name: 'DivinityOfJesusPage',
+  name: 'NameOfJesusPage',
 
   components: { SectionIntroTopics, BgColorSection },
 

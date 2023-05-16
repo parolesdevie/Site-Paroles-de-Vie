@@ -1,5 +1,6 @@
 import { DebatPlateformEnum, DebatReligionEnum, IDebat } from '~~/types'
 import DebaterService from './DebaterService'
+import debatsJson from './json/debats.json'
 
 export default class DebateService {
   constructor() {}
@@ -7,7 +8,43 @@ export default class DebateService {
   static getAll(): IDebat[] {
     return [
       {
-        topic: 'the-paraclet',
+        topics: ['ahmad', 'open-mic'],
+        date: '28/04/2023',
+        url: 'https://youtu.be/Ufl9W1Mi9Ac?t=381',
+        subject: "Jésus n'a jamais annoncer Ahmad [Open Mic 2023]",
+        debaters: [
+          { ...DebaterService.getByPseudo('Bénévolence'), team: 0 },
+          {
+            ...DebaterService.getByPseudo('Islam'),
+            team: 1
+          },
+          {
+            ...DebaterService.getByPseudo('Alheurelahess'),
+            team: 1
+          },
+          {
+            ...DebaterService.getByPseudo('Bilel ibn ahmed'),
+            team: 1
+          }
+        ],
+        plateform: DebatPlateformEnum.DISCORD
+      },
+      {
+        topics: ['the-paraclet'],
+        date: '28/04/2023',
+        url: 'https://youtu.be/Ufl9W1Mi9Ac?t=3395',
+        subject: "Jésus n'a jamais annoncer Ahmad [Open Mic 2023]",
+        debaters: [
+          { ...DebaterService.getByPseudo('Bénévolence'), team: 0 },
+          {
+            ...DebaterService.getByPseudo(undefined), // Fête à la hess
+            team: 1
+          }
+        ],
+        plateform: DebatPlateformEnum.DISCORD
+      },
+      {
+        topics: ['the-paraclet'],
         date: '01/03/2023',
         url: 'https://youtu.be/h_15wSEgfMQ',
         subject:
@@ -22,7 +59,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-paraclet',
+        topics: ['the-paraclet'],
         date: '30/01/2023', // date aproximative
         url: 'https://youtu.be/YOckPkg8Km4',
         subject:
@@ -37,7 +74,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-paraclet',
+        topics: ['the-paraclet'],
         date: '05/01/2023',
         url: 'https://youtu.be/tyI_g0RL4FQ',
         subject:
@@ -49,7 +86,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-parable-of-the-winegrowers',
+        topics: ['the-parable-of-the-winegrowers'],
         date: '27/10/2022',
         url: 'https://youtu.be/PVMAeP2virw',
         subject: 'La Parabole des Vignerons',
@@ -61,7 +98,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-parable-of-the-winegrowers',
+        topics: ['the-parable-of-the-winegrowers'],
         date: '07/07/2022',
         url: 'https://youtu.be/PVMAeP2virw',
         subject: 'La Parabole des Vignerons',
@@ -72,7 +109,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-parable-of-the-winegrowers',
+        topics: ['the-parable-of-the-winegrowers'],
         date: '07/07/2022',
         url: 'https://youtu.be/qm9e5onmH-Y',
         subject: "JESUS A ANNONCE L'ISLAM PART 5",
@@ -88,7 +125,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-parable-of-the-winegrowers',
+        topics: ['the-parable-of-the-winegrowers'],
         date: '07/07/2022',
         url: 'https://youtu.be/iZ3CGDNSVdw',
         subject: "JESUS A ANNONCE L'ISLAM PART 5",
@@ -103,7 +140,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-parable-of-the-winegrowers',
+        topics: ['the-parable-of-the-winegrowers'],
         date: '02/07/2022',
         url: 'https://youtu.be/euB4WhtCem4',
         subject: "DÉBAT INTER-RELIGIEUX : L'ISLAM EST DANS LA BIBLE ! PART III",
@@ -114,7 +151,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-parable-of-the-winegrowers',
+        topics: ['the-parable-of-the-winegrowers'],
         date: '26/06/2022',
         url: 'https://youtu.be/-YhEqfCW_sc',
         subject: "DÉBAT INTER-RELIGIEUX : L'ISLAM EST DANS LA BIBLE ! PART II",
@@ -132,7 +169,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-parable-of-the-winegrowers',
+        topics: ['the-parable-of-the-winegrowers'],
         date: '25/06/2022',
         url: 'https://youtu.be/fFo4sKl6BJk',
         subject: "DÉBAT INTER-RELIGIEUX : L'ISLAM EST DANS LA BIBLE !",
@@ -143,7 +180,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-crucifixion-in-the-bible',
+        topics: ['the-crucifixion-in-the-bible'],
         date: '10/09/2022',
         url: 'https://youtu.be/xms5pzrT_7Y',
         subject: 'DEBAT MUSLIM - CHRETIEN SUR LA MORT DE JESUS !',
@@ -154,7 +191,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-crucifixion-in-the-bible',
+        topics: ['the-crucifixion-in-the-bible'],
         date: '20/08/2022',
         url: 'https://youtu.be/PjN6y_P1INg',
         subject: 'Collectif Theophilos La crucifixiondans la bible',
@@ -168,7 +205,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-crucifixion-in-the-bible',
+        topics: ['the-crucifixion-in-the-bible'],
         date: '20/08/2022',
         url: 'https://youtu.be/0beBalbM_nM',
         subject: 'Collectif Theophilos La crucifixiondans la bible',
@@ -184,7 +221,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'biblical-textual-criticism',
+        topics: ['biblical-textual-criticism'],
         date: '19/07/2019',
         url: 'https://youtu.be/oHv9pSlRe9s',
         subject: 'Jésus est Dieu ? Jean 14,14 et la Critique Textuelle',
@@ -195,7 +232,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-divinity-of-jesus',
+        topics: ['the-divinity-of-jesus'],
         date: '24/09/2018',
         url: 'https://youtu.be/6MIN6jjDgWo',
         subject: 'Débat interreligieux : la Divinité de Jesus',
@@ -207,7 +244,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-divinity-of-jesus',
+        topics: ['the-divinity-of-jesus'],
         date: '13/06/2018',
         url: 'https://youtu.be/V9eCfAVnQJY',
         subject: 'Débat : "Jesus, Dieu sauveur du monde ?" A PARTAGER !',
@@ -221,7 +258,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: undefined,
+        topics: [undefined],
         date: '21/01/2018',
         url: 'https://youtu.be/K6292d9PdGo',
         subject:
@@ -233,7 +270,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-legitimacy-of-the-prophet-muhammad',
+        topics: ['the-legitimacy-of-the-prophet-muhammad'],
         date: '07/07/2017',
         url: 'https://youtu.be/aHwW7FfRNzI',
         subject:
@@ -246,7 +283,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-dawa-in-islam',
+        topics: ['the-dawa-in-islam'],
         date: '08/04/2017',
         url: 'https://youtu.be/aHwW7FfRNzI',
         subject: 'Débat sur le débat interreligieux',
@@ -258,7 +295,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-divinity-of-jesus',
+        topics: ['the-divinity-of-jesus'],
         date: '11/07/2016',
         url: 'https://youtu.be/aHwW7FfRNzI',
         subject:
@@ -273,7 +310,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-divinity-of-jesus',
+        topics: ['the-divinity-of-jesus'],
         date: '28/05/2016',
         url: 'https://youtu.be/aHwW7FfRNzI',
         subject:
@@ -288,7 +325,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-legitimacy-of-the-prophet-muhammad',
+        topics: ['the-legitimacy-of-the-prophet-muhammad'],
         date: '05/01/2016',
         url: 'https://youtu.be/SiW5hBJJCgk',
         subject:
@@ -301,7 +338,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-falsification-of-the-bible',
+        topics: ['the-falsification-of-the-bible'],
         date: '28/03/2016',
         url: 'https://youtu.be/SiW5hBJJCgk',
         subject:
@@ -314,7 +351,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'islam',
+        topics: ['islam'],
         date: '23/03/2016',
         url: 'https://youtu.be/Y3-D5lKNLP8',
         subject: 'Débat inter-religieux : "L\'Islam au risque de l\'histoire"',
@@ -326,7 +363,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-divinity-of-jesus',
+        topics: ['the-divinity-of-jesus'],
         date: '21/03/2016',
         url: 'https://youtu.be/6f5N4nWKAdg',
         subject:
@@ -339,7 +376,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-legitimacy-of-the-prophet-muhammad',
+        topics: ['the-legitimacy-of-the-prophet-muhammad'],
         date: '30/01/2016',
         url: 'https://youtu.be/4ehCG4tLfpM',
         subject:
@@ -354,7 +391,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-messiah-of-jesus',
+        topics: ['the-messiah-of-jesus'],
         date: '23/05/2022',
         url: 'https://youtu.be/lemQfH9LNBc',
         subject:
@@ -367,7 +404,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-messiah-of-jesus',
+        topics: ['the-messiah-of-jesus'],
         date: '17/02/2021',
         url: 'https://youtu.be/znkwFUTw8Fw',
         subject:
@@ -380,7 +417,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-messiah-of-jesus',
+        topics: ['the-messiah-of-jesus'],
         date: '08/12/2020',
         url: 'https://youtu.be/YB2RVKyymeQ',
         subject:
@@ -393,7 +430,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-divinity-of-jesus',
+        topics: ['the-divinity-of-jesus'],
         date: '12/12/2020',
         url: 'https://youtu.be/eNix2Gm2BLM',
         subject: 'JESUS EST-IL DIEU? DEBAT COLLECTIF AL HANIFIYYAH VS APOLOGIA',
@@ -407,7 +444,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-divinity-of-jesus',
+        topics: ['the-divinity-of-jesus'],
         date: '12/12/2020',
         url: 'https://youtu.be/B5nUNrJtnoc',
         subject: 'DEBAT // Collectif APOLOGIA vs COLLECTIF HANIFIYYAH',
@@ -421,7 +458,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'christology',
+        topics: ['christology'],
         date: '25/08/2019',
         url: 'https://youtu.be/HrKy8oxdzPs',
         subject: '/// Debat intra-religieux // Modalisme vs Trinite',
@@ -433,7 +470,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'purgatory',
+        topics: ['purgatory'],
         date: '08/05/2019',
         url: 'https://youtu.be/HrKy8oxdzPs',
         subject:
@@ -446,7 +483,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topic: 'the-crucifixion-in-the-bible',
+        topics: ['the-crucifixion-in-the-bible'],
         date: '24/04/2019',
         url: 'https://youtu.be/vX6NAvdCRvA',
         subject:
@@ -470,6 +507,10 @@ export default class DebateService {
   }
 
   static getByTopic(topic: string): IDebat[] | undefined {
-    return this.getAll().filter((debate) => debate.topic === topic)
+    return this.getAll().filter((debate) => debate.topics?.includes(topic))
+  }
+
+  static getDebatArgumentsById(id: number): unknown[] {
+    return debatsJson.find((debat) => debat.id === id)?.arguments
   }
 }

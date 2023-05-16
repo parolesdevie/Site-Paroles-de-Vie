@@ -134,7 +134,7 @@ import SectionIntroTopics from '~~/components/topics/SectionIntroTopics.vue'
 import { DebateService, TopicService } from '~~/services'
 
 export default defineNuxtComponent({
-  name: 'DivinityOfJesusPage',
+  name: 'SiteMap',
 
   components: { SectionIntroTopics, SectionDebate },
 
