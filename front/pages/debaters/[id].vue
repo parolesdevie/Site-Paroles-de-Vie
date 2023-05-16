@@ -60,10 +60,10 @@ const { pseudo, name, religion } = currentDebater
           </span>
         </div>
         <div class="mt-10 md:mt-0 md:ml-10">
-          <strong>Nom :</strong>
+          <strong>Nom :</strong>
           {{ name }}
           <br />
-          <strong>Religion :</strong>
+          <strong>Religion :</strong>
           {{ religion }}
           <IconsIconQuran
             v-if="religion === DebatReligionEnum.MUSLIM"
