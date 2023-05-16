@@ -3,71 +3,28 @@
     <thead class="dark:text-blue-500">
       <tr class="text-base">
         <th
-          class="
-            border-b
-            dark:border-blue-500
-            font-semibold
-            p-2
-            md:p-4 md:pl-8 md:pt-0 md:pb-3
-            text-left
-          "
+          class="border-b dark:border-blue-500 font-semibold p-2 md:p-4 md:pl-8 md:pt-0 md:pb-3 text-left"
         >
           Debateurs
         </th>
         <th
-          class="
-            border-b
-            dark:border-blue-500
-            font-semibold
-            p-2
-            md:p-4 md:pl-8 md:pt-0 md:pb-3
-            text-left
-            truncate
-            max-w-0
-            md:max-w-none
-            hidden
-            md:table-cell
-          "
+          class="border-b dark:border-blue-500 font-semibold p-2 md:p-4 md:pl-8 md:pt-0 md:pb-3 text-left truncate max-w-0 md:max-w-none hidden md:table-cell"
         >
           Médiateur
         </th>
         <th
           v-if="!hideSubject"
-          class="
-            border-b
-            dark:border-blue-500
-            font-semibold
-            p-2
-            md:p-4 md:pl-8 md:pt-0 md:pb-3
-            text-left
-          "
+          class="border-b dark:border-blue-500 font-semibold p-2 md:p-4 md:pl-8 md:pt-0 md:pb-3 text-left"
         >
           Sujet
         </th>
         <th
-          class="
-            border-b
-            dark:border-blue-500
-            font-semibold
-            p-2
-            md:p-4 md:pl-8 md:pt-0 md:pb-3
-            text-left
-          "
+          class="border-b dark:border-blue-500 font-semibold p-2 md:p-4 md:pl-8 md:pt-0 md:pb-3 text-left"
         >
           Date
         </th>
         <th
-          class="
-            border-b
-            dark:border-blue-500
-            font-semibold
-            p-2
-            md:p-4 md:pl-8 md:pt-0 md:pb-3
-            text-left
-            truncate
-            max-w-0
-            md:max-w-none
-          "
+          class="border-b dark:border-blue-500 font-semibold p-2 md:p-4 md:pl-8 md:pt-0 md:pb-3 text-left truncate max-w-0 md:max-w-none"
         >
           Plateforme
         </th>
@@ -143,16 +100,7 @@
           Inconnus
         </td>
         <td
-          class="
-            border-b
-            dark:border-blue-500
-            p-2
-            md:p-4 md:pl-8
-            text-xs
-            md:text-base
-            hidden
-            md:table-cell
-          "
+          class="border-b dark:border-blue-500 p-2 md:p-4 md:pl-8 text-xs md:text-base hidden md:table-cell"
         >
           <NuxtLink
             v-if="debat.mediator"
@@ -166,14 +114,7 @@
           </span>
         </td>
         <td
-          class="
-            border-b
-            dark:border-blue-500
-            p-2
-            md:p-4 md:pl-8
-            text-xs
-            md:text-base
-          "
+          class="border-b dark:border-blue-500 p-2 md:p-4 md:pl-8 text-xs md:text-base"
           v-if="!hideSubject"
         >
           <a
@@ -187,28 +128,13 @@
           </a>
         </td>
         <td
-          class="
-            border-b
-            dark:border-blue-500
-            p-2
-            md:p-4 md:pl-8
-            text-xs
-            md:text-base
-          "
+          class="border-b dark:border-blue-500 p-2 md:p-4 md:pl-8 text-xs md:text-base"
           v-if="debat.date"
         >
           {{ debat.date }}
         </td>
         <td
-          class="
-            border-b
-            dark:border-blue-500
-            p-2
-            md:p-4 md:pl-8
-            text-xs
-            md:text-base
-            text-gray-400
-          "
+          class="border-b dark:border-blue-500 p-2 md:p-4 md:pl-8 text-xs md:text-base text-gray-400"
           v-else
         >
           Inconnue
@@ -225,16 +151,7 @@
           >
             <IconYouTube
               v-if="debat.plateform === DebatPlateformEnum.YOUTUBE"
-              class="
-                ml-auto
-                h-6
-                w-6
-                shrink-0
-                md:h-10 md:w-10
-                text-red-500
-                md:text-gray-500
-                hover:text-red-500
-              "
+              class="ml-auto h-6 w-6 shrink-0 md:h-10 md:w-10 text-red-500 md:text-gray-500 hover:text-red-500"
             />
             <IconTikTok
               v-else-if="debat.plateform === DebatPlateformEnum.TIKTOK"

@@ -7,12 +7,20 @@ export default class TopicService {
     return [
       {
         cover: {
-          color: '#356193',
-          src: 'live'
+          color: '#77875B',
+          src: 'the-parable-of-the-winegrowers'
         },
-        to: '/live/',
-        title: 'LIVE'
+        to: '/the-parable-of-the-winegrowers/',
+        title: 'La parabole des vignerons'
       },
+      // {
+      //   cover: {
+      //     color: '#356193',
+      //     src: 'live'
+      //   },
+      //   to: '/live/',
+      //   title: 'LIVE'
+      // },
       {
         cover: {
           color: '#8E7B6E',
@@ -87,13 +95,12 @@ export default class TopicService {
       },
       {
         cover: {
-          color: '#7F8269',
-          src: 'the-parable-of-the-winegrowers'
+          color: '#78674A',
+          src: 'ahmad'
         },
-        to: '/the-parable-of-the-winegrowers/',
-        title: 'La parabole des vignerons'
+        to: '/ahmad/',
+        title: 'ahmad'
       },
-
       {
         cover: {
           color: '#8A7A6F',
@@ -183,38 +190,46 @@ export default class TopicService {
         to: '/coliseum/',
         title: 'Coliseum'
       },
-      {
-        cover: {
-          color: '#000',
-          src: 'placeholder' // the-messiah-of-jesus
-        },
-        to: '/the-messiah-of-jesus/',
-        title: 'La messianité de Jésus'
-      },
-      {
-        cover: {
-          color: '#3D342E',
-          src: 'placeholder' // debates-tips
-        },
-        to: '/debates-tips/',
-        title: 'Conseils de débats'
-      },
-      {
-        cover: {
-          color: '#CABA8C',
-          src: 'placeholder' // free-will
-        },
-        to: '/free-will/',
-        title: 'Le libre arbitre'
-      },
-      {
-        cover: {
-          color: '#707377',
-          src: 'placeholder' // search
-        },
-        to: '/search/',
-        title: 'Recherche'
-      },
+      // {
+      //   cover: {
+      //     color: '#000',
+      //     src: 'placeholder' // the-messiah-of-jesus
+      //   },
+      //   to: '/the-messiah-of-jesus/',
+      //   title: 'La messianité de Jésus'
+      // },
+      // {
+      //   cover: {
+      //     color: '#3D342E',
+      //     src: 'placeholder' // debates-tips
+      //   },
+      //   to: '/debates-tips/',
+      //   title: 'Conseils de débats'
+      // },
+      // {
+      //   cover: {
+      //     color: '#CABA8C',
+      //     src: 'placeholder' // free-will
+      //   },
+      //   to: '/free-will/',
+      //   title: 'Le libre arbitre'
+      // },
+      // {
+      //   cover: {
+      //     color: '#707377',
+      //     src: 'placeholder' // search
+      //   },
+      //   to: '/search/',
+      //   title: 'Recherche'
+      // },
+      // {
+      //   cover: {
+      //     color: '#707377',
+      //     src: 'placeholder'
+      //   },
+      //   to: '/template/',
+      //   title: 'template'
+      // },
       {
         cover: {
           color: '#A3917B',
@@ -222,6 +237,14 @@ export default class TopicService {
         },
         to: '/name-jesus/',
         title: 'Nom de Jésus'
+      },
+      {
+        cover: {
+          color: '#A3917B',
+          src: 'name-god'
+        },
+        to: '/name-god/',
+        title: 'Nom de Dieu'
       }
       // {
       //   cover: {

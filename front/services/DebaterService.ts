@@ -220,6 +220,24 @@ export default class DebaterService {
         pseudo: "Les élèves d'Abdoul Madjid",
         name: "Les élèves d'Abdoul Madjid",
         religion: DebatReligionEnum.MUSLIM
+      },
+      {
+        id: 35,
+        pseudo: 'Islam',
+        name: 'Islam',
+        religion: DebatReligionEnum.MUSLIM
+      },
+      {
+        id: 36,
+        pseudo: 'Alheurelahess',
+        name: 'Alheurelahess',
+        religion: DebatReligionEnum.MUSLIM
+      },
+      {
+        id: 37,
+        pseudo: 'Bilel ibn ahmed',
+        name: 'Bilel ibn ahmed',
+        religion: DebatReligionEnum.MUSLIM
       }
     ]
   }

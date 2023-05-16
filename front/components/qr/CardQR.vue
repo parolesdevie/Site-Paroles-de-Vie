@@ -3,15 +3,7 @@
     <a
       v-if="href"
       :href="href"
-      class="
-        border-2 border-blue-500
-        rounded-lg
-        bg-gray-100
-        dark:bg-gray-900
-        flex
-        p-4
-        font-semibold
-      "
+      class="border-2 border-blue-500 rounded-lg bg-gray-100 dark:bg-gray-900 flex p-4 font-semibold"
       target="_blank"
       rel="noopener noreferrer"
       :title="computedTitle"
@@ -26,20 +18,11 @@
     </a>
     <div
       v-else
-      class="
-        border-2 border-blue-500
-        rounded-lg
-        bg-gray-100
-        dark:bg-gray-900
-        flex flex-col
-        items-start
-        p-4
-        relative
-      "
+      class="border-2 border-blue-500 rounded-lg bg-gray-100 dark:bg-gray-900 flex flex-col items-start p-4 relative"
       @click.self="open = !open"
     >
       <div
-        class="absolute top-0 right-0 p-3 cursor-pointer"
+        class="absolute top-0 right-0 p-3 cursor-pointer select-none"
         @click="open = !open"
       >
         <IconChevronDown v-if="!open" class="h-6" />
