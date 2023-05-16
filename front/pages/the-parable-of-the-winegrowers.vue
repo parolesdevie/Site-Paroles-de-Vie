@@ -38,7 +38,13 @@
       <SectionArguments
         class="container mx-auto mt-4 md:mt-10"
         title="Arguments Islamique"
-        :arguments="arguments"
+        :arguments="islamicArguments"
+      />
+
+      <SectionArguments
+        class="container mx-auto mt-4 md:mt-10"
+        title="Arguments Chrétiens"
+        :arguments="christianArguments"
       />
 
       <SectionGallery
@@ -105,6 +111,8 @@ export default defineNuxtComponent({
   },
 
   data() {
+    const debatArguments = DebateService.getDebatArgumentsById(1)
+
     return {
       breadcrumbItems: [
         {
@@ -213,7 +221,12 @@ export default defineNuxtComponent({
         }
       ],
       debates: DebateService.getByTopic('the-parable-of-the-winegrowers'),
-      arguments: DebateService.getDebatArgumentsById(1),
+      islamicArguments: debatArguments.filter(
+        (argument) => argument.team == 'islam'
+      ),
+      christianArguments: debatArguments.filter(
+        (argument) => argument.team == 'christianism'
+      ),
       gallery: [
         { id: 'friW7xlD5xYlX3mV9YaE--3--68ztz', scale: '1x' },
         { id: 'friW7xlD5xYlX3mV9YaE--2--r8y35_8.9286x', scale: '8.9286x' },

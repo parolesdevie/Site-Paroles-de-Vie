@@ -6,7 +6,7 @@
       <!-- title -->
       <div class="flex items-center cursor-pointer" @click="open = !open">
         <strong>
-          #{{ argument.id }}
+          #{{ argument.order }}
           {{ argument.title }}
         </strong>
         <span class="ml-auto select-none">
@@ -43,7 +43,7 @@
         </figure>
 
         <!-- responses -->
-        <div class="mt-10">
+        <div class="mt-10" v-if="argument.responses?.length">
           <strong>Réponses</strong>
 
           <ul class="mt-2 md:mt-4 flex flex-col gap-4">
@@ -57,7 +57,7 @@
               >
                 <!-- title -->
                 <strong>
-                  #{{ response.id }}
+                  #{{ response.order }}
                   {{ response.title }}
                 </strong>
 
