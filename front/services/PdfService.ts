@@ -6,6 +6,16 @@ export default class PdfService {
       {
         tags: [
           AuthorTeamEnum.COLISEUM,
+          ThemeEnum.REFUTATION,
+          AuthorEnum.BENEVOLENCE
+        ],
+        author: AuthorEnum.BENEVOLENCE,
+        slug: 'l-evangile-de-barnabe',
+        title: 'L’ Évangile de Barnabé'
+      },
+      {
+        tags: [
+          AuthorTeamEnum.COLISEUM,
           ThemeEnum.THEOLOGY,
           ThemeEnum.REFUTATION,
           AuthorEnum.JMS,
