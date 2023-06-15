@@ -10,6 +10,16 @@ export default class PdfService {
           AuthorEnum.BENEVOLENCE
         ],
         author: AuthorEnum.BENEVOLENCE,
+        slug: 'deuteronome-18-18',
+        title: 'Deutéronome 18_18'
+      },
+      {
+        tags: [
+          AuthorTeamEnum.COLISEUM,
+          ThemeEnum.REFUTATION,
+          AuthorEnum.BENEVOLENCE
+        ],
+        author: AuthorEnum.BENEVOLENCE,
         slug: 'l-evangile-de-barnabe',
         title: 'L’ Évangile de Barnabé'
       },
