@@ -10,7 +10,7 @@ export default class PdfService {
           AuthorEnum.BENEVOLENCE
         ],
         author: AuthorEnum.BENEVOLENCE,
-        slug: 'deuteronome-18-18',
+        slug: 'deuteronomy-18-18',
         title: 'Deutéronome 18_18'
       },
       {

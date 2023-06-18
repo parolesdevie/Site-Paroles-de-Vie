@@ -10,20 +10,7 @@ const { topics, filter, filteredTopics } = useTopicList()
     <FormsSearchInput v-model="filter" placeholder="Recherche" />
     <!-- topic list -->
     <ul
-      class="
-        flex flex-wrap
-        py-2
-        pr-2
-        md:py-4 md:pr-4
-        gap-2
-        md:gap-3
-        lg:gap-5
-        xl:gap-6
-        px-3
-        md:px-5
-        lg:px-4
-        2xl:px-5
-      "
+      class="flex flex-wrap py-2 pr-2 md:py-4 md:pr-4 gap-2 md:gap-3 lg:gap-5 xl:gap-6 px-3 md:px-5 lg:px-4 2xl:px-5"
     >
       <TopicsTopicCard
         v-for="(topic, index) in filteredTopics"
@@ -35,19 +22,7 @@ const { topics, filter, filteredTopics } = useTopicList()
     </ul>
 
     <NuxtLink
-      class="
-        float-right
-        mt-2
-        md:mt-4
-        py-2
-        px-4
-        rounded
-        hover:bg-gray-200
-        dark:hover:bg-gray-700
-        duration-300
-        inline-flex
-        items-center
-      "
+      class="float-right mt-2 md:mt-4 py-2 px-4 rounded hover:bg-gray-200 dark:hover:bg-gray-700 duration-300 inline-flex items-center"
       to="/questions-answer/"
     >
       <IconsIconQuestionCircle class="h-6 w-6" />

@@ -8,6 +8,14 @@ export default class DebateService {
   static getAll(): IDebat[] {
     return [
       {
+        topics: ['deuteronomy-18-18', 'open-mic'],
+        date: '05/05/2023',
+        url: 'https://youtu.be/9VXT88fsutc?list=PLaUKVVcTcbOLJMQQPv0JpdB3ZJgqf5iGR&t=4859',
+        subject: "Jésus n'a jamais annoncer Ahmad [Open Mic 2023]",
+        debaters: [{ ...DebaterService.getByPseudo('Bénévolence'), team: 0 }],
+        plateform: DebatPlateformEnum.DISCORD
+      },
+      {
         topics: ['ahmad', 'open-mic'],
         date: '13/05/2023',
         url: 'https://youtu.be/y7CBy290iLU',

@@ -7,6 +7,14 @@ export default class TopicService {
     return [
       {
         cover: {
+          color: '#A3917B',
+          src: 'deuteronomy-18-18'
+        },
+        to: '/deuteronomy-18-18/',
+        title: 'Deutéronome 18:18'
+      },
+      {
+        cover: {
           color: '#77875B',
           src: 'the-parable-of-the-winegrowers'
         },
