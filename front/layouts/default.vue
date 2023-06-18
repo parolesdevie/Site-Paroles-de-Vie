@@ -6,7 +6,7 @@
       <slot />
     </div>
 
-    <EventPopup />
+    <!-- <EventPopup /> -->
 
     <!-- footer -->
     <Footer class="mt-40" />
