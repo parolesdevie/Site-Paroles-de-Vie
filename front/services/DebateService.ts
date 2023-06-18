@@ -7,30 +7,61 @@ export default class DebateService {
 
   static getAll(): IDebat[] {
     return [
+      // Open Mic 2023 épisode 6
       {
-        topics: ['deuteronomy-18-18', 'open-mic'],
+        topics: ['gospel-of-barnabas', 'open-mic'],
         date: '05/05/2023',
         url: 'https://youtu.be/9VXT88fsutc?list=PLaUKVVcTcbOLJMQQPv0JpdB3ZJgqf5iGR&t=4859',
-        subject: "Jésus n'a jamais annoncer Ahmad [Open Mic 2023]",
+        subject: "L'Évangile de Barnabé [Open Mic 2023]",
         debaters: [{ ...DebaterService.getByPseudo('Bénévolence'), team: 0 }],
         plateform: DebatPlateformEnum.DISCORD
       },
+      // Open Mic 2023 épisode 5
+      {
+        topics: ['doctrine-of-the-salaf', 'open-mic'],
+        date: '26/05/2023',
+        url: 'https://youtu.be/E91GkpG-Xgs',
+        subject:
+          'Manque de preuves de la théorie de la falsification & Incohérence de la doctrine des Salafs [Open Mic 2023]',
+        debaters: [
+          {
+            ...DebaterService.getByPseudo('JMS'),
+            ...DebaterService.getByPseudo('Sham'),
+            team: 0
+          }
+        ],
+        plateform: DebatPlateformEnum.TIKTOK
+      },
+      // Open Mic 2023 épisode 4
+      {
+        topics: ['ahmad', 'open-mic'],
+        date: '19/05/2023',
+        url: 'https://youtu.be/v8PC2ftXzEA',
+        subject:
+          "Jésus n'a jamais annoncer Muhammad ni l'Islam [Open Mic 2023]",
+        debaters: [{ ...DebaterService.getByPseudo('Bénévolence'), team: 0 }],
+        plateform: DebatPlateformEnum.DISCORD
+      },
+      // Open Mic 2023 épisode 3
       {
         topics: ['ahmad', 'open-mic'],
         date: '13/05/2023',
         url: 'https://youtu.be/y7CBy290iLU',
-        subject: "Jésus n'a jamais annoncer Ahmad [Open Mic 2023]",
+        subject:
+          "Jésus n'a jamais annoncer Muhammad ni l'Islam [Open Mic 2023]",
         debaters: [{ ...DebaterService.getByPseudo('Bénévolence'), team: 0 }],
         plateform: DebatPlateformEnum.DISCORD
       },
+      // Open Mic 2023 épisode 2
       {
         topics: ['ahmad', 'open-mic'],
         date: '05/05/2023',
         url: 'https://youtu.be/9VXT88fsutc',
-        subject: "Jésus n'a jamais annoncer Ahmad [Open Mic 2023]",
+        subject: "Jésus n'a jamais annoncer Muhammad [Open Mic 2023]",
         debaters: [{ ...DebaterService.getByPseudo('Bénévolence'), team: 0 }],
         plateform: DebatPlateformEnum.DISCORD
       },
+      // Open Mic 2023 épisode 1
       {
         topics: ['ahmad', 'open-mic'],
         date: '28/04/2023',
