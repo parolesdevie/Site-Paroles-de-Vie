@@ -18,6 +18,14 @@
             <NuxtLink to="/search/"> Recherche </NuxtLink>
           </li>
           <li>
+            <NuxtLink to="/gospel-of-barnabas/">
+              L'Évangile de Barnabé
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/deuteronomy-18-18/"> Deutéronome 18:18 </NuxtLink>
+          </li>
+          <li>
             <NuxtLink to="/manuscripts/"> Manuscrits </NuxtLink>
           </li>
           <li>

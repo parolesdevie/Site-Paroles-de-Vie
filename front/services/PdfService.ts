@@ -20,7 +20,7 @@ export default class PdfService {
           AuthorEnum.BENEVOLENCE
         ],
         author: AuthorEnum.BENEVOLENCE,
-        slug: 'l-evangile-de-barnabe',
+        slug: 'gospel-of-barnabas',
         title: 'L’ Évangile de Barnabé'
       },
       {

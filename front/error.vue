@@ -12,19 +12,7 @@ const props = defineProps({ error: Object })
     />
 
     <div
-      class="
-        absolute
-        z-20
-        inset-0
-        bg-gray-100
-        dark:bg-gray-900
-        bg-opacity-80
-        dark:bg-opacity-80
-        flex flex-col
-        items-center
-        justify-center
-        p-10
-      "
+      class="absolute z-20 inset-0 bg-gray-100 dark:bg-gray-900 bg-opacity-80 dark:bg-opacity-80 flex flex-col items-center justify-center p-10"
     >
       <!-- error -->
       <!-- <div class="absolute z-30 top-8 left-4">
@@ -50,44 +38,34 @@ const props = defineProps({ error: Object })
         <!-- links -->
         <ul class="mt-2">
           <li class="contents">
-            <NuxtLink class="text-lg text-blue-500 hover:underline" to="/gospel"
-              >Louanges</NuxtLink
+            <NuxtLink
+              class="text-lg text-blue-500 hover:underline"
+              to="/gospel"
             >
+              Louanges
+            </NuxtLink>
           </li>
           \
           <li class="contents">
-            <NuxtLink class="text-lg text-blue-500 hover:underline" to="/live"
-              >Direct LIVE</NuxtLink
-            >
+            <NuxtLink class="text-lg text-blue-500 hover:underline" to="/live">
+              Direct LIVE
+            </NuxtLink>
           </li>
           \
           <li class="contents">
             <NuxtLink
               class="text-lg text-blue-500 hover:underline"
               to="/questions-answer"
-              >Questions</NuxtLink
             >
+              Questions
+            </NuxtLink>
           </li>
         </ul>
       </div>
 
       <!-- contact us -->
       <NuxtLink
-        class="
-          absolute
-          z-30
-          bottom-8
-          mt-2
-          md:mt-4
-          py-2
-          px-4
-          rounded
-          hover:bg-gray-200
-          dark:hover:bg-black dark:hover:bg-opacity-40
-          duration-300
-          inline-flex
-          items-center
-        "
+        class="absolute z-30 bottom-8 mt-2 md:mt-4 py-2 px-4 rounded hover:bg-gray-200 dark:hover:bg-black dark:hover:bg-opacity-40 duration-300 inline-flex items-center"
         to="/contact/"
       >
         <IconsIconQuestionCircle class="h-6 w-6" />

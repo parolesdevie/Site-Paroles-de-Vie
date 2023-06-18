@@ -8,6 +8,14 @@ export default class TopicService {
       {
         cover: {
           color: '#A3917B',
+          src: 'gospel-of-barnabas'
+        },
+        to: '/gospel-of-barnabas/',
+        title: "L'Évangile de Barnabé"
+      },
+      {
+        cover: {
+          color: '#A3917B',
           src: 'deuteronomy-18-18'
         },
         to: '/deuteronomy-18-18/',

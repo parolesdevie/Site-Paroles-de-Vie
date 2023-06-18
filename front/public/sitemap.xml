@@ -13,6 +13,18 @@
     <priority>.80</priority>
   </url>
   <url>
+    <loc>https://www.paroles-de-vie.tk/gospel-of-barnabas/</loc>
+    <lastmod>2023-06-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>.60</priority>
+  </url>
+  <url>
+    <loc>https://www.paroles-de-vie.tk/deuteronomy-18-18/</loc>
+    <lastmod>2023-06-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>.60</priority>
+  </url>
+  <url>
     <loc>https://www.paroles-de-vie.tk/books/</loc>
     <lastmod>2023-01-09</lastmod>
     <changefreq>daily</changefreq>
