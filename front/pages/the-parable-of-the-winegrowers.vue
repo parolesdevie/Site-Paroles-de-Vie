@@ -187,6 +187,12 @@ export default defineNuxtComponent({
         // },
         {
           source: VideoLinkEnum.YOUTUBE,
+          name: ' ● La parabole des Vignerons : vous avez dit l’Islam, vraiment ?',
+          url: 'https://youtu.be/N0Tm-e4qSxA',
+          thumbnail: 'https://img.youtube.com/vi/N0Tm-e4qSxA/mqdefault.jpg'
+        },
+        {
+          source: VideoLinkEnum.YOUTUBE,
           name: 'Parabole des mauvais vignerons - Jean-Marc Thobois',
           url: 'https://www.youtube.com/watch?v=00lnO2Ws7Ak',
           thumbnail: 'https://img.youtube.com/vi/00lnO2Ws7Ak/mqdefault.jpg'
