@@ -4,6 +4,12 @@ export default class PdfService {
   static getAll(): IPdf[] {
     return [
       {
+        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.BENEVOLENCE],
+        author: AuthorEnum.BENEVOLENCE,
+        slug: 'jesus-prophete',
+        title: 'Jésus prophète'
+      },
+      {
         tags: [
           AuthorTeamEnum.COLISEUM,
           ThemeEnum.REFUTATION,
