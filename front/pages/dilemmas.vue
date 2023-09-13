@@ -37,19 +37,29 @@ useHead({
       :playlistYoutubeId="playlistYoutubeIdVideos"
       :videos="videos"
     />
+
+    <SectionDownloadDocumentsList
+      class="container mx-auto mt-4 md:mt-10"
+      :files="files"
+    />
   </div>
 </template>
 
 <script lang="ts">
 import SectionIntroTopics from '~~/components/topics/SectionIntroTopics.vue'
 import SectionVideo from '~~/components/videos/SectionVideo.vue'
+import SectionDownloadDocumentsList from '~~/components/document/SectionDownloadDocumentsList.vue'
 import { TopicService } from '~~/services'
-import { VideoLinkEnum } from '~~/types'
+import { AuthorEnum, FormatEnum, VideoLinkEnum } from '~~/types'
 
 export default defineNuxtComponent({
   name: 'DilemmasPage',
 
-  components: { SectionIntroTopics, SectionVideo },
+  components: {
+    SectionIntroTopics,
+    SectionVideo,
+    SectionDownloadDocumentsList
+  },
 
   data() {
     return {
@@ -107,6 +117,57 @@ export default defineNuxtComponent({
           name: "Le dilemme de l'Eucharistie",
           url: 'https://youtu.be/7WA9SAgKtSI',
           thumbnail: 'https://img.youtube.com/vi/7WA9SAgKtSI/mqdefault.jpg'
+        }
+      ],
+      files: [
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          thumbnail: '/images/pdf/le-dilemme-de-la-gestation',
+          href: '/pdf/le-dilemme-de-la-gestation.pdf',
+          title: 'Le dilemme de la gestation'
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          thumbnail: '/images/pdf/le-dilemme-du-fils-de-dieu',
+          href: '/pdf/le-dilemme-du-fils-de-dieu.pdf',
+          title: 'Le dilemme du Fils de Dieu'
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          thumbnail: '/images/pdf/le-dilemme-du-bapteme',
+          href: '/pdf/le-dilemme-du-bapteme.pdf',
+          title: 'Le dilemme du Baptême'
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          thumbnail: '/images/pdf/le-dilemme-de-la-crucifixion',
+          href: '/pdf/le-dilemme-de-la-crucifixion.pdf',
+          title: 'Le Dilemme de la Crucifixion'
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          thumbnail: '/images/pdf/le-dilemme-du-paradis',
+          href: '/pdf/le-dilemme-du-paradis.pdf',
+          title: 'Le dilemme du Paradis'
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          thumbnail: '/images/pdf/le-dilemme-de-ladultere',
+          href: '/pdf/le-dilemme-de-ladultere.pdf',
+          title: "Le dilemme de l'adultère"
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          thumbnail: '/images/pdf/le-dilemme-de-l-eucharistie',
+          href: '/pdf/le-dilemme-de-l-eucharistie.pdf',
+          title: "Le dilemme de l'Eucharistie"
         }
       ]
     }
