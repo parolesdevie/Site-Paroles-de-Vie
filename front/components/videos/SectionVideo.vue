@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section v-if="videos.length">
     <!-- title -->
     <H2Title>{{ title }}</H2Title>
 
@@ -52,16 +52,7 @@
             <IconPlateformVideo :source="video.source" />
             <span
               v-if="video.lang"
-              class="
-                absolute
-                top-4
-                right-0
-                bg-black
-                text-white text-sm
-                px-3
-                py-1
-                font-medium
-              "
+              class="absolute top-4 right-0 bg-black text-white text-sm px-3 py-1 font-medium"
             >
               {{ video.lang }}
             </span>
@@ -73,23 +64,7 @@
               alt=""
             />
             <span
-              class="
-                absolute
-                inset-x-0
-                bottom-0
-                w-full
-                py-1
-                px-2
-                text-xs
-                md:text-base
-                bg-black
-                duration-300
-                text-white
-                font-semibold
-                text-right
-                truncate
-                rounded-b-lg
-              "
+              class="absolute inset-x-0 bottom-0 w-full py-1 px-2 text-xs md:text-base bg-black duration-300 text-white font-semibold text-right truncate rounded-b-lg"
             >
               {{ video.name }}
             </span>

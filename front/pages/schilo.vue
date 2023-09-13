@@ -56,7 +56,7 @@ useHead({
 <script lang="ts">
 import SectionIntroTopics from '~~/components/topics/SectionIntroTopics.vue'
 import SectionDownloadDocumentsList from '~~/components/document/SectionDownloadDocumentsList.vue'
-import { DebateService, TopicService } from '~~/services'
+import { TopicService } from '~~/services'
 import { AuthorEnum, FormatEnum, ISourceFile } from '~~/types'
 
 export default defineNuxtComponent({
@@ -77,7 +77,6 @@ export default defineNuxtComponent({
         }
       ],
       cover: TopicService.getBySlug('/schilo/')?.cover,
-      debates: DebateService.getByTopic('template'),
       frontFile: {
         author: AuthorEnum.BENEVOLENCE,
         format: FormatEnum.PDF,

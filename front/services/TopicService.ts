@@ -7,6 +7,14 @@ export default class TopicService {
     return [
       {
         cover: {
+          color: '#57402B',
+          src: 'dilemmas'
+        },
+        to: '/dilemmas/',
+        title: 'Les Dilemmes'
+      },
+      {
+        cover: {
           color: '#8F6C4D',
           src: 'schilo'
         },
