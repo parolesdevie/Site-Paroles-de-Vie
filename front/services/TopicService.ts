@@ -7,6 +7,14 @@ export default class TopicService {
     return [
       {
         cover: {
+          color: '#8F6C4D',
+          src: 'schilo'
+        },
+        to: '/schilo/',
+        title: 'Le Schilo'
+      },
+      {
+        cover: {
           color: '#A3917B',
           src: 'gospel-of-barnabas'
         },

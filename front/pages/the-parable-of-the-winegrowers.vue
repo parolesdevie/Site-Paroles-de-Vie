@@ -12,8 +12,8 @@
           La parabole des mauvais vignerons raconte l'histoire de vignerons
           malhonnêtes qui tuent les serviteurs et le fils du propriétaire d'un
           vignoble, symbolisant le rejet de l'autorité divine et la punition qui
-          s'ensuit.</template
-        >
+          s'ensuit.
+        </template>
       </SectionIntroTopics>
 
       <SectionDebate
