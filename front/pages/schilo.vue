@@ -45,18 +45,24 @@ useHead({
         </p>
       </template>
     </SectionIntroTopics>
+
+    <SectionDownloadDocumentsList
+      class="container mx-auto mt-4 md:mt-10"
+      :files="files"
+    />
   </div>
 </template>
 
 <script lang="ts">
 import SectionIntroTopics from '~~/components/topics/SectionIntroTopics.vue'
+import SectionDownloadDocumentsList from '~~/components/document/SectionDownloadDocumentsList.vue'
 import { DebateService, TopicService } from '~~/services'
 import { AuthorEnum, FormatEnum, ISourceFile } from '~~/types'
 
 export default defineNuxtComponent({
   name: 'Schilo',
 
-  components: { SectionIntroTopics },
+  components: { SectionIntroTopics, SectionDownloadDocumentsList },
 
   data() {
     return {
@@ -77,7 +83,16 @@ export default defineNuxtComponent({
         format: FormatEnum.PDF,
         slug: 'jesus-realizes-genesis-49-10',
         title: 'Le Schilo'
-      } as ISourceFile
+      } as ISourceFile,
+      files: [
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          thumbnail: '/images/pdf/jesus-realizes-genesis-49-10',
+          href: '/pdf/jesus-realizes-genesis-49-10.pdf',
+          title: 'Genèse 49:10 réalisé par Jésus'
+        }
+      ]
     }
   }
 })
