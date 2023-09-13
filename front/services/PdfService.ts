@@ -4,6 +4,12 @@ export default class PdfService {
   static getAll(): IPdf[] {
     return [
       {
+        tags: [AuthorTeamEnum.THEOPHILOS, AuthorEnum.FIDELIS_AND_VERAX],
+        author: AuthorEnum.FIDELIS_AND_VERAX,
+        slug: 'jesus-realizes-genesis-49-10',
+        title: 'Genèse 49,10 réalisé par Jésus'
+      },
+      {
         tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.BENEVOLENCE],
         author: AuthorEnum.BENEVOLENCE,
         slug: 'jesus-prophete',
