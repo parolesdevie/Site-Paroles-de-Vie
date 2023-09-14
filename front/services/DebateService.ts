@@ -7,6 +7,18 @@ export default class DebateService {
 
   static getAll(): IDebat[] {
     return [
+      // La crucifixion de Jésus Christ
+      {
+        topics: ['the-crucifixion-in-the-bible'],
+        date: '19/08/2023',
+        url: 'https://youtu.be/CfxUnd0fbtw',
+        subject: 'La crucifixion de Jésus Christ | Paroles de vie Vs Ayoub',
+        debaters: [
+          { ...DebaterService.getByPseudo('Bénévolence'), team: 0 },
+          { ...DebaterService.getByPseudo('LeonZer'), team: 1 }
+        ],
+        plateform: DebatPlateformEnum.YOUTUBE
+      },
       // Open Mic 2023 épisode 6
       {
         topics: ['gospel-of-barnabas', 'open-mic'],

@@ -238,6 +238,12 @@ export default class DebaterService {
         pseudo: 'Bilel ibn ahmed',
         name: 'Bilel ibn ahmed',
         religion: DebatReligionEnum.MUSLIM
+      },
+      {
+        id: 38,
+        pseudo: 'LeonZer',
+        name: 'Ayoub',
+        religion: DebatReligionEnum.MUSLIM
       }
     ]
   }

@@ -168,6 +168,13 @@ export default defineNuxtComponent({
           thumbnail: '/images/pdf/le-dilemme-de-l-eucharistie',
           href: '/pdf/le-dilemme-de-l-eucharistie.pdf',
           title: "Le dilemme de l'Eucharistie"
+        },
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          thumbnail: '/images/pdf/the-dilemma-of-the-word',
+          href: '/pdf/the-dilemma-of-the-word.pdf',
+          title: 'Le dilemme de La Parole'
         }
       ]
     }

@@ -4,6 +4,18 @@ export default class PdfService {
   static getAll(): IPdf[] {
     return [
       {
+        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JMS, ThemeEnum.DILEMME],
+        author: AuthorEnum.BENEVOLENCE,
+        slug: 'the-dilemma-of-the-word',
+        title: 'Le dilemme de La Parole'
+      },
+      {
+        tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.BENEVOLENCE],
+        author: AuthorEnum.BENEVOLENCE,
+        slug: 'name-of-god',
+        title: 'Le nom de Dieu'
+      },
+      {
         tags: [AuthorTeamEnum.THEOPHILOS, AuthorEnum.FIDELIS_AND_VERAX],
         author: AuthorEnum.FIDELIS_AND_VERAX,
         slug: 'jesus-realizes-genesis-49-10',
@@ -73,7 +85,7 @@ export default class PdfService {
         tags: [
           AuthorTeamEnum.COLISEUM,
           AuthorEnum.BENEVOLENCE,
-          ThemeEnum.DILEMME
+          ThemeEnum.REFUTATION
         ],
         author: AuthorEnum.GZN,
         slug: 'la-pericope-de-la-femme-adultere',
