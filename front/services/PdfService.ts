@@ -4,6 +4,13 @@ export default class PdfService {
   static getAll(): IPdf[] {
     return [
       {
+        tags: [AuthorTeamEnum.AL_SALIB_DOMINI, ThemeEnum.REFUTATION],
+        author: AuthorEnum.TINO,
+        slug: 'answering-those-who-altered-the-religion-of-jesus-christ-by-shaikhul-islam-ibn-taimiyah',
+        title:
+          "Réfuter l'affirmation selon laquelle les versets coraniques se contredisent"
+      },
+      {
         tags: [AuthorTeamEnum.COLISEUM, ThemeEnum.REFUTATION],
         author: AuthorEnum.BENEVOLENCE,
         slug: 'jesus-and-the-fig-tree',

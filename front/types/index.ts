@@ -94,14 +94,16 @@ export enum AuthorEnum {
   SAVED_BY_CHRIST = 'saved-by-christ',
   PROTOCOLE = 'protocole',
   DEMS = 'dems',
-  GZN = 'gzn'
+  GZN = 'gzn',
+  TINO = 'Al Salib-Domini'
 }
 
 export enum AuthorTeamEnum {
   NULL = '',
   UNKNOW = 'inconnu',
   COLISEUM = 'coliseum',
-  THEOPHILOS = 'theophilos'
+  THEOPHILOS = 'theophilos',
+  AL_SALIB_DOMINI = 'Al Salib-Domini'
 }
 
 export type TagEnum = ThemeEnum | AuthorEnum | AuthorTeamEnum | string
