@@ -4,7 +4,7 @@
     <Breadcrumb :items="breadcrumbItems" />
 
     <!-- intro -->
-    <SectionIntroTopics :cover="cover">
+    <SectionIntroTopics :cover="cover" :frontFile="frontFile">
       <template v-slot:title>La critique textuelle biblique</template>
       <template v-slot:body>
         En bref, la critique textuelle est une méthode permettant de
@@ -35,6 +35,22 @@
       :hideSubject="false"
     />
 
+    <!-- section youtube videos  -->
+    <SectionVideo
+      left
+      keepOnGrid
+      class="container mx-auto mt-4 md:mt-10"
+      title="Découvrir en vidéos"
+      playlistYoutubeId="PLaBmOZ7eJG-WHpCtPPRwhgTAEtikaGuFr"
+      :videos="videos"
+    />
+
+    <!-- section download document  -->
+    <SectionDownloadDocumentsList
+      class="container mx-auto mt-4 md:mt-10"
+      :files="files"
+    />
+
     <!-- book -->
     <SectionBook
       class="container mx-auto mt-4 md:mt-10"
@@ -63,16 +79,6 @@
         </a>
       </p>
     </SectionBook>
-
-    <!-- section youtube videos  -->
-    <SectionVideo
-      left
-      keepOnGrid
-      class="container mx-auto mt-4 md:mt-10"
-      title="Découvrir en vidéos"
-      playlistYoutubeId="PLaBmOZ7eJG-WHpCtPPRwhgTAEtikaGuFr"
-      :videos="videos"
-    />
   </div>
 </template>
 
@@ -104,17 +110,25 @@ import SectionBook from '~~/components/book/SectionBook.vue'
 import SectionDebate from '~~/components/debate/SectionDebate.vue'
 import SectionIntroTopics from '~~/components/topics/SectionIntroTopics.vue'
 import SectionVideo from '~~/components/videos/SectionVideo.vue'
+import SectionDownloadDocumentsList from '~~/components/document/SectionDownloadDocumentsList.vue'
 import {
   BookService,
   DebateService,
   TopicService,
   TopicVideosService
 } from '~~/services'
+import { AuthorEnum, FormatEnum, ISourceFile } from '~~/types'
 
 export default defineNuxtComponent({
   name: 'BiblicalTextCriticismPage',
 
-  components: { SectionIntroTopics, SectionDebate, SectionBook, SectionVideo },
+  components: {
+    SectionIntroTopics,
+    SectionDebate,
+    SectionBook,
+    SectionVideo,
+    SectionDownloadDocumentsList
+  },
 
   data() {
     return {
@@ -129,11 +143,28 @@ export default defineNuxtComponent({
         }
       ],
       cover: TopicService.getBySlug('/biblical-textual-criticism/')?.cover,
+      frontFile: {
+        author: AuthorEnum.BENEVOLENCE,
+        format: FormatEnum.PDF,
+        slug: 'marc-s-finale',
+        thumbnail: '/images/pdf/marc-s-finale',
+        href: '/pdf/marc-s-finale.pdf',
+        title: 'La finale de Marc'
+      } as ISourceFile,
       debates: DebateService.getByTopic('biblical-textual-criticism'),
       books: BookService.getBySlug('bible-nestle-aland'),
       videos: [
-        TopicVideosService.getVideosByTopic('biblical-textual-criticism'),
-        TopicVideosService.getVideosByTopic('bible-nestle-aland')
+        ...TopicVideosService.getVideosByTopic('biblical-textual-criticism'),
+        ...TopicVideosService.getVideosByTopic('bible-nestle-aland')
+      ],
+      files: [
+        {
+          author: AuthorEnum.BENEVOLENCE,
+          format: FormatEnum.PDF,
+          thumbnail: '/images/pdf/marc-s-finale',
+          href: '/pdf/marc-s-finale.pdf',
+          title: 'La finale de Marc'
+        }
       ]
     }
   }

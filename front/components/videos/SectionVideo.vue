@@ -1,7 +1,11 @@
 <template>
   <section v-if="videos.length">
     <!-- title -->
-    <H2Title>{{ title }}</H2Title>
+    <H2Title>
+      {{ title }} <span class="hidden md:inline text-sm opacity-50">
+        ({{ videos.length }} vidéos)
+      </span>
+    </H2Title>
 
     <!-- links -->
     <nav class="mt-2 md:mt-4">
@@ -36,7 +40,6 @@
               md:h-52 md:w-80
               pb-6
               md:pb-8
-              bg-gray-200
               rounded-lg
               overflow-hidden
               shrink-0
@@ -59,7 +62,7 @@
             <img
               v-if="video.thumbnail"
               loading="lazy"
-              class="h-full w-full rounded-t-lg object-cover"
+              class="h-full w-full rounded-t-lg object-cover bg-gray-200"
               :src="video.thumbnail"
               alt=""
             />
