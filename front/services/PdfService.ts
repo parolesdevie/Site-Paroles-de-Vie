@@ -4,6 +4,12 @@ export default class PdfService {
   static getAll(): IPdf[] {
     return [
       {
+        tags: [AuthorTeamEnum.COLISEUM, ThemeEnum.REFUTATION],
+        author: AuthorEnum.BENEVOLENCE,
+        slug: 'jesus-and-the-fig-tree',
+        title: 'Jésus et le figuier'
+      },
+      {
         tags: [AuthorTeamEnum.COLISEUM, AuthorEnum.JMS, ThemeEnum.DILEMME],
         author: AuthorEnum.BENEVOLENCE,
         slug: 'the-dilemma-of-the-word',
