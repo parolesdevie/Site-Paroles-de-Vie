@@ -4,7 +4,8 @@ export enum ManuscriptsPlateformEnum {
   CODEX_SINATICUS_ORG = 'Codex Sinaiticus .org',
   CENTER_STUDY_NT = 'Center for the Study of New Testament Manuscripts',
   DIGITAL_VATICAN_LIBRARY = 'Digital Vatican Library',
-  BRITISH_LIBRARY = 'The British Library'
+  BRITISH_LIBRARY = 'The British Library',
+  GALLICA = 'Gallica'
 }
 
 export default class WebSiteService {
@@ -105,6 +106,19 @@ export default class WebSiteService {
           {
             name: ManuscriptsPlateformEnum.CENTER_STUDY_NT,
             href: 'https://manuscripts.csntm.org/manuscript/Group/GA_03'
+          }
+        ]
+      },
+      CODEX_EPHRAEMI_RESCRIPTUS: {
+        name: 'Codex Ephraemi Rescriptus',
+        sites: [
+          {
+            name: ManuscriptsPlateformEnum.GALLICA,
+            href: 'https://gallica.bnf.fr/ark:/12148/btv1b8470433r/f16.item'
+          },
+          {
+            name: ManuscriptsPlateformEnum.CENTER_STUDY_NT,
+            href: 'https://manuscripts.csntm.org/manuscript/View/GA_04'
           }
         ]
       },

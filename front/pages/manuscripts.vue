@@ -12,42 +12,17 @@
       <div class="mt-2 md:mt-4 flex flex-col md:flex-row">
         <!-- demo -->
         <div
-          class="
-            self-center
-            inline-flex
-            flex-col
-            items-end
-            select-none
-            px-16
-            pb-10
-          "
+          class="self-center inline-flex flex-col items-end select-none px-16 pb-10"
         >
           <div class="relative">
             <div
               tabindex="0"
-              class="
-                mb-2
-                md:mb-3
-                h-40
-                w-40
-                md:h-56 md:w-56
-                lg:h-64 lg:w-64
-                bg-gray-300
-                dark:bg-gray-700
-                rounded-lg
-              "
+              class="mb-2 md:mb-3 h-40 w-40 md:h-56 md:w-56 lg:h-64 lg:w-64 bg-gray-300 dark:bg-gray-700 rounded-lg"
             >
               <HandDrownArrowComment title="aperçu" top="20" />
             </div>
             <div
-              class="
-                absolute
-                inset-x-0
-                bottom-10
-                text-center
-                py-2
-                bg-black bg-opacity-60
-              "
+              class="absolute inset-x-0 bottom-10 text-center py-2 bg-black bg-opacity-60"
             >
               <span
                 class="uppercase font-black text-lg tracking-wider text-white"
@@ -61,18 +36,7 @@
             <span
               v-for="i in 4"
               :key="i"
-              class="
-                h-6
-                w-6
-                md:h-10 md:w-10
-                lg:h-12 lg:w-12
-                bg-gray-300
-                dark:bg-gray-700
-                rounded-lg
-                inline-flex
-                items-center
-                justify-center
-              "
+              class="h-6 w-6 md:h-10 md:w-10 lg:h-12 lg:w-12 bg-gray-300 dark:bg-gray-700 rounded-lg inline-flex items-center justify-center"
               target="_blank"
               rel="noopener noreferrer"
             />
@@ -90,17 +54,7 @@
               :key="index"
             >
               <span
-                class="
-                  h-10
-                  w-10
-                  md:h-12 md:w-12
-                  bg-gray-300
-                  dark:bg-gray-700
-                  rounded-xl
-                  inline-flex
-                  items-center
-                  justify-center
-                "
+                class="h-10 w-10 md:h-12 md:w-12 bg-gray-300 dark:bg-gray-700 rounded-xl inline-flex items-center justify-center"
               >
                 <img
                   loading="lazy"
@@ -114,17 +68,7 @@
             </li>
             <li class="inline-flex items-center">
               <span
-                class="
-                  h-10
-                  w-10
-                  md:h-12 md:w-12
-                  bg-gray-300
-                  dark:bg-gray-700
-                  rounded-xl
-                  inline-flex
-                  items-center
-                  justify-center
-                "
+                class="h-10 w-10 md:h-12 md:w-12 bg-gray-300 dark:bg-gray-700 rounded-xl inline-flex items-center justify-center"
               >
                 <IconBookOpen class="h-7 w-7 text-white" />
               </span>
@@ -136,14 +80,7 @@
 
       <!-- codex collection -->
       <div
-        class="
-          mt-4
-          md:mt-10
-          flex flex-wrap
-          gap-6
-          md:gap-10 md:justify-center
-          lg:justify-start
-        "
+        class="mt-4 md:mt-10 flex flex-wrap gap-6 md:gap-10 md:justify-center lg:justify-start"
       >
         <ManuscriptCard
           :title="manuscripts.CODEX_SINATICUS.name"
@@ -159,6 +96,11 @@
           :title="manuscripts.CODEX_VATICANUS.name"
           :sites="manuscripts.CODEX_VATICANUS.sites"
           image="codex-vaticanus"
+        />
+        <ManuscriptCard
+          :title="manuscripts.CODEX_EPHRAEMI_RESCRIPTUS.name"
+          :sites="manuscripts.CODEX_EPHRAEMI_RESCRIPTUS.sites"
+          image="codex-ephraemi-rescriptus"
         />
         <ManuscriptCard
           :title="manuscripts.OTHERS.name"
