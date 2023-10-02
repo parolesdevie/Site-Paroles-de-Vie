@@ -13,5 +13,12 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {}
     }
+  },
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'fr'
+      }
+    }
   }
 })
