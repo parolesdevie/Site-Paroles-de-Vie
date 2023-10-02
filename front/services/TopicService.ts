@@ -99,7 +99,7 @@ export default class TopicService {
         cover: {
           color: '#C2B17D',
           src: 'manuscript',
-          alt: 'Manuscrits'
+          alt: 'Un manuscrit ancien'
         },
         to: '/manuscripts/',
         title: 'Manuscrits'
@@ -108,7 +108,7 @@ export default class TopicService {
         cover: {
           color: '#625241',
           src: 'biblical-textual-criticism',
-          alt: 'Critique textuelle'
+          alt: 'Un vieux homme barbu'
         },
         to: '/biblical-textual-criticism/',
         title: 'Critique textuelle'
@@ -117,7 +117,7 @@ export default class TopicService {
         cover: {
           color: '#6A5847',
           src: 'gospel',
-          alt: 'Louanges'
+          alt: 'Une choral chrétienne'
         },
         to: '/gospel/',
         title: 'Louanges'
@@ -126,7 +126,7 @@ export default class TopicService {
         cover: {
           color: '#887D6D',
           src: 'soreg',
-          alt: 'Le Soreg'
+          alt: 'Un mur'
         },
         to: '/soreg/',
         title: 'Le Soreg'
@@ -135,7 +135,7 @@ export default class TopicService {
         cover: {
           color: '#A66B38',
           src: 'paraclete',
-          alt: 'Le Paraclet'
+          alt: 'Un feu dans une main'
         },
         to: '/paraclete/',
         title: 'Le Paraclet'
@@ -144,7 +144,7 @@ export default class TopicService {
         cover: {
           color: '#78674A',
           src: 'ahmad',
-          alt: 'ahmad'
+          alt: 'Jésus qui fait une annonce'
         },
         to: '/ahmad/',
         title: 'ahmad'
@@ -153,7 +153,7 @@ export default class TopicService {
         cover: {
           color: '#8A7A6F',
           src: 'the-divinity-of-jesus',
-          alt: 'La divinité de Jésus'
+          alt: 'Jésus qui vol dans le ciel'
         },
         to: '/the-divinity-of-jesus/',
         title: 'La divinité de Jésus'
@@ -165,13 +165,13 @@ export default class TopicService {
           alt: 'La falsification de la bible'
         },
         to: '/the-falsification-of-the-bible/',
-        title: 'La falsification de la bible'
+        title: 'Un manuscrit'
       },
       {
         cover: {
           color: '#97A09C',
           src: 'the-crucifixion-in-the-bible',
-          alt: 'La crucifixion dans la bible'
+          alt: 'Un manuscrit'
         },
         to: '/the-crucifixion-in-the-bible/',
         title: 'La crucifixion dans la bible'
@@ -181,7 +181,7 @@ export default class TopicService {
         cover: {
           color: '#967D7A',
           src: 'youtube',
-          alt: 'Chaîne Youtube Recommandées'
+          alt: 'Une camera'
         },
         to: '/youtube/',
         title: 'Chaîne Youtube Recommandées'
@@ -190,7 +190,7 @@ export default class TopicService {
         cover: {
           color: '#59463B',
           src: 'books',
-          alt: 'Livres Recommandés'
+          alt: 'Des livres'
         },
         to: '/books/',
         title: 'Livres Recommandés'
@@ -199,7 +199,7 @@ export default class TopicService {
         cover: {
           color: '#CB885F',
           src: 'sites',
-          alt: 'Sites Recommandés'
+          alt: 'Un site internet'
         },
         to: '/sites/',
         title: 'Sites Recommandés'
@@ -208,7 +208,7 @@ export default class TopicService {
         cover: {
           color: '#AFA69E',
           src: 'read-the-bible',
-          alt: 'Lire la Bible'
+          alt: 'Une Bible'
         },
         to: '/read-the-bible/',
         title: 'Lire la Bible'
@@ -217,7 +217,7 @@ export default class TopicService {
         cover: {
           color: '#64575A',
           src: 'social-networks',
-          alt: 'Réseaux sociaux'
+          alt: "Ume icon d'appli"
         },
         to: '/social-networks/',
         title: 'Réseaux sociaux'
@@ -226,7 +226,7 @@ export default class TopicService {
         cover: {
           color: '#ACB0BB',
           src: 'magazines',
-          alt: 'Magazines'
+          alt: 'Un magazine'
         },
         to: '/magazines/',
         title: 'Magazines'
@@ -235,7 +235,7 @@ export default class TopicService {
         cover: {
           color: '#B18F66',
           src: 'gallery',
-          alt: "Galerie d'images"
+          alt: 'Une galerie de tableaux'
         },
         to: '/gallery/',
         title: "Galerie d'images"
@@ -244,7 +244,7 @@ export default class TopicService {
         cover: {
           color: '#514A3C',
           src: 'coliseum',
-          alt: 'Coliseum'
+          alt: 'Le logo de Coliseum'
         },
         to: '/coliseum/',
         title: 'Coliseum'
@@ -298,7 +298,7 @@ export default class TopicService {
         cover: {
           color: '#A3917B',
           src: 'name-jesus',
-          alt: 'Nom de Jésus'
+          alt: 'Une Bible'
         },
         to: '/name-jesus/',
         title: 'Nom de Jésus'
@@ -307,7 +307,7 @@ export default class TopicService {
         cover: {
           color: '#A3917B',
           src: 'name-god',
-          alt: 'Nom de Dieu'
+          alt: 'Une Bible'
         },
         to: '/name-god/',
         title: 'Nom de Dieu'
