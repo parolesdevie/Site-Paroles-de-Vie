@@ -32,20 +32,7 @@
         <Tag
           v-for="(plateform, index) in searchPlateforms"
           :key="index"
-          class="
-            select-none
-            cursor-pointer
-            text-xs
-            md:text-base
-            inline-flex
-            items-center
-            font-bold
-            leading-sm
-            uppercase
-            px-3
-            py-1
-            rounded-full
-          "
+          class="select-none cursor-pointer text-xs md:text-base inline-flex items-center font-bold leading-sm uppercase px-3 py-1 rounded-full"
           :active="plateformSelected === plateform"
           @click="selectPlateform(plateform)"
         >

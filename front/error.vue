@@ -6,6 +6,8 @@ const props = defineProps({ error: Object })
   <div class="relative min-h-screen min-w-screen">
     <!-- background image -->
     <img
+      height="2160"
+      width="3840"
       class="absolute h-full w-full object-cover z-10 animate-fade-slow"
       src="/images/error-background.webp"
       alt="Jésus habillé en grec qui est assis dans un jardin entouré de ses amis les apôtres, très détaillé, hyper-réaliste, photographique, objectif grand angle, par Richard Avedon, Patrick Demarchelier, Vogue, Baron Adolphe De Meyer"

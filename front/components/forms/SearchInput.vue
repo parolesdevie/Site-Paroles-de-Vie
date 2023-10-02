@@ -1,29 +1,10 @@
 <template>
   <div
-    class="
-      mt-2
-      md:mt-4
-      rounded-md
-      border-black border
-      dark:border-white
-      w-full
-      max-w-lg
-      p-2
-      flex
-      items-center
-    "
+    class="mt-2 md:mt-4 rounded-md border-black border dark:border-white w-full max-w-lg p-2 flex items-center"
   >
     <IconSearch class="h-6 w-6 flex-shrink-0" />
     <input
-      class="
-        ml-2
-        md:ml-4
-        w-full
-        outline-none
-        md:text-lg
-        bg-transparent
-        dark:text-white
-      "
+      class="ml-2 md:ml-4 w-full outline-none md:text-lg bg-transparent dark:text-white"
       type="text"
       :placeholder="placeholder"
       :value="modelValue"

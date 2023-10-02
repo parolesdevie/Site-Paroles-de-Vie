@@ -9,6 +9,8 @@
     >
       <!-- image -->
       <img
+        height="305"
+        width="224"
         :loading="loading"
         :class="`w-40 ${scaledSize} rounded-xl hover:scale-110 duration-300`"
         :src="'/images/pdf/' + slug + '.webp'"

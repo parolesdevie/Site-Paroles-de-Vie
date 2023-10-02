@@ -1,19 +1,21 @@
 <script setup lang="ts">
+import { PropType } from 'vue'
+
 // props
-const props = defineProps<{
+const props = defineProps({
   title: {
-    type: String
+    type: String,
     default: 'Titre'
-  }
+  },
   src: {
-    type: String
+    type: String,
     default: 'slug'
-  }
+  },
   amazon: {
-    type: String
+    type: String as PropType<String | undefined>,
     default: undefined
   }
-}>()
+})
 
 // computed
 const computedSrrset = computed(
@@ -31,6 +33,8 @@ const computedSrc = computed(() => `/images/book/${props.src}.webp 1x`)
   >
     <!-- image -->
     <img
+      height="128"
+      width="94"
       loading="lazy"
       class="h-24 md:h-32 hover:scale-125 duration-300"
       :srcset="computedSrrset"
@@ -41,19 +45,7 @@ const computedSrc = computed(() => `/images/book/${props.src}.webp 1x`)
     <!-- amazon -->
     <a
       v-if="amazon"
-      class="
-        mt-4
-        md:mt-6
-        border border-orange-600
-        text-orange-600
-        hover:bg-orange-600 hover:text-white
-        rounded-md
-        px-2
-        md:py-1
-        flex
-        items-center
-        font-semibold
-      "
+      class="mt-4 md:mt-6 border border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white rounded-md px-2 md:py-1 flex items-center font-semibold"
       :href="'https://amzn.to/' + amazon"
       target="_blank"
       rel="noopener noreferrer"
@@ -64,15 +56,7 @@ const computedSrc = computed(() => `/images/book/${props.src}.webp 1x`)
 
     <!-- title -->
     <span
-      class="
-        mt-2
-        text-sm
-        md:text-base
-        font-semibold
-        text-center
-        h-32
-        overflow-y-hidden
-      "
+      class="mt-2 text-sm md:text-base font-semibold text-center h-32 overflow-y-hidden"
     >
       {{ title }}
     </span>

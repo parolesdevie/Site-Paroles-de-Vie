@@ -48,11 +48,11 @@ export default class MenuService {
   static getTikTokMenu(): IWebSite[] {
     return [
       {
-        href: 'https://www.tiktok.com/@paroles.de.vie',
+        href: 'https://www.tiktok.com/@paroles.de.vie.2',
         name: 'Chaîne Paroles de Vie'
       },
       {
-        href: 'https://www.tiktok.com/@chaine.coliseum',
+        href: 'https://www.tiktok.com/@chaine.coliseum.2',
         name: 'Chaîne Coliseum'
       }
     ]

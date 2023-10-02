@@ -1,6 +1,8 @@
 <template>
   <div class="shrink-0" :style="{ backgroundColor: color }">
     <img
+      height="240"
+      width="240"
       class="animate-fade"
       :srcset="computedSrrset"
       :src="computedSrc"

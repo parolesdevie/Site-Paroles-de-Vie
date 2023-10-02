@@ -140,43 +140,43 @@ export default defineNuxtComponent({
         // {
         //   source: VideoLinkEnum.TIKTOK,
         //   name: 'Chaîne Paroles de Vie (p1)',
-        //   url: 'https://www.tiktok.com/@paroles.de.vie/video/7138382136482008325',
+        //   url: 'https://www.tiktok.com/@paroles.de.vie.2/video/7138382136482008325',
         //   thumbnail: '/images/video/7138382136482008325.webp'
         // },
         // {
         //   source: VideoLinkEnum.TIKTOK,
         //   name: 'Chaîne Paroles de Vie (p2)',
-        //   url: 'https://www.tiktok.com/@paroles.de.vie/video/7138385953864928518',
+        //   url: 'https://www.tiktok.com/@paroles.de.vie.2/video/7138385953864928518',
         //   thumbnail: '/images/video/7138385953864928518.webp'
         // },
         // {
         //   source: VideoLinkEnum.TIKTOK,
         //   name: 'Chaîne Paroles de Vie (p3)',
-        //   url: 'https://www.tiktok.com/@paroles.de.vie/video/7138455829904149766',
+        //   url: 'https://www.tiktok.com/@paroles.de.vie.2/video/7138455829904149766',
         //   thumbnail: '/images/video/7138455829904149766.webp'
         // },
         // {
         //   source: VideoLinkEnum.TIKTOK,
         //   name: 'Chaîne Paroles de Vie (p4)',
-        //   url: 'https://www.tiktok.com/@paroles.de.vie/video/7138993803918101766',
+        //   url: 'https://www.tiktok.com/@paroles.de.vie.2/video/7138993803918101766',
         //   thumbnail: '/images/video/7138993803918101766.webp'
         // },
         // {
         //   source: VideoLinkEnum.TIKTOK,
         //   name: 'Chaîne Paroles de Vie (p5)',
-        //   url: 'https://www.tiktok.com/@paroles.de.vie/video/7139474689625197829',
+        //   url: 'https://www.tiktok.com/@paroles.de.vie.2/video/7139474689625197829',
         //   thumbnail: '/images/video/7139474689625197829.webp'
         // },
         // {
         //   source: VideoLinkEnum.TIKTOK,
         //   name: 'Chaîne Paroles de Vie (p6)',
-        //   url: 'https://www.tiktok.com/@paroles.de.vie/video/7139564753969581317',
+        //   url: 'https://www.tiktok.com/@paroles.de.vie.2/video/7139564753969581317',
         //   thumbnail: '/images/video/7139564753969581317.webp'
         // },
         // {
         //   source: VideoLinkEnum.TIKTOK,
         //   name: 'Chaîne Paroles de Vie (p7)',
-        //   url: 'https://www.tiktok.com/@paroles.de.vie/video/7140479614119415045',
+        //   url: 'https://www.tiktok.com/@paroles.de.vie.2/video/7140479614119415045',
         //   thumbnail: '/images/video/7140479614119415045.webp'
         // },
         // {
