@@ -24,16 +24,16 @@
       >
         <NuxtLink to="/">
           <IconsIconLogoUni class="h-12 w-12 md:h-14 md:w-14" />
+          <div
+            href="https://www.tiktok.com/@paroles.de.vie.2"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="ml-3 lg:ml-0 font-bold hover:text-blue-500 inline-flex flex-col lg:items-center"
+          >
+            <span class="text-xl lg:text-base">Paroles</span>
+            <span class="text-sm lg:text-base">de Vie</span>
+          </div>
         </NuxtLink>
-        <a
-          href="https://www.tiktok.com/@paroles.de.vie.2"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="ml-3 lg:ml-0 font-bold hover:text-blue-500 inline-flex flex-col lg:items-center"
-        >
-          <span class="text-xl lg:text-base">Paroles</span>
-          <span class="text-sm lg:text-base">de Vie</span>
-        </a>
       </div>
 
       <!-- internal links -->

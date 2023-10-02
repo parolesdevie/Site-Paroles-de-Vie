@@ -8,7 +8,8 @@ export default class TopicService {
       {
         cover: {
           color: '#57402B',
-          src: 'dilemmas'
+          src: 'dilemmas',
+          alt: 'Un homme entre deux livre'
         },
         to: '/dilemmas/',
         title: 'Les Dilemmes'
@@ -16,15 +17,17 @@ export default class TopicService {
       {
         cover: {
           color: '#8F6C4D',
-          src: 'schilo'
+          src: 'schilo',
+          alt: 'Le Schilo'
         },
         to: '/schilo/',
-        title: 'Le Schilo'
+        title: 'La Bible'
       },
       {
         cover: {
           color: '#A3917B',
-          src: 'gospel-of-barnabas'
+          src: 'gospel-of-barnabas',
+          alt: 'Un parchemin'
         },
         to: '/gospel-of-barnabas/',
         title: "L'Évangile de Barnabé"
@@ -32,7 +35,8 @@ export default class TopicService {
       {
         cover: {
           color: '#A3917B',
-          src: 'deuteronomy-18-18'
+          src: 'deuteronomy-18-18',
+          alt: 'La bible'
         },
         to: '/deuteronomy-18-18/',
         title: 'Deutéronome 18:18'
@@ -40,7 +44,8 @@ export default class TopicService {
       {
         cover: {
           color: '#77875B',
-          src: 'the-parable-of-the-winegrowers'
+          src: 'the-parable-of-the-winegrowers',
+          alt: 'Une vigne'
         },
         to: '/the-parable-of-the-winegrowers/',
         title: 'La parabole des vignerons'
@@ -49,6 +54,7 @@ export default class TopicService {
       //   cover: {
       //     color: '#356193',
       //     src: 'live'
+      //   ,,alt: 'LIVE'
       //   },
       //   to: '/live/',
       //   title: 'LIVE'
@@ -56,23 +62,26 @@ export default class TopicService {
       {
         cover: {
           color: '#8E7B6E',
-          src: 'stories'
+          src: 'stories',
+          alt: 'Une gallerie photo'
         },
         to: '/stories/',
         title: 'Stories'
       },
-      {
-        cover: {
-          color: '#68513A',
-          src: 'almanach'
-        },
-        to: '/almanach/',
-        title: 'Almanach'
-      },
+      // {
+      //   cover: {
+      //     color: '#68513A',
+      //     src: 'almanach',
+      //     alt: 'Almanach'
+      //   },
+      //   to: '/almanach/',
+      //   title: 'Almanach'
+      // },
       {
         cover: {
           color: '#9D928C',
-          src: 'documents'
+          src: 'documents',
+          alt: 'Un parchemin'
         },
         to: '/documents/',
         title: 'Documents PDF'
@@ -80,7 +89,8 @@ export default class TopicService {
       {
         cover: {
           color: '#',
-          src: 'podcast'
+          src: 'podcast',
+          alt: 'Un micro au premier plan et un arriére plan flou'
         },
         to: '/podcast/',
         title: 'Podcast'
@@ -88,7 +98,8 @@ export default class TopicService {
       {
         cover: {
           color: '#C2B17D',
-          src: 'manuscript'
+          src: 'manuscript',
+          alt: 'Manuscrits'
         },
         to: '/manuscripts/',
         title: 'Manuscrits'
@@ -96,7 +107,8 @@ export default class TopicService {
       {
         cover: {
           color: '#625241',
-          src: 'biblical-textual-criticism'
+          src: 'biblical-textual-criticism',
+          alt: 'Critique textuelle'
         },
         to: '/biblical-textual-criticism/',
         title: 'Critique textuelle'
@@ -104,7 +116,8 @@ export default class TopicService {
       {
         cover: {
           color: '#6A5847',
-          src: 'gospel'
+          src: 'gospel',
+          alt: 'Louanges'
         },
         to: '/gospel/',
         title: 'Louanges'
@@ -112,7 +125,8 @@ export default class TopicService {
       {
         cover: {
           color: '#887D6D',
-          src: 'soreg'
+          src: 'soreg',
+          alt: 'Le Soreg'
         },
         to: '/soreg/',
         title: 'Le Soreg'
@@ -120,7 +134,8 @@ export default class TopicService {
       {
         cover: {
           color: '#A66B38',
-          src: 'paraclete'
+          src: 'paraclete',
+          alt: 'Le Paraclet'
         },
         to: '/paraclete/',
         title: 'Le Paraclet'
@@ -128,7 +143,8 @@ export default class TopicService {
       {
         cover: {
           color: '#78674A',
-          src: 'ahmad'
+          src: 'ahmad',
+          alt: 'ahmad'
         },
         to: '/ahmad/',
         title: 'ahmad'
@@ -136,7 +152,8 @@ export default class TopicService {
       {
         cover: {
           color: '#8A7A6F',
-          src: 'the-divinity-of-jesus'
+          src: 'the-divinity-of-jesus',
+          alt: 'La divinité de Jésus'
         },
         to: '/the-divinity-of-jesus/',
         title: 'La divinité de Jésus'
@@ -144,7 +161,8 @@ export default class TopicService {
       {
         cover: {
           color: '#6A574D',
-          src: 'the-falsification-of-the-bible'
+          src: 'the-falsification-of-the-bible',
+          alt: 'La falsification de la bible'
         },
         to: '/the-falsification-of-the-bible/',
         title: 'La falsification de la bible'
@@ -152,7 +170,8 @@ export default class TopicService {
       {
         cover: {
           color: '#97A09C',
-          src: 'the-crucifixion-in-the-bible'
+          src: 'the-crucifixion-in-the-bible',
+          alt: 'La crucifixion dans la bible'
         },
         to: '/the-crucifixion-in-the-bible/',
         title: 'La crucifixion dans la bible'
@@ -161,7 +180,8 @@ export default class TopicService {
       {
         cover: {
           color: '#967D7A',
-          src: 'youtube'
+          src: 'youtube',
+          alt: 'Chaîne Youtube Recommandées'
         },
         to: '/youtube/',
         title: 'Chaîne Youtube Recommandées'
@@ -169,7 +189,8 @@ export default class TopicService {
       {
         cover: {
           color: '#59463B',
-          src: 'books'
+          src: 'books',
+          alt: 'Livres Recommandés'
         },
         to: '/books/',
         title: 'Livres Recommandés'
@@ -177,7 +198,8 @@ export default class TopicService {
       {
         cover: {
           color: '#CB885F',
-          src: 'sites'
+          src: 'sites',
+          alt: 'Sites Recommandés'
         },
         to: '/sites/',
         title: 'Sites Recommandés'
@@ -185,7 +207,8 @@ export default class TopicService {
       {
         cover: {
           color: '#AFA69E',
-          src: 'read-the-bible'
+          src: 'read-the-bible',
+          alt: 'Lire la Bible'
         },
         to: '/read-the-bible/',
         title: 'Lire la Bible'
@@ -193,7 +216,8 @@ export default class TopicService {
       {
         cover: {
           color: '#64575A',
-          src: 'social-networks'
+          src: 'social-networks',
+          alt: 'Réseaux sociaux'
         },
         to: '/social-networks/',
         title: 'Réseaux sociaux'
@@ -201,7 +225,8 @@ export default class TopicService {
       {
         cover: {
           color: '#ACB0BB',
-          src: 'magazines'
+          src: 'magazines',
+          alt: 'Magazines'
         },
         to: '/magazines/',
         title: 'Magazines'
@@ -209,7 +234,8 @@ export default class TopicService {
       {
         cover: {
           color: '#B18F66',
-          src: 'gallery'
+          src: 'gallery',
+          alt: "Galerie d'images"
         },
         to: '/gallery/',
         title: "Galerie d'images"
@@ -217,7 +243,8 @@ export default class TopicService {
       {
         cover: {
           color: '#514A3C',
-          src: 'coliseum'
+          src: 'coliseum',
+          alt: 'Coliseum'
         },
         to: '/coliseum/',
         title: 'Coliseum'
@@ -226,6 +253,7 @@ export default class TopicService {
       //   cover: {
       //     color: '#000',
       //     src: 'placeholder' // the-messiah-of-jesus
+      //   ,,alt: 'La messianité de Jésus'
       //   },
       //   to: '/the-messiah-of-jesus/',
       //   title: 'La messianité de Jésus'
@@ -234,6 +262,7 @@ export default class TopicService {
       //   cover: {
       //     color: '#3D342E',
       //     src: 'placeholder' // debates-tips
+      //   ,,alt: 'Conseils de débats'
       //   },
       //   to: '/debates-tips/',
       //   title: 'Conseils de débats'
@@ -242,6 +271,7 @@ export default class TopicService {
       //   cover: {
       //     color: '#CABA8C',
       //     src: 'placeholder' // free-will
+      //   ,,alt: 'Le libre arbitre'
       //   },
       //   to: '/free-will/',
       //   title: 'Le libre arbitre'
@@ -250,6 +280,7 @@ export default class TopicService {
       //   cover: {
       //     color: '#707377',
       //     src: 'placeholder' // search
+      //   ,,alt: 'Recherche'
       //   },
       //   to: '/search/',
       //   title: 'Recherche'
@@ -258,6 +289,7 @@ export default class TopicService {
       //   cover: {
       //     color: '#707377',
       //     src: 'placeholder'
+      //   ,,alt: 'template'
       //   },
       //   to: '/template/',
       //   title: 'template'
@@ -265,7 +297,8 @@ export default class TopicService {
       {
         cover: {
           color: '#A3917B',
-          src: 'name-jesus'
+          src: 'name-jesus',
+          alt: 'Nom de Jésus'
         },
         to: '/name-jesus/',
         title: 'Nom de Jésus'
@@ -273,7 +306,8 @@ export default class TopicService {
       {
         cover: {
           color: '#A3917B',
-          src: 'name-god'
+          src: 'name-god',
+          alt: 'Nom de Dieu'
         },
         to: '/name-god/',
         title: 'Nom de Dieu'
@@ -282,9 +316,10 @@ export default class TopicService {
       //   cover: {
       //     color: '#538E9C',
       //     src: 'questions-answer'
+      //   ,alt: 'Tu as une questions ?'
       //   },
       //   to: '/questions-answer/',
-      //   title: 'Tu as une questions ?'
+      //   title: 'Tu as une questions ?',
       // }
     ]
   }

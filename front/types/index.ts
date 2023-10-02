@@ -26,6 +26,7 @@ export interface ITopic {
   cover: {
     color: string
     src: string
+    alt: string
   }
   to: string
   title: string
