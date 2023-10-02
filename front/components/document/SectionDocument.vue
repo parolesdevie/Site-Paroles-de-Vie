@@ -7,13 +7,13 @@
     <div class="flex">
       <SearchInput v-model="searchKeyWord" placeholder="Ex: le paraclet" />
       <!-- show all -->
-      <input
+      <!-- <input
         :class="`mt-2 md:mt-4 h-11 w-11 ${showHereticTesis ? '' : 'opacity-0'}`"
         v-model="showHereticTesis"
         type="checkbox"
         name="heretic thesis"
         id=""
-      />
+      /> -->
     </div>
 
     <!-- tags -->

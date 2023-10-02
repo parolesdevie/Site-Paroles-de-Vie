@@ -11,6 +11,10 @@ const props = defineProps({
     type: String,
     default: 'slug'
   },
+  alt: {
+    type: String,
+    default: 'alt'
+  },
   amazon: {
     type: String as PropType<String | undefined>,
     default: undefined
@@ -39,7 +43,7 @@ const computedSrc = computed(() => `/images/book/${props.src}.webp 1x`)
       class="h-24 md:h-32 hover:scale-125 duration-300"
       :srcset="computedSrrset"
       :src="computedSrc"
-      :alt="title"
+      :alt="alt"
     />
 
     <!-- amazon -->

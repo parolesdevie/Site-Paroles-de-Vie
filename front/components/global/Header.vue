@@ -25,34 +25,18 @@
         </select> -->
 
         <!-- burger -->
-        <div
-          class="
-            flex
-            items-center
-            justify-center
-            border
-            rounded-full
-            lg:px-4
-            h-8
-          "
+        <!-- <div
+          class="flex items-center justify-center border rounded-full lg:px-4 h-8"
         >
           <input
             type="text"
-            class="
-              hidden
-              lg:inline
-              outline-none
-              text-white
-              lg:pr-10
-              xl:pr-20
-              bg-transparent
-            "
+            class="hidden lg:inline outline-none text-white lg:pr-10 xl:pr-20 bg-transparent"
             placeholder="Recherche"
           />
           <NuxtLink to="/resource/">
             <IconSearch class="lg:ml-2 h-8 w-8 p-2" />
           </NuxtLink>
-        </div>
+        </div> -->
 
         <!-- burger -->
         <!-- <IconBars class="h-8 w-8" /> -->
