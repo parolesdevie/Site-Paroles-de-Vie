@@ -1,13 +1,21 @@
 <template>
   <div class="shrink-0" :style="{ backgroundColor: color }">
-    <img
-      height="240"
-      width="240"
-      class="animate-fade"
-      :srcset="computedSrrset"
-      :src="computedSrc"
-      :alt="alt"
-    />
+    <picture>
+      <source
+        media="(min-width: 768px)"
+        type="image/webp"
+        :srcset="computedSrrset"
+      />
+      <source type="image/webp" :srcset="computedSrrsetMobile" />
+      <img
+        height="240"
+        width="240"
+        class="animate-fade"
+        :srcset="computedSrrset"
+        :src="computedSrc"
+        :alt="alt"
+      />
+    </picture>
   </div>
 </template>
 
@@ -38,6 +46,14 @@ export default defineNuxtComponent({
     computedSrc(): string {
       const { src } = this
       return `/images/topic/${src}.webp 1x`
+    },
+    computedSrrsetMobile(): string {
+      const { src } = this
+      return `/images/topic/${src}@mobile@1x.webp`
+    },
+    computedSrcMobile(): string {
+      const { src } = this
+      return `/images/topic/${src}@mobile.webp 1x`
     }
   }
 })
