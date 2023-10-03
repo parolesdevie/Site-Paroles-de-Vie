@@ -86,8 +86,8 @@ import Tag from '~~/components/global/Tag.vue'
 import H2Title from '~~/components/global/H2Title.vue'
 import { PropType } from 'vue'
 
-const DEFAULT_MAXIMUM = 30
-const MAXIMUM_STEP = 30
+const DEFAULT_MAXIMUM = 15
+const MAXIMUM_STEP = 40
 
 export default defineNuxtComponent({
   name: 'SectionDocument',
