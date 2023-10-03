@@ -11,7 +11,7 @@
       <ul class="flex flex-col leading-7">
         <li v-for="(webSite, index) in sites" :key="index">
           <a
-            class="flex items-center hover:text-blue-700"
+            class="flex items-center hover:text-blue-700 py-1"
             :href="webSite.href"
             target="_blank"
             rel="noopener noreferrer"
