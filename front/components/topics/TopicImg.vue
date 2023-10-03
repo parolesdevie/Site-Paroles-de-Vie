@@ -2,11 +2,18 @@
   <div class="shrink-0" :style="{ backgroundColor: color }">
     <picture>
       <source
+        height="240"
+        width="240"
         media="(min-width: 768px)"
         type="image/webp"
         :srcset="computedSrrset"
       />
-      <source type="image/webp" :srcset="computedSrrsetMobile" />
+      <source
+        height="160"
+        width="160"
+        type="image/webp"
+        :srcset="computedSrrsetMobile"
+      />
       <img
         height="240"
         width="240"
@@ -50,10 +57,6 @@ export default defineNuxtComponent({
     computedSrrsetMobile(): string {
       const { src } = this
       return `/images/topic/${src}@mobile@1x.webp`
-    },
-    computedSrcMobile(): string {
-      const { src } = this
-      return `/images/topic/${src}@mobile.webp 1x`
     }
   }
 })

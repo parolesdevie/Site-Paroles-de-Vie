@@ -2,13 +2,30 @@
   <li class="contents">
     <a :href="`/mag/${volume}.pdf`" target="_blank" rel="noopener noreferrer">
       <!-- cover -->
-      <img
-        loading="lazy"
-        class="h-32 md:h-48 hover:scale-110 duration-300"
-        :srcset="computedSrrset"
-        :src="computedSrc"
-        :alt="`Theophilos Mag Volume${volume}`"
-      />
+      <picture>
+        <source
+          height="192"
+          width="141"
+          media="(min-width: 768px)"
+          type="image/webp"
+          :srcset="computedSrrset"
+        />
+        <source
+          height="128"
+          width="94"
+          type="image/webp"
+          :srcset="computedSrrsetMobile"
+        />
+        <img
+          height="192"
+          width="141"
+          loading="lazy"
+          class="h-32 md:h-48 hover:scale-110 duration-300"
+          :srcset="computedSrrset"
+          :src="computedSrc"
+          :alt="`Theophilos Mag Volume${volume}`"
+        />
+      </picture>
 
       <!-- title -->
       <span class="mt-2 md:mt-4 block font-semibold text-center">
@@ -19,16 +36,14 @@
 </template>
 
 <script lang="ts">
-
-
 export default defineNuxtComponent({
   name: 'CardMag',
 
   props: {
     volume: {
       type: Number,
-      default: 0,
-    },
+      default: 0
+    }
   },
 
   computed: {
@@ -40,6 +55,10 @@ export default defineNuxtComponent({
       const { volume } = this
       return `/images/mag/thun-${volume}.webp 1x`
     },
-  },
+    computedSrrsetMobile() {
+      const { volume } = this
+      return `/images/mag/thun-${volume}@mobile@1x.webp`
+    }
+  }
 })
 </script>
