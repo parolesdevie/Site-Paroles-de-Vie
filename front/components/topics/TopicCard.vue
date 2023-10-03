@@ -10,6 +10,7 @@
         :src="cover.src"
         :color="cover.color"
         :alt="cover.alt"
+        :index="index"
       />
 
       <span
@@ -42,6 +43,10 @@ export default defineNuxtComponent({
     title: {
       type: String,
       default: ''
+    },
+    index: {
+      type: Number,
+      default: -1
     }
   }
 })

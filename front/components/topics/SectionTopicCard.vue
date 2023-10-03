@@ -15,6 +15,7 @@ const { topics, filter, filteredTopics } = useTopicList()
       <TopicsTopicCard
         v-for="(topic, index) in filteredTopics"
         :key="index"
+        :index="index"
         :cover="topic.cover"
         :to="topic.to"
         :title="topic.title"

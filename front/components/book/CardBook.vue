@@ -36,15 +36,30 @@ const computedSrc = computed(() => `/images/book/${props.src}.webp 1x`)
     :title="title"
   >
     <!-- image -->
-    <img
-      height="128"
-      width="94"
-      loading="lazy"
-      class="h-24 md:h-32 hover:scale-125 duration-300"
-      :srcset="computedSrrset"
-      :src="computedSrc"
-      :alt="alt"
-    />
+    <picture>
+      <source
+        height="128"
+        width="94"
+        media="(min-width: 768px)"
+        type="image/webp"
+        :srcset="computedSrrset"
+      />
+      <source
+        height="96"
+        width="70.5"
+        type="image/webp"
+        :srcset="computedSrrset"
+      />
+      <img
+        height="128"
+        width="94"
+        loading="lazy"
+        class="h-24 md:h-32 hover:scale-125 duration-300"
+        :srcset="computedSrrset"
+        :src="computedSrc"
+        :alt="alt"
+      />
+    </picture>
 
     <!-- amazon -->
     <a

@@ -15,6 +15,7 @@
         :srcset="computedSrrsetMobile"
       />
       <img
+        :fetchpriority="index === 0 ? 'high' : 'auto'"
         height="240"
         width="240"
         class="animate-fade"
@@ -42,6 +43,10 @@ export default defineNuxtComponent({
     alt: {
       type: String,
       default: ''
+    },
+    index: {
+      type: Number,
+      default: -1
     }
   },
 
