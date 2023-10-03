@@ -49,7 +49,7 @@ const computedSrc = computed(() => `/images/book/${props.src}.webp 1x`)
     <!-- amazon -->
     <a
       v-if="amazon"
-      class="mt-4 md:mt-6 border border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white rounded-md px-2 md:py-1 flex items-center font-semibold"
+      class="mt-4 md:mt-6 border border-orange-800 text-orange-800 hover:bg-orange-800 hover:text-white dark:border-orange-600 dark:text-orange-600 dark:hover:bg-orange-600 dark:hover:text-white rounded-md px-2 md:py-1 flex items-center font-semibold"
       :href="'https://amzn.to/' + amazon"
       target="_blank"
       rel="noopener noreferrer"

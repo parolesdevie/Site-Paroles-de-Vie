@@ -1,17 +1,7 @@
 <template>
   <a
     :href="href"
-    class="
-      bg-red-500
-      dark:bg-red-700
-      text-white
-      rounded-md
-      pl-2
-      pr-4
-      py-1
-      inline-flex
-      items-center
-    "
+    class="bg-red-700 dark:bg-red-700 text-white rounded-md pl-2 pr-4 py-1 inline-flex items-center"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -23,21 +13,20 @@
 </template>
 
 <script lang="ts">
-
 import IconYouTube from '~~/components/icons/IconYouTube.vue'
 
 export default defineNuxtComponent({
   name: 'ButtonYoutube',
 
   components: {
-    IconYouTube,
+    IconYouTube
   },
 
   props: {
     href: {
       type: String,
-      default: 'https://www.youtube.com/',
-    },
-  },
+      default: 'https://www.youtube.com/'
+    }
+  }
 })
 </script>
