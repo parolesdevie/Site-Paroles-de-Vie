@@ -54,7 +54,7 @@
         `"
       >
         <CardDocument
-          v-for="(document, index) in filteredDocuments.slice(0, this.maximum)"
+          v-for="(document, index) in filteredDocuments.slice(0, maximum)"
           :key="index"
           loading="lazy"
           :author="document.author"
