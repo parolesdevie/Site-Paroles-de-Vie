@@ -54,7 +54,7 @@
         `"
       >
         <CardDocument
-          v-for="(document, index) in filteredDocuments"
+          v-for="(document, index) in filteredDocuments.slice(0, this.maximum)"
           :key="index"
           loading="lazy"
           :author="document.author"
@@ -62,6 +62,18 @@
           :title="document.title"
         />
       </ul>
+
+      <div
+        class="mt-10 flex justify-center"
+        v-show="filteredDocuments.length > maximum"
+      >
+        <span
+          class="bg-neutral-700 dark:bg-white text-white dark:text-black rounded-full px-5 py-2 inline-flex items-center cursor-pointer select-none"
+          @click="onMoreButtonClick"
+        >
+          Affichez plus de documents
+        </span>
+      </div>
     </div>
   </section>
 </template>
@@ -73,6 +85,9 @@ import CardDocument from '~~/components/document/CardDocument.vue'
 import Tag from '~~/components/global/Tag.vue'
 import H2Title from '~~/components/global/H2Title.vue'
 import { PropType } from 'vue'
+
+const DEFAULT_MAXIMUM = 30
+const MAXIMUM_STEP = 30
 
 export default defineNuxtComponent({
   name: 'SectionDocument',
@@ -99,7 +114,8 @@ export default defineNuxtComponent({
       searchKeyWord: '',
       selectedTags: [] as TagEnum[],
       showHereticTesis: false,
-      ThemeEnum
+      ThemeEnum,
+      maximum: DEFAULT_MAXIMUM
     }
   },
 
@@ -146,6 +162,7 @@ export default defineNuxtComponent({
         .replace(/-+$/, '')
     },
     onTagClick(value: string) {
+      this.maximum = DEFAULT_MAXIMUM
       const index = this.selectedTags.indexOf(value)
 
       if (index > -1) {
@@ -153,6 +170,9 @@ export default defineNuxtComponent({
       } else {
         this.selectedTags.push(value)
       }
+    },
+    onMoreButtonClick(): void {
+      this.maximum += MAXIMUM_STEP
     }
   }
 })
