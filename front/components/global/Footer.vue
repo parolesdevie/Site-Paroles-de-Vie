@@ -31,7 +31,7 @@
             class="ml-3 lg:ml-0 font-bold hover:text-blue-500 inline-flex flex-col lg:items-center"
           >
             <span class="text-xl lg:text-base">Paroles</span>
-            <span class="text-sm lg:text-base">de Vie</span>
+            <span class="text-md pt-1 lg:text-base">de Vie</span>
           </div>
         </NuxtLink>
       </div>
@@ -46,10 +46,10 @@
         </div>
 
         <nav class="contents">
-          <ul class="mt-2 md:mt-4 text-gray-400 flex flex-wrap flex-col gap-2">
+          <ul class="mt-2 md:mt-4 text-gray-400 flex flex-wrap flex-col">
             <li v-for="(link, index) in linksMainMenu" :key="index">
               <NuxtLink
-                class="flex items-center hover:text-blue-500 text-xs md:text-base"
+                class="flex items-center hover:text-blue-500 text-sm md:text-base py-1"
                 :to="link.to"
               >
                 <span>
@@ -71,10 +71,10 @@
         </div>
 
         <nav class="contents">
-          <ul class="mt-2 md:mt-4 text-gray-400 flex flex-wrap flex-col gap-2">
+          <ul class="mt-2 md:mt-4 text-gray-400 flex flex-wrap flex-col">
             <li v-for="(link, index) in linksMenuDiscord" :key="index">
               <a
-                class="flex items-center hover:text-blue-500 text-xs md:text-base"
+                class="flex items-center hover:text-blue-500 text-sm md:text-base py-1"
                 :href="link.href"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -98,10 +98,10 @@
         </div>
 
         <nav class="contents">
-          <ul class="mt-2 md:mt-4 text-gray-400 flex flex-wrap flex-col gap-2">
+          <ul class="mt-2 md:mt-4 text-gray-400 flex flex-wrap flex-col">
             <li v-for="(link, index) in linksMenuTikTok" :key="index">
               <a
-                class="flex items-center hover:text-blue-500 text-xs md:text-base"
+                class="flex items-center hover:text-blue-500 text-sm md:text-base py-1"
                 :href="link.href"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -125,10 +125,10 @@
         </div>
 
         <nav class="contents">
-          <ul class="mt-2 md:mt-4 text-gray-400 flex flex-wrap flex-col gap-2">
+          <ul class="mt-2 md:mt-4 text-gray-400 flex flex-wrap flex-col">
             <li v-for="(link, index) in linksMenuInstagram" :key="index">
               <a
-                class="flex items-center hover:text-blue-500 text-xs md:text-base"
+                class="flex items-center hover:text-blue-500 text-sm md:text-base py-1"
                 :href="link.href"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -152,13 +152,13 @@
         </div>
 
         <nav class="contents">
-          <ul class="mt-2 md:mt-4 text-gray-400 flex flex-wrap flex-col gap-2">
+          <ul class="mt-2 md:mt-4 text-gray-400 flex flex-wrap flex-col">
             <li v-for="(link, index) in linksMenuPodcast" :key="index">
               <a
                 :href="link.href"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="flex items-center hover:text-blue-500 text-xs md:text-base"
+                class="flex items-center hover:text-blue-500 text-sm md:text-base py-1"
               >
                 <span>
                   {{ link.name }}
