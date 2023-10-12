@@ -1,5 +1,7 @@
 {
+  "name": "paroles-de-vie",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -8,13 +10,16 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.15.8",
-    "autoprefixer": "^10.4.13",
-    "nuxt": "3.0.0",
-    "postcss": "^8.4.20",
-    "tailwindcss": "^3.2.4"
+    "@nuxt/devtools": "latest",
+    "@nuxt/types": "^2.17.1",
+    "autoprefixer": "^10.4.16",
+    "nuxt": "^3.7.4",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "axios": "^1.2.1"
+    "axios": "^1.5.1"
   }
 }
