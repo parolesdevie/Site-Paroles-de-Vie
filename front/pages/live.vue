@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import SourceService from '~~/services/SourceService'
-const end = useState('end', () => new Date('2023-04-028T23:00:00'))
-const hidde = useState('hidde', () => true)
+// const end = useState('end', () => new Date('2023-04-028T23:00:00'))
+// const hidde = useState('hidde', () => true)
 
-function finish() {
-  hidde.value = false
-}
+// function finish() {
+//   hidde.value = false
+// }
 
 useHead({
   title: 'Live - Paroles de vie',
@@ -29,8 +29,8 @@ useHead({
   ]
 })
 
-const id = useState('id', () => '-6NSpmXlxxk')
-const resources = useState(() => SourceService.getByDebat('ahmad'))
+const id = useState('id', () => '')
+const resources = useState(() => SourceService.getByDebat(''))
 </script>
 
 <template>
@@ -38,10 +38,11 @@ const resources = useState(() => SourceService.getByDebat('ahmad'))
     <!-- breadcrumb -->
     <Breadcrumb :items="breadcrumbItems" />
 
-    <div
-      class="relative mt-4 md:mt-10 h-56 md:h-160 lg:h-190 w-full rounded-3xl overflow-hidden flex"
-    >
-      <!-- <div
+    <div v-if="id">
+      <div
+        class="relative mt-4 md:mt-10 h-56 md:h-160 lg:h-190 w-full rounded-3xl overflow-hidden flex"
+      >
+        <!-- <div
         class="
           absolute
           bg-black bg-opacity-90
@@ -62,41 +63,45 @@ const resources = useState(() => SourceService.getByDebat('ahmad'))
         />
       </div> -->
 
-      <iframe
-        class="h-full w-full"
-        :src="`https://www.youtube.com/embed/${id}?autoplay=1`"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      />
-      <!-- <iframe
+        <iframe
+          class="h-full w-full"
+          :src="`https://www.youtube.com/embed/${id}?autoplay=1`"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+        <!-- <iframe
         class="h-full w-120 px-4"
         :src="API_ENDPOINT + '/index.html'"
         frameBorder="0"
       /> -->
+      </div>
+
+      <!-- assets -->
+      <section class="mt-4 md:mt-10">
+        <H2Title>Sources</H2Title>
+
+        <ul class="mt-2 md:mt-4 flex flex-wrap gap-4" v-if="resources.length">
+          <li
+            class="contents"
+            v-for="(resource, index) in resources"
+            :key="index"
+          >
+            <AssetCard
+              :index="index"
+              :href="resource.href"
+              :thumbnail="resource.thumbnail"
+              :title="resource.title"
+            />
+          </li>
+        </ul>
+        <p class="mt-2 md:mt-4" v-else>Aucune sources</p>
+      </section>
     </div>
-
-    <!-- assets -->
-    <section class="mt-4 md:mt-10">
-      <H2Title>Sources</H2Title>
-
-      <ul class="mt-2 md:mt-4 flex flex-wrap gap-4" v-if="resources.length">
-        <li
-          class="contents"
-          v-for="(resource, index) in resources"
-          :key="index"
-        >
-          <AssetCard
-            :index="index"
-            :href="resource.href"
-            :thumbnail="resource.thumbnail"
-            :title="resource.title"
-          />
-        </li>
-      </ul>
-      <p class="mt-2 md:mt-4" v-else>Aucune sources</p>
-    </section>
+    <div v-else>
+      <p class="mt-2 md:mt-4">Aucun Live</p>
+    </div>
   </div>
 </template>
 
