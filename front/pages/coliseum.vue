@@ -112,7 +112,7 @@ export default defineNuxtComponent({
           to: '/coliseum/'
         }
       ],
-      cover: TopicService.getBySlug('/coliseum/')?.cover
+      cover: TopicService.getTopicCoverBySlug('/coliseum/')
     }
   }
 })

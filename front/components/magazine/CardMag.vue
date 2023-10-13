@@ -58,7 +58,12 @@ export default defineNuxtComponent({
     computedSrrsetMobile() {
       const { volume } = this
       return `/images/mag/thun-${volume}@mobile@1x.webp`
+      // return `/images/mag/thun-${volume}@mobile@1x.webp, /images/mag/thun-${volume}@mobile@1.5x.webp 1.5x, /images/mag/thun-${volume}@mobile@2x.webp 2x, /images/mag/thun-${volume}@mobile@3x.webp 3x, /images/mag/thun-${volume}@mobile@4x.webp 4x`
     }
+    // computedSrcMobile(): string {
+    //   const { volume } = this
+    //   return `/images/mag/thun-${volume}@mobile.webp 1x`
+    // }
   }
 })
 </script>

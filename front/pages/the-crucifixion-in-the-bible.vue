@@ -65,7 +65,7 @@ export default defineNuxtComponent({
           to: '/the-crucifixion-in-the-bible/'
         }
       ],
-      cover: TopicService.getBySlug('/the-crucifixion-in-the-bible/')?.cover,
+      cover: TopicService.getTopicCoverBySlug('/the-crucifixion-in-the-bible/'),
       playlistYoutubeIdDebates: 'PLaBmOZ7eJG-Wr3qx0unYjwXWNOoXTKCci',
       debates: DebateService.getByTopic('the-crucifixion-in-the-bible')
     }

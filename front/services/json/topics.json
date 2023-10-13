@@ -1,0 +1,817 @@
+[
+    {
+        "title": "La foi Abrahamique",
+        "archive": false,
+        "slug": "abrahamic-faith",
+        "to": "/abrahamic-faith/",
+        "cover": {
+            "color": "#6D5D39",
+            "srcset": {
+                "mobile": "/images/topics/abrahamic-faith/mobile/cover@1x.webp, /images/topics/abrahamic-faith/mobile/cover@1.5x.webp 1.5x, /images/topics/abrahamic-faith/mobile/cover@2x.webp 2x, /images/topics/abrahamic-faith/mobile/cover@3x.webp 3x, /images/topics/abrahamic-faith/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/abrahamic-faith/desktop/cover@1x.webp, /images/topics/abrahamic-faith/desktop/cover@1.5x.webp 1.5x, /images/topics/abrahamic-faith/desktop/cover@2x.webp 2x, /images/topics/abrahamic-faith/desktop/cover@3x.webp 3x, /images/topics/abrahamic-faith/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/abrahamic-faith/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/abrahamic-faith/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/abrahamic-faith/mobile/cover@2x.webp",
+                    "3x": "/images/topics/abrahamic-faith/mobile/cover@3x.webp",
+                    "4x": "/images/topics/abrahamic-faith/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/abrahamic-faith/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/abrahamic-faith/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/abrahamic-faith/desktop/cover@2x.webp",
+                    "3x": "/images/topics/abrahamic-faith/desktop/cover@3x.webp",
+                    "4x": "/images/topics/abrahamic-faith/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "the prophet sitting on a rock in the clouds, in the style of martin ansin, noah bradley, portrait painting, abundant symbolism, smokey background, serge marshennikov, energetic complexity"
+        }
+    },
+    {
+        "title": "Les Dilemmes",
+        "archive": false,
+        "slug": "dilemmas",
+        "to": "/dilemmas/",
+        "cover": {
+            "color": "#57402B",
+            "srcset": {
+                "mobile": "/images/topics/dilemmas/mobile/cover@1x.webp, /images/topics/dilemmas/mobile/cover@1.5x.webp 1.5x, /images/topics/dilemmas/mobile/cover@2x.webp 2x, /images/topics/dilemmas/mobile/cover@3x.webp 3x, /images/topics/dilemmas/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/dilemmas/desktop/cover@1x.webp, /images/topics/dilemmas/desktop/cover@1.5x.webp 1.5x, /images/topics/dilemmas/desktop/cover@2x.webp 2x, /images/topics/dilemmas/desktop/cover@3x.webp 3x, /images/topics/dilemmas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/dilemmas/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/dilemmas/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/dilemmas/mobile/cover@2x.webp",
+                    "3x": "/images/topics/dilemmas/mobile/cover@3x.webp",
+                    "4x": "/images/topics/dilemmas/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/dilemmas/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/dilemmas/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/dilemmas/desktop/cover@2x.webp",
+                    "3x": "/images/topics/dilemmas/desktop/cover@3x.webp",
+                    "4x": "/images/topics/dilemmas/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "title": "Le Schilo",
+        "archive": false,
+        "slug": "schilo",
+        "to": "/schilo/",
+        "cover": {
+            "color": "#8F6C4D",
+            "srcset": {
+                "mobile": "/images/topics/schilo/mobile/cover@1x.webp, /images/topics/schilo/mobile/cover@1.5x.webp 1.5x, /images/topics/schilo/mobile/cover@2x.webp 2x, /images/topics/schilo/mobile/cover@3x.webp 3x, /images/topics/schilo/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/schilo/desktop/cover@1x.webp, /images/topics/schilo/desktop/cover@1.5x.webp 1.5x, /images/topics/schilo/desktop/cover@2x.webp 2x, /images/topics/schilo/desktop/cover@3x.webp 3x, /images/topics/schilo/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/schilo/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/schilo/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/schilo/mobile/cover@2x.webp",
+                    "3x": "/images/topics/schilo/mobile/cover@3x.webp",
+                    "4x": "/images/topics/schilo/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/schilo/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/schilo/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/schilo/desktop/cover@2x.webp",
+                    "3x": "/images/topics/schilo/desktop/cover@3x.webp",
+                    "4x": "/images/topics/schilo/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "title": "L'Évangile de Barnabé",
+        "archive": true,
+        "to": "/gospel-of-barnabas/",
+        "cover": {
+            "color": "#A3917B",
+            "srcset": {
+                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/gospel-of-barnabas/mobile/cover@2x.webp",
+                    "3x": "/images/topics/gospel-of-barnabas/mobile/cover@3x.webp",
+                    "4x": "/images/topics/gospel-of-barnabas/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/gospel-of-barnabas/desktop/cover@2x.webp",
+                    "3x": "/images/topics/gospel-of-barnabas/desktop/cover@3x.webp",
+                    "4x": "/images/topics/gospel-of-barnabas/desktop/cover@4x.webp"
+                },
+                "alt": "Un parchemin"
+            }
+        }
+    },
+    {
+        "title": "Deutéronome 18:18",
+        "archive": true,
+        "to": "/deuteronomy-18-18/",
+        "cover": {
+            "color": "#A3917B",
+            "srcset": {
+                "mobile": "/images/topics/deuteronomy-18-18/mobile/cover@1x.webp, /images/topics/deuteronomy-18-18/mobile/cover@1.5x.webp 1.5x, /images/topics/deuteronomy-18-18/mobile/cover@2x.webp 2x, /images/topics/deuteronomy-18-18/mobile/cover@3x.webp 3x, /images/topics/deuteronomy-18-18/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/deuteronomy-18-18/desktop/cover@1x.webp, /images/topics/deuteronomy-18-18/desktop/cover@1.5x.webp 1.5x, /images/topics/deuteronomy-18-18/desktop/cover@2x.webp 2x, /images/topics/deuteronomy-18-18/desktop/cover@3x.webp 3x, /images/topics/deuteronomy-18-18/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/deuteronomy-18-18/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/deuteronomy-18-18/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/deuteronomy-18-18/mobile/cover@2x.webp",
+                    "3x": "/images/topics/deuteronomy-18-18/mobile/cover@3x.webp",
+                    "4x": "/images/topics/deuteronomy-18-18/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/deuteronomy-18-18/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/deuteronomy-18-18/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/deuteronomy-18-18/desktop/cover@2x.webp",
+                    "3x": "/images/topics/deuteronomy-18-18/desktop/cover@3x.webp",
+                    "4x": "/images/topics/deuteronomy-18-18/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "La bible"
+        }
+    },
+    {
+        "title": "La parabole des vignerons",
+        "archive": true,
+        "to": "/parable-of-the-winegrowers/",
+        "cover": {
+            "color": "#77875B",
+            "srcset": {
+                "mobile": "/images/topics/parable-of-the-winegrowers/mobile/cover@1x.webp, /images/topics/parable-of-the-winegrowers/mobile/cover@1.5x.webp 1.5x, /images/topics/parable-of-the-winegrowers/mobile/cover@2x.webp 2x, /images/topics/parable-of-the-winegrowers/mobile/cover@3x.webp 3x, /images/topics/parable-of-the-winegrowers/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/parable-of-the-winegrowers/desktop/cover@1x.webp, /images/topics/parable-of-the-winegrowers/desktop/cover@1.5x.webp 1.5x, /images/topics/parable-of-the-winegrowers/desktop/cover@2x.webp 2x, /images/topics/parable-of-the-winegrowers/desktop/cover@3x.webp 3x, /images/topics/parable-of-the-winegrowers/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/parable-of-the-winegrowers/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/parable-of-the-winegrowers/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/parable-of-the-winegrowers/mobile/cover@2x.webp",
+                    "3x": "/images/topics/parable-of-the-winegrowers/mobile/cover@3x.webp",
+                    "4x": "/images/topics/parable-of-the-winegrowers/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/parable-of-the-winegrowers/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/parable-of-the-winegrowers/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/parable-of-the-winegrowers/desktop/cover@2x.webp",
+                    "3x": "/images/topics/parable-of-the-winegrowers/desktop/cover@3x.webp",
+                    "4x": "/images/topics/parable-of-the-winegrowers/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Une vigne"
+        }
+    },
+    {
+        "title": "Stories",
+        "archive": true,
+        "to": "/stories/",
+        "cover": {
+            "color": "#8E7B6E",
+            "srcset": {
+                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/stories/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/stories/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/stories/mobile/cover@2x.webp",
+                    "3x": "/images/topics/stories/mobile/cover@3x.webp",
+                    "4x": "/images/topics/stories/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/stories/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/stories/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/stories/desktop/cover@2x.webp",
+                    "3x": "/images/topics/stories/desktop/cover@3x.webp",
+                    "4x": "/images/topics/stories/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Une gallerie photo"
+        }
+    },
+    {
+        "title": "Documents PDF",
+        "archive": true,
+        "to": "/documents/",
+        "cover": {
+            "color": "#9D928C",
+            "srcset": {
+                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/documents/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/documents/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/documents/mobile/cover@2x.webp",
+                    "3x": "/images/topics/documents/mobile/cover@3x.webp",
+                    "4x": "/images/topics/documents/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/documents/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/documents/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/documents/desktop/cover@2x.webp",
+                    "3x": "/images/topics/documents/desktop/cover@3x.webp",
+                    "4x": "/images/topics/documents/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Un parchemin"
+        }
+    },
+    {
+        "title": "Podcast",
+        "archive": true,
+        "to": "/podcast/",
+        "cover": {
+            "color": "#",
+            "srcset": {
+                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/podcast/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/podcast/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/podcast/mobile/cover@2x.webp",
+                    "3x": "/images/topics/podcast/mobile/cover@3x.webp",
+                    "4x": "/images/topics/podcast/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/podcast/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/podcast/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/podcast/desktop/cover@2x.webp",
+                    "3x": "/images/topics/podcast/desktop/cover@3x.webp",
+                    "4x": "/images/topics/podcast/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Un micro au premier plan et un arriére plan flou"
+        }
+    },
+    {
+        "title": "Manuscrits",
+        "archive": true,
+        "to": "/manuscripts/",
+        "cover": {
+            "color": "#C2B17D",
+            "srcset": {
+                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/manuscript/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/manuscript/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/manuscript/mobile/cover@2x.webp",
+                    "3x": "/images/topics/manuscript/mobile/cover@3x.webp",
+                    "4x": "/images/topics/manuscript/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/manuscript/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/manuscript/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/manuscript/desktop/cover@2x.webp",
+                    "3x": "/images/topics/manuscript/desktop/cover@3x.webp",
+                    "4x": "/images/topics/manuscript/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Un manuscrit ancien"
+        }
+    },
+    {
+        "title": "Critique textuelle",
+        "archive": true,
+        "to": "/biblical-textual-criticism/",
+        "cover": {
+            "color": "#625241",
+            "srcset": {
+                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/biblical-textual-criticism/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/biblical-textual-criticism/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/biblical-textual-criticism/mobile/cover@2x.webp",
+                    "3x": "/images/topics/biblical-textual-criticism/mobile/cover@3x.webp",
+                    "4x": "/images/topics/biblical-textual-criticism/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/biblical-textual-criticism/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/biblical-textual-criticism/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/biblical-textual-criticism/desktop/cover@2x.webp",
+                    "3x": "/images/topics/biblical-textual-criticism/desktop/cover@3x.webp",
+                    "4x": "/images/topics/biblical-textual-criticism/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Un vieux homme barbu"
+        }
+    },
+    {
+        "title": "Louanges",
+        "archive": true,
+        "to": "/gospel/",
+        "cover": {
+            "color": "#6A5847",
+            "srcset": {
+                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/gospel/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/gospel/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/gospel/mobile/cover@2x.webp",
+                    "3x": "/images/topics/gospel/mobile/cover@3x.webp",
+                    "4x": "/images/topics/gospel/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/gospel/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/gospel/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/gospel/desktop/cover@2x.webp",
+                    "3x": "/images/topics/gospel/desktop/cover@3x.webp",
+                    "4x": "/images/topics/gospel/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Une choral chrétienne"
+        }
+    },
+    {
+        "title": "Le Soreg",
+        "archive": true,
+        "to": "/soreg/",
+        "cover": {
+            "color": "#887D6D",
+            "srcset": {
+                "mobile": "/images/topics/soreg/mobile/cover@1x.webp, /images/topics/soreg/mobile/cover@1.5x.webp 1.5x, /images/topics/soreg/mobile/cover@2x.webp 2x, /images/topics/soreg/mobile/cover@3x.webp 3x, /images/topics/soreg/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/soreg/desktop/cover@1x.webp, /images/topics/soreg/desktop/cover@1.5x.webp 1.5x, /images/topics/soreg/desktop/cover@2x.webp 2x, /images/topics/soreg/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/soreg/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/soreg/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/soreg/mobile/cover@2x.webp",
+                    "3x": "/images/topics/soreg/mobile/cover@3x.webp",
+                    "4x": "/images/topics/soreg/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/soreg/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/soreg/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/soreg/desktop/cover@2x.webp",
+                    "3x": "/images/topics/soreg/desktop/cover@3x.webp",
+                    "4x": "/images/topics/soreg/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Un mur"
+        }
+    },
+    {
+        "title": "Le Paraclet",
+        "archive": true,
+        "to": "/paraclete/",
+        "cover": {
+            "color": "#A66B38",
+            "srcset": {
+                "mobile": "/images/topics/paraclete/mobile/cover@1x.webp, /images/topics/paraclete/mobile/cover@1.5x.webp 1.5x, /images/topics/paraclete/mobile/cover@2x.webp 2x, /images/topics/paraclete/mobile/cover@3x.webp 3x, /images/topics/paraclete/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/paraclete/desktop/cover@1x.webp, /images/topics/paraclete/desktop/cover@1.5x.webp 1.5x, /images/topics/paraclete/desktop/cover@2x.webp 2x, /images/topics/paraclete/desktop/cover@3x.webp 3x, /images/topics/paraclete/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/paraclete/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/paraclete/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/paraclete/mobile/cover@2x.webp",
+                    "3x": "/images/topics/paraclete/mobile/cover@3x.webp",
+                    "4x": "/images/topics/paraclete/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/paraclete/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/paraclete/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/paraclete/desktop/cover@2x.webp",
+                    "3x": "/images/topics/paraclete/desktop/cover@3x.webp",
+                    "4x": "/images/topics/paraclete/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Un feu dans une main"
+        }
+    },
+    {
+        "title": "ahmad",
+        "archive": true,
+        "to": "/ahmad/",
+        "cover": {
+            "color": "#78674A",
+            "srcset": {
+                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/ahmad/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/ahmad/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/ahmad/mobile/cover@2x.webp",
+                    "3x": "/images/topics/ahmad/mobile/cover@3x.webp",
+                    "4x": "/images/topics/ahmad/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/ahmad/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/ahmad/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/ahmad/desktop/cover@2x.webp",
+                    "3x": "/images/topics/ahmad/desktop/cover@3x.webp",
+                    "4x": "/images/topics/ahmad/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Jésus qui fait une annonce"
+        }
+    },
+    {
+        "title": "La divinité de Jésus",
+        "archive": true,
+        "to": "/the-divinity-of-jesus/",
+        "cover": {
+            "color": "#8A7A6F",
+            "srcset": {
+                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/the-divinity-of-jesus/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/the-divinity-of-jesus/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/the-divinity-of-jesus/mobile/cover@2x.webp",
+                    "3x": "/images/topics/the-divinity-of-jesus/mobile/cover@3x.webp",
+                    "4x": "/images/topics/the-divinity-of-jesus/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/the-divinity-of-jesus/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/the-divinity-of-jesus/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/the-divinity-of-jesus/desktop/cover@2x.webp",
+                    "3x": "/images/topics/the-divinity-of-jesus/desktop/cover@3x.webp",
+                    "4x": "/images/topics/the-divinity-of-jesus/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Jésus qui vol dans le ciel"
+        }
+    },
+    {
+        "title": "Un manuscrit",
+        "archive": true,
+        "to": "/the-falsification-of-the-bible/",
+        "cover": {
+            "color": "#6A574D",
+            "srcset": {
+                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/the-falsification-of-the-bible/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/the-falsification-of-the-bible/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/the-falsification-of-the-bible/mobile/cover@2x.webp",
+                    "3x": "/images/topics/the-falsification-of-the-bible/mobile/cover@3x.webp",
+                    "4x": "/images/topics/the-falsification-of-the-bible/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/the-falsification-of-the-bible/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/the-falsification-of-the-bible/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/the-falsification-of-the-bible/desktop/cover@2x.webp",
+                    "3x": "/images/topics/the-falsification-of-the-bible/desktop/cover@3x.webp",
+                    "4x": "/images/topics/the-falsification-of-the-bible/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "La falsification de la bible"
+        }
+    },
+    {
+        "title": "La crucifixion dans la bible",
+        "archive": true,
+        "to": "/the-crucifixion-in-the-bible/",
+        "cover": {
+            "color": "#97A09C",
+            "srcset": {
+                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/the-crucifixion-in-the-bible/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/the-crucifixion-in-the-bible/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/the-crucifixion-in-the-bible/mobile/cover@2x.webp",
+                    "3x": "/images/topics/the-crucifixion-in-the-bible/mobile/cover@3x.webp",
+                    "4x": "/images/topics/the-crucifixion-in-the-bible/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/the-crucifixion-in-the-bible/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/the-crucifixion-in-the-bible/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/the-crucifixion-in-the-bible/desktop/cover@2x.webp",
+                    "3x": "/images/topics/the-crucifixion-in-the-bible/desktop/cover@3x.webp",
+                    "4x": "/images/topics/the-crucifixion-in-the-bible/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Un manuscrit"
+        }
+    },
+    {
+        "title": "Chaîne Youtube Recommandées",
+        "archive": true,
+        "to": "/youtube/",
+        "cover": {
+            "color": "#967D7A",
+            "srcset": {
+                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/youtube/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/youtube/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/youtube/mobile/cover@2x.webp",
+                    "3x": "/images/topics/youtube/mobile/cover@3x.webp",
+                    "4x": "/images/topics/youtube/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/youtube/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/youtube/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/youtube/desktop/cover@2x.webp",
+                    "3x": "/images/topics/youtube/desktop/cover@3x.webp",
+                    "4x": "/images/topics/youtube/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Une camera"
+        }
+    },
+    {
+        "title": "Livres Recommandés",
+        "archive": true,
+        "to": "/books/",
+        "cover": {
+            "color": "#59463B",
+            "srcset": {
+                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/books/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/books/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/books/mobile/cover@2x.webp",
+                    "3x": "/images/topics/books/mobile/cover@3x.webp",
+                    "4x": "/images/topics/books/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/books/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/books/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/books/desktop/cover@2x.webp",
+                    "3x": "/images/topics/books/desktop/cover@3x.webp",
+                    "4x": "/images/topics/books/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Des livres"
+        }
+    },
+    {
+        "title": "Sites Recommandés",
+        "archive": true,
+        "to": "/sites/",
+        "cover": {
+            "color": "#CB885F",
+            "srcset": {
+                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/sites/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/sites/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/sites/mobile/cover@2x.webp",
+                    "3x": "/images/topics/sites/mobile/cover@3x.webp",
+                    "4x": "/images/topics/sites/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/sites/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/sites/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/sites/desktop/cover@2x.webp",
+                    "3x": "/images/topics/sites/desktop/cover@3x.webp",
+                    "4x": "/images/topics/sites/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Un site internet"
+        }
+    },
+    {
+        "title": "Lire la Bible",
+        "archive": true,
+        "to": "/read-the-bible/",
+        "cover": {
+            "color": "#AFA69E",
+            "srcset": {
+                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/read-the-bible/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/read-the-bible/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/read-the-bible/mobile/cover@2x.webp",
+                    "3x": "/images/topics/read-the-bible/mobile/cover@3x.webp",
+                    "4x": "/images/topics/read-the-bible/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/read-the-bible/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/read-the-bible/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/read-the-bible/desktop/cover@2x.webp",
+                    "3x": "/images/topics/read-the-bible/desktop/cover@3x.webp",
+                    "4x": "/images/topics/read-the-bible/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Une Bible"
+        }
+    },
+    {
+        "title": "Réseaux sociaux",
+        "archive": true,
+        "to": "/social-networks/",
+        "cover": {
+            "color": "#64575A",
+            "srcset": {
+                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/social-networks/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/social-networks/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/social-networks/mobile/cover@2x.webp",
+                    "3x": "/images/topics/social-networks/mobile/cover@3x.webp",
+                    "4x": "/images/topics/social-networks/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/social-networks/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/social-networks/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/social-networks/desktop/cover@2x.webp",
+                    "3x": "/images/topics/social-networks/desktop/cover@3x.webp",
+                    "4x": "/images/topics/social-networks/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Ume icon d'appli"
+        }
+    },
+    {
+        "title": "Magazines",
+        "archive": true,
+        "to": "/magazines/",
+        "cover": {
+            "color": "#ACB0BB",
+            "srcset": {
+                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/magazines/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/magazines/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/magazines/mobile/cover@2x.webp",
+                    "3x": "/images/topics/magazines/mobile/cover@3x.webp",
+                    "4x": "/images/topics/magazines/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/magazines/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/magazines/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/magazines/desktop/cover@2x.webp",
+                    "3x": "/images/topics/magazines/desktop/cover@3x.webp",
+                    "4x": "/images/topics/magazines/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Un magazine"
+        }
+    },
+    {
+        "title": "Galerie d'images",
+        "archive": true,
+        "to": "/gallery/",
+        "cover": {
+            "color": "#B18F66",
+            "srcset": {
+                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/gallery/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/gallery/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/gallery/mobile/cover@2x.webp",
+                    "3x": "/images/topics/gallery/mobile/cover@3x.webp",
+                    "4x": "/images/topics/gallery/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/gallery/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/gallery/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/gallery/desktop/cover@2x.webp",
+                    "3x": "/images/topics/gallery/desktop/cover@3x.webp",
+                    "4x": "/images/topics/gallery/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Une galerie de tableaux"
+        }
+    },
+    {
+        "title": "Coliseum",
+        "archive": true,
+        "to": "/coliseum/",
+        "cover": {
+            "color": "#514A3C",
+            "srcset": {
+                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/coliseum/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/coliseum/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/coliseum/mobile/cover@2x.webp",
+                    "3x": "/images/topics/coliseum/mobile/cover@3x.webp",
+                    "4x": "/images/topics/coliseum/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/coliseum/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/coliseum/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/coliseum/desktop/cover@2x.webp",
+                    "3x": "/images/topics/coliseum/desktop/cover@3x.webp",
+                    "4x": "/images/topics/coliseum/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Le logo de Coliseum"
+        }
+    },
+    {
+        "title": "Nom de Jésus",
+        "archive": true,
+        "to": "/name-jesus/",
+        "cover": {
+            "color": "#A3917B",
+            "srcset": {
+                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/name-jesus/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/name-jesus/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/name-jesus/mobile/cover@2x.webp",
+                    "3x": "/images/topics/name-jesus/mobile/cover@3x.webp",
+                    "4x": "/images/topics/name-jesus/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/name-jesus/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/name-jesus/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/name-jesus/desktop/cover@2x.webp",
+                    "3x": "/images/topics/name-jesus/desktop/cover@3x.webp",
+                    "4x": "/images/topics/name-jesus/desktop/cover@4x.webp"
+                }
+            }
+        },
+        "alt": "Une Bible"
+    },
+    {
+        "title": "Nom de Dieu",
+        "archive": true,
+        "to": "/name-god/",
+        "cover": {
+            "color": "#A3917B",
+            "srcset": {
+                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/name-god/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/name-god/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/name-god/mobile/cover@2x.webp",
+                    "3x": "/images/topics/name-god/mobile/cover@3x.webp",
+                    "4x": "/images/topics/name-god/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/name-god/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/name-god/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/name-god/desktop/cover@2x.webp",
+                    "3x": "/images/topics/name-god/desktop/cover@3x.webp",
+                    "4x": "/images/topics/name-god/desktop/cover@4x.webp"
+                }
+            }
+        },
+        "alt": "Une Bible"
+    }
+]

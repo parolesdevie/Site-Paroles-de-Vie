@@ -150,7 +150,7 @@ export default defineNuxtComponent({
           to: '/gospel/'
         }
       ],
-      cover: TopicService.getBySlug('/gospel/')?.cover,
+      cover: TopicService.getTopicCoverBySlug('/gospel/'),
       playlistYoutubeIdVideos: 'PLaBmOZ7eJG-WG_rv9QU7qomxydYrL_2KK',
       videos: {
         ode: GospelService.getByCategory(GospelCategoryEnum.ODE),

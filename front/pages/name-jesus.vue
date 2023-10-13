@@ -160,7 +160,7 @@ export default defineNuxtComponent({
           to: '/name-jesus/'
         }
       ],
-      cover: TopicService.getBySlug('/name-jesus/')?.cover,
+      cover: TopicService.getTopicCoverBySlug('/name-jesus/'),
       frontFile: {
         author: AuthorEnum.BENEVOLENCE,
         format: FormatEnum.PDF,

@@ -18,22 +18,22 @@ useHead({
   ]
 })
 
-const tags = useState('tags', () => TagService.getAll())
-const pdfs = useState('pdfs', () => PdfService.getAll())
-const books = useState('books', () => BookService.getAll())
-const sites = useState('sites', () => WebSiteService.getAll())
+// const tags = useState('tags', () => TagService.getAll())
+// const pdfs = useState('pdfs', () => PdfService.getAll())
+// const books = useState('books', () => BookService.getAll())
+// const sites = useState('sites', () => WebSiteService.getAll())
 </script>
 
 <template>
   <div>
     <TopicsSectionTopicCard class="mt-4 md:mt-10" title="Thémes" />
 
-    <DocumentSectionDocument class="mt-4 md:mt-10" :tags="tags" :pdfs="pdfs" />
+    <!-- <DocumentSectionDocument class="mt-4 md:mt-10" :tags="tags" :pdfs="pdfs" />
 
     <BookSectionBook class="mt-4 md:mt-10" :books="books" />
 
     <SiteSectionSite class="mt-4 md:mt-10" :sites="sites" />
 
-    <MagazineSectionMag class="mt-4 md:mt-10" />
+    <MagazineSectionMag class="mt-4 md:mt-10" /> -->
   </div>
 </template>

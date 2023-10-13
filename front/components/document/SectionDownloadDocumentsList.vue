@@ -1,7 +1,11 @@
 <template>
   <section v-if="files.length">
     <!-- title -->
-    <H2Title>Télécharger un document</H2Title>
+    <H2Title>
+      Télécharger un document <span class="hidden md:inline text-sm opacity-50">
+        ({{ files.length }} Documents)
+      </span>
+    </H2Title>
 
     <div class="mt-4 md:mt-8 mb-8">
       <ul class="flex flex-wrap py-2 pr-2 md:py-4 md:pr-4 gap-2 md:gap-4">

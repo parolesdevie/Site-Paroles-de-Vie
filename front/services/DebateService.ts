@@ -153,7 +153,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topics: ['the-parable-of-the-winegrowers'],
+        topics: ['parable-of-the-winegrowers'],
         date: '27/10/2022',
         url: 'https://youtu.be/PVMAeP2virw',
         subject: 'La Parabole des Vignerons',
@@ -165,7 +165,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topics: ['the-parable-of-the-winegrowers'],
+        topics: ['parable-of-the-winegrowers'],
         date: '07/07/2022',
         url: 'https://youtu.be/PVMAeP2virw',
         subject: 'La Parabole des Vignerons',
@@ -176,7 +176,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topics: ['the-parable-of-the-winegrowers'],
+        topics: ['parable-of-the-winegrowers'],
         date: '07/07/2022',
         url: 'https://youtu.be/qm9e5onmH-Y',
         subject: "JESUS A ANNONCE L'ISLAM PART 5",
@@ -192,7 +192,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topics: ['the-parable-of-the-winegrowers'],
+        topics: ['parable-of-the-winegrowers'],
         date: '07/07/2022',
         url: 'https://youtu.be/iZ3CGDNSVdw',
         subject: "JESUS A ANNONCE L'ISLAM PART 5",
@@ -207,7 +207,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topics: ['the-parable-of-the-winegrowers'],
+        topics: ['parable-of-the-winegrowers'],
         date: '02/07/2022',
         url: 'https://youtu.be/euB4WhtCem4',
         subject: "DÉBAT INTER-RELIGIEUX : L'ISLAM EST DANS LA BIBLE ! PART III",
@@ -218,7 +218,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topics: ['the-parable-of-the-winegrowers'],
+        topics: ['parable-of-the-winegrowers'],
         date: '26/06/2022',
         url: 'https://youtu.be/-YhEqfCW_sc',
         subject: "DÉBAT INTER-RELIGIEUX : L'ISLAM EST DANS LA BIBLE ! PART II",
@@ -236,7 +236,7 @@ export default class DebateService {
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topics: ['the-parable-of-the-winegrowers'],
+        topics: ['parable-of-the-winegrowers'],
         date: '25/06/2022',
         url: 'https://youtu.be/fFo4sKl6BJk',
         subject: "DÉBAT INTER-RELIGIEUX : L'ISLAM EST DANS LA BIBLE !",

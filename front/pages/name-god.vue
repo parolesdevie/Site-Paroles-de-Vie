@@ -57,7 +57,7 @@ export default defineNuxtComponent({
           to: '/name-god/'
         }
       ],
-      cover: TopicService.getBySlug('/name-god/')?.cover,
+      cover: TopicService.getTopicCoverBySlug('/name-god/'),
       debates: DebateService.getByTopic('name-god'),
       frontFile: {
         author: AuthorEnum.BENEVOLENCE,

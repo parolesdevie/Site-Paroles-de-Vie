@@ -46,6 +46,10 @@ export default class WebSiteService {
         href: 'https://www.apologetique.net/EvangilePere/EvangilePere.aspx'
       },
       {
+        name: 'Catenabible',
+        href: 'https://catenabible.com/mt/1/'
+      },
+      {
         name: 'Chaîne YouTube BibleProject (Français)',
         href: 'https://www.youtube.com/c/BibleProjectFran%C3%A7ais'
       },
@@ -64,6 +68,14 @@ export default class WebSiteService {
       {
         name: 'USEFULCHARTS',
         href: 'https://usefulcharts.com/collections/religion'
+      },
+      {
+        name: 'Ecrits des pères',
+        href: 'http://orthodoxievco.net/ecrits.htm'
+      },
+      {
+        name: 'Corpus Coranicum',
+        href: 'https://corpuscoranicum.de/fr'
       }
     ]
   }

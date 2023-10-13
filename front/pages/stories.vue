@@ -88,7 +88,7 @@ export default defineNuxtComponent({
       ],
       currentStory: undefined,
       // open: false,
-      cover: TopicService.getBySlug('/stories/')?.cover,
+      cover: TopicService.getTopicCoverBySlug('/stories/'),
       debates: DebateService.getByTopic('stories')
     }
   },

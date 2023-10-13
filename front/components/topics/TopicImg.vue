@@ -6,21 +6,21 @@
         width="240"
         media="(min-width: 768px)"
         type="image/webp"
-        :srcset="computedSrrset"
+        :srcset="srcset.desktop"
       />
       <source
         height="160"
         width="160"
         type="image/webp"
-        :srcset="computedSrrsetMobile"
+        :srcset="srcset.mobile"
       />
       <img
         :fetchpriority="index === 0 ? 'high' : 'auto'"
         height="240"
         width="240"
         class="animate-fade"
-        :srcset="computedSrrset"
-        :src="computedSrc"
+        :srcset="srcset.desktop"
+        :src="src.desktop['1x']"
         :alt="alt"
       />
     </picture>
@@ -28,6 +28,8 @@
 </template>
 
 <script lang="ts">
+import { PropType } from 'vue'
+
 export default defineNuxtComponent({
   name: 'TopicImg',
 
@@ -37,8 +39,12 @@ export default defineNuxtComponent({
       default: '#D1D5DB'
     },
     src: {
-      type: String,
-      default: ''
+      type: Object as PropType<{ mobile: unknown; desktop: { '1x': string } }>,
+      default: undefined
+    },
+    srcset: {
+      type: Object as PropType<{ mobile: string; desktop: string }>,
+      default: undefined
     },
     alt: {
       type: String,
@@ -62,7 +68,12 @@ export default defineNuxtComponent({
     computedSrrsetMobile(): string {
       const { src } = this
       return `/images/topic/${src}@mobile@1x.webp`
+      // return `/images/topic/${src}@mobile@1x.webp, /images/topic/${src}@mobile@1.5x.webp 1.5x, /images/topic/${src}@mobile@2x.webp 2x, /images/topic/${src}@mobile@3x.webp 3x, /images/topic/${src}@mobile@4x.webp 4x`
     }
+    // computedSrcMobile(): string {
+    //   const { src } = this
+    //   return `/images/topic/${src}@mobile.webp 1x`
+    // }
   }
 })
 </script>

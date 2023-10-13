@@ -77,7 +77,7 @@
                 <NuxtLink to="/paraclete/"> Le Paraclet </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/the-parable-of-the-winegrowers/">
+                <NuxtLink to="/parable-of-the-winegrowers/">
                   La parabole des vignerons
                 </NuxtLink>
               </li>
@@ -158,7 +158,7 @@ export default defineNuxtComponent({
           to: '/sitemap/'
         }
       ],
-      cover: TopicService.getBySlug('/sitemap/')?.cover,
+      cover: TopicService.getTopicCoverBySlug('/sitemap/'),
       debates: DebateService.getByTopic('sitemap')
     }
   }

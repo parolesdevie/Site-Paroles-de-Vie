@@ -66,7 +66,7 @@ export default defineNuxtComponent({
           to: '/ahmad/'
         }
       ],
-      cover: TopicService.getBySlug('/ahmad/')?.cover,
+      cover: TopicService.getTopicCoverBySlug('/ahmad/'),
       debates: DebateService.getByTopic('ahmad'),
       frontFile: {
         author: AuthorEnum.BENEVOLENCE,

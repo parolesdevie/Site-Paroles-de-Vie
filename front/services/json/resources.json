@@ -1,0 +1,1406 @@
+[
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "abrahamic-faith",
+        "to": "/abrahamic-faith/",
+        "href": "/resources/abrahamic-faith/main-document/document.pdf",
+        "title": "La foi Abrahamique",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/abrahamic-faith/main-document/mobile/cover@1x.webp, /resources/abrahamic-faith/main-document/mobile/cover@1.5x.webp 1.5x, /resources/abrahamic-faith/main-document/mobile/cover@2x.webp 2x, /resources/abrahamic-faith/main-document/mobile/cover@3x.webp 3x, /resources/abrahamic-faith/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/abrahamic-faith/main-document/desktop/cover@1x.webp, /resources/abrahamic-faith/main-document/desktop/cover@1.5x.webp 1.5x, /resources/abrahamic-faith/main-document/desktop/cover@2x.webp 2x, /resources/abrahamic-faith/main-document/desktop/cover@3x.webp 3x, /resources/abrahamic-faith/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/abrahamic-faith/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/abrahamic-faith/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/abrahamic-faith/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/abrahamic-faith/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/abrahamic-faith/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/abrahamic-faith/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/abrahamic-faith/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/abrahamic-faith/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/abrahamic-faith/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/abrahamic-faith/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "dilemmas",
+        "to": "dilemmas",
+        "href": "/resources/dilemmas/gestation-dilemma/document.pdf",
+        "title": "Le dilemme de la gestation",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/dilemmas/gestation-dilemma/mobile/cover@1x.webp, /resources/dilemmas/gestation-dilemma/mobile/cover@1.5x.webp 1.5x, /resources/dilemmas/gestation-dilemma/mobile/cover@2x.webp 2x, /resources/dilemmas/gestation-dilemma/mobile/cover@3x.webp 3x, /resources/dilemmas/gestation-dilemma/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/dilemmas/gestation-dilemma/desktop/cover@1x.webp, /resources/dilemmas/gestation-dilemma/desktop/cover@1.5x.webp 1.5x, /resources/dilemmas/gestation-dilemma/desktop/cover@2x.webp 2x, /resources/dilemmas/gestation-dilemma/desktop/cover@3x.webp 3x, /resources/dilemmas/gestation-dilemma/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/dilemmas/gestation-dilemma/mobile/cover@1x.webp",
+                    "1.5x": "/resources/dilemmas/gestation-dilemma/mobile/cover@1.5x.webp",
+                    "2x": "/resources/dilemmas/gestation-dilemma/mobile/cover@2x.webp",
+                    "3x": "/resources/dilemmas/gestation-dilemma/mobile/cover@2x.webp",
+                    "4x": "/resources/dilemmas/gestation-dilemma/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/dilemmas/gestation-dilemma/desktop/cover@1x.webp",
+                    "1.5x": "/resources/dilemmas/gestation-dilemma/desktop/cover@1.5x.webp",
+                    "2x": "/resources/dilemmas/gestation-dilemma/desktop/cover@2x.webp",
+                    "3x": "/resources/dilemmas/gestation-dilemma/desktop/cover@2x.webp",
+                    "4x": "/resources/dilemmas/gestation-dilemma/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "dilemmas",
+        "to": "dilemmas",
+        "href": "/resources/dilemmas/dilemma-of-the-son-of-god/document.pdf",
+        "title": "Le dilemme du Fils de Dieu",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/dilemmas/dilemma-of-the-son-of-god/mobile/cover@1x.webp, /resources/dilemmas/dilemma-of-the-son-of-god/mobile/cover@1.5x.webp 1.5x, /resources/dilemmas/dilemma-of-the-son-of-god/mobile/cover@2x.webp 2x, /resources/dilemmas/dilemma-of-the-son-of-god/mobile/cover@3x.webp 3x, /resources/dilemmas/dilemma-of-the-son-of-god/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/dilemmas/dilemma-of-the-son-of-god/desktop/cover@1x.webp, /resources/dilemmas/dilemma-of-the-son-of-god/desktop/cover@1.5x.webp 1.5x, /resources/dilemmas/dilemma-of-the-son-of-god/desktop/cover@2x.webp 2x, /resources/dilemmas/dilemma-of-the-son-of-god/desktop/cover@3x.webp 3x, /resources/dilemmas/dilemma-of-the-son-of-god/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/dilemmas/dilemma-of-the-son-of-god/mobile/cover@1x.webp",
+                    "1.5x": "/resources/dilemmas/dilemma-of-the-son-of-god/mobile/cover@1.5x.webp",
+                    "2x": "/resources/dilemmas/dilemma-of-the-son-of-god/mobile/cover@2x.webp",
+                    "3x": "/resources/dilemmas/dilemma-of-the-son-of-god/mobile/cover@2x.webp",
+                    "4x": "/resources/dilemmas/dilemma-of-the-son-of-god/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/dilemmas/dilemma-of-the-son-of-god/desktop/cover@1x.webp",
+                    "1.5x": "/resources/dilemmas/dilemma-of-the-son-of-god/desktop/cover@1.5x.webp",
+                    "2x": "/resources/dilemmas/dilemma-of-the-son-of-god/desktop/cover@2x.webp",
+                    "3x": "/resources/dilemmas/dilemma-of-the-son-of-god/desktop/cover@2x.webp",
+                    "4x": "/resources/dilemmas/dilemma-of-the-son-of-god/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "dilemmas",
+        "to": "dilemmas",
+        "href": "/resources/dilemmas/dilemma-of-the-sons-of-god/document.pdf",
+        "title": "Le dilemme des fils de Dieu",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/dilemmas/dilemma-of-the-sons-of-god/mobile/cover@1x.webp, /resources/dilemmas/dilemma-of-the-sons-of-god/mobile/cover@1.5x.webp 1.5x, /resources/dilemmas/dilemma-of-the-sons-of-god/mobile/cover@2x.webp 2x, /resources/dilemmas/dilemma-of-the-sons-of-god/mobile/cover@3x.webp 3x, /resources/dilemmas/dilemma-of-the-sons-of-god/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/dilemmas/dilemma-of-the-sons-of-god/desktop/cover@1x.webp, /resources/dilemmas/dilemma-of-the-sons-of-god/desktop/cover@1.5x.webp 1.5x, /resources/dilemmas/dilemma-of-the-sons-of-god/desktop/cover@2x.webp 2x, /resources/dilemmas/dilemma-of-the-sons-of-god/desktop/cover@3x.webp 3x, /resources/dilemmas/dilemma-of-the-sons-of-god/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/dilemmas/dilemma-of-the-sons-of-god/mobile/cover@1x.webp",
+                    "1.5x": "/resources/dilemmas/dilemma-of-the-sons-of-god/mobile/cover@1.5x.webp",
+                    "2x": "/resources/dilemmas/dilemma-of-the-sons-of-god/mobile/cover@2x.webp",
+                    "3x": "/resources/dilemmas/dilemma-of-the-sons-of-god/mobile/cover@2x.webp",
+                    "4x": "/resources/dilemmas/dilemma-of-the-sons-of-god/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/dilemmas/dilemma-of-the-sons-of-god/desktop/cover@1x.webp",
+                    "1.5x": "/resources/dilemmas/dilemma-of-the-sons-of-god/desktop/cover@1.5x.webp",
+                    "2x": "/resources/dilemmas/dilemma-of-the-sons-of-god/desktop/cover@2x.webp",
+                    "3x": "/resources/dilemmas/dilemma-of-the-sons-of-god/desktop/cover@2x.webp",
+                    "4x": "/resources/dilemmas/dilemma-of-the-sons-of-god/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "dilemmas",
+        "to": "dilemmas",
+        "href": "/resources/dilemmas/baptism-dilemma/document.pdf",
+        "title": "Le dilemme du Baptême",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/dilemmas/baptism-dilemma/mobile/cover@1x.webp, /resources/dilemmas/baptism-dilemma/mobile/cover@1.5x.webp 1.5x, /resources/dilemmas/baptism-dilemma/mobile/cover@2x.webp 2x, /resources/dilemmas/baptism-dilemma/mobile/cover@3x.webp 3x, /resources/dilemmas/baptism-dilemma/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/dilemmas/baptism-dilemma/desktop/cover@1x.webp, /resources/dilemmas/baptism-dilemma/desktop/cover@1.5x.webp 1.5x, /resources/dilemmas/baptism-dilemma/desktop/cover@2x.webp 2x, /resources/dilemmas/baptism-dilemma/desktop/cover@3x.webp 3x, /resources/dilemmas/baptism-dilemma/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/dilemmas/baptism-dilemma/mobile/cover@1x.webp",
+                    "1.5x": "/resources/dilemmas/baptism-dilemma/mobile/cover@1.5x.webp",
+                    "2x": "/resources/dilemmas/baptism-dilemma/mobile/cover@2x.webp",
+                    "3x": "/resources/dilemmas/baptism-dilemma/mobile/cover@2x.webp",
+                    "4x": "/resources/dilemmas/baptism-dilemma/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/dilemmas/baptism-dilemma/desktop/cover@1x.webp",
+                    "1.5x": "/resources/dilemmas/baptism-dilemma/desktop/cover@1.5x.webp",
+                    "2x": "/resources/dilemmas/baptism-dilemma/desktop/cover@2x.webp",
+                    "3x": "/resources/dilemmas/baptism-dilemma/desktop/cover@2x.webp",
+                    "4x": "/resources/dilemmas/baptism-dilemma/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "dilemmas",
+        "to": "dilemmas",
+        "href": "/resources/dilemmas/crucifixion-dilemma/document.pdf",
+        "title": "Le Dilemme de la Crucifixion",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/dilemmas/crucifixion-dilemma/mobile/cover@1x.webp, /resources/dilemmas/crucifixion-dilemma/mobile/cover@1.5x.webp 1.5x, /resources/dilemmas/crucifixion-dilemma/mobile/cover@2x.webp 2x, /resources/dilemmas/crucifixion-dilemma/mobile/cover@3x.webp 3x, /resources/dilemmas/crucifixion-dilemma/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/dilemmas/crucifixion-dilemma/desktop/cover@1x.webp, /resources/dilemmas/crucifixion-dilemma/desktop/cover@1.5x.webp 1.5x, /resources/dilemmas/crucifixion-dilemma/desktop/cover@2x.webp 2x, /resources/dilemmas/crucifixion-dilemma/desktop/cover@3x.webp 3x, /resources/dilemmas/crucifixion-dilemma/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/dilemmas/crucifixion-dilemma/mobile/cover@1x.webp",
+                    "1.5x": "/resources/dilemmas/crucifixion-dilemma/mobile/cover@1.5x.webp",
+                    "2x": "/resources/dilemmas/crucifixion-dilemma/mobile/cover@2x.webp",
+                    "3x": "/resources/dilemmas/crucifixion-dilemma/mobile/cover@2x.webp",
+                    "4x": "/resources/dilemmas/crucifixion-dilemma/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/dilemmas/crucifixion-dilemma/desktop/cover@1x.webp",
+                    "1.5x": "/resources/dilemmas/crucifixion-dilemma/desktop/cover@1.5x.webp",
+                    "2x": "/resources/dilemmas/crucifixion-dilemma/desktop/cover@2x.webp",
+                    "3x": "/resources/dilemmas/crucifixion-dilemma/desktop/cover@2x.webp",
+                    "4x": "/resources/dilemmas/crucifixion-dilemma/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "dilemmas",
+        "to": "dilemmas",
+        "href": "/resources/dilemmas/paradise-s-dilemma/document.pdf",
+        "title": "Le dilemme du Paradis",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/dilemmas/paradise-s-dilemma/mobile/cover@1x.webp, /resources/dilemmas/paradise-s-dilemma/mobile/cover@1.5x.webp 1.5x, /resources/dilemmas/paradise-s-dilemma/mobile/cover@2x.webp 2x, /resources/dilemmas/paradise-s-dilemma/mobile/cover@3x.webp 3x, /resources/dilemmas/paradise-s-dilemma/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/dilemmas/paradise-s-dilemma/desktop/cover@1x.webp, /resources/dilemmas/paradise-s-dilemma/desktop/cover@1.5x.webp 1.5x, /resources/dilemmas/paradise-s-dilemma/desktop/cover@2x.webp 2x, /resources/dilemmas/paradise-s-dilemma/desktop/cover@3x.webp 3x, /resources/dilemmas/paradise-s-dilemma/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/dilemmas/paradise-s-dilemma/mobile/cover@1x.webp",
+                    "1.5x": "/resources/dilemmas/paradise-s-dilemma/mobile/cover@1.5x.webp",
+                    "2x": "/resources/dilemmas/paradise-s-dilemma/mobile/cover@2x.webp",
+                    "3x": "/resources/dilemmas/paradise-s-dilemma/mobile/cover@2x.webp",
+                    "4x": "/resources/dilemmas/paradise-s-dilemma/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/dilemmas/paradise-s-dilemma/desktop/cover@1x.webp",
+                    "1.5x": "/resources/dilemmas/paradise-s-dilemma/desktop/cover@1.5x.webp",
+                    "2x": "/resources/dilemmas/paradise-s-dilemma/desktop/cover@2x.webp",
+                    "3x": "/resources/dilemmas/paradise-s-dilemma/desktop/cover@2x.webp",
+                    "4x": "/resources/dilemmas/paradise-s-dilemma/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "dilemmas",
+        "to": "dilemmas",
+        "href": "/resources/dilemmas/adultery-dilemma/document.pdf",
+        "title": "Le dilemme de l'adultère",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/dilemmas/adultery-dilemma/mobile/cover@1x.webp, /resources/dilemmas/adultery-dilemma/mobile/cover@1.5x.webp 1.5x, /resources/dilemmas/adultery-dilemma/mobile/cover@2x.webp 2x, /resources/dilemmas/adultery-dilemma/mobile/cover@3x.webp 3x, /resources/dilemmas/adultery-dilemma/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/dilemmas/adultery-dilemma/desktop/cover@1x.webp, /resources/dilemmas/adultery-dilemma/desktop/cover@1.5x.webp 1.5x, /resources/dilemmas/adultery-dilemma/desktop/cover@2x.webp 2x, /resources/dilemmas/adultery-dilemma/desktop/cover@3x.webp 3x, /resources/dilemmas/adultery-dilemma/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/dilemmas/adultery-dilemma/mobile/cover@1x.webp",
+                    "1.5x": "/resources/dilemmas/adultery-dilemma/mobile/cover@1.5x.webp",
+                    "2x": "/resources/dilemmas/adultery-dilemma/mobile/cover@2x.webp",
+                    "3x": "/resources/dilemmas/adultery-dilemma/mobile/cover@2x.webp",
+                    "4x": "/resources/dilemmas/adultery-dilemma/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/dilemmas/adultery-dilemma/desktop/cover@1x.webp",
+                    "1.5x": "/resources/dilemmas/adultery-dilemma/desktop/cover@1.5x.webp",
+                    "2x": "/resources/dilemmas/adultery-dilemma/desktop/cover@2x.webp",
+                    "3x": "/resources/dilemmas/adultery-dilemma/desktop/cover@2x.webp",
+                    "4x": "/resources/dilemmas/adultery-dilemma/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "dilemmas",
+        "to": "dilemmas",
+        "href": "/resources/dilemmas/dilemma-of-the-eucharist/document.pdf",
+        "title": "Le dilemme de l'Eucharistie",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/dilemmas/dilemma-of-the-eucharist/mobile/cover@1x.webp, /resources/dilemmas/dilemma-of-the-eucharist/mobile/cover@1.5x.webp 1.5x, /resources/dilemmas/dilemma-of-the-eucharist/mobile/cover@2x.webp 2x, /resources/dilemmas/dilemma-of-the-eucharist/mobile/cover@3x.webp 3x, /resources/dilemmas/dilemma-of-the-eucharist/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/dilemmas/dilemma-of-the-eucharist/desktop/cover@1x.webp, /resources/dilemmas/dilemma-of-the-eucharist/desktop/cover@1.5x.webp 1.5x, /resources/dilemmas/dilemma-of-the-eucharist/desktop/cover@2x.webp 2x, /resources/dilemmas/dilemma-of-the-eucharist/desktop/cover@3x.webp 3x, /resources/dilemmas/dilemma-of-the-eucharist/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/dilemmas/dilemma-of-the-eucharist/mobile/cover@1x.webp",
+                    "1.5x": "/resources/dilemmas/dilemma-of-the-eucharist/mobile/cover@1.5x.webp",
+                    "2x": "/resources/dilemmas/dilemma-of-the-eucharist/mobile/cover@2x.webp",
+                    "3x": "/resources/dilemmas/dilemma-of-the-eucharist/mobile/cover@2x.webp",
+                    "4x": "/resources/dilemmas/dilemma-of-the-eucharist/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/dilemmas/dilemma-of-the-eucharist/desktop/cover@1x.webp",
+                    "1.5x": "/resources/dilemmas/dilemma-of-the-eucharist/desktop/cover@1.5x.webp",
+                    "2x": "/resources/dilemmas/dilemma-of-the-eucharist/desktop/cover@2x.webp",
+                    "3x": "/resources/dilemmas/dilemma-of-the-eucharist/desktop/cover@2x.webp",
+                    "4x": "/resources/dilemmas/dilemma-of-the-eucharist/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "dilemmas",
+        "to": "dilemmas",
+        "href": "/resources/dilemmas/dilemma-of-the-word/document.pdf",
+        "title": "Le dilemme de La Parole",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/dilemmas/dilemma-of-the-word/mobile/cover@1x.webp, /resources/dilemmas/dilemma-of-the-word/mobile/cover@1.5x.webp 1.5x, /resources/dilemmas/dilemma-of-the-word/mobile/cover@2x.webp 2x, /resources/dilemmas/dilemma-of-the-word/mobile/cover@3x.webp 3x, /resources/dilemmas/dilemma-of-the-word/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/dilemmas/dilemma-of-the-word/desktop/cover@1x.webp, /resources/dilemmas/dilemma-of-the-word/desktop/cover@1.5x.webp 1.5x, /resources/dilemmas/dilemma-of-the-word/desktop/cover@2x.webp 2x, /resources/dilemmas/dilemma-of-the-word/desktop/cover@3x.webp 3x, /resources/dilemmas/dilemma-of-the-word/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/dilemmas/dilemma-of-the-word/mobile/cover@1x.webp",
+                    "1.5x": "/resources/dilemmas/dilemma-of-the-word/mobile/cover@1.5x.webp",
+                    "2x": "/resources/dilemmas/dilemma-of-the-word/mobile/cover@2x.webp",
+                    "3x": "/resources/dilemmas/dilemma-of-the-word/mobile/cover@2x.webp",
+                    "4x": "/resources/dilemmas/dilemma-of-the-word/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/dilemmas/dilemma-of-the-word/desktop/cover@1x.webp",
+                    "1.5x": "/resources/dilemmas/dilemma-of-the-word/desktop/cover@1.5x.webp",
+                    "2x": "/resources/dilemmas/dilemma-of-the-word/desktop/cover@2x.webp",
+                    "3x": "/resources/dilemmas/dilemma-of-the-word/desktop/cover@2x.webp",
+                    "4x": "/resources/dilemmas/dilemma-of-the-word/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "fidelis-and-verax",
+        "format": "PDF",
+        "slug": "schilo",
+        "to": "schilo",
+        "href": "/resources/schilo/genesis-49-10-fulfilled-by-jesus/document.pdf",
+        "title": "Genèse 49:10 réalisé par Jésus",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/schilo/genesis-49-10-fulfilled-by-jesus/mobile/cover@1x.webp, /resources/schilo/genesis-49-10-fulfilled-by-jesus/mobile/cover@1.5x.webp 1.5x, /resources/schilo/genesis-49-10-fulfilled-by-jesus/mobile/cover@2x.webp 2x, /resources/schilo/genesis-49-10-fulfilled-by-jesus/mobile/cover@3x.webp 3x, /resources/schilo/genesis-49-10-fulfilled-by-jesus/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/schilo/genesis-49-10-fulfilled-by-jesus/desktop/cover@1x.webp, /resources/schilo/genesis-49-10-fulfilled-by-jesus/desktop/cover@1.5x.webp 1.5x, /resources/schilo/genesis-49-10-fulfilled-by-jesus/desktop/cover@2x.webp 2x, /resources/schilo/genesis-49-10-fulfilled-by-jesus/desktop/cover@3x.webp 3x, /resources/schilo/genesis-49-10-fulfilled-by-jesus/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/schilo/genesis-49-10-fulfilled-by-jesus/mobile/cover@1x.webp",
+                    "1.5x": "/resources/schilo/genesis-49-10-fulfilled-by-jesus/mobile/cover@1.5x.webp",
+                    "2x": "/resources/schilo/genesis-49-10-fulfilled-by-jesus/mobile/cover@2x.webp",
+                    "3x": "/resources/schilo/genesis-49-10-fulfilled-by-jesus/mobile/cover@2x.webp",
+                    "4x": "/resources/schilo/genesis-49-10-fulfilled-by-jesus/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/schilo/genesis-49-10-fulfilled-by-jesus/desktop/cover@1x.webp",
+                    "1.5x": "/resources/schilo/genesis-49-10-fulfilled-by-jesus/desktop/cover@1.5x.webp",
+                    "2x": "/resources/schilo/genesis-49-10-fulfilled-by-jesus/desktop/cover@2x.webp",
+                    "3x": "/resources/schilo/genesis-49-10-fulfilled-by-jesus/desktop/cover@2x.webp",
+                    "4x": "/resources/schilo/genesis-49-10-fulfilled-by-jesus/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "gospel-of-barnabas",
+        "to": "gospel-of-barnabas",
+        "href": "/resources/gospel-of-barnabas/main-document/document.pdf",
+        "title": "Refutation of the Gospel of Barnabas",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/gospel-of-barnabas/main-document/mobile/cover@1x.webp, /resources/gospel-of-barnabas/main-document/mobile/cover@1.5x.webp 1.5x, /resources/gospel-of-barnabas/main-document/mobile/cover@2x.webp 2x, /resources/gospel-of-barnabas/main-document/mobile/cover@3x.webp 3x, /resources/gospel-of-barnabas/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/gospel-of-barnabas/main-document/desktop/cover@1x.webp, /resources/gospel-of-barnabas/main-document/desktop/cover@1.5x.webp 1.5x, /resources/gospel-of-barnabas/main-document/desktop/cover@2x.webp 2x, /resources/gospel-of-barnabas/main-document/desktop/cover@3x.webp 3x, /resources/gospel-of-barnabas/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/gospel-of-barnabas/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/gospel-of-barnabas/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/gospel-of-barnabas/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/gospel-of-barnabas/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/gospel-of-barnabas/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/gospel-of-barnabas/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/gospel-of-barnabas/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/gospel-of-barnabas/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/gospel-of-barnabas/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/gospel-of-barnabas/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "gospel-of-barnabas",
+        "to": "gospel-of-barnabas",
+        "href": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-fr/document.pdf",
+        "title": "L' Évangile de Barnabé - Texte Français",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-fr/mobile/cover@1x.webp, /resources/gospel-of-barnabas/gospel-of-barnabas-text-fr/mobile/cover@1.5x.webp 1.5x, /resources/gospel-of-barnabas/gospel-of-barnabas-text-fr/mobile/cover@2x.webp 2x, /resources/gospel-of-barnabas/gospel-of-barnabas-text-fr/mobile/cover@3x.webp 3x, /resources/gospel-of-barnabas/gospel-of-barnabas-text-fr/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-fr/desktop/cover@1x.webp, /resources/gospel-of-barnabas/gospel-of-barnabas-text-fr/desktop/cover@1.5x.webp 1.5x, /resources/gospel-of-barnabas/gospel-of-barnabas-text-fr/desktop/cover@2x.webp 2x, /resources/gospel-of-barnabas/gospel-of-barnabas-text-fr/desktop/cover@3x.webp 3x, /resources/gospel-of-barnabas/gospel-of-barnabas-text-fr/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-fr/mobile/cover@1x.webp",
+                    "1.5x": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-fr/mobile/cover@1.5x.webp",
+                    "2x": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-fr/mobile/cover@2x.webp",
+                    "3x": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-fr/mobile/cover@2x.webp",
+                    "4x": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-fr/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-fr/desktop/cover@1x.webp",
+                    "1.5x": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-fr/desktop/cover@1.5x.webp",
+                    "2x": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-fr/desktop/cover@2x.webp",
+                    "3x": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-fr/desktop/cover@2x.webp",
+                    "4x": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-fr/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "gospel-of-barnabas",
+        "to": "gospel-of-barnabas",
+        "href": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-en/document.pdf",
+        "title": "L' Évangile de Barnabé - Texte Anglais",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-en/mobile/cover@1x.webp, /resources/gospel-of-barnabas/gospel-of-barnabas-text-en/mobile/cover@1.5x.webp 1.5x, /resources/gospel-of-barnabas/gospel-of-barnabas-text-en/mobile/cover@2x.webp 2x, /resources/gospel-of-barnabas/gospel-of-barnabas-text-en/mobile/cover@3x.webp 3x, /resources/gospel-of-barnabas/gospel-of-barnabas-text-en/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-en/desktop/cover@1x.webp, /resources/gospel-of-barnabas/gospel-of-barnabas-text-en/desktop/cover@1.5x.webp 1.5x, /resources/gospel-of-barnabas/gospel-of-barnabas-text-en/desktop/cover@2x.webp 2x, /resources/gospel-of-barnabas/gospel-of-barnabas-text-en/desktop/cover@3x.webp 3x, /resources/gospel-of-barnabas/gospel-of-barnabas-text-en/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-en/mobile/cover@1x.webp",
+                    "1.5x": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-en/mobile/cover@1.5x.webp",
+                    "2x": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-en/mobile/cover@2x.webp",
+                    "3x": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-en/mobile/cover@2x.webp",
+                    "4x": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-en/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-en/desktop/cover@1x.webp",
+                    "1.5x": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-en/desktop/cover@1.5x.webp",
+                    "2x": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-en/desktop/cover@2x.webp",
+                    "3x": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-en/desktop/cover@2x.webp",
+                    "4x": "/resources/gospel-of-barnabas/gospel-of-barnabas-text-en/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "gospel-of-barnabas",
+        "to": "gospel-of-barnabas",
+        "href": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/document.pdf",
+        "title": "L' Évangile de Barnabé - Scan du texte Anglais",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/mobile/cover@1x.webp, /resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/mobile/cover@1.5x.webp 1.5x, /resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/mobile/cover@2x.webp 2x, /resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/mobile/cover@3x.webp 3x, /resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/desktop/cover@1x.webp, /resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/desktop/cover@1.5x.webp 1.5x, /resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/desktop/cover@2x.webp 2x, /resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/desktop/cover@3x.webp 3x, /resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/mobile/cover@1x.webp",
+                    "1.5x": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/mobile/cover@1.5x.webp",
+                    "2x": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/mobile/cover@2x.webp",
+                    "3x": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/mobile/cover@2x.webp",
+                    "4x": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/desktop/cover@1x.webp",
+                    "1.5x": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/desktop/cover@1.5x.webp",
+                    "2x": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/desktop/cover@2x.webp",
+                    "3x": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/desktop/cover@2x.webp",
+                    "4x": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "deuteronomy-18-18",
+        "to": "deuteronomy-18-18",
+        "href": "/resources/deuteronomy-18-18/main-document/document.pdf",
+        "title": "Deutéronome 18:18",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/mobile/cover@1x.webp, /resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/mobile/cover@1.5x.webp 1.5x, /resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/mobile/cover@2x.webp 2x, /resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/mobile/cover@3x.webp 3x, /resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/desktop/cover@1x.webp, /resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/desktop/cover@1.5x.webp 1.5x, /resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/desktop/cover@2x.webp 2x, /resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/desktop/cover@3x.webp 3x, /resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/mobile/cover@1x.webp",
+                    "1.5x": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/mobile/cover@1.5x.webp",
+                    "2x": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/mobile/cover@2x.webp",
+                    "3x": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/mobile/cover@2x.webp",
+                    "4x": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/desktop/cover@1x.webp",
+                    "1.5x": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/desktop/cover@1.5x.webp",
+                    "2x": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/desktop/cover@2x.webp",
+                    "3x": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/desktop/cover@2x.webp",
+                    "4x": "/resources/gospel-of-barnabas/gospel-of-barnabas-scan-en/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "fidelis-and-verax",
+        "format": "PDF",
+        "slug": "parable-of-the-winegrowers",
+        "to": "parable-of-the-winegrowers",
+        "href": "/resources/parable-of-the-winegrowers/main-document/document.pdf",
+        "title": "La Parabole des vignerons",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/parable-of-the-winegrowers/main-document/mobile/cover@1x.webp, /resources/parable-of-the-winegrowers/main-document/mobile/cover@1.5x.webp 1.5x, /resources/parable-of-the-winegrowers/main-document/mobile/cover@2x.webp 2x, /resources/parable-of-the-winegrowers/main-document/mobile/cover@3x.webp 3x, /resources/parable-of-the-winegrowers/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/parable-of-the-winegrowers/main-document/desktop/cover@1x.webp, /resources/parable-of-the-winegrowers/main-document/desktop/cover@1.5x.webp 1.5x, /resources/parable-of-the-winegrowers/main-document/desktop/cover@2x.webp 2x, /resources/parable-of-the-winegrowers/main-document/desktop/cover@3x.webp 3x, /resources/parable-of-the-winegrowers/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/parable-of-the-winegrowers/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/parable-of-the-winegrowers/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/parable-of-the-winegrowers/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/parable-of-the-winegrowers/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/parable-of-the-winegrowers/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/parable-of-the-winegrowers/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/parable-of-the-winegrowers/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/parable-of-the-winegrowers/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/parable-of-the-winegrowers/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/parable-of-the-winegrowers/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "fidelis-and-verax",
+        "format": "PDF",
+        "slug": "parable-of-the-winegrowers",
+        "to": "parable-of-the-winegrowers",
+        "href": "/resources/parable-of-the-winegrowers/part-1/document.pdf",
+        "title": "Partie 1",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/parable-of-the-winegrowers/part-1/mobile/cover@1x.webp, /resources/parable-of-the-winegrowers/part-1/mobile/cover@1.5x.webp 1.5x, /resources/parable-of-the-winegrowers/part-1/mobile/cover@2x.webp 2x, /resources/parable-of-the-winegrowers/part-1/mobile/cover@3x.webp 3x, /resources/parable-of-the-winegrowers/part-1/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/parable-of-the-winegrowers/part-1/desktop/cover@1x.webp, /resources/parable-of-the-winegrowers/part-1/desktop/cover@1.5x.webp 1.5x, /resources/parable-of-the-winegrowers/part-1/desktop/cover@2x.webp 2x, /resources/parable-of-the-winegrowers/part-1/desktop/cover@3x.webp 3x, /resources/parable-of-the-winegrowers/part-1/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/parable-of-the-winegrowers/part-1/mobile/cover@1x.webp",
+                    "1.5x": "/resources/parable-of-the-winegrowers/part-1/mobile/cover@1.5x.webp",
+                    "2x": "/resources/parable-of-the-winegrowers/part-1/mobile/cover@2x.webp",
+                    "3x": "/resources/parable-of-the-winegrowers/part-1/mobile/cover@2x.webp",
+                    "4x": "/resources/parable-of-the-winegrowers/part-1/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/parable-of-the-winegrowers/part-1/desktop/cover@1x.webp",
+                    "1.5x": "/resources/parable-of-the-winegrowers/part-1/desktop/cover@1.5x.webp",
+                    "2x": "/resources/parable-of-the-winegrowers/part-1/desktop/cover@2x.webp",
+                    "3x": "/resources/parable-of-the-winegrowers/part-1/desktop/cover@2x.webp",
+                    "4x": "/resources/parable-of-the-winegrowers/part-1/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "fidelis-and-verax",
+        "format": "PDF",
+        "slug": "parable-of-the-winegrowers",
+        "to": "parable-of-the-winegrowers",
+        "href": "/resources/parable-of-the-winegrowers/part-2/document.pdf",
+        "title": "Partie 2",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/parable-of-the-winegrowers/part-2/mobile/cover@1x.webp, /resources/parable-of-the-winegrowers/part-2/mobile/cover@1.5x.webp 1.5x, /resources/parable-of-the-winegrowers/part-2/mobile/cover@2x.webp 2x, /resources/parable-of-the-winegrowers/part-2/mobile/cover@3x.webp 3x, /resources/parable-of-the-winegrowers/part-2/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/parable-of-the-winegrowers/part-2/desktop/cover@1x.webp, /resources/parable-of-the-winegrowers/part-2/desktop/cover@1.5x.webp 1.5x, /resources/parable-of-the-winegrowers/part-2/desktop/cover@2x.webp 2x, /resources/parable-of-the-winegrowers/part-2/desktop/cover@3x.webp 3x, /resources/parable-of-the-winegrowers/part-2/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/parable-of-the-winegrowers/part-2/mobile/cover@1x.webp",
+                    "1.5x": "/resources/parable-of-the-winegrowers/part-2/mobile/cover@1.5x.webp",
+                    "2x": "/resources/parable-of-the-winegrowers/part-2/mobile/cover@2x.webp",
+                    "3x": "/resources/parable-of-the-winegrowers/part-2/mobile/cover@2x.webp",
+                    "4x": "/resources/parable-of-the-winegrowers/part-2/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/parable-of-the-winegrowers/part-2/desktop/cover@1x.webp",
+                    "1.5x": "/resources/parable-of-the-winegrowers/part-2/desktop/cover@1.5x.webp",
+                    "2x": "/resources/parable-of-the-winegrowers/part-2/desktop/cover@2x.webp",
+                    "3x": "/resources/parable-of-the-winegrowers/part-2/desktop/cover@2x.webp",
+                    "4x": "/resources/parable-of-the-winegrowers/part-2/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "soreg",
+        "to": "soreg",
+        "href": "/resources/universality-of-christianity/soreg/document.pdf",
+        "title": "Le Soreg",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/universality-of-christianity/soreg/mobile/cover@1x.webp, /resources/universality-of-christianity/soreg/mobile/cover@1.5x.webp 1.5x, /resources/universality-of-christianity/soreg/mobile/cover@2x.webp 2x, /resources/universality-of-christianity/soreg/mobile/cover@3x.webp 3x, /resources/universality-of-christianity/soreg/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/universality-of-christianity/soreg/desktop/cover@1x.webp, /resources/universality-of-christianity/soreg/desktop/cover@1.5x.webp 1.5x, /resources/universality-of-christianity/soreg/desktop/cover@2x.webp 2x, /resources/universality-of-christianity/soreg/desktop/cover@3x.webp 3x, /resources/universality-of-christianity/soreg/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/universality-of-christianity/soreg/mobile/cover@1x.webp",
+                    "1.5x": "/resources/universality-of-christianity/soreg/mobile/cover@1.5x.webp",
+                    "2x": "/resources/universality-of-christianity/soreg/mobile/cover@2x.webp",
+                    "3x": "/resources/universality-of-christianity/soreg/mobile/cover@2x.webp",
+                    "4x": "/resources/universality-of-christianity/soreg/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/universality-of-christianity/soreg/desktop/cover@1x.webp",
+                    "1.5x": "/resources/universality-of-christianity/soreg/desktop/cover@1.5x.webp",
+                    "2x": "/resources/universality-of-christianity/soreg/desktop/cover@2x.webp",
+                    "3x": "/resources/universality-of-christianity/soreg/desktop/cover@2x.webp",
+                    "4x": "/resources/universality-of-christianity/soreg/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "paraclete",
+        "to": "paraclete",
+        "href": "/resources/paraclete/main-document/document.pdf",
+        "title": "Le Paraclet",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "paraclete",
+        "to": "paraclete",
+        "href": "/resources/paraclete/paracletes/document.pdf",
+        "title": "Les paracletS",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/paracletes/mobile/cover@1x.webp, /resources/paraclete/paracletes/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/paracletes/mobile/cover@2x.webp 2x, /resources/paraclete/paracletes/mobile/cover@3x.webp 3x, /resources/paraclete/paracletes/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/paracletes/desktop/cover@1x.webp, /resources/paraclete/paracletes/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/paracletes/desktop/cover@2x.webp 2x, /resources/paraclete/paracletes/desktop/cover@3x.webp 3x, /resources/paraclete/paracletes/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/paracletes/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/paracletes/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/paracletes/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/paracletes/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/paracletes/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/paracletes/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/paracletes/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/paracletes/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/paracletes/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/paracletes/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "DOCX",
+        "slug": "paraclete",
+        "to": "paraclete",
+        "href": "/resources/paraclete/paracletes/document.docx",
+        "title": "Les paracletS",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/paracletes/mobile/cover@1x.webp, /resources/paraclete/paracletes/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/paracletes/mobile/cover@2x.webp 2x, /resources/paraclete/paracletes/mobile/cover@3x.webp 3x, /resources/paraclete/paracletes/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/paracletes/desktop/cover@1x.webp, /resources/paraclete/paracletes/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/paracletes/desktop/cover@2x.webp 2x, /resources/paraclete/paracletes/desktop/cover@3x.webp 3x, /resources/paraclete/paracletes/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/paracletes/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/paracletes/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/paracletes/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/paracletes/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/paracletes/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/paracletes/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/paracletes/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/paracletes/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/paracletes/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/paracletes/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "paraclete",
+        "to": "paraclete",
+        "href": "/resources/paraclete/correspondence-between-umar-ii-and-leo-iii/document.pdf",
+        "title": "Ghevond\"s Text of the Correspondence between \"Umar II and Leo III",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/correspondence-between-umar-ii-and-leo-iii/mobile/cover@1x.webp, /resources/paraclete/correspondence-between-umar-ii-and-leo-iii/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/correspondence-between-umar-ii-and-leo-iii/mobile/cover@2x.webp 2x, /resources/paraclete/correspondence-between-umar-ii-and-leo-iii/mobile/cover@3x.webp 3x, /resources/paraclete/correspondence-between-umar-ii-and-leo-iii/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/correspondence-between-umar-ii-and-leo-iii/desktop/cover@1x.webp, /resources/paraclete/correspondence-between-umar-ii-and-leo-iii/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/correspondence-between-umar-ii-and-leo-iii/desktop/cover@2x.webp 2x, /resources/paraclete/correspondence-between-umar-ii-and-leo-iii/desktop/cover@3x.webp 3x, /resources/paraclete/correspondence-between-umar-ii-and-leo-iii/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/correspondence-between-umar-ii-and-leo-iii/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/correspondence-between-umar-ii-and-leo-iii/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/correspondence-between-umar-ii-and-leo-iii/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/correspondence-between-umar-ii-and-leo-iii/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/correspondence-between-umar-ii-and-leo-iii/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/correspondence-between-umar-ii-and-leo-iii/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/correspondence-between-umar-ii-and-leo-iii/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/correspondence-between-umar-ii-and-leo-iii/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/correspondence-between-umar-ii-and-leo-iii/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/correspondence-between-umar-ii-and-leo-iii/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "EPUB",
+        "slug": "paraclete",
+        "to": "paraclete",
+        "href": "/resources/paraclete/correspondence-between-umar-ii-and-leo-iii/document.epub",
+        "title": "Ghevond\"s Text of the Correspondence between \"Umar II and Leo III",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "",
+        "to": "",
+        "href": "/sources/la-biographie-du-prophete-mahomet-ibn-hicham/pdf/la-biographie-du-prophete-mahomet-ibn-hicham.pdf",
+        "title": "La biographie du Prophete Mahomet Ibn Hicham",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "EPUB",
+        "slug": "",
+        "to": "",
+        "href": "/sources/theological-issues-in-christian-muslim-dialogue-tieszen-charles/epub/theological-issues-in-christian-muslim-dialogue-tieszen-charles-z-liborg.epub",
+        "title": "Theological Issues in Christian-Muslim Dialogue (Tieszen Charles)",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "href": "/so",
+        "title": "The Arabic Letters of the Byzantine Emperor Leo III to the Caliph ‘Umar Ibn ‘Abd al-‘Aziz",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "href": "/so",
+        "title": "Abbé Martin billet Le Paraclet et la Vérité (2020/05/16)",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "title": "Le Verbe-Vérité et l ’ Esprit de Vérité",
+        "href": "/so",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "title": "Le Paraclet dans la notice antimontanis",
+        "href": "/so",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "title": "David Pastorelli, Le Paraclet dans le corpus johannique",
+        "href": "/so",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "title": "BULLETIN JOHANNIQUE",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "title": "Chronique d\"exégèse du Nouveau Testament",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "title": "L\"exégèse de Mt 16,18-19 chez Tertullien",
+        "href": "/so",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "title": "Le Paraclet dans le corpus johannique",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "title": "L’ANALYSTE, LE STRATÈGE ET LE PARACLET",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "title": "Le Montanisme",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "title": "LA PNEUMATOLOGIE DE L’ÉVANGILE DE JEAN. UN ESSAI DE SYNTHÈSE",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "title": "LE COMMENTAIRE DE JEAN ZUMSTEIN SUR L’ÉVANGILE DE JEAN",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "title": "PARMI LES LIVRES",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "title": "PARMI LES LIVRES 2",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "title": "LAUDATIO JEAN ZUMSTEIN",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "title": "DES NOMS ET DES NOMBRES DANS LE CHRISTIANISME PRIMITIF",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "title": "Islamisme et religions de l\"Arabie",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "href": "/so",
+        "title": "Eskil Franck, Revelation Taught, The Paraclete in the Gospel of John",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "title": "Dieu-de-Promesse",
+        "format": "PDF",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/paraclete/main-document/mobile/cover@1x.webp, /resources/paraclete/main-document/mobile/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/mobile/cover@2x.webp 2x, /resources/paraclete/main-document/mobile/cover@3x.webp 3x, /resources/paraclete/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/paraclete/main-document/desktop/cover@1x.webp, /resources/paraclete/main-document/desktop/cover@1.5x.webp 1.5x, /resources/paraclete/main-document/desktop/cover@2x.webp 2x, /resources/paraclete/main-document/desktop/cover@3x.webp 3x, /resources/paraclete/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/paraclete/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/paraclete/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/paraclete/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/paraclete/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/paraclete/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    }
+]

@@ -123,7 +123,7 @@ export default defineNuxtComponent({
           to: '/read-the-bible/'
         }
       ],
-      cover: TopicService.getBySlug('/read-the-bible/')?.cover,
+      cover: TopicService.getTopicCoverBySlug('/read-the-bible/'),
       bibles: WebSiteService.getBibles(),
       files: [
         {

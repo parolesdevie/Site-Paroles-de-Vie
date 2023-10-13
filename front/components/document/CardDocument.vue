@@ -2,7 +2,7 @@
   <li class="contents">
     <a
       :class="`shrink-0 m-2 md:m-4 w-40 ${scaledSize} p-2 flex flex-col`"
-      :href="'/pdf/' + slug + '.pdf'"
+      :href="href || '/pdf/' + slug + '.pdf'"
       :title="title"
       target="_blank"
       rel="noopener noreferrer"
@@ -13,7 +13,7 @@
         width="224"
         :loading="loading"
         :class="`w-40 ${scaledSize} rounded-xl hover:scale-110 duration-300`"
-        :src="'/images/pdf/' + slug + '.webp'"
+        :src="thumbnail ? thumbnail + '.webp' : '/images/pdf/' + slug + '.webp'"
         alt="aperçu"
       />
 
@@ -45,7 +45,15 @@ export default defineNuxtComponent({
       type: Number,
       default: 1
     },
+    href: {
+      type: String,
+      default: ''
+    },
     slug: {
+      type: String,
+      default: ''
+    },
+    thumbnail: {
       type: String,
       default: ''
     },

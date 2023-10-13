@@ -8,7 +8,7 @@
       rel="noopener noreferrer"
     >
       <IconPlay class="h-7 w-7 md:h-9 md:w-9" />
-      <span class="ml-2">Lire la playlist sur YouTube</span>
+      <span class="ml-2">{{ playlistYoutubeLabel }}</span>
     </a>
     <a
       v-if="playlistDailymotionId"
@@ -18,13 +18,12 @@
       rel="noopener noreferrer"
     >
       <IconDailymotion class="h-7 w-7 md:h-9 md:w-9" />
-      <span class="ml-2">Lire la playlist sur Dailymotion</span>
+      <span class="ml-2">{{ playlistDailymotionLabel }}</span>
     </a>
   </div>
 </template>
 
 <script lang="ts">
-
 import IconDailymotion from '~~/components/icons/IconDailymotion.vue'
 import IconPlay from '~~/components/icons/IconPlay.vue'
 
@@ -36,12 +35,20 @@ export default defineNuxtComponent({
   props: {
     playlistYoutubeId: {
       type: String,
-      default: '',
+      default: ''
+    },
+    playlistYoutubeLabel: {
+      type: String,
+      default: 'Lire la playlist sur YouTube'
     },
     playlistDailymotionId: {
       type: String,
-      default: '',
+      default: ''
     },
-  },
+    playlistDailymotionLabel: {
+      type: String,
+      default: 'Lire la playlist sur Dailymotion'
+    }
+  }
 })
 </script>

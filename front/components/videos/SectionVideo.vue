@@ -1,5 +1,5 @@
 <template>
-  <section v-if="videos.length">
+  <section v-if="videos.length || playlistYoutubeId || playlistDailymotionId">
     <!-- title -->
     <H2Title>
       {{ title }} <span class="hidden md:inline text-sm opacity-50">
@@ -12,6 +12,8 @@
       <!-- playlist -->
       <PlaylistLinks
         :playlistYoutubeId="playlistYoutubeId"
+        :playlistYoutubeLabel="playlistYoutubeLabel"
+        :playlistDailymotionLabel="playlistDailymotionLabel"
         :playlistDailymotionId="playlistDailymotionId"
       />
 
@@ -113,9 +115,17 @@ export default defineNuxtComponent({
       type: String,
       default: ''
     },
+    playlistYoutubeLabel: {
+      type: String,
+      default: 'Lire la playlist sur YouTube'
+    },
     playlistDailymotionId: {
       type: String,
       default: ''
+    },
+    playlistDailymotionLabel: {
+      type: String,
+      default: 'Lire la playlist sur Dailymotion'
     },
     videos: {
       type: Array as PropType<IVideoLink[]>,

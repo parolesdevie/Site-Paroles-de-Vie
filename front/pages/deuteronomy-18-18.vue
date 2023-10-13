@@ -28,12 +28,12 @@ useHead({
     <Breadcrumb :items="breadcrumbItems" />
 
     <!-- intro -->
-    <SectionIntroTopics :cover="cover" :frontFile="frontFile">
+    <SectionIntroTopics :cover="cover" :frontFile="files[0]">
       <template v-slot:title>Deutéronome 18:18</template>
       <template v-slot:body>
-        <b class="font-bold"
-          >LE DEUTÉRONOME : UN LIVRE CENTRÉ SUR L'ALLIANCE AVEC ISRAËL</b
-        >
+        <b class="font-bold">
+          LE DEUTÉRONOME : UN LIVRE CENTRÉ SUR L'ALLIANCE AVEC ISRAËL
+        </b>
         <br />
         <span>
           Le livre du Deutéronome occupe une place centrale dans la Bible
@@ -72,8 +72,12 @@ import SectionIntroTopics from '~~/components/topics/SectionIntroTopics.vue'
 import SectionDebate from '~~/components/debate/SectionDebate.vue'
 import SectionVideo from '~~/components/videos/SectionVideo.vue'
 import SectionDownloadDocumentsList from '~~/components/document/SectionDownloadDocumentsList.vue'
-import { DebateService, TopicService } from '~~/services'
-import { AuthorEnum, FormatEnum, ISourceFile, VideoLinkEnum } from '~~/types'
+import { DebateService, TopicService, ResourceService } from '~~/services'
+import { VideoLinkEnum } from '~~/types'
+
+definePageMeta({
+  layout: 'article'
+})
 
 export default defineNuxtComponent({
   name: 'Deuteronomy18_18Page',
@@ -97,18 +101,10 @@ export default defineNuxtComponent({
           to: '/deuteronomy-18-18/'
         }
       ],
-      cover: TopicService.getBySlug('/deuteronomy-18-18/')?.cover,
+      cover: TopicService.getTopicCoverBySlug('/deuteronomy-18-18/'),
       playlistYoutubeIdDebates: 'PLaBmOZ7eJG-WK-vSynJA7lEwgmjH1Hn7b',
       playlistYoutubeIdVideos: 'PLaBmOZ7eJG-UACH9YAyyi8guqe4hfca6r',
       debates: DebateService.getByTopic('deuteronomy-18-18'),
-      frontFile: {
-        author: AuthorEnum.BENEVOLENCE,
-        format: FormatEnum.PDF,
-        slug: 'deuteronomy-18-18',
-        thumbnail: '/images/pdf/deuteronomy-18-18',
-        href: '/pdf/deuteronomy-18-18.pdf',
-        title: 'Nom de Dieu'
-      } as ISourceFile,
       videos: [
         {
           source: VideoLinkEnum.YOUTUBE,
@@ -123,15 +119,7 @@ export default defineNuxtComponent({
           thumbnail: 'https://img.youtube.com/vi/61L_bQs77-M/mqdefault.jpg'
         }
       ],
-      files: [
-        {
-          author: AuthorEnum.BENEVOLENCE,
-          format: FormatEnum.PDF,
-          thumbnail: '/images/pdf/deuteronomy-18-18',
-          href: '/pdf/deuteronomy-18-18.pdf',
-          title: 'Deutéronome 18:18'
-        }
-      ]
+      files: ResourceService.getBySlug('deuteronomy-18-18')
     }
   }
 })

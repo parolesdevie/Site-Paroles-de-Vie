@@ -28,7 +28,7 @@ useHead({
     <Breadcrumb :items="breadcrumbItems" />
 
     <!-- intro -->
-    <SectionIntroTopics :cover="cover" :frontFile="frontFile">
+    <SectionIntroTopics :cover="cover" :frontFile="files[0]">
       <template v-slot:title>L’ Évangile de Barnabé</template>
       <template v-slot:body>
         <b class="font-bold">NOTRE RAPPORT AUX APOCRYPHES</b>
@@ -52,12 +52,11 @@ useHead({
       :debates="debates"
     />
 
-    <!-- <SectionVideo
+    <SectionVideo
       left
       class="container mx-auto mt-4 md:mt-10"
-      :playlistYoutubeId="playlistYoutubeIdVideos"
       :videos="videos"
-    /> -->
+    />
 
     <SectionDownloadDocumentsList
       class="container mx-auto mt-4 md:mt-10"
@@ -71,8 +70,12 @@ import SectionIntroTopics from '~~/components/topics/SectionIntroTopics.vue'
 import SectionDebate from '~~/components/debate/SectionDebate.vue'
 import SectionVideo from '~~/components/videos/SectionVideo.vue'
 import SectionDownloadDocumentsList from '~~/components/document/SectionDownloadDocumentsList.vue'
-import { DebateService, TopicService } from '~~/services'
-import { AuthorEnum, FormatEnum, ISourceFile, VideoLinkEnum } from '~~/types'
+import { DebateService, TopicService, ResourceService } from '~~/services'
+import { VideoLinkEnum } from '~~/types'
+
+definePageMeta({
+  layout: 'article'
+})
 
 export default defineNuxtComponent({
   name: 'Deuteronomy18_18Page',
@@ -96,28 +99,18 @@ export default defineNuxtComponent({
           to: '/gospel-of-barnabas/'
         }
       ],
-      cover: TopicService.getBySlug('/gospel-of-barnabas/')?.cover,
+      cover: TopicService.getTopicCoverBySlug('/gospel-of-barnabas/'),
       playlistYoutubeIdDebates: 'PLaBmOZ7eJG-WjAGO2gf5FnUbT-HEjD9pi',
-      playlistYoutubeIdVideos: 'PLaBmOZ7eJG-UvsFJLZ5psTsaL3ttJuA3p',
       debates: DebateService.getByTopic('gospel-of-barnabas'),
-      frontFile: {
-        author: AuthorEnum.BENEVOLENCE,
-        format: FormatEnum.PDF,
-        slug: 'gospel-of-barnabas',
-        thumbnail: '/images/pdf/gospel-of-barnabas',
-        href: '/pdf/gospel-of-barnabas.pdf',
-        title: 'Nom de Dieu'
-      } as ISourceFile,
-      videos: [],
-      files: [
+      videos: [
         {
-          author: AuthorEnum.BENEVOLENCE,
-          format: FormatEnum.PDF,
-          thumbnail: '/images/pdf/gospel-of-barnabas',
-          href: '/pdf/gospel-of-barnabas.pdf',
-          title: 'L’ Évangile de Barnabé'
+          source: VideoLinkEnum.YOUTUBE,
+          name: 'Évangile de Barnabé #PDV',
+          url: 'https://youtu.be/NkhUMgoax4g',
+          thumbnail: 'https://img.youtube.com/vi/NkhUMgoax4g/mqdefault.jpg'
         }
-      ]
+      ],
+      files: ResourceService.getBySlug('gospel-of-barnabas')
     }
   }
 })

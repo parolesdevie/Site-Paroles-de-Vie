@@ -76,7 +76,7 @@ export default defineNuxtComponent({
           to: '/the-divinity-of-jesus/'
         }
       ],
-      cover: TopicService.getBySlug('/the-divinity-of-jesus/')?.cover,
+      cover: TopicService.getTopicCoverBySlug('/the-divinity-of-jesus/'),
       debates: DebateService.getByTopic('the-divinity-of-jesus')
     }
   }

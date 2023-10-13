@@ -58,7 +58,7 @@ export default defineNuxtComponent({
           to: '/free-will/'
         }
       ],
-      cover: TopicService.getBySlug('/free-will/')?.cover
+      cover: TopicService.getTopicCoverBySlug('/free-will/')
     }
   }
 })

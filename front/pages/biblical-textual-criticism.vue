@@ -142,7 +142,7 @@ export default defineNuxtComponent({
           to: '/biblical-textual-criticism/'
         }
       ],
-      cover: TopicService.getBySlug('/biblical-textual-criticism/')?.cover,
+      cover: TopicService.getTopicCoverBySlug('/biblical-textual-criticism/'),
       frontFile: {
         author: AuthorEnum.BENEVOLENCE,
         format: FormatEnum.PDF,

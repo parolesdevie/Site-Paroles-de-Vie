@@ -4,7 +4,7 @@
     <Breadcrumb :items="breadcrumbItems" />
 
     <!-- intro -->
-    <SectionIntroTopics :cover="cover" :frontFile="frontFile">
+    <SectionIntroTopics :cover="cover" :frontFile="files[0]">
       <template v-slot:title>Le Soreg</template>
       <template v-slot:body>
         L'inscription du Soreg (en hébreu סורג — soreg — signifie grille) ou
@@ -74,14 +74,12 @@ useHead({
 import SectionDownloadDocumentsList from '~~/components/document/SectionDownloadDocumentsList.vue'
 import SectionIntroTopics from '~~/components/topics/SectionIntroTopics.vue'
 import SectionVideo from '~~/components/videos/SectionVideo.vue'
-import { TopicService } from '~~/services'
-import {
-  AuthorEnum,
-  FormatEnum,
-  ISourceFile,
-  LanguageEnum,
-  VideoLinkEnum
-} from '~~/types'
+import { TopicService, ResourceService } from '~~/services'
+import { LanguageEnum, VideoLinkEnum } from '~~/types'
+
+definePageMeta({
+  layout: 'article'
+})
 
 export default defineNuxtComponent({
   name: 'SoregPage',
@@ -104,15 +102,7 @@ export default defineNuxtComponent({
           to: '/soreg/'
         }
       ],
-      cover: TopicService.getBySlug('/soreg/')?.cover,
-      frontFile: {
-        author: AuthorEnum.BENEVOLENCE,
-        format: FormatEnum.PDF,
-        slug: 'le-soreg',
-        thumbnail: '/images/pdf/le-soreg',
-        href: '/pdf/le-soreg.pdf',
-        title: 'Le Soreg'
-      } as ISourceFile,
+      cover: TopicService.getTopicCoverBySlug('/soreg/'),
       videos: [
         {
           source: VideoLinkEnum.YOUTUBE,
@@ -222,15 +212,7 @@ export default defineNuxtComponent({
           thumbnail: 'https://www.dailymotion.com/thumbnail/video/x8ggxhx'
         }
       ],
-      files: [
-        {
-          author: AuthorEnum.BENEVOLENCE,
-          format: FormatEnum.PDF,
-          thumbnail: '/resource/le-soreg/thumbnail@1x',
-          href: '/resource/le-soreg/pdf/le-soreg.pdf',
-          title: 'Le Soreg'
-        }
-      ]
+      files: ResourceService.getBySlug('soreg')
     }
   }
 })

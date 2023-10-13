@@ -1,3 +1,18 @@
+export interface IImageSrcMedia {
+  '1x': string
+  '1.5x': string
+  '2x': string
+  '3x': string
+  '4x': string
+}
+export interface IImageSrc {
+  mobile: IImageSrcMedia
+  desktop: IImageSrcMedia
+}
+export interface IImageSrcset {
+  mobile: string
+  desktop: string
+}
 export interface ITag {
   slug: string
   author: string
@@ -23,13 +38,16 @@ export interface ILink {
 
 export type IBreadcrumbItem = ILink
 
+export interface ITopicCover {
+  color: string
+  srcset: IImageSrcset
+  src: IImageSrc
+  alt: string
+}
 export interface ITopic {
-  cover: {
-    color: string
-    src: string
-    alt: string
-  }
+  cover: ITopicCover
   to: string
+  slug?: string
   title: string
 }
 
@@ -127,11 +145,16 @@ export enum FormatEnum {
   WEBP = 'WEBP'
 }
 
+export interface IThumbnail {
+  srcset: IImageSrcset
+  src: IImageSrc
+  alt: string
+}
 export interface ISourceFile {
   author: AuthorEnum
   format: FormatEnum
   slug?: string
-  thumbnail: string
+  thumbnail: IThumbnail
   href: string
   title: string
 }

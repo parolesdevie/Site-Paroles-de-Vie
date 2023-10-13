@@ -27,7 +27,7 @@ useHead({
     <Breadcrumb :items="breadcrumbItems" />
 
     <!-- intro -->
-    <SectionIntroTopics :cover="cover" :frontFile="frontFile">
+    <SectionIntroTopics :cover="cover" :frontFile="files[0]">
       <template v-slot:title>
         L'Accomplissement de Genèse 49:10 par Jésus
       </template>
@@ -55,14 +55,22 @@ useHead({
 
 <script lang="ts">
 import SectionIntroTopics from '~~/components/topics/SectionIntroTopics.vue'
+import SectionVideo from '~~/components/videos/SectionVideo.vue'
 import SectionDownloadDocumentsList from '~~/components/document/SectionDownloadDocumentsList.vue'
-import { TopicService } from '~~/services'
-import { AuthorEnum, FormatEnum, ISourceFile } from '~~/types'
+import { TopicService, ResourceService } from '~~/services'
+
+definePageMeta({
+  layout: 'article'
+})
 
 export default defineNuxtComponent({
-  name: 'Schilo',
+  name: 'SchiloPage',
 
-  components: { SectionIntroTopics, SectionDownloadDocumentsList },
+  components: {
+    SectionIntroTopics,
+    SectionVideo,
+    SectionDownloadDocumentsList
+  },
 
   data() {
     return {
@@ -76,22 +84,8 @@ export default defineNuxtComponent({
           to: '/schilo/'
         }
       ],
-      cover: TopicService.getBySlug('/schilo/')?.cover,
-      frontFile: {
-        author: AuthorEnum.BENEVOLENCE,
-        format: FormatEnum.PDF,
-        slug: 'jesus-realizes-genesis-49-10',
-        title: 'Le Schilo'
-      } as ISourceFile,
-      files: [
-        {
-          author: AuthorEnum.BENEVOLENCE,
-          format: FormatEnum.PDF,
-          thumbnail: '/images/pdf/jesus-realizes-genesis-49-10',
-          href: '/pdf/jesus-realizes-genesis-49-10.pdf',
-          title: 'Genèse 49:10 réalisé par Jésus'
-        }
-      ]
+      cover: TopicService.getTopicCoverBySlug('/schilo/'),
+      files: ResourceService.getBySlug('schilo')
     }
   }
 })

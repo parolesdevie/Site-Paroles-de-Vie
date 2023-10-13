@@ -42,7 +42,7 @@
       :plateform="plateformSearch"
     />
     <div class="flex flex-wrap">
-      <TopicImg :src="src" class="h-40 w-40" />
+      <TopicImg :src="cover.src" :srcset="cover.srcset" class="h-40 w-40" />
       <TopicCard :cover="cover" :to="to" :title="title" class="h-40 w-40" />
       <CardMag />
       <CardMag :volume="1" />
@@ -183,7 +183,27 @@ export default defineNuxtComponent({
       src: 'placeholder',
       cover: {
         color: '#000',
-        src: 'placeholder'
+        srcset: {
+          mobile: `https://placehold.co/160x160,
+             https://placehold.co/240x240 1.5x,
+             https://placehold.co/320x320 2x,
+             https://placehold.co/480x480 3x,
+             https://placehold.co/640x640 4x`,
+          desktop: `https://placehold.co/240x240,
+             https://placehold.co/360x360 1.5x,
+             https://placehold.co/480x480 2x,
+             https://placehold.co/720x720 3x,
+             https://placehold.co/960x960 4x`
+        },
+        src: {
+          mobile: {
+            '1x': 'https://placehold.co/160x160'
+          },
+          desktop: {
+            '1x': 'https://placehold.co/240x240'
+          }
+        },
+        alt: 'alt'
       },
       to: '/ui/',
       amazon: 'amazon',

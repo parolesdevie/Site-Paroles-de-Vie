@@ -1,7 +1,7 @@
 <template>
   <li class="contents">
     <a
-      class="shrink-0 w-20 md:w-28 p-2 md:p-4 flex flex-col"
+      class="shrink-0 w-20 md:w-48 p-2 md:p-4 flex flex-col"
       :href="href"
       :title="title + ' de ' + author"
       target="_blank"
@@ -14,16 +14,7 @@
           :style="{
             backgroundColor: formatLabelBackColor
           }"
-          class="
-            absolute
-            top-2
-            right-2
-            px-2
-            text-xs
-            md:text-sm
-            text-white
-            font-semibold
-          "
+          class="absolute top-2 right-2 px-2 text-xs md:text-lg text-white font-semibold"
         >
           {{ format }}
         </span>
@@ -31,8 +22,8 @@
         <!-- image -->
         <img
           :loading="loading"
-          class="w-20 md:w-28 rounded-xl"
-          :src="thumbnail + '.webp'"
+          class="w-20 md:w-48"
+          :src="thumbnail.src.desktop['1.5x']"
           alt="aperçu"
         />
 
@@ -41,22 +32,14 @@
           :style="{
             color: formatLabelBackColor
           }"
-          class="absolute -right-3 -bottom-1 h-3 w-3 md:h-4 md:w-4"
+          class="hidden md:inline absolute -right-3 -bottom-1 h-3 w-3 md:h-7 md:w-7"
         />
       </div>
 
       <!-- title footer -->
       <div class="mt-4 flex items-center">
         <span
-          class="
-            text-xs
-            md:text-sm
-            font-semibold
-            max-h-8
-            md:max-h-10
-            overflow-hidden
-            break-all
-          "
+          class="text-xs md:text-base font-semibold max-h-8 md:max-h-14 overflow-hidden break-all md:break-normal"
         >
           {{ title }}
         </span>

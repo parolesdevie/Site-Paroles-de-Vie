@@ -121,6 +121,16 @@
       :videos="videos"
     />
   </div>
+
+  <div>
+    <p>
+      <ul>
+        <li key="1">https://library.sebts.edu/c.php?g=457318&p=5870329</li>
+        <li key="2">https://www.thetextofthegospels.com/2015/02/major-early-uncials-of-gospels-online.html</li>
+        <li key="2">https://archive.org/details/Tischendorf.V.Various/01.CodexEphraemiSyriRescriptus.FragUtriusqTest.1845./page/n15/mode/2up</li>
+      </ul>
+    </p>
+  </div>
 </template>
 
 <script setup lang="ts">

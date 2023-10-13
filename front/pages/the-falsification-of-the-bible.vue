@@ -94,7 +94,9 @@ export default defineNuxtComponent({
           to: '/the-falsification-of-the-bible/'
         }
       ],
-      cover: TopicService.getBySlug('/the-falsification-of-the-bible/')?.cover,
+      cover: TopicService.getTopicCoverBySlug(
+        '/the-falsification-of-the-bible/'
+      ),
       debates: DebateService.getByTopic('the-falsification-of-the-bible'),
       files: [
         // {

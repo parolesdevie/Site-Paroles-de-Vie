@@ -11,6 +11,7 @@
           class="h-full w-full"
           v-if="cover"
           :src="cover.src"
+          :srcset="cover.srcset"
           :color="cover.color"
           :alt="cover.alt"
         />
@@ -35,7 +36,7 @@
           <a
             v-if="frontFile"
             class="mt-4 md:hidden bg-gray-300 dark:bg-gray-700 dark:text-white rounded-md pl-2 pr-4 py-1 inline-flex"
-            :href="'/pdf/' + frontFile.slug + '.pdf'"
+            :href="frontFile.href || '/pdf/' + frontFile.slug + '.pdf'"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -52,22 +53,55 @@
         <slot name="frontFile" />
       </div>
 
-      <ul class="hidden md:inline ml-auto shrink-0" v-else-if="frontFile">
+      <a
+        class="hidden md:inline absolute right-0 -top-36 lg:-top-52 hover:scale-110 duration-300"
+        v-else-if="frontFile?.href"
+        :href="frontFile.href"
+        target="_blank"
+      >
+        <picture>
+          <source
+            height="305"
+            width="224"
+            media="(min-width: 1440px)"
+            type="image/webp"
+            :srcset="frontFile.thumbnail.srcset.desktop"
+          />
+          <source
+            height="109.28"
+            width="80"
+            type="image/webp"
+            :srcset="frontFile.thumbnail.srcset.mobile"
+          />
+          <img
+            height="305"
+            width="224"
+            :fetchpriority="index === 0 ? 'high' : 'auto'"
+            class="animate-fade"
+            :alt="alt"
+            :src="frontFile.thumbnail.src.desktop['1x']"
+          />
+        </picture>
+      </a>
+
+      <!-- <ul class="hidden md:inline ml-auto shrink-0" v-else-if="frontFile">
         <CardDocument
           onlyImage
           :size="0.75"
           :author="frontFile.author"
+          :href="frontFile.href"
           :slug="frontFile.slug"
+          :thumbnail="frontFile.thumbnail"
           :title="frontFile.title"
         />
-      </ul>
+      </ul> -->
     </div>
   </section>
 </template>
 
 <script lang="ts">
 import { PropType } from 'vue'
-import { IPdf, ISourceFile } from '~~/types'
+import { IPdf, ISourceFile, ITopicCover } from '~~/types'
 import CardDocument from '../document/CardDocument.vue'
 import TopicImg from './TopicImg.vue'
 
@@ -78,7 +112,7 @@ export default defineNuxtComponent({
 
   props: {
     cover: {
-      type: Object as PropType<{ color: string; src: string }>,
+      type: Object as PropType<ITopicCover>,
       default: { color: undefined, src: undefined }
     },
     frontFile: {

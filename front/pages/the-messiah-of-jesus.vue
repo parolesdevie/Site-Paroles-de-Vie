@@ -64,7 +64,7 @@ export default defineNuxtComponent({
           to: '/the-messiah-of-jesus/'
         }
       ],
-      cover: TopicService.getBySlug('/the-messiah-of-jesus/')?.cover,
+      cover: TopicService.getTopicCoverBySlug('/the-messiah-of-jesus/'),
       debates: DebateService.getByTopic('the-messiah-of-jesus')
     }
   }

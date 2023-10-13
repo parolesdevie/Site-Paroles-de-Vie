@@ -8,6 +8,7 @@
         v-if="cover"
         class="h-full w-full"
         :src="cover.src"
+        :srcset="cover.srcset"
         :color="cover.color"
         :alt="cover.alt"
         :index="index"
