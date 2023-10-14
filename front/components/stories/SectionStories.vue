@@ -10,7 +10,7 @@ const stories = useState(() => StoriesService.getAll())
       <StoriesSlideShow @close="handleCloseEvent" :story="currentStory" />
     </div>
 
-    <ul class="flex overflow-x-auto gap-1 md:gap-2">
+    <ul class="flex overflow-x-auto gap-1 md:gap-2 pb-4">
       <li
         class="w-28 md:w-32 flex flex-col items-center cursor-pointer rounded-xl p-2 md:p-4 shrink-0"
         tabindex="0"

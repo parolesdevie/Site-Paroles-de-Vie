@@ -1,7 +1,7 @@
 <template>
   <li class="contents">
     <NuxtLink
-      class="shrink-0 relative w-40 md:w-56 rounded-lg overflow-hidden shadow flex flex-col"
+      class="shrink-0 relative w-40 md:w-56 rounded-lg overflow-hidden shadow flex flex-col pb-16 md:pb-20"
       :to="to"
       :style="{ backgroundColor: cover.color }"
     >
@@ -14,10 +14,10 @@
         :index="index"
       />
       <div
-        class="text-base md:text-lg lg:text-xl uppercase bg-black bg-opacity-30 hover:bg-opacity-50 dark:bg-opacity-40 dark:hover:bg-opacity-60 duration-300 flex"
+        class="absolute inset-0 bg-black bg-opacity-30 hover:bg-opacity-50 dark:bg-opacity-40 dark:hover:bg-opacity-60 duration-300 flex items-end"
       >
         <span
-          class="w-full h-16 md:h-20 p-2 flex items-center justify-center text-center text-white font-semibold text-shadow"
+          class="w-full h-16 md:h-20 p-2 flex items-center justify-center text-center text-white font-semibold text-shadow text-base md:text-lg lg:text-xl uppercase"
         >
           {{ title }}
         </span>
