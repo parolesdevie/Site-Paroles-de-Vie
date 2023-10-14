@@ -1,24 +1,27 @@
 <template>
   <li class="contents">
     <NuxtLink
-      class="shrink-0 relative h-40 w-40 md:h-56 md:w-56 rounded-lg overflow-hidden shadow"
+      class="shrink-0 relative w-40 md:w-56 rounded-lg overflow-hidden shadow flex flex-col"
       :to="to"
+      :style="{ backgroundColor: cover.color }"
     >
       <TopicImg
         v-if="cover"
-        class="h-full w-full"
         :src="cover.src"
         :srcset="cover.srcset"
         :color="cover.color"
         :alt="cover.alt"
         :index="index"
       />
-
-      <span
-        class="absolute inset-0 text-base md:text-xl lg:text-2xl uppercase bg-black bg-opacity-30 hover:bg-opacity-50 dark:bg-opacity-40 dark:hover:bg-opacity-60 duration-300 text-white font-semibold flex items-center justify-center text-center text-shadow"
+      <div
+        class="text-base md:text-xl lg:text-2xl uppercase bg-black bg-opacity-30 hover:bg-opacity-50 dark:bg-opacity-40 dark:hover:bg-opacity-60 duration-300 flex"
       >
-        {{ title }}
-      </span>
+        <span
+          class="w-full h-16 md:h-24 p-2 flex items-center justify-center text-center text-white font-semibold text-shadow"
+        >
+          {{ title }}
+        </span>
+      </div>
     </NuxtLink>
   </li>
 </template>
