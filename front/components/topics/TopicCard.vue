@@ -14,10 +14,10 @@
         :index="index"
       />
       <div
-        class="text-base md:text-xl lg:text-2xl uppercase bg-black bg-opacity-30 hover:bg-opacity-50 dark:bg-opacity-40 dark:hover:bg-opacity-60 duration-300 flex"
+        class="text-base md:text-lg lg:text-xl uppercase bg-black bg-opacity-30 hover:bg-opacity-50 dark:bg-opacity-40 dark:hover:bg-opacity-60 duration-300 flex"
       >
         <span
-          class="w-full h-16 md:h-24 p-2 flex items-center justify-center text-center text-white font-semibold text-shadow"
+          class="w-full h-16 md:h-20 p-2 flex items-center justify-center text-center text-white font-semibold text-shadow"
         >
           {{ title }}
         </span>
