@@ -354,13 +354,13 @@
     },
     {
         "title": "Critique textuelle",
-        "archive": true,
+        "archive": false,
         "to": "/biblical-textual-criticism/",
         "cover": {
             "color": "#625241",
             "srcset": {
-                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
-                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+                "mobile": "/images/topics/biblical-textual-criticism/mobile/cover@1x.webp, /images/topics/biblical-textual-criticism/mobile/cover@1.5x.webp 1.5x, /images/topics/biblical-textual-criticism/mobile/cover@2x.webp 2x, /images/topics/biblical-textual-criticism/mobile/cover@3x.webp 3x, /images/topics/biblical-textual-criticism/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/biblical-textual-criticism/desktop/cover@1x.webp, /images/topics/biblical-textual-criticism/desktop/cover@1.5x.webp 1.5x, /images/topics/biblical-textual-criticism/desktop/cover@2x.webp 2x, /images/topics/biblical-textual-criticism/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
             },
             "src": {
                 "mobile": {
@@ -466,35 +466,6 @@
                 }
             },
             "alt": "Un feu dans une main"
-        }
-    },
-    {
-        "title": "ahmad",
-        "archive": true,
-        "to": "/ahmad/",
-        "cover": {
-            "color": "#78674A",
-            "srcset": {
-                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
-                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
-            },
-            "src": {
-                "mobile": {
-                    "1x": "/images/topics/ahmad/mobile/cover@1x.webp",
-                    "1.5x": "/images/topics/ahmad/mobile/cover@1.5x.webp",
-                    "2x": "/images/topics/ahmad/mobile/cover@2x.webp",
-                    "3x": "/images/topics/ahmad/mobile/cover@3x.webp",
-                    "4x": "/images/topics/ahmad/mobile/cover@4x.webp"
-                },
-                "desktop": {
-                    "1x": "/images/topics/ahmad/desktop/cover@1x.webp",
-                    "1.5x": "/images/topics/ahmad/desktop/cover@1.5x.webp",
-                    "2x": "/images/topics/ahmad/desktop/cover@2x.webp",
-                    "3x": "/images/topics/ahmad/desktop/cover@3x.webp",
-                    "4x": "/images/topics/ahmad/desktop/cover@4x.webp"
-                }
-            },
-            "alt": "Jésus qui fait une annonce"
         }
     },
     {
@@ -643,35 +614,6 @@
         }
     },
     {
-        "title": "Lire la Bible",
-        "archive": true,
-        "to": "/read-the-bible/",
-        "cover": {
-            "color": "#AFA69E",
-            "srcset": {
-                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
-                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
-            },
-            "src": {
-                "mobile": {
-                    "1x": "/images/topics/read-the-bible/mobile/cover@1x.webp",
-                    "1.5x": "/images/topics/read-the-bible/mobile/cover@1.5x.webp",
-                    "2x": "/images/topics/read-the-bible/mobile/cover@2x.webp",
-                    "3x": "/images/topics/read-the-bible/mobile/cover@3x.webp",
-                    "4x": "/images/topics/read-the-bible/mobile/cover@4x.webp"
-                },
-                "desktop": {
-                    "1x": "/images/topics/read-the-bible/desktop/cover@1x.webp",
-                    "1.5x": "/images/topics/read-the-bible/desktop/cover@1.5x.webp",
-                    "2x": "/images/topics/read-the-bible/desktop/cover@2x.webp",
-                    "3x": "/images/topics/read-the-bible/desktop/cover@3x.webp",
-                    "4x": "/images/topics/read-the-bible/desktop/cover@4x.webp"
-                }
-            },
-            "alt": "Une Bible"
-        }
-    },
-    {
         "title": "Réseaux sociaux",
         "archive": true,
         "to": "/social-networks/",
@@ -789,60 +731,120 @@
     },
     {
         "title": "Nom de Jésus",
-        "archive": true,
-        "to": "/name-jesus/",
+        "archive": false,
+        "to": "/name-of-jesus/",
         "cover": {
             "color": "#A3917B",
             "srcset": {
-                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
-                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+                "mobile": "/images/topics/name-of-jesus/mobile/cover@1x.webp, /images/topics/name-of-jesus/mobile/cover@1.5x.webp 1.5x, /images/topics/name-of-jesus/mobile/cover@2x.webp 2x, /images/topics/name-of-jesus/mobile/cover@3x.webp 3x, /images/topics/name-of-jesus/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/name-of-jesus/desktop/cover@1x.webp, /images/topics/name-of-jesus/desktop/cover@1.5x.webp 1.5x, /images/topics/name-of-jesus/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
             },
             "src": {
                 "mobile": {
-                    "1x": "/images/topics/name-jesus/mobile/cover@1x.webp",
-                    "1.5x": "/images/topics/name-jesus/mobile/cover@1.5x.webp",
-                    "2x": "/images/topics/name-jesus/mobile/cover@2x.webp",
-                    "3x": "/images/topics/name-jesus/mobile/cover@3x.webp",
-                    "4x": "/images/topics/name-jesus/mobile/cover@4x.webp"
+                    "1x": "/images/topics/name-of-jesus/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/name-of-jesus/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/name-of-jesus/mobile/cover@2x.webp",
+                    "3x": "/images/topics/name-of-jesus/mobile/cover@3x.webp",
+                    "4x": "/images/topics/name-of-jesus/mobile/cover@4x.webp"
                 },
                 "desktop": {
-                    "1x": "/images/topics/name-jesus/desktop/cover@1x.webp",
-                    "1.5x": "/images/topics/name-jesus/desktop/cover@1.5x.webp",
-                    "2x": "/images/topics/name-jesus/desktop/cover@2x.webp",
-                    "3x": "/images/topics/name-jesus/desktop/cover@3x.webp",
-                    "4x": "/images/topics/name-jesus/desktop/cover@4x.webp"
+                    "1x": "/images/topics/name-of-jesus/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/name-of-jesus/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/name-of-jesus/desktop/cover@2x.webp",
+                    "3x": "/images/topics/name-of-jesus/desktop/cover@3x.webp",
+                    "4x": "/images/topics/name-of-jesus/desktop/cover@4x.webp"
                 }
             }
         },
         "alt": "Une Bible"
     },
     {
-        "title": "Nom de Dieu",
-        "archive": true,
-        "to": "/name-god/",
+        "title": "Le Nom de Dieu",
+        "archive": false,
+        "slug": "name-of-god",
+        "to": "/name-of-god/",
         "cover": {
             "color": "#A3917B",
             "srcset": {
-                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
-                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+                "mobile": "/images/topics/name-of-god/mobile/cover@1x.webp, /images/topics/name-of-god/mobile/cover@1.5x.webp 1.5x, /images/topics/name-of-god/mobile/cover@2x.webp 2x, /images/topics/name-of-god/mobile/cover@3x.webp 3x, /images/topics/name-of-god/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/name-of-god/desktop/cover@1x.webp, /images/topics/name-of-god/desktop/cover@1.5x.webp 1.5x, /images/topics/name-of-god/desktop/cover@2x.webp 2x, /images/topics/name-of-god/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
             },
             "src": {
                 "mobile": {
-                    "1x": "/images/topics/name-god/mobile/cover@1x.webp",
-                    "1.5x": "/images/topics/name-god/mobile/cover@1.5x.webp",
-                    "2x": "/images/topics/name-god/mobile/cover@2x.webp",
-                    "3x": "/images/topics/name-god/mobile/cover@3x.webp",
-                    "4x": "/images/topics/name-god/mobile/cover@4x.webp"
+                    "1x": "/images/topics/name-of-god/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/name-of-god/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/name-of-god/mobile/cover@2x.webp",
+                    "3x": "/images/topics/name-of-god/mobile/cover@3x.webp",
+                    "4x": "/images/topics/name-of-god/mobile/cover@4x.webp"
                 },
                 "desktop": {
-                    "1x": "/images/topics/name-god/desktop/cover@1x.webp",
-                    "1.5x": "/images/topics/name-god/desktop/cover@1.5x.webp",
-                    "2x": "/images/topics/name-god/desktop/cover@2x.webp",
-                    "3x": "/images/topics/name-god/desktop/cover@3x.webp",
-                    "4x": "/images/topics/name-god/desktop/cover@4x.webp"
+                    "1x": "/images/topics/name-of-god/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/name-of-god/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/name-of-god/desktop/cover@2x.webp",
+                    "3x": "/images/topics/name-of-god/desktop/cover@3x.webp",
+                    "4x": "/images/topics/name-of-god/desktop/cover@4x.webp"
                 }
             }
         },
         "alt": "Une Bible"
+    },
+    {
+        "title": "ahmad",
+        "archive": false,
+        "slug": "ahmad",
+        "to": "/ahmad/",
+        "cover": {
+            "color": "#78674A",
+            "srcset": {
+                "mobile": "/images/topics/ahmad/mobile/cover@1x.webp, /images/topics/ahmad/mobile/cover@1.5x.webp 1.5x, /images/topics/ahmad/mobile/cover@2x.webp 2x, /images/topics/ahmad/mobile/cover@3x.webp 3x, /images/topics/ahmad/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/ahmad/desktop/cover@1x.webp, /images/topics/ahmad/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/ahmad/desktop/cover@3x.webp 3x, /images/topics/ahmad/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/ahmad/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/ahmad/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/ahmad/mobile/cover@2x.webp",
+                    "3x": "/images/topics/ahmad/mobile/cover@3x.webp",
+                    "4x": "/images/topics/ahmad/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/ahmad/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/ahmad/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/ahmad/desktop/cover@2x.webp",
+                    "3x": "/images/topics/ahmad/desktop/cover@3x.webp",
+                    "4x": "/images/topics/ahmad/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Jésus qui fait une annonce"
+        }
+    },
+    {
+        "title": "Lire la Bible",
+        "archive": false,
+        "to": "/read-the-bible/",
+        "cover": {
+            "color": "#AFA69E",
+            "srcset": {
+                "mobile": "/images/topics/read-the-bible/mobile/cover@1x.webp, /images/topics/read-the-bible/mobile/cover@1.5x.webp 1.5x, /images/topics/read-the-bible/mobile/cover@2x.webp 2x, /images/topics/read-the-bible/mobile/cover@3x.webp 3x, /images/topics/read-the-bible/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/read-the-bible/desktop/cover@1x.webp, /images/topics/read-the-bible/desktop/cover@1.5x.webp 1.5x, /images/topics/read-the-bible/desktop/cover@2x.webp 2x, /images/topics/read-the-bible/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/read-the-bible/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/read-the-bible/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/read-the-bible/mobile/cover@2x.webp",
+                    "3x": "/images/topics/read-the-bible/mobile/cover@3x.webp",
+                    "4x": "/images/topics/read-the-bible/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/read-the-bible/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/read-the-bible/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/read-the-bible/desktop/cover@2x.webp",
+                    "3x": "/images/topics/read-the-bible/desktop/cover@3x.webp",
+                    "4x": "/images/topics/read-the-bible/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Une Bible"
+        }
     }
 ]

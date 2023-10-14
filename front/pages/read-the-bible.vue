@@ -1,3 +1,27 @@
+<script setup lang="ts">
+useHead({
+  title: 'Lire la Bible - Paroles de vie',
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content:
+        'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.'
+    },
+    {
+      hid: 'og:image',
+      property: 'og:image',
+      content: 'https://www.paroles-de-vie.tk/seo/read-the-bible.webp'
+    },
+    {
+      hid: 'twitter:image',
+      property: 'twitter:image',
+      content: 'https://www.paroles-de-vie.tk/seo/read-the-bible.webp'
+    }
+  ]
+})
+</script>
+
 <template>
   <div class="flex flex-col min-h-screen">
     <!-- header -->
@@ -45,7 +69,7 @@
       </BgColorSection>
 
       <!-- document -->
-      <SectionDownloadDocumentsList
+      <DocumentSectionDownloadDocumentsList
         class="container mx-auto mt-4 md:mt-10"
         :files="files"
       />
@@ -64,38 +88,16 @@
   </div>
 </template>
 
-
-<script setup lang="ts">
-useHead({
-  title: 'Lire la Bible - Paroles de vie',
-  meta: [
-    {
-      hid: 'description',
-      name: 'description',
-      content:
-        'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.'
-    },
-    {
-      hid: 'og:image',
-      property: 'og:image',
-      content: 'https://www.paroles-de-vie.tk/seo/read-the-bible.webp'
-    },
-    {
-      hid: 'twitter:image',
-      property: 'twitter:image',
-      content: 'https://www.paroles-de-vie.tk/seo/read-the-bible.webp'
-    }
-  ]
-})
-</script>
-
 <script lang="ts">
 import SectionBook from '~~/components/book/SectionBook.vue'
-import SectionDownloadDocumentsList from '~~/components/document/SectionDownloadDocumentsList.vue'
 import BgColorSection from '~~/components/global/BgColorSection.vue'
 import SectionIntroTopics from '~~/components/topics/SectionIntroTopics.vue'
-import { BookService, TopicService, WebSiteService } from '~~/services'
-import { AuthorEnum, FormatEnum } from '~~/types'
+import {
+  BookService,
+  TopicService,
+  WebSiteService,
+  ResourceService
+} from '~~/services'
 
 definePageMeta({
   layout: 'empty'
@@ -107,7 +109,6 @@ export default defineNuxtComponent({
   components: {
     SectionIntroTopics,
     BgColorSection,
-    SectionDownloadDocumentsList,
     SectionBook
   },
 
@@ -125,15 +126,7 @@ export default defineNuxtComponent({
       ],
       cover: TopicService.getTopicCoverBySlug('/read-the-bible/'),
       bibles: WebSiteService.getBibles(),
-      files: [
-        {
-          author: AuthorEnum.UNKNOW,
-          format: FormatEnum.PDF,
-          thumbnail: '/images/pdf/evangile-de-matthieu-en-hebreu-shem-tov',
-          href: '/pdf/evangile-de-matthieu-en-hebreu-shem-tov.pdf',
-          title: 'Evangile de matthieu en hébreu shem tov'
-        }
-      ],
+      files: ResourceService.getBySlug('read-the-bible'),
       books: BookService.getBible()
     }
   }

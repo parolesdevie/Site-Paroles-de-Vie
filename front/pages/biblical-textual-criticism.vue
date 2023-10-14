@@ -4,7 +4,7 @@
     <Breadcrumb :items="breadcrumbItems" />
 
     <!-- intro -->
-    <SectionIntroTopics :cover="cover" :frontFile="frontFile">
+    <SectionIntroTopics :cover="cover" :frontFile="files[0]">
       <template v-slot:title>La critique textuelle biblique</template>
       <template v-slot:body>
         En bref, la critique textuelle est une méthode permettant de
@@ -46,7 +46,7 @@
     />
 
     <!-- section download document  -->
-    <SectionDownloadDocumentsList
+    <DocumentSectionDownloadDocumentsList
       class="container mx-auto mt-4 md:mt-10"
       :files="files"
     />
@@ -110,14 +110,18 @@ import SectionBook from '~~/components/book/SectionBook.vue'
 import SectionDebate from '~~/components/debate/SectionDebate.vue'
 import SectionIntroTopics from '~~/components/topics/SectionIntroTopics.vue'
 import SectionVideo from '~~/components/videos/SectionVideo.vue'
-import SectionDownloadDocumentsList from '~~/components/document/SectionDownloadDocumentsList.vue'
 import {
   BookService,
   DebateService,
   TopicService,
-  TopicVideosService
+  TopicVideosService,
+  ResourceService
 } from '~~/services'
 import { AuthorEnum, FormatEnum, ISourceFile } from '~~/types'
+
+definePageMeta({
+  layout: 'article'
+})
 
 export default defineNuxtComponent({
   name: 'BiblicalTextCriticismPage',
@@ -126,8 +130,7 @@ export default defineNuxtComponent({
     SectionIntroTopics,
     SectionDebate,
     SectionBook,
-    SectionVideo,
-    SectionDownloadDocumentsList
+    SectionVideo
   },
 
   data() {
@@ -157,15 +160,7 @@ export default defineNuxtComponent({
         ...TopicVideosService.getVideosByTopic('biblical-textual-criticism'),
         ...TopicVideosService.getVideosByTopic('bible-nestle-aland')
       ],
-      files: [
-        {
-          author: AuthorEnum.BENEVOLENCE,
-          format: FormatEnum.PDF,
-          thumbnail: '/images/pdf/marc-s-finale',
-          href: '/pdf/marc-s-finale.pdf',
-          title: 'La finale de Marc'
-        }
-      ]
+      files: ResourceService.getBySlug('biblical-textual-criticism')
     }
   }
 })

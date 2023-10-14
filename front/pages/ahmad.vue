@@ -31,23 +31,33 @@ const debates = useState(() => DebateService.getByTopic('ahmad'))
     <Breadcrumb :items="breadcrumbItems" />
 
     <!-- intro -->
-    <SectionIntroTopics :cover="cover" :frontFile="frontFile">
+    <SectionIntroTopics :cover="cover" :frontFile="files[0]">
       <template v-slot:title>Jésus n'a jamais annoncer Ahmad</template>
     </SectionIntroTopics>
 
+    <!-- section debates  -->
     <DebateSectionDebate
       title="Découvrir en débats"
       class="container mx-auto mt-4 md:mt-10"
       :debates="debates"
       :hideSubject="false"
     />
+
+    <!-- section download document  -->
+    <DocumentSectionDownloadDocumentsList
+      class="container mx-auto mt-4 md:mt-10"
+      :files="files"
+    />
   </div>
 </template>
 
 <script lang="ts">
 import SectionIntroTopics from '~~/components/topics/SectionIntroTopics.vue'
-import { DebateService, TopicService } from '~~/services'
-import { AuthorEnum, FormatEnum, ISourceFile } from '~~/types'
+import { DebateService, TopicService, ResourceService } from '~~/services'
+
+definePageMeta({
+  layout: 'article'
+})
 
 export default defineNuxtComponent({
   name: 'AhmadPage',
@@ -68,14 +78,7 @@ export default defineNuxtComponent({
       ],
       cover: TopicService.getTopicCoverBySlug('/ahmad/'),
       debates: DebateService.getByTopic('ahmad'),
-      frontFile: {
-        author: AuthorEnum.BENEVOLENCE,
-        format: FormatEnum.PDF,
-        slug: 'ahmad',
-        thumbnail: '/images/pdf/ahmad',
-        href: '/pdf/ahmad.pdf',
-        title: "Jésus n'a jamais annoncer Ahmad"
-      } as ISourceFile
+      files: ResourceService.getBySlug('ahmad')
     }
   }
 })

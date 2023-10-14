@@ -69,7 +69,29 @@ export default defineNuxtComponent({
     },
     thumbnail: {
       type: String,
-      default: '/images/pdf/default'
+      default: {
+        srcset: {
+          mobile: '/images/pdf/default.webp',
+          desktop: '/images/pdf/default.webp'
+        },
+        src: {
+          mobile: {
+            '1x': '/images/pdf/default.webp',
+            '1.5x': '/images/pdf/default.webp',
+            '2x': '/images/pdf/default.webp',
+            '3x': '/images/pdf/default.webp',
+            '4x': '/images/pdf/default.webp'
+          },
+          desktop: {
+            '1x': '/images/pdf/default.webp',
+            '1.5x': '/images/pdf/default.webp',
+            '2x': '/images/pdf/default.webp',
+            '3x': '/images/pdf/default.webp',
+            '4x': '/images/pdf/default.webp'
+          }
+        },
+        alt: 'document'
+      }
     },
     href: {
       type: String,

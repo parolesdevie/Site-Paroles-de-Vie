@@ -54,7 +54,7 @@ useHead({
       :videos="videos"
     />
 
-    <SectionDownloadDocumentsList
+    <DocumentSectionDownloadDocumentsList
       class="container mx-auto mt-4 md:mt-10"
       :files="files"
     />
@@ -81,7 +81,6 @@ useHead({
 <script lang="ts">
 import SectionArguments from '~~/components/debate/SectionArguments.vue'
 import SectionDebate from '~~/components/debate/SectionDebate.vue'
-import SectionDownloadDocumentsList from '~~/components/document/SectionDownloadDocumentsList.vue'
 import SectionIntroTopics from '~~/components/topics/SectionIntroTopics.vue'
 import SectionVideo from '~~/components/videos/SectionVideo.vue'
 import SectionGallery from '~~/components/gallery/SectionGallery.vue'
@@ -102,7 +101,6 @@ export default defineNuxtComponent({
 
   components: {
     SectionVideo,
-    SectionDownloadDocumentsList,
     SectionArguments,
     SectionDebate,
     SectionIntroTopics,

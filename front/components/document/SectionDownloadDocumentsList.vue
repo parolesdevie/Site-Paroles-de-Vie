@@ -9,7 +9,7 @@
 
     <div class="mt-4 md:mt-8 mb-8">
       <ul class="flex flex-wrap py-2 pr-2 md:py-4 md:pr-4 gap-2 md:gap-4">
-        <SectionDownloadDocumentsListItem
+        <DocumentSectionDownloadDocumentsListItem
           v-for="(document, index) in files"
           :key="index"
           :loading="index > 9 ? 'lazy' : ''"

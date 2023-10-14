@@ -29,7 +29,7 @@
         :hideSubject="false"
       />
 
-      <SectionDownloadDocumentsList
+      <DocumentSectionDownloadDocumentsList
         class="container mx-auto mt-4 md:mt-10"
         :files="files"
       />
@@ -65,7 +65,6 @@ useHead({
 
 <script lang="ts">
 import SectionDebate from '~~/components/debate/SectionDebate.vue'
-import SectionDownloadDocumentsList from '~~/components/document/SectionDownloadDocumentsList.vue'
 import SectionIntroTopics from '~~/components/topics/SectionIntroTopics.vue'
 import { DebateService, TopicService } from '~~/services'
 
@@ -77,7 +76,6 @@ export default defineNuxtComponent({
   name: 'FalsificationBiblePage',
 
   components: {
-    SectionDownloadDocumentsList,
     SectionIntroTopics,
     SectionDebate
   },

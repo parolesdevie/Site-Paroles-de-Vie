@@ -48,18 +48,18 @@
       <CardMag :volume="1" />
       <CardBook :title="title" />
       <CardBook :title="title" :src="slug" :amazon="amazon" />
-      <SectionDownloadDocumentsListItem
+      <DocumentSectionDownloadDocumentsListItem
         loading="lazy"
         :author="authorEnum"
         :format="format"
         :href="href"
         :title="title"
       />
-      <SectionDownloadDocumentsListItem
+      <DocumentSectionDownloadDocumentsListItem
         loading="lazy"
         :author="authorEnum"
         :format="format"
-        :thumbnail="image2"
+        :thumbnail="thumbnail2"
         :href="href"
         :title="title"
       />
@@ -167,6 +167,27 @@ export default defineNuxtComponent({
     const href = 'https://www.google.fr/'
     const to = '/ui'
     const title = 'Titre'
+    const imageSrcset = {
+      mobile: `https://placehold.co/160x160,
+             https://placehold.co/240x240 1.5x,
+             https://placehold.co/320x320 2x,
+             https://placehold.co/480x480 3x,
+             https://placehold.co/640x640 4x`,
+      desktop: `https://placehold.co/240x240,
+             https://placehold.co/360x360 1.5x,
+             https://placehold.co/480x480 2x,
+             https://placehold.co/720x720 3x,
+             https://placehold.co/960x960 4x`
+    }
+    const imageSrc = {
+      mobile: {
+        '1x': 'https://placehold.co/160x160'
+      },
+      desktop: {
+        '1x': 'https://placehold.co/240x240'
+      }
+    }
+
     return {
       playlistYoutubeId: 'id',
       playlistDailymotionId: 'id',
@@ -178,31 +199,18 @@ export default defineNuxtComponent({
       title,
       image: 'https://via.placeholder.com/600x600',
       image2: 'https://via.placeholder.com/224x305',
+      thumbnail2: {
+        srcset: imageSrcset,
+        src: imageSrc,
+        alt: 'alt'
+      },
       author: 'Auteur',
       authorEnum: AuthorEnum.UNKNOW,
       src: 'placeholder',
       cover: {
         color: '#000',
-        srcset: {
-          mobile: `https://placehold.co/160x160,
-             https://placehold.co/240x240 1.5x,
-             https://placehold.co/320x320 2x,
-             https://placehold.co/480x480 3x,
-             https://placehold.co/640x640 4x`,
-          desktop: `https://placehold.co/240x240,
-             https://placehold.co/360x360 1.5x,
-             https://placehold.co/480x480 2x,
-             https://placehold.co/720x720 3x,
-             https://placehold.co/960x960 4x`
-        },
-        src: {
-          mobile: {
-            '1x': 'https://placehold.co/160x160'
-          },
-          desktop: {
-            '1x': 'https://placehold.co/240x240'
-          }
-        },
+        srcset: imageSrcset,
+        src: imageSrc,
         alt: 'alt'
       },
       to: '/ui/',

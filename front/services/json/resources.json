@@ -1402,5 +1402,222 @@
             },
             "alt": ""
         }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "name-of-god",
+        "to": "/name-of-god/",
+        "href": "/resources/name-of-god/main-document/document.pdf",
+        "title": "Le nom de Dieu",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/name-of-god/main-document/mobile/cover@1x.webp, /resources/name-of-god/main-document/mobile/cover@1.5x.webp 1.5x, /resources/name-of-god/main-document/mobile/cover@2x.webp 2x, /resources/name-of-god/main-document/mobile/cover@3x.webp 3x, /resources/name-of-god/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/name-of-god/main-document/desktop/cover@1x.webp, /resources/name-of-god/main-document/desktop/cover@1.5x.webp 1.5x, /resources/name-of-god/main-document/desktop/cover@2x.webp 2x, /resources/name-of-god/main-document/desktop/cover@3x.webp 3x, /resources/name-of-god/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/name-of-god/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/name-of-god/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/name-of-god/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/name-of-god/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/name-of-god/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/name-of-god/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/name-of-god/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/name-of-god/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/name-of-god/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/name-of-god/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "ahmad",
+        "to": "/ahmad/",
+        "href": "/resources/announcement-of-muhammad-in-the-bible/ahmad/document.pdf",
+        "title": "Jésus n'a jamais annoncer Ahmad",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/announcement-of-muhammad-in-the-bible/ahmad/mobile/cover@1x.webp, /resources/announcement-of-muhammad-in-the-bible/ahmad/mobile/cover@1.5x.webp 1.5x, /resources/announcement-of-muhammad-in-the-bible/ahmad/mobile/cover@2x.webp 2x, /resources/announcement-of-muhammad-in-the-bible/ahmad/mobile/cover@3x.webp 3x, /resources/announcement-of-muhammad-in-the-bible/ahmad/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/announcement-of-muhammad-in-the-bible/ahmad/desktop/cover@1x.webp, /resources/announcement-of-muhammad-in-the-bible/ahmad/desktop/cover@1.5x.webp 1.5x, /resources/announcement-of-muhammad-in-the-bible/ahmad/desktop/cover@2x.webp 2x, /resources/announcement-of-muhammad-in-the-bible/ahmad/desktop/cover@3x.webp 3x, /resources/announcement-of-muhammad-in-the-bible/ahmad/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/announcement-of-muhammad-in-the-bible/ahmad/mobile/cover@1x.webp",
+                    "1.5x": "/resources/announcement-of-muhammad-in-the-bible/ahmad/mobile/cover@1.5x.webp",
+                    "2x": "/resources/announcement-of-muhammad-in-the-bible/ahmad/mobile/cover@2x.webp",
+                    "3x": "/resources/announcement-of-muhammad-in-the-bible/ahmad/mobile/cover@2x.webp",
+                    "4x": "/resources/announcement-of-muhammad-in-the-bible/ahmad/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/announcement-of-muhammad-in-the-bible/ahmad/desktop/cover@1x.webp",
+                    "1.5x": "/resources/announcement-of-muhammad-in-the-bible/ahmad/desktop/cover@1.5x.webp",
+                    "2x": "/resources/announcement-of-muhammad-in-the-bible/ahmad/desktop/cover@2x.webp",
+                    "3x": "/resources/announcement-of-muhammad-in-the-bible/ahmad/desktop/cover@2x.webp",
+                    "4x": "/resources/announcement-of-muhammad-in-the-bible/ahmad/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "biblical-textual-criticism",
+        "to": "/biblical-textual-criticism/",
+        "href": "/resources/biblical-textual-criticism/marc-s-finale/document.pdf",
+        "title": "La finale de Marc",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/biblical-textual-criticism/marc-s-finale/mobile/cover@1x.webp, /resources/biblical-textual-criticism/marc-s-finale/mobile/cover@1.5x.webp 1.5x, /resources/biblical-textual-criticism/marc-s-finale/mobile/cover@2x.webp 2x, /resources/biblical-textual-criticism/marc-s-finale/mobile/cover@3x.webp 3x, /resources/biblical-textual-criticism/marc-s-finale/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/biblical-textual-criticism/marc-s-finale/desktop/cover@1x.webp, /resources/biblical-textual-criticism/marc-s-finale/desktop/cover@1.5x.webp 1.5x, /resources/biblical-textual-criticism/marc-s-finale/desktop/cover@2x.webp 2x, /resources/biblical-textual-criticism/marc-s-finale/desktop/cover@3x.webp 3x, /resources/biblical-textual-criticism/marc-s-finale/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/biblical-textual-criticism/marc-s-finale/mobile/cover@1x.webp",
+                    "1.5x": "/resources/biblical-textual-criticism/marc-s-finale/mobile/cover@1.5x.webp",
+                    "2x": "/resources/biblical-textual-criticism/marc-s-finale/mobile/cover@2x.webp",
+                    "3x": "/resources/biblical-textual-criticism/marc-s-finale/mobile/cover@2x.webp",
+                    "4x": "/resources/biblical-textual-criticism/marc-s-finale/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/biblical-textual-criticism/marc-s-finale/desktop/cover@1x.webp",
+                    "1.5x": "/resources/biblical-textual-criticism/marc-s-finale/desktop/cover@1.5x.webp",
+                    "2x": "/resources/biblical-textual-criticism/marc-s-finale/desktop/cover@2x.webp",
+                    "3x": "/resources/biblical-textual-criticism/marc-s-finale/desktop/cover@2x.webp",
+                    "4x": "/resources/biblical-textual-criticism/marc-s-finale/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "biblical-textual-criticism",
+        "to": "/biblical-textual-criticism/",
+        "href": "/resources/biblical-textual-criticism/pericope-of-the-adulteress/document.pdf",
+        "title": "La péricope de la femme adultère",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/biblical-textual-criticism/pericope-of-the-adulteress/mobile/cover@1x.webp, /resources/biblical-textual-criticism/pericope-of-the-adulteress/mobile/cover@1.5x.webp 1.5x, /resources/biblical-textual-criticism/pericope-of-the-adulteress/mobile/cover@2x.webp 2x, /resources/biblical-textual-criticism/pericope-of-the-adulteress/mobile/cover@3x.webp 3x, /resources/biblical-textual-criticism/pericope-of-the-adulteress/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/biblical-textual-criticism/pericope-of-the-adulteress/desktop/cover@1x.webp, /resources/biblical-textual-criticism/pericope-of-the-adulteress/desktop/cover@1.5x.webp 1.5x, /resources/biblical-textual-criticism/pericope-of-the-adulteress/desktop/cover@2x.webp 2x, /resources/biblical-textual-criticism/pericope-of-the-adulteress/desktop/cover@3x.webp 3x, /resources/biblical-textual-criticism/pericope-of-the-adulteress/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/biblical-textual-criticism/pericope-of-the-adulteress/mobile/cover@1x.webp",
+                    "1.5x": "/resources/biblical-textual-criticism/pericope-of-the-adulteress/mobile/cover@1.5x.webp",
+                    "2x": "/resources/biblical-textual-criticism/pericope-of-the-adulteress/mobile/cover@2x.webp",
+                    "3x": "/resources/biblical-textual-criticism/pericope-of-the-adulteress/mobile/cover@2x.webp",
+                    "4x": "/resources/biblical-textual-criticism/pericope-of-the-adulteress/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/biblical-textual-criticism/pericope-of-the-adulteress/desktop/cover@1x.webp",
+                    "1.5x": "/resources/biblical-textual-criticism/pericope-of-the-adulteress/desktop/cover@1.5x.webp",
+                    "2x": "/resources/biblical-textual-criticism/pericope-of-the-adulteress/desktop/cover@2x.webp",
+                    "3x": "/resources/biblical-textual-criticism/pericope-of-the-adulteress/desktop/cover@2x.webp",
+                    "4x": "/resources/biblical-textual-criticism/pericope-of-the-adulteress/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "biblical-textual-criticism",
+        "to": "/biblical-textual-criticism/",
+        "href": "/resources/biblical-textual-criticism/evangelists-anonymous/document.pdf",
+        "title": "Évangélistes Anonymes",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/biblical-textual-criticism/evangelists-anonymous/mobile/cover@1x.webp, /resources/biblical-textual-criticism/evangelists-anonymous/mobile/cover@1.5x.webp 1.5x, /resources/biblical-textual-criticism/evangelists-anonymous/mobile/cover@2x.webp 2x, /resources/biblical-textual-criticism/evangelists-anonymous/mobile/cover@3x.webp 3x, /resources/biblical-textual-criticism/evangelists-anonymous/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/biblical-textual-criticism/evangelists-anonymous/desktop/cover@1x.webp, /resources/biblical-textual-criticism/evangelists-anonymous/desktop/cover@1.5x.webp 1.5x, /resources/biblical-textual-criticism/evangelists-anonymous/desktop/cover@2x.webp 2x, /resources/biblical-textual-criticism/evangelists-anonymous/desktop/cover@3x.webp 3x, /resources/biblical-textual-criticism/evangelists-anonymous/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/biblical-textual-criticism/evangelists-anonymous/mobile/cover@1x.webp",
+                    "1.5x": "/resources/biblical-textual-criticism/evangelists-anonymous/mobile/cover@1.5x.webp",
+                    "2x": "/resources/biblical-textual-criticism/evangelists-anonymous/mobile/cover@2x.webp",
+                    "3x": "/resources/biblical-textual-criticism/evangelists-anonymous/mobile/cover@2x.webp",
+                    "4x": "/resources/biblical-textual-criticism/evangelists-anonymous/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/biblical-textual-criticism/evangelists-anonymous/desktop/cover@1x.webp",
+                    "1.5x": "/resources/biblical-textual-criticism/evangelists-anonymous/desktop/cover@1.5x.webp",
+                    "2x": "/resources/biblical-textual-criticism/evangelists-anonymous/desktop/cover@2x.webp",
+                    "3x": "/resources/biblical-textual-criticism/evangelists-anonymous/desktop/cover@2x.webp",
+                    "4x": "/resources/biblical-textual-criticism/evangelists-anonymous/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "name-of-jesus",
+        "to": "/name-of-jesus/",
+        "href": "/resources/name-of-jesus/main-document/document.pdf",
+        "title": "Le nom de Jésus",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/name-of-jesus/main-document/mobile/cover@1x.webp, /resources/name-of-jesus/main-document/mobile/cover@1.5x.webp 1.5x, /resources/name-of-jesus/main-document/mobile/cover@2x.webp 2x, /resources/name-of-jesus/main-document/mobile/cover@3x.webp 3x, /resources/name-of-jesus/main-document/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/name-of-jesus/main-document/desktop/cover@1x.webp, /resources/name-of-jesus/main-document/desktop/cover@1.5x.webp 1.5x, /resources/name-of-jesus/main-document/desktop/cover@2x.webp 2x, /resources/name-of-jesus/main-document/desktop/cover@3x.webp 3x, /resources/name-of-jesus/main-document/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/name-of-jesus/main-document/mobile/cover@1x.webp",
+                    "1.5x": "/resources/name-of-jesus/main-document/mobile/cover@1.5x.webp",
+                    "2x": "/resources/name-of-jesus/main-document/mobile/cover@2x.webp",
+                    "3x": "/resources/name-of-jesus/main-document/mobile/cover@2x.webp",
+                    "4x": "/resources/name-of-jesus/main-document/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/name-of-jesus/main-document/desktop/cover@1x.webp",
+                    "1.5x": "/resources/name-of-jesus/main-document/desktop/cover@1.5x.webp",
+                    "2x": "/resources/name-of-jesus/main-document/desktop/cover@2x.webp",
+                    "3x": "/resources/name-of-jesus/main-document/desktop/cover@2x.webp",
+                    "4x": "/resources/name-of-jesus/main-document/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
+        "author": "benevolence",
+        "format": "PDF",
+        "slug": "read-the-bible",
+        "to": "/read-the-bible/",
+        "href": "/resources/bible/gospel-of-matthew-in-hebrew/document.pdf",
+        "title": "Evangile de matthieu en hébreu shem tov",
+        "thumbnail": {
+            "srcset": {
+                "mobile": "/resources/bible/gospel-of-matthew-in-hebrew/mobile/cover@1x.webp, /resources/bible/gospel-of-matthew-in-hebrew/mobile/cover@1.5x.webp 1.5x, /resources/bible/gospel-of-matthew-in-hebrew/mobile/cover@2x.webp 2x, /resources/bible/gospel-of-matthew-in-hebrew/mobile/cover@3x.webp 3x, /resources/bible/gospel-of-matthew-in-hebrew/mobile/cover@4x.webp 4x",
+                "desktop": "/resources/bible/gospel-of-matthew-in-hebrew/desktop/cover@1x.webp, /resources/bible/gospel-of-matthew-in-hebrew/desktop/cover@1.5x.webp 1.5x, /resources/bible/gospel-of-matthew-in-hebrew/desktop/cover@2x.webp 2x, /resources/bible/gospel-of-matthew-in-hebrew/desktop/cover@3x.webp 3x, /resources/bible/gospel-of-matthew-in-hebrew/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/resources/bible/gospel-of-matthew-in-hebrew/mobile/cover@1x.webp",
+                    "1.5x": "/resources/bible/gospel-of-matthew-in-hebrew/mobile/cover@1.5x.webp",
+                    "2x": "/resources/bible/gospel-of-matthew-in-hebrew/mobile/cover@2x.webp",
+                    "3x": "/resources/bible/gospel-of-matthew-in-hebrew/mobile/cover@2x.webp",
+                    "4x": "/resources/bible/gospel-of-matthew-in-hebrew/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/resources/bible/gospel-of-matthew-in-hebrew/desktop/cover@1x.webp",
+                    "1.5x": "/resources/bible/gospel-of-matthew-in-hebrew/desktop/cover@1.5x.webp",
+                    "2x": "/resources/bible/gospel-of-matthew-in-hebrew/desktop/cover@2x.webp",
+                    "3x": "/resources/bible/gospel-of-matthew-in-hebrew/desktop/cover@2x.webp",
+                    "4x": "/resources/bible/gospel-of-matthew-in-hebrew/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
     }
 ]

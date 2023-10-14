@@ -92,7 +92,7 @@ const debates = useState(() => DebateService.getByTopic('the-paraclet'))
     />
 
     <!-- section download document  -->
-    <SectionDownloadDocumentsList
+    <DocumentSectionDownloadDocumentsList
       class="container mx-auto mt-4 md:mt-10"
       :files="files"
     />
@@ -100,7 +100,6 @@ const debates = useState(() => DebateService.getByTopic('the-paraclet'))
 </template>
 
 <script lang="ts">
-import SectionDownloadDocumentsList from '~~/components/document/SectionDownloadDocumentsList.vue'
 import BgColorSection from '~~/components/global/BgColorSection.vue'
 import SectionIntroTopics from '~~/components/topics/SectionIntroTopics.vue'
 import SectionVideo from '~~/components/videos/SectionVideo.vue'
@@ -116,7 +115,6 @@ export default defineNuxtComponent({
 
   components: {
     SectionVideo,
-    SectionDownloadDocumentsList,
     BgColorSection,
     SectionIntroTopics
   },

@@ -58,7 +58,7 @@ useHead({
       :arguments="christianArguments"
     />
 
-    <SectionDownloadDocumentsList
+    <DocumentSectionDownloadDocumentsList
       class="container mx-auto mt-4 md:mt-10"
       :files="files"
     />
@@ -68,7 +68,6 @@ useHead({
 <script lang="ts">
 import SectionIntroTopics from '~~/components/topics/SectionIntroTopics.vue'
 import SectionVideo from '~~/components/videos/SectionVideo.vue'
-import SectionDownloadDocumentsList from '~~/components/document/SectionDownloadDocumentsList.vue'
 import SectionArguments from '~~/components/debate/SectionArguments.vue'
 import { TopicService, ResourceService, DebateService } from '~~/services'
 
@@ -82,7 +81,6 @@ export default defineNuxtComponent({
   components: {
     SectionIntroTopics,
     SectionVideo,
-    SectionDownloadDocumentsList,
     SectionArguments
   },
 
