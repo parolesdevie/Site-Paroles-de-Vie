@@ -5,7 +5,7 @@
         "slug": "crucifixion-in-the-quran",
         "to": "/crucifixion-in-the-quran/",
         "cover": {
-            "color": "#97A09C",
+            "color": "#9C895A",
             "srcset": {
                 "mobile": "/images/topics/crucifixion-in-the-quran/mobile/cover@1x.webp, /images/topics/crucifixion-in-the-quran/mobile/cover@1.5x.webp 1.5x, /images/topics/crucifixion-in-the-quran/mobile/cover@2x.webp 2x, /images/topics/crucifixion-in-the-quran/mobile/cover@3x.webp 3x, /images/topics/crucifixion-in-the-quran/mobile/cover@4x.webp 4x",
                 "desktop": "/images/topics/crucifixion-in-the-quran/desktop/cover@1x.webp, /images/topics/crucifixion-in-the-quran/desktop/cover@1.5x.webp 1.5x, /images/topics/crucifixion-in-the-quran/desktop/cover@2x.webp 2x, /images/topics/crucifixion-in-the-quran/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
@@ -35,7 +35,7 @@
         "slug": "crucifixion-in-the-bible",
         "to": "/crucifixion-in-the-bible/",
         "cover": {
-            "color": "#97A09C",
+            "color": "#9C895A",
             "srcset": {
                 "mobile": "/images/topics/crucifixion-in-the-bible/mobile/cover@1x.webp, /images/topics/crucifixion-in-the-bible/mobile/cover@1.5x.webp 1.5x, /images/topics/crucifixion-in-the-bible/mobile/cover@2x.webp 2x, /images/topics/crucifixion-in-the-bible/mobile/cover@3x.webp 3x, /images/topics/crucifixion-in-the-bible/mobile/cover@4x.webp 4x",
                 "desktop": "/images/topics/crucifixion-in-the-bible/desktop/cover@1x.webp, /images/topics/crucifixion-in-the-bible/desktop/cover@1.5x.webp 1.5x, /images/topics/crucifixion-in-the-bible/desktop/cover@2x.webp 2x, /images/topics/crucifixion-in-the-bible/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
@@ -151,7 +151,7 @@
     },
     {
         "title": "L'Évangile de Barnabé",
-        "archive": true,
+        "archive": false,
         "to": "/gospel-of-barnabas/",
         "cover": {
             "color": "#A3917B",
@@ -180,7 +180,7 @@
     },
     {
         "title": "Deutéronome 18:18",
-        "archive": true,
+        "archive": false,
         "to": "/deuteronomy-18-18/",
         "cover": {
             "color": "#A3917B",
@@ -209,7 +209,7 @@
     },
     {
         "title": "La parabole des vignerons",
-        "archive": true,
+        "archive": false,
         "to": "/parable-of-the-winegrowers/",
         "cover": {
             "color": "#77875B",
@@ -238,7 +238,7 @@
     },
     {
         "title": "Stories",
-        "archive": true,
+        "archive": false,
         "to": "/stories/",
         "cover": {
             "color": "#8E7B6E",
@@ -267,7 +267,7 @@
     },
     {
         "title": "Documents PDF",
-        "archive": true,
+        "archive": false,
         "to": "/documents/",
         "cover": {
             "color": "#9D928C",
@@ -296,7 +296,7 @@
     },
     {
         "title": "Podcast",
-        "archive": true,
+        "archive": false,
         "to": "/podcast/",
         "cover": {
             "color": "#",
@@ -325,7 +325,7 @@
     },
     {
         "title": "Manuscrits",
-        "archive": true,
+        "archive": false,
         "to": "/manuscripts/",
         "cover": {
             "color": "#C2B17D",
@@ -383,7 +383,7 @@
     },
     {
         "title": "Louanges",
-        "archive": true,
+        "archive": false,
         "to": "/gospel/",
         "cover": {
             "color": "#6A5847",
@@ -412,7 +412,7 @@
     },
     {
         "title": "Le Soreg",
-        "archive": true,
+        "archive": false,
         "to": "/soreg/",
         "cover": {
             "color": "#887D6D",
@@ -441,7 +441,7 @@
     },
     {
         "title": "Le Paraclet",
-        "archive": true,
+        "archive": false,
         "to": "/paraclete/",
         "cover": {
             "color": "#A66B38",
@@ -470,7 +470,7 @@
     },
     {
         "title": "La divinité de Jésus",
-        "archive": true,
+        "archive": false,
         "to": "/the-divinity-of-jesus/",
         "cover": {
             "color": "#8A7A6F",
@@ -499,7 +499,7 @@
     },
     {
         "title": "Un manuscrit",
-        "archive": true,
+        "archive": false,
         "to": "/the-falsification-of-the-bible/",
         "cover": {
             "color": "#6A574D",
@@ -528,7 +528,7 @@
     },
     {
         "title": "Chaîne Youtube Recommandées",
-        "archive": true,
+        "archive": false,
         "to": "/youtube/",
         "cover": {
             "color": "#967D7A",
@@ -557,7 +557,7 @@
     },
     {
         "title": "Livres Recommandés",
-        "archive": true,
+        "archive": false,
         "to": "/books/",
         "cover": {
             "color": "#59463B",
@@ -586,7 +586,7 @@
     },
     {
         "title": "Sites Recommandés",
-        "archive": true,
+        "archive": false,
         "to": "/sites/",
         "cover": {
             "color": "#CB885F",
@@ -615,7 +615,7 @@
     },
     {
         "title": "Réseaux sociaux",
-        "archive": true,
+        "archive": false,
         "to": "/social-networks/",
         "cover": {
             "color": "#64575A",
@@ -644,7 +644,7 @@
     },
     {
         "title": "Magazines",
-        "archive": true,
+        "archive": false,
         "to": "/magazines/",
         "cover": {
             "color": "#ACB0BB",
@@ -673,7 +673,7 @@
     },
     {
         "title": "Galerie d'images",
-        "archive": true,
+        "archive": false,
         "to": "/gallery/",
         "cover": {
             "color": "#B18F66",
@@ -702,7 +702,7 @@
     },
     {
         "title": "Coliseum",
-        "archive": true,
+        "archive": false,
         "to": "/coliseum/",
         "cover": {
             "color": "#514A3C",

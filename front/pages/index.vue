@@ -28,7 +28,7 @@ useHead({
   <div>
     <StoriesSectionStories />
 
-    <TopicsSectionTopicCard class="mt-4 md:mt-10" title="Thémes" />
+    <TopicsSectionTopicCard class="mt-4" title="Thémes" />
 
     <!-- <DocumentSectionDocument class="mt-4 md:mt-10" :tags="tags" :pdfs="pdfs" />
 
