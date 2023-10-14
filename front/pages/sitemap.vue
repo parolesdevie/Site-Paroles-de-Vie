@@ -97,7 +97,7 @@
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/the-crucifixion-in-the-bible/">
+                <NuxtLink to="/crucifixion-in-the-bible/">
                   La crucifixion dans la bible
                 </NuxtLink>
               </li>

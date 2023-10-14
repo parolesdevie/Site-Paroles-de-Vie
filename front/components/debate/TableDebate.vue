@@ -48,7 +48,7 @@
             <NuxtLink
               v-if="debater.id !== -1"
               :to="'/debaters/' + debater.id"
-              class="text-sm md:text-base hover:text-blue-500"
+              class="text-sm md:text-base hover:text-blue-500 mr-1"
             >
               {{ debater.name }}
             </NuxtLink>
@@ -62,8 +62,7 @@
             <IconCross
               v-else-if="debater.religion === DebatReligionEnum.CHRISTIAN"
               class="inline h-3 shrink-0 text-violet-500"
-            />
-            ,
+            />,
           </div>
           <strong class="text-red-500"> VS </strong>
 
@@ -75,7 +74,7 @@
             <NuxtLink
               v-if="debater.id !== -1"
               :to="'/debaters/' + debater.id"
-              class="text-sm md:text-base hover:text-blue-500"
+              class="text-sm md:text-base hover:text-blue-500 mr-1"
             >
               {{ debater.name }}
             </NuxtLink>
@@ -89,8 +88,7 @@
             <IconCross
               v-else-if="debater.religion === DebatReligionEnum.CHRISTIAN"
               class="inline h-3 shrink-0 text-violet-500"
-            />
-            ,
+            />,
           </div>
         </td>
         <td
@@ -102,13 +100,16 @@
         <td
           class="border-b dark:border-blue-500 p-2 md:p-4 md:pl-8 text-xs md:text-base hidden md:table-cell"
         >
-          <NuxtLink
-            v-if="debat.mediator"
-            :to="'/debaters/' + debat.mediator.id"
-            class="text-sm md:text-base hover:text-blue-500"
-          >
-            {{ debat.mediator.name }}
-          </NuxtLink>
+          <ul v-if="debat.mediators.length">
+            <NuxtLink
+              v-for="(mediator, index) in debat.mediators"
+              :key="index"
+              :to="'/debaters/' + mediator.id"
+              class="text-sm md:text-base hover:text-blue-500"
+            >
+              {{ mediator.name }},
+            </NuxtLink>
+          </ul>
           <span v-else class="text-sm md:text-base text-gray-400">
             Inconnu
           </span>

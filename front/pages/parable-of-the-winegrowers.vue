@@ -1,3 +1,29 @@
+<script setup lang="ts">
+useHead({
+  title: 'La parabole des vignerons - Paroles de vie',
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content:
+        'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.'
+    },
+    {
+      hid: 'og:image',
+      property: 'og:image',
+      content:
+        'https://www.paroles-de-vie.tk/seo/parable-of-the-winegrowers.webp'
+    },
+    {
+      hid: 'twitter:image',
+      property: 'twitter:image',
+      content:
+        'https://www.paroles-de-vie.tk/seo/parable-of-the-winegrowers.webp'
+    }
+  ]
+})
+</script>
+
 <template>
   <div class="mb-auto px-3 md:px-4 py-4 flex flex-col">
     <Breadcrumb class="container mx-auto" :items="breadcrumbItems" />
@@ -13,6 +39,7 @@
       </template>
     </SectionIntroTopics>
 
+    <!-- section debates  -->
     <SectionDebate
       class="container mx-auto mt-4 md:mt-10"
       :playlistYoutubeId="playlistYoutubeIdDebates"
@@ -50,32 +77,6 @@
     />
   </div>
 </template>
-
-<script setup lang="ts">
-useHead({
-  title: 'La parabole des vignerons - Paroles de vie',
-  meta: [
-    {
-      hid: 'description',
-      name: 'description',
-      content:
-        'Défendre la foi chrétienne, donner une éducation chrétienne, expression de la foi.'
-    },
-    {
-      hid: 'og:image',
-      property: 'og:image',
-      content:
-        'https://www.paroles-de-vie.tk/seo/parable-of-the-winegrowers.webp'
-    },
-    {
-      hid: 'twitter:image',
-      property: 'twitter:image',
-      content:
-        'https://www.paroles-de-vie.tk/seo/parable-of-the-winegrowers.webp'
-    }
-  ]
-})
-</script>
 
 <script lang="ts">
 import SectionArguments from '~~/components/debate/SectionArguments.vue'

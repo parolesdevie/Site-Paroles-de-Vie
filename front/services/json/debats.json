@@ -69,5 +69,83 @@
                 "audio": "004"
             }
         ]
+    },
+    {
+        "id": 2,
+        "title": "Le Schilo",
+        "subject": "schilo",
+        "topics": [
+            "schilo"
+        ],
+        "date": "00/00/0000",
+        "arguments": [
+            {
+                "id": 1,
+                "order": 1,
+                "team": "islam",
+                "title": "Coran 2:133",
+                "explanation": "Le verset Genèse 49:10-12 correspond au verset Coran 2:133 <br/> Étiez-vous témoins quand la mort se présenta à Jacob et qu´il dit à ses fils : \"Qu´adorerez-vous après moi\" ? - Ils répondirent : \"Nous adorerons ta divinité et la divinité de tes pères, Abraham, Ismaël et Isaac, Divinité Unique et à laquelle nous sommes Soumis\".",
+                "dependency": null,
+                "audio": null,
+                "responses": [
+                    {
+                        "id": 1,
+                        "order": 1,
+                        "title": "Pétition de principe",
+                        "responses": "L'argument se base sur une pétition de principe, il n'a aucunne valeur argumentative.",
+                        "audio": null,
+                        "dependency": null
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "order": 2,
+                "team": "islam",
+                "title": "Le vrai possesseur",
+                "explanation": "Le verset fait allusion à une similitude entre le Schilo et Juda, suggérant que le Schilo possédera ce qui était à l'origine la prérogative de Juda. Plusieurs versions de la Bible expriment cette notion, notamment celle du \"vrai possesseur.\" Cependant, il est essentiel de noter que cette interprétation soulève la question de savoir si le Schilo provient effectivement de Juda.",
+                "dependency": null,
+                "audio": null,
+                "responses": [
+                    {
+                        "id": 1,
+                        "order": 1,
+                        "title": "Jusqu'à ce que vienne le Schilo",
+                        "responses": "L'expression \"Jusqu'à ce que vienne le Schilo\", inclus le schilo lui même.",
+                        "audio": null,
+                        "dependency": null
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "order": 3,
+                "team": "islam",
+                "title": "Leader et législateur",
+                "explanation": "En complément, la prophétie précise que le Schilo exercera un pouvoir, symbolisé par le \"bâton de commandement,\" ainsi qu'une autorité législative, symbolisée par \"l'insigne du législateur.\" Cette dualité souligne que le Schilo sera à la fois un chef politique et un législateur qui établira une nouvelle loi.",
+                "dependency": null,
+                "audio": null,
+                "responses": [
+                    {
+                        "id": 1,
+                        "order": 1,
+                        "title": "Interprétation personnelle",
+                        "responses": "Ici c'est une interprétation personnelle, qui plus est n'est pas un argument en faveur de l'Islam, car Jésus est un législateur et il confére se pouvoir aux apôtres.",
+                        "audio": null,
+                        "dependency": null
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "order": 1,
+                "team": "christianism",
+                "title": "Réalisation par Jésus",
+                "explanation": "Daniel 2 et la parabole des Vignerons Homicides comme parallèles et réalisations de Genèse 49,10-11. <br/> Voir le PDF de Fidelis & Verax",
+                "dependency": null,
+                "audio": null,
+                "responses": []
+            }
+        ]
     }
 ]

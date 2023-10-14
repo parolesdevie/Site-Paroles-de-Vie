@@ -244,6 +244,36 @@ export default class DebaterService {
         pseudo: 'LeonZer',
         name: 'Ayoub',
         religion: DebatReligionEnum.MUSLIM
+      },
+      {
+        id: 39,
+        pseudo: 'Yeshoua HaMashiah',
+        name: 'Yeshoua HaMashiah',
+        religion: DebatReligionEnum.CHRISTIAN
+      },
+      {
+        id: 40,
+        pseudo: 'Nasseer Ahmed Saïd',
+        name: 'Nasseer Ahmed Saïd',
+        religion: DebatReligionEnum.MUSLIM
+      },
+      {
+        id: 41,
+        pseudo: 'Joêl Thibault',
+        name: 'Joêl Thibault',
+        religion: DebatReligionEnum.UNKNOW
+      },
+      {
+        id: 41,
+        pseudo: 'Unique_Boy',
+        name: 'Unique Boy',
+        religion: DebatReligionEnum.CHRISTIAN
+      },
+      {
+        id: 42,
+        pseudo: 'Hamos',
+        name: 'Hamos',
+        religion: DebatReligionEnum.MUSLIM
       }
     ]
   }

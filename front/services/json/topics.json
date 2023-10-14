@@ -1,5 +1,65 @@
 [
     {
+        "title": "La crucifixion dans le coran",
+        "archive": false,
+        "slug": "crucifixion-in-the-quran",
+        "to": "/crucifixion-in-the-quran/",
+        "cover": {
+            "color": "#97A09C",
+            "srcset": {
+                "mobile": "/images/topics/crucifixion-in-the-quran/mobile/cover@1x.webp, /images/topics/crucifixion-in-the-quran/mobile/cover@1.5x.webp 1.5x, /images/topics/crucifixion-in-the-quran/mobile/cover@2x.webp 2x, /images/topics/crucifixion-in-the-quran/mobile/cover@3x.webp 3x, /images/topics/crucifixion-in-the-quran/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/crucifixion-in-the-quran/desktop/cover@1x.webp, /images/topics/crucifixion-in-the-quran/desktop/cover@1.5x.webp 1.5x, /images/topics/crucifixion-in-the-quran/desktop/cover@2x.webp 2x, /images/topics/crucifixion-in-the-quran/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/crucifixion-in-the-quran/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/crucifixion-in-the-quran/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/crucifixion-in-the-quran/mobile/cover@2x.webp",
+                    "3x": "/images/topics/crucifixion-in-the-quran/mobile/cover@3x.webp",
+                    "4x": "/images/topics/crucifixion-in-the-quran/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/crucifixion-in-the-quran/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/crucifixion-in-the-quran/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/crucifixion-in-the-quran/desktop/cover@2x.webp",
+                    "3x": "/images/topics/crucifixion-in-the-quran/desktop/cover@3x.webp",
+                    "4x": "/images/topics/crucifixion-in-the-quran/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Une croix inscrustrée dans une bible"
+        }
+    },
+    {
+        "title": "La crucifixion dans la bible",
+        "archive": false,
+        "slug": "crucifixion-in-the-bible",
+        "to": "/crucifixion-in-the-bible/",
+        "cover": {
+            "color": "#97A09C",
+            "srcset": {
+                "mobile": "/images/topics/crucifixion-in-the-bible/mobile/cover@1x.webp, /images/topics/crucifixion-in-the-bible/mobile/cover@1.5x.webp 1.5x, /images/topics/crucifixion-in-the-bible/mobile/cover@2x.webp 2x, /images/topics/crucifixion-in-the-bible/mobile/cover@3x.webp 3x, /images/topics/crucifixion-in-the-bible/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/crucifixion-in-the-bible/desktop/cover@1x.webp, /images/topics/crucifixion-in-the-bible/desktop/cover@1.5x.webp 1.5x, /images/topics/crucifixion-in-the-bible/desktop/cover@2x.webp 2x, /images/topics/crucifixion-in-the-bible/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/crucifixion-in-the-bible/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/crucifixion-in-the-bible/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/crucifixion-in-the-bible/mobile/cover@2x.webp",
+                    "3x": "/images/topics/crucifixion-in-the-bible/mobile/cover@3x.webp",
+                    "4x": "/images/topics/crucifixion-in-the-bible/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/crucifixion-in-the-bible/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/crucifixion-in-the-bible/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/crucifixion-in-the-bible/desktop/cover@2x.webp",
+                    "3x": "/images/topics/crucifixion-in-the-bible/desktop/cover@3x.webp",
+                    "4x": "/images/topics/crucifixion-in-the-bible/desktop/cover@4x.webp"
+                }
+            },
+            "alt": "Une croix inscrustrée dans une bible"
+        }
+    },
+    {
         "title": "La foi Abrahamique",
         "archive": false,
         "slug": "abrahamic-faith",
@@ -493,35 +553,6 @@
                 }
             },
             "alt": "La falsification de la bible"
-        }
-    },
-    {
-        "title": "La crucifixion dans la bible",
-        "archive": true,
-        "to": "/the-crucifixion-in-the-bible/",
-        "cover": {
-            "color": "#97A09C",
-            "srcset": {
-                "mobile": "/images/topics/gospel-of-barnabas/mobile/cover@1x.webp, /images/topics/gospel-of-barnabas/mobile/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/mobile/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/mobile/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/mobile/cover@4x.webp 4x",
-                "desktop": "/images/topics/gospel-of-barnabas/desktop/cover@1x.webp, /images/topics/gospel-of-barnabas/desktop/cover@1.5x.webp 1.5x, /images/topics/gospel-of-barnabas/desktop/cover@2x.webp 2x, /images/topics/gospel-of-barnabas/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
-            },
-            "src": {
-                "mobile": {
-                    "1x": "/images/topics/the-crucifixion-in-the-bible/mobile/cover@1x.webp",
-                    "1.5x": "/images/topics/the-crucifixion-in-the-bible/mobile/cover@1.5x.webp",
-                    "2x": "/images/topics/the-crucifixion-in-the-bible/mobile/cover@2x.webp",
-                    "3x": "/images/topics/the-crucifixion-in-the-bible/mobile/cover@3x.webp",
-                    "4x": "/images/topics/the-crucifixion-in-the-bible/mobile/cover@4x.webp"
-                },
-                "desktop": {
-                    "1x": "/images/topics/the-crucifixion-in-the-bible/desktop/cover@1x.webp",
-                    "1.5x": "/images/topics/the-crucifixion-in-the-bible/desktop/cover@1.5x.webp",
-                    "2x": "/images/topics/the-crucifixion-in-the-bible/desktop/cover@2x.webp",
-                    "3x": "/images/topics/the-crucifixion-in-the-bible/desktop/cover@3x.webp",
-                    "4x": "/images/topics/the-crucifixion-in-the-bible/desktop/cover@4x.webp"
-                }
-            },
-            "alt": "Un manuscrit"
         }
     },
     {

@@ -9,7 +9,23 @@ export default class DebateService {
     return [
       // La crucifixion de Jésus Christ
       {
-        topics: ['the-crucifixion-in-the-bible'],
+        topics: ['crucifixion-in-the-bible', 'crucifixion-in-the-quran'],
+        date: '23/09/2023',
+        url: 'https://youtu.be/p3NWJCgtdSA',
+        subject: 'La crucifixion de Jésus Christ | Yeshoua HaMashiah Vs Ayoub',
+        debaters: [
+          { ...DebaterService.getByPseudo('Yeshoua HaMashiah'), team: 0 },
+          { ...DebaterService.getByPseudo('LeonZer'), team: 1 }
+        ],
+        mediators: [
+          DebaterService.getByPseudo('Unique_Boy'),
+          DebaterService.getByPseudo('Hamos')
+        ],
+        plateform: DebatPlateformEnum.TIKTOK
+      },
+      // La crucifixion de Jésus Christ
+      {
+        topics: ['crucifixion-in-the-bible', 'crucifixion-in-the-quran'],
         date: '19/08/2023',
         url: 'https://youtu.be/CfxUnd0fbtw',
         subject: 'La crucifixion de Jésus Christ | Paroles de vie Vs Ayoub',
@@ -17,7 +33,8 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Bénévolence'), team: 0 },
           { ...DebaterService.getByPseudo('LeonZer'), team: 1 }
         ],
-        plateform: DebatPlateformEnum.YOUTUBE
+        mediators: [],
+        plateform: DebatPlateformEnum.TIKTOK
       },
       // Open Mic 2023 épisode 6
       {
@@ -26,6 +43,7 @@ export default class DebateService {
         url: 'https://youtu.be/9VXT88fsutc?list=PLaUKVVcTcbOLJMQQPv0JpdB3ZJgqf5iGR&t=4859',
         subject: "L'Évangile de Barnabé [Open Mic 2023]",
         debaters: [{ ...DebaterService.getByPseudo('Bénévolence'), team: 0 }],
+        mediators: [],
         plateform: DebatPlateformEnum.DISCORD
       },
       // Open Mic 2023 épisode 5
@@ -42,6 +60,7 @@ export default class DebateService {
             team: 0
           }
         ],
+        mediators: [],
         plateform: DebatPlateformEnum.TIKTOK
       },
       // Open Mic 2023 épisode 4
@@ -52,6 +71,7 @@ export default class DebateService {
         subject:
           "Jésus n'a jamais annoncer Muhammad ni l'Islam [Open Mic 2023]",
         debaters: [{ ...DebaterService.getByPseudo('Bénévolence'), team: 0 }],
+        mediators: [],
         plateform: DebatPlateformEnum.DISCORD
       },
       // Open Mic 2023 épisode 3
@@ -62,6 +82,7 @@ export default class DebateService {
         subject:
           "Jésus n'a jamais annoncer Muhammad ni l'Islam [Open Mic 2023]",
         debaters: [{ ...DebaterService.getByPseudo('Bénévolence'), team: 0 }],
+        mediators: [],
         plateform: DebatPlateformEnum.DISCORD
       },
       // Open Mic 2023 épisode 2
@@ -71,6 +92,7 @@ export default class DebateService {
         url: 'https://youtu.be/9VXT88fsutc',
         subject: "Jésus n'a jamais annoncer Muhammad [Open Mic 2023]",
         debaters: [{ ...DebaterService.getByPseudo('Bénévolence'), team: 0 }],
+        mediators: [],
         plateform: DebatPlateformEnum.DISCORD
       },
       // Open Mic 2023 épisode 1
@@ -94,6 +116,7 @@ export default class DebateService {
             team: 1
           }
         ],
+        mediators: [],
         plateform: DebatPlateformEnum.DISCORD
       },
       {
@@ -108,6 +131,7 @@ export default class DebateService {
             team: 1
           }
         ],
+        mediators: [],
         plateform: DebatPlateformEnum.DISCORD
       },
       {
@@ -123,6 +147,7 @@ export default class DebateService {
             team: 1
           }
         ],
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -138,6 +163,7 @@ export default class DebateService {
             team: 1
           }
         ],
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -150,6 +176,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Bénévolence'), team: 0 },
           { ...DebaterService.getByPseudo('Cheikh Adam'), team: 1 }
         ],
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -162,6 +189,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Hanane'), team: 1 },
           { ...DebaterService.getByPseudo('Ali'), team: 1 }
         ],
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -173,6 +201,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Sham'), team: 0 },
           { ...DebaterService.getByPseudo('Mengo'), team: 1 }
         ],
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -189,6 +218,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Bénévolence'), team: 0 },
           { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 }
         ],
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -204,6 +234,7 @@ export default class DebateService {
           },
           { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 }
         ],
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -215,6 +246,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Bénévolence'), team: 0 },
           { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 }
         ],
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -233,6 +265,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 },
           { ...DebaterService.getByPseudo('Ayman'), team: 1 }
         ],
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -244,10 +277,11 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Georges Autran'), team: 0 },
           { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 }
         ],
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topics: ['the-crucifixion-in-the-bible'],
+        topics: ['crucifixion-in-the-bible'],
         date: '10/09/2022',
         url: 'https://youtu.be/xms5pzrT_7Y',
         subject: 'DEBAT MUSLIM - CHRETIEN SUR LA MORT DE JESUS !',
@@ -255,10 +289,11 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Georges Autran'), team: 0 },
           { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 }
         ],
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topics: ['the-crucifixion-in-the-bible'],
+        topics: ['crucifixion-in-the-bible'],
         date: '20/08/2022',
         url: 'https://youtu.be/PjN6y_P1INg',
         subject: 'Collectif Theophilos La crucifixiondans la bible',
@@ -269,10 +304,11 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Jacques'), team: 0 },
           { ...DebaterService.getByPseudo('Daniel'), team: 1 }
         ],
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topics: ['the-crucifixion-in-the-bible'],
+        topics: ['crucifixion-in-the-bible'],
         date: '20/08/2022',
         url: 'https://youtu.be/0beBalbM_nM',
         subject: 'Collectif Theophilos La crucifixiondans la bible',
@@ -285,6 +321,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Izanami'), team: 0 },
           { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 }
         ],
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -296,6 +333,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Fidelis Verax'), team: 0 },
           { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 }
         ],
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -307,7 +345,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Arnaud Dumouch'), team: 0 },
           { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 }
         ],
-        mediator: DebaterService.getByPseudo('Morgan Priest'),
+        mediators: [DebaterService.getByPseudo('Morgan Priest')],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -321,11 +359,11 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 },
           { ...DebaterService.getByPseudo(undefined), team: 1 }
         ],
-        mediator: DebaterService.getByPseudo('Said Oujibou'),
+        mediators: [DebaterService.getByPseudo('Said Oujibou')],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topics: [undefined],
+        topics: ['islam'],
         date: '21/01/2018',
         url: 'https://youtu.be/K6292d9PdGo',
         subject:
@@ -334,6 +372,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo(undefined), team: 0 },
           { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 }
         ],
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -346,7 +385,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 0 },
           { ...DebaterService.getByPseudo('Gabriel Hagaï'), team: 1 }
         ],
-        mediator: DebaterService.getByPseudo('Said Oujibou'),
+        mediators: [DebaterService.getByPseudo('Said Oujibou')],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -358,7 +397,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 0 },
           { ...DebaterService.getByPseudo('Metmati Maamar'), team: 1 }
         ],
-        mediator: DebaterService.getByPseudo(undefined),
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -373,7 +412,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 },
           { ...DebaterService.getByPseudo('Abdullah al-Hanifi'), team: 1 }
         ],
-        mediator: DebaterService.getByPseudo('Said Oujibou'),
+        mediators: [DebaterService.getByPseudo('Said Oujibou')],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -388,7 +427,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 },
           { ...DebaterService.getByPseudo('Abdullah al-Hanifi'), team: 1 }
         ],
-        mediator: DebaterService.getByPseudo('Said Oujibou'),
+        mediators: [DebaterService.getByPseudo('Said Oujibou')],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -401,7 +440,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Guy Pages'), team: 0 },
           { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 }
         ],
-        mediator: DebaterService.getByPseudo(undefined),
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -414,7 +453,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Guy Pages'), team: 0 },
           { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 }
         ],
-        mediator: DebaterService.getByPseudo(undefined),
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -426,7 +465,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Odon Lafontaine'), team: 0 },
           { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 }
         ],
-        mediator: DebaterService.getByPseudo(undefined),
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -439,7 +478,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Guy Pages'), team: 0 },
           { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 }
         ],
-        mediator: DebaterService.getByPseudo(undefined),
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -454,7 +493,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Karim al-Hanifi'), team: 1 },
           { ...DebaterService.getByPseudo('Zakaria'), team: 1 }
         ],
-        mediator: DebaterService.getByPseudo('Said Oujibou'),
+        mediators: [DebaterService.getByPseudo('Said Oujibou')],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -467,7 +506,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Remi Gomez'), team: 0 },
           { ...DebaterService.getByPseudo('jplt'), team: 1 }
         ],
-        mediator: DebaterService.getByPseudo(undefined),
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -480,7 +519,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Remi Gomez'), team: 0 },
           { ...DebaterService.getByPseudo('jplt'), team: 1 }
         ],
-        mediator: DebaterService.getByPseudo(undefined),
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -493,7 +532,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Remi Gomez'), team: 0 },
           { ...DebaterService.getByPseudo('jplt'), team: 1 }
         ],
-        mediator: DebaterService.getByPseudo(undefined),
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -507,7 +546,9 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 },
           { ...DebaterService.getByPseudo('Ayman'), team: 1 }
         ],
-        mediator: DebaterService.getByPseudo('Joêl Thibault et Jacques Faty'),
+        mediators: [
+          DebaterService.getByPseudo('Joêl Thibault et Jacques Faty')
+        ],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -521,7 +562,9 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Ismaïl al Hanifi'), team: 1 },
           { ...DebaterService.getByPseudo('Ayman'), team: 1 }
         ],
-        mediator: DebaterService.getByPseudo('Joêl Thibault et Jacques Faty'),
+        mediators: [
+          DebaterService.getByPseudo('Joêl Thibault et Jacques Faty')
+        ],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -533,7 +576,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Olivier Imbernon'), team: 0 },
           { ...DebaterService.getByPseudo('Samy de Christ'), team: 1 }
         ],
-        mediator: DebaterService.getByPseudo('Remi Gomez'),
+        mediators: [DebaterService.getByPseudo('Remi Gomez')],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
@@ -546,11 +589,11 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Remi Gomez'), team: 0 },
           { ...DebaterService.getByPseudo('Guy Pages'), team: 1 }
         ],
-        mediator: DebaterService.getByPseudo(undefined),
+        mediators: [],
         plateform: DebatPlateformEnum.YOUTUBE
       },
       {
-        topics: ['the-crucifixion-in-the-bible'],
+        topics: ['crucifixion-in-the-bible', 'crucifixion-in-the-quran'],
         date: '24/04/2019',
         url: 'https://youtu.be/vX6NAvdCRvA',
         subject:
@@ -559,7 +602,7 @@ export default class DebateService {
           { ...DebaterService.getByPseudo('Remi Gomez'), team: 0 },
           { ...DebaterService.getByPseudo('Nasseer Ahmed Saïd'), team: 1 }
         ],
-        mediator: DebaterService.getByPseudo('Joêl Thibault'),
+        mediators: [DebaterService.getByPseudo('Joêl Thibault')],
         plateform: DebatPlateformEnum.YOUTUBE
       }
     ]
@@ -569,7 +612,9 @@ export default class DebateService {
     return this.getAll().filter(
       (debate) =>
         debate.debaters.findIndex((debater) => debater.id === debaterId) !==
-          -1 || debate.mediator?.id === debaterId
+          -1 ||
+        debate.mediators?.findIndex((debater) => debater.id === debaterId) !==
+          -1
     )
   }
 

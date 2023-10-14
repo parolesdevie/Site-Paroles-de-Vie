@@ -27,7 +27,7 @@
         <p class="mt-2 md:leading-8" v-html="argument.explanation" />
 
         <!-- audio -->
-        <figure class="mt-4">
+        <figure class="mt-4" v-if="argument.audio">
           <figcaption>
             <strong>Ecoutez l'argument :</strong>
           </figcaption>
@@ -65,7 +65,7 @@
                 <p class="mt-2 md:leading-8" v-html="response.responses" />
 
                 <!-- audio -->
-                <figure class="mt-4">
+                <figure class="mt-4" v-if="argument.audio">
                   <figcaption>
                     <strong>Ecoutez la réponse:</strong>
                   </figcaption>

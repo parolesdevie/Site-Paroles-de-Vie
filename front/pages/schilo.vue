@@ -46,6 +46,18 @@ useHead({
       </template>
     </SectionIntroTopics>
 
+    <SectionArguments
+      class="container mx-auto mt-4 md:mt-10"
+      title="Arguments Islamique"
+      :arguments="islamicArguments"
+    />
+
+    <SectionArguments
+      class="container mx-auto mt-4 md:mt-10"
+      title="Arguments Chrétiens"
+      :arguments="christianArguments"
+    />
+
     <SectionDownloadDocumentsList
       class="container mx-auto mt-4 md:mt-10"
       :files="files"
@@ -57,7 +69,8 @@ useHead({
 import SectionIntroTopics from '~~/components/topics/SectionIntroTopics.vue'
 import SectionVideo from '~~/components/videos/SectionVideo.vue'
 import SectionDownloadDocumentsList from '~~/components/document/SectionDownloadDocumentsList.vue'
-import { TopicService, ResourceService } from '~~/services'
+import SectionArguments from '~~/components/debate/SectionArguments.vue'
+import { TopicService, ResourceService, DebateService } from '~~/services'
 
 definePageMeta({
   layout: 'article'
@@ -69,10 +82,13 @@ export default defineNuxtComponent({
   components: {
     SectionIntroTopics,
     SectionVideo,
-    SectionDownloadDocumentsList
+    SectionDownloadDocumentsList,
+    SectionArguments
   },
 
   data() {
+    const debatArguments = DebateService.getDebatArgumentsById(2)
+
     return {
       breadcrumbItems: [
         {
@@ -85,7 +101,13 @@ export default defineNuxtComponent({
         }
       ],
       cover: TopicService.getTopicCoverBySlug('/schilo/'),
-      files: ResourceService.getBySlug('schilo')
+      files: ResourceService.getBySlug('schilo'),
+      islamicArguments: debatArguments.filter(
+        (argument) => argument.team == 'islam'
+      ),
+      christianArguments: debatArguments.filter(
+        (argument) => argument.team == 'christianism'
+      )
     }
   }
 })

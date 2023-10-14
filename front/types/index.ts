@@ -189,7 +189,7 @@ export interface IDebat {
   url: string
   subject: string
   debaters: IDebater[]
-  mediator?: IDebater
+  mediators: IDebater[]
   plateform: DebatPlateformEnum
 }
 
