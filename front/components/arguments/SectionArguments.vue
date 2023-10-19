@@ -37,11 +37,13 @@ const { topics, filter, filteredTopics } = useArgumentTopicList()
         class="mt-2 md:mt-4 flex flex-col gap-4"
       >
         <li
-          :class="`border-2 border-${
-            argument.team === 'chrétien' ? 'violet' : 'green'
-          }-500 rounded-3xl bg-gray-100 dark:bg-gray-900 flex flex-col p-4 relative md:text-lg`"
+          :class="`border-2 
+          border-${argument.team === 'chrétien' ? 'violet' : 'green'}-700
+          dark:border-${argument.team === 'chrétien' ? 'violet' : 'green'}-500
+           rounded-3xl bg-gray-100 dark:bg-gray-900 flex flex-col p-4 relative md:text-lg`"
           v-for="(argument, index) in filteredArguments"
           :key="index"
+          @click="opened = index"
         >
           <IconsIconCross
             v-if="argument.team === 'chrétien'"
@@ -49,16 +51,17 @@ const { topics, filter, filteredTopics } = useArgumentTopicList()
           />
           <IconsIconQuran
             v-else-if="argument.team === 'musulman'"
-            class="inline h-5 shrink-0 text-green-500"
+            class="inline h-5 shrink-0 text-green-700 dark:text-green-500"
           />
-          <span>
+          <span class="block mt-2"> {{ index }}) {{ argument.title }} </span>
+
+          <!-- hidden part -->
+          <div v-show="opened === index">
+            <!-- <span class="block mt-2">
             Date :
             <strong>{{ argument.date }}</strong>
-          </span>
-          <span class="mt-2">
-            Explication : <br />
-            {{ argument.text }}
-          </span>
+            </span> -->
+            <span class="block mt-2" v-html="argument.text" />
 
           <!-- audio -->
           <figure class="mt-4" v-if="argument.audio">
@@ -69,6 +72,66 @@ const { topics, filter, filteredTopics } = useArgumentTopicList()
               <a :hred="argument.audio.src"> Télécharger l'audio </a>
             </audio>
           </figure>
+            <figure
+              class="mt-4"
+              v-else-if="argument.audios"
+              v-for="(audio, index) in argument.audios"
+              :key="index"
+            >
+              <figcaption>
+                <strong>Ecoutez l'argument :</strong>
+              </figcaption>
+              <audio class="mt-2" controls :src="audio.src">
+                <a :hred="audio.src"> Télécharger l'audio </a>
+              </audio>
+            </figure>
+
+            <!-- responses -->
+            <div class="mt-4 pl-4 md:pl-20" v-if="argument.responses?.length">
+              <strong>Réponses : </strong>
+              <ul>
+                <li
+                  :class="`
+                  mt-2 md:mt-4
+                  text-${argument.team === 'chrétien' ? 'violet' : 'green'}-700
+                  dark:text-${
+                    argument.team === 'chrétien' ? 'violet' : 'green'
+                  }-500
+                  `"
+                  v-for="(argument, index) in argument.responses"
+                  :key="index"
+                >
+                  {{ index + 1 }}) {{ argument.title }}<br />
+                  {{ argument.text }}
+                  <!-- audio -->
+                  <figure class="mt-4" v-if="argument.audio">
+                    <figcaption>
+                      <strong>Ecoutez l'argument :</strong>
+                    </figcaption>
+                    <audio class="mt-2" controls :src="argument.audio.src">
+                      <a :hred="argument.audio.src"> Télécharger l'audio </a>
+                    </audio>
+                  </figure>
+                  <figure
+                    class="mt-4"
+                    v-else-if="argument.audios"
+                    v-for="(audio, index) in argument.audios"
+                    :key="index"
+                  >
+                    <figcaption>
+                      <strong>Ecoutez l'argument :</strong>
+                    </figcaption>
+                    <audio class="mt-2" controls :src="audio.src">
+                      <a :hred="audio.src"> Télécharger l'audio </a>
+                    </audio>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+            <p v-else>
+              <strong>Aucune réponses</strong>
+            </p>
+          </div>
         </li>
       </ul>
 
@@ -90,6 +153,7 @@ export default defineNuxtComponent({
 
   data() {
     return {
+      opened: null,
       selectedTopic: undefined as IArgumentTopic,
       debatArguments: ArgumentService.getAll()
     }
@@ -113,6 +177,7 @@ export default defineNuxtComponent({
       console.log(value)
 
       this.selectedTopic = value
+      this.opened = null
     }
   }
 })

@@ -73,7 +73,7 @@ const props = defineProps({
       class="absolute inset-0 bg-black bg-opacity-10 hover:bg-opacity-50 dark:bg-opacity-20 dark:hover:bg-opacity-60 duration-300 flex items-end"
     >
       <span
-        class="w-full h-16 md:h-20 p-2 flex items-center justify-center text-center text-white font-semibold text-shadow text-base md:text-lg lg:text-xl uppercase"
+        class="w-full h-16 md:h-20 p-2 flex items-center justify-center text-center font-semibold text-shadow text-base md:text-lg lg:text-xl uppercase"
       >
         {{ title }}
       </span>

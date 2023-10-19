@@ -256,6 +256,10 @@ export interface IArgument {
   team?: string
   teams: string[]
   topics: IArgumentTopic[]
+  type: string
+  'responsed-by'?: number[]
+  'response-to'?: number[]
+  responses?: IArgument[]
   text: string
   cover: IThumbnail
   audio: {

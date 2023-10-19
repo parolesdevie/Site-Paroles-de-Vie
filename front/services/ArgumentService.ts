@@ -5,7 +5,18 @@ export default class ArgumentService {
   constructor() {}
 
   static getAll(): IArgument[] {
-    return argumentJson as IArgument[]
+    return argumentJson
+      .filter(
+        (debatArgument: IArgument) => debatArgument.type === 'argument-question'
+      )
+      .map((debatArgument: IArgument) => ({
+        ...debatArgument,
+        responses: debatArgument['responsed-by']?.map((id: Number) =>
+          argumentJson.find(
+            (debatArgument: IArgument) => debatArgument.id === id
+          )
+        )
+      })) as IArgument[]
   }
 
   static getAllTopics(): unknown[] {
