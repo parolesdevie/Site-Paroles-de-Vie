@@ -134,7 +134,7 @@ import { GospelService, TopicService } from '~~/services'
 import { GospelCategoryEnum } from '~~/types'
 
 export default defineNuxtComponent({
-  name: 'GospelPage',
+  name: 'GospelsPage',
 
   components: { SectionIntroTopics, SectionVideo },
 

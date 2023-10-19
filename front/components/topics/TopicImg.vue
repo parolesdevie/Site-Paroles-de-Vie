@@ -40,11 +40,11 @@ export default defineNuxtComponent({
     },
     src: {
       type: Object as PropType<{ mobile: unknown; desktop: { '1x': string } }>,
-      default: undefined
+      default: { mobile: undefined, desktop: { '1x': undefined } }
     },
     srcset: {
       type: Object as PropType<{ mobile: string; desktop: string }>,
-      default: undefined
+      default: { mobile: undefined, desktop: undefined }
     },
     alt: {
       type: String,

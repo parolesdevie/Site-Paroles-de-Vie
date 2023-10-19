@@ -1,14 +1,46 @@
 [
     {
+        "title": "Arguments",
+        "order": 0,
+        "archive": false,
+        "slug": "arguments",
+        "to": "/arguments/",
+        "cover": {
+            "color": "#000000",
+            "srcset": {
+                "mobile": "/images/topics/arguments/mobile/cover@1x.webp, /images/topics/arguments/mobile/cover@1.5x.webp 1.5x, /images/topics/arguments/mobile/cover@2x.webp 2x, /images/topics/arguments/mobile/cover@3x.webp 3x, /images/topics/arguments/mobile/cover@4x.webp 4x",
+                "desktop": "/images/topics/arguments/desktop/cover@1x.webp, /images/topics/arguments/desktop/cover@1.5x.webp 1.5x, /images/topics/arguments/desktop/cover@2x.webp 2x, /images/topics/arguments/desktop/cover@3x.webp 3x, /images/topics/arguments/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/topics/arguments/mobile/cover@1x.webp",
+                    "1.5x": "/images/topics/arguments/mobile/cover@1.5x.webp",
+                    "2x": "/images/topics/arguments/mobile/cover@2x.webp",
+                    "3x": "/images/topics/arguments/mobile/cover@3x.webp",
+                    "4x": "/images/topics/arguments/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/topics/arguments/desktop/cover@1x.webp",
+                    "1.5x": "/images/topics/arguments/desktop/cover@1.5x.webp",
+                    "2x": "/images/topics/arguments/desktop/cover@2x.webp",
+                    "3x": "/images/topics/arguments/desktop/cover@3x.webp",
+                    "4x": "/images/topics/arguments/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        }
+    },
+    {
         "title": "La crucifixion dans le coran",
+        "order": 1,
         "archive": false,
         "slug": "crucifixion-in-the-quran",
         "to": "/crucifixion-in-the-quran/",
         "cover": {
-            "color": "#9C895A",
+            "color": "#514212",
             "srcset": {
                 "mobile": "/images/topics/crucifixion-in-the-quran/mobile/cover@1x.webp, /images/topics/crucifixion-in-the-quran/mobile/cover@1.5x.webp 1.5x, /images/topics/crucifixion-in-the-quran/mobile/cover@2x.webp 2x, /images/topics/crucifixion-in-the-quran/mobile/cover@3x.webp 3x, /images/topics/crucifixion-in-the-quran/mobile/cover@4x.webp 4x",
-                "desktop": "/images/topics/crucifixion-in-the-quran/desktop/cover@1x.webp, /images/topics/crucifixion-in-the-quran/desktop/cover@1.5x.webp 1.5x, /images/topics/crucifixion-in-the-quran/desktop/cover@2x.webp 2x, /images/topics/crucifixion-in-the-quran/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+                "desktop": "/images/topics/crucifixion-in-the-quran/desktop/cover@1x.webp, /images/topics/crucifixion-in-the-quran/desktop/cover@1.5x.webp 1.5x, /images/topics/crucifixion-in-the-quran/desktop/cover@2x.webp 2x, /images/topics/crucifixion-in-the-quran/desktop/cover@3x.webp 3x, /images/topics/crucifixion-in-the-quran/desktop/cover@4x.webp 4x"
             },
             "src": {
                 "mobile": {
@@ -26,19 +58,20 @@
                     "4x": "/images/topics/crucifixion-in-the-quran/desktop/cover@4x.webp"
                 }
             },
-            "alt": "Une croix inscrustrée dans une bible"
+            "alt": "Jésus à la croix"
         }
     },
     {
         "title": "La crucifixion dans la bible",
+        "order": 2,
         "archive": false,
         "slug": "crucifixion-in-the-bible",
         "to": "/crucifixion-in-the-bible/",
         "cover": {
-            "color": "#9C895A",
+            "color": "#514212",
             "srcset": {
                 "mobile": "/images/topics/crucifixion-in-the-bible/mobile/cover@1x.webp, /images/topics/crucifixion-in-the-bible/mobile/cover@1.5x.webp 1.5x, /images/topics/crucifixion-in-the-bible/mobile/cover@2x.webp 2x, /images/topics/crucifixion-in-the-bible/mobile/cover@3x.webp 3x, /images/topics/crucifixion-in-the-bible/mobile/cover@4x.webp 4x",
-                "desktop": "/images/topics/crucifixion-in-the-bible/desktop/cover@1x.webp, /images/topics/crucifixion-in-the-bible/desktop/cover@1.5x.webp 1.5x, /images/topics/crucifixion-in-the-bible/desktop/cover@2x.webp 2x, /images/topics/crucifixion-in-the-bible/desktop/cover@3x.webp 3x, /images/topics/gospel-of-barnabas/desktop/cover@4x.webp 4x"
+                "desktop": "/images/topics/crucifixion-in-the-bible/desktop/cover@1x.webp, /images/topics/crucifixion-in-the-bible/desktop/cover@1.5x.webp 1.5x, /images/topics/crucifixion-in-the-bible/desktop/cover@2x.webp 2x, /images/topics/crucifixion-in-the-bible/desktop/cover@3x.webp 3x, /images/topics/crucifixion-in-the-bible/desktop/cover@4x.webp 4x"
             },
             "src": {
                 "mobile": {
@@ -56,16 +89,17 @@
                     "4x": "/images/topics/crucifixion-in-the-bible/desktop/cover@4x.webp"
                 }
             },
-            "alt": "Une croix inscrustrée dans une bible"
+            "alt": "Jésus à la croix"
         }
     },
     {
         "title": "La foi Abrahamique",
+        "order": 3,
         "archive": false,
         "slug": "abrahamic-faith",
         "to": "/abrahamic-faith/",
         "cover": {
-            "color": "#6D5D39",
+            "color": "#302118",
             "srcset": {
                 "mobile": "/images/topics/abrahamic-faith/mobile/cover@1x.webp, /images/topics/abrahamic-faith/mobile/cover@1.5x.webp 1.5x, /images/topics/abrahamic-faith/mobile/cover@2x.webp 2x, /images/topics/abrahamic-faith/mobile/cover@3x.webp 3x, /images/topics/abrahamic-faith/mobile/cover@4x.webp 4x",
                 "desktop": "/images/topics/abrahamic-faith/desktop/cover@1x.webp, /images/topics/abrahamic-faith/desktop/cover@1.5x.webp 1.5x, /images/topics/abrahamic-faith/desktop/cover@2x.webp 2x, /images/topics/abrahamic-faith/desktop/cover@3x.webp 3x, /images/topics/abrahamic-faith/desktop/cover@4x.webp 4x"
@@ -91,6 +125,7 @@
     },
     {
         "title": "Les Dilemmes",
+        "order": 4,
         "archive": false,
         "slug": "dilemmas",
         "to": "/dilemmas/",
@@ -121,6 +156,7 @@
     },
     {
         "title": "Le Schilo",
+        "order": 8,
         "archive": false,
         "slug": "schilo",
         "to": "/schilo/",
@@ -151,6 +187,7 @@
     },
     {
         "title": "L'Évangile de Barnabé",
+        "order": 10,
         "archive": false,
         "to": "/gospel-of-barnabas/",
         "cover": {
@@ -180,6 +217,7 @@
     },
     {
         "title": "Deutéronome 18:18",
+        "order": 6,
         "archive": false,
         "to": "/deuteronomy-18-18/",
         "cover": {
@@ -209,6 +247,7 @@
     },
     {
         "title": "La parabole des vignerons",
+        "order": 5,
         "archive": false,
         "to": "/parable-of-the-winegrowers/",
         "cover": {
@@ -238,6 +277,7 @@
     },
     {
         "title": "Stories",
+        "order": 99,
         "archive": false,
         "to": "/stories/",
         "cover": {
@@ -267,6 +307,7 @@
     },
     {
         "title": "Documents PDF",
+        "order": 10,
         "archive": false,
         "to": "/documents/",
         "cover": {
@@ -296,6 +337,7 @@
     },
     {
         "title": "Podcast",
+        "order": 99,
         "archive": false,
         "to": "/podcast/",
         "cover": {
@@ -325,6 +367,7 @@
     },
     {
         "title": "Manuscrits",
+        "order": 11,
         "archive": false,
         "to": "/manuscripts/",
         "cover": {
@@ -354,6 +397,7 @@
     },
     {
         "title": "Critique textuelle",
+        "order": 12,
         "archive": false,
         "to": "/biblical-textual-criticism/",
         "cover": {
@@ -383,6 +427,7 @@
     },
     {
         "title": "Louanges",
+        "order": 15,
         "archive": false,
         "to": "/gospel/",
         "cover": {
@@ -412,6 +457,7 @@
     },
     {
         "title": "Le Soreg",
+        "order": 7,
         "archive": false,
         "to": "/soreg/",
         "cover": {
@@ -441,10 +487,11 @@
     },
     {
         "title": "Le Paraclet",
+        "order": 4,
         "archive": false,
         "to": "/paraclete/",
         "cover": {
-            "color": "#A66B38",
+            "color": "#DDC47F",
             "srcset": {
                 "mobile": "/images/topics/paraclete/mobile/cover@1x.webp, /images/topics/paraclete/mobile/cover@1.5x.webp 1.5x, /images/topics/paraclete/mobile/cover@2x.webp 2x, /images/topics/paraclete/mobile/cover@3x.webp 3x, /images/topics/paraclete/mobile/cover@4x.webp 4x",
                 "desktop": "/images/topics/paraclete/desktop/cover@1x.webp, /images/topics/paraclete/desktop/cover@1.5x.webp 1.5x, /images/topics/paraclete/desktop/cover@2x.webp 2x, /images/topics/paraclete/desktop/cover@3x.webp 3x, /images/topics/paraclete/desktop/cover@4x.webp 4x"
@@ -470,6 +517,7 @@
     },
     {
         "title": "La divinité de Jésus",
+        "order": 99,
         "archive": false,
         "to": "/the-divinity-of-jesus/",
         "cover": {
@@ -498,7 +546,8 @@
         }
     },
     {
-        "title": "Un manuscrit",
+        "title": "La falsification de la Bible",
+        "order": 9,
         "archive": false,
         "to": "/the-falsification-of-the-bible/",
         "cover": {
@@ -528,6 +577,7 @@
     },
     {
         "title": "Chaîne Youtube Recommandées",
+        "order": 99,
         "archive": false,
         "to": "/youtube/",
         "cover": {
@@ -557,6 +607,7 @@
     },
     {
         "title": "Livres Recommandés",
+        "order": 99,
         "archive": false,
         "to": "/books/",
         "cover": {
@@ -586,6 +637,7 @@
     },
     {
         "title": "Sites Recommandés",
+        "order": 99,
         "archive": false,
         "to": "/sites/",
         "cover": {
@@ -615,6 +667,7 @@
     },
     {
         "title": "Réseaux sociaux",
+        "order": 99,
         "archive": false,
         "to": "/social-networks/",
         "cover": {
@@ -644,6 +697,7 @@
     },
     {
         "title": "Magazines",
+        "order": 100,
         "archive": false,
         "to": "/magazines/",
         "cover": {
@@ -673,6 +727,7 @@
     },
     {
         "title": "Galerie d'images",
+        "order": 99,
         "archive": false,
         "to": "/gallery/",
         "cover": {
@@ -702,6 +757,7 @@
     },
     {
         "title": "Coliseum",
+        "order": 13,
         "archive": false,
         "to": "/coliseum/",
         "cover": {
@@ -731,6 +787,7 @@
     },
     {
         "title": "Nom de Jésus",
+        "order": 80,
         "archive": false,
         "to": "/name-of-jesus/",
         "cover": {
@@ -760,6 +817,7 @@
     },
     {
         "title": "Le Nom de Dieu",
+        "order": 80,
         "archive": false,
         "slug": "name-of-god",
         "to": "/name-of-god/",
@@ -790,6 +848,7 @@
     },
     {
         "title": "ahmad",
+        "order": 16,
         "archive": false,
         "slug": "ahmad",
         "to": "/ahmad/",
@@ -820,6 +879,7 @@
     },
     {
         "title": "Lire la Bible",
+        "order": 14,
         "archive": false,
         "to": "/read-the-bible/",
         "cover": {

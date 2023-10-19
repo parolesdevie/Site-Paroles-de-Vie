@@ -6,9 +6,11 @@ export default function useTopicList() {
   const filter = ref('')
 
   const filteredTopics = computed(() => {
-    return topics.value.filter(
-      (topic) => slugify(topic.title).lastIndexOf(slugify(filter.value)) > -1
-    )
+    return topics.value
+      .filter(
+        (topic) => slugify(topic.title).lastIndexOf(slugify(filter.value)) > -1
+      )
+      .sort((a, b) => a.order - b.order)
   })
 
   function slugify(value: string): string {

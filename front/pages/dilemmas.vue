@@ -53,6 +53,10 @@ import SectionVideo from '~~/components/videos/SectionVideo.vue'
 import { TopicService, ResourceService } from '~~/services'
 import { VideoLinkEnum } from '~~/types'
 
+definePageMeta({
+  layout: 'article'
+})
+
 export default defineNuxtComponent({
   name: 'DilemmasPage',
 

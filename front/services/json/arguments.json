@@ -1,0 +1,299 @@
+[
+    {
+        "id": 1,
+        "slug": "1",
+        "title": "1",
+        "date": "2016/04/01",
+        "author": null,
+        "authors": [
+            "Abbé Guy Pagès"
+        ],
+        "team": "chrétien",
+        "teams": [
+            "Abbé Guy Pagès"
+        ],
+        "topics": [
+            {
+                "title": "Légitimité de Muhammad",
+                "slug": "legitimacy-of-muhammad",
+                "cover": {
+                    "srcset": {
+                        "mobile": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1x.webp, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@1.5x.webp 1.5x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@2x.webp 2x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@3x.webp 3x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@4x.webp 4x",
+                        "desktop": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1x.webp, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@1.5x.webp 1.5x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@2x.webp 2x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@3x.webp 3x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@4x.webp 4x"
+                    },
+                    "src": {
+                        "mobile": {
+                            "1x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1x.webp",
+                            "1.5x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1.5x.webp",
+                            "2x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@2x.webp",
+                            "3x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@3x.webp",
+                            "4x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@4x.webp"
+                        },
+                        "desktop": {
+                            "1x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1x.webp",
+                            "1.5x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1.5x.webp",
+                            "2x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@2x.webp",
+                            "3x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@3x.webp",
+                            "4x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@4x.webp"
+                        }
+                    },
+                    "alt": ""
+                }
+            },
+            {
+                "title": "Légitimité de l'Islam",
+                "slug": "legitimacy-of-islam",
+                "cover": {
+                    "srcset": {
+                        "mobile": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1x.webp, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@1.5x.webp 1.5x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@2x.webp 2x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@3x.webp 3x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@4x.webp 4x",
+                        "desktop": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1x.webp, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@1.5x.webp 1.5x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@2x.webp 2x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@3x.webp 3x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@4x.webp 4x"
+                    },
+                    "src": {
+                        "mobile": {
+                            "1x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1x.webp",
+                            "1.5x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1.5x.webp",
+                            "2x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@2x.webp",
+                            "3x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@3x.webp",
+                            "4x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@4x.webp"
+                        },
+                        "desktop": {
+                            "1x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1x.webp",
+                            "1.5x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1.5x.webp",
+                            "2x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@2x.webp",
+                            "3x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@3x.webp",
+                            "4x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@4x.webp"
+                        }
+                    },
+                    "alt": ""
+                }
+            }
+        ],
+        "text": "Si Jésus est DIeu alors, on ne peux pas avoir mieux que Dieu et toute tentative de prophetes posterieur a jésus est vaine",
+        "cover": {
+            "srcset": {
+                "mobile": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1x.webp, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@1.5x.webp 1.5x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@2x.webp 2x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@3x.webp 3x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@4x.webp 4x",
+                "desktop": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1x.webp, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@1.5x.webp 1.5x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@2x.webp 2x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@3x.webp 3x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1x.webp",
+                    "1.5x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1.5x.webp",
+                    "2x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@2x.webp",
+                    "3x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@3x.webp",
+                    "4x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1x.webp",
+                    "1.5x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1.5x.webp",
+                    "2x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@2x.webp",
+                    "3x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@3x.webp",
+                    "4x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        },
+        "audio": {
+            "name": "Audio 3",
+            "src": "/audio/arguments/2016-04-01/debat-interreligieux-2015-muhammad-est-vrai-prophete-de-dieu-abbe-guy-pages-and-karim-al-hanifi/Audio 3.wav",
+            "format": "WAV"
+        }
+    },
+    {
+        "id": 2,
+        "slug": "2",
+        "title": "2",
+        "date": "2016/04/01",
+        "author": null,
+        "authors": [
+            "Abbé Guy Pagès"
+        ],
+        "team": "chrétien",
+        "teams": [
+            "Abbé Guy Pagès"
+        ],
+        "topics": [
+            {
+                "title": "Légitimité de Muhammad",
+                "slug": "legitimacy-of-muhammad",
+                "cover": {
+                    "srcset": {
+                        "mobile": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1x.webp, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@1.5x.webp 1.5x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@2x.webp 2x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@3x.webp 3x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@4x.webp 4x",
+                        "desktop": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1x.webp, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@1.5x.webp 1.5x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@2x.webp 2x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@3x.webp 3x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@4x.webp 4x"
+                    },
+                    "src": {
+                        "mobile": {
+                            "1x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1x.webp",
+                            "1.5x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1.5x.webp",
+                            "2x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@2x.webp",
+                            "3x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@3x.webp",
+                            "4x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@4x.webp"
+                        },
+                        "desktop": {
+                            "1x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1x.webp",
+                            "1.5x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1.5x.webp",
+                            "2x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@2x.webp",
+                            "3x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@3x.webp",
+                            "4x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@4x.webp"
+                        }
+                    },
+                    "alt": ""
+                }
+            },
+            {
+                "title": "Légitimité de l'Islam",
+                "slug": "legitimacy-of-islam",
+                "cover": {
+                    "srcset": {
+                        "mobile": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1x.webp, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@1.5x.webp 1.5x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@2x.webp 2x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@3x.webp 3x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@4x.webp 4x",
+                        "desktop": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1x.webp, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@1.5x.webp 1.5x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@2x.webp 2x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@3x.webp 3x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@4x.webp 4x"
+                    },
+                    "src": {
+                        "mobile": {
+                            "1x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1x.webp",
+                            "1.5x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1.5x.webp",
+                            "2x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@2x.webp",
+                            "3x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@3x.webp",
+                            "4x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@4x.webp"
+                        },
+                        "desktop": {
+                            "1x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1x.webp",
+                            "1.5x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1.5x.webp",
+                            "2x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@2x.webp",
+                            "3x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@3x.webp",
+                            "4x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@4x.webp"
+                        }
+                    },
+                    "alt": ""
+                }
+            }
+        ],
+        "text": "Les prophétes annoncennt le messie, mais ne viennent pas aprés le messie",
+        "cover": {
+            "srcset": {
+                "mobile": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1x.webp, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@1.5x.webp 1.5x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@2x.webp 2x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@3x.webp 3x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@4x.webp 4x",
+                "desktop": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1x.webp, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@1.5x.webp 1.5x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@2x.webp 2x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@3x.webp 3x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1x.webp",
+                    "1.5x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1.5x.webp",
+                    "2x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@2x.webp",
+                    "3x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@3x.webp",
+                    "4x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1x.webp",
+                    "1.5x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1.5x.webp",
+                    "2x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@2x.webp",
+                    "3x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@3x.webp",
+                    "4x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        },
+        "audio": {
+            "name": "Audio 4",
+            "src": "/audio/arguments/2016-04-01/debat-interreligieux-2015-muhammad-est-vrai-prophete-de-dieu-abbe-guy-pages-and-karim-al-hanifi/Audio 4.wav",
+            "format": "WAV"
+        }
+    },
+    {
+        "id": 3,
+        "slug": "3",
+        "title": "3",
+        "date": "2016/04/01",
+        "author": null,
+        "authors": [
+            "Karim al-Hanifi"
+        ],
+        "team": "musulman",
+        "teams": [
+            "Abbé Guy Pagès"
+        ],
+        "topics": [
+            {
+                "title": "Légitimité de Muhammad",
+                "slug": "legitimacy-of-muhammad",
+                "cover": {
+                    "srcset": {
+                        "mobile": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1x.webp, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@1.5x.webp 1.5x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@2x.webp 2x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@3x.webp 3x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@4x.webp 4x",
+                        "desktop": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1x.webp, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@1.5x.webp 1.5x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@2x.webp 2x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@3x.webp 3x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@4x.webp 4x"
+                    },
+                    "src": {
+                        "mobile": {
+                            "1x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1x.webp",
+                            "1.5x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1.5x.webp",
+                            "2x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@2x.webp",
+                            "3x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@3x.webp",
+                            "4x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@4x.webp"
+                        },
+                        "desktop": {
+                            "1x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1x.webp",
+                            "1.5x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1.5x.webp",
+                            "2x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@2x.webp",
+                            "3x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@3x.webp",
+                            "4x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@4x.webp"
+                        }
+                    },
+                    "alt": ""
+                }
+            },
+            {
+                "title": "Légitimité de l'Islam",
+                "slug": "legitimacy-of-islam",
+                "cover": {
+                    "srcset": {
+                        "mobile": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1x.webp, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@1.5x.webp 1.5x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@2x.webp 2x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@3x.webp 3x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@4x.webp 4x",
+                        "desktop": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1x.webp, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@1.5x.webp 1.5x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@2x.webp 2x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@3x.webp 3x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@4x.webp 4x"
+                    },
+                    "src": {
+                        "mobile": {
+                            "1x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1x.webp",
+                            "1.5x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1.5x.webp",
+                            "2x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@2x.webp",
+                            "3x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@3x.webp",
+                            "4x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@4x.webp"
+                        },
+                        "desktop": {
+                            "1x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1x.webp",
+                            "1.5x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1.5x.webp",
+                            "2x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@2x.webp",
+                            "3x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@3x.webp",
+                            "4x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@4x.webp"
+                        }
+                    },
+                    "alt": ""
+                }
+            }
+        ],
+        "text": "Les critères d'acceptation ou d'exclusion prophetique, doivent être ceux donner par Dieu lui même, soit ce de la thora et des prophetes (Deut 13 et Deut 18)",
+        "cover": {
+            "srcset": {
+                "mobile": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1x.webp, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@1.5x.webp 1.5x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@2x.webp 2x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@3x.webp 3x, /images/arguments/topics/SiW5hBJJCgk/mobile/cover@4x.webp 4x",
+                "desktop": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1x.webp, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@1.5x.webp 1.5x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@2x.webp 2x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@3x.webp 3x, /images/arguments/topics/SiW5hBJJCgk/desktop/cover@4x.webp 4x"
+            },
+            "src": {
+                "mobile": {
+                    "1x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1x.webp",
+                    "1.5x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@1.5x.webp",
+                    "2x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@2x.webp",
+                    "3x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@3x.webp",
+                    "4x": "/images/arguments/topics/SiW5hBJJCgk/mobile/cover@4x.webp"
+                },
+                "desktop": {
+                    "1x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1x.webp",
+                    "1.5x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@1.5x.webp",
+                    "2x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@2x.webp",
+                    "3x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@3x.webp",
+                    "4x": "/images/arguments/topics/SiW5hBJJCgk/desktop/cover@4x.webp"
+                }
+            },
+            "alt": ""
+        },
+        "audio": {
+            "name": "Audio 5",
+            "src": "/audio/arguments/2016-04-01/debat-interreligieux-2015-muhammad-est-vrai-prophete-de-dieu-abbe-guy-pages-and-karim-al-hanifi/Audio 5.wav",
+            "format": "WAV"
+        }
+    }
+]

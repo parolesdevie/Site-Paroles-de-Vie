@@ -241,3 +241,26 @@ export interface IGalleryImage {
   ratio: RatioEnum
   id: string
 }
+
+export interface IArgumentTopic {
+  cover: ITopicCover
+  slug: string
+  title: string
+}
+export interface IArgument {
+  id: number
+  slug: string
+  title: string
+  author?: string
+  authors: string[]
+  team?: string
+  teams: string[]
+  topics: IArgumentTopic[]
+  text: string
+  cover: IThumbnail
+  audio: {
+    name: string
+    src: string
+    format: string
+  }
+}

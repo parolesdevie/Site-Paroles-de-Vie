@@ -43,6 +43,7 @@
 
     <div class="mt-4 md:mt-8 mb-8">
       <ul
+        v-if="filteredDocuments.length"
         :class="`
           -m-4
           p-2
@@ -62,6 +63,8 @@
           :title="document.title"
         />
       </ul>
+
+      <p v-else>Aucun document</p>
 
       <div
         class="mt-10 flex justify-center"

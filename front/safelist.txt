@@ -4,3 +4,4 @@ right-20
 left-3
 left-20
 top-20
+border-violet-500
