@@ -6,7 +6,7 @@
         "slug": "arguments",
         "to": "/arguments/",
         "cover": {
-            "color": "#000000",
+            "color": "#514D42",
             "srcset": {
                 "mobile": "/images/topics/arguments/mobile/cover@1x.webp, /images/topics/arguments/mobile/cover@1.5x.webp 1.5x, /images/topics/arguments/mobile/cover@2x.webp 2x, /images/topics/arguments/mobile/cover@3x.webp 3x, /images/topics/arguments/mobile/cover@4x.webp 4x",
                 "desktop": "/images/topics/arguments/desktop/cover@1x.webp, /images/topics/arguments/desktop/cover@1.5x.webp 1.5x, /images/topics/arguments/desktop/cover@2x.webp 2x, /images/topics/arguments/desktop/cover@3x.webp 3x, /images/topics/arguments/desktop/cover@4x.webp 4x"

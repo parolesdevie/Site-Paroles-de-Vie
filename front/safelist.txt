@@ -4,4 +4,8 @@ right-20
 left-3
 left-20
 top-20
+text-violet-500
+text-violet-700
 border-violet-500
+border-violet-700
+border-green-700
