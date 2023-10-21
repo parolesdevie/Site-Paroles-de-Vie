@@ -3,16 +3,17 @@ const { topics, filter, filteredTopics } = useArgumentTopicList()
 </script>
 
 <template>
-  <section>
-    <!-- title -->
-    <H2Title>Rechercher des arguments</H2Title>
-
+  <div>
     <!-- search -->
-    <FormsSearchInput v-model="filter" placeholder="Recherche" />
+    <FormsSearchInput
+      class="mx-auto"
+      v-model="filter"
+      placeholder="Recherche"
+    />
 
     <!-- argument topic list -->
     <ul
-      class="mt-2 md:mt-4 flex overflow-x-auto py-2 pr-2 md:py-4 md:pr-4 gap-2 md:gap-3 lg:gap-5 xl:gap-6 px-3 md:px-5 lg:px-4 2xl:px-5"
+      class="mt-2 md:mt-4 flex justify-center overflow-x-auto py-2 pr-2 md:py-4 md:pr-4 gap-2 md:gap-3 lg:gap-5 xl:gap-6 px-3 md:px-5 lg:px-4 2xl:px-5"
     >
       <ArgumentsCardArgumentTopic
         v-for="(topic, index) in filteredTopics"
@@ -32,6 +33,10 @@ const { topics, filter, filteredTopics } = useArgumentTopicList()
           {{ selectedTopic.title }}
         </span>
       </h3>
+      <!-- <img
+        class="mt-2 md:mt-4 border-2 border-blue-500 rounded-3xl"
+        :src="selectedTopic.cover.src.desktop['1x']"
+      /> -->
       <ul
         v-if="filteredArguments.length"
         class="mt-2 md:mt-4 flex flex-col gap-4"
@@ -58,20 +63,20 @@ const { topics, filter, filteredTopics } = useArgumentTopicList()
           <!-- hidden part -->
           <div v-show="opened === index">
             <!-- <span class="block mt-2">
-            Date :
-            <strong>{{ argument.date }}</strong>
+              Date :
+              <strong>{{ argument.date }}</strong>
             </span> -->
             <span class="block mt-2" v-html="argument.text" />
 
-          <!-- audio -->
-          <figure class="mt-4" v-if="argument.audio">
-            <figcaption>
-              <strong>Ecoutez l'argument :</strong>
-            </figcaption>
-            <audio class="mt-2" controls :src="argument.audio.src">
-              <a :hred="argument.audio.src"> Télécharger l'audio </a>
-            </audio>
-          </figure>
+            <!-- audio -->
+            <figure class="mt-4" v-if="argument.audio">
+              <figcaption>
+                <strong>Ecoutez l'argument :</strong>
+              </figcaption>
+              <audio class="mt-2" controls :src="argument.audio.src">
+                <a :hred="argument.audio.src"> Télécharger l'audio </a>
+              </audio>
+            </figure>
             <figure
               class="mt-4"
               v-else-if="argument.audios"
@@ -139,7 +144,7 @@ const { topics, filter, filteredTopics } = useArgumentTopicList()
     </div>
 
     <p v-else>Choissi un théme</p>
-  </section>
+  </div>
 </template>
 
 <script lang="ts">
