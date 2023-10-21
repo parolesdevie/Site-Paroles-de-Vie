@@ -11,11 +11,21 @@ export default class ArgumentService {
       )
       .map((debatArgument: IArgument) => ({
         ...debatArgument,
-        responses: debatArgument['responsed-by']?.map((id: Number) =>
-          argumentJson.find(
+        responses: debatArgument['responsed-by']?.map((id: Number) => {
+          const responseDebatArgument = argumentJson.find(
             (debatArgument: IArgument) => debatArgument.id === id
           )
-        )
+
+          return {
+            ...responseDebatArgument,
+            responses: responseDebatArgument['responsed-by']?.map(
+              (id: Number) =>
+                argumentJson.find(
+                  (debatArgument: IArgument) => debatArgument.id === id
+                )
+            )
+          }
+        })
       })) as IArgument[]
   }
 

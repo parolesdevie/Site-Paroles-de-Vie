@@ -181,16 +181,42 @@ const { topics, filter, filteredTopics } = useArgumentTopicList()
                   : 'border-transparent'
               } `"
             >
-              <span
-                class="h-10 w-10 md:h-32 md:w-32 lg:h-40 lg:w-40 xl:h-56 xl:w-56 p-4 border-4 rounded-3xl flex items-center justify-center cursor-pointer font-semibold italic text-xs md:text-sm xl:text-xl overflow-hidden"
+              <div
+                class="relative h-10 w-10 md:h-32 md:w-32 lg:h-40 lg:w-40 xl:h-56 xl:w-56 border-2 lg:border-4 rounded-3xl rounded-br-none cursor-pointer"
                 :class="`border-${
                   argument.team === 'chrétien' ? 'violet' : 'green'
                 }-700 dark:border-${
                   argument.team === 'chrétien' ? 'violet' : 'green'
                 }-500`"
               >
-                {{ argument.title }}
-              </span>
+                <span
+                  class="p-4 h-full w-full flex items-center justify-center font-semibold italic text-xs md:text-sm xl:text-xl overflow-hidden"
+                >
+                  {{ argument.title }}
+                </span>
+                <IconsIconChevronDown
+                  class="absolute left-1/2 transform -translate-x-1/2 bottom-1 h-4 w-4"
+                  v-if="argument.responses?.length"
+                />
+                <ul
+                  class="absolute -bottom-5 right-0"
+                  v-if="argument.authors.length"
+                >
+                  <li v-for="(author, index) in argument.authors" :key="index">
+                    <img
+                      loading="lazy"
+                      :src="'/images/user/' + author.id + '.webp'"
+                      class="h-10 w-10 lg:h-12 lg:w-12 flex-shrink-0 border-2 lg:border-4 rounded-full bg-gray-300"
+                      :class="`border-${
+                        argument.team === 'chrétien' ? 'violet' : 'green'
+                      }-700 dark:border-${
+                        argument.team === 'chrétien' ? 'violet' : 'green'
+                      }-500`"
+                      title="photo de profils"
+                    />
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <!-- responses -->
@@ -218,16 +244,41 @@ const { topics, filter, filteredTopics } = useArgumentTopicList()
                     response.team === 'chrétien' ? 'violet' : 'green'
                   }-500`"
                 />
-                <span
-                  class="h-10 w-10 md:h-32 md:w-32 lg:h-40 lg:w-40 xl:h-56 xl:w-56 p-4 border-4 rounded-3xl flex items-center justify-center cursor-pointer font-semibold italic text-xs md:text-sm xl:text-xl overflow-hidden"
+                <div
+                  class="relative h-10 w-10 md:h-32 md:w-32 lg:h-40 lg:w-40 xl:h-56 xl:w-56 p-4 border-2 lg:border-4 rounded-3xl rounded-br-none cursor-pointer"
                   :class="`border-${
                     response.team === 'chrétien' ? 'violet' : 'green'
                   }-700 dark:border-${
                     response.team === 'chrétien' ? 'violet' : 'green'
                   }-500`"
                 >
-                  {{ response.title }}
-                </span>
+                  <span
+                    class="p-4 h-full w-full flex items-center justify-center font-semibold italic text-xs md:text-sm xl:text-xl overflow-hidden"
+                  >
+                    {{ response.title }}
+                  </span>
+                  <ul
+                    class="absolute -bottom-5 right-0"
+                    v-if="response.authors.length"
+                  >
+                    <li
+                      v-for="(author, index) in response.authors"
+                      :key="index"
+                    >
+                      <img
+                        loading="lazy"
+                        :src="'/images/user/' + author.id + '.webp'"
+                        class="h-10 w-10 lg:h-12 lg:w-12 flex-shrink-0 border-2 lg:border-4 rounded-full bg-gray-300"
+                        :class="`border-${
+                          response.team === 'chrétien' ? 'violet' : 'green'
+                        }-700 dark:border-${
+                          response.team === 'chrétien' ? 'violet' : 'green'
+                        }-500`"
+                        title="photo de profils"
+                      />
+                    </li>
+                  </ul>
+                </div>
 
                 <!-- responses x2 -->
                 <ul class="mt-10 flex gap-4">
@@ -254,16 +305,45 @@ const { topics, filter, filteredTopics } = useArgumentTopicList()
                         response.team === 'chrétien' ? 'violet' : 'green'
                       }-500`"
                     />
-                    <span
-                      class="h-10 w-10 md:h-32 md:w-32 lg:h-40 lg:w-40 xl:h-56 xl:w-56 p-4 border-4 rounded-3xl flex items-center justify-center cursor-pointer font-semibold italic text-xs md:text-sm xl:text-xl overflow-hidden"
+                    <div
+                      class="h-10 w-10 md:h-32 md:w-32 lg:h-40 lg:w-40 xl:h-56 xl:w-56 p-4 border-2 lg:border-4 rounded-3xl rounded-br-none cursor-pointer"
                       :class="`border-${
                         argument.team === 'chrétien' ? 'violet' : 'green'
                       }-700 dark:border-${
                         argument.team === 'chrétien' ? 'violet' : 'green'
                       }-500`"
                     >
-                      {{ response.title }}
-                    </span>
+                      <span
+                        class="p-4 h-full w-full flex items-center justify-center font-semibold italic text-xs md:text-sm xl:text-xl overflow-hidden"
+                      >
+                        {{ response.title }}
+                      </span>
+                      <IconsIconChevronDown
+                        class="absolute left-1/2 transform -translate-x-1/2 bottom-1 h-4 w-4"
+                        v-if="response.responses?.length"
+                      />
+                      <ul
+                        class="absolute -bottom-5 right-0"
+                        v-if="response.authors.length"
+                      >
+                        <li
+                          v-for="(author, index) in response.authors"
+                          :key="index"
+                        >
+                          <img
+                            loading="lazy"
+                            :src="'/images/user/' + author.id + '.webp'"
+                            class="h-10 w-10 lg:h-12 lg:w-12 flex-shrink-0 border-2 lg:border-4 rounded-full bg-gray-300"
+                            :class="`border-${
+                              response.team === 'chrétien' ? 'violet' : 'green'
+                            }-700 dark:border-${
+                              response.team === 'chrétien' ? 'violet' : 'green'
+                            }-500`"
+                            title="photo de profils"
+                          />
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                 </ul>
               </li>
