@@ -6,6 +6,10 @@ left-20
 top-20
 text-violet-500
 text-violet-700
+bg-violet-500
+bg-violet-700
+bg-green-500
+bg-green-700
 border-violet-500
 border-violet-700
 border-green-700
